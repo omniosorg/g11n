@@ -1,0 +1,51 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none lib 0755 root bin
+d none lib/locale 0755 root bin
+d none lib/locale/en_US.UTF-8 0755 root bin
+s none lib/locale/en_US.UTF-8/32=.
+f none lib/locale/en_US.UTF-8/geo_map 0444 root bin
+f none lib/locale/en_US.UTF-8/locale_map 0444 root bin
+f none lib/locale/en_US.UTF-8/locale_description 0444 root bin
+d none lib/locale/en_US.UTF-8/LC_CTYPE 0755 root bin
+s none lib/locale/en_US.UTF-8/LC_CTYPE/32=.
+s none lib/locale/en_US.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none lib/locale/en_US.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none lib/locale/en_US.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+d none lib/locale/en_US.UTF-8/LC_COLLATE 0755 root bin
+d none lib/locale/en_US.UTF-8/LC_NUMERIC 0755 root bin
+d none lib/locale/en_US.UTF-8/LC_MESSAGES 0755 root bin
+d none lib/locale/en_US.UTF-8/LC_TIME 0755 root bin
+d none lib/locale/en_US.UTF-8/LC_MONETARY 0755 root bin
+d none lib/locale/en_US.UTF-8/LO_LTYPE 0755 root bin
+s none lib/locale/en_US.UTF-8/LO_LTYPE/32=.
+s none lib/locale/en_US.UTF-8/LO_LTYPE/en_US.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+s none lib/locale/en_US.UTF-8/methods_en_US.UTF-8.so.3=../common/methods_unicode.so.3
+f none lib/locale/en_US.UTF-8/en_US.UTF-8.so.3 0555 root bin
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/setterm 0755 root bin
+d none share/lib/setterm/en_US.UTF-8 0755 root bin
+f none share/lib/setterm/en_US.UTF-8/conf.file 0555 root bin

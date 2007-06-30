@@ -1,0 +1,79 @@
+/*
+ * CDDL HEADER START
+ *
+ * The contents of this file are subject to the terms of the
+ * Common Development and Distribution License (the "License").  
+ * You may not use this file except in compliance with the License.
+ *
+ * You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+ * or http://www.opensolaris.org/os/licensing.
+ * See the License for the specific language governing permissions
+ * and limitations under the License.
+ *
+ * When distributing Covered Code, include this CDDL HEADER in each
+ * file and include the License file at src/OPENSOLARIS.LICENSE.
+ * If applicable, add the following below this CDDL HEADER, with the
+ * fields enclosed by brackets "[]" replaced with your own identifying
+ * information: Portions Copyright [yyyy] [name of copyright owner]
+ *
+ * CDDL HEADER END
+ */
+
+  * enable accessibility
+
+Request from Eric
+    Need conversion in batch mode 
+    CLI mode converion (unlikely)
+    Nautilus integration support.
+
+
+More features:
+  * symbolic link support - it is hard to implement
+  * Windows carriage return and line return (0x0a0d --> 0x0a)
+    MS-Windows \r\n
+    Unix       \n
+    Macintosh or mail boday \r
+    Default conversion can be changed by the preference dialog
+
+  * Don't display hidden files - DONE
+  * Fix collation issue - DONE
+  * Add nautilus-similar toolbar
+
+  * Enable user to remove and add encoding from encoding list
+
+Two tasks recently:
+ * write some testcase, do testing - DONE
+ * write english help, currently there only has a outline  - DONE
+
+Several features in order of priority are still needed:
+
+  * file content conversion, check with 'file utility' whether the file is 
+    plain text file with help of suffix exclusion such as ".htm", ".html" etc,
+    display one popup window to show the first hundrads of multi-bytes
+    text by double-clicking on the file item and give user one option to
+    decide the encoding.  -DONE
+
+  * nautilus integration, with it user can left-click on the file icon
+    to lauch the application.
+
+  * activated by bonobo, in which way we can guarantee that only one window
+    exists on desktop.
+
+Of course, it would be better to fix several minor bugfix at first,
+
+  * GtkItemFactoryEntry is deprecated already and fsexam's menu should be i18ned
+    at first   - DONE
+
+  * use 256 as buffer size is stupid, it can't work if the length of directory 
+    name supress it. - DONE
+
+  * no help information. - DONE
+
+  * Add "File-->Save As..." to save the conversion result - DONE
+
+  * Add "Action-->Undo 2" to make undo on the item that is selected - OBSOLETED
+
+  * Add the typical golden star icon on the "Help-->About" item to keep consistency with
+    other GNOME applications - DONE
+
+  * Add "Help-->Content" menu item - DONE

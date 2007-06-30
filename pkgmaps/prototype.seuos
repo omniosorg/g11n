@@ -1,0 +1,315 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none usr 0755 root sys
+d none usr/lib 0755 root bin
+d none usr/lib/locale 0755 root bin
+
+d none usr/lib/locale/ca 0755 root bin
+s none usr/lib/locale/ca/ca.so.3=../ca_ES.ISO8859-1/ca_ES.ISO8859-1.so.3
+f none usr/lib/locale/ca/geo_map 0644 root bin 
+f none usr/lib/locale/ca/locale_description 0644 root bin 
+d none usr/lib/locale/ca_ES 0755 root bin
+f none usr/lib/locale/ca_ES/geo_map 0644 root bin
+s none usr/lib/locale/ca_ES/locale_description=../ca_ES.ISO8859-1/locale_description
+s none usr/lib/locale/ca_ES/ca_ES.so.3=../ca_ES.ISO8859-1/ca_ES.ISO8859-1.so.3
+d none usr/lib/locale/ca_ES.ISO8859-1 0755 root bin
+d none usr/lib/locale/ca_ES.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/ca_ES.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/ca_ES.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/ca_ES.ISO8859-1/LC_MESSAGES=../C/LC_MESSAGES
+d none usr/lib/locale/ca_ES.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/ca_ES.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/ca_ES.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/ca_ES.ISO8859-1/ca_ES.ISO8859-1.so.3 0555 root bin 
+f none usr/lib/locale/ca_ES.ISO8859-1/locale_description 0644 root bin 
+f none usr/lib/locale/ca_ES.ISO8859-1/locale_map 0644 root bin 
+d none usr/lib/locale/ca_ES.ISO8859-15 0755 root bin
+d none usr/lib/locale/ca_ES.ISO8859-15/LC_COLLATE 0755 root bin
+d none usr/lib/locale/ca_ES.ISO8859-15/LC_CTYPE 0755 root bin
+s none usr/lib/locale/ca_ES.ISO8859-15/LC_CTYPE/LCL_DEF=../../iso_8859_15/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/ca_ES.ISO8859-15/LC_MESSAGES=../C/LC_MESSAGES
+d none usr/lib/locale/ca_ES.ISO8859-15/LC_MONETARY 0755 root bin
+d none usr/lib/locale/ca_ES.ISO8859-15/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/ca_ES.ISO8859-15/LC_TIME 0755 root bin
+f none usr/lib/locale/ca_ES.ISO8859-15/ca_ES.ISO8859-15.so.3 0555 root bin 
+f none usr/lib/locale/ca_ES.ISO8859-15/locale_description 0644 root bin 
+f none usr/lib/locale/ca_ES.ISO8859-15/locale_map 0644 root bin 
+d none usr/lib/locale/ca_ES.ISO8859-15@euro 0755 root bin
+s none usr/lib/locale/ca_ES.ISO8859-15@euro/ca_ES.ISO8859-15@euro.so.3=../ca_ES.ISO8859-15/ca_ES.ISO8859-15.so.3
+
+d none usr/lib/locale/el_GR.ISO8859-7 0755 root bin
+d none usr/lib/locale/el_GR.ISO8859-7/LC_COLLATE 0755 root bin
+d none usr/lib/locale/el_GR.ISO8859-7/LC_CTYPE 0755 root bin
+s none usr/lib/locale/el_GR.ISO8859-7/LC_CTYPE/LCL_DEF=../../iso_8859_7/LC_CTYPE/LCL_DEF
+d none usr/lib/locale/el_GR.ISO8859-7/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/el_GR.ISO8859-7/LC_MONETARY 0755 root bin
+d none usr/lib/locale/el_GR.ISO8859-7/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/el_GR.ISO8859-7/LC_TIME 0755 root bin
+f none usr/lib/locale/el_GR.ISO8859-7/el_GR.ISO8859-7.so.3 0555 root bin
+
+d none usr/lib/locale/el_GR.ISO8859-7@euro 0755 root bin
+s none usr/lib/locale/el_GR.ISO8859-7@euro/el_GR.ISO8859-7@euro.so.3=../el_GR.ISO8859-7/el_GR.ISO8859-7.so.3
+
+d none usr/lib/locale/el 0755 root bin
+s none usr/lib/locale/el/el.so.3=../el_GR.ISO8859-7/el_GR.ISO8859-7.so.3
+d none usr/lib/locale/el_GR 0755 root bin
+s none usr/lib/locale/el_GR/el_GR.so.3=../el_GR.ISO8859-7/el_GR.ISO8859-7.so.3
+s none usr/lib/locale/el_GR/locale_description=../el_GR.ISO8859-7/locale_description
+d none usr/lib/locale/el.sun_eu_greek 0755 root bin
+s none usr/lib/locale/el.sun_eu_greek/el.sun_eu_greek.so.3=../el_GR.ISO8859-7@euro/el_GR.ISO8859-7@euro.so.3 
+s none usr/lib/locale/el.sun_eu_greek/locale_description=../el_GR.ISO8859-7@euro/locale_description
+
+d none usr/lib/locale/el_GR.UTF-8 0755 root bin
+d none usr/lib/locale/el_GR.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/el_GR.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/el_GR.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/el_GR.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/el_GR.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+d none usr/lib/locale/el_GR.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/el_GR.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/el_GR.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/el_GR.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/el_GR.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/el_GR.UTF-8/LO_LTYPE/el_GR.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/el_GR.UTF-8/el_GR.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/el_GR.UTF-8/methods_el_GR.UTF-8.so.3=../common/methods_unicode.so.3
+d none usr/lib/locale/es_ES.ISO8859-15 0755 root bin
+d none usr/lib/locale/es_ES.ISO8859-15/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_ES.ISO8859-15/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_ES.ISO8859-15/LC_CTYPE/LCL_DEF=../../iso_8859_15/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_ES.ISO8859-15/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_ES.ISO8859-15/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_ES.ISO8859-15/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_ES.ISO8859-15/LC_TIME 0755 root bin
+f none usr/lib/locale/es_ES.ISO8859-15/es_ES.ISO8859-15.so.3 0555 root bin
+f none usr/lib/locale/es_ES.ISO8859-15/locale_description 0644 root bin
+f none usr/lib/locale/es_ES.ISO8859-15/locale_map 0644 root bin
+d none usr/lib/locale/es_ES.ISO8859-15@euro 0755 root bin
+s none usr/lib/locale/es_ES.ISO8859-15@euro/es_ES.ISO8859-15@euro.so.3=../es_ES.ISO8859-15/es_ES.ISO8859-15.so.3
+d none usr/lib/locale/es.ISO8859-15 0755 root bin
+
+d none usr/lib/locale/es_ES.UTF-8 0755 root bin
+d none usr/lib/locale/es_ES.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_ES.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_ES.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_ES.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_ES.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_ES.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+d none usr/lib/locale/es_ES.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_ES.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_ES.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_ES.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_ES.UTF-8/LO_LTYPE/es_ES.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_ES.UTF-8/es_ES.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_ES.UTF-8/methods_es_ES.UTF-8.so.3=../common/methods_unicode.so.3
+d none usr/lib/locale/es_ES.UTF-8@euro 0755 root bin
+s none usr/lib/locale/es_ES.UTF-8@euro/es_ES.UTF-8@euro.so.3=../es_ES.UTF-8/es_ES.UTF-8.so.3
+s none usr/lib/locale/es_ES.UTF-8@euro/methods_es_ES.UTF-8@euro.so.3=../common/methods_unicode.so.3
+d none usr/lib/locale/es.UTF-8 0755 root bin
+s none usr/lib/locale/es.UTF-8/es.UTF-8.so.3=../es_ES.UTF-8/es_ES.UTF-8.so.3
+s none usr/lib/locale/es.UTF-8/locale_description=../es_ES.UTF-8/locale_description
+d none usr/lib/locale/es.UTF-8/LC_MESSAGES 0755 root bin
+
+d none usr/lib/locale/it_IT.ISO8859-15 0755 root bin
+d none usr/lib/locale/it_IT.ISO8859-15/LC_COLLATE 0755 root bin
+d none usr/lib/locale/it_IT.ISO8859-15/LC_CTYPE 0755 root bin
+s none usr/lib/locale/it_IT.ISO8859-15/LC_CTYPE/LCL_DEF=../../iso_8859_15/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/it_IT.ISO8859-15/LC_MESSAGES=../it/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/it_IT.ISO8859-15/LC_MONETARY 0755 root bin
+d none usr/lib/locale/it_IT.ISO8859-15/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/it_IT.ISO8859-15/LC_TIME 0755 root bin
+f none usr/lib/locale/it_IT.ISO8859-15/it_IT.ISO8859-15.so.3 0555 root bin
+d none usr/lib/locale/it_IT.ISO8859-15@euro 0755 root bin
+s none usr/lib/locale/it_IT.ISO8859-15@euro/it_IT.ISO8859-15@euro.so.3=../it_IT.ISO8859-15/it_IT.ISO8859-15.so.3
+d none usr/lib/locale/it.ISO8859-15 0755 root bin
+s none usr/lib/locale/it.ISO8859-15/it.ISO8859-15.so.3=../it_IT.ISO8859-15/it_IT.ISO8859-15.so.3
+
+d none usr/lib/locale/it_IT.UTF-8 0755 root bin
+d none usr/lib/locale/it_IT.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/it_IT.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/it_IT.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/it_IT.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/it_IT.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/it_IT.UTF-8/LC_MESSAGES=../it.UTF-8/LC_MESSAGES
+d none usr/lib/locale/it_IT.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/it_IT.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/it_IT.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/it_IT.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/it_IT.UTF-8/LO_LTYPE/it_IT.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/it_IT.UTF-8/it_IT.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/it_IT.UTF-8/methods_it_IT.UTF-8.so.3=../common/methods_unicode.so.3
+d none usr/lib/locale/it_IT.UTF-8@euro 0755 root bin
+s none usr/lib/locale/it_IT.UTF-8@euro/it_IT.UTF-8@euro.so.3=../it_IT.UTF-8/it_IT.UTF-8.so.3
+s none usr/lib/locale/it_IT.UTF-8@euro/methods_it_IT.UTF-8@euro.so.3=../common/methods_unicode.so.3
+d none usr/lib/locale/it.UTF-8 0755 root bin
+s none usr/lib/locale/it.UTF-8/it.UTF-8.so.3=../it_IT.UTF-8/it_IT.UTF-8.so.3
+s none usr/lib/locale/it.UTF-8/locale_description=../it_IT.UTF-8/locale_description
+d none usr/lib/locale/it.UTF-8/LC_MESSAGES 0755 root bin
+
+d none usr/lib/locale/pt_PT.ISO8859-1 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/pt_PT.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+d none usr/lib/locale/pt_PT.ISO8859-1/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/pt_PT.ISO8859-1/pt_PT.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/pt 0755 root bin
+s none usr/lib/locale/pt/pt.so.3=../pt_PT.ISO8859-1/pt_PT.ISO8859-1.so.3
+d none usr/lib/locale/pt_PT 0755 root bin
+s none usr/lib/locale/pt_PT/pt_PT.so.3=../pt_PT.ISO8859-1/pt_PT.ISO8859-1.so.3
+s none usr/lib/locale/pt_PT/locale_description=../pt_PT.ISO8859-1/locale_description
+
+d none usr/lib/locale/pt_PT.ISO8859-15 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-15/LC_COLLATE 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-15/LC_CTYPE 0755 root bin
+s none usr/lib/locale/pt_PT.ISO8859-15/LC_CTYPE/LCL_DEF=../../iso_8859_15/LC_CTYPE/LCL_DEF
+d none usr/lib/locale/pt_PT.ISO8859-15/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-15/LC_MONETARY 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-15/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/pt_PT.ISO8859-15/LC_TIME 0755 root bin
+f none usr/lib/locale/pt_PT.ISO8859-15/pt_PT.ISO8859-15.so.3 0555 root bin
+f none usr/lib/locale/pt_PT.ISO8859-15/locale_description 0644 root bin
+f none usr/lib/locale/pt_PT.ISO8859-15/locale_map 0644 root bin
+d none usr/lib/locale/pt_PT.ISO8859-15@euro 0755 root bin
+s none usr/lib/locale/pt_PT.ISO8859-15@euro/pt_PT.ISO8859-15@euro.so.3=../pt_PT.ISO8859-15/pt_PT.ISO8859-15.so.3
+d none usr/lib/locale/pt.ISO8859-15 0755 root bin
+s none usr/lib/locale/pt.ISO8859-15/pt.ISO8859-15.so.3=../pt_PT.ISO8859-15/pt_PT.ISO8859-15.so.3
+
+d none usr/lib/locale/pt_PT.UTF-8 0755 root bin
+d none usr/lib/locale/pt_PT.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/pt_PT.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/pt_PT.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/pt_PT.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/pt_PT.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+d none usr/lib/locale/pt_PT.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/pt_PT.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/pt_PT.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/pt_PT.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/pt_PT.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/pt_PT.UTF-8/LO_LTYPE/pt_PT.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/pt_PT.UTF-8/pt_PT.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/pt_PT.UTF-8/methods_pt_PT.UTF-8.so.3=../common/methods_unicode.so.3
+
+f none usr/lib/locale/el_GR.ISO8859-7/locale_description 0644 root bin
+f none usr/lib/locale/el_GR.ISO8859-7/locale_map 0644 root bin
+f none usr/lib/locale/el_GR.ISO8859-7@euro/locale_description 0644 root bin
+f none usr/lib/locale/el_GR.ISO8859-7@euro/locale_map 0644 root bin
+f none usr/lib/locale/it_IT.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/it_IT.UTF-8/locale_map 0644 root bin
+f none usr/lib/locale/es_ES.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_ES.UTF-8/locale_map 0644 root bin
+f none usr/lib/locale/el_GR.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/el_GR.UTF-8/locale_map 0644 root bin
+f none usr/lib/locale/pt_PT.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/pt_PT.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/pt_PT.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/pt_PT.UTF-8/locale_map 0644 root bin
+
+#
+# Added to tidy up install
+#
+
+d none usr/lib/locale/el_GR 0755 root bin
+f none usr/lib/locale/el_GR/geo_map 0644 root bin
+d none usr/lib/locale/pt_PT 0755 root bin
+f none usr/lib/locale/pt_PT/geo_map 0644 root bin
+
+
+
+d none usr/lib/locale/el_CY.UTF-8 0755 root bin
+d none usr/lib/locale/el_CY.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/el_CY.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/el_CY.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/el_CY.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/el_CY.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+d none usr/lib/locale/el_CY.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/el_CY.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/el_CY.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/el_CY.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/el_CY.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/el_CY.UTF-8/LO_LTYPE/el_CY.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/el_CY.UTF-8/el_CY.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/el_CY.UTF-8/methods_el_CY.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/el_CY.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/el_CY.UTF-8/locale_map 0644 root bin
+
+
+d none usr/lib/locale/ca_ES.UTF-8 0755 root bin
+d none usr/lib/locale/ca_ES.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/ca_ES.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/ca_ES.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/ca_ES.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/ca_ES.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+d none usr/lib/locale/ca_ES.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/ca_ES.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/ca_ES.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/ca_ES.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/ca_ES.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/ca_ES.UTF-8/LO_LTYPE/ca_ES.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/ca_ES.UTF-8/ca_ES.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/ca_ES.UTF-8/methods_ca_ES.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/ca_ES.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/ca_ES.UTF-8/locale_map 0644 root bin
+
+d none usr/lib/locale/en_MT.UTF-8 0755 root bin
+d none usr/lib/locale/en_MT.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/en_MT.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/en_MT.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/en_MT.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/en_MT.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+d none usr/lib/locale/en_MT.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/en_MT.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/en_MT.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/en_MT.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/en_MT.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/en_MT.UTF-8/LO_LTYPE/en_MT.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/en_MT.UTF-8/en_MT.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/en_MT.UTF-8/methods_en_MT.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/en_MT.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/en_MT.UTF-8/locale_map 0644 root bin
+
+d none usr/lib/locale/mt_MT.UTF-8 0755 root bin
+d none usr/lib/locale/mt_MT.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/mt_MT.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/mt_MT.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/mt_MT.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/mt_MT.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+d none usr/lib/locale/mt_MT.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/mt_MT.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/mt_MT.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/mt_MT.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/mt_MT.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/mt_MT.UTF-8/LO_LTYPE/mt_MT.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/mt_MT.UTF-8/mt_MT.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/mt_MT.UTF-8/methods_mt_MT.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/mt_MT.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/mt_MT.UTF-8/locale_map 0644 root bin
+
+# End of new locales 
+# -----------------------------------------------------------------------
+
+

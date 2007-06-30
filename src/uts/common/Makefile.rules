@@ -1,0 +1,116 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# uts/common/Makefile.rules
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#pragma ident	"@(#)Makefile.rules	1.7	97/09/12 SMI"
+#
+#	This Makefile defines all the file build rules for the directory
+# uts/common and it's children. These are the source files which may
+# be considered common to all SunOS systems.
+#
+
+#
+#	This was implemented by pattern matching rules of the form:
+#
+# $(OBJS_DIR)/%.o:	 $(UTSBASE)/common/os/%.c
+#	$(COMPILE.c) -o $@ $<
+#
+# $(LINTS_DIR)/%.ln:	$(UTSBASE)/common/os/%.c
+#	@($(LHEAD) $(LINT.c) $< $(LTAIL))
+#
+#	For each directory containing source. This proved to slow under
+#	Nse because it caused a significant additional number of stats
+#	and stats are real slow under TFS. If TFS performance should
+#	improve, one might consider returning to the former implementation.
+#	In the former implementation, this file (Makefile.rules) was not
+#	needed and the pattern matching rules were in Makefile.files.
+#
+
+#
+#	C objects build rules
+#
+#	The following are alphabetized by source file path. Please maintain
+# this ordering.
+#
+$(OBJS_DIR)/jfp_cconvs.o:	$(UTSBASE)/common/jfp/jfp_cconvs.c
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/jfp_cconvs.c
+
+$(OBJS_DIR)/jfp_cconvj7.o:	$(UTSBASE)/common/jfp/jfp_cconvj7.c
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/jfp_cconvj7.c
+
+$(OBJS_DIR)/jfp_cconvj8.o:	$(UTSBASE)/common/jfp/jfp_cconvj8.c
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/jfp_cconvj8.c
+
+$(OBJS_DIR)/jfp_cconvu.o:  $(UTSBASE)/common/jfp/$$(@F:.o=.c)
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/$(@F:.o=.c)
+
+$(OBJS_DIR)/jfp_subr.o:		$(UTSBASE)/common/jfp/jfp_subr.c
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/jfp_subr.c
+
+$(OBJS_DIR)/jfp_cconvrs.o:  $(UTSBASE)/common/jfp/jfp_cconvrs.c
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/jfp_cconvrs.c
+
+$(OBJS_DIR)/jfp_cconvru.o:  $(UTSBASE)/common/jfp/$$(@F:.o=.c)
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/$(@F:.o=.c)
+
+$(OBJS_DIR)/jfp_sjsubr.o:	$(UTSBASE)/common/jfp/jfp_sjsubr.c
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/jfp_sjsubr.c
+
+$(OBJS_DIR)/jfp_utfsubr.o:	$(UTSBASE)/common/jfp/$$(@F:.o=.c)
+	$(COMPILE.c) -o $@ $(UTSBASE)/common/jfp/$(@F:.o=.c)
+
+#
+#	Section 1b:	Lint `objects'
+#
+#	The following are alphabetized by source file path. Please maintain
+# this ordering.
+#
+$(LINTS_DIR)/jfp_cconvs.ln:	$(UTSBASE)/common/jfp/jfp_cconvs.c
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/jfp_cconvs.c $(LTAIL))
+
+$(LINTS_DIR)/jfp_cconvj7.ln:	$(UTSBASE)/common/jfp/jfp_cconvj7.c
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/jfp_cconvj7.c $(LTAIL))
+
+$(LINTS_DIR)/jfp_cconvj8.ln:	$(UTSBASE)/common/jfp/jfp_cconvj8.c
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/jfp_cconvj8.c $(LTAIL))
+
+$(LINTS_DIR)/jfp_cconvu.ln:    $(UTSBASE)/common/jfp/$$(@F:.ln=.c)
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/$(@F:.ln=.c) $(LTAIL))
+
+$(LINTS_DIR)/jfp_subr.ln:	$(UTSBASE)/common/jfp/jfp_subr.c
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/jfp_subr.c $(LTAIL))
+
+$(LINTS_DIR)/jfp_cconvrs.ln:    $(UTSBASE)/common/jfp/jfp_cconvrs.c
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/jfp_cconvrs.c $(LTAIL))
+
+$(LINTS_DIR)/jfp_cconvru.ln:    $(UTSBASE)/common/jfp/$$(@F:.ln=.c)
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/$(@F:.ln=.c) $(LTAIL))
+
+$(LINTS_DIR)/jfp_sjsubr.ln:	$(UTSBASE)/common/jfp/jfp_sjsubr.c
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/jfp_sjsubr.c $(LTAIL))
+
+$(LINTS_DIR)/jfp_utfsubr.ln:	$(UTSBASE)/common/jfp/$$(@F:.ln=.c)
+	@($(LHEAD) $(LINT.c) $(UTSBASE)/common/jfp/$(@F:.ln=.c) $(LTAIL))

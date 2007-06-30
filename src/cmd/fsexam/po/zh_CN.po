@@ -1,0 +1,498 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+# Simplified Chinese translation of fsexam
+# Copyright (C) 2004 Sun, Inc
+# This file is distributed under the same license as the fsexam-0.1 package.
+# Federic Zhang <federic.zhang@sun.com>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fsexam 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-30 13:58+0800\n"
+"PO-Revision-Date: 2004-05-17 09:34+0000\n"
+"Last-Translator: Federic Zhang <federic.zhang@sun.com>\n"
+"Language-Team: Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/fsexam.c:61 src/fsexam-ui.c:954 data/fsexam.desktop.in.h:1
+msgid "File System Examiner"
+msgstr "文件系统查看器"
+
+#: src/fsexam-conversion.c:139
+msgid "File System Examiner name conversion"
+msgstr "文件系统检查器文件名转换"
+
+#: src/fsexam-conversion.c:213
+msgid "Folder already exists"
+msgstr "文件夹已存在"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-conversion.c:218
+msgid "File already exists"
+msgstr "文件已存在"
+
+#: src/fsexam-conversion.c:233
+msgid "No permission to rename"
+msgstr "没有权限重命名"
+
+#: src/fsexam-conversion.c:236
+msgid "File doesn't exist yet"
+msgstr "文件不存在"
+
+#: src/fsexam-conversion.c:356
+msgid "delete Carriage Return"
+msgstr "删除回车"
+
+#: src/fsexam-conversion.c:424
+msgid "delete Carriage Return only"
+msgstr "仅删除回车"
+
+#: src/fsexam-conversion.c:433
+msgid "add Carriage Return"
+msgstr "添加回车"
+
+#: src/fsexam-conversion.c:436
+msgid "add Carriage Return only"
+msgstr "仅添加回车"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-conversion.c:494
+msgid "File name - conversion failure"
+msgstr "文件名 - 转换错误"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-conversion.c:499
+msgid "File name - UTF8 already"
+msgstr "文件名 - 已是 UTF8"
+
+#: src/fsexam-ui.c:256 src/fsexam-ui.c:1023
+msgid "Location:"
+msgstr "位置："
+
+#. write the error message to statusbar
+#: src/fsexam-ui.c:378 src/fsexam-ui.c:473
+msgid "No read permission"
+msgstr "没有读权限"
+
+#: src/fsexam-ui.c:381
+msgid "Folder doesn't exist yet"
+msgstr "文件夹不存在"
+
+#: src/fsexam-ui.c:385
+msgid "No folder specified"
+msgstr "未指定文件夹"
+
+#. the directory doesn't contain any files
+#: src/fsexam-ui.c:480
+msgid "Null folder"
+msgstr "空文件夹"
+
+#: src/fsexam-ui.c:574
+msgid "Folder Selection"
+msgstr "选择文件夹"
+
+#: src/fsexam-ui.c:623 src/fsexam-preference.c:380
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "显示帮助时错误: %s"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-ui.c:654
+msgid "fsexam"
+msgstr "fsexam"
+
+#: src/fsexam-ui.c:656
+msgid ""
+"fsexam is to help migrate file name and file content from legacy encoding to "
+"UTF8"
+msgstr "fsexam帮助用户移植传统编码的文件名和文件内容编码到UTF8"
+
+#: src/fsexam-ui.c:783
+msgid "_File"
+msgstr "文件(_F)"
+
+#: src/fsexam-ui.c:796
+msgid "_Open..."
+msgstr "打开(_O)..."
+
+#: src/fsexam-ui.c:809
+msgid "_Edit"
+msgstr "编辑(_E)"
+
+#: src/fsexam-ui.c:834
+msgid "_Restore Original File"
+msgstr "恢复原始文件(_R)"
+
+#: src/fsexam-ui.c:846
+msgid "Convert _Filename"
+msgstr "转换文件名(_F)"
+
+#: src/fsexam-ui.c:855
+msgid "_Convert Content"
+msgstr "转换文件内容(_C)"
+
+#: src/fsexam-ui.c:859
+msgid "Pre_view Content"
+msgstr "预览文件内容(_V)"
+
+#: src/fsexam-ui.c:874
+msgid "_Preferences"
+msgstr "首选项(_P)"
+
+#: src/fsexam-ui.c:877
+msgid "_View"
+msgstr "显示(_V)"
+
+#: src/fsexam-ui.c:886
+msgid "_Report Pane"
+msgstr "报告面板(_R)"
+
+#: src/fsexam-ui.c:893
+msgid "_Help"
+msgstr "帮助(_H)"
+
+#: src/fsexam-ui.c:906
+msgid "_Contents"
+msgstr "内容(_C)"
+
+#: src/fsexam-ui.c:915
+msgid "_About"
+msgstr "关于(_A)"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-ui.c:930
+#, c-format
+msgid "Error loading icon %s\n"
+msgstr "加载图标 %s 时出错\n"
+
+#: src/fsexam-ui.c:977
+msgid "Welcome"
+msgstr "欢迎"
+
+#: src/fsexam-preference.c:406
+msgid "File System Examiner preferences"
+msgstr "文件系统检查器首选项"
+
+#: src/fsexam-preference.c:425
+msgid "Sub-folder:"
+msgstr "子文件夹："
+
+#: src/fsexam-preference.c:433
+msgid "_Recursive Mode"
+msgstr "递归模式(_R)"
+
+#: src/fsexam-preference.c:445
+msgid "User intervention:"
+msgstr "用户介入："
+
+#: src/fsexam-preference.c:453
+msgid "_Automatic Conversion"
+msgstr "自动转换(_A)"
+
+#: src/fsexam-preference.c:470
+msgid "Encode list:"
+msgstr "编码列表："
+
+#: src/fsexam-content.c:178
+msgid "Not plain text"
+msgstr "非文本文件"
+
+#: src/fsexam-content.c:294
+msgid "File System Examiner content conversion"
+msgstr "文件系统检查器内容转换"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-content.c:408
+msgid "Byte sequence not recognized yet"
+msgstr "尚未识别字节序列"
+
+#: src/fsexam-content.c:413
+msgid "File content - UTF8 already"
+msgstr "文件内容 - 已是 UTF8"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-content.c:450 src/fsexam-content.c:691
+msgid "File content - open failure"
+msgstr "文件内容 - 打开失败"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-content.c:456 src/fsexam-content.c:696
+msgid "File content - write error"
+msgstr "文件内容 - 写入错误"
+
+#: src/fsexam-content.c:464
+#, c-format
+msgid "File content - convert from %s"
+msgstr "文件内容 - 从 %s 转换"
+
+#: src/fsexam-content.c:467
+#, c-format
+msgid "File content - convert from %s and delete Carriage Return"
+msgstr "文件内容 - 从 %s 转换并删除回车"
+
+#: src/fsexam-content.c:470
+msgid "File content - delete Carriage Return only"
+msgstr "文件内容 - 仅删除回车"
+
+#: src/fsexam-content.c:519 src/fsexam-content.c:981
+msgid "Cannot convert contents of folder"
+msgstr "无法转换文件夹内容"
+
+#: src/fsexam-content.c:622
+#, c-format
+msgid "%s doesn't exist yet"
+msgstr "%s 尚不存在"
+
+#: src/fsexam-content.c:639
+msgid "File has been emptied, can not be restored!"
+msgstr "文件已被清空，无法恢复！"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: src/fsexam-content.c:679
+msgid "File content - conversion failure"
+msgstr "文件内容 - 转换失败"
+
+#: src/fsexam-content.c:704
+#, c-format
+msgid "Restore %s"
+msgstr "恢复 %s"
+
+#: src/fsexam-content.c:707
+#, c-format
+msgid "Restore %s and add Carriage Return"
+msgstr "恢复 %s 并添加回车"
+
+#: src/fsexam-content.c:710
+msgid "Restore by adding Carriage Return"
+msgstr "通过添加回车来恢复"
+
+#: src/fsexam-content.c:713
+msgid "Restore UTF8"
+msgstr "恢复 UTF8"
+
+#: src/fsexam-content.c:716
+msgid "Restore UTF8 and delete Carriage Return"
+msgstr "恢复 UTF8 并删除回车"
+
+#: src/fsexam-content.c:719
+msgid "Restore by deleting Carriage Return"
+msgstr "删除回车以恢复"
+
+#: src/fsexam-content.c:969
+msgid "Cannot preview multiple selections"
+msgstr "无法预览多项选择"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.schemas.in.h:1
+msgid ""
+"A list of suffix. Any file whose suffix belongs to the list are assumed by "
+"fsexam as plain text file."
+msgstr "后辍列表。所有后辍在此列表中的文件都被 fsexam 假定为纯文本文件。"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.schemas.in.h:2
+msgid ""
+"Only applicable for file name conversion! It's recursive mode, by enabling "
+"it, fsexam will convert the name of file and subdirectory to UTF8 "
+"recursively."
+msgstr ""
+"只适用于文件名转换！它是一种递归模式，通过启用它，fsexam 将文件名和子目录名递"
+"归地转换为 UTF8 格式。"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.schemas.in.h:3
+msgid ""
+"Only applicable for file name conversion. It's automatic mode, by enabling "
+"it, fsexam will automatically convert with the best conversion result "
+"without user interference. Otherwise, a dialog will display with several "
+"conversion candidates and user needs to decide which conversion is the best "
+"one."
+msgstr ""
+"只适用于文件名转换。它是一种自动模式，通过启用它，fsexam 将自动进行能获得最佳"
+"转换结果的转换，无需用户干预。否则，将会显示一个对话框，其中包含若干备选转换"
+"选项，用户需要决定哪种转换是最佳方式。"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.schemas.in.h:4
+msgid ""
+"The list of legacy encoding name available for the specific language. Note "
+"that the order within the list is significant. fsexam treats as the best one "
+"the first one from which conversion can be made successfully."
+msgstr ""
+"特定语言的遗留编码名称列表。注意：列表中的顺序十分重要。fsexam 将可以从其进行"
+"成功转换的最佳名称放在列表中的第一位。"
+
+#: data/fsexam.schemas.in.h:5
+msgid "[ISO8859-1]"
+msgstr "[GB18030,BIG5,ISO-2022-CN]"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.schemas.in.h:6
+msgid "automatic mode"
+msgstr "自动模式"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.schemas.in.h:7
+msgid "encoding list"
+msgstr "编码列表"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.schemas.in.h:8
+msgid "recursive mode"
+msgstr "递归模式"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.schemas.in.h:9
+msgid "suffix list"
+msgstr "后辍列表"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: data/fsexam.desktop.in.h:2
+msgid "Help migrate from legacy encoding to UTF8"
+msgstr "帮助从原有编码迁移至 UTF8"
+
+#~ msgid "text"
+#~ msgstr "文本"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Apply by name"
+#~ msgstr "按名称应用"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Apply by content"
+#~ msgstr "按内容应用"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "popen error, please try again!"
+#~ msgstr "打开错误，请重试！"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Not one plain text"
+#~ msgstr "不是纯文本文件"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content candidate window"
+#~ msgstr "文件内容备选窗口"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - successful conversion"
+#~ msgstr "文件内容 - 成功转换"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - UTF8 alreay"
+#~ msgstr "文件内容 - 已是 UTF8"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - successful undo"
+#~ msgstr "文件内容 - 成功撤消"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Directory already exists"
+#~ msgstr "目录已存在"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content"
+#~ msgstr "文件内容"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Null directory"
+#~ msgstr "空目录"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Peek content"
+#~ msgstr "取出内容"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Directory node"
+#~ msgstr "目录节点"
+
+#~ msgid "Candidate Selection"
+#~ msgstr "候选选择"
+
+#~ msgid "File Hierarchy"
+#~ msgstr "文件目录"
+
+#~ msgid "Directory doesn't exist yet"
+#~ msgstr "目录不存在"
+
+#~ msgid "No directory specified"
+#~ msgstr "没有指定目录"
+
+#~ msgid "Directory Selection"
+#~ msgstr "目录选择"
+
+#~ msgid "_Action"
+#~ msgstr "操作(_A)"
+
+#~ msgid "Report Pane"
+#~ msgstr "转码报告"
+
+#~ msgid "Encoding List"
+#~ msgstr "编码列表"
+
+#~ msgid "Preference Setting"
+#~ msgstr "缺省设置"
+
+#~ msgid "Recursive Mode"
+#~ msgstr "递归模式"
+
+#~ msgid "Automatic Conversion"
+#~ msgstr "自动转换"
+
+#~ msgid "About"
+#~ msgstr "关于"

@@ -1,0 +1,96 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none usr/lib/iconv/amd64 0755 root bin
+s none usr/lib/iconv/amd64/646%GBK.so=./646%CODESET.so
+s none usr/lib/iconv/amd64/646%gb2312.so=./646%CODESET.so
+f none usr/lib/iconv/amd64/HZ-GB-2312%zh_CN.euc.so 0755 root bin
+s none usr/lib/iconv/amd64/HZ-GB-2312%zh_CN.gbk.so=./HZ-GB-2312%zh_CN.euc.so
+s none usr/lib/iconv/amd64/gb2312%iso2022.so=./zh_CN.euc%zh_CN.iso2022-CN.so
+s none usr/lib/iconv/amd64/iso2022%gb2312.so=./zh_CN.iso2022-CN%zh_CN.euc.so
+f none usr/lib/iconv/amd64/zh_CN.euc%HZ-GB-2312.so 0755 root bin
+f none usr/lib/iconv/amd64/zh_CN.gbk%HZ-GB-2312.so 0755 root bin
+f none usr/lib/iconv/amd64/zh_TW-big5%zh_CN.euc.so 0755 root bin
+f none usr/lib/iconv/amd64/zh_CN.euc%zh_TW-big5.so 0755 root bin
+s none usr/lib/iconv/amd64/zh_CN.euc%zh_CN.iso2022-7.so=./zh_CN.euc%zh_CN.iso2022-CN.so
+f none usr/lib/iconv/amd64/zh_CN.euc%zh_CN.iso2022-CN.so 0755 root bin
+f none usr/lib/iconv/amd64/zh_CN.gbk%zh_CN.iso2022-CN.so 0755 root bin
+s none usr/lib/iconv/amd64/zh_CN.gb18030%zh_CN.iso2022-CN.so=./zh_CN.gbk%zh_CN.iso2022-CN.so
+f none usr/lib/iconv/amd64/zh_CN.gbk%zh_HK.hkscs.so 0755 root bin
+s none usr/lib/iconv/amd64/zh_CN.gbk%zh_HK.big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
+s none usr/lib/iconv/amd64/zh_CN.gbk%zh_HK-big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
+s none usr/lib/iconv/amd64/zh_CN.gb18030%zh_HK.hkscs.so=./zh_CN.gbk%zh_HK.hkscs.so
+s none usr/lib/iconv/amd64/zh_CN.gb18030%zh_HK.big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
+s none usr/lib/iconv/amd64/zh_CN.gb18030%zh_HK-big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
+f none usr/lib/iconv/amd64/zh_CN.gbk%zh_TW-big5.so 0755 root bin
+s none usr/lib/iconv/amd64/zh_CN.gb18030%zh_TW-big5.so=./zh_CN.gbk%zh_TW-big5.so
+f none usr/lib/iconv/amd64/zh_CN.gbk%zh_TW-big5p.so 0755 root bin
+s none usr/lib/iconv/amd64/zh_CN.gb18030%zh_TW-big5p.so=./zh_CN.gbk%zh_TW-big5p.so
+s none usr/lib/iconv/amd64/zh_CN.iso2022-7%zh_CN.euc.so=./zh_CN.iso2022-CN%zh_CN.euc.so
+f none usr/lib/iconv/amd64/zh_CN.iso2022-CN%zh_CN.euc.so 0755 root bin
+f none usr/lib/iconv/amd64/zh_CN.iso2022-CN%zh_CN.gbk.so 0755 root bin
+f none usr/lib/iconv/amd64/zh_HK.hkscs%zh_CN.gbk.so 0755 root bin
+s none usr/lib/iconv/amd64/zh_HK.big5hk%zh_CN.gbk.so=./zh_HK.hkscs%zh_CN.gbk.so
+s none usr/lib/iconv/amd64/zh_HK-big5hk%zh_CN.gbk.so=./zh_HK.hkscs%zh_CN.gbk.so
+f none usr/lib/iconv/amd64/zh_TW-big5%zh_CN.gbk.so 0755 root bin
+f none usr/lib/iconv/amd64/zh_TW-big5p%zh_CN.gbk.so 0755 root bin
+s none usr/lib/iconv/amd64/zh_HK.hkscs%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
+s none usr/lib/iconv/amd64/zh_HK.big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
+s none usr/lib/iconv/amd64/zh_HK-big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
+s none usr/lib/iconv/amd64/zh_TW-big5%zh_CN.gb18030.so=./zh_TW-big5%zh_CN.gbk.so
+s none usr/lib/iconv/amd64/zh_TW-big5p%zh_CN.gb18030.so=./zh_TW-big5p%zh_CN.gbk.so
+s none usr/lib/locale/zh.GBK/LC_CTYPE/64=./amd64
+d none usr/lib/locale/zh.GBK/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/zh.GBK/LC_CTYPE/amd64/wdresolve.so 0555 root bin
+s none usr/lib/locale/zh.GBK/64=./amd64
+d none usr/lib/locale/zh.GBK/amd64 0755 root bin
+f none usr/lib/locale/zh.GBK/amd64/methods_zh.GBK.so.3 0555 root bin
+f none usr/lib/locale/zh.GBK/amd64/zh.GBK.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GB18030/64=./amd64
+d none usr/lib/locale/zh_CN.GB18030/amd64 0755 root bin
+f none usr/lib/locale/zh_CN.GB18030/amd64/methods_zh_CN.GB18030.so.3 0555 root bin
+f none usr/lib/locale/zh_CN.GB18030/amd64/zh_CN.GB18030.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/64=./amd64
+d none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/amd64/wdresolve.so 0555 root bin
+s none usr/lib/locale/zh.UTF-8/LC_CTYPE/64=./amd64
+d none usr/lib/locale/zh.UTF-8/LC_CTYPE/amd64 0755 root bin
+s none usr/lib/locale/zh.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so
+s none usr/lib/locale/zh.UTF-8/LO_LTYPE/64=./amd64
+d none usr/lib/locale/zh.UTF-8/LO_LTYPE/amd64 0755 root bin
+s none usr/lib/locale/zh.UTF-8/LO_LTYPE/amd64/zh.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
+s none usr/lib/locale/zh.UTF-8/64=./amd64
+d none usr/lib/locale/zh.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/zh.UTF-8/amd64/methods_zh.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+f none usr/lib/locale/zh.UTF-8/amd64/zh.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GBK/64=./amd64
+d none usr/lib/locale/zh_CN.GBK/amd64 0755 root bin
+s none usr/lib/locale/zh_CN.GBK/amd64/methods_zh_CN.GBK.so.3=../../zh.GBK/amd64/methods_zh.GBK.so.3
+s none usr/lib/locale/zh_CN.GBK/amd64/zh_CN.GBK.so.3=../../zh.GBK/amd64/zh.GBK.so.3
+s none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/64=./amd64
+d none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/amd64 0755 root bin
+s none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/amd64/zh_CN.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
+s none usr/lib/locale/zh_CN.UTF-8/64=./amd64
+d none usr/lib/locale/zh_CN.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/zh_CN.UTF-8/amd64/methods_zh_CN.UTF-8.so.3=../../zh.UTF-8/amd64/methods_zh.UTF-8.so.3
+s none usr/lib/locale/zh_CN.UTF-8/amd64/zh_CN.UTF-8.so.3=../../zh.UTF-8/amd64/zh.UTF-8.so.3

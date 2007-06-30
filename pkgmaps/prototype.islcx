@@ -1,0 +1,43 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+# SUNWisolc
+#
+
+d none usr 0755 root sys
+d none usr/lib 0755 root bin
+d none usr/lib/iconv 0755 root bin
+d none usr/lib/iconv/sparcv9 0755 root bin
+#
+f none usr/lib/iconv/sparcv9/646%8859.so 0755 root bin
+s none usr/lib/iconv/sparcv9/646%ISO8859-1.so=646%8859.so
+s none usr/lib/iconv/sparcv9/646%ISO8859-2.so=646%8859.so
+s none usr/lib/iconv/sparcv9/646%ISO8859-4.so=646%8859.so
+s none usr/lib/iconv/sparcv9/646%ISO8859-5.so=646%8859.so
+s none usr/lib/iconv/sparcv9/646%ISO8859-7.so=646%8859.so
+s none usr/lib/iconv/sparcv9/646%ISO8859-9.so=646%8859.so
+
+s none usr/lib/iconv/sparcv9/646%ISO8859-15.so=./646%8859.so
+s none usr/lib/iconv/sparcv9/646%ansi-1251.so=./646%8859.so
+s none usr/lib/iconv/sparcv9/646%KOI8-R.so=./646%8859.so
+

@@ -1,0 +1,239 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+FORM_PART
+obj0{
+	type	Display
+	name	DisplayForm
+	msg_header_charset		GB18030
+	msg_body_charset		GB18030
+	plaintext_bodycharset		GB18030
+	taggedtext_header_charset	GB18030
+	taggedtext_body_charset		GB18030
+}
+obj1{
+	type	InComingStream
+	name	InComingStreamForm
+	msg_header_charset		ISO-2022-CN;CN-GB;GB18030;GBK;UTF-8;BIG5;Big5-HKSCS;eucCN;iso-8859-1;HZ-GB-2312;zh_TW-big5
+	msg_body_charset		ISO-2022-CN;CN-GB;GB18030;GBK;UTF-8;BIG5;Big5-HKSCS;eucCN;iso-8859-1;HZ-GB-2312;zh_TW-big5
+	taggedtext_header_charset	ISO-2022-CN;CN-GB;GB18030;GBK;UTF-8;BIG5;Big5-HKSCS;eucCN;iso-8859-1;HZ-GB-2312;zh_TW-big5
+	taggedtext_body_charset		ISO-2022-CN;CN-GB;GB18030;GBK;UTF-8;BIG5;Big5-HKSCS;eucCN;iso-8859-1;HZ-GB-2312;zh_TW-big5
+	msg_header_encoding		None
+	msg_body_encoding		None
+	taggedtext_header_encoding	None
+	taggedtext_body_encoding	None
+	mail_type			Unknown
+}
+obj2{
+	type	OutGoingStream
+	name	OutGoingStreamForm
+	msg_header_charset		ASCII;GB18030;ISO-2022-CN
+	msg_body_charset		ASCII;GB18030;ISO-2022-CN
+	taggedtext_header_charset	ASCII;GB18030;ISO-2022-CN
+	taggedtext_body_charset		ASCII;GB18030;ISO-2022-CN
+	msg_header_encoding		Base64
+	msg_body_encoding		None
+	taggedtext_header_encoding	Base64
+	taggedtext_body_encoding	None
+	mail_type			MIME
+}
+obj3{
+	type	OutGoingStream
+	name	OutGoingStreamForm_V3
+	msg_header_charset		ASCII;GB18030
+	msg_body_charset		ASCII;ISO-2022-CN
+	taggedtext_header_charset	ASCII;GB18030
+	taggedtext_body_charset		ASCII;ISO-2022-CN
+	msg_header_encoding		None
+	msg_body_encoding		None
+	taggedtext_header_encoding	None
+	taggedtext_body_encoding	None
+	mail_type			V3
+}
+obj4{
+	type	OutGoingStream
+	name	OutGoingStreamForm_V3_Attach
+	msg_header_charset		ASCII;GB18030
+	msg_body_charset		ASCII;GB18030
+	taggedtext_header_charset	ASCII;GB18030
+	taggedtext_body_charset		ASCII;GB18030
+	msg_header_encoding		None
+	msg_body_encoding		None
+	taggedtext_header_encoding	None
+	taggedtext_body_encoding	None
+	mail_type			V3
+}
+obj5{
+	type	Display
+	name	PrintForm
+	msg_header_charset		GB18030
+	msg_body_charset		GB18030
+	plaintext_bodycharset		GB18030
+	taggedtext_header_charset	GB18030
+	taggedtext_body_charset		GB18030
+}
+
+END FORM_PART
+ICONV_PART
+conv0{
+	encoding	ISO-2022-CN;GB18030
+	conversion	zh_CN.iso2022-CN;zh_CN.gbk
+	direction	Both
+}
+conv1{
+	encoding	iso-8859-1;GB18030
+	conversion	ISO8859-1;UTF-8;zh_CN.gbk
+	direction	Both
+}
+conv2{
+	encoding	CN-GB;GB18030
+	conversion	UTF-8;zh_CN.gbk
+	direction	Both
+}
+conv3{
+	encoding	eucCN;GB18030
+	conversion	zh_CN.euc;UTF-8;zh_CN.gbk
+	direction	Both
+}
+conv4{
+	encoding	HZ-GB-2312;GB18030
+	conversion	HZ-GB-2312;zh_CN.gbk
+	direction	Both
+}
+conv5{
+	encoding	BIG5;GB18030
+	conversion	zh_TW-big5;UTF-8;zh_CN.gbk
+	direction	Both
+}
+conv6{
+	encoding	zh_TW-big5;GB18030
+	conversion	zh_TW-big5;UTF-8;zh_CN.gbk
+	direction	Both
+}
+conv7{
+	encoding	UTF-8;GB18030
+	conversion	UTF-8;zh_CN.gbk
+	direction	Both
+}
+conv8{
+	encoding	Big5-HKSCS;GB18030
+	conversion	zh_HK.big5hk;zh_CN.gbk
+	direction	Both
+}
+conv9{
+        encoding        GBK;GB18030
+        conversion      zh_CN.gbk;UTF-8;zh_CN.gb18030
+        direction       Both
+}
+END ICONV_PART
+CHARSET_PART
+cs0{
+	name		ISO-2022-CN
+	mime_name	ISO-2022-CN
+	v3_name		zh_CN.iso2022-CN
+	iconv_name	zh_CN.iso2022-CN
+	format		7BIT
+	ascii_superset	True
+}
+cs1{
+	name	ASCII
+	mime_name	US-ASCII
+	v3_name		US-ASCII
+	iconv_name	US-ASCII
+	ascii_superset	True
+}
+cs2{
+	name		GB18030
+	mime_name	GB18030
+	v3_name		X-GB18030
+	iconv_name	zh_CN.gbk
+	ascii_superset	True
+}
+cs3{
+        name    CN-GB
+        mime_name       CN-GB
+        v3_name         CN-GB
+        iconv_name      ISO8859-1
+	format		ASCII
+        ascii_superset  True
+}
+cs4{
+        name    iso-8859-1
+        mime_name       iso-8859-1
+        v3_name         ISO8859-1
+        iconv_name      ISO8859-1
+        ascii_superset  True
+}
+cs5{
+	name		eucCN
+	mime_name	zh_CN.euc
+	v3_name		X-zh_CN.euc
+	iconv_name	zh_CN.euc
+	format	ISO_94_96
+	ascii_superset	True
+}
+cs6{
+	name		HZ-GB-2312
+	mime_name	HZ-GB-2312
+	iconv_name	HZ-GB-2312
+	format		7BIT
+}
+cs7{
+	name		BIG5
+	mime_name	BIG5
+	v3_name		X-zh_TW-big5
+	iconv_name	zh_TW-big5
+	ascii_superset	True
+}
+cs8{
+	name		zh_TW-big5
+	mime_name	zh_TW-big5
+	v3_name		X-zh_TW-big5
+	iconv_name	zh_TW-big5
+	ascii_superset	True
+}
+cs9{
+	name		UTF-8
+	mime_name	UTF-8
+	v3_name		UTF-8
+	iconv_name	UTF-8	
+	mail_header_encoding	Quoted-Printable
+	mail_body_encoding	Quoted-Printable
+	format	MB_String
+	ascii_superset	True
+}
+cs10{
+	name		Big5-HKSCS
+	mime_name	Big5-HKSCS
+	v3_name		X-Big5-HKSCS
+	iconv_name	zh_HK.big5hk
+	ascii_superset	True
+}
+cs11{
+        name            GBK
+        mime_name       GBK
+        v3_name         X-GBK
+        iconv_name      zh_CN.gbk
+        ascii_superset  True
+}
+END CHARSET_PART

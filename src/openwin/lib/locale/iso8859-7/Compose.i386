@@ -1,0 +1,313 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#
+# Copyright (C) 1994 X Consortium
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software. 
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+# X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+# AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNEC-
+# TION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# Except as contained in this notice, the name of the X Consortium shall not
+# be used in advertising or otherwise to promote the sale, use or other deal-
+# ings in this Software without prior written authorization from the X Consor-
+# tium.
+#
+# X Window System is a trademark of X Consortium, Inc.
+#
+
+#
+# $SunId$         (c) Sun Microsystems, Inc.
+#
+# Compose table for the Greek language [timf]
+#
+
+
+#
+# Native English mode
+#
+
+STATE   "[ English ]"
+Ctrl<space>		: SWITCH_STATE_TO  "[ E\353\353\347\355\351\352\334 ]"
+<dead_acute>		: "\073"		semicolon
+<dead_diaeresis>	: "\072"	colon
+
+#Added for support for new glyphs : drachma, greek question mark
+#and greek ypogegrammeni - v.lee,g11n(27/9/2001)
+<drachma>	:	"\245"	drachma
+<erotimatiko>	:	"\256"	Greek_questionmark
+<ypogegrammeni> :	"\252"	Greek_ypogegrammeni
+#Compose sequences to bring up the glyphs
+Ctrl<T> <D>		:	"\245"
+Ctrl<T> <Q>		:	"\256"
+Ctrl<T> <Y>		:	"\252"
+END_STATE
+
+
+#
+# Greek mode
+#
+
+
+STATE   "[ Eλληνικά ]"
+Ctrl<space>    	: SWITCH_STATE_TO "[ English ]"
+
+#Added for support for new glyphs : drachma, greek question mark
+#and greek ypogegrammeni - v.lee,g11n(27/9/2001)
+<drachma>	:	"\245"	drachma
+<erotimatiko>	:	"\256"	Greek_questionmark
+<ypogegrammeni> :	"\252"	Greek_ypogegrammeni
+#Compose sequences to bring up the glyphs
+Ctrl<T> <D> :	"\245"
+Ctrl<T> <Q> :	"\256"
+Ctrl<T> <Y> :	"\252"
+
+
+# Second row
+<at>		: "\100"	at
+<numbersign>	: "\043"	numbersign
+<dollar>	: "\044"	dollar
+<percent>	: "\045"	percent
+<asciicircum>	: "\136"	asciicircum
+<ampersand>	: "\046"	ampersand
+<asterisk>	: "\052"	asterisk
+
+
+# Third row
+
+
+<q>             : "\073"	semicolon
+<w>             : "\362"	Greek_sigma
+<e>             : "\345"	Greek_epsilon
+<r>             : "\361"	Greek_rho
+<t>             : "\364"	Greek_tau
+<y>             : "\365"	Greek_upsilon
+<u>             : "\350"	Greek_theta
+<i>             : "\351"	Greek_iota
+<o>             : "\357"	Greek_omicron
+<p>             : "\360"	Greek_pi
+
+<Greek_sigma>             	: "\362"	Greek_sigma
+<Greek_epsilon>             	: "\345"	Greek_epsilon
+<Greek_rho>             	: "\361"	Greek_rho
+<Greek_tau>             	: "\364"	Greek_tau
+<Greek_upsilon>             	: "\365"	Greek_upsilon
+<Greek_theta>             	: "\350"	Greek_theta
+<Greek_iota>             	: "\351"	Greek_iota
+<Greek_omicron>             	: "\357"	Greek_omicron
+<Greek_pi>             		: "\360"	Greek_pi
+
+
+
+<Q>            	: "\072"	colon
+<W>            	: "\323"	Greek_SIGMA
+<E>             : "\305"	Greek_EPSILON
+<R>             : "\321"	Greek_RHO
+<T>             : "\324"	Greek_TAU
+<Y>             : "\325"	Greek_UPSILON
+<U>             : "\310"	Greek_THETA
+<I>             : "\311"	Greek_IOTA
+<O>             : "\317"	Greek_OMICRON
+<P>             : "\320"	Greek_PI
+
+<Greek_SIGMA>            	: "\323"	Greek_SIGMA
+<Greek_EPSILON>             	: "\305"	Greek_EPSILON
+<Greek_RHO>             	: "\321"	Greek_RHO
+<Greek_TAU>             	: "\324"	Greek_TAU
+<Greek_UPSILON>             	: "\325"	Greek_UPSILON
+<Greek_THETA>             	: "\310"	Greek_THETA
+<Greek_IOTA>             	: "\311"	Greek_IOTA
+<Greek_OMICRON>             	: "\317"	Greek_OMICRON
+<Greek_PI>             		: "\320"	Greek_PI
+
+
+
+# Fourth row
+
+<a>             : "\341"	Greek_alpha
+<s>             : "\363"	Greek_finalsmallsigma
+<d>             : "\344"	Greek_delta
+<f>             : "\366"	Greek_phi
+<g>             : "\343"	Greek_gamma
+<h>             : "\347"	Greek_eta
+<j>             : "\356"	Greek_xi
+<k>             : "\352"	Greek_kappa
+<l>             : "\353"	Greek_lamda
+
+<Greek_alpha>             	: "\341"	Greek_alpha
+<Greek_finalsmallsigma>       	: "\363"	Greek_finalsmallsigma
+<Greek_delta>             	: "\344"	Greek_delta
+<Greek_phi>             	: "\366"	Greek_phi
+<Greek_gamma>             	: "\343"	Greek_gamma
+<Greek_eta>             	: "\347"	Greek_eta
+<Greek_xi>             		: "\356"	Greek_xi
+<Greek_kappa>             	: "\352"	Greek_kappa
+<Greek_lamda>             	: "\353"	Greek_lamda
+
+<A>             : "\301"	Greek_ALPHA
+<S>             : "\323"	Greek_SIGMA
+<D>             : "\304"	Greek_DELTA
+<F>             : "\326"	Greek_PHI
+<G>             : "\303"	Greek_GAMMA
+<H>             : "\307"	Greek_ETA
+<J>             : "\316"	Greek_XI
+<K>             : "\312"	Greek_KAPPA
+<L>             : "\313"	Greek_LAMDA
+
+<Greek_ALPHA>             	: "\301"	Greek_ALPHA
+<Greek_SIGMA>             	: "\323"	Greek_SIGMA
+<Greek_DELTA>             	: "\304"	Greek_DELTA
+<Greek_PHI>             	: "\326"	Greek_PHI
+<Greek_GAMMA>             	: "\303"	Greek_GAMMA
+<Greek_ETA>             	: "\307"	Greek_ETA
+<Greek_XI>             		: "\316"	Greek_XI
+<Greek_KAPPA>             	: "\312"	Greek_KAPPA
+<Greek_LAMDA>             	: "\313"	Greek_LAMDA
+
+
+# Fifth row
+
+<z>             : "\346"	Greek_zeta
+<x>             : "\367"	Greek_chi
+<c>             : "\370"	Greek_psi
+<v>             : "\371"	Greek_omega
+<b>             : "\342"	Greek_beta
+<n>             : "\355"	Greek_nu
+<m>             : "\354"	Greek_mu
+
+<Greek_zeta>             	: "\230"	Greek_zeta
+<Greek_chi>             	: "\367"	Greek_chi
+<Greek_psi>             	: "\370"	Greek_psi
+<Greek_omega>             	: "\371"	Greek_omega
+<Greek_beta>             	: "\342"	Greek_beta
+<Greek_nu>             		: "\355"	Greek_nu
+<Greek_mu>             		: "\354"	Greek_mu
+
+
+<Z>             : "\306"	Greek_ZETA
+<X>             : "\327"	Greek_CHI
+<C>             : "\330"	Greek_PSI
+<V>             : "\331"	Greek_OMEGA
+<B>             : "\302"	Greek_BETA
+<N>             : "\315"	Greek_NU
+<M>             : "\314"	Greek_MU
+<less>          : "\74"		less
+<greater>       : "\76"		greater
+<question>      : "\77"		question
+<Greek_ZETA>             	: "\306"	Greek_ZETA
+<Greek_CHI>             	: "\327"	Greek_CHI
+<Greek_PSI>             	: "\330"	Greek_PSI
+<Greek_OMEGA>             	: "\331"	Greek_OMEGA
+<Greek_BETA>             	: "\302"	Greek_BETA
+<Greek_NU>             		: "\315"	Greek_NU
+<Greek_MU>             		: "\314"	Greek_MU
+<periodcentered>      		: "\267"	periodcentered
+
+
+@StartDeadKeyMap <acute>
+
+#- small chars
+<dead_acute> <a>			:"\334"		Greek_alphaaccent
+<dead_acute> <e>			:"\335"		Greek_epsilonaccent
+<dead_acute> <h>			:"\336"		Greek_etaaccent
+<dead_acute> <i>			:"\337"		Greek_iotaaccent
+<dead_acute> <o>			:"\374"		Greek_omicronaccent
+<dead_acute> <y>			:"\375"		Greek_upsilonaccent
+<dead_acute> <v>			:"\376"		Greek_omegaaccent
+
+#- caps
+<dead_acute> <A>			:"\266"		Greek_ALPHAaccent
+<dead_acute> <E>			:"\270"		Greek_EPSILONaccent
+<dead_acute> <H>			:"\271"		Greek_ETAaccent
+<dead_acute> <I>			:"\272"		Greek_IOTAaccent
+<dead_acute> <O>			:"\274"		Greek_OMICRONaccent
+<dead_acute> <Y>			:"\276"		Greek_UPSILONaccent
+<dead_acute> <V>			:"\277"		Greek_OMEGAaccent
+
+# numeric
+
+<dead_acute> <0>				:"\261"		plusminus
+<dead_acute> <1>				:"\247"		section
+<dead_acute> <2>				:"\262"		twosuperior	
+<dead_acute> <3>				:"\263"		threesuperior
+<dead_acute> <4>				:"\244"		
+<dead_acute> <5>				:"\246"		brokenbar
+<dead_acute> <6>				:"\251"		copyright
+<dead_acute> <7>				:"\254"		notsign
+<dead_acute> <8>				:"\255"		hyphen
+<dead_acute> <9>				:"\260"		degree
+<dead_acute> <hyphen>				:"\275"		onehalf
+<dead_acute> <equal>				:"\245"		
+<dead_acute> <backslash>			:"\243"		sterling
+<dead_acute> <braceleft>			:"\241"		leftsinglequotemark
+<dead_acute> <braceright>			:"\242"		rightsinglequotemark
+<dead_acute> <bracketleft>			:"\253"		guillemotleft
+<dead_acute> <bracketright>			:"\273"		guillemotright
+
+#- pseudo dead key to simulate double dead key support
+<diaeresis>	=<SunSMCCPseudoDeadKey>
+
+@EndDeadKeyMap
+
+@StartDeadKeyMap <diaeresis>
+
+<dead_diaeresis><dead_acute><space>		:"\265"		Greek_accentdieresis
+<dead_acute><dead_diaeresis><space>		:"\265"		Greek_accentdieresis
+
+#- small chars 
+<dead_diaeresis> <i>			:"\372"		Greek_iotadieresis
+<dead_diaeresis> <y>			:"\373"		Greek_upsilondieresis
+
+#- caps
+<dead_diaeresis> <I>				:"\332"		Greek_IOTAdiaeresis
+<dead_diaeresis> <Y>				:"\333"		Greek_UPSILONdieresis
+
+
+
+<dead_acute><dead_diaeresis><y>       :"\340"         Greek_upsilonaccentdieresis
+<dead_diaeresis><dead_acute><y>       :"\340"         Greek_upsilonaccentdieresis
+
+<dead_acute> <dead_diaeresis> <i>       :"\300"         Greek_iotaaccentdieresis
+<dead_diaeresis> <dead_acute> <i>      :"\300"         Greek_iotaaccentdieresis
+
+#- pseudo dead key to simulate double dead key support
+<acute>		=<SunSMCCPseudoDeadKey>
+
+@EndDeadKeyMap
+
+
+END_STATE

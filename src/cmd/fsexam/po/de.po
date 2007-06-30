@@ -1,0 +1,604 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+msgid ""
+msgstr ""
+"Project-Id-Version: fsexeam HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-30 13:58+0800\n"
+"PO-Revision-Date: 2004-06-16 15:05+0900\n"
+"Last-Translator: Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
+"Language-Team: Sun G11n <gnome_int_l10n@ireland.sun.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# SUN MESSAGE
+#: src/fsexam.c:61 src/fsexam-ui.c:954 data/fsexam.desktop.in.h:1
+msgid "File System Examiner"
+msgstr "Dateisystem-Prüfung"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-conversion.c:139
+msgid "File System Examiner name conversion"
+msgstr "Dateisystem-Prüfung - Umwandlung von Dateinamen"
+
+# SUN MSG
+# SUN MESSAGE
+#: src/fsexam-conversion.c:213
+msgid "Folder already exists"
+msgstr "Ordner existiert bereits"
+
+# SUN MSG
+#: src/fsexam-conversion.c:218
+msgid "File already exists"
+msgstr "Datei existiert bereits"
+
+# SUN MESSAGE
+#: src/fsexam-conversion.c:233
+msgid "No permission to rename"
+msgstr "Umbenennen nicht möglich (unzureichende Benutzerrechte)"
+
+# SUN MESSAGE
+#: src/fsexam-conversion.c:236
+msgid "File doesn't exist yet"
+msgstr "Datei existiert noch nicht"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-conversion.c:356
+msgid "delete Carriage Return"
+msgstr "Wagenrücklauf löschen"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-conversion.c:424
+msgid "delete Carriage Return only"
+msgstr "nur Wagenrücklauf löschen"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-conversion.c:433
+msgid "add Carriage Return"
+msgstr "Wagenrücklauf hinzufügen"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-conversion.c:436
+msgid "add Carriage Return only"
+msgstr "nur Wagenrücklauf hinzufügen"
+
+# SUN MSG
+#: src/fsexam-conversion.c:494
+msgid "File name - conversion failure"
+msgstr "Dateiname - Konvertierungsfehler"
+
+# SUN MSG
+#: src/fsexam-conversion.c:499
+msgid "File name - UTF8 already"
+msgstr "Dateiname - liegt bereits in UTF8 vor"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:256 src/fsexam-ui.c:1023
+msgid "Location:"
+msgstr "Adresse:"
+
+# SUN MESSAGE
+#. write the error message to statusbar
+#: src/fsexam-ui.c:378 src/fsexam-ui.c:473
+msgid "No read permission"
+msgstr "Kein Leserecht"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:381
+msgid "Folder doesn't exist yet"
+msgstr "Ordner existiert noch nicht"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:385
+msgid "No folder specified"
+msgstr "Kein Ordner angegeben"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#. the directory doesn't contain any files
+#: src/fsexam-ui.c:480
+msgid "Null folder"
+msgstr "Ordner NULL"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:574
+msgid "Folder Selection"
+msgstr "Ordnerauswahl"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:623 src/fsexam-preference.c:380
+#, c-format
+msgid "There was an error displaying help: %s"
+msgstr "Beim Anzeigen der Hilfe ist ein Fehler aufgetreten: %s"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:654
+msgid "fsexam"
+msgstr "fsexam"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:656
+msgid ""
+"fsexam is to help migrate file name and file content from legacy encoding to "
+"UTF8"
+msgstr ""
+"fsexam hilft dabei, Dateinamen und -inhalte von der alten Legacy-Codierung "
+"nach UTF8 zu konvertieren."
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:783
+msgid "_File"
+msgstr "_Datei"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:796
+msgid "_Open..."
+msgstr "_Öffnen..."
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:809
+msgid "_Edit"
+msgstr "_Bearbeiten"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:834
+msgid "_Restore Original File"
+msgstr "_Ursprüngliche Datei wiederherstellen"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:846
+msgid "Convert _Filename"
+msgstr "_Dateiname konvertieren"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:855
+msgid "_Convert Content"
+msgstr "Inhalt _konvertieren"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:859
+msgid "Pre_view Content"
+msgstr "_Inhaltsvorschau"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:874
+msgid "_Preferences"
+msgstr "_Einstellungen"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:877
+msgid "_View"
+msgstr "_Ansicht"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:886
+msgid "_Report Pane"
+msgstr "_Berichtsfenster"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:893
+msgid "_Help"
+msgstr "_Hilfe"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:906
+msgid "_Contents"
+msgstr "_Inhalt"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-ui.c:915
+msgid "_About"
+msgstr "_Info"
+
+# SUN MSG
+#: src/fsexam-ui.c:930
+#, c-format
+msgid "Error loading icon %s\n"
+msgstr "Fehler beim Laden von Symbol %s\n"
+
+# SUN MESSAGE
+#: src/fsexam-ui.c:977
+msgid "Welcome"
+msgstr "Herzlich willkommen!"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-preference.c:406
+msgid "File System Examiner preferences"
+msgstr "Dateisystem-Prüfung - Einstellungen"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-preference.c:425
+msgid "Sub-folder:"
+msgstr "Unterordner:"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-preference.c:433
+msgid "_Recursive Mode"
+msgstr "_Rekursiver Modus"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-preference.c:445
+msgid "User intervention:"
+msgstr "Benutzereingriff:"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-preference.c:453
+msgid "_Automatic Conversion"
+msgstr "_Automatische Konvertierung"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-preference.c:470
+msgid "Encode list:"
+msgstr "Codierliste:"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:178
+msgid "Not plain text"
+msgstr "Kein Normaltext"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:294
+msgid "File System Examiner content conversion"
+msgstr "Dateisystem-Prüfung - Umwandlung des Inhalts"
+
+# SUN MSG
+#: src/fsexam-content.c:408
+msgid "Byte sequence not recognized yet"
+msgstr "Bytesequenz ist bislang unbekannt"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:413
+msgid "File content - UTF8 already"
+msgstr "Dateiinhalt - liegt bereits in UTF8 vor"
+
+# SUN MSG
+#: src/fsexam-content.c:450 src/fsexam-content.c:691
+msgid "File content - open failure"
+msgstr "Dateiinhalt - Fehler beim Öffnen"
+
+# SUN MSG
+#: src/fsexam-content.c:456 src/fsexam-content.c:696
+msgid "File content - write error"
+msgstr "Dateiinhalt - Fehler beim Schreiben"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:464
+#, c-format
+msgid "File content - convert from %s"
+msgstr "Dateiinhalt - konvertieren aus %s"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:467
+#, c-format
+msgid "File content - convert from %s and delete Carriage Return"
+msgstr "Dateiinhalt - konvertieren aus %s und Wagenrücklauf löschen"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:470
+msgid "File content - delete Carriage Return only"
+msgstr "Dateiinhalt - nur Wagenrücklauf löschen"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:519 src/fsexam-content.c:981
+msgid "Cannot convert contents of folder"
+msgstr "Konvertieren des Ordnerinhalts nicht möglich"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:622
+#, c-format
+msgid "%s doesn't exist yet"
+msgstr "%s existiert noch nicht"
+
+# SUN MESSAGE
+#: src/fsexam-content.c:639
+msgid "File has been emptied, can not be restored!"
+msgstr "Dateiinhalt wurde gelöscht -- Wiederherstellung nicht möglich!"
+
+# SUN MSG
+#: src/fsexam-content.c:679
+msgid "File content - conversion failure"
+msgstr "Dateiinhalt - Konvertierungsfehler"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:704
+#, c-format
+msgid "Restore %s"
+msgstr "%s wiederherstellen"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:707
+#, c-format
+msgid "Restore %s and add Carriage Return"
+msgstr "%s wiederherstellen und Wagenrücklauf hinzufügen"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:710
+msgid "Restore by adding Carriage Return"
+msgstr "Wiederherstellen durch Hinzufügen von Wagenrücklauf"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:713
+msgid "Restore UTF8"
+msgstr "UTF8 wiederherstellen"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:716
+msgid "Restore UTF8 and delete Carriage Return"
+msgstr "UTF8 wiederherstellen und Wagenrücklauf löschen"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:719
+msgid "Restore by deleting Carriage Return"
+msgstr "Wiederherstellen durch Löschen von Wagenrücklauf"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: src/fsexam-content.c:969
+msgid "Cannot preview multiple selections"
+msgstr "Vorschau von mehreren ausgewählten Elementen nicht möglich"
+
+# SUN MSG
+#: data/fsexam.schemas.in.h:1
+msgid ""
+"A list of suffix. Any file whose suffix belongs to the list are assumed by "
+"fsexam as plain text file."
+msgstr ""
+"Eine Liste von Namenserweiterungen. Alle Dateien, deren Namenserweiterung in "
+"dieser Liste enthalten ist, werden von fsexam als normale Textdateien "
+"behandelt."
+
+# SUN MSG
+#: data/fsexam.schemas.in.h:2
+msgid ""
+"Only applicable for file name conversion! It's recursive mode, by enabling "
+"it, fsexam will convert the name of file and subdirectory to UTF8 "
+"recursively."
+msgstr ""
+"Nur relevant für die Umwandlung von Dateinamen. Im rekursiven Modus "
+"konvertiert fsexam die Namen von Dateien nach UTF8 und verarbeitet dabei "
+"auch rekursiv die Unterverzeichnisse."
+
+# SUN MSG
+#: data/fsexam.schemas.in.h:3
+msgid ""
+"Only applicable for file name conversion. It's automatic mode, by enabling "
+"it, fsexam will automatically convert with the best conversion result "
+"without user interference. Otherwise, a dialog will display with several "
+"conversion candidates and user needs to decide which conversion is the best "
+"one."
+msgstr ""
+"Nur relevant für die Umwandlung von Dateinamen. Im automatischen Modus "
+"versucht fsexam, automatisch und ohne weitere Benutzereingriffe die "
+"Umwandlung optimal durchzuführen. Ist der automatische Modus nicht "
+"aktiviert, erscheint ein Dialogfeld mit verschiedenen "
+"Konvertierungsoptionen, aus denen Sie die geeignete auswählen können."
+
+# SUN MSG
+#: data/fsexam.schemas.in.h:4
+msgid ""
+"The list of legacy encoding name available for the specific language. Note "
+"that the order within the list is significant. fsexam treats as the best one "
+"the first one from which conversion can be made successfully."
+msgstr ""
+"Die Liste der Legacy-Codierungen, die für die jeweilige Sprache verfügbar "
+"sind. Bitte achten Sie auf die Reihenfolge innerhalb der Liste. fsexam "
+"betrachtet die erste Codierung, aus der eine erfolgreiche Konvertierung "
+"möglich ist, als beste Option."
+
+#: data/fsexam.schemas.in.h:5
+msgid "[ISO8859-1]"
+msgstr ""
+"[ISO8859-1,ISO8859-2,ISO8859-3,ISO8859-4,ISO8859-5,ISO8859-6,ISO8859-7,"
+"ISO8859-8,ISO8859-9,ISO8859-10]"
+
+# SUN MSG
+#: data/fsexam.schemas.in.h:6
+msgid "automatic mode"
+msgstr "automatischer Modus"
+
+# SUN MSG
+#: data/fsexam.schemas.in.h:7
+msgid "encoding list"
+msgstr "Codierungsliste"
+
+# SUN MSG
+#: data/fsexam.schemas.in.h:8
+msgid "recursive mode"
+msgstr "rekursiver Modus"
+
+# SUN MSG
+#: data/fsexam.schemas.in.h:9
+msgid "suffix list"
+msgstr "Erweiterungsliste"
+
+# SUN MSG
+#: data/fsexam.desktop.in.h:2
+msgid "Help migrate from legacy encoding to UTF8"
+msgstr "Hilft bei der Umwandlung von der alten Legacy-Codierung nach UTF8"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "text"
+#~ msgstr "Text"
+
+# SUN MSG
+#~ msgid "Directory already exists"
+#~ msgstr "Verzeichnis existiert bereits"
+
+# SUN MSG
+#~ msgid "File content"
+#~ msgstr "Dateiinhalt"
+
+# SUN MSG
+#~ msgid "Null directory"
+#~ msgstr "Verzeichnis NULL"
+
+# SUN MSG
+#~ msgid "Apply by name"
+#~ msgstr "Übernehmen nach Name"
+
+# SUN MSG
+#~ msgid "Apply by content"
+#~ msgstr "Übernehmen nach Inhalt"
+
+# SUN MSG
+#~ msgid "Peek content"
+#~ msgstr "Inhaltsvorschau"
+
+# SUN MSG
+#~ msgid "popen error, please try again!"
+#~ msgstr "popen-Fehler. Bitte versuchen Sie es erneut."
+
+# SUN MSG
+#~ msgid "Not one plain text"
+#~ msgstr "Keine Normaltext-Dateien gefunden"
+
+# SUN MSG
+#~ msgid "File content candidate window"
+#~ msgstr "Dateiinhalt: Optionsfenster"
+
+# SUN MSG
+#~ msgid "File content - successful conversion"
+#~ msgstr "Dateiinhalt - Konvertierung erfolgreich"
+
+# SUN MSG
+#~ msgid "File content - UTF8 alreay"
+#~ msgstr "Dateiinhalt - liegt bereits in UTF8 vor"
+
+# SUN MSG
+#~ msgid "Directory node"
+#~ msgstr "Verzeichnisknoten"
+
+# SUN MSG
+#~ msgid "File content - successful undo"
+#~ msgstr "Dateiinhalt - Rückgängigmachen erfolgreich"
+
+# SUN MESSAGE
+#~ msgid "Candidate Selection"
+#~ msgstr "Auswahl der zu prüfenden Elemente"
+
+# SUN MESSAGE
+#~ msgid "File Hierarchy"
+#~ msgstr "Dateihierarchie"
+
+# SUN MESSAGE
+#~ msgid "Directory doesn't exist yet"
+#~ msgstr "Verzeichnis existiert noch nicht"
+
+# SUN MESSAGE
+#~ msgid "No directory specified"
+#~ msgstr "Kein Verzeichnis angegeben"
+
+# SUN MESSAGE
+#~ msgid "Directory Selection"
+#~ msgstr "Verzeichnisauswahl"
+
+# SUN MESSAGE
+#~ msgid "_Action"
+#~ msgstr "_Aktion"
+
+# SUN MESSAGE
+#~ msgid "Report Pane"
+#~ msgstr "Berichtsfenster"
+
+# SUN MESSAGE
+#~ msgid "Encoding List"
+#~ msgstr "Codierungsliste"
+
+# SUN MESSAGE
+#~ msgid "Preference Setting"
+#~ msgstr "Voreinstellung"
+
+# SUN MESSAGE
+#~ msgid "Recursive Mode"
+#~ msgstr "Rekursiv"
+
+# SUN MESSAGE
+#~ msgid "Automatic Conversion"
+#~ msgstr "Automatische Konvertierung"
+
+# SUN MESSAGE
+#~ msgid "Conversion failure"
+#~ msgstr "Fehler beim Konvertieren"
+
+# SUN MESSAGE
+#~ msgid "UTF8 already"
+#~ msgstr "Liegt bereits in UTF8 vor"

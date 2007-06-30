@@ -1,0 +1,69 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none usr/kernel/strmod/sparcv9 0755 root sys
+f none usr/kernel/strmod/sparcv9/b5euc 0755 root sys
+f none usr/kernel/strmod/sparcv9/big5euc 0755 root sys
+d none usr/lib/iconv/sparcv9 0755 root bin
+s none usr/lib/iconv/sparcv9/646%BIG5.so=./646%CODESET.so
+s none usr/lib/iconv/sparcv9/646%cns11643.so=./646%CODESET.so
+f none usr/lib/iconv/sparcv9/zh_TW-big5%zh_TW-euc.so 0755 root bin
+f none usr/lib/iconv/sparcv9/zh_TW-big5%zh_TW-iso2022-7.so 0755 root bin
+f none usr/lib/iconv/sparcv9/zh_TW-big5%zh_TW-iso2022-CN-EXT.so 0755 root bin
+s none usr/lib/iconv/sparcv9/zh_TW-big5%zh_TW-iso2022-CN.so=./zh_TW-big5%zh_TW-iso2022-7.so
+f none usr/lib/iconv/sparcv9/zh_TW-euc%zh_TW-big5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/zh_TW-euc%zh_TW-iso2022-7.so 0755 root bin
+f none usr/lib/iconv/sparcv9/zh_TW-euc%zh_TW-iso2022-CN-EXT.so 0755 root bin
+f none usr/lib/iconv/sparcv9/zh_TW-iso2022-7%zh_TW-big5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/zh_TW-iso2022-7%zh_TW-euc.so 0755 root bin
+s none usr/lib/iconv/sparcv9/zh_TW-iso2022-CN%zh_TW-big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
+f none usr/lib/iconv/sparcv9/zh_TW-iso2022-CN-EXT%zh_TW-big5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/zh_TW-iso2022-CN-EXT%zh_TW-euc.so 0755 root bin
+s none usr/lib/iconv/sparcv9/zh_TW.big5%zh_TW.euc.so=./zh_TW-big5%zh_TW-euc.so
+s none usr/lib/iconv/sparcv9/zh_TW.big5%zh_TW.iso2022-7.so=./zh_TW-big5%zh_TW-iso2022-7.so
+s none usr/lib/iconv/sparcv9/zh_TW.big5%zh_TW.iso2022-CN-EXT.so=./zh_TW-big5%zh_TW-iso2022-CN-EXT.so
+s none usr/lib/iconv/sparcv9/zh_TW.big5%zh_TW.iso2022-CN.so=./zh_TW-big5%zh_TW-iso2022-7.so
+s none usr/lib/iconv/sparcv9/zh_TW.euc%zh_TW.big5.so=./zh_TW-euc%zh_TW-big5.so
+s none usr/lib/iconv/sparcv9/zh_TW.euc%zh_TW.iso2022-7.so=./zh_TW-euc%zh_TW-iso2022-7.so
+s none usr/lib/iconv/sparcv9/zh_TW.euc%zh_TW.iso2022-CN-EXT.so=./zh_TW-euc%zh_TW-iso2022-CN-EXT.so
+s none usr/lib/iconv/sparcv9/zh_TW.iso2022-7%zh_TW.big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
+s none usr/lib/iconv/sparcv9/zh_TW.iso2022-7%zh_TW.euc.so=./zh_TW-iso2022-7%zh_TW-euc.so
+s none usr/lib/iconv/sparcv9/zh_TW.iso2022-CN%zh_TW.big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
+s none usr/lib/iconv/sparcv9/zh_TW.iso2022-CN-EXT%zh_TW.big5.so=./zh_TW-iso2022-CN-EXT%zh_TW-big5.so
+s none usr/lib/iconv/sparcv9/zh_TW.iso2022-CN-EXT%zh_TW.euc.so=./zh_TW-iso2022-CN-EXT%zh_TW-euc.so
+s none usr/lib/locale/zh_TW/LC_CTYPE/64=./sparcv9
+d none usr/lib/locale/zh_TW/LC_CTYPE/sparcv9 0755 root bin
+f none usr/lib/locale/zh_TW/LC_CTYPE/sparcv9/mailcodelist 0555 root bin
+f none usr/lib/locale/zh_TW/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
+s none usr/lib/locale/zh_TW/64=./sparcv9
+d none usr/lib/locale/zh_TW/sparcv9 0755 root bin
+f none usr/lib/locale/zh_TW/sparcv9/methods_zh_TW.so.3 0555 root bin
+f none usr/lib/locale/zh_TW/sparcv9/zh_TW.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC/64=./sparcv9
+d none usr/lib/locale/zh_TW.EUC/sparcv9 0755 root bin
+s none usr/lib/locale/zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3=../../zh_TW/sparcv9/methods_zh_TW.so.3
+s none usr/lib/locale/zh_TW.EUC/sparcv9/zh_TW.EUC.so.3=../../zh_TW/sparcv9/zh_TW.so.3
+d none usr/lib/sparcv9 0755 root bin
+f none usr/lib/sparcv9/libhle.a 0755 root bin
+s none usr/lib/sparcv9/libhle.so=libhle.so.1
+f none usr/lib/sparcv9/libhle.so.1 0755 root bin

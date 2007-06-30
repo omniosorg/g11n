@@ -1,0 +1,11 @@
+FSexam
+--------
+
+fxexam is one tool to help user migrate from legacy encoding to UTF8
+on your system. Given one directory, one tree view is displayed to
+list all files and subdirectories and the file name that isn't in 
+UTF8 encoding will be displayed as one sequence of question marks.
+
+The tool can use a list of encoding that is specified for the current
+language to do conversion, and rename the filename in legacy encoding
+with corresponding one in UTF8 on your system

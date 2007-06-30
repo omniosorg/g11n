@@ -1,0 +1,290 @@
+<?xml version="1.0"?> <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY author1 "Sun" >
+  <!ENTITY author2 "Equipe de documenta&ccedil;&atilde;o do Java Desktop System" >
+  <!ENTITY publisher "Sun Microsystems, Inc." >
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "0.3" >
+  <!ENTITY manrevision "2.0" >
+  <!ENTITY date "Agosto de 2004" >
+  <!ENTITY app "<application>Examinador do sistema de arquivos</application>" >
+  <!ENTITY appname "Examinador do sistema de arquivos " >
+]><!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.GNOME.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+  
+--><!--
+
+ CDDL HEADER START
+
+ The contents of this file are subject to the terms of the
+ Common Development and Distribution License (the "License").  
+ You may not use this file except in compliance with the License.
+
+ You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+ or http://www.opensolaris.org/os/licensing.
+ See the License for the specific language governing permissions
+ and limitations under the License.
+
+ When distributing Covered Code, include this CDDL HEADER in each
+ file and include the License file at src/OPENSOLARIS.LICENSE.
+ If applicable, add the following below this CDDL HEADER, with the
+ fields enclosed by brackets "[]" replaced with your own identifying
+ information: Portions Copyright [yyyy] [name of copyright owner]
+
+ CDDL HEADER END
+
+
+ Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+ Use is subject to license terms. 
+
+
+--><!-- =============Document Header ============================= -->
+
+
+
+<article id="index" lang="pt_BR"><!-- please do not change the id; for translations, change lang to --><!-- appropriate code -->
+
+
+  <articleinfo><title>&appname;</title> <subtitle>Manual V&manrevision; do aplicativo de desktop &appname; </subtitle> <copyright> 
+		<year>2004</year>
+		<holder>&publisher;</holder> </copyright> <publisher> 
+		<publishername>&publisher;</publishername>
+	 </publisher> &legal;  <authorgroup> 
+		<author><firstname>&author1;</firstname> <surname>&author2;</surname> <affiliation> 
+			 <orgname>&publisher;</orgname>
+		  </affiliation>  </author><!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+
+
+
+	 </authorgroup>
+
+
+
+
+	 <revhistory><!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+   		<revision><revnumber>Manual V&manrevision; do aplicativo de desktop &appname; </revnumber> <date>&date;</date> <revdescription> 
+			 <para role="author">&author1; &author2;</para>
+			 <para role="publisher">&publisher; </para>
+		  </revdescription>
+		</revision>
+	 </revhistory><releaseinfo> Este manual descreve a vers&atilde;o &appversion; do &appname;.</releaseinfo> <releaseinfo></releaseinfo>  <legalnotice><title>Coment&aacute;rios</title>  <para>Para enviar coment&aacute;rios, siga as instru&ccedil;&otilde;es na <ulink url="ghelp:gnome-feedback" type="help">p&aacute;gina de coment&aacute;rios</ulink>.  </para><!-- Translators may also add here feedback address for translations -->
+
+	 </legalnotice>
+  </articleinfo><!-- ============= Document Body ============================= --><!-- ============= Introduction ============================== --><indexterm><primary>comando fsexam</primary></indexterm> <indexterm><primary>Aplicativo de desktop Examinador do sistema de arquivos</primary></indexterm>  <sect1 id="fsexam-intro"><title>Introdu&ccedil;&atilde;o</title>  <para>O &app; permite converter o nome de um arquivo, ou o conte&uacute;do de um arquivo de texto simples, de uma codifica&ccedil;&atilde;o legada de caracteres em uma codifica&ccedil;&atilde;o UTF-8.  </para>
+       <note>
+         <para>A codifica&ccedil;&atilde;o interna de caracteres padr&atilde;o no Sun Java Desktop System &eacute; o UTF-8, e o local padr&atilde;o &eacute; o UTF-8. Se n&atilde;o forem convertidos, os arquivos com codifica&ccedil;&atilde;o legada de caracteres ser&atilde;o exibidos como texto sem significado.  </para>
+       </note>
+  </sect1><!-- ============= Getting Started =========================== -->
+
+
+  <sect1 id="fsexam-getting-started"><!-- ============= To Start fsexam ============================ --><title>Guia de introdu&ccedil;&atilde;o</title>  <sect2 id="fsexam-to-start"><title>Para iniciar o &appname;</title> <para>Voc&ecirc; pode iniciar o &app; seguindo estas etapas: </para>
+                <variablelist>
+                <varlistentry><term>Menu</term> <listitem>
+                <para>Clique em <guibutton>Iniciar</guibutton>, escolha <menuchoice><guimenu>Aplicativos</guimenu><guisubmenu>Utilit&aacute;rios</guisubmenu><guimenuitem>Examinador do sistema de arquivos</guimenuitem></menuchoice>.  </para>
+                </listitem>
+                </varlistentry>
+                <varlistentry><term>Linha de comando</term> <listitem>
+                <para>Execute o seguinte comando: <userinput>fsexam</userinput> </para>
+                </listitem>
+                </varlistentry>
+                </variablelist>
+	</sect2>
+
+        <sect2 id="fsexam-when-you-start"><title>Quando voc&ecirc; inicia o &appname;</title> <para>Quando voc&ecirc; inicia o &app;, a janela a seguir &eacute; exibida. </para>
+
+                <figure id="fsexam-window"><title>Janela do &appname;</title>  <screenshot>
+                         <mediaobject>
+                                <imageobject>
+                                  <imagedata fileref="figures/fsexam.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject><phrase>Mostra a janela principal do fsexam.</phrase> </textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+                <para>A janela do &app; cont&eacute;m os seguintes elementos:  </para>
+                <variablelist>
+                  <varlistentry><term>Barra de menus</term> <listitem>
+                                <para>Os menus na barra de menus cont&ecirc;m todos os comandos de que voc&ecirc; precisa para trabalhar com arquivos no &app;. </para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry><term>&Aacute;rea de exibi&ccedil;&atilde;o</term>  <listitem>
+                                <para>A &aacute;rea de exibi&ccedil;&atilde;o mostra o conte&uacute;do do diret&oacute;rio atual.  </para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry><term>Barra de status</term> <listitem>
+                                <para>A barra de status exibe informa&ccedil;&otilde;es sobre a atividade atual do &app;. </para>
+                         </listitem>
+                  </varlistentry>
+                </variablelist>
+                <para>Quando voc&ecirc; clica com o bot&atilde;o direito do mouse na janela do &app;, um menu pop-up &eacute; exibido. O menu pop-up cont&eacute;m os comandos mais comuns.  </para>
+
+      <para>Este manual documenta as funcionalidades da barra de menus.  </para>
+         </sect2>
+  </sect1><!-- ================ Usage ================================ -->
+
+
+  <sect1 id="fsexam-usage"><!-- ============= To Open a File ======================== --><title>Uso</title>  <sect2 id="fsexam-select"><title>Para selecionar um arquivo ou diret&oacute;rio</title>  <para>Escolha <menuchoice><guimenu>Arquivo</guimenu><guimenuitem>Abrir</guimenuitem></menuchoice> e selecione o arquivo ou o diret&oacute;rio cuja codifica&ccedil;&atilde;o de caracteres voc&ecirc; deseja alterar.  </para>
+		<para>Se voc&ecirc; selecionar um diret&oacute;rio, todos os seus arquivos e subdiret&oacute;rios aparecer&atilde;o na &aacute;rea de exibi&ccedil;&atilde;o.  </para>
+	 </sect2><!-- ============= To Apply by name  ================================ -->
+
+
+	 <sect2 id="fsexam-convert-filename"><title>Para converter o nome de um arquivo ou diret&oacute;rio</title> <para>Execute as seguintes etapas:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Selecione o arquivo ou diret&oacute;rio, como descrito em <xref linkend="fsexam-select"/>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Escolha <menuchoice><guimenu>Editar</guimenu><guimenuitem>Converter nome de arquivo</guimenuitem></menuchoice>. </para>
+                    <para>Por padr&atilde;o, a caixa de di&aacute;logo <guilabel>Convers&atilde;o de nome do Examinador do sistema de arquivos</guilabel> &eacute; exibida. Para obter informa&ccedil;&otilde;es sobre como exibir ou ocultar a caixa de di&aacute;logo <guilabel>Convers&atilde;o de nome do Examinador do sistema de arquivos</guilabel>, consulte <xref linkend="fsexam-prefs"/>. </para>
+                    <para>A caixa de di&aacute;logo <guilabel>Convers&atilde;o de nome do Examinador do sistema de arquivos</guilabel> exibe uma lista de codifica&ccedil;&otilde;es de caracteres que o &app; pode usar para converter o nome do arquivo. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Selecione uma codifica&ccedil;&atilde;o e clique em <guibutton>OK</guibutton>.  </para>
+                  </listitem>
+                </orderedlist>
+		<para>Se o &app; renomear o arquivo com &ecirc;xito, a barra de status exibir&aacute; o nome da codifica&ccedil;&atilde;o legada de caracteres.  </para>
+		<para>Se a convers&atilde;o falhar, a barra de status exibir&aacute; uma mensagem de erro.  </para>
+	 </sect2><!-- ============= To Apply by content  ================================ -->
+
+
+
+	 <sect2 id="fsexam-convert-contents"><title>Para converter o conte&uacute;do de um arquivo</title> <para>Execute as seguintes etapas:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Selecione o arquivo, como descrito em <xref linkend="fsexam-select"/>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Escolha <menuchoice><guimenu>Editar</guimenu><guimenuitem>Converter conte&uacute;do</guimenuitem></menuchoice>. </para>
+                    <para>A janela <guilabel>Convers&atilde;o de conte&uacute;do do Examinador do sistema de arquivos</guilabel> exibe o conte&uacute;do convertido do arquivo. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Para aceitar a convers&atilde;o e substituir o arquivo original pelo conte&uacute;do convertido, clique em <guibutton>OK</guibutton>. </para>
+                    <para>Para cancelar a convers&atilde;o, feche a janela <guilabel>Convers&atilde;o de conte&uacute;do do Examinador do sistema de arquivos</guilabel>.  </para>
+                  </listitem>
+                </orderedlist>
+		<para>Se o &app; converter o conte&uacute;do do arquivo com &ecirc;xito, a barra de status exibir&aacute; o seguinte texto: <screen>Conte&uacute;do do arquivo - converter de <replaceable>codifica&ccedil;&atilde;o_original</replaceable></screen>  </para>
+		<para>Se a convers&atilde;o falhar, a barra de status exibir&aacute; uma mensagem de erro.  </para>
+		<note>
+		  <para>O &app; s&oacute; pode converter o conte&uacute;do de um arquivo de texto simples. O &app; usa o comando <command>file</command> para verificar se o arquivo atual &eacute; um arquivo de texto simples. Se a sa&iacute;da do comando <command>file</command> n&atilde;o estiver dispon&iacute;vel, o &app; exibir&aacute; a seguinte mensagem de erro: <screen>Erro de popen, tente novamente</screen>  </para>
+		</note>
+	 </sect2><!-- ============= To Peek content  ================================ -->
+
+
+
+	 <sect2 id="fsexam-preview-contents"><title>Para visualizar o conte&uacute;do de um arquivo</title> <para>Execute as seguintes etapas:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Selecione o arquivo, como descrito em <xref linkend="fsexam-select"/>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Escolha <menuchoice><guimenu>Editar</guimenu><guimenuitem>Visualizar conte&uacute;do</guimenuitem></menuchoice>.  </para>
+                  </listitem>
+                </orderedlist>
+		<para>Se o &app; visualizar o conte&uacute;do do arquivo com &ecirc;xito, uma janela pop-up 
+exibir&aacute; a primeira parte do arquivo. Clique na janela pop-up para fechar a janela.  </para>
+		<para>Se a visualiza&ccedil;&atilde;o falhar, a barra de status exibir&aacute; uma mensagem de erro.  </para>
+	 </sect2><!-- ============== To Undo a Conversion  ====================== -->
+
+
+	 <sect2 id="fsexam-undo-conversion"><title>Para desfazer a &uacute;ltima a&ccedil;&atilde;o</title>  <para>Escolha <menuchoice><guimenu>Editar</guimenu><guimenuitem>Desfazer</guimenuitem></menuchoice>.  </para>
+	 </sect2><!-- ============== To Restore the Original File  ====================== -->
+
+
+
+	 <sect2 id="fsexam-restore-file"><title>Para restaurar o arquivo original</title> <para>Execute as seguintes etapas:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Selecione o arquivo, como descrito em <xref linkend="fsexam-select"/>. </para>
+                  </listitem>
+                  <listitem>
+                    <para>Escolha <menuchoice><guimenu>Editar</guimenu><guimenuitem>Restaurar arquivo original</guimenuitem></menuchoice>.  </para>
+                  </listitem>
+                </orderedlist>
+		<para>O &app; restaura o conte&uacute;do do arquivo original em um arquivo com o nome de arquivo original.  </para>
+	 </sect2><!-- ============= To Display Report Pane =================== -->
+
+
+	 <sect2 id="fsexam-report-pane"><title>Para exibir o painel de relat&oacute;rio</title> <para>Escolha <menuchoice><guimenu>Exibir</guimenu><guimenuitem>Painel de relat&oacute;rio</guimenuitem></menuchoice>.  </para>
+		<para>O painel de relat&oacute;rio exibe o nome do diret&oacute;rio e uma lista de arquivos convertidos com os nomes de codifica&ccedil;&otilde;es legadas de caracteres correspondentes.  </para>
+		<para>No in&iacute;cio de cada linha, <literal>[<replaceable>X</replaceable>]</literal> indica a a&ccedil;&atilde;o que o &app; executou, assim: </para>
+                <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>[<replaceable>X</replaceable>]</para></entry>
+                        <entry colname="COLSPEC1">
+                          <para>Descri&ccedil;&atilde;o</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>[C]</para></entry>
+                        <entry><para>Converter o conte&uacute;do do arquivo.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[F]</para></entry>
+                        <entry><para>Converter o nome do arquivo.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[R]</para></entry>
+                        <entry><para>Restaurar o arquivo original.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[UC]</para></entry>
+                        <entry><para>Desfazer a convers&atilde;o do conte&uacute;do do arquivo.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[UF]</para></entry>
+                        <entry><para>Desfazer a convers&atilde;o do nome do arquivo.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+                    <para>Para ocultar o painel de relat&oacute;rio, escolha <menuchoice><guimenu>Exibir</guimenu><guimenuitem>Painel de relat&oacute;rio</guimenuitem></menuchoice> novamente.  </para>
+	 </sect2>
+  </sect1><!-- ============= Preferences ============================= -->
+
+
+
+  <sect1 id="fsexam-prefs"><title>Prefer&ecirc;ncias</title> <para>Para configurar o &app;, selecione <menuchoice><guimenu>Editar</guimenu><guimenuitem>Prefer&ecirc;ncias</guimenuitem></menuchoice>. A caixa de di&aacute;logo <guilabel>Prefer&ecirc;ncias do Examinador do sistema de arquivos</guilabel> &eacute; exibida.  </para>
+	 
+        <variablelist>
+          <varlistentry><term><guilabel>Subpasta</guilabel> </term> <listitem>
+                  <para>Selecione a op&ccedil;&atilde;o <guilabel>Modo recursivo</guilabel> para especificar se o &app; converte os nomes de todos os arquivos e subdiret&oacute;rios no diret&oacute;rio selecionado. </para>
+                  <note><para>O &app; n&atilde;o converte recursivamente o conte&uacute;do de um diret&oacute;rio.  </para></note>
+            </listitem>
+          </varlistentry> 
+          <varlistentry><term><guilabel>Interven&ccedil;&atilde;o de usu&aacute;rio</guilabel> </term> <listitem>
+                  <para>Selecione a op&ccedil;&atilde;o <guilabel>Convers&atilde;o autom&aacute;tica</guilabel> para especificar se o &app; usa a primeira codifica&ccedil;&atilde;o legada de caracteres adequada na <guilabel>Lista de codifica&ccedil;&atilde;o</guilabel> para converter os nomes de arquivos e subdiret&oacute;rios na codifica&ccedil;&atilde;o UTF-8. Se n&atilde;o selecionar esta op&ccedil;&atilde;o, o &app; exibir&aacute; a caixa de di&aacute;logo <guilabel>Convers&atilde;o de nome do Examinador do sistema de arquivos</guilabel>, como descrito em <xref linkend="fsexam-convert-filename"/>.  </para>
+            </listitem>
+          </varlistentry> 
+          <varlistentry><term><guilabel>Lista de codifica&ccedil;&atilde;o</guilabel> </term> <listitem>
+                  <para>Exibe uma lista de codifica&ccedil;&otilde;es legadas de caracteres dispon&iacute;veis para o idioma atual. Clique em <guibutton>Para cima</guibutton> para mover uma codifica&ccedil;&atilde;o para cima na lista. Clique em <guibutton>Para baixo</guibutton> para mover uma codifica&ccedil;&atilde;o para baixo na lista. </para>
+            </listitem>
+          </varlistentry> 
+        </variablelist>
+  </sect1>
+</article>
+

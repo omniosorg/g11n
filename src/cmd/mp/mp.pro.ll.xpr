@@ -1,0 +1,82 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2001 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+STARTCOMMON
+# 0 portrait, 1 landscape
+ORIENTATION 1
+NUMCOLS  01
+PAGELENGTH 60
+LINELENGTH 160
+# Printing won't exceed this in Y direction.
+YTEXTBOUNDARY	2110
+HDNGFONTSIZE	110
+BODYFONTSIZE	65
+STARTTEXT	62 285	
+PAGESTRING 	1
+PROLOGDPI 300
+ENDCOMMON
+
+# for US paper size 8.5X11 inches @ 300 dpi
+# that is for a page of pixel width 2550 and height 3300
+# All drawing units in pixels.
+
+STARTPAGE
+LINE 37 27 2785 27
+LINE 12 52 12 175
+LINE 37 200 2785 200
+LINE 2810 52 2810 175
+
+ARC 12 27 50 50 90 90
+ARC 12 150 50 50 180 90
+ARC 2760 27 50 50 0 90
+ARC 2760 150 50 50 270 90
+
+LINE 2858 27 2985 27
+LINE 3010 175 3010 52
+LINE 2858 200 2985 200
+LINE 2833 175 2833 52
+
+ARC 2833 27 50 50 90 90
+ARC 2833 150 50 50 180 90
+ARC 2960 27 50 50 0 90
+ARC 2960 150 50 50 270 90
+
+LINE 37 2110 2990 2110
+LINE 37 2283 2990 2283
+LINE 12 2135 12 2258
+LINE 3010 2135 3010 2258
+
+ARC 12 2110 50 50 90 90
+ARC 12 2233 50 50 180 90
+ARC 2960 2110 50 50 0 90
+ARC 2960 2233 50 50 270 90
+
+USERSTRINGPOS	62 120
+TIMESTRINGPOS	1760 120
+PAGESTRINGPOS 	2860 95
+SUBJECTSTRINGPOS 57 2215 
+ENDPAGE
+
+STARTCOLUMN
+ENDCOLUMN

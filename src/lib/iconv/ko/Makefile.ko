@@ -1,0 +1,138 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+# @(#)Makefile	1.0 06/03/26 SMI
+#
+
+COMMON  = ../common/
+
+SRCS	= byte_to_comb.c comb_to_byte.c \
+	  euc_to_iso2022-7.c iso2022-7_to_euc.c \
+	  euc_to_johap92.c johap92_to_euc.c \
+	  euc_to_johap.c johap_to_euc.c \
+	  euc_to_nbyte.c nbyte_to_euc.c \
+	  uhang_to_utf_sub.c uhang_to_utf_main.c \
+	  utf_to_uhang_sub.c utf_to_uhang_main.c \
+	  unihan_to_UCS-2LE_sub.c unihan_to_UCS-2LE_main.c \
+	  ucs_to_unihan.c
+
+dummy: all
+
+include ../Makefile.asian
+
+E2I	= ko_KR-euc%ko_KR-iso2022-7.so
+I2E	= ko_KR-iso2022-7%ko_KR-euc.so
+E2J92	= ko_KR-euc%ko_KR-johap92.so
+J922E	= ko_KR-johap92%ko_KR-euc.so
+E2J	= ko_KR-euc%ko_KR-johap.so
+J2E	= ko_KR-johap%ko_KR-euc.so
+E2NB	= ko_KR-euc%ko_KR-nbyte.so
+NB2E	= ko_KR-nbyte%ko_KR-euc.so
+U2UH	= ko_KR-UTF-8%ko_KR-cp949.so
+UH2U	= ko_KR-cp949%ko_KR-UTF-8.so
+
+UCS2LE2UH = UCS-2LE%ko_KR-cp949.so
+UH2UCS2LE = ko_KR-cp949%UCS-2LE.so
+
+PROGS	= $(E2I) $(I2E) $(E2J92) $(J922E) $(E2J) $(J2E) $(E2NB) $(NB2E) \
+	  $(U2UH) $(UH2U) $(UH2UCS2LE) $(UCS2LE2UH)
+
+LDFLAGS = -G -z defs -lc $(CFLAG_OPT)
+LDFLAGS_64 = -G -z defs -lc $(CFLAG_OPT_64)
+CFLAGS += -c -I$(COMMON)
+CFLAGS_64 += -c -I$(COMMON)
+
+install:: all $(TARGETDIRS)
+	for i in $(PROGS); do \
+		$(INS) $(ICONV_DIR) -m 644 -u bin -g bin $$i; \
+		$(INS) $(ICONV_DIR_64) -m 644 -u bin -g bin $(MACH64)/$$i; \
+	done
+	cd $(FILEROOT)/usr/lib/iconv; $(RM) 646%5601.so; \
+	$(SYMLINK) 646%CODESET.so 646%5601.so
+	cd $(FILEROOT)/usr/lib/iconv/$(MACH64); $(RM) 646%5601.so; \
+	$(SYMLINK) 646%CODESET.so 646%5601.so
+
+all: $(MACH64) $(PROGS)
+
+#
+# libraries
+#
+$(E2I): euc_to_iso2022-7.o
+	$(CC) $(LDFLAGS) -G -O -o $@ euc_to_iso2022-7.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -G -O -o $@ euc_to_iso2022-7.o
+
+$(I2E): iso2022-7_to_euc.o
+	$(CC) $(LDFLAGS) -G -O -o $@ iso2022-7_to_euc.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -G -O -o $@ iso2022-7_to_euc.o
+
+$(E2J92): euc_to_johap92.o ktable.o comp_to_pack.o c2p.o
+	$(CC) $(LDFLAGS) -G -O -o $@ comp_to_pack.o c2p.o euc_to_johap92.o ktable.o 
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -G -O -o $@ comp_to_pack.o c2p.o euc_to_johap92.o ktable.o 
+
+$(J922E): johap92_to_euc.o ktable.o
+	$(CC) $(LDFLAGS) -G -O -o $@ johap92_to_euc.o ktable.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -G -O -o $@ johap92_to_euc.o ktable.o
+
+$(E2J): euc_to_johap.o ktable.o comp_to_pack.o c2p.o
+	$(CC) $(LDFLAGS) -G -O -o $@ euc_to_johap.o ktable.o comp_to_pack.o c2p.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -G -O -o $@ euc_to_johap.o ktable.o comp_to_pack.o c2p.o
+
+$(J2E): johap_to_euc.o ktable.o pack_to_comp.o
+	$(CC) $(LDFLAGS) -G -O -o $@ johap_to_euc.o ktable.o pack_to_comp.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -G -O -o $@ johap_to_euc.o ktable.o pack_to_comp.o
+
+$(E2NB): euc_to_nbyte.o comb_to_byte.o
+	$(CC) $(LDFLAGS) -G -O -o $@ euc_to_nbyte.o comb_to_byte.o c2p.o ktable.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -G -O -o $@ euc_to_nbyte.o comb_to_byte.o c2p.o ktable.o
+
+$(NB2E): nbyte_to_euc.o byte_to_comb.o
+	$(CC) $(LDFLAGS) -G -O -o $@ nbyte_to_euc.o byte_to_comb.o c2p.o ktable.o pack_to_comp.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -G -O -o $@ nbyte_to_euc.o byte_to_comb.o c2p.o ktable.o pack_to_comp.o
+
+$(U2UH): utf_to_uhang_main.o utf_to_uhang_sub.o common_utf.o common_utf8.o common_def.h
+	 $(CC) $(LDFLAGS) -o $@ utf_to_uhang_main.o utf_to_uhang_sub.o common_utf.o common_utf8.o
+	 cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ utf_to_uhang_main.o utf_to_uhang_sub.o common_utf.o common_utf8.o
+
+$(UH2U): uhang_to_utf_main.o uhang_to_utf_sub.o common_utf.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ uhang_to_utf_main.o uhang_to_utf_sub.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ uhang_to_utf_main.o uhang_to_utf_sub.o common_utf.o
+
+$(UH2UCS2LE) : unihan_to_UCS-2LE_sub.o unihan_to_UCS-2LE_main.o common_utf.o
+	$(CC) $(LDFLAGS) -o $@ unihan_to_UCS-2LE_sub.o unihan_to_UCS-2LE_main.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ unihan_to_UCS-2LE_sub.o unihan_to_UCS-2LE_main.o common_utf.o
+
+$(UCS2LE2UH) : ucs_to_unihan.o utf_to_uhang_sub.o common_utf.o
+	$(CC) $(LDFLAGS) -o $@ ucs_to_unihan.o utf_to_uhang_sub.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ ucs_to_unihan.o utf_to_uhang_sub.o common_utf.o
+
+#
+# objs
+#
+common_utf8.o: $(COMMON)common_utf8.c
+	$(CC) $(CFLAGS) -c $(COMMON)common_utf8.c
+	$(CC) $(CFLAGS_64) -c $(COMMON)common_utf8.c -o $(MACH64)/$@
+
+ucs_to_unihan.o : ucs_to_unihan.c
+	$(CC) $(CFLAGS) -DUCS_2LE -c ucs_to_unihan.c
+	$(CC) $(CFLAGS_64) -DUCS_2LE -c ucs_to_unihan.c -o $(MACH64)/$@
+

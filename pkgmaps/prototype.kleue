@@ -1,0 +1,43 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none usr 0755 root sys
+d none usr/lib 0755 root bin
+d none usr/lib/locale 0755 root bin
+d none usr/lib/locale/ko_KR.UTF-8@dict 0755 root bin
+s none usr/lib/locale/ko_KR.UTF-8@dict/LC_CTYPE=../ko.UTF-8/LC_CTYPE
+s none usr/lib/locale/ko_KR.UTF-8@dict/LC_MESSAGES=../ko.UTF-8/LC_MESSAGES
+s none usr/lib/locale/ko_KR.UTF-8@dict/LC_TIME=../ko.UTF-8/LC_TIME
+s none usr/lib/locale/ko_KR.UTF-8@dict/LO_LTYPE=../ko.UTF-8/LO_LTYPE
+f none usr/lib/locale/ko_KR.UTF-8@dict/ko_KR.UTF-8@dict.so.3=usr/lib/locale/ko.UTF-8@dict/ko.UTF-8@dict.so.3 0555 root bin
+s none usr/lib/locale/ko_KR.UTF-8@dict/methods_ko_KR.UTF-8@dict.so.3=../ko.UTF-8/methods_ko.UTF-8.so.3
+d none usr/lib/locale/ko_KR.EUC@dict 0755 root bin
+s none usr/lib/locale/ko_KR.EUC@dict/LC_COLLATE=../ko/LC_COLLATE
+s none usr/lib/locale/ko_KR.EUC@dict/LC_CTYPE=../ko/LC_CTYPE
+s none usr/lib/locale/ko_KR.EUC@dict/LC_MESSAGES=../ko/LC_MESSAGES
+s none usr/lib/locale/ko_KR.EUC@dict/LC_MONETARY=../ko/LC_MONETARY
+s none usr/lib/locale/ko_KR.EUC@dict/LC_NUMERIC=../ko/LC_NUMERIC
+s none usr/lib/locale/ko_KR.EUC@dict/LC_TIME=../ko/LC_TIME
+f none usr/lib/locale/ko_KR.EUC@dict/ko_KR.EUC@dict.so.3=usr/lib/locale/ko@dict/ko@dict.so.3 0555 root bin
+s none usr/lib/locale/ko_KR.EUC@dict/methods_ko_KR.EUC@dict.so.3=../ko/methods_ko.so.3
+

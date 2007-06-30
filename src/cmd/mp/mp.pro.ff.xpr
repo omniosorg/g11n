@@ -1,0 +1,83 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2001 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+STARTCOMMON
+# 0 portrait, 1 landscape
+ORIENTATION 1
+NUMCOLS  03
+PAGELENGTH 80
+LINELENGTH 80
+# Printing won't exceed this in Y direction.
+YTEXTBOUNDARY	1820
+HDNGFONTSIZE	65
+BODYFONTSIZE	47
+STARTTEXT	0 125
+PROLOGDPI 300
+ENDCOMMON
+
+# for US paper size 8.5X11 inches @ 300 dpi
+# that is for a page of pixel width 2550 and height 3300
+# All drawing units in pixels.
+
+STARTPAGE
+ENDPAGE
+
+STARTFORCEDCOLUMN
+
+LINE 1010 0  1010 1930
+LINE 0 1930  1010 1930
+
+ENDFORCEDCOLUMN
+
+STARTCOLUMN
+
+LINE 20 0 970 0
+LINE 20 80 970 80
+LINE 0 20 0 60
+LINE 990 20 990 60
+
+ARC 0 0 40 40 90 90
+ARC 0 40 40 40 180 90
+ARC 950 0 40 40 0 90
+ARC 950 40 40 40 270 90
+
+LINE 20 1820 970 1820
+LINE 20 1900 970 1900
+LINE 0 1840 0 1880
+LINE 990 1840  990 1880
+
+ARC 0 1820 40 40 90 90
+ARC 0 1860 40 40 180 90
+ARC 950 1820 40 40 0 90
+ARC 950 1860 40 40 270 90
+
+ARC 925 1835 56 56 0 360
+
+
+USERSTRINGPOS	30 45
+TIMESTRINGPOS	590 45
+PAGESTRINGPOS 	940 1870
+SUBJECTSTRINGPOS 30  1870
+
+ENDCOLUMN

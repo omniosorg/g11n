@@ -1,0 +1,92 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2002 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+#ident	"@(#)README	1.3 02/03/12 SMI"
+
+Some info on how to use the xuctblgen:
+
+1. This tool is an internal utility and not at all easy to use.
+   I just hope this short writeup has some useful info that people can
+   use.
+
+2. Due to recent security fix in libX11 as of 3/2002, we should
+   define XLOCALEDIR macro during the compile-time of the sources
+   (especially for tblgen.c). Also, during the use of the utility, you
+   should provide XLOCALEDIR environment variable pointing to
+   your target destination directory where you save conv table sources and
+   also target binary conv tables.
+
+3. There are several command line options:
+
+   -locale <locale>	You must supply this option with your locale
+			name to successfully build your locale's conv
+			tables.
+
+   -codeset_num <num>	You must supply this option with the number of
+			charsets in your locale, i.e., XLC_LOCALE file.
+
+   -use_common_dir	Optional. If supplied, the xuctblgen utility will
+			try to read conv table source files and also try to
+			write binary conv tables at the following location:
+
+			$XLOCALEDIR/usr/openwin/lib/locale/common/conv_tables/
+
+			If not specified, by default, the utility will try to
+			read the conv table source files and also try to
+			write the binary conv tables at the locale's
+			conv_tables directory:
+
+			$XLOCALEDIR/usr/openwin/lib/locale/<locale>/conv_tables/
+
+			Even though you don't specify this option, during
+			the read attempt only, the utility will also try to
+			read the conv table source files from the common
+			conv_tables directory if it wasn't able to
+			find the source files from the locale's conv_tables
+			directory.
+
+			Most likely no need to be used during your locale's
+			conv table generations.
+
+   -no_wc_to_cs_tables	Optional. If specified, the xuctblgen utility will not
+			generate conversion tables such as U32_TO_CS_0,
+			U32_TO_CS_1, and so on.
+
+			Most likely no need to be used during your locale's
+			conv table generations.
+
+   -no_cs_to_wc_tables	Optional. If specified, the xuctblgen utility will not
+			generate conversion tables such as ISO8859-2.GR,
+			JISX0208-0.GR, GB2312-0.GR, and so on that
+			you specified in the "cs_conversion_table" lines of
+			the XLC_LOCALE file. This will save you some build
+			time since most locales are using the common
+			conv tables at:
+			
+			/usr/openwin/lib/locale/common/conv_tables/
+
+			and thus you don't need to generate those files.
+
+			Most likely need to be used!

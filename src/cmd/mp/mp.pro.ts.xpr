@@ -1,0 +1,83 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2001 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+STARTCOMMON
+# 0 portrait, 1 landscape
+ORIENTATION 1
+NUMCOLS  02
+PAGELENGTH 80
+LINELENGTH 90
+# Printing won't exceed this in Y direction.
+YTEXTBOUNDARY	2150
+HDNGFONTSIZE	70
+BODYFONTSIZE	52
+STARTTEXT	200 130
+PROLOGDPI 300
+ENDCOMMON
+
+# for US paper size 8.5X11 inches @ 300 dpi
+# that is for a page of pixel width 2550 and height 3300
+# All drawing units in pixels.
+
+STARTFORCEDPAGE
+ARC 10 260 48 48 0 360
+ARC 10 480 48 48 0 360
+ARC 10 700 48 48 0 360
+ARC 10 1530 48 48 0 360
+ARC 10 1750 48 48 0 360
+ARC 10 1970 48 48 0 360
+
+LINE 1700 0 1700 2200 
+ENDFORCEDPAGE
+
+STARTCOLUMN
+
+LINE 200 0 1630 0
+LINE 200 80 1630 80
+LINE 180 20 180 60
+LINE 1650 20 1650 60
+
+ARC 180 0 40 40 90 90
+ARC 180 40 40 40 180 90
+ARC 1610 0 40 40 0 90
+ARC 1610 40 40 40 270 90
+
+LINE 200 2150 1630 2150
+LINE 200 2230 1630 2230
+LINE 180 2170 180 2210
+LINE 1650 2170 1650 2210
+
+ARC 180 2150 40 40 90 90
+ARC 180 2190 40 40 180 90
+ARC 1610 2150 40 40 0 90
+ARC 1610 2190 40 40 270 90
+
+ARC 1570 2160 56 56 0 360
+
+USERSTRINGPOS	220 50
+TIMESTRINGPOS	1150 50
+PAGESTRINGPOS 	1585 2198
+SUBJECTSTRINGPOS 230 2198 
+
+ENDCOLUMN

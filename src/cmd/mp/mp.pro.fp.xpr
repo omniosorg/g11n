@@ -1,0 +1,84 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2001 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+STARTCOMMON
+# 0 portrait, 1 landscape
+ORIENTATION 1
+NUMCOLS  02
+PAGELENGTH 80
+LINELENGTH 80
+# Printing won't exceed this in Y direction.
+YTEXTBOUNDARY	2200
+HDNGFONTSIZE	70
+BODYFONTSIZE	55
+STARTTEXT	280 125
+PROLOGDPI 300
+ENDCOMMON
+
+# for US paper size 8.5X11 inches @ 300 dpi
+# that is for a page of pixel width 2550 and height 3300
+# All drawing units in pixels.
+
+STARTFORCEDPAGE
+ARC 0 340 48 48 0 360
+ARC 0 640 48 48 0 360
+ARC 0 940 48 48 0 360
+ARC 0 1165 48 48 0 360
+ARC 0 1390 48 48 0 360
+ARC 0 1690 48 48 0 360
+ARC 0 1990 48 48 0 360
+
+LINE 1650 25 1650 2200 
+ENDFORCEDPAGE
+
+STARTCOLUMN
+
+LINE 300 0 1405 0
+LINE 300 80 1405 80
+LINE 280 20 280 60
+LINE 1425 20 1425 60
+
+ARC 280 0 40 40 90 90
+ARC 280 40 40 40 180 90
+ARC 1385 0 40 40 0 90
+ARC 1385 40 40 40 270 90
+
+LINE 300 2200 1405 2200
+LINE 300 2280 1405 2280
+LINE 280 2220 280 2260
+LINE 1425 2220 1425 2260
+
+ARC 280 2200 40 40 90 90
+ARC 280 2240 40 40 180 90
+ARC 1385 2200 40 40 0 90
+ARC 1385 2240 40 40 270 90
+
+ARC 1338 2208 56 56 0 360
+
+USERSTRINGPOS	320 50
+TIMESTRINGPOS	950 50
+PAGESTRINGPOS 	1350 2245
+SUBJECTSTRINGPOS 320 2245 
+
+ENDCOLUMN

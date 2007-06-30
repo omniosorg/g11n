@@ -1,0 +1,149 @@
+#######################################################################################
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#######################################################################################
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#######################################################################################
+#
+#####################################################################
+
+LC_CTYPE
+
+include CTYPE.UTF-8
+
+END LC_CTYPE
+
+
+
+
+LC_COLLATE
+
+include COLLATE.UTF-8
+
+END LC_COLLATE
+
+
+
+#
+# Locale category definitions at below, i.e., LC_MONETARY, LC_NUMERIC,
+# LC_TIME and LC_MESSAGES, came from hi_IN localedef file of ELC.
+#
+
+LC_MONETARY
+
+int_curr_symbol		"<I><N><R><SP>"
+currency_symbol		"<U0930><U0941>"
+mon_decimal_point	"<period>"
+mon_thousands_sep	"<comma>"
+mon_grouping		3
+positive_sign		""
+negative_sign		"<hyphen>"
+int_frac_digits		2
+frac_digits		2
+p_cs_precedes		1
+p_sep_by_space		0
+n_cs_precedes		1
+n_sep_by_space		0
+p_sign_posn		1
+n_sign_posn		1
+
+END LC_MONETARY
+
+#
+#
+
+LC_NUMERIC
+
+decimal_point	"<period>"
+thousands_sep	"<comma>"
+grouping	3
+
+END LC_NUMERIC
+
+#
+#
+
+LC_TIME
+
+abday		"<U0930><U0935><U093F>";\
+		"<U0938><U094B><U092E>";\
+		"<U092E><U0902><U0917><U0932>";\
+		"<U092C><U0941><U0927>";\
+		"<U0917><U0941><U0930><U0941>";\
+		"<U0936><U0941><U0915><U094D><U0930>";\
+		"<U0936><U0928><U093F>"
+
+day		"<U0930><U0935><U093F><U0935><U093E><U0930>";\
+		"<U0938><U094B><U092E><U0935><U093E><U0930>";\
+		"<U092E><U0902><U0917><U0932><U0935><U093E><U0930>";\
+		"<U092C><U0941><U0927><U0935><U093E><U0930>";\
+		"<U0917><U0941><U0930><U0941><U0935><U093E><U0930>";\
+		"<U0936><U0941><U0915><U094D><U0930><U0935><U093E><U0930>";\
+		"<U0936><U0928><U093F><U0935><U093E><U0930>"
+
+abmon		"<U091C><U0928><U0935><U0930><U0940>";\
+		"<U092B><U0930><U0935><U0930><U0940>";\
+		"<U092E><U093E><U0930><U094D><U091A>";\
+		"<U0905><U092A><U094D><U0930><U0948><U0932>";\
+		"<U092E><U0908>";\
+		"<U091C><U0942><U0928>";\
+		"<U091C><U0941><U0932><U093E><U0908>";\
+		"<U0905><U0917><U0938><U094D><U0924>";\
+		"<U0938><U093F><U0924><U092E><U094D><U092C><U0930>";\
+		"<U0905><U0915><U094D><U0924><U0942><U092C><U0930>";\
+		"<U0928><U0935><U092E><U094D><U092C><U0930>";\
+		"<U0926><U093F><U0938><U092E><U094D><U092C><U0930>"
+
+mon		"<U091C><U0928><U0935><U0930><U0940>";\
+                "<U092B><U0930><U0935><U0930><U0940>";\
+                "<U092E><U093E><U0930><U094D><U091A>";\
+                "<U0905><U092A><U094D><U0930><U0948><U0932>";\
+                "<U092E><U0908>";\
+                "<U091C><U0942><U0928>";\
+                "<U091C><U0941><U0932><U093E><U0908>";\
+                "<U0905><U0917><U0938><U094D><U0924>";\
+                "<U0938><U093F><U0924><U092E><U094D><U092C><U0930>";\
+                "<U0905><U0915><U094D><U0924><U0942><U092C><U0930>";\
+                "<U0928><U0935><U092E><U094D><U092C><U0930>";\
+                "<U0926><U093F><U0938><U092E><U094D><U092C><U0930>"
+
+d_t_fmt		"%H:%M:%S %a %Z %d %m %Y"
+d_fmt		"%d/%m/%Y"
+t_fmt		"%H:%M:%S"
+am_pm		"<U092A><U0942><U0930><U094D><U0935><U093E><U0939><U094D><U0928>";\
+		"<U0905><U092A><U0930><U093E><U0939><U094D><U0928>"
+date_fmt	"%a %b %e %T %Z %Y"
+t_fmt_ampm	"%I:%M:%S %p"
+
+END LC_TIME
+
+#
+#
+
+LC_MESSAGES
+
+yesexpr		"[yYsS][[:alpha:]]*"
+noexpr		"[nN][[:alpha:]]*"
+
+END LC_MESSAGES

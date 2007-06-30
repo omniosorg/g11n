@@ -1,0 +1,454 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none usr 0755 root sys
+d none usr/lib 0755 root bin
+d none usr/lib/locale 0755 root bin
+
+d none usr/lib/locale/es 0755 root bin
+d none usr/lib/locale/es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_AR.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_AR.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_AR.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_AR.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_AR.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_AR.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_AR.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_AR.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_AR.ISO8859-1/es_AR.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_AR 0755 root bin
+s none usr/lib/locale/es_AR/es_AR.so.3=../es_AR.ISO8859-1/es_AR.ISO8859-1.so.3
+s none usr/lib/locale/es_AR/locale_description=../es_AR.ISO8859-1/locale_description
+
+d none usr/lib/locale/es_BO.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_BO.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_BO.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_BO.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_BO.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_BO.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_BO.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_BO.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_BO.ISO8859-1/es_BO.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_BO 0755 root bin
+s none usr/lib/locale/es_BO/es_BO.so.3=../es_BO.ISO8859-1/es_BO.ISO8859-1.so.3
+s none usr/lib/locale/es_BO/locale_description=../es_BO.ISO8859-1/locale_description
+
+d none usr/lib/locale/es_CL.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_CL.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_CL.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_CL.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_CL.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_CL.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_CL.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_CL.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_CL.ISO8859-1/es_CL.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_CL 0755 root bin
+s none usr/lib/locale/es_CL/es_CL.so.3=../es_CL.ISO8859-1/es_CL.ISO8859-1.so.3
+s none usr/lib/locale/es_CL/locale_description=../es_CL.ISO8859-1/locale_description
+
+d none usr/lib/locale/es_CO.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_CO.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_CO.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_CO.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_CO.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_CO.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_CO.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_CO.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_CO.ISO8859-1/es_CO.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_CO 0755 root bin
+s none usr/lib/locale/es_CO/es_CO.so.3=../es_CO.ISO8859-1/es_CO.ISO8859-1.so.3
+s none usr/lib/locale/es_CO/locale_description=../es_CO.ISO8859-1/locale_description
+
+d none usr/lib/locale/es_EC.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_EC.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_EC.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_EC.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_EC.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_EC.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_EC.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_EC.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_EC.ISO8859-1/es_EC.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_EC 0755 root bin
+s none usr/lib/locale/es_EC/es_EC.so.3=../es_EC.ISO8859-1/es_EC.ISO8859-1.so.3
+s none usr/lib/locale/es_EC/locale_description=../es_EC.ISO8859-1/locale_description
+
+d none usr/lib/locale/es_PE.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_PE.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_PE.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_PE.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_PE.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_PE.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_PE.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_PE.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_PE.ISO8859-1/es_PE.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_PE 0755 root bin
+s none usr/lib/locale/es_PE/es_PE.so.3=../es_PE.ISO8859-1/es_PE.ISO8859-1.so.3
+s none usr/lib/locale/es_PE/locale_description=../es_PE.ISO8859-1/locale_description
+
+d none usr/lib/locale/es_PY.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_PY.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_PY.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_PY.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_PY.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_PY.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_PY.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_PY.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_PY.ISO8859-1/es_PY.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_PY 0755 root bin
+s none usr/lib/locale/es_PY/es_PY.so.3=../es_PY.ISO8859-1/es_PY.ISO8859-1.so.3
+s none usr/lib/locale/es_PY/locale_description=../es_PY.ISO8859-1/locale_description
+
+d none usr/lib/locale/es_UY.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_UY.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_UY.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_UY.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_UY.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_UY.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_UY.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_UY.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_UY.ISO8859-1/es_UY.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_UY 0755 root bin
+s none usr/lib/locale/es_UY/es_UY.so.3=../es_UY.ISO8859-1/es_UY.ISO8859-1.so.3
+s none usr/lib/locale/es_UY/locale_description=../es_UY.ISO8859-1/locale_description
+
+d none usr/lib/locale/es_VE.ISO8859-1 0755 root bin
+d none usr/lib/locale/es_VE.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_VE.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_VE.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+s none usr/lib/locale/es_VE.ISO8859-1/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es_VE.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_VE.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_VE.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/es_VE.ISO8859-1/es_VE.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/es_VE 0755 root bin
+s none usr/lib/locale/es_VE/es_VE.so.3=../es_VE.ISO8859-1/es_VE.ISO8859-1.so.3
+s none usr/lib/locale/es_VE/locale_description=../es_VE.ISO8859-1/locale_description
+d none usr/lib/locale/pt_BR.ISO8859-1 0755 root bin
+d none usr/lib/locale/pt_BR.ISO8859-1/LC_COLLATE 0755 root bin
+d none usr/lib/locale/pt_BR.ISO8859-1/LC_CTYPE 0755 root bin
+s none usr/lib/locale/pt_BR.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE/LCL_DEF
+d none usr/lib/locale/pt_BR.ISO8859-1/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/pt_BR.ISO8859-1/LC_MONETARY 0755 root bin
+d none usr/lib/locale/pt_BR.ISO8859-1/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/pt_BR.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/pt_BR.ISO8859-1/pt_BR.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/pt_BR 0755 root bin
+s none usr/lib/locale/pt_BR/pt_BR.so.3=../pt_BR.ISO8859-1/pt_BR.ISO8859-1.so.3
+s none usr/lib/locale/pt_BR/locale_description=../pt_BR.ISO8859-1/locale_description
+f none usr/lib/locale/es_AR.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_AR.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/es_BO.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_BO.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/es_CL.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_CL.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/es_CO.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_CO.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/es_EC.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_EC.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/es_PE.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_PE.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/es_PY.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_PY.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/es_UY.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_UY.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/es_VE.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/es_VE.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/pt_BR.ISO8859-1/locale_description 0644 root bin
+f none usr/lib/locale/pt_BR.ISO8859-1/locale_map 0644 root bin
+d none usr/lib/locale/es_AR 0755 root bin
+f none usr/lib/locale/es_AR/geo_map 0644 root bin
+d none usr/lib/locale/es_BO 0755 root bin
+f none usr/lib/locale/es_BO/geo_map 0644 root bin
+d none usr/lib/locale/es_CL 0755 root bin
+f none usr/lib/locale/es_CL/geo_map 0644 root bin
+d none usr/lib/locale/es_CO 0755 root bin
+f none usr/lib/locale/es_CO/geo_map 0644 root bin
+d none usr/lib/locale/es_EC 0755 root bin
+f none usr/lib/locale/es_EC/geo_map 0644 root bin
+d none usr/lib/locale/es_PE 0755 root bin
+f none usr/lib/locale/es_PE/geo_map 0644 root bin
+d none usr/lib/locale/es_PY 0755 root bin
+f none usr/lib/locale/es_PY/geo_map 0644 root bin
+d none usr/lib/locale/es_UY 0755 root bin
+f none usr/lib/locale/es_UY/geo_map 0644 root bin
+d none usr/lib/locale/es_VE 0755 root bin
+f none usr/lib/locale/es_VE/geo_map 0644 root bin
+d none usr/lib/locale/pt_BR 0755 root bin
+f none usr/lib/locale/pt_BR/geo_map 0644 root bin
+d none usr/lib/locale/pt_BR.UTF-8 0755 root bin
+d none usr/lib/locale/pt_BR.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/pt_BR.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/pt_BR.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/pt_BR.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/pt_BR.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+d none usr/lib/locale/pt_BR.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/pt_BR.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/pt_BR.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/pt_BR.UTF-8/LC_TIME 0755 root bin
+f none usr/lib/locale/pt_BR.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/pt_BR.UTF-8/locale_map 0644 root bin
+f none usr/lib/locale/pt_BR.UTF-8/pt_BR.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/pt_BR.UTF-8/methods_pt_BR.UTF-8.so.3=../common/methods_unicode.so.3
+d none usr/lib/locale/pt_BR.UTF-8/LO_LTYPE/ 0755 root bin
+s none usr/lib/locale/pt_BR.UTF-8/LO_LTYPE/pt_BR.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+
+#
+# 64bit
+#
+
+#
+# AMD 64bit
+#
+
+
+
+
+# ------------- New locales added by Yuriy Kuznetsov on 13.10.2005 ------------------
+
+# es_AR
+d none usr/lib/locale/es_AR.UTF-8 0755 root bin
+d none usr/lib/locale/es_AR.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_AR.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_AR.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_AR.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_AR.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_AR.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_AR.UTF-8
+d none usr/lib/locale/es_AR.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_AR.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_AR.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_AR.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_AR.UTF-8/LO_LTYPE/es_AR.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_AR.UTF-8/es_AR.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_AR.UTF-8/methods_es_AR.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_AR.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_AR.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# es_BO
+d none usr/lib/locale/es_BO.UTF-8 0755 root bin
+d none usr/lib/locale/es_BO.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_BO.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_BO.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_BO.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_BO.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_BO.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_BO.UTF-8
+d none usr/lib/locale/es_BO.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_BO.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_BO.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_BO.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_BO.UTF-8/LO_LTYPE/es_BO.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_BO.UTF-8/es_BO.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_BO.UTF-8/methods_es_BO.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_BO.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_BO.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# es_CL
+d none usr/lib/locale/es_CL.UTF-8 0755 root bin
+d none usr/lib/locale/es_CL.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_CL.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_CL.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_CL.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_CL.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_CL.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_CL.UTF-8
+d none usr/lib/locale/es_CL.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_CL.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_CL.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_CL.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_CL.UTF-8/LO_LTYPE/es_CL.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_CL.UTF-8/es_CL.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_CL.UTF-8/methods_es_CL.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_CL.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_CL.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# es_CO
+d none usr/lib/locale/es_CO.UTF-8 0755 root bin
+d none usr/lib/locale/es_CO.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_CO.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_CO.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_CO.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_CO.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_CO.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_CO.UTF-8
+d none usr/lib/locale/es_CO.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_CO.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_CO.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_CO.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_CO.UTF-8/LO_LTYPE/es_CO.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_CO.UTF-8/es_CO.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_CO.UTF-8/methods_es_CO.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_CO.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_CO.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# es_EC
+d none usr/lib/locale/es_EC.UTF-8 0755 root bin
+d none usr/lib/locale/es_EC.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_EC.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_EC.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_EC.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_EC.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_EC.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_EC.UTF-8
+d none usr/lib/locale/es_EC.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_EC.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_EC.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_EC.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_EC.UTF-8/LO_LTYPE/es_EC.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_EC.UTF-8/es_EC.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_EC.UTF-8/methods_es_EC.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_EC.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_EC.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# es_PE
+d none usr/lib/locale/es_PE.UTF-8 0755 root bin
+d none usr/lib/locale/es_PE.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_PE.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_PE.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_PE.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_PE.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_PE.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_PE.UTF-8
+d none usr/lib/locale/es_PE.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_PE.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_PE.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_PE.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_PE.UTF-8/LO_LTYPE/es_PE.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_PE.UTF-8/es_PE.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_PE.UTF-8/methods_es_PE.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_PE.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_PE.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# es_PY
+d none usr/lib/locale/es_PY.UTF-8 0755 root bin
+d none usr/lib/locale/es_PY.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_PY.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_PY.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_PY.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_PY.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_PY.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_PY.UTF-8
+d none usr/lib/locale/es_PY.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_PY.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_PY.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_PY.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_PY.UTF-8/LO_LTYPE/es_PY.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_PY.UTF-8/es_PY.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_PY.UTF-8/methods_es_PY.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_PY.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_PY.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# es_UY
+d none usr/lib/locale/es_UY.UTF-8 0755 root bin
+d none usr/lib/locale/es_UY.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_UY.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_UY.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_UY.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_UY.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_UY.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_UY.UTF-8
+d none usr/lib/locale/es_UY.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_UY.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_UY.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_UY.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_UY.UTF-8/LO_LTYPE/es_UY.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_UY.UTF-8/es_UY.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_UY.UTF-8/methods_es_UY.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_UY.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_UY.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# es_VE
+d none usr/lib/locale/es_VE.UTF-8 0755 root bin
+d none usr/lib/locale/es_VE.UTF-8/LC_COLLATE 0755 root bin
+d none usr/lib/locale/es_VE.UTF-8/LC_CTYPE 0755 root bin
+s none usr/lib/locale/es_VE.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+s none usr/lib/locale/es_VE.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/es_VE.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+s none usr/lib/locale/es_VE.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
+# es_VE.UTF-8
+d none usr/lib/locale/es_VE.UTF-8/LC_MONETARY 0755 root bin
+d none usr/lib/locale/es_VE.UTF-8/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/es_VE.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/es_VE.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/es_VE.UTF-8/LO_LTYPE/es_VE.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/es_VE.UTF-8/es_VE.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_VE.UTF-8/methods_es_VE.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/es_VE.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/es_VE.UTF-8/locale_map 0644 root bin
+#
+# 64bit
+#
+#
+# AMD 64bit
+#
+
+# ----------- END OF New locales added by Yuriy Kuznetsov on 13.10.2005 ------------

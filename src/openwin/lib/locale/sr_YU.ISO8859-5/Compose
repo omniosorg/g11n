@@ -1,0 +1,178 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#
+# Copyright (C) 1994 X Consortium
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software. 
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+# X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+# AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNEC-
+# TION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# Except as contained in this notice, the name of the X Consortium shall not
+# be used in advertising or otherwise to promote the sale, use or other deal-
+# ings in this Software without prior written authorization from the X Consor-
+# tium.
+#
+# X Window System is a trademark of X Consortium, Inc.
+#
+
+#
+# $SunId$         (c) Sun Microsystems, Inc.
+#
+# Compose table for the Serbian language [gelf]
+#
+
+
+#
+# Native English mode
+#
+
+STATE   "[ English ]"
+Ctrl<space>    :  SWITCH_STATE_TO "[ Serbian ]"
+Ctrl<T>    : SWITCH_STATE_TO  "[ Serbian ]"
+END_STATE
+
+
+#
+# Serbian Mode
+#
+
+
+STATE   "[ Serbian ]"
+Ctrl<T>    :  SWITCH_STATE_TO "[ English ]"
+Ctrl<space>    :  SWITCH_STATE_TO "[ English ]"
+#
+#
+
+# Second row
+# Comment: numerosign is a Cyrillic keysym
+
+#Not Needed
+#<at>            : "\042"	quotedbl
+#<numbersign>    : "\360"	numerosign
+#<dollar>        : "\045"	percent
+#<percent>       : "\072"	colon
+#<asciicircum>   : "\054"	comma
+#<ampersand>     : "\056"	period
+#<asterisk>      : "\073"	semicolon
+#<numerosign>    : "\360"	numerosign
+
+
+# Third row
+
+
+<q>		: "\371"	Cyrillic_lje
+<w>		: "\372"	Cyrillic_nje	
+<e>		: "\325"	Cyrillic_ie
+<r>		: "\340"	Cyrillic_er
+<t>		: "\342"	Cyrillic_te
+<y>		: "\327"	Cyrillic_ze
+<u>		: "\343"	Cyrillic_u
+<i>		: "\330"	Cyrillic_i
+<o>		: "\336"	Cyrillic_o
+<p>		: "\337"	Cyrillic_pe
+<bracketleft>	: "\350"	Cyrillic_sha
+<bracketright>	: "\362"	Serbian_dje	
+
+<Q>		: "\251"	Cyrillic_LJE	
+<W>		: "\252"	Cyrillic_NJE	
+<E>		: "\265"	Cyrillic_IE
+<R>		: "\300"	Cyrillic_ER
+<T>		: "\302"	Cyrillic_TE
+<Y>		: "\267"	Cyrillic_ZE
+<U>		: "\303"	Cyrillic_U
+<I>		: "\270"	Cyrillic_I
+<O>		: "\276"	Cyrillic_O
+<P>		: "\277"	Cyrillic_PE
+Lock<bracketleft> 	: "\310"	Cyrillic_SHA
+Lock<bracketright>	: "\242"	Serbian_DJE
+<braceleft> 	: "\310"	Cyrillic_SHA
+<braceright>	: "\242"	Serbian_DJE	
+
+
+# Fourth row
+
+<a>		: "\320"	Cyrillic_a
+<s>		: "\341"	Cyrillic_es
+<d>		: "\324"	Cyrillic_de
+<f>		: "\344"	Cyrillic_ef
+<g>		: "\323"	Cyrillic_ghe
+<h>		 : "\345"	Cyrillic_ha
+<j>		: "\370"	Cyrillic_je	
+<k>		: "\332"	Cyrillic_ka
+<l>		: "\333"	Cyrillic_el
+<semicolon>	: "\347"	Cyrillic_che
+<quoteright>	: "\373"	Serbian_tshe	
+
+<A>		: "\260"	Cyrillic_A
+<S>		: "\301"	Cyrillic_ES
+<D>		: "\264"	Cyrillic_DE
+<F>		: "\304"	Cyrillic_EF
+<G>		: "\263"	Cyrillic_GHE
+<H>		: "\305"	Cyrillic_HA
+<J>		: "\250"	Cyrillic_JE		
+<K>		 : "\272"	Cyrillic_KA
+<L>		: "\273"	Cyrillic_EL
+<colon>		: "\307"	Cyrillic_CHE
+<quotedbl>	: "\253"	Serbian_TSHE 		
+
+
+# Fifth row
+
+<z>		: "\365"	Serbian_dze	
+<x>		: "\377"	Cyrillic_dzhe	
+<c>		: "\346"	Cyrillic_tse
+<v>		: "\322"	Cyrillic_ve
+<b>		: "\321"	Cyrillic_be
+<n>		: "\335"	Cyrillic_en
+<m>		: "\334"	Cyrillic_em
+
+
+
+<Z>		: "\245"	Serbian_DZE			
+<X>		: "\257"	Cyrillic_DZHE		
+<C>		: "\306"	Cyrillic_TSE
+<V>		: "\262"	Cyrillic_VE
+<B>		:  "\261"	Cyrillic_BE
+<N>		: "\275"	Cyrillic_EN
+<M>		: "\274"	Cyrillic_EM
+
+
+
+
+END_STATE
+

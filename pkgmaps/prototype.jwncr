@@ -1,0 +1,8 @@
+i pkginfo
+i depend
+i i.services
+i r.services
+i copyright
+d none etc 0755 root sys
+d none etc/inet 0755 root sys
+e services etc/inet/services 0444 root sys

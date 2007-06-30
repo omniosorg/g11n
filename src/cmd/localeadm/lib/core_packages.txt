@@ -1,0 +1,66 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+SUNWauaos	aua	c_solaris2
+SUNWauaow	aua	c_solaris1
+SUNWcamos	cam	c_solaris2
+SUNWcamow	cam	c_solaris1
+SUNWceuos	ceu	c_solaris2
+SUNWceuow	ceu	c_solaris1
+SUNWeeuos	eeu	c_solaris2
+SUNWeeuow	eeu	c_solaris1
+SUNWeuluf	hi_in	c_solaris1
+SUNWinleu	hi_in	c_solaris2
+SUNWale		ja	c_solaris1
+SUNWeuluf	ja	c_solaris1
+SUNWjfpr	ja	c_solaris1
+SUNWjfpu	ja	c_solaris1
+SUNWale		korean	c_solaris1
+SUNWeuluf	korean	c_solaris1
+SUNWkleu	korean	c_solaris1
+SUNWmeaos	mea	c_solaris2
+SUNWmeaow	mea	c_solaris1
+SUNWnafos	naf	c_solaris2
+SUNWnafow	naf	c_solaris1
+SUNWnamos	nam	c_solaris2
+SUNWnamow	nam	c_solaris1
+SUNWneuos	neu	c_solaris2
+SUNWneuow	neu	c_solaris1
+SUNWsamow       sam     c_solaris1
+SUNWsamos       sam     c_solaris2
+SUNWseuow	seu	c_solaris1
+SUNWseuos	seu	c_solaris2
+SUNWeuluf	th_th	c_solaris1
+SUNWtleu	th_th	c_solaris2
+SUNWweuos	weu	c_solaris2
+SUNWweuow	weu	c_solaris1
+SUNWale		china	c_solaris1
+SUNWcleu	china	c_solaris1
+SUNWeuluf	china	c_solaris1
+SUNWale		hongkong	c_solaris1
+SUNWeuluf	hongkong	c_solaris1
+SUNWhkleu	hongkong	c_solaris2
+SUNWale		taiwan	c_solaris1
+SUNWeuluf	taiwan	c_solaris1
+SUNWhleu	taiwan	c_solaris1

@@ -1,0 +1,173 @@
+!
+! CDDL HEADER START
+!
+! The contents of this file are subject to the terms of the
+! Common Development and Distribution License (the "License").
+! You may not use this file except in compliance with the License.
+!
+! You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+! or http://www.opensolaris.org/os/licensing.
+! See the License for the specific language governing permissions
+! and limitations under the License.
+!
+! When distributing Covered Code, include this CDDL HEADER in each
+! file and include the License file at src/OPENSOLARIS.LICENSE.
+! If applicable, add the following below this CDDL HEADER, with the
+! fields enclosed by brackets "[]" replaced with your own identifying
+! information: Portions Copyright [yyyy] [name of copyright owner]
+!
+! CDDL HEADER END
+!
+!
+! Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+! Use is subject to license terms.
+!
+
+
+! $XConsortium: XTerm.ad,v 1.32 94/02/09 18:19:21 converse Exp $
+! $SunSoft: @(#)XTerm.ad	1.3 02/20/97 11:08:02$
+XTerm*international:True
+XTerm.JoinSession:False
+*xterm*FontList:        -*-gothic-medium-r-normal--14-*
+*xterm*FontSet:     -*-gothic-medium-r-normal--14-*
+*xterm*Font:            -*-gothic-medium-r-normal--14-*
+*SimpleMenu*BackingStore: NotUseful
+*SimpleMenu*menuLabel.font: -*-gothic-medium-r-normal--14-*
+*SimpleMenu*menuLabel.vertSpace: 	100
+*SimpleMenu*HorizontalMargins: 16
+*SimpleMenu*Sme.height:	16
+
+*SimpleMenu*Cursor: left_ptr
+*mainMenu.Label:  メインオプション
+*mainMenu*securekbd*Label:  セキュリティ保護されたキーボード
+*mainMenu*allowsends*Label:  SendEvents を許可
+*mainMenu*logging*Label:  ファイルにログ
+*mainMenu*redraw*Label:  ウィンドウを再描画
+*mainMenu*suspend*Label:  STOP シグナルを送信
+*mainMenu*continue*Label:  CONT シグナルを送信
+*mainMenu*interrupt*Label:  INT シグナルを送信
+*mainMenu*hangup*Label:  HUP シグナルを送信
+*mainMenu*terminate*Label:  TERM シグナルを送信
+*mainMenu*kill*Label:  KILL シグナルを送信
+*mainMenu*quit*Label:  終了
+
+*vtMenu.Label:  VT オプション
+*vtMenu*scrollbar*Label:  スクロールバーを有効に
+*vtMenu*jumpscroll*Label:  ジャンプスクロールを有効に
+*vtMenu*reversevideo*Label:  反転表示を有効に
+*vtMenu*autowrap*Label:  自動折返しを有効に
+*vtMenu*reversewrap*Label:  逆折返しを有効に
+*vtMenu*autolinefeed*Label:  自動改行を有効に
+*vtMenu*appcursor*Label:  アプリケーションのカーソルキーを有効に
+*vtMenu*appkeypad*Label:  アプリケーションのキーパッドを有効に
+*vtMenu*scrollkey*Label:  キーを押すと最下行までスクロール
+*vtMenu*scrollttyoutput*Label:  Tty 出力時に最下行までスクロール
+*vtMenu*allow132*Label: 80/132 カラムへの切替えを許可
+*vtMenu*cursesemul*Label:  Curse エミュレーションを有効に
+*vtMenu*visualbell*Label:  可視ベルを有効に
+*vtMenu*marginbell*Label:  マージンベルを有効に
+*vtMenu*altscreen*Label:  代替スクリーンを表示
+*vtMenu*activeicon*Label: アクティブなアイコンを有効に
+*vtMenu*softreset*Label:  ソフトリセットを実行
+*vtMenu*hardreset*Label:  フルリセットを実行
+*vtMenu*clearsavedlines*Label:  保存した行をリセットしてクリア
+*vtMenu*tekshow*Label:  Tek ウィンドウを表示
+*vtMenu*tekmode*Label:  Tek モードに切替え
+*vtMenu*vthide*Label:  VT ウィンドウを非表示
+
+*VT100.Translations:	#override \
+        @Num_Lock<Key>KP_0: string(0)\n\
+        @Num_Lock<Key>KP_1: string(1)\n\
+        @Num_Lock<Key>KP_2: string(2)\n\
+        @Num_Lock<Key>KP_3: string(3)\n\
+        @Num_Lock<Key>KP_4: string(4)\n\
+        @Num_Lock<Key>KP_5: string(5)\n\
+        @Num_Lock<Key>KP_6: string(6)\n\
+        @Num_Lock<Key>KP_7: string(7)\n\
+        @Num_Lock<Key>KP_8: string(8)\n\
+        @Num_Lock<Key>KP_9: string(9)\n\
+        @Num_Lock<Key>KP_Add: string(+)\n\
+        @Num_Lock<Key>KP_Decimal: string(.)\n\
+        @Num_Lock<Key>KP_Divide: string(/)\n\
+        @Num_Lock<Key>KP_Enter: string(\015)\n\
+        @Num_Lock<Key>KP_Equal: string(=)\n\
+        @Num_Lock<Key>KP_Multiply: string(*)\n\
+        @Num_Lock<Key>KP_Subtract: string(-)\n\
+        <Key>Prior:scroll-back(1,page)\n\
+        <Key>Next:scroll-forw(1,page)\n\
+                 Ctrl <Btn4Down>:scroll-back(1,halfpage,m) \n\
+            Lock Ctrl <Btn4Down>:scroll-back(1,halfpage,m) \n\
+  Lock @Num_Lock Ctrl <Btn4Down>:scroll-back(1,halfpage,m) \n\
+       @Num_Lock Ctrl <Btn4Down>:scroll-back(1,halfpage,m) \n\
+                      <Btn4Down>:scroll-back(5,line,m)     \n\
+                 Ctrl <Btn5Down>:scroll-forw(1,halfpage,m) \n\
+            Lock Ctrl <Btn5Down>:scroll-forw(1,halfpage,m) \n\
+  Lock @Num_Lock Ctrl <Btn5Down>:scroll-forw(1,halfpage,m) \n\
+       @Num_Lock Ctrl <Btn5Down>:scroll-forw(1,halfpage,m) \n\
+                      <Btn5Down>:scroll-forw(5,line,m)     \n\
+	<Key>F16: start-extend() select-end(PRIMARY, CUT_BUFFER0, CLIPBOARD) \n\
+	<Key>F18: insert-selection(PRIMARY, CLIPBOARD) \n\
+	<Key>F27: scroll-back(100,page) \n\
+	<Key>R13: scroll-forw(100,page) \n\
+	<Key>Home: scroll-back(100,page) \n\
+	<Key>End: scroll-forw(100,page) \n
+
+*tek4014.Translations:     #override       \
+        @Num_Lock<Key>KP_0: string(0)\n\
+        @Num_Lock<Key>KP_1: string(1)\n\
+        @Num_Lock<Key>KP_2: string(2)\n\
+        @Num_Lock<Key>KP_3: string(3)\n\
+        @Num_Lock<Key>KP_4: string(4)\n\
+        @Num_Lock<Key>KP_5: string(5)\n\
+        @Num_Lock<Key>KP_6: string(6)\n\
+        @Num_Lock<Key>KP_7: string(7)\n\
+        @Num_Lock<Key>KP_8: string(8)\n\
+        @Num_Lock<Key>KP_9: string(9)\n\
+        @Num_Lock<Key>KP_Add: string(+)\n\
+        @Num_Lock<Key>KP_Decimal: string(.)\n\
+        @Num_Lock<Key>KP_Divide: string(/)\n\
+        @Num_Lock<Key>KP_Enter: string(\015)\n\
+        @Num_Lock<Key>KP_Equal: string(=)\n\
+        @Num_Lock<Key>KP_Multiply: string(*)\n\
+        @Num_Lock<Key>KP_Subtract: string(-)\n
+
+*fontMenu.Label:  VT フォント
+*fontMenu*fontdefault*Label:	Default
+*fontMenu*font1*Label:	Unreadable
+*VT100*font1:	-*-gothic-medium-r-normal--14-*
+*IconFont:		-*-gothic-medium-r-normal--14-*
+*fontMenu*font2*Label:	Tiny
+*fontMenu*font1*Label:  読み取り不可能
+*VT100*font1:       -*-gothic-medium-r-normal--14-*
+*IconFont:      -*-gothic-medium-r-normal--14-*
+*fontMenu*font2*Label:  極小
+*VT100*font2:       -*-gothic-medium-r-normal--14-*
+*fontMenu*font3*Label:  小
+*VT100*font3:       -*-gothic-medium-r-normal--16-*
+*fontMenu*font4*Label:  中
+*VT100*font4:       -*-gothic-medium-r-normal--18-*
+*fontMenu*font5*Label:  大
+*VT100*font5:       -*-gothic-medium-r-normal--22-*
+*fontMenu*font6*Label:  極大
+*VT100*font6:       -*-gothic-medium-r-normal--26-*
+*fontMenu*fontescape*Label:	Escape Sequence
+*fontMenu*fontsel*Label:		Selection
+!fontescape and fontsel overridden by application
+
+*tekMenu.Label:  Tek オプション
+*tekMenu*tektextlarge*Label:  大型文字
+*tekMenu*tektext2*Label:  #2 サイズの文字
+*tekMenu*tektext3*Label:  #3 サイズの文字
+*tekMenu*tektextsmall*Label:  小型文字
+*tekMenu*tekpage*Label:  ページ
+*tekMenu*tekreset*Label:  リセット
+*tekMenu*tekcopy*Label:  コピー
+*tekMenu*vtshow*Label:  VT ウィンドウを表示
+*tekMenu*vtmode*Label:  VT モードに切替え
+*tekMenu*tekhide*Label:  Tek ウィンドウを非表示
+
+*tek4014*fontLarge: -*-gothic-medium-r-normal--24-*
+*tek4014*font2: -*-gothic-medium-r-normal--16-*
+*tek4014*font3: -*-gothic-medium-r-normal--18-*
+*tek4014*fontSmall: -*-gothic-medium-r-normal--14-*
+

@@ -1,0 +1,124 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+#	Copyright (c) 1986 AT&T
+#	  All Rights Reserved
+#
+#ident  "@(#)conf.file 1.7     97/10/06 SMI"
+#
+# Setterm configuration file.  This file describes to "setterm" how to
+# build a STREAMS tty configuration for particular "devt" types, and
+# for particular entries (setterm -x ...).  This should be modified to
+# suit the local user community.
+#
+# Japanese specific entries...
+#
+JapanUTF-8|UTF-8	throw		\
+			popto zs|mcp|mti|ptem   \
+			push jconvu             \
+			push ldterm             \
+			push jconvrs            \
+			push ttcompat           \
+			catch
+#
+JapanPCK|PCK|JapanSJIS|SJIS	throw	\
+			popto zs|mcp|mti|ptem	\
+			push ldterm		\
+			push ttcompat		\
+			catch			\
+			run { /usr/bin/stty defeucw }
+#
+JapanEUC|EUC		throw                   \
+			popto zs|mcp|mti|ptem   \
+			push ldterm             \
+			push jconvrs            \
+			push ttcompat           \
+			catch
+#
+JapanNewJIS8|NewJIS8	throw			\
+			popto zs|mcp|mti|ptem	\
+			push jconv8		\
+			push ldterm		\
+			push jconvrs            \
+			push ttcompat		\
+			run { jtty -iB -oJ }	\
+			catch
+#
+JapanOldJIS8|OldJIS8	throw			\
+			popto zs|mcp|mti|ptem	\
+			push jconv8		\
+			push ldterm		\
+			push jconvrs            \
+			push ttcompat		\
+			run { jtty -i@ -oJ }	\
+			catch
+#
+JapanNewJIS7|NewJIS7	throw			\
+			popto zs|mcp|mti|ptem	\
+			push jconv7		\
+			push ldterm		\
+			push jconvrs            \
+			push ttcompat		\
+			run { jtty -iB -oJ }	\
+			catch
+#
+JapanOldJIS7|OldJIS7	throw			\
+			popto zs|mcp|mti|ptem	\
+			push jconv7		\
+			push ldterm		\
+			push jconvrs            \
+			push ttcompat		\
+			run { jtty -i@ -oJ }	\
+			catch
+#
+# Some other ASCII entries...
+#
+ASCII			throw			\
+			popto zs|mcp|mti|ptem	\
+			push ldterm		\
+			push ttcompat		\
+			catch		\
+			run { /bin/stty defeucw }
+#
+Error			popto zs|mcp|mti|ptem				\
+			run { stty raw -echo -echoe -opost }		\
+			push ldterm					\
+			push ttcompat					\
+			run { stty sane erase '^H' kill '^X' }		\
+			run { /usr/bin/stty defeucw }		\
+			run { echo "Error recovered?" }
+#
+#
+# The following entries are "sanity" entries...
+#
+sane			throw			\
+			popto zs|mcp|mti|ptem	\
+			push jconvs		\
+			push ldterm		\
+			push jconvrs		\
+			push ttcompat		\
+			run { stty sane }	\
+			catch
+#

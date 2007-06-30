@@ -1,0 +1,305 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none openwin 0755 root bin 
+d none openwin/lib 0755 root bin
+d none openwin/lib/locale 0755 root bin
+d none openwin/share 0755 root bin
+d none openwin/share/locale 0755 root bin
+
+d none openwin/lib/locale/ru_RU.ANSI1251 0755 root bin
+s none openwin/lib/locale/ru.ansi1251=ru_RU.ANSI1251
+f none openwin/lib/locale/ru_RU.ANSI1251/CT_Encoding 0644 root bin
+d none openwin/lib/locale/ru_RU.ANSI1251/app-defaults 0755 root bin
+f none openwin/lib/locale/ru_RU.ANSI1251/app-defaults/Admin 0755 root bin
+f none openwin/lib/locale/ru_RU.ANSI1251/app-defaults/Olwm 0644 root bin
+s none openwin/lib/locale/ru_RU.ANSI1251/libs=../iso_8859_1/libs
+d none openwin/share/locale/ru_RU.ANSI1251 0755 root bin
+
+d none openwin/lib/locale/et_EE.ISO8859-15 0755 root bin
+s none openwin/lib/locale/et_EE=./et_EE.ISO8859-15
+s none openwin/lib/locale/et_EE.ISO8859-15/libs=../iso_8859_1/libs
+s none openwin/lib/locale/et_EE.ISO8859-15/XLC_LOCALE=../iso8859-15/XLC_LOCALE
+s none openwin/lib/locale/et_EE.ISO8859-15/XI18N_OBJS=../iso8859-15/XI18N_OBJS
+d none openwin/share/locale/et_EE.ISO8859-15 0755 root bin
+
+d none openwin/lib/locale/lt_LT.ISO8859-13 0755 root bin
+s none openwin/lib/locale/lt=lt_LT.ISO8859-13
+s none openwin/lib/locale/lt_LT=./lt_LT.ISO8859-13
+s none openwin/lib/locale/lt_LT.ISO8859-13/libs=../iso_8859_1/libs
+d none openwin/share/locale/lt_LT.ISO8859-13 0755 root bin
+
+d none openwin/lib/locale/lv_LV.ISO8859-13 0755 root bin
+s none openwin/lib/locale/lv=lv_LV.ISO8859-13
+s none openwin/lib/locale/lv_LV=./lv_LV.ISO8859-13
+s none openwin/lib/locale/lv_LV.ISO8859-13/libs=../iso_8859_1/libs
+d none openwin/share/locale/lv_LV.ISO8859-13 0755 root bin
+
+d none openwin/lib/locale/bg_BG.ISO8859-5 0755 root bin
+s none openwin/lib/locale/bg_BG=bg_BG.ISO8859-5
+s none openwin/lib/locale/bg_BG.ISO8859-5/libs=../iso_8859_1/libs
+s none openwin/lib/locale/bg_BG.ISO8859-5/XLC_LOCALE=../iso8859-5/XLC_LOCALE
+f none openwin/lib/locale/bg_BG.ISO8859-5/Compose 0644 root bin
+d none openwin/share/locale/bg_BG.ISO8859-5 0755 root bin
+
+d none openwin/lib/locale/hr_HR.ISO8859-2 0755 root bin
+s none openwin/lib/locale/hr_HR=hr_HR.ISO8859-2
+s none openwin/lib/locale/hr_HR.ISO8859-2/libs=../iso_8859_1/libs
+s none openwin/lib/locale/hr_HR.ISO8859-2/XLC_LOCALE=../iso8859-2/XLC_LOCALE
+d none openwin/share/locale/hr_HR.ISO8859-2 0755 root bin
+
+d none openwin/lib/locale/mk_MK.ISO8859-5 0755 root bin
+s none openwin/lib/locale/mk_MK=mk_MK.ISO8859-5
+s none openwin/lib/locale/mk_MK.ISO8859-5/libs=../iso_8859_1/libs
+s none openwin/lib/locale/mk_MK.ISO8859-5/XLC_LOCALE=../iso8859-5/XLC_LOCALE
+d none openwin/share/locale/mk_MK.ISO8859-5 0755 root bin
+
+d none openwin/lib/locale/sh_BA.ISO8859-2@bosnia 0755 root bin
+s none openwin/lib/locale/nr=sh_BA.ISO8859-2@bosnia
+s none openwin/lib/locale/sh_BA=./sh_BA.ISO8859-2@bosnia
+s none openwin/lib/locale/sh_BA.ISO8859-2@bosnia/libs=../iso_8859_1/libs
+s none openwin/lib/locale/sh_BA.ISO8859-2@bosnia/XLC_LOCALE=../iso8859-2/XLC_LOCALE
+d none openwin/share/locale/sh_BA.ISO8859-2@bosnia 0755 root bin
+
+d none openwin/lib/locale/ro_RO.ISO8859-2 0755 root bin
+s none openwin/lib/locale/ro_RO=ro_RO.ISO8859-2
+s none openwin/lib/locale/ro_RO.ISO8859-2/libs=../iso_8859_1/libs
+s none openwin/lib/locale/ro_RO.ISO8859-2/XLC_LOCALE=../iso8859-2/XLC_LOCALE
+d none openwin/share/locale/ro_RO.ISO8859-2 0755 root bin
+
+d none openwin/lib/locale/sl_SI.ISO8859-2 0755 root bin
+s none openwin/lib/locale/sl_SI=sl_SI.ISO8859-2
+s none openwin/lib/locale/sl_SI.ISO8859-2/libs=../iso_8859_1/libs
+s none openwin/lib/locale/sl_SI.ISO8859-2/XLC_LOCALE=../iso8859-2/XLC_LOCALE
+d none openwin/share/locale/sl_SI.ISO8859-2 0755 root bin
+
+d none openwin/lib/locale/sq_AL.ISO8859-2 0755 root bin
+s none openwin/lib/locale/sq_AL=sq_AL.ISO8859-2
+s none openwin/lib/locale/sq_AL.ISO8859-2/libs=../iso_8859_1/libs
+s none openwin/lib/locale/sq_AL.ISO8859-2/XLC_LOCALE=../iso8859-2/XLC_LOCALE
+d none openwin/share/locale/sq_AL.ISO8859-2 0755 root bin
+
+d none openwin/lib/locale/sr_YU.ISO8859-5 0755 root bin
+s none openwin/lib/locale/sr_SP=sr_YU.ISO8859-5
+s none openwin/lib/locale/sr_YU=./sr_YU.ISO8859-5
+f none openwin/lib/locale/sr_YU.ISO8859-5/Compose 0644 root bin
+s none openwin/lib/locale/sr_YU.ISO8859-5/libs=../iso_8859_1/libs
+s none openwin/lib/locale/sr_YU.ISO8859-5/XLC_LOCALE=../iso8859-5/XLC_LOCALE
+d none openwin/share/locale/sr_YU.ISO8859-5 0755 root bin
+
+d none openwin/lib/locale/ru_RU.ISO8859-5 0755 root bin
+s none openwin/lib/locale/ru=ru_RU.ISO8859-5
+s none openwin/lib/locale/ru_RU=./ru_RU.ISO8859-5
+s none openwin/lib/locale/ru_RU.ISO8859-5/libs=../iso_8859_1/libs
+s none openwin/lib/locale/ru_RU.ISO8859-5/XLC_LOCALE=../iso8859-5/XLC_LOCALE
+d none openwin/share/locale/ru_RU.ISO8859-5 0755 root bin
+
+d none openwin/lib/locale/ru_RU.KOI8-R 0755 root bin
+s none openwin/lib/locale/ru.koi8-r=ru_RU.KOI8-R
+s none openwin/lib/locale/ru_RU.KOI8-R/libs=../iso_8859_1/libs
+f none openwin/lib/locale/ru_RU.KOI8-R/CT_Encoding 0644 root bin
+d none openwin/share/locale/ru_RU.KOI8-R 0755 root bin
+
+d none openwin/lib/locale/tr_TR.ISO8859-9 0755 root bin
+s none openwin/lib/locale/tr=tr_TR.ISO8859-9
+s none openwin/lib/locale/tr_TR=./tr_TR.ISO8859-9
+s none openwin/lib/locale/tr_TR.ISO8859-9/libs=../iso_8859_1/libs
+s none openwin/lib/locale/tr_TR.ISO8859-9/XLC_LOCALE=../iso8859-9/XLC_LOCALE
+d none openwin/share/locale/tr_TR.ISO8859-9 0755 root bin
+
+
+#Owen added the following line
+d none openwin/share/locale/ru_RU.UTF-8 0755 root bin
+# Mike changed the below to add the Compse file (which should be translated
+# for each specific locale (yes, it's part of being a partial locale), and
+# so lots of links to en_US.UTF-8 needed to be added.
+#John F added the next line.
+s none openwin/lib/locale/ru.UTF-8=ru_RU.UTF-8
+
+d none openwin/lib/locale/ru_RU.UTF-8 0755 root bin
+f none openwin/lib/locale/ru_RU.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/ru_RU.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/ru_RU.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/ru_RU.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/ru_RU.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/ru_RU.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/ru_RU.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/ru_RU.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+
+d none openwin/share/locale/tr_TR.UTF-8 0755 root bin
+d none openwin/lib/locale/tr_TR.UTF-8 0755 root bin
+f none openwin/lib/locale/tr_TR.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/tr_TR.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/tr_TR.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/tr_TR.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/tr_TR.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/tr_TR.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/tr_TR.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/tr_TR.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+
+# -----------------------------------------------------------------------
+# New Locales - Added by Alexander Kachur on 10.02.2005
+
+d none openwin/share/locale/et_EE.UTF-8 0755 root bin
+d none openwin/lib/locale/et_EE.UTF-8 0755 root bin
+f none openwin/lib/locale/et_EE.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/et_EE.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/et_EE.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/et_EE.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/et_EE.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/et_EE.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/et_EE.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/et_EE.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/et_EE.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/lt_LT.UTF-8 0755 root bin
+d none openwin/lib/locale/lt_LT.UTF-8 0755 root bin
+f none openwin/lib/locale/lt_LT.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/lt_LT.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/lt_LT.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/lt_LT.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/lt_LT.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/lt_LT.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/lt_LT.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/lt_LT.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/lt_LT.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/lv_LV.UTF-8 0755 root bin
+d none openwin/lib/locale/lv_LV.UTF-8 0755 root bin
+f none openwin/lib/locale/lv_LV.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/lv_LV.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/lv_LV.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/lv_LV.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/lv_LV.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/lv_LV.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/lv_LV.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/lv_LV.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/lv_LV.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/sl_SI.UTF-8 0755 root bin
+d none openwin/lib/locale/sl_SI.UTF-8 0755 root bin
+f none openwin/lib/locale/sl_SI.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/sl_SI.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/sl_SI.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/sl_SI.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/sl_SI.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/sl_SI.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/sl_SI.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/sl_SI.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/sl_SI.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/hr_HR.UTF-8 0755 root bin
+d none openwin/lib/locale/hr_HR.UTF-8 0755 root bin
+f none openwin/lib/locale/hr_HR.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/hr_HR.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/hr_HR.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/hr_HR.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/hr_HR.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/hr_HR.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/hr_HR.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/hr_HR.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/hr_HR.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+# End of new locales 
+# -----------------------------------------------------------------------
+
+
+
+# ------------- New locales added by Yuriy Kuznetsov on 13.10.2005 ------------------
+
+d none openwin/share/locale/bg_BG.UTF-8 0755 root bin
+d none openwin/lib/locale/bg_BG.UTF-8 0755 root bin
+f none openwin/lib/locale/bg_BG.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/bg_BG.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/bg_BG.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/bg_BG.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/bg_BG.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/bg_BG.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/bg_BG.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/bg_BG.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/bg_BG.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/mk_MK.UTF-8 0755 root bin
+d none openwin/lib/locale/mk_MK.UTF-8 0755 root bin
+f none openwin/lib/locale/mk_MK.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/mk_MK.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/mk_MK.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/mk_MK.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/mk_MK.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/mk_MK.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/mk_MK.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/mk_MK.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/mk_MK.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/sh_BA.UTF-8 0755 root bin
+d none openwin/lib/locale/sh_BA.UTF-8 0755 root bin
+f none openwin/lib/locale/sh_BA.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/sh_BA.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/sh_BA.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/sh_BA.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/sh_BA.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/sh_BA.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/sh_BA.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/sh_BA.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/sh_BA.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/ro_RO.UTF-8 0755 root bin
+d none openwin/lib/locale/ro_RO.UTF-8 0755 root bin
+f none openwin/lib/locale/ro_RO.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/ro_RO.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/ro_RO.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/ro_RO.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/ro_RO.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/ro_RO.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/ro_RO.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/ro_RO.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/ro_RO.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/sq_AL.UTF-8 0755 root bin
+d none openwin/lib/locale/sq_AL.UTF-8 0755 root bin
+f none openwin/lib/locale/sq_AL.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/sq_AL.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/sq_AL.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/sq_AL.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/sq_AL.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/sq_AL.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/sq_AL.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/sq_AL.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/sq_AL.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/sr_CS.UTF-8 0755 root bin
+d none openwin/lib/locale/sr_CS.UTF-8 0755 root bin
+f none openwin/lib/locale/sr_CS.UTF-8/Compose 0644 root bin
+s none openwin/lib/locale/sr_CS.UTF-8/X11=../en_US.UTF-8/X11
+s none openwin/lib/locale/sr_CS.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
+s none openwin/lib/locale/sr_CS.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
+s none openwin/lib/locale/sr_CS.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
+s none openwin/lib/locale/sr_CS.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
+d none openwin/lib/locale/sr_CS.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/sr_CS.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/sr_CS.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+# ----------- END OF New locales added by Yuriy Kuznetsov on 13.10.2005 ------------

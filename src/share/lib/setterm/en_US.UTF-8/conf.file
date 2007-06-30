@@ -1,0 +1,103 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# This file has been modified by Sun Microsystems, Inc.
+#
+# Copyright (c) 1996, by Sun Microsystems, Inc.
+# All rights reserved.
+#
+#	Copyright (c) 1986 AT&T
+#	  All Rights Reserved
+#
+#ident	"@(#)conf.file 1.6	99/12/07 SMI"
+#
+#
+# Setterm configuration file.  This file is to describe how to
+# build a STREAMS tty configuration for particular "devt" types, and
+# for particular entries (setterm -x ...) by using setterm (1).
+# This should be modified to suit the requirements of local user community.
+#
+#
+# The following entry exists only for backward compatibility:
+U8|u8|UTF-8|utf-8	throw			\
+			popto zs|mcp|mti|ptem	\
+			push ldterm		\
+			push ttcompat		\
+			run { stty defeucw }	\
+			catch
+#
+# Entry for Latin-1 terminal.
+U8LAT1|u8lat1		throw			\
+			popto zs|mcp|mti|ptem	\
+			push u8lat1		\
+			push ldterm		\
+			push ttcompat		\
+			run { stty defeucw }	\
+			catch
+#
+# Entry for Latin-2 terminal.
+U8LAT2|u8lat2		throw			\
+			popto zs|mcp|mti|ptem	\
+			push u8lat2		\
+			push ldterm		\
+			push ttcompat		\
+			run { stty defeucw }	\
+			catch
+#
+# Entry for KOI8-R terminal.
+U8KOI8|u8koi8		throw			\
+			popto zs|mcp|mti|ptem	\
+			push u8koi8		\
+			push ldterm		\
+			push ttcompat		\
+			run { stty defeucw }	\
+			catch
+#
+# Some other EUC/ASCII entries...
+# Now we have same entry for ASCII and EUC.
+EUC|euc|GenericEUC	throw			\
+			popto zs|mcp|mti|ptem	\
+			push ldterm		\
+			push ttcompat		\
+			catch
+#
+ASCII|ascii		throw			\
+			popto zs|mcp|mti|ptem	\
+			push ldterm		\
+			push ttcompat		\
+			catch
+#
+Error|error		popto zs|mcp|mti|ptem				\
+			run { stty raw -echo -echoe -opost }		\
+			push ldterm					\
+			push ttcompat					\
+			run { stty sane erase '^H' kill '^X' }		\
+			run { echo "Error recovered?" }
+#
+#
+# The following entries are "sanity" entries...
+sane			throw			\
+			popto zs|mcp|mti|ptem	\
+			push ldterm		\
+			push ttcompat		\
+			run { stty sane }	\
+			catch
+#
+# Add your configuration at below.

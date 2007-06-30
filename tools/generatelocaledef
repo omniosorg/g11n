@@ -1,0 +1,360 @@
+#!/usr/sfw/bin/python
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+from optparse import OptionParser
+
+import logging
+logging.basicConfig()
+log = logging.getLogger()
+
+import re
+import os
+import sys
+
+
+localedef_include_re = re.compile('^include\s+(\S+)$')
+localedef_include_re_multiline = re.compile('^include\s+(\S+)$', re.M)
+
+def process_include(includesdir, include):
+	"""Used to non-recursively process a given include and return the resulting text with the includes filled in"""
+	filename = os.path.join(includesdir, include)
+	result = open(filename, "r").read()
+	log.debug("Tail of '%s' : '%r'" % (include, result[-3:]))
+	log.debug("Length of result: '%d'" % len(result))
+	
+	#Some includes have further includes, as a temporary quick fix further
+	#process these. Can't process all includes as with UTF-8 ones this will
+	#be far too slow.
+	sub_includes = [
+		"LC_CTYPE/alpha.1251",
+		"LC_CTYPE/alpha.iso1",
+		"LC_CTYPE/alpha.iso13",
+		"LC_CTYPE/alpha.iso15",
+		"LC_CTYPE/alpha.iso2",
+		"LC_CTYPE/alpha.iso5",
+		"LC_CTYPE/alpha.iso7",
+		"LC_CTYPE/alpha.iso9",
+		"LC_CTYPE/alpha.koi8",
+		"LC_CTYPE/cntrl.1251",
+		"LC_CTYPE/cntrl.common",
+		"LC_CTYPE/cntrl.iso1",
+		"LC_CTYPE/cntrl.iso2",
+		"LC_CTYPE/cntrl.iso5",
+		"LC_CTYPE/cntrl.iso7",
+		"LC_CTYPE/cntrl.iso9",
+		"LC_CTYPE/cntrl.koi8",
+		"LC_CTYPE/digit.common",
+		"LC_CTYPE/graph.1251",
+		"LC_CTYPE/graph.iso1",
+		"LC_CTYPE/graph.iso13",
+		"LC_CTYPE/graph.iso15",
+		"LC_CTYPE/graph.iso2",
+		"LC_CTYPE/graph.iso4",
+		"LC_CTYPE/graph.iso5",
+		"LC_CTYPE/graph.iso7",
+		"LC_CTYPE/graph.iso9",
+		"LC_CTYPE/graph.koi8",
+		"LC_CTYPE/lower.1251",
+		"LC_CTYPE/lower.iso1",
+		"LC_CTYPE/lower.iso13",
+		"LC_CTYPE/lower.iso15",
+		"LC_CTYPE/lower.iso2",
+		"LC_CTYPE/lower.iso4",
+		"LC_CTYPE/lower.iso5",
+		"LC_CTYPE/lower.iso7",
+		"LC_CTYPE/lower.iso9",
+		"LC_CTYPE/lower.koi8",
+		"LC_CTYPE/print.1251",
+		"LC_CTYPE/print.iso1",
+		"LC_CTYPE/print.iso13",
+		"LC_CTYPE/print.iso15",
+		"LC_CTYPE/print.iso2",
+		"LC_CTYPE/print.iso5",
+		"LC_CTYPE/print.iso7",
+		"LC_CTYPE/print.iso9",
+		"LC_CTYPE/print.koi8",
+		"LC_CTYPE/punct.1251",
+		"LC_CTYPE/punct.iso1",
+		"LC_CTYPE/punct.iso13",
+		"LC_CTYPE/punct.iso15",
+		"LC_CTYPE/punct.iso2",
+		"LC_CTYPE/punct.iso4",
+		"LC_CTYPE/punct.iso5",
+		"LC_CTYPE/punct.iso7",
+		"LC_CTYPE/punct.iso9",
+		"LC_CTYPE/punct.koi8",
+		"LC_CTYPE/space.common",
+		"LC_CTYPE/tolower.1251",
+		"LC_CTYPE/tolower.iso1",
+		"LC_CTYPE/tolower.iso13",
+		"LC_CTYPE/tolower.iso15",
+		"LC_CTYPE/tolower.iso2",
+		"LC_CTYPE/tolower.iso5",
+		"LC_CTYPE/tolower.iso7",
+		"LC_CTYPE/tolower.iso9",
+		"LC_CTYPE/tolower.koi8",
+		"LC_CTYPE/toupper.1251",
+		"LC_CTYPE/toupper.iso1",
+		"LC_CTYPE/toupper.iso13",
+		"LC_CTYPE/toupper.iso15",
+		"LC_CTYPE/toupper.iso2",
+		"LC_CTYPE/toupper.iso5",
+		"LC_CTYPE/toupper.iso7",
+		"LC_CTYPE/toupper.iso9",
+		"LC_CTYPE/toupper.koi8",
+		"LC_CTYPE/upper.1251",
+		"LC_CTYPE/upper.iso1",
+		"LC_CTYPE/upper.iso13",
+		"LC_CTYPE/upper.iso15",
+		"LC_CTYPE/upper.iso2",
+		"LC_CTYPE/upper.iso4",
+		"LC_CTYPE/upper.iso5",
+		"LC_CTYPE/upper.iso7",
+		"LC_CTYPE/upper.iso9",
+		"LC_CTYPE/upper.koi8",
+		"LC_CTYPE/xdigit.common",
+		"LC_TIME/abday.albanian",
+		"LC_TIME/abday.austrian",
+		"LC_TIME/abday.bulgarian",
+		"LC_TIME/abday.catalan",
+		"LC_TIME/abday.croatian",
+		"LC_TIME/abday.czech",
+		"LC_TIME/abday.danish",
+		"LC_TIME/abday.dutch",
+		"LC_TIME/abday.english",
+		"LC_TIME/abday.estonian",
+		"LC_TIME/abday.finnish",
+		"LC_TIME/abday.french",
+		"LC_TIME/abday.french_swiss",
+		"LC_TIME/abday.german",
+		"LC_TIME/abday.greek",
+		"LC_TIME/abday.hungarian",
+		"LC_TIME/abday.icelandic",
+		"LC_TIME/abday.italian",
+		"LC_TIME/abday.latvian",
+		"LC_TIME/abday.lithuanian",
+		"LC_TIME/abday.macedonian",
+		"LC_TIME/abday.nynorsk",
+		"LC_TIME/abday.polish",
+		"LC_TIME/abday.portuguese",
+		"LC_TIME/abday.romanian",
+		"LC_TIME/abday.russian",
+		"LC_TIME/abday.slovakian",
+		"LC_TIME/abday.slovenian",
+		"LC_TIME/abday.spanish",
+		"LC_TIME/abday.swedish",
+		"LC_TIME/abday.turkish",
+		"LC_TIME/abday.yugoslavian",
+		"LC_TIME/abmon.albanian",
+		"LC_TIME/abmon.austrian",
+		"LC_TIME/abmon.bulgarian",
+		"LC_TIME/abmon.catalan",
+		"LC_TIME/abmon.col_spanish",
+		"LC_TIME/abmon.croatian",
+		"LC_TIME/abmon.czech",
+		"LC_TIME/abmon.danish",
+		"LC_TIME/abmon.dutch",
+		"LC_TIME/abmon.english",
+		"LC_TIME/abmon.estonian",
+		"LC_TIME/abmon.finnish",
+		"LC_TIME/abmon.french",
+		"LC_TIME/abmon.german",
+		"LC_TIME/abmon.greek",
+		"LC_TIME/abmon.hungarian",
+		"LC_TIME/abmon.icelandic",
+		"LC_TIME/abmon.italian",
+		"LC_TIME/abmon.latvian",
+		"LC_TIME/abmon.lithuanian",
+		"LC_TIME/abmon.macedonian",
+		"LC_TIME/abmon.nynorsk",
+		"LC_TIME/abmon.polish",
+		"LC_TIME/abmon.portuguese",
+		"LC_TIME/abmon.romanian",
+		"LC_TIME/abmon.russian",
+		"LC_TIME/abmon.slovakian",
+		"LC_TIME/abmon.slovenian",
+		"LC_TIME/abmon.spanish",
+		"LC_TIME/abmon.swedish",
+		"LC_TIME/abmon.turkish",
+		"LC_TIME/abmon.yugoslavian",
+		"LC_TIME/day.albanian",
+		"LC_TIME/day.bulgarian",
+		"LC_TIME/day.catalan",
+		"LC_TIME/day.croatian",
+		"LC_TIME/day.czech",
+		"LC_TIME/day.danish",
+		"LC_TIME/day.dutch",
+		"LC_TIME/day.english",
+		"LC_TIME/day.estonian",
+		"LC_TIME/day.finnish",
+		"LC_TIME/day.french",
+		"LC_TIME/day.german",
+		"LC_TIME/day.greek",
+		"LC_TIME/day.hungarian",
+		"LC_TIME/day.icelandic",
+		"LC_TIME/day.italian",
+		"LC_TIME/day.latvian",
+		"LC_TIME/day.lithuanian",
+		"LC_TIME/day.macedonian",
+		"LC_TIME/day.nynorsk",
+		"LC_TIME/day.polish",
+		"LC_TIME/day.portuguese",
+		"LC_TIME/day.romanian",
+		"LC_TIME/day.russian",
+		"LC_TIME/day.slovakian",
+		"LC_TIME/day.slovenian",
+		"LC_TIME/day.spanish",
+		"LC_TIME/day.swedish",
+		"LC_TIME/day.turkish",
+		"LC_TIME/day.yugoslavian",
+		"LC_TIME/define.albanian",
+		"LC_TIME/define.austrian",
+		"LC_TIME/define.bokmal",
+		"LC_TIME/define.bulgarian",
+		"LC_TIME/define.catalan",
+		"LC_TIME/define.col_spanish",
+		"LC_TIME/define.croatian",
+		"LC_TIME/define.czech",
+		"LC_TIME/define.danish",
+		"LC_TIME/define.dutch",
+		"LC_TIME/define.english",
+		"LC_TIME/define.estonian",
+		"LC_TIME/define.finnish",
+		"LC_TIME/define.french",
+		"LC_TIME/define.french_swiss",
+		"LC_TIME/define.german",
+		"LC_TIME/define.german_swiss",
+		"LC_TIME/define.greek",
+		"LC_TIME/define.hungarian",
+		"LC_TIME/define.icelandic",
+		"LC_TIME/define.italian",
+		"LC_TIME/define.latvian",
+		"LC_TIME/define.lithuanian",
+		"LC_TIME/define.macedonian",
+		"LC_TIME/define.nynorsk",
+		"LC_TIME/define.polish",
+		"LC_TIME/define.portuguese",
+		"LC_TIME/define.romanian",
+		"LC_TIME/define.russian",
+		"LC_TIME/define.slovakian",
+		"LC_TIME/define.slovenian",
+		"LC_TIME/define.spanish",
+		"LC_TIME/define.swedish",
+		"LC_TIME/define.turkish",
+		"LC_TIME/define.yugoslavian",
+		"LC_TIME/mon.albanian",
+		"LC_TIME/mon.austrian",
+		"LC_TIME/mon.bulgarian",
+		"LC_TIME/mon.catalan",
+		"LC_TIME/mon.croatian",
+		"LC_TIME/mon.czech",
+		"LC_TIME/mon.danish",
+		"LC_TIME/mon.dutch",
+		"LC_TIME/mon.english",
+		"LC_TIME/mon.estonian",
+		"LC_TIME/mon.finnish",
+		"LC_TIME/mon.french",
+		"LC_TIME/mon.german",
+		"LC_TIME/mon.greek",
+		"LC_TIME/mon.hungarian",
+		"LC_TIME/mon.icelandic",
+		"LC_TIME/mon.italian",
+		"LC_TIME/mon.latvian",
+		"LC_TIME/mon.lithuanian",
+		"LC_TIME/mon.macedonian",
+		"LC_TIME/mon.nynorsk",
+		"LC_TIME/mon.polish",
+		"LC_TIME/mon.portuguese",
+		"LC_TIME/mon.romanian",
+		"LC_TIME/mon.russian",
+		"LC_TIME/mon.slovakian",
+		"LC_TIME/mon.slovenian",
+		"LC_TIME/mon.spanish",
+		"LC_TIME/mon.swedish",
+		"LC_TIME/mon.turkish",
+		"LC_TIME/mon.yugoslavian",
+	]
+	if include in sub_includes:
+		includes = localedef_include_re_multiline.findall(result)
+		if len(includes) > 0:
+			for sub_include in includes:
+				sub_include_text = process_include(includesdir, sub_include)
+				result = result.replace("include %s\n" % sub_include, sub_include_text)
+	
+	if result[-3:] == "\\c\n":
+		log.debug("Stripping '\\c\\n' from '%s'" % include)
+		result = result[:-3]
+	return result
+
+usage = """%prog -d include_dir -i input_file -o output_file
+"""
+
+def main():
+	parser = OptionParser(usage=usage)
+	parser.add_option("-i", "--input", action="store", type="string",
+		dest="input_filename", help="Input filename")
+	parser.add_option("-o", "--output", action="store", type="string",
+		dest="output_filename", help="Output filename")
+	parser.add_option("-d", "--includes", action="store", type="string",
+		dest="includes_directory", help="Directory containing include files")
+	parser.add_option("-v", "--verbose", action="store_true",
+		dest="verbose", default=0, help="Be more verbose")
+	parser.add_option("-q", "--quiet", action="store_false",
+		dest="quite", help="Be quiet")
+	parser.add_option("", "--dummy", action="store_true", default=0,
+		dest="dummy", help="Dummy mode, spit out an empty file (useful for build testing)")
+	(options, args) = parser.parse_args()
+	
+	if options.verbose:
+		log.setLevel(logging.DEBUG) #set verbosity to show all messages of severity >= DEBUG
+
+	log.info("Starting up")
+	input_lines = open(options.input_filename, "r").readlines()
+	output_fp = open(options.output_filename, "w")
+	
+	if options.dummy:
+		log.info("Dummy mode")
+		output_fp.write("Dummy output\n")
+		output_fp.close()
+		log.info("Finished")
+		sys.exit(0)
+	
+	for line in input_lines:
+		#log.debug("Processing line '%s'" % line)
+		includes = localedef_include_re.findall(line)
+		if len(includes) > 0:
+			include = includes[0]
+			log.info("Processing include '%s'" % include)
+			include_text = process_include(options.includes_directory, include)
+			output_fp.write(include_text)
+		else:
+			output_fp.write(line)
+	output_fp.close()
+	log.info("Finished")
+	sys.exit(0)
+	
+if __name__ == "__main__":
+	main()
+

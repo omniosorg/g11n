@@ -1,0 +1,313 @@
+comment_char *
+escape_char /
+
+***************************************************************************************
+*
+* CDDL HEADER START
+*
+* The contents of this file are subject to the terms of the
+* Common Development and Distribution License (the "License").
+* You may not use this file except in compliance with the License.
+*
+* You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+* or http://www.opensolaris.org/os/licensing.
+* See the License for the specific language governing permissions
+* and limitations under the License.
+*
+* When distributing Covered Code, include this CDDL HEADER in each
+* file and include the License file at src/OPENSOLARIS.LICENSE.
+* If applicable, add the following below this CDDL HEADER, with the
+* fields enclosed by brackets "[]" replaced with your own identifying
+* information: Portions Copyright [yyyy] [name of copyright owner]
+*
+* CDDL HEADER END
+*
+***************************************************************************************
+*
+* Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+* Use is subject to license terms.
+*
+***************************************************************************************
+*
+* COPYRIGHT AND PERMISSIONS NOTICE
+*
+* Copyright (c) 1991-2005 Unicode, Inc. All rights reserved. Distributed
+* under the Terms of Use in http://www.unicode.org/copyright.html.
+*
+* Permission is hereby granted, free of charge, to any person obtaining a copy of
+* the Unicode data files and any associated documentation (the "Data Files") or
+* Unicode software and any associated documentation (the "Software") to deal in
+* the Data Files or Software without restriction, including without limitation the
+* rights to use, copy, modify, merge, publish, distribute, and/or sell copies of
+* the Data Files or Software, and to permit persons to whom the Data Files or
+* Software are furnished to do so, provided that (a) the above copyright notice(s)
+* and this permission notice appear with all copies of the Data Files or Software,
+* (b) both the above copyright notice(s) and this permission notice appear in
+* associated documentation, and (c) there is clear notice in each modified Data
+* File or in the Software as well as in the documentation associated with the Data
+* File(s) or Software that the data or software has been modified.
+*
+* THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD
+* PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+* NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+* DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+* WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+* OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+*
+* This file has been modified by Sun Microsystems, Inc.
+*
+*
+***************************************************************************************
+
+
+
+
+
+*************************************************************************************************
+* POSIX Locale                                                                                  *
+* Generated automatically from the Unicode Character Database and Common Locale Data Repository *
+* see http://www.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap07.html                    *
+* Locale Name : ar_SA   Codeset : UTF-8
+*************************************************************************************************
+
+*************
+LC_CTYPE
+*************
+
+include CLDR.UTF-8
+
+END LC_CTYPE
+
+
+*************
+LC_COLLATE
+*************
+
+include COLLATE.ar.UTF-8
+
+END LC_COLLATE
+
+*************
+LC_NUMERIC
+*************
+
+* WARNING !! this is a workaround as libc does not support multi byte separators - 
+* only when bug 6558816 is fixed multibyte can be used
+decimal_point     "<COMMA>"
+thousands_sep     "<APOSTROPHE>"
+* decimal_point     "<ARABIC_DECIMAL_SEPARATOR>"
+* thousands_sep     "<ARABIC_THOUSANDS_SEPARATOR>"
+
+grouping          -1
+
+END LC_NUMERIC
+
+
+*************
+LC_MONETARY
+*************
+
+int_curr_symbol       "<S><A><R><space>"
+currency_symbol       "<ARABIC_LETTER_REH><FULL_STOP><ARABIC_LETTER_SEEN><FULL_STOP><RIGHT-TO-LEFT_MARK>"
+* WARNING !! this is a workaround as libc does not support multi byte separators - 
+* only when bug 6558816 is fixed multibyte can be used
+mon_decimal_point     "<COMMA>"
+mon_thousands_sep     "<APOSTROPHE>"
+* mon_decimal_point     "<ARABIC_DECIMAL_SEPARATOR>"
+* mon_thousands_sep     "<ARABIC_THOUSANDS_SEPARATOR>"
+mon_grouping          -1
+positive_sign         ""
+negative_sign         "<HYPHEN-MINUS>"
+int_frac_digits       2
+frac_digits           2
+p_cs_precedes         1
+p_sep_by_space        0
+n_cs_precedes         1
+n_sep_by_space        0
+p_sign_posn           1
+n_sign_posn           1
+int_p_cs_precedes     1
+int_p_sep_by_space    0
+int_n_cs_precedes     1
+int_n_sep_by_space    0
+int_p_sign_posn       1
+int_n_sign_posn       1
+
+END LC_MONETARY
+
+
+*************
+LC_TIME
+*************
+
+abday   "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_HAH><ARABIC_LETTER_DAL>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF><ARABIC_LETTER_THEH><ARABIC_LETTER_NOON><ARABIC_LETTER_YEH><ARABIC_LETTER_NOON>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_THEH><ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF><ARABIC_LETTER_THEH><ARABIC_LETTER_ALEF><ARABIC_LETTER_HAMZA>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_REH><ARABIC_LETTER_BEH><ARABIC_LETTER_AIN><ARABIC_LETTER_ALEF><ARABIC_LETTER_HAMZA>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_KHAH><ARABIC_LETTER_MEEM><ARABIC_LETTER_YEH><ARABIC_LETTER_SEEN>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_JEEM><ARABIC_LETTER_MEEM><ARABIC_LETTER_AIN><ARABIC_LETTER_TEH_MARBUTA>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_SEEN><ARABIC_LETTER_BEH><ARABIC_LETTER_TEH>"
+
+day     "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_HAH><ARABIC_LETTER_DAL>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF><ARABIC_LETTER_THEH><ARABIC_LETTER_NOON><ARABIC_LETTER_YEH><ARABIC_LETTER_NOON>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_THEH><ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF><ARABIC_LETTER_THEH><ARABIC_LETTER_ALEF><ARABIC_LETTER_HAMZA>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_REH><ARABIC_LETTER_BEH><ARABIC_LETTER_AIN><ARABIC_LETTER_ALEF><ARABIC_LETTER_HAMZA>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_KHAH><ARABIC_LETTER_MEEM><ARABIC_LETTER_YEH><ARABIC_LETTER_SEEN>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_JEEM><ARABIC_LETTER_MEEM><ARABIC_LETTER_AIN><ARABIC_LETTER_TEH_MARBUTA>";/
+        "<ARABIC_LETTER_ALEF><ARABIC_LETTER_LAM><ARABIC_LETTER_SEEN><ARABIC_LETTER_BEH><ARABIC_LETTER_TEH>"
+
+abmon   "<ARABIC_LETTER_YEH><ARABIC_LETTER_NOON><ARABIC_LETTER_ALEF><ARABIC_LETTER_YEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_FEH><ARABIC_LETTER_BEH><ARABIC_LETTER_REH><ARABIC_LETTER_ALEF><ARABIC_LETTER_YEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_MEEM><ARABIC_LETTER_ALEF><ARABIC_LETTER_REH><ARABIC_LETTER_SEEN>";/
+        "<ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_BEH><ARABIC_LETTER_REH><ARABIC_LETTER_YEH><ARABIC_LETTER_LAM>";/
+        "<ARABIC_LETTER_MEEM><ARABIC_LETTER_ALEF><ARABIC_LETTER_YEH><ARABIC_LETTER_WAW>";/
+        "<ARABIC_LETTER_YEH><ARABIC_LETTER_WAW><ARABIC_LETTER_NOON><ARABIC_LETTER_YEH><ARABIC_LETTER_WAW>";/
+        "<ARABIC_LETTER_YEH><ARABIC_LETTER_WAW><ARABIC_LETTER_LAM><ARABIC_LETTER_YEH><ARABIC_LETTER_WAW>";/
+        "<ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_GHAIN><ARABIC_LETTER_SEEN><ARABIC_LETTER_TAH><ARABIC_LETTER_SEEN>";/
+        "<ARABIC_LETTER_SEEN><ARABIC_LETTER_BEH><ARABIC_LETTER_TEH><ARABIC_LETTER_MEEM><ARABIC_LETTER_BEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_KAF><ARABIC_LETTER_TEH><ARABIC_LETTER_WAW><ARABIC_LETTER_BEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_NOON><ARABIC_LETTER_WAW><ARABIC_LETTER_FEH><ARABIC_LETTER_MEEM><ARABIC_LETTER_BEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_DAL><ARABIC_LETTER_YEH><ARABIC_LETTER_SEEN><ARABIC_LETTER_MEEM><ARABIC_LETTER_BEH><ARABIC_LETTER_REH>"
+
+mon     "<ARABIC_LETTER_YEH><ARABIC_LETTER_NOON><ARABIC_LETTER_ALEF><ARABIC_LETTER_YEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_FEH><ARABIC_LETTER_BEH><ARABIC_LETTER_REH><ARABIC_LETTER_ALEF><ARABIC_LETTER_YEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_MEEM><ARABIC_LETTER_ALEF><ARABIC_LETTER_REH><ARABIC_LETTER_SEEN>";/
+        "<ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_BEH><ARABIC_LETTER_REH><ARABIC_LETTER_YEH><ARABIC_LETTER_LAM>";/
+        "<ARABIC_LETTER_MEEM><ARABIC_LETTER_ALEF><ARABIC_LETTER_YEH><ARABIC_LETTER_WAW>";/
+        "<ARABIC_LETTER_YEH><ARABIC_LETTER_WAW><ARABIC_LETTER_NOON><ARABIC_LETTER_YEH><ARABIC_LETTER_WAW>";/
+        "<ARABIC_LETTER_YEH><ARABIC_LETTER_WAW><ARABIC_LETTER_LAM><ARABIC_LETTER_YEH><ARABIC_LETTER_WAW>";/
+        "<ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_GHAIN><ARABIC_LETTER_SEEN><ARABIC_LETTER_TAH><ARABIC_LETTER_SEEN>";/
+        "<ARABIC_LETTER_SEEN><ARABIC_LETTER_BEH><ARABIC_LETTER_TEH><ARABIC_LETTER_MEEM><ARABIC_LETTER_BEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_ALEF_WITH_HAMZA_ABOVE><ARABIC_LETTER_KAF><ARABIC_LETTER_TEH><ARABIC_LETTER_WAW><ARABIC_LETTER_BEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_NOON><ARABIC_LETTER_WAW><ARABIC_LETTER_FEH><ARABIC_LETTER_MEEM><ARABIC_LETTER_BEH><ARABIC_LETTER_REH>";/
+        "<ARABIC_LETTER_DAL><ARABIC_LETTER_YEH><ARABIC_LETTER_SEEN><ARABIC_LETTER_MEEM><ARABIC_LETTER_BEH><ARABIC_LETTER_REH>"
+
+date_fmt    "%A, %Oe %B, %Oy %Z %OI:%OM:%OS %p"
+
+d_fmt    "%Oe<SOLIDUS>%Om<SOLIDUS>%Oy"
+
+t_fmt    "%OI:%OM:%OS %p"
+
+d_t_fmt  "%Oe %B, %Oy %OI:%OM:%OS %p"
+
+am_pm    "<ARABIC_LETTER_SAD>";"<ARABIC_LETTER_MEEM>"
+
+t_fmt_ampm  "%OI:%OM:%OS %p"
+
+alt_digits "<ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_ONE><ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_TWO><ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_THREE><ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_FOUR><ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_FIVE><ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_SIX><ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_SEVEN><ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_EIGHT><ARABIC-INDIC_DIGIT_NINE>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_ZERO>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_ONE>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_TWO>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_THREE>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_FOUR>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_FIVE>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_SIX>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_SEVEN>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_EIGHT>";/
+           "<ARABIC-INDIC_DIGIT_NINE><ARABIC-INDIC_DIGIT_NINE>"
+END LC_TIME
+*************
+LC_MESSAGES
+*************
+
+yesstr   "<ARABIC_LETTER_NOON><ARABIC_LETTER_AIN><ARABIC_LETTER_MEEM>"
+
+nostr    "<ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF>"
+
+yesexpr  "^(([yY]([eE][sS])?)|<ARABIC_LETTER_NOON>|<ARABIC_LETTER_NOON><ARABIC_LETTER_AIN><ARABIC_LETTER_MEEM>)"
+
+noexpr   "^(([nN][oO]?)|<ARABIC_LETTER_LAM>|<ARABIC_LETTER_LAM><ARABIC_LETTER_ALEF>)"
+
+
+END LC_MESSAGES

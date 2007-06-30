@@ -1,0 +1,86 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#
+# SUNWjais
+#
+d none usr 0755 root sys
+d none usr/openwin 0755 root bin
+d none usr/openwin/lib 0755 root bin
+d none usr/openwin/lib/X11 0755 root bin
+d none usr/openwin/lib/X11/fonts 0755 root bin
+d none usr/openwin/lib/X11/fonts/75dpi 0755 root bin
+e fontsdir usr/openwin/lib/X11/fonts/75dpi/fonts.dir=usr/openwin/lib/X11/fonts/75dpi/fonts.dir.miniroot 0644 root bin
+#
+d none usr/openwin/lib/locale 0755 root bin
+d none usr/openwin/lib/locale/ja 0755 root bin
+s none usr/openwin/lib/locale/ja_JP.PCK=./ja
+s none usr/openwin/lib/locale/ja_JP.UTF-8=./ja
+f none usr/openwin/lib/locale/ja/CT_Encoding=usr/openwin/lib/locale/ja/CT_Encoding 0444 root bin
+f none usr/openwin/lib/locale/ja/XLC_LOCALE=usr/openwin/lib/locale/ja/XLC_LOCALE.miniroot 0444 root bin
+f none usr/openwin/lib/locale/ja/XI18N_OBJS=usr/openwin/lib/locale/ja/XI18N_OBJS.miniroot 0444 root bin
+d none usr/openwin/lib/locale/ja/OW_FONT_SETS 0755 root bin
+f none usr/openwin/lib/locale/ja/OW_FONT_SETS/OpenWindows.fs=usr/openwin/lib/locale/ja/OW_FONT_SETS/OpenWindows.fs.miniroot 0444 root bin
+#
+d none usr/openwin/share 0755 root bin
+d none usr/openwin/share/locale 0755 root bin
+d none usr/openwin/share/locale/ja 0755 root bin
+s none usr/openwin/share/locale/ja_JP.PCK=./ja
+s none usr/openwin/share/locale/ja_JP.UTF-8=./ja
+#
+d none usr/lib 0755 root bin
+d none usr/lib/locale 0755 root bin
+d none usr/lib/locale/ja 0755 root bin
+d none usr/lib/locale/ja_JP.eucJP 0755 root bin
+d none usr/lib/locale/ja_JP.PCK 0755 root bin
+d none usr/lib/locale/ja_JP.UTF-8 0755 root bin
+d none usr/lib/locale/ja_JP.eucJP/LC_CTYPE 0755 root bin
+s none usr/lib/locale/ja_JP.PCK/LC_CTYPE=../ja/LC_CTYPE
+s none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE=../ja/LC_CTYPE
+s none usr/lib/locale/ja/LC_CTYPE=../ja_JP.eucJP/LC_CTYPE
+f none usr/lib/locale/ja_JP.eucJP/LC_CTYPE/wdresolve.so=usr/lib/locale/ja_JP.eucJP/LC_CTYPE/wdresolve.so 0644 root bin
+d none usr/lib/locale/ja/LC_MESSAGES 0755 root bin
+f none usr/lib/locale/ja/LC_MESSAGES/openwin-defaultfont=usr/lib/locale/ja/LC_MESSAGES/openwin-defaultfont.miniroot 0755 root bin
+d none usr/lib/locale/ja/LC_TIME 0755 root bin
+s none usr/lib/locale/ja_JP.PCK/LC_TIME=../ja/LC_TIME
+s none usr/lib/locale/ja_JP.UTF-8/LC_TIME=../ja/LC_TIME
+#
+f none usr/lib/locale/ja/locale_description=usr/lib/locale/ja/locale_description 0644 root bin
+f none usr/lib/locale/ja_JP.PCK/locale_description=usr/lib/locale/ja_JP.PCK/locale_description 0644 root bin
+f none usr/lib/locale/ja_JP.UTF-8/locale_description=usr/lib/locale/ja_JP.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/ja/locale_map=usr/lib/locale/ja/locale_map 0644 root bin
+f none usr/lib/locale/ja_JP.PCK/locale_map=usr/lib/locale/ja_JP.PCK/locale_map 0644 root bin
+f none usr/lib/locale/ja_JP.UTF-8/locale_map=usr/lib/locale/ja_JP.UTF-8/locale_map 0644 root bin
+f none usr/lib/locale/ja/geo_map=usr/lib/locale/ja/geo_map 0644 root bin
+f none usr/lib/locale/ja_JP.PCK/geo_map=usr/lib/locale/ja_JP.PCK/geo_map 0644 root bin
+f none usr/lib/locale/ja_JP.UTF-8/geo_map=usr/lib/locale/ja_JP.UTF-8/geo_map 0644 root bin
+d none usr/snadm 0755 root bin
+d none usr/snadm/classes 0755 root bin
+d none usr/snadm/classes/locale 0755 root bin
+d none usr/snadm/classes/locale/ja 0755 root bin
+s none usr/snadm/classes/locale/ja_JP.PCK=./ja
+s none usr/snadm/classes/locale/ja_JP.UTF-8=./ja
+f none usr/lib/locale/ja/ja.so.3=usr/lib/locale/ja/ja.so.3 0755 root bin
+f none usr/lib/locale/ja_JP.eucJP/methods_ja_JP.eucJP.so.3=usr/lib/locale/ja_JP.eucJP/methods_ja_JP.eucJP.so.3 0755 root bin
+s none usr/lib/locale/ja_JP.PCK/ja_JP.PCK.so.3=../ja/ja.so.3
+s none usr/lib/locale/ja_JP.UTF-8/ja_JP.UTF-8.so.3=../ja/ja.so.3

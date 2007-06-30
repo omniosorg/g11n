@@ -1,0 +1,1474 @@
+ stránke. 
+Návod na umiestnenie va¹ich stránokna www server nájdete v 
+Táto doména je umiestnená na servriSlovenských Telekomunikácii, a.s.
+na na¹ej 
+príruèke
+Ondøej - Andrew
+ (tajné:-)) a dvì dìti, dceru 
+ - pro CW/SSB závody od Larryho,N6TR
+ - pro RTTY závody od Raye, WF1B
+ od N6TR.A k tomu pou¾ívám handheld Yaesu FT-10R s dualbandovým groundplanem GP-1od Cometu.
+Jako první zaøízení jsem mìl pùjèenou Otavu z radioklubu OK1KTW spoleènìs anténou W3DZZ. Poté jsem pou¾íval Yaesu FT-102 s anténou FD-4 od Mikiho,OK1BO. Pozdìji jsem koupil Kenwood TS-850S/AT, potom TS-570S/AT a nynímám také Yaesu FT-1000MP. K FT-1000MP jsem si je¹tì poøídil úpravu od InternationalRadio (INRAD) na zvý¹ení citlivosti a sní¾ení hladiny ¹umu a filtry. Zdáse, ¾e to nìjaký vliv bude mít, kdy¾ to tak vychvaluje tolik lidí :-))).Více viz diskusní skupina 1000mp na 
+Na RTTY pou¾ívám starou PK-232, mimochodem má výborný bargraf na ladìní,do které jsem si nyní objednal od Timewave upgrade na verzi MBX/DSP. Takjsem zvìdav, nakolik se toto projeví pøi provozu.
+Na paket rádio mám TNC2 GC12AX od GES Plzeò. Funguje bez problémù, pouzejednou mu vyhoøel výstupní FETranzistor. EPROM není pùvodní, ale upravenás TF2.7b a nyní tam budu dávat dal¹í verzi s komunikaèní rychlostí 4 800Bdpro spolupráci s 
+Narodil jsem se v roce 1966 v Lan¹krounì, co¾ je mìsto zhruba 180 kmvýchodnì od Prahy, tìsnì u hranic s Moravou. V roce 1990 jsem se pøestìhovaldo Neratovic, kolem dvaceti kilometrù severnì nad Prahou.
+Nejradìji závodím, hlavnì morseovkou. Od roku 1997 zkou¹ím RTTY, co¾je zajímavý druh  provozu. Sem tam i SSB, ale jen nìkdy, asi mám nìjak¹patné u¹i a problémy mi na SSB dìlá i èe¹tina, nato¾ jiné jazyky :-).
+Nyní mám jednu man¾elku 
+Nìco o mì - OK1EE
+Ondøeje
+Poslední úprava 04/02/99
+Poøídil jsem si vertikál R-7000 od Cushcraftu, ale po èase mi bìhemladìní (cca 800/900 W na asi 30 a¾ 40 sekund) vyhoøely trapy. An¾to je¹tìbyla anténa v záruce, obdr¾el jsem po vyplnìní dvoustránkového dotazníkunové dva trapy ze tøí (pøímo od Cushcraftù). Bohu¾el, vypadá to, ¾e jei ten tøetí nìjak naènutý. Tady v Paøí¾i pou¾ívám je¹tì v¹epásmový dipól.Hledám inspiraci na co nejlep¹í a pøitom co nejmen¹í anténu hlavnì na 7MHz.
+Pro RTTY, pakorádio, øízení tcvr a závodìní pou¾ívám star¹í notebookIBM ThinkPad 360Cs, co¾ je 486SX na 33 MHz a má 20 MB RAM. Barevný! :-)))Pøidal jsem mu PCMCIA kartu - dva sériové porty, tak¾e mám celkem tøi:pro FT-1000MP, PK-232 a TNC2.
+První licenci jsem dostal v roce 1981 - OL5VCY. Pozdìji jsem vykonalúspì¹nì zkou¹ky na tøídu C a získal znaèku OK1FMR - 1986, a¾ v roce 1989jsem se o¾enil a v roce 1994 jsem zkrátil znaèku na OK1EE. V Lan¹krounìjsem byl èlenem radioklubu OK1KTW, co bydlím v Neratovicích, jsem èlenemradioklubu OK1KMG. V letech 1985 a¾ 1987 jsem byl èlenem radioklubu OK1KDWv Brandýse nad Labem/Staré Boleslavi.
+v¹e legálnì zakoupeno
+Poslední úprava 04/02/99
+about me, friends / o mì, pøátelé
+ - pøes 15 000 QSO bìhemcca 5 týdnù. Mám velice pìkné vzpomínky na pøátele z Libanonu. S pomocí
+ jsem mohl vysílat a míval jsem velice pìkné pile-upy. Zemì jetaké velice pìkná a zajímavá a lidé jsou zde pøátel¹tí.
+- poprvé jsem vysílal z jiné zemì ne¾ OK
+. Kolem ¹esti týdnù a nìcopøes 2 000 QSO.
+. Za ten rok jsemudìlal témìø 3 200 QSO's.
+.Byl jsem tam asi 6 týdnù a udìlal jsem pouze nìco pøes 2 200 QSO. Z tohobylo 1 106 QSO v CQ WW CW - 1. místo na svìte v kategorii 7 MHz a 100 W.Bohu¾el jsem nemìl moc volného èasu.
+.Domù se pravdìpodobnì vrátím pøí¹tí léto - v roce 2000. Zde jsem udìlalzatím 7 700 spojení.
+1994 listopad jsem byl dva týdny ve Skandivánii, ale bylo to pouze osmQSO ze Stockholmu, ©védska. Málo volného èasu. 
+1995 èerven, èervenec a deset dnù ze srpna jsem byl v Bejrútu, Libanon,jako 
+Cesty kolem svìta
+Mé cesty kolem kousku svìta
+Na podzim 1995 jsem nav¹tívil Japonsko - Tokio, Filipíny - Manilu aTaiwan - Tajpej; pouze týden v ka¾dé zemi. V Taipeji jsem se setkal s Tonym,BV2TA, a Randym, BV2DQ. Licenci v BV jsem, bohu¾el, pro¹vihl o pár dní.
+Od léta 1996 jsem byl jeden rok v Bernu ve ©výcarsku, kde jsem pou¾ívalvolací znak
+Od léta 1997 jsem v Paøí¾i ve Francii. Zde mám licenci 
+Poslední úprava 04/02/99
+Tel Aviv, Israel - 1994 - èerven a èervenec, volaèka 
+Toto je seznam cest, kde jsem mìl mo¾nost vìnovat se svému koníèku.
+3x pohled z Vítìzného oblouku
+Av. d'Iéna
+Av. de la Grande-Armée
+Av. des Champs Elysées
+Le Musée du Louvre
+Leo¹, OK1ULE s mojí rodinou
+Poslední úprava 08/02/00
+Sante a já na Ajfelovce
+doma v obýváku
+moje druhá polovina je nalevo
+na støe¹e
+rare thing - snow in Paris / vzácná vìc - sníh v Paøí¾i
+visiting Paris in May 1998 / na náv¹tìvì v Paøí¾i v kvìtnu 1998
+Apollo - múzeum vo Washingtone
+Baltimore - akvárium
+Baltimore - panoráma
+Daniela a Janka na kolotoèi
+Daniela na Niagarách
+Daniela, Janka a ja na Niagarách
+Denník z pobytu v USA
+Dobré ovce
+Doma varíme veèeru
+Janka a Daniela pri koèi
+Janka a fontána
+Janka na Niagarských vodopádoch
+Janka na plá¾i
+Kasíno - Atlantic City
+Luster v kasíne
+Marvin ja a Miro na Niagarách
+Miro a Janka v èokoládovej továrni
+Miro, Janka a ja na Niagarách
+Na kúpalisku
+Nezávislos» Ameriky
+Obrázok z Philadelphie
+Obèerstvenie
+Socha býka - Janka
+Socha býka - ja 1
+Socha býka - ja 2
+Socha býka zo zadu
+Starý Biely dom
+V koèi
+V múzeu - Janka
+V múzeu - ja
+V stra¹idelnom zámku
+Welcome to Vadovic´s /OM3CNU/ page.
+Zlé kozy
+Zvon nezávislosti
+Èokoládová továreò
+Èínska ¹tvr»
+ (na klíèování).       
+ (pøíjem a vysílání SSTV) a 
+ Modem TRM1 vyu¾ívá skuteènosti, ¾e ka¾dý pøijimaè TRXu má na výstupu víc ne¾ dostateèný výkon pro napájení vstupu RS232, pouze napìtí je malé. Pøebytek výkonu jes výhodou mo¾no pou¾ít pro transformaci na vy¾¹í napìtí a to potom omezit zenerovými diodami na úroveò pou¾ívanou RS232 t.j. cca 12 V. Jedná se v podstatì o impedanènípøizpùsobení výstupu 8 ohmù na vstup PC, který má víc ne¾ 10 kilohmù. Tím lze napìtí natolik zvednout, ¾e dal¹í zesilování je zbyteèné.
+ Modem byl realizován na univerzální DPS a úspì¹nì vyzkou¹en s programy 
+Funkèní vzorek modemu TRM1
+Kondenzátory * (22n a M1) pro doladìní vinutí budou pro ka¾dý typ traf jiné hodnoty, modemov¹em chodí docela dobøe i bez nich.
+Oblíbený komparátorový Hamcom modem má jednu velkou nevýhodu, a tou je, ¾e tvoøígalvanickém spojení PC a TCVR. Pøi pou¾ití TRXu napájeného ze sítì mohou vzniknoutvyrovnávací proudy mezi zemí PC a TRXu s následným po¾kozením HW.
+Pro konstrukci modemu jsou vhodné bì¾né budicí a výstupní transformátorky ze starých tranzistorových pøijimaèù. Èím men¹í, tím lep¹í. Potøebné kmitoèty pøená¹í i ta nejhor¹í nf trafa, ¹patný pøenos okrajových kmitoètù nf pásma je zde jen výhodou a pøispívá k selektivitì modemu.
+Rozhodovací hladina vstupù RS232 je cca 0,5 V, a po trasformaci napìtí nahoru procházíhrany pulzù touto hladinou s podobnou strmostí, jako pøi pou¾ití OZ 741. Vinutí transformátorùje mo¾no naladit na støední kmitoèet 1,7 kHz a zlep¹it tak vlastnosti oproti komparátorovému modemu, který je neladìný.
+Situaci lze vyøe¹it jednoduchým transformátorovým modemem TRM1, který dùslednì oddìluje obvody PC od TRXu.
+Zapojení TRM1
+OK1UKV - základní údaje
+Základní údaje o stanici : 
+antény
+lokátor
+operátor
+tøída 
+umístìní
+zalo¾ena
+ Podrobnosti mìøení jsou ulo¾eny v 
+, vhodném pro pøípadné zpracování v tabulkovém editoru. Soubor má 60 kB a je komprimován v samorozbalovacím formátu SFX. 
+Mìøení úrovnì signálù v pásmu 30 MHz a¾ 1 GHz 
+Namìøené hodnoty
+Pro pøedstavu, jaké jsou v Praze úrovnì signálù je zde pøehledový graf.
+Signály v JO70FB
+textovém souboru
+ Pro zhotovení skládacího \"¾olíka\"je potøeba pouze vrtaèka a závitové oèko M3. Z kovového prutu prùmìru 3 mm (ocel, mosaz nebo dural) zhotovíme 2 díly délky 468 mm se závitem M3 délky 10 mm. Del¹í 2 díly délky 484 mm mají závit na obou koncích. Pruty jsou spojeny kovovými distanèními sloupky délky 20 mm (v katalogu GM je Di5M3x20). Dva sloupky jsou pøi¹roubovány do víka krabièky s rozteèí 46 mm. Pod ¹roubky v krabièce je dobré dát pro zpevnìní velké podlo¾ky a pájecí oèka pro pøipojení koaxu. Pevnou plastovou krabièku pøilepíme k magnetu z reproduktoru nebo starých TV vychlovacích cívek. Také je mo¾no do boku krabièky udìlat otvor a anténu pøipevòovat za okraje øíms malou truhláøskou svorkou.
+ mi své poznatky.
+Anténa typu J napájená na konci nevyniká svým PSV, ale výsledky pøedèí jiné typy. Hodí se na koax 75 i 50 ohmù, proto¾e má stejnì PSV 2,5. 
+Na obou del¹ích prutech je dobré trvale upevnit sloupek na jedom z koncù (zaklepnout dùlèíkem apod.), aby se pøi transportu antény v rozlo¾eném stavu neztratil. Dolní sloupky zùstanou po rozlo¾ení antény na krabièce. 
+Nebyl zji¹tìn pozorovatelný rozdíl pøi zapojení opletení na krat¹í nebo na del¹í prvek.  
+OK1UKV - základní údaje
+Skládací anténa pro 2 m
+Vyzkou¹ejte a 
+napi¹te
+®OLÍK -   anténa do ta¹ky
+1955,- Kè
+3175,- Kè
+3910,- Kè
+6350,- Kè
+Jiné poèty kusù, dal¹í informace a objednávky na adrese: 
+NÁVRH A TISK QSL LÍSTKÙ
+PRO RADIOAMATÉRY I CB OPERÁTORY
+Poèet kusù
+Pøíklady provedení oboustranných QSL lístkù
+QSL lístky mají formát 140 x 90 mm, ti¹tìny na bílém køídovém papíru 300 g, pøední barevná strana je laminována. Lístky mohou být i ve dvojitém provedení, t.j. formátu 180 x 90 mm nale¾ato, nebo i 140 x 180 mm nastojato (s ohybem uprostøed, vnitøní dvoustrana èernobílá).
+Uvedené ceny jsou vèetnì DPH
+Ing. Jaroslav Vadoviè /OM3CNU/    73    Last update 25.December.1998
+Welcome to Vadovic´s /OM3CNU/ page.
+O.K. úverové karty
+ OK.SK - REGISTRÁCIA A PRESMEROVANIE DOMÉNY
+<img> Internet Media Group, spol. s r.o., Viedenská cesta 5, 852 51 Bratislava,
+Budovanie mena na Internete je dlhodobý proces, podobne ako budovanie dobrého mena firmy vo v¹eobecnosti. Mnohých odradia vysoké ceny za udr¾iavanie vlastného pevného pripojenia alebo virtuálneho servera a preto hµadajú cenovo dostupnej¹ie mo¾nosti.
+Dostaòte Va¹u stránku do vyhµadávacích slu¾ieb
+Dr¾iteµom domény sa stáva organizácia (podnikateµský subjekt), ktorý ju registruje alebo poverí registráciou iného registrátora.
+Internetová doména je základný prvok pre tvorbu adresy na Internete. Nie je závislá na type pripojenia, t.j. zo zmenou providera alebo linky je mo¾né ju okam¾ite nastavi» na nové parametre.
+Kedykoµvek poèas obdobia poskytovania na¹ej slu¾by mô¾ete s okam¾itou úèinnos»ou zmeni» adresu, kam bude presmerovaná adresa http://www.vasadomena.sk a v¹etky Emaily @vasadomena.sk 
+Mô¾ete si tie¾ vybra», èi Va¹a www adresa bude presmerovaná alebo zverejníte titulnú stránku priamo na nej.
+Na predvedenie funkènosti ná¹ho systému sme zriadili doménu go.sk. Vyskú¹ajte si mo¾nosti nastavenia domény na adrese 
+OK.SK - Registrácia a presmerovanie domény
+Overte si, èi je mo¾né registrova» doménu, ktorú si prajete alebo si vyberte inú
+PONÚKAME VÁM RIE©ENIE, KTORÉ MÁ BUDÚCNOS«.
+Po uzavretí zmluvného vz»ahu Vám dáme k dispozícii prihlasovacie meno a heslo na ovládanie presmerovania Va¹ej domény
+Po vyplnení formulára a odoslaní objednávky Vám doménu zaregistrujeme, zriadime slu¾bu presmerovani a za¹leme zmluvu a faktúru na 960,- Sk (12 x 80,- Sk). Cena je uvedená vrátane DPH.
+Poistite si vlastnú doménu 
+Presmerovaním E-mailovej domény sa rozumie proces, keï v¹etky emaily smerované na doménu (napr. info@mojadomena.sk) sú zasielané na inú adresu (napr. mojafirma@mojprovider.sk)
+Presmerovaním WWW adresy sa rozumie proces, keï zavolaním jednej adresy (napr. www.mojadomena.sk) je surferovi na Internete vrátená stránka na inej adrese (napr. www.mojprovider.sk/mojafirma/mojastranka.html)
+Prevádzkujte vlastnú adresu pri najni¾¹ích nákladoch
+Prihlasovacie heslo pre túto doménu je: go
+Propagujte u¾ teraz Va¹u budúcnos»
+Spoloènos» Internet Media Group, s.r.o. na základe Vá¹ho poverenia zaregistruje na Va¹e meno Internetovú doménu a bude poèas obdobia 1 kalendárneho roka zabezpeèova» presmerovanie adresy www.vasadomena.sk a Emaily @vasadomena.sk na Vami zvolené adresy. Po uplynutí tohoto obdobia Vám ponúkneme predå¾enie poskytovania slu¾by na ïal¹ie obdobie, za tých istých cenových podmienok ako doteraz.
+S»ahovaním sa na nový server budete zaèína» so v¹etkým odznova.
+Umiestòovanie stránky alebo E-mailovej adresy na cudzej doméne má v¹ak jednu veµkú nevýhodu. Ak aj dosiahnetenáv¹tevnos» alebo dobré meno Va¹ej HomePage, stávate sa závislým na vlastníkovi adresy servera.
+Urèite ste uva¾ovali, ako najvýhodnej¹ie zaèa» Va¹e prezentovanie na Internete. 
+ZRIADENIE A PRESMEROVANIE DOMÉNY JE JEDNODUCHÉ.
+Zaregistrujte si meno Va¹ej vlastnej domény a nechajte si ju presmerova» na doteraj¹ie adresy. 
+Získajte µahko zapamätateµnú adresu 
+je najvy¹¹í èas, preto¾e doménu vasafirma.sk alebo vasacinnost.sk mô¾e obsadi» niekto iný
+kedykoµvek, keï sa rozhodnete investova» do Va¹ej rozsiahlej¹ej prezentácie na Internete, pou¾ijete na to meno Va¹ej domény
+na vizitkách a inzercii mô¾ete uvádza» adresu v tvare www.vasadomena.sk a Email meno@vasadomena.sk
+prevádzka WWW a Emailovej domény Vás vyjde iba 80,- Sk mesaène vrátane DPH
+stránky s vlastnou doménou su automaticky zaradené do vyhµadávacích slu¾ieb Zoznam a SuperZoznam
+Andrija Geriæ
+Branislav Otiæ
+Igor Vu¹uroviæ
+Nikola Grbiæ
+Slobodan Bo¹kan
+Slobodan Kovaè
+Vasa Mijiæ
+Veljko Petkoviæ
+Vladimir Grbiæ
+Zoran Gajiæ
+d ustanovljavanja statusa VELIKANA (1997) pa do poèetka takmièarske sezone 2000/2001. visoko zvanje dobili su igraci i treneri koji su kao igraèi ili biv¹i igraèi Vojvodine u reprezentativnom statusu osvojili medalje na svetskim i evropskim takmièenjima i dvojica sportskih radnika za dugogodi¹nji kontinuiran rad i vanredan doprinos u razvoju Kluba.
+®arko Petroviæ
+Ðorðe Ðuriæ
+Ðula Me¹ter
+ Svoje organizatorske sposobnosti Klub je demonstrirao i 1998. godine u Novom Sadu kada nije bio uèesnik, a najbolje do tada je organizovan final for u Kupu evropskih ¹ampiona.
+ svojoj istoriji Klub je osvojio jedanaest ¹ampionskih titula, od kojih poslednjih devet uzastopno, sedam titula pobednika Kupa Jugoslavije, dva treæa mesta u Kupu evropskih ¹ampiona i jedno treæe mesto u Kupu pobednika kupova.
+a utakmicama Vojvodine okuplja se rekordan broj posetilaca na klubskim susretima u Jugoslaviji i kreæe se do 10.000 gledalaca. Od 1995. godine Vojvodina je organizator velikih utakmica jugoslovenske reprezentacije u Novom Sadu, koje su, posebno u Svetskoj ligi poseæene i sa preko kapaciteta hale, 11.000 ljubitelja odbojke.
+ajbolji rezultat juniorske selekcije na evropskim prvenstvima, èetvrto mesto 2000. u Italiji, ostvareno je sa ¹est igraèa i trenerom, aktuelnim ¹efom struènog ¹taba Vojvodine, Slobodanom Gale¹evim.
+d januara 1998. godine, Vojvodina ima stalnu postavku na Internetu i svoj Web sajt www.vojvodina.org.yu koji je posetilo preko 30.000 posetilaca i u proseku se zadr¾avalo devet minuta na njegovim stranicama.
+d septembra 1998. godine Vojvodina izdaje svoj dvomeseèni èasopis OK WO©©A i po tome je prvi odbojka¹ki klub u Jugoslaviji koji je pokrenuo svoj list. U protekloj deceniji u progla¹enjima na kraju godine, Vojvodina je svake godine promovisana kao najuspe¹niji sportski klub u Novom Sadu.
+dbojka¹ki klub Vojvodina je osnovan 1946. godine. U prvih trideset godina postojanja, klub je funkcionisao kao amaterski, bele¾eæi uspone i padove, ostvarujuæi mnoge promene u organizaciji pa i u nazivu (Sloga, Proleter, Partizan, Student). U drugoj polovini sedamdesetih godina, Klub se stabilizuje, vraæa izvorno ime Vojvodina, da bi u proteklih dvadeset godina bio najuspe¹niji odbojka¹ki klub u Jugoslaviji.
+ojvodina je davala i daje veliki broj reprezentativaca Jugoslavije kako u seniorskoj tako i u juniorskoj selekciji. Samo u minuloj deceniji, èak osamnaest igraèa Vojvodine je bilo u sastavu najtrofejnije selekcije Jugo odbojke, a èetrnaestorica su igrala za juniorsku reprezentaciju.
+ve medalje koje su ostvarili nacionalni \"plavi\", u drugoj polovini devedesetih izvojevane su pod struènim vodstvom nekada¹njih trenera Vojvodine: Zorana Gajiæa na evropskim i svetskim prvenstvenim i Olimpijskim igrama i Milorada Kijca na Svetskom Kupu.
+ Baèka Palanka
+Hemofarm, Vr¹ac
+©ajka¹ka
+ Jedným z dôle¾itých predpokladov úspe¹nosti Vá¹ho projektu je detailné naplánovanie obsahu a jednotlivých èastí. Integrovanie najlep¹ích technologických a programových rie¹ení je úplnou samozrejmos»ou. Na¹ou snahou je pomôc» vám èo najefektívnej¹ie vyu¾i» èas potrebný na prípravu Vá¹ho projektu a úspe¹ne uvies» Va¹e stránky na internet. Radi Vám venujeme ná¹ èas a pomô¾eme Vám na zaèiatku celého projektu - bezplatne.
+ Pre na¹ich klientov poskytujeme poradenské slu¾by poèas výroby www stránok zdarma. Neváhajte a príïte sa poradi» o v¹etkom èo súvisí s va¹ou stránkou. Konzultácie e¹te pred zaèatím celého projektu vám u¹etria v budúcnosti èas a námahu. 
+Alexandra Pavelková, slovenská spisovateµka
+Dôle¾ité!
+Elektronické obchody
+Fandom - denník o fantastike
+Firemné prezentácie
+Heliotronik - unikátne obkladové materiály
+Internetové denníky
+J. & J. Ostro¾oviè, producent tokajského vína
+Kníhkupectvo FanShop
+Osobné stránky
+PIS, s.r.o. je skratkou pre Pre¹ovskú informaènú spoloènos», resp. pre Pre¹ovský informaèný server - oficiálnu stránku mesta Pre¹ov. Na¹a spoloènos» je prevádzkovateµom Mestského informaèného centra (Hlavná 67, Pre¹ov - pri hoteli Senátor) a ¹pecializujeme sa na informácie, informaèné technológie a informaèné systémy. Hlavnou oblas»ou na¹ej èinnosti sú internetové aplikácie, t.j. www stránky väè¹ieho rozsahu - èi u¾ ide o internetové denníky, elektronické obchody alebo virtuálne galérie. V prípade záujmu o slu¾by na¹ej spoloènosti, preèítajte si nasledujúci text - a pozrite si niektoré z na¹ich referencií ni¾¹ie. Ak by ste potrebovali vytvori» nieèo podobné, bez falo¹nej skromnosti vo svetovej kvalite - no za pre¹ovské ceny, pokojne sa nám ozvite, sme tu pre vás. Tel. 051/7710 714, 0905 750 832, e-mail: 
+Pre¹ovský informaèný server
+Prvá internetová pizzéria na Slovensku
+Stanislav Baèenko, reportá¾ny fotograf
+Locator: JO70AM * N 50°52' E 14°04' * County: ELT * * * 
+PIS.SK = PRE©OVSKÝ INFORMAÈNÝ SERVER
+iné
+kultúra
+©port
+podµa názvu
+podµa dátumu
+  
+lampáreò
+  
+diskusné fórum
+ 
+  
+  
+pí¹te nám
+  
+kniha náv¹tev
+ Anketa o najlep¹ej pre¹ovskej skupine
+  TBC light
+  Chiki-Liki Tu-a
+  Tri vlasy deda Hovada a krabica
+  
+  
+trochu o pre¹ove
+  
+primátor mesta
+  
+  
+z dejín mesta
+  
+  
+  
+pre¹ov v obrazoch
+  
+pre¹ovský okres
+  
+  
+pre¹ov na¾ivo
+  
+  
+firmy v pre¹ove
+  
+informácie pre podnikateµov
+ 
+  
+  
+  
+  
+  
+zdravotníctvo
+  
+kultúra
+  
+¹port
+  
+duchovný ¾ivot
+ 
+spä»
+Diaµnica a mesto
+Súhlasím. Názor Vladimíra je toto¾ný s mojim,veï sme bývalí spolu¾iaci.SSC si jednoducho zµahèuje èokoµvek,t.j. aj investorstvo.Megalomanský tunel \"VI©ÒOVÉ\" je proste výsledok sna¾enia ...!Pre¹ov si zaslú¾i urèite aspoò takú pozornos» ako ®ilina a tohoto názoru som aj napriek tomu,¾e 22 rokov ¾ijem v Nitre.
+áno
+  
+  
+Aby bylo mo¾no dosáhnout co nejlep¹ího výsledku, je potøeba mítzaji¹tìnou kvalitní stravu a stálý pøísun piva.
+Detailní pohled na stùl operátora v kabinì Pragy V3S.
+Dále je zde mo¾nost spatøit legendární TRX 210 zvaný SNÌ®KA.
+Ka¾dá ruka dobrá.
+Pohled do na¹í hospody-kuchynì krátce po obìdì. 
+Pohled na stùl operátora. 
+Stavba antén je jedineèným zá¾itkem.
+Takto vypadá Praga V3S na vrcholku hory Hradi¹tì ve vý¹ce 934m.n.m
+Uprostøed stolu je TRX Kenwood TS 790.
+lenem tohoto radioklubu jsem odroku 1992. Jsme èistì VKV kolektivka. Zùèastòujeme se v¹ech velkých VKV závodù.Nejèastìji vysíláme z Doupovských hor, z kóty JO60NF.
+Chtìli bychom se zamìøit pøedev¹ím na provoz a techniku. Této èinnostijsme se vìnovali ji¾ pøed 10 lety, kdy jsme vydávali obnovený èasopis Krátkévlny. Nedostatek finanèních prostøedkù bohu¾el zpùsobil, ¾e jsme jemuseli pøestat vydávat. Byla v nich publikována øada u¾iteèných informací,které se od té doby nikde neobjevily. Na¹ím cílem je postupnì naskenovat azde publikovat obsah v¹ech èísel Krátkých vln, které jsme vydali. Pokud bybyl zájem, byli bychom s nejvìt¹í pravdìpodobností schopní pokraèovat vevydávání tohoto èasopisu, ov¹em pouze v elektronické podobì. Chceme tímvyjít vstøíc pøedev¹ím mlad¹ím radioamatérùm, kteøí je¹tì poèátkem90. let nemìli koncesi.
+Co zde bude v pøí¹tích mìsících?
+Díky za náv¹tìvu prozatímních stránek Svazu èeských radioamatérù (SÈR).Zatím zde toho moc nenajdete, ale budeme se sna¾it stránky postupnì doplòovata roz¹iøovat.
+Otázkou, zajímavou pro v¹echny, je i organizace radioamatérù, pøedpisy a vùbecto, jak se nám amatéøí. Zde máme asi nejvìt¹í zpo¾dìní oproti vyspìlýmzemím. Stále zde pøetrvává mnoho \"východních\" prvkù z dobysocialismu, zejména kolektivismus, pokora pøed úøady, prùmìrnost a¾ podprùmìrnost,\"podchycování\" a proorganizovávání. Situaci zhor¹uje i rovnostáøstvía naprosté nerespektování zku¹eností a znalostí, které se coby svéráznývýklad demokracie objevuje po roce 1990. Nelze zapomínat i na typicky èeskouzávist, kdy je jakýkoli úspìch podezøelý a nìkdy i trestuhodný. Zde jepatrný velký dluh radioamatérských organizací (SÈR není výjimkou).
+Provoz je snad je¹tì více zkostnatìlý, ne¾ technika. Leckdo bere na vìdomítechnický pokrok, ale pokrok v provozních technikách je u nás prakticky neznámý.Mnozí si pod tímto pojmem pøedstaví zavádìní moderních digitálníchdruhù provozu, ale naprosto jim uniká mo¾nost zdokonalování CW a SSBprovozu, zejména v závodech a DXingu. Tu a tam se objeví technicky zamìøenákní¾ka, ale provozu se nevìnuje nikdo. Pokud se nìkterý z \"renomovaných\"autorù otøe o provozní problematiku, jde vesmìs o opisování tzv. ©edéhozákona (knihy \"Radioamatérský provoz\" z 60. let). Existuje znaènýrozdíl mezi provozem stanic napø. v USA a ve východní Evropì. Je v¹aknaprostou nutností tento rozdíl minimalizovat èi naprosto setøít.
+Technika je podstatnou a pro mnohé z nás dokonce hlavní náplní na¹ehohobby. Rádi bychom zde publikovali øadu jednoduchých a u¾iteènýchkonstrukcí. Nepøedpokládáme v¹ak, ¾e bychom zde uveøejòovali\"stavební návody\" ani konstrukèní popisy vysílacích zaøízení.Praxe ve vyspìlých zemích ukazuje, ¾e základní vybavení stanice, tj.transceiver(y) a lineár(y) je vhodné koupit a i tak nám zbývá obrovskýprostor pro vlastní technickou tvoøivost. Nedílnou souèástí technického zázemíjsou i poèítaèe a programy. Ze zku¹enosti víme, ¾e dnes je tøeba vìnovatse zvý¹enou mìrou právì tìmto zále¾itostem. Velký prostor chcemeposkytnout také rùzným pohledùm do zákulisí a ukázat, jak a co pou¾ít,aby zaèínající amatér dosáhl dobrých výsledkù. Chyby zaèáteèníkùse opakují, stejné chyby, jaké jsme dìlali my pøed desítkami let, dìlajíi dne¹ní zaèínající amatéøi. Je to zpùsobeno nejen nedostateènýmiznalostmi a konzervatismem rùzných \"nestorù\" klubovních stanic,ale také nedostatkem aktuálních informací. 
+Vá¾enípøátelé,
+Direction 110°az OK-OM
+Direction 200°az I-OE
+Direction 230°az over top of hill Klinovec 1244 m.a.s.l. HB - F
+Direction 250°az - F
+Direction HG - YO 130°az
+Direction PA - DL 300°az
+Direction S-E 150°az 9A-S5
+Direction SP - 90°az
+Direction W - 270°az - DL- ON
+City of Janske Lazne. Members of OK1KIK club station in front of VEBAs´ cottage 
+Podmínkyzávodù
+Provozodrazem od stop meteorù
+VýsledkyVKV-PA za 1. pol. 1999 + èervenec
+Ano, tak toto byl Polní den 1999 radioklubu OK1OIR, který probìhl od 1.7.99 - 4.7.99 na kótì Vrch tøí pánù v Kru¹ných horách.Fotografie které zde vidíte budou samozøejmì doplnìny o komentáøe a èasem se zde objeví i recenze na celou akci, ov¹em aè mi ji Tom OK1HOJ ji¾ poslal, nìjak poøád nejsou lidi, kteøí by mìli èas udìlat dùkladnìj¹í UPDATE stránek.(viï Tome :-) ! )A proto¾e zatím není ani èas udìlat na stránkách tabuli cti a tabuli hamby v kultivovanìj¹í podobì, zneu¾iji pro tento úèel doèasnì tento prostor.
+Evík z Balaxu
+Janièka OK1VYT
+OK1OIR - Polní den 1999
+Pavel Buriánek
+Polní den 1999
+Speciální místo na této provizorní tabulce cti patøí Brumlovi - vrchnímu technikovi,technickému konzultantovi a specialistovi v oboru v¹echno v èem jsou souèástky a dráty,radioklubu OK1OIR.A za co? - Výroba v¹ech mo¾ných i nemo¾ných souèástí a dílù a» ji¾ mechanických èi elektronických, údr¾ba zaøízení a realizace takøka nemo¾ného v hazardních termínech které se daøí plnit nejdøíve den pøed a nejpozdìji dva dny po zavodì :-)Nicménì ka¾dý z nás by si mìl vzít pøíklad z jeho obrovského nasazení a zápalu pro urèený cíl. Jde do toho prostì celou vahou své osobnosti :-)
+Za úèast na PD 99 a PDM 99 získávají 100 bodù :
+Za úèast v PA-Srpen 99 získávají 50 bodù:
+Za úèast ve VHF-contestu získávají 100 bodù :
+Zpìt na úvodní stranu
+a malá Janièka
+a teï u¾ ty slíbené fotky.... 
+tak¾e Brumla 1000 bodù 
+Rádioklub OM3RDX
+Rádio¾urnál SZR
+Slovenský zväz rádioamatérov
+Rádioklub OMEGA OM5M/OM3KFF
+Antény rozhlasovych vysílaèù 
+Sto¾áry rozhlasových vysílaèù v Praze a j.
+ Radioaktiní odkazy 
+Anténní systémy Kathrein
+Anténní systémy RFS
+Klubová scéna, Rock, House
+Mobilní telefony za studentskou cenu
+Musím té¾ dodat, ¾e si velmi vá¾ím:
+Nejlep¹í hudba za posledních 500let 
+Pohled zvenèí 
+Program ÈRo
+Rada pro rozhlasové a TV vysílání
+Radioaktivní odkazy:
+Radioreléové spoje Alcoma
+Seznam VKV-FM vysílaèù v ÈR
+Týdeník Marketing&media
+VKV - DX Páví stránka
+Vysílaèe Tesla a.s
+V¹e o mobilním telefonu
+Z dne¹ního uniformního svìta rozhlasového vysílání samého tuc-tuc vyènívají ji¾ jen tito: 
+Èeské Radiokomunikace
+Èeský telekomunikaèní úøad
+Astrofysika na FEL - ÈVUT
+Divadlo Járy Cimrmana
+Instantní astronomické noviny
+Jízda - pro motoristy
+Jízdní øády MHD v Praze
+Jízdní øády ÈD
+Jízdní øády ÈSAD
+Ostatní odkazy:
+Rozhledny v ÈR
+Zpravodajský server Idnes
+Záblesky od satelitù
+Èeské deníky
+                                      .........je to naprosto super ma¹ina.........nejím , nespím, jen ladím..........  :-)
+                                      Akorát moje nejmilej¹í TS-120ka  musela z finanèních dùvodù do\"svìta\".....snad na ní budou hodní.....
+                                      A¾ se tu potvoru nauèím ovládat.tak se trochu rozepí¹u v rubrice ZAØÍZENÍ.
+                                     máme doma!  Urèitì nav¹tivte stránku    
+                                  4 pásmový vertikál  AVT 4.    Tak¾e u¾ jsem QRVna  7, 14 , 21  a 28 Mhz !   Anténa vypadá skvìle adokonce slu¹nì ladí.
+                                 Jak?   Vyrobil jsem \"anténí prodlu¾ovaè\"  tj. zaøadiljsem k LW sériovou kapacitu - Zkrátka \"vrazil sem tam votoèòák\" :-)) 
+                                 Tomá¹ mìl s sebou digitální fo»ák, tak¾e poøídil pár obrázkù. Mù¾etesi je prohlédnout ve fotogalerii.
+                                 Uvidíme jak budou \"lítat DXy\"    Je¹tì to chce nìcovymyslet na spodní bandy......
+                                 i za pomoc pøi její instalaci.....  :-)   Jsem tedy QRV na v¹echpásmech...   akorát 160ka nám trochu dìlá potí¾e...LW ne a nerezonovat...
+                                Zdaøilo se i pár nákupù...v¹ichni spokojeni.  :-)    Párfotek z kozákova je ve fotogalerii.
+                               pohlaví  a samozøejmì zimním sportovním radovánkám, ale s pøicházejícímjarem mi pøibývá elánu, tak se dostane i na to rádio....
+                              Vzhledem k tomu, ¾e opravy protìj¹í budovy ji¾ fini¹ují,  zaèínámuva¾ovat o znovuobnovení své skvìlé LW antény.
+                             Jen aby taky pøi¹ly QSLe.....
+                            Nyní jsem tedy QRV pouze na  21 Mhz......   Snad se mi ji¾ brzopodaøí natáhnout na støechu je¹tì jeden koax a vyrobím
+                            alespoò zkrácený dipól na 80 a 40m.   Taky by to chtìlo vymysletnìco na 28 Mhz......
+ tøída  SPECIÁL  1034bodù  - Mé srdce se dme pýchou! :-)
+10. èervna 2001      Schvátilamì nemoc a zùstal jsem doma na nemocenské....u¾ je mi lépe, tak zaèínámpokusovat....Zdaøilo se vyladit mùj LW na 160ce !!!!
+13. bøezna 2001         Po dlouhém zimním\"radioamatérském\" spánku na mì pøi¹lo jaro....hi.   Pøeszimu jsem se více ne¾ radioamatéøinì vìnoval nì¾nému 
+16. prosince 2000      Vìci nabírajírychlý spád....skoro mrzne, duje vítr a já lezu po støe¹e a s pomocíDavida OK1TDU instaluji novou anténu...
+17. záøí 2000           QUAD  na 2m  nahradil  kolineár  ALAN  UV 200 \"Bílá hùl\"      První dojmy jsou velmipotì¹ující.......
+18.-20. kvìtna 2001     Uskuteènilase 
+23. záøí 2000              Vzhledem k rozsáhlým stavebním úpravám, které zaèali probíhat na protìj¹íbudovì jsem musel sundat  LW anténu.
+24. bøezna 2001      Spolu s  Tomá¹em 1TLT, Jirkou 1XTB, Davidem 1TDU a Luká¹em 1ZLL jsem sezúèastnil setkání ve ©tìtí
+25. listopadu.2000       Obdr¾eljsem od Zdeòka OK1UPU diplom   
+28. dubna 2001        Tak jsme si spolu s1TLT,  1DJL  a  1ZLL  udìlali pìknej sobotní výlet nasetkání na Kozákovì.  Poèasí vy¹lo slu¹nì,  cesta pøíjemná..
+29. øíjna 2000       !!!!   100 zemí  DXCC  !!!!     DíkyCQ WW contestu se mi koneènì podaøilo dosáhnout sta udìlaných zemí...
+7. dubna 2001          Hurááá! :-)    Zdaøilo se!   LW  anténa je znovu nata¾ena!  Tímto dìkuji stavebnímu mistrovi zdej¹í stavby za pochopení a posléze 
+9. prosince 2000         Tak je to tady.....neodolal jsem jednomu inzerátu na PR............mam doma KVrig  Kenwood TS-570D.....   
+HAMEXPEDICE KRKONO©E 2001
+ROZHLEDNY ÈR
+Skvìlý víkend!  Nebudu to tu ani rozepisovat.... Diplom KOPCE AHORY ÈR
+   Od té doby se tomuto koníèku vìnuji velmi intenzivnì. Mým prvním zaøízením byl klasicky PIONÝR 80,  poté zapùjèenýKenwood TS-120V, 
+   na KV pøevá¾nì provozem SSB, ale právì z dùvodu nedostatkuèasu se ke \"krátkejm\" málokdy   dostanu , tak¾e mojeradioamatérská èinnost se
+   poslední dobou spí¹e omezuje na udr¾ování pøátelskýchkontaktù s kamarády prostøednictvím  VKV  FM  :-) 
+   posléze odkoupený a nyní vlastním skvìlé zaøízení KenwoodTS-570D - o tom ale naleznete více na stránce ZAØÍZENÍ .  Nejradìji mámprovoz
+   v lokátoru JO70FB. 
+  I pøes mé nynìj¹í pracovní zaneprázdnìní a spoustu dal¹íchzájmù jako auto, hudba a ¾eny :-) vìnuji stále radioamatéøinì podstatnouèást svého
+  Na závìr je¹tì fotografie mého krásného paneláèku afotografie mých nìkterých dal¹ích zájmù... :-)
+  Pokud by jste náhodou mìli tou¾ení se semnou fonicky kontaktovat,tak nejsnadnìji se Vám to pravdìpodobnì podaøí na pra¾ském pøevadìèi
+  Z toho samozøejmì plynou velké problémy s délkou koaxù. Od TRXu k anténì to mám asi 50m. :-(
+  o pár mìsícù  pozdìji - v listopadu 1998 jsem slo¾il radioamatérské zkou¹ky pro tøídu C.
+  volného èasu, doufám, ¾e mi ten zápal je¹tì nìjakou tu dobu vydr¾í... :-)
+ ,narodil jsem se roku 1979 v západních Èechách v pøekrásnémlázeòském 
+ mìsteèku
+ na støední ¹kole spolu s kamarádem zakoupil CB radiostanici.  Rádiový éter mì naprosto uèaroval a také
+ náhoda tomu chtìla, ¾e jsem se roku 1997 stal èlenem RK  
+Elektronikou se zabývám ji¾ od základní ¹koly a vysíláním pak specielnì cca od roku 1995, kdy jsem si
+JE©TÌMOJE ADRESA:  
+KarlovýchVarech. Velmi záhy jsem se v¹ak pøestìhoval do méhonynìj¹ího QTH ( ji¾ ne tak pøekrásného :-) )
+Nìkolik informací o mnì:
+Ohradní 1345,  
+Zde obývám pøekrásný paneláèek a jako správný radioamatér obývám první patro z dvanácti....
+a získal svoje posluchaèské èíslo
+nebo o víkendu v 11:30 seè.  na OK0C v pravidelném krou¾ku radioklubu 
+©tìpán Synek
+©tìpán Synek,  
+                                                                                       Klínovec 1997
+                                                                                       Polní den OK1KFX 1999
+ Kozákov 2001
+ Pøímý pøístup:
+-    ©tìtí 2001
+Doufám, ¾e se bude fotogalerie nadále rozrùstat.
+Doufám, ¾e to oceníte tím, ¾e Vás obrázky zaujmou a ¾e si je prohlédnete.Fotografie jsou øazeny
+Hamexpedice Krkono¹e 2001
+Kozákov 2001
+Naèti dal¹í náhledy
+Pokud nad náhled umístíte kurzor my¹i, tak se Vám zobrazí popisek k obrázku!
+Sna¾il jsem se vybrat to nejzajímavìj¹í a vìøte, ¾e jsem si s toutofotogalerií dal  velkou práci.
+Vítejte v mé fotogalerii. Naleznete zdespoustu fotografií z nejrùznìj¹ích radioamatérských akcí.
+Zpìtna úvodní stránku
+chronologicky od nejstar¹ích po nejnovìj¹í. Omluvte prosím rozdíly vkvalitì snímkù. Nìkteré jsou 
+proøízeny pøímo digitálem, ale vìt¹ina star¹ích je poøízena klasickoumetodou a oskenována.
+The collection of telegraph´s machines made by the firm Prchal - Ericsson with keys, relays and measure device.
+Position: Longitude 12° 02' east, Latitude 36° 43' north
+ (10 = nejvíc)
+ Dìkuji 
+ Evropské zrcadlo 
+ Jak se ti líbí tento web? 
+ Mìøení SFI na observatoøi Penticton, Tøí denní pøedpovìï SFI a A-indexu, Aktuální erupèní aktivita, Výskyt polární záøe, Sluneèní tok, Mapa MUF, Aktuální zábìry slunce. 
+ strana obsahující seznam deníkù umístìných na servru DX.QSL.NET a dále linky na dal¹í DX deníky a jejich domácí strany na internetu. 
+7 hradù
+Aktuální pøedpovìï:
+Databáze okresù OK
+Databáze stanic 3/7/2001
+Galvanické oddìlení TRX
+Hledání v denících:
+Kniha náv¹tìvníkù
+Kralièák
+Návrh antény L
+Návrh lowdrop zdroje
+Návrh s LM317
+Oblíbená místa
+Odkazy na poèasí
+Panoráma
+Popis formátu EDI
+RX anténa FLAG
+Spínané zdroje
+Test pro OK zkou¹ky
+Zatmìní slunce
+©umava
+On saturday works Ondra OK1CDJ, Míla OK1CPU and I OK1DUO. On sunday we was boosted by Beda OK1DOZ.During contest we alter all workplace at instant needs and operators practices. Also configuration ofworkplace varied, but mainly between saturday and sunday.
+Günter DK1WA
+Hlavní strana
+Jára Cimrman (Seznam)
+Libor Holou¹ homepage
+MINISTERSTVO SPRAVEDLNOSTI ÈR
+Mìstská knihovna Varnsdorf - katalog LANius
+Neviditelný pes
+Poèasí Fischer
+Seznam èeského Internetu
+TELEFONNÍ SEZNAM ÈR
+iDNES - On-line magazín MF DNES
+®ivì o poèítaèích a Internetu
+ÈESKÁ REPUBLIKA
+Èeský informaèní systém - Hledání
+Hlavní strana
+ Vá¹ prohlí¾eè bohu¾el nepodporuje rámce a tak se stránka nemohla øádnì zobrazit. Pokud tomu chcete pøedejít, pou¾ívejte prohlí¾eè Microsoft Internet Explorer 5.0 nebo vy¹¹í. 
+     Ve tøináctiletech jsem se poprvé objevil v KDPM v Ústi nad Labem. Chtìl jsem pùvodnìdo krou¾ku elektroniky, ale tam u¾ bylo plno. Byl toti¾ bøezen a krou¾ky zaèínalyod záøí. Jeden byl ale témìø prázdný - telegrafie. Znal jsem v¹echnyznaky z pøíruèek a tak jsem nakonec s trochou strachu souhlasil a zaèal ka¾doustøedu chodit \"chytat\". Tam se mì ujal perfektní èlovìk, JiøíOK1ASQ. Pùjèil mi \"Pionýra\" na 80 m, který se po drobné opravì,provedené otcem, rozebìhl. Èasto pak sousedé mohli vidìt toho podivínskéhochlapce \"od vedle\", jak s kuføíkem a klubkem drátù kamsipochoduje, sluchátka kolem krku. Hodnì mi pomohla té¾ má uèitelka fyziky,která vycítila mé zapálení a vìnovala mi nìkolik vyøazených modulù jakésielektronické stavebnice. O prázdninách tého¾ roku jsem jel na tábor dìtí,který poøádal radioklub OK1KUA ( tenkrát pod hlavièkou KDPM ). Vedoucí táborabyl Karel OK1DKO. S tím jsem se od této doby pustil do nesèetného poètudebat o bastlení, provozu, anténách... Na táboøe nás Ruda OK1FDY moøiltelegrafem a na jeho konci jsem slo¾il zkou¹ky RO - C. Za rok jsem ji¾ mìlznaèku OL4BSF. Zapùjèenou Jizerou se mi otevøel svìt KV provozu na 160 m. Apak to zaèalo nabírat na zajímavosti...  ... první spojení na OL4BSF,první QSL lístek, první závod, první polní den s OK1KUA, první setkánína Klínovci... samé zajímavosti a já se dále propadal do tajù rádia.Velkou oporou v zaèátcích mi byl také Ruda OK1DRU. Víkendové veèerní sedánkyna 160 m se protahovaly a¾ do rána. Mìl jsem v¹ak pevný øád, vysílaljsem jen o víkendech v dobì volna. Vìdìl jsem toti¾, ¾e ka¾dý neúspìchve ¹kole povede nutnì k omezení koníèka ze strany mých rodièù. Dodnes jemi tak trochu záhadou, jak jsem v tìch nádherných OLáckých letech dokázalvýbornì dostudovat prùmyslovku, úspì¹nì pokraèovat na ÈVUT, absolvovattaneèní, první plesy, pìstovat koníèka a projít první studentskou láskou...
+    Narodiljsem se 21.4. 1972 v  Ústí nad Labem. V¹e zaèalo na jaøe roku 1981,kdy¾ jednoho veèera mùj otec v dílnì ve sklepì smontoval jakousipodivnost, o které øíkal, ¾e bude hrát bez baterii. Aèkoli do puberty jsemmìl je¹tì hodnì daleko, pomyslel jsem si nìco o chytøej¹í mlad¹ígeneraci a tìch ostatních. Bylo to v dobì, kdy jsem si myslel, ¾e rozhlasfunguje \"na principu jakého si stlaèení lidského hlasu dobaterky\". Mùj otec poøád vyprávìl nìco o jakési\"krystalce\" a ¾e si jich, kdy¾ byl malý, postavil nìkolik. Je¹tìtého¾ veèera jsem asistoval pøi nata¾ení antény na pùdì na¹eho domu a za nìkolikokam¾ikù se ze starých sluchátek zaèal ozývat poøad \"ètení nadobrou noc\". Krystalka hrála dvì stanice. Jedna byla PRAHA a druhá ÚSTÍ.Hrálo to potichu. Anténa byla dlouhá jen asi 16 m i se svodem. Nìkolik dal¹íchnocí jsem usínal se sluchátky na hlavì a ráno se probouzel s otlaèeninami kolem u¹í. Na této krystalce pak odstartoval vývoj radioamatéra abastlíøe zároveò. Co dodat. Otec mì k nièemu nenutil, èasto i hudroval,kdy¾ jeho stará pájka \"zase nemìla oèko\". Pomáhal mi v¹ak nahlí¾etdo svìta radiotechniky a elektrotechniky. Patøí mu za to mùj velký dík.
+    Pak KarelOK1DKO, Tony OK1HMA a já jsme byli za dosud nevyjasnìných okolností vylouèeniz OK1KUA. Nikdo z nás tøí tomu moc nerozumìl. Nikdo z nás pak ji¾ doOK1KUA nevstoupil. Nadále jsem se ale s OK1KUA zúèastnil nìkolika Polòákù.Obèas se scházíme se starou partou v hospùdce PROSTOR v Ústí. Na Polnídny v¹ak OK1KUA ji¾ nejezdí. Bohu¾el se ji¾ nena¹el nikdo, jako byl JirkaOK1ASQ a Karel OK1DKO. Vylouèení Karla OK1DKO pøedznamenalo fakticky nejhlub¹íúpadek radioklubu OK1KUA za dob jeho existence. Z aktivních radioamatérù zùstalyv OK1KUA ji¾ snad jen Ruda OK1DRU, Ruda OK1FDY, Václav OK1JVT a Michal OK1VVM.Jsem vlastnì poslední a nejmlad¹í odchovanec radioklubu - letos mi bylo 30let. Tímto zpùsobem ov¹em dopadla vìt¹ina radioklubù v prùbìhu devadesátýchlet. Existenèní problémy, nedostatek èasu, chuti, kariéra... to jsou fenoménydevadesátých let minulého století. Byla to doba pøechodová mezi rovnová¾nýmistavy. Doufejme ¾e ji¾ bude brzy za námi.
+    Pøi¹la v¹aki chaotická doba zmìn po listopadu 89. Já mìl pár mìsícù k maturitì azbývalo ji¾ jen nìkolik mìsícù existence znaèky OL4BSF. Nástup navysokou ¹kolu pøedznamenával útlum radioamatérského koníèka. Jak dlouhýa hluboký, to jsem tenkrát je¹tì vùbec netu¹il.
+    Snad snahaspojit své síly nebo staré kamarádství, mì opìt zavedla do Lhotky zaRomanem OK1DSA. Znali jsme se ji¾ jako OLáci. Roman byl OL4BOR a mìli jsmespolu mnoho QSO. Zaèala se odvíjet nová etapa mého radioamatéøení. Blí¾eje mo¾né se doèíst v dal¹í èásti mé stránky    
+    Stihl jsemnìjak projít vojnou, koupit byt, o¾enit se a koneènì... v únoru 1999 jsemudìlal zkou¹ky. OK1HSF byla asi nejpodobnìj¹í znaèka mé staré OL4BSF.Oprá¹il jsem starou M160 a postavil konec 10 W, natáhl anténu LW 40m a poprvése ozvalo na 1.830 mé CQ CQ DE OK1HSF. Dále jsem dostavìl z èasù OL rozdìlanéhoKentaura a doplnil jej o konec 5 W. Zaèal jsem se ozývat v Provozníchaktivech na 144 MHz.
+    V tìchtodobách v¹ak pøi¹la smutná zpráva, ¾e 25. listopadu 1988 neèekanì zemøelJiøí OK1ASQ. Krátká zprava, která byla té¾ otisknuta v RZ 89/2, pøedstavovalaztrátu kamaráda, fajn èlovìka, vynikajícího amatéra a bastlíøe, a takémého uèitele telegrafie. Aè je tomu ji¾ spoustu let, není snad setkaní èlenùOK1KUA, aby se na Jirku nevzpomnìlo.
+    ÈVUT promne znamenalo spoustu u¾iteèných a nových informací. Poznal jsem Prahu,studentský ¾ivot, pár lidí co nestaly za nic a mnoho tìch, kteøí jsouopravdu fajn. Po celou dobu studia na ÈVUT se nena¹la chvíle pro kloudnou èinnostna amatérských pásmech. Po ukonèení studií jsem nastoupil do práce, kdejsem se opìt se¹el s Karlem OK1DKO, Tonym OK1HMA, Jiøím OK1IBJ, VáclavemOK1JVT. Pracujeme v ZPA EKOREG s.r.o.. S Tonym OK1HMA sedím ji¾ nìkolik let vjedné kanceláøi. Po èase pøibyl i Petr OK1FPA ex OL4BQL.
+ Z doby,která pøedcházela tuto událost, je dal¹í fotka. To jsem samozøejmì je¹tìnetu¹il co mì èeká.
+Jak to v¹echno zaèalo
+Já v roce 1979
+Mùj QSL lístek vytvoøenýPavlem OK1DRQ
+Otec a já pøi oslavìjeho 55 let.
+    Dal¹í dvìfotky jsou z provozáku v dubnu 2002. Zde je mo¾no kouknout na stránkyradioklubu OK1KGR 
+    Druhýsubregionální závod jsem jel jen rekreaènì z kopce nedaleko mého bydli¹tì.V prùbìhu závodu jsem mìl spojení s Romanem OK1DSA a prohodili jsme tenkrátjen pár zdvoøilých frází. Pøedstavil jsem se, jako bývalýOL4BSF. Spojení jsme dodìlali a na nìjakou chvíli o sobì opìt nevìdìli.Z tohoto závodu jsou dal¹í fotky. Tenkrát jsem jezdil s Kentaurem. Kentaurbylo mé dítko a do dne¹ní doby na nìj nenechám dopustit. Kdo si Kentaurapostavil a vysílal na nìj, jistì tu¹í o èem je øeè.
+    Po nìjakémèase mì Roman poslal e-mail a zaèali jsme uva¾ovat o spoleèných akcích.Polní den 2001 jsem ji¾ jel s Romanem v barvách OK1KGR. Spoleèné úspìchynás nasmìrovaly do dal¹ích akcí ( A1 contest, Provozní aktivy ). K FT840jsem postavil transvertor 21 MHz / 144 MHz. Z dal¹ích fotek zku¹ené okobastlíøe rozpozná vysílací trakt z Kentaura. Zaøízení jsem odzkou¹el sJindrou OK1XR a Mílou OK1AIL. Moc jim dìkuji za otestování na pásmu.Transvertor jsem dále doplnil koncovým stupnìm 80 W out a celá sestava pro¹latestem. Nejprve provozním aktivem v dubnu 2002 a dále druhým subregionálem 2002. Nafotkách je pod FT840 DSP, PSV metr a dálkový pøepínaè antén. V¹e madehome. 
+    S Romanemse zaèíná rozjí¾dìt pìkná spolupráce. Tì¹íme se na ka¾dý dal¹ízávod, který spoleènì pojedeme. Hodnì nám pomohl Olcit, kterému v¹ichni s dùvìrouøíkáme \"Olín\". V bøeznu 2002 o provozáku se nám povedlo zapadnout dobahna na Babinách v JO70BO. Byla to docela legrace. Jsem ale rád, ¾e jsme sez Babin v poøádku vrátili domu.
+ OK1HSF a OK1DSA jakoklub OK1KGR z JO70BQ - provozák v dubnu 2002  
+Druhý subregionál 2000
+Nové svìtlo na obzoru
+Olcit - malý tank. HSF øidiè,DSA navigátor
+    O¾eniljsem se 27.6 1998. Bylo to docela zlomové období. V té dobì jsem se svou ¾enoukoupil byt v Ústí nad Labem a pøestìhoval se do nìj. Postupnì jsme bytvybavovali. 
+  31.srpna2001 se nám narodil syn Daniel. Má se ho¹ík docela k svìtu. Na zaèátku tobylo docela obtí¾né. První dítko je veliký zábìr ale máme z nìj obavelkou radost.
+ A je¹tì k nám patøí na¹e ¾elvièka.
+A tady je Daniel v sedmi mìsících
+Bydlím sice v panelovém domì,ale zùstalo místo i na HAM koutek, kterému s nadsázkou øíkáme pracovna.Lep¹í v¹ak ne¾ nic
+Daniel v pìti týdnechsvého ¾ivota
+Já a má ¾ena Daniela
+Má rodina
+Pohled na ná¹ balkon (roh úplnì nahoøe ) 
+     K místní komunikaci a na pravidelné srazy pou¾ívám oblíbenou OK1KRC na144 MHz. V zimních mìsících se objevuji v provozáku ze svého domácíhostanovi¹tì. Jak \"ú¾asné\" podmínky pro provoz na 144 MHz mám,napovídá pohled pøes anténu do okolí. Pøesto jsem zde pracoval telegrafems HA7P, OE3W a 9A2KD. Zøejmì se v tyto doby udìlalo plechové\"nebe\".
+    Bydlíme vdru¾stevním paneláku v sedmém patøe. V bytì velikosti 3+1 se po drobné pøestavbìna¹el koutek pro mé vysílání, bastlení a programování.
+    Mátelegrafní pastièka. Pou¾íval jsem jí je¹tì jako OLák. Koupil jsem jína setkání na Klínovci roku 1988. Je to krásná amatérská výroba. ©koda,¾e si ji¾ nepamatuji jméno a znaèku èlovíèka, od kterého byla, za dnesji¾ neuvìøitelných, 120 Kès. Pokud svou práci poznáte, dìkuji je¹tìjednou!
+Anténa LW 40 m, pøizpùsobovacíT-èlánek ( zatím provizornì pospojovaný na stole )
+Má telegrafní pastièka. 
+Mùj koutek na vysílání,bastlení a programování
+Pohled na anténu OK1KRC ana balkon, kde je umístìna.
+Pár fotek z mého koutku
+Z okna jsem natáhl anténuLW 40m s kompenzaèní cívkou. Anténa je vlastnì konstrukcí ZEPPELIN odDL7AB. V Rothammelovi èíslo 10 je uvedena na stránce 187 obr. 11.10. Prvek jeale sklonìn. Jeho místo napájení je ve vý¹ce asi 30 m na paneláku a konec8 m nad zemí, pøivázaný na mladém dubu. Vý¹ se mi u¾ nechtìlo lézt,proto¾e vìtve se ji¾ zaèínaly pode mnou ohýbat. Je to sice jen alegorie naanténu, ale docela mì pøekvapila její funkènost. Na 160 m je mo¾népracovat s UA9 i UA0. Na 80 m není problém spojení s W5, W9 a W0. Na 40 m pak mámodzkou¹eno nìkolik spojení CW i SSB s JA. Ostatní vy¹¹í pásma fungují také,tam se v¹ak objevuji jen v závodech nebo velice zøídka. Pokusil jsem seantenu zachytit na fotce. Je ale vidìt jen kompenzaèní cívka ( ten bílý váleèek). Pokud klepnete na obrázek, uká¾e se fotka ve vìt¹ím rozli¹ení, nakteré je vidìt i prvek. Na fotce vedle je T-èlánek na doladìní.
+Bedøich - Pálava - JO79US
+Deník OK1HSF
+Milan - Nr. Zlín
+Norbert - Liptovský Mikulá¹
+Standa - Ústí nad Labem
+VKV PA - øíjen 2001
+Vlaïa - Nr. Rakovník
+Václav - Ústí nad Labem
+Deník OK1HSF - 1.8 MHz
+Milan - Nr. Zlín
+Norbert - Liptovský Mikulá¹
+Standa - Ústí nad Labem
+Deník OK1HSF - 3.5 MHz
+Vlaïa - Nr. Rakovník
+Deník OK1HSF - 7 MHz
+Deník OK1HSF - 21 MHz
+Bedøich - Pálava - JO79US
+Deník OK1HSF - 144 MHz
+VKV PA - øíjen 2001
+Václav - Ústí nad Labem
+Che¹ to rozpohybovat? Tak si klikni 
+Jo kdyby si èlovìk mohl jen hrát
+Jo kdyby si èlovìk mohl jen hrát. To by se mi líbilo. Zatím halt musímedìlat i jiné blbosti.
+OK1IVU OK1HCG OK1FRY...a dal¹í...
+Souèasnì chci podìkovat v¹em zúèastnìným stanicím
+Souèasnì chci podìkovat v¹em zúèastnìným stanicím. Provozáøskyjsme vyhodnotili jako nejlep¹í stanice:
+Tro¹ku nám dìlalo problém èíst nìkteré signály z ruèních klíèù( KZ DAM IAL..). My se to v¹ak napøí¹tì nauèíme HI...
+5 kusù baterií 3Ah/12V
+Abych se z té pøemíry zátì¾e vzpamatoval, musel jsem si vynutit obìdovnízastávku v Hora¾ïovicích.
+Automatický anténní tuner Z11
+Baterie 10 Ah/6V ( na pomocné svícení )
+Digitální voltmetr
+Dohodli jsme se s Lubo¹em OK1UN, ¾e pojedeme spolu. Cesta byla naplánovánahvìzdicovì. Já a Janièka jsme nejprve zajeli do Chebu. Tam jsme si od synavypùjèili pøívìs a teprve potom jsme se vydali na Soumarský most.
+Dovolená...  Co to vlastnì má být? Proè se to vlastnì dìlá?Není lep¹í zùstat doma v baèkorách, spát ve své oblíbené posteli, jístkvalitní jídla, být neobtì¾ován komáry...?
+Fotografie pøed odjezdem je v¾dy ta nejkrásnìj¹í, v¹e je je¹tì pøednámi.
+Hrozné to pomy¹lení....
+Janièka mi ten den svìøila i své autíèko ©koda 105L r.v. 1987 s tím,abych si ho vzal do práce. Mìl jsem ihned po obìdì odejít domù, nalo¾itho a èekat na ní. Janièka mìla pøijít a¾ kolem 15. hodiny. Nevím jak vy,ale doposud jsem jezdil pouze ve svém Formanu. Pøechod na toto auto ve mne zpùsobilsilné deprese. Kdy¾ jsem si uvìdomil, ¾e tato chudinka musí za sebou tahatpøívìs o hmotnosti 450 Kg.... Je¹tì ne¾ jsem pøijel do práce, bylo mijasné, ¾e Janièèina ©kodovìnka je asi vadná. To auto vùbec nejelo. Na¹tìstímáme vedle autoopravnu. Svìøil jsem jim ho tedy do údr¾by. Po zaplacení500 Kè bylo zji¹tìno, ¾e to jede je¹tì hùø a ¾e to je asi normální.
+Krátké pomazlení a vyrá¾íme. Janièku naviguji pøes Hora¾ïovicesmìrem na Strakonice, Vimperk a dále pøes Lenoru na Soumarský most.
+Lubo¹ pak mìl je¹tì v záloze FT100D
+My dorazili na Soumarák nìkdy kolem 17. hodiny. Staèili jsme jenpostavit pøívìs a u¾ to zaèalo. Na¹tìstí kroupy byly jen jako borùvky atak se nic zlého nepøihodilo. Jakmile to pøestalo, okam¾itì jsem postavilalespoò provizorní dipól ( dva 20m dráty zahozené do ro¹tí ).
+Nevím jak vy, ale já se na svoji dovolenou zaèínám okam¾itì tì¹it,jakmile se vrátím z té staré HI. Mo¾ná to je zpùsobeno mým zamìstnáníma asi tím, ¾e 8 hodin jsem v práci pøipoután k ¾idli a musím cvakat my¹ía koukat na obrazovku. Zøejmì to je ten problém, proè nenávidím jakékolivdruhy amatérského provozu, které ke svoji èinnosti potøebují poèítaè.Ale proti gustu ¾ádný di¹putát. Nedoká¾u dokonce pochopit nìkteré svékolegy, kteøí za celý rok nevyberou jediný den dovolené. Pro mne je dovolenánìco jako pojídání èokolády pro na¹e ¾eny. Nìco, na co se èlovìk tì¹íji¾ dlouho pøed tím, nìco co mi neubírá sil, ale naopak silnì pøidává.Kdyby to ¹lo, pak bych do práce nejradìji v dobì dovolených vùbecnechodil. Nemusím mít Mercedes, nemusím mít letadlo, nemusím jezdit na Kanárskéostrovy...ale na dovolenou  MUSÍM.
+Nevím proè, ale Janièka trpí komplexem \" bludného Holanïana\".Má utkvìlou pøedstavu, ¾e se nesmí najet ani o 1 km navíc. A tak musímsledovat autoatlas a hlásit ji¾ dopøedu pøejezd ¾eleznièní trati, co jeto za øeku, jak vysoký je ten kopec vlevo pøed námi, kde se dá zastavit....
+Odjezd byl stanoven na páteèní den 12.7.
+Okam¾itì se musel pøipojit pøívìs a teprve pak jsme mohli jít napivo. Páteèní veèer probìhl pøíjemnì v místní hospùdce zvané TANGO.Pivo vynikající ( Budvar ), jídlo za slu¹né ceny.....
+Pamì»ový klíè
+Pivo sice dobré, ale chudák èí¹ník byl nìjaký mamlal. Museli jsmena jídlo èekat asi 40 minut. Na¹tìstí to bylo chutné a tak jsme anineprotestovali.
+Po dobrém obìdì jsme se vydali dál na Strakonice. Janièka rozhodla,¾e je nutné zakoupit nìkde koøalku. Prý kvùli vnitøní hygienì asalmonelám.  Já to samozøejmì s radostí schválil. Zastavili jsme uKauflandu a já se ujal role \" vybíraèe typu koøalky \". Koupit rum,to nebyl problém. Vìt¹í problém byl koupit jableènou vodku Janièce. V regálebyla umístìna asi ve vý¹ce 2.5m. Musel jsem si stoupnout na jakousi basièku.Zøejmì jsem na kamerách ochranky vypadal velice podezøele ( vesta s nápisemUS ARMY OK1IF ). V pøí¹tích nìkolika sekundách jsembyl obestoupen ze tøí stran. V¹e se nakonec vysvìtlilo. Na dotaz co tam dìlám,jsem musel hodnì vysvìtlovat. Ji¾ v tomto krámu v¹ak nám do na¹ichtémìø dokonalých zaøízení zaèal pronikat podivný signál.  Teprve venku jsem si uvìdomil, ¾e mi Honza OK1VVW ji¾ minulýtýden volal, ¾e bude QRV z letounu. Vyvolával silný pile up. A jen mojeprovozáøská nekázeò tro¹ku tento pile up zmrazila. Na pøiblblou otázkou\" kde jsi? \" , jsem dostal nádhernou odpovìï: \" ve Strakonicíchnad nìjakým Kauflandem\". To bylo ¹okující zji¹tìní. Skoro tovypadalo, jako ¾e Honza nás pronásleduje. Skuteènì jsme nad sebou ve vý¹ceasi 2000 m spatøili nìjaký plach»áèek s motorem. Poprvé v ¾ivotì jsemdal rádiem letadlu pøíkaz: \" nekecej a zahejbej køídly\". Na¹tìstíHonza køídly nezahýbal, ale zahýbal celým trupem. Pøi tomto povelo kolem pøecházelaveliká skupina turistù. Abych jim ukázal, co jsem zaè...... Vydal jsem pøíkaznový: \" zahejbej je¹tì jednou\". V oèích onìch turistù jsemvyvolal údiv a obdiv. Dokonce jedno malé dítì ¹kemralo po mamince, aby jitaky takové latadýlko s dálkovým ovládáním na hlas koupila. Honza byl zøejmìve skvìlé náladì a tak jsme si z nìj udìlali opakovaè. Honza nám vyøizoval,¾e Lubo¹ OK1UN je u¾ na Soumaráku a ¾e má dokonce ji¾ postavený stan.Upozoròoval nás v¹ak, ¾e se od jihu blí¾í nìjaká fronta. Oni to obracízpátky na sever, aby se jí vyhnuli.
+Pøesnì v 16 hodin vyjí¾díme. Bohu¾el jsme zapomnìli zavøít zadnípravé dveøe a tak po projetí první levotoèivé zatáèky jsme si muselizopakovat balení.  Urèitì si dovedete pøedstavit, jakou radost jsmemuseli vyvolat v du¹ích na¹ich sousedù. Ne nadarmo se øíká \" ne¹tìstídruhých potì¹í \".
+Pøesnì ve 21 hodin jsem dal výzvu. Okam¾itì se ozval Otta OK1DBF.Report sice nic moc. Stejnì je to v¹ak nádherný pocit, pokud Vás na bandu nìkdosleduje a èeká na Vás. Pak se je¹tì ozvali dal¹í...OK1DVX a Milan OK1IW.
+Ranní probuzení bylo ve znamení plnìní babièkovských a dìdeèkovskýchpovinností. Èlovìk u¾ z toho nìjak vyrostl. Pohled na ty mròata je v¹ak nádherný.Posuïte sami, jak se ná¹ Jindøí¹ek a Verunka mají k svìtu.
+S èerstvým seznamem \" lokálních kmitoètù \" jsem hrdìvyvolával na v¹ech kmitoètech. Bohu¾el, ty dvoumetrové vlny se dnes ¹íøíjinak ne¾ døíve. Za celou cestu jsem na direktu nikoho nezaslechl. Pomalu alejistì jsem dostával syndrom \" pou¹tní ztracení \". To je stav silnédeprese vyvolaný tím, ¾e  dennì nenavá¾ete alespoò jedno spojení ( radioamatérské..HI). Na¹tìstí se pøiblí¾il OK0E a tak jsem musel vzít zavdìk spojeníse Zdeòkem OK1AR. Prùjezd Karlovými Vary...... to byl zá¾itek. Nevím, kterýorgán zde vymyslel svìtelnou regulaci na køi¾ovatce. Projeli jsme to zahodinu. Janièka jako správný velitel vozu a øidiè, peèlivì sledovalateplomìr. Dospìla k názoru, ¾e ruèièka se blí¾í ke konci zeleného políèka.Aèkoliv teplota vnì vozu byla 33° C, pustila mi proti mým protestùm topení( je to prý popsáno v návodu k obsluze ...). Tentokrát jsem se zaèal pøehøívatjá. Nadarmo jsem ji pøesvìdèoval, ¾e jsem strojní konstruktér. Ani výkladpomocí rovnic termodynamiky nepomohl. Jakmile teplota uvnitø vozu dosáhla na50C, vítìzoslavnì vykøikla: \" a vidí¹, ¾e to pomáhá, leze to dolù,pøeci si nepøehøeju borùvku\". Pro nezasvìcence: Borùvka = miláèekJanièky ©koda 105L, gará¾ovaná, natíraná a jinak ¹lechtìná. Ve svých15 letech má pùvodní pneumatiky. Mìlo by to i nìkteré pùvodní kabely,kdyby si v tom u¾ dvakrát my¹i neudìlali hnízdo.
+Teï jsem si vzpomnìl, ¾e jsem vlastnì ani neøekl jaké zaøízení aco jsme brali sebou:
+Tìsnì pøed explozí mého organismu jsme dojeli na zahrádku do Chebu.
+Upøímnì øeèeno tìch krámù bylo zbyteènì mnoho. Kdybych mìl jetje¹tì jednou, urèitì bych doma nechal v¹echny pomocné baterie a laptopa. V¹ejsme nakonec napájeli z autobaterie. Sice je u¾ 6 let stará, ale stále dr¾í.
+Dnes jsme se probrali pøi minimální teplotì 13.5 C. Po nádhernékoupeli ve Vltavì v¹e pøipomínalo pohodu. Bohu¾el a¾ na to poèasí. Lubo¹ovise nìjak nezdaøila ranní hygiena a odmítal s námi vyrazit na houby.Zato Alena byla vidìna jak se koupe ve studené Vltavì ( ¾e by se najednouotu¾ila? )
+Dále jsme se vydali po modré smìrem na Sto¾ec a Dobrou.  V Dobréje krásná hospùdka \" U Nìmeèkù \". Musíte uznat, ¾e pivoStaropramen za 13 Kè a Uzené maso v bramboráku za 39 Kè, jsou tou nejlep¹ívizitkou. Lubo¹ mezitím s Alenou vyrazili do Lenory. Mìli jsme domluvenyskedy ka¾dou celou hodinu na 145.550 MHz. Kupodivu to funguje a tak si sdìlujemety nejèerstvìj¹í zá¾itky. Po cestì do kempu se s Janièkou je¹tìkoupeme ve Vltavì. Sakra, to je obèerstvení. Po dora¾ení do tábora pøedìlávámanténu. Dìlám ji jako nízko polo¾ený dipól orientovaný JV-SZ. Bohu¾eljsem v¹ak omylem zapomnìl pøidìlat jeden vodiè od dipólu do anténníhotuneru. On si to v¹ak klidnì vyladil. Sice to bylo  1:1.8, ale to ve mnenevzbudilo ¾ádné podezøení. Veèer se v¹ak strhl veliký pile up. Ha... v¹ichnitou¾í po nejtì¾¹ím diplomu svìta HI. Chudák Janièka nepobrala vùbecnic a tak jsem ji to musel psát. Kdy¾ zapomnìla nìjaké písmenko, tak i vysílat.Pøesto v¹ak na¹i hamové byli gentlemany. Provoz naprosto ukáznìný. V¹emvévodil signál Vládi OK1IVU. Byl zde nejsilnìj¹í. Veèer jsme posedìli uohníèku se sousedy. Byl to èí¹ník od hradu KOST. Kdy¾ jsem odcházel nakutì, Lubo¹ mu je¹tì vysvìtloval princip \" nadhodnoty \" a dal¹ískvìlé my¹lenky z dob nedávno minulých.
+Houby kupodivu rostly. Na na¹em loòském místeèku jsme nasbírali li¹ky.Odpoledne jsme se chtìli podívat do Borové Lady. Bohu¾el jsme se v¹akprojeli v mlze ( alespoò se nabila baterie ). Odpoledne Janièka usnula. Udìlaljsem jen pár testovacích spojení na 7 MHz s Pavlem OK1DRQ. Lubo¹ se zatímnechal nalákat na Uzené v bramboráku a vypravil se do Dobré. Bohu¾el jsmemu zapomnìli øíci, ¾e v pondìlí je zavírací den HI. Po Janièèinìprobuzení jsme se vydali opìt na houby a to smìrem na Volary. Kupodivu se poèasíprobralo. ®e houby se musí hledat? Kdo Vám to øíkal..HI
+Jedeme za suchem nìkam na Jindøichohradecko.
+Na dne¹ní den máme objednány lodì. Bohu¾el asi ve 3 hodiny ráno zaèalapekelná bouøka s de¹tìm. Skuteènì to není nic pøíjemného, kdy¾ Vámnad hlavou blýská. Kdyby se Janièka nebála vylézt z pytle, pak by mi urèitìrozstøíhala moji anténu na malièké kousky. Prý anténa ty blesky pøitahuje HI. Chcemesjí¾dìt Soumarák a¾ do Pece. Bohu¾el opìt poèasí na draka. Tì¾ká mraènanevì¹tí nic dobrého. Nasazujeme tedy náhradní program a to...houby. Podaøilose nám najít Høibovou oblast a tak máme alespoò o zábavu postaráno. Alenatì¾ko sná¹í navlhlý stan. Krátká veèerní porada a závìr:
+Nastává nádherná pohoda. Dokonce jsem si na¹el èas i na kontrolu pøesnýchsouøadnic na¹eho QTH. Zajímavé na v¹em je to, ¾e pøi kontrole QTH z minuléhoroku jsem namìøil odchylku jen 10m. Asi to opravdu je u¾ odblokované.
+Soumarský most 2
+Soumarskýmost 2
+Správce: 0338/ 335195
+Takto jsme si u¾ívali. V souèasné dobì je na Soumarském mostì zacestou vyhlá¹ena rezervace. Dokonce ochránaøi zakázali vstup do tohotolesa. Nezbývalo tedy nic jiného, ne¾ si døíví na oheò koupit v recepci.OOOO jak geniální nápad HI. Za 18 Kè to hoøelo skoro a¾ do rána.
+V nedìli 14.7.2002 jsme se s Janièkou vydali na první výlet.  Smìrem na Lenoru. Odtud jsme zahnuli doleva smìrem na Èeské ®leby.Zde nás pøivítala krásná hospùdka u cesty smìrem na novì zøízený hraniènípøechod pro chodce.
+Veèerní bouøka byla nìkde nablízku. Dokonce i ná¹ \" pilotní\" operátor Vláïa OK1IVU s na¹ím signálem má kvùli QRM problémy.Dostáváme i nìjaké SMS od pøátel. Sly¹í nás, ale v¹ichni si stì¾ujína pekelné QRN.
+Èí¹ník byl náramnì upovídaný. Nedìlalo mu problém nás vyfotit.Dokonce jsme zaregistrovali, ¾e v bývalých kasárnách na¹ich pohranièníkùje penzion. Pokud to nìkoho zajímá ( ná¹ tajný tip na pøí¹tí dovolenou), pak kontaktní telefon je:
+Dáváme si obìd. Moc se nám nechce chodit a tak leno¹íme. Veèer si dávámev místní restauraci opékané prasátko. Skuteènì to umìjí udìlat. Jsmesilnì nasyceni. Pøipravuji RIG a zapínám maják. A» ho¹i vidí, jak si tu¾ijeme. Pøesnì ve 21 hodin vypínám maják a pøecházím na pøíjem. To cojsem za¾il, tak tomu se skuteènì øíká pile up. Dosahuji závratnéhorate...HI. Nestaèím ani upíjet rumu. Jo to je parádièka.
+Je to s podivem, jak ta pøíroda si z nás dìlá legraci. Jen serozhodneme, ¾e jedeme jinam a ona si klidnì udìlá hezky. Nedá se nic dìlat,balíme a jedeme. Na¹e Borùvka je dosti pomalá a tak to ji¾ po párkilometrech Lubo¹ nevydr¾í a jede sólo jízdu. Asi tak na 5 Km nám to je¹tìna 2m funguje na direkt, ale nìkde u ®elnavy se ji¾ Lubo¹ùv signál odmlèel.Jedeme kolem Lipna a odboèujeme vlevo smìr Èeský Krumlov. Z ÈeskéhoKrumlova dál smìrem na Suchdol nad Lu¾nicí. Poèasí celkem pøeje. Sluníèkosvítí. Nálada skvìlá. V¾dy» nás èekají nové zá¾itky. Pøijeli jsmea¾ do Suchdola. Ptáme se na Kemp na Pískovnì. Celkem intuitivnì ho nacházímev krásné oblasti zatopeného pískovcového lomu. 
+Na¹i testovaèi ( Janièka a Lubo¹...) v¹ak prohla¹ují \" nicmoc\". Odjí¾díme tedy smìrem na Jindøichùv Hradec, na rybník Zvùle.V Jinøichovì Hradci malinko zakufrujeme a jedeme ¹patným smìrem. Jakmile sedostáváme na hlavní silnici, zaslechnu na S22 signál Lubo¹e. Tvrdí, ¾e jepøed námi nìjak nezvykle temno. Skuteènì.. Temno bylo. Musíme dokonce namalou chvíli i zastavit. Není vidìt na krok. Po pøíjezdu na Zvùli koukámejako moulové. Kemp je pod vodou. Pøed hlavní restaurací se vytvoøil rybník.Vstup do ní lze jen se zutými botami. Dáváme si uvnitø bramboráèky a radímese. Copak nám to v pøívìsu asi moc vadit nebude. Lubo¹ v¹ak na Soumarákubalil mokrý stan. Domlouvají si chatièku. Av¹ak i po  usmlouvání cenyna 400 Kè se nám to nezdá jako geniální øe¹ení. Nakonec pomohla lahvièkarumu.  Nacházímemísto a je rozhodnuto. Budujeme nový tábor. Jedno je v¹ak jisté. Na dne¹nímskedu nebudeme.
+Nevím co se to dìje, pøichází silný hasiè a bere mých 95 Kg na svábedra....  Jo holenkové...... Líná huba, holé ne¹tìstí.
+Pøedávám klíè Lubo¹ovi. Od nozder mu vyletují jiskry ( Jana øíkala,¾e to byl normální holub). Lubo¹ je adrenalinovým pile upovým sportem pøímonad¹en. Nev¹ímá si ani, ¾e ho fotografuji.
+Ráno je zase jak vymalované. Lezeme do rybníka a koupeme se témìø vpitné vodì. Místní znalci nám popsali, ¾e Zvùle je napájena tøemipodhladinovými prameny a jedním potokem. Ne¾ to staèí náv¹tìvníci zneèistit,tak a¾ do poloviny èervence je zde pitná voda. Po koupeli okam¾itì natahujianténu. Lubo¹ mne sice pøesvìdèuje, ¾e zkusíme LW 42m, ale mne se to nezdá.Natahuji tedy dipol a to je¹tì dvakrát zalomený. Ladím 3600 KHz a zkou¹ímmaják. Je a¾ nezvykle silný. Zøejmì to tu bude chodit. Ani nestaèímuklidit a sly¹ím známý hlas Petra OK1FHG. Je ubytován nìkde v kempu u ÈeskýchBudìjovic a tak to nemìl k nám daleko. Nakonec to bylo velice pøíjemnésetkání.
+Usínáme pod tíhou zá¾itkù. Ano, je to tak ...pøe¾ili jsme pile upcelých deseti stanic. 
+Zkou¹ím se dovolat na Vláïu, aby to v¹em vyøídil. Bohu¾el na Zvùlinefunguje T-mobil HI. Signál Oskara je v¹ak bez vìt¹ích problémù. Vláïaslibuje, ¾e zaøídí v¹e potøebné. Pøi odchodu z restaurace je pøedvchodem ji¾ hluboký rybníèek. V¹ichni si sundávají boty a brodí. Chudácihasièi se sna¾í vodu odèerpat, aby nenatekla dovnitø. Stojím tam a vùbecse mi nechce roz¹mìrovávat boty. Jen tak z legrace vykøikuji: \" potøebujipøívoz\".
+Dne¹ní plán je jasný. Nasedáme v¹ichni ètyøi do auta a jedeme si prohlédnoutSlavonice. Je to skuteènì nádhérné èesko vietnamské mìsteèko. V¹ak jeto taky vyhlá¹eno jako památka UNESCO. Dokonce jsme si i pøeèetli, ¾e narekonstrukci památek dostalo mìsto 900.000 EUR.
+Dne¹ní plán: zdolat Land¹tejn ( opìt bez Lubo¹e). Opìt jdeme jen poneznaèených lesních cestách. Na¹el jsem v tom zalíbení. Dokonce podle èasuna hodinkách se dá docela slu¹nì sledovat poèet u¹lých km. U¾ vím, proèna mých hodinkách CASIO je otoèná stupnice ciferníku HI. Po cestì jsmeobjevili nádherný rybníèek Hamrský. Krátká koupel a jde se dál. Tentokrátpo èervené cestì. Pøed Land¹tejnem jsme narazili na plantá¾e malin. Janièkunemohu utrhnout HI. Po pøíchodu na Land¹tejn  jsme okam¾itì nav¹tívilimístní hospùdku. Tam venku nabízeli opékané klobásy. Bohu¾el v¹ak pøipøikládání jsem ucítil typický zápach. V¹ichni ho znáte. Vzniká tím,kdy¾ se oheò hasí pomocí hasicího pøístroje, který si sami nosíme v sobì. Nevím jestli to ti páni necítili èi co, ale to døíví jim nìkdo pìknìorosil HI. Za celou dobu si tam taky nikdo klobásu nedal. My s Janou jsme sidali pivko nevalné chuti a kvality ( nìjaké Starobrno èi co ). Je¹tì ktomu to byla jedenáctka. To je na nás moc silné HI.
+Lubo¹ leno¹í a u¾ívá sluníèka. Já a Jana se  vydáváme poturistické smìrem na Kun¾ak. Chceme se mrknout na rybník Komorník. Bohu¾el vedroje tak pøí¹erné, ¾e jsme zakotvili jen v Kun¾aku. Dali jsme si zopár piva opìt zpìt. Tentokrát ihned za Kun¾akem je nádherné jezírko. Voda jako køen...Po návratu do tábora opìt koupel v rybníce. Veèer jsme si ¹li dát opìtopékané prasátko. Veèer opìt pile up. U¾ jsme v¹ak na to zvyklí a tak...brnkaèka HI. 
+Lubo¹ s Alenou odjeli dále smìrem na Telè. Já s Janièkou jsme sevydali nazpìt. Postupnì jsem se vyhýbal rùzným turistickým cestám a provádìljsem navigaci pouze podle mapy, kompasu, GPSu a hodinek. No byl jsem ve svém ¾ivlu.Bohu¾el má mapa byla z roku 1992. V bodì u Land¹tejna jsme se mìli napojitna ¾lutou turistickou. Pøesnì jsem vìdìl kde jsem a tak najít ¾lutou byvlastnì mìla být brnkaèka. Bohu¾el opak byl pravdou. Chodili jsme stáledokola, a¾ jsme si na jednom stromì v¹imli, ¾e je tam velice peèlivì tato znaèkazamaskována . Nìkdo ji vybrousil a dokonale zatøel a vykytoval nìjakýmzeleným tmelem. Zkrátka a dobøe, ochranáøùm se nelíbilo, ¾e ¾lutá vedepodle zdroje pitné vody. Klidnì si ji tedy zru¹ili. Na¹tìstí si na násnepøijdou. Pro¹li jsme si tu nádhernou pøírodu. Na zpáteèní cestì jsmese vykoupali i v rybníku Pstruhovec. Vùbec lesy kolem Jindøichohradecka jsou vynikající. Je zde v¹udedobré koupání. 
+Minimální teplota byla tentokrát 11C. Celkem chladno. Dìlám snídani.Franta OK1AKJ mne v¹ak na pásmu upozoròuje, ¾e tlak nìjak klesá. Uvidíme.....
+Na Zvùli bylo pìknì av¹ak stejnì jsme mìli pocit, ¾e musíme je¹tìnìkam jinam.
+Nechal jsem se i nádhernì napálit. Z námìstí je zøetelnì vidìt nápisna vì¾i. \" Nav¹tivte vì¾ \". Pod vì¾í ¾ádná pokladna. Vduchu si øíkám. To je mìsto. V¹ude vstup zdarma, to je nádhera. Vy¹lapaljsem postupnì v¹ech 192 schodù. Teprve na posledním schodì se na mne usmála\" podnikatelka\" vì¾aøka a ujistila mne, ¾e vstup není zdarma, aleza mrzký peníz 15 Kè na osobu. 
+Nìjak to utíká. Dne¹ní teplota jen 11.5 C. Celkem slu¹ný vìtrnýden. Balíme a odjí¾díme. Postupnì projí¾díme Jindøichùv Hradec, Tábor.....Na OK0AC zdravíme Pøíbramáky.
+Postupnì jsme se procházeli i po vietnamských krámcích. Lubo¹ si tamkoupil zaruèenì pravé páskové boty ADIDAS za 150 Kè, Janièka zase v nìjakémvýprodeji dvoje letní ¹atièky za 99 Kè kus. Mìl jsem takový pocit, ¾emusím  taky nìco koupit. Nakonec jsem to na¹el. Kompas magnetický za 40 Kè.No nádhera. Lubo¹ si taky jeden zakoupil. Teprve a¾ v táboøe jsme zjistili,¾e je to vlastnì zmetek. U údaje N toti¾ není na azimutální stupnici 0,ale 180 HI. Mo¾ná to mají ve Vietnamu jinak. Nakonec jsem si je¹tì v¹iml nádhernéta¹tièky pøes rameno. Za 170 Kè jsem tak dostal nádhernou bra¹nu proFT817. Vejde se mi tam i baterie, automatický tuner a anténa. No nekupte to,kdy¾ je to tak laciné.
+Pøi zpáteèní cestì jsme se opìt vykoupali v rybníku Hamrském a je¹tìv nìjakém jiném men¹ím. Pak se rychle zatáhlo a dokonce zapr¹elo. Tentokrátjsme  si ¹li posedìt do jiné hospùdky. ©anghajské nudlièky byly docelafajn. Pak pøi¹la nìjaká kytarová banda z Mostu. Lubo¹ovi se rozsvítily oèi.Bylo mi jasné, ¾e ho tentokrát na sked nevytáhnu.  Jana usíná a taktentokrát jsem na skedu sám. Lubo¹ sedí a zpívá v hospùdce a¾ do pùljedenácté.
+Rybník Pstruhovec je nádhernì umístìn pøímo v centru tìchto procházek.
+Veèerní pile up...no posuïte sami. 
+Veèerní vysílání bylo tentokrát bez QRN. Opìt zá¾itek. Ji¾pøíprava byla tentokrát naúrovni. 
+ZVÙLE 2
+ZVÙLE2
+ Sokolníci pøedvádìjí svoje ptáky. Je zde i výstava jízdníchhistorických kol a dal¹í atrakce. Postupnì se po pravém bøehu Berounkyvracíme nazpìt. Místy to je pìknì do kopce. Nakonec ve Zbeènì si dávámepivko a vracíme se do tábora. Veèer opìt pile up. Je to zajímavé, ale tyantény u vody skuteènì chodí fantasticky.
+13 DEG 54.664 Východnì
+50 DEG 02.725 Severnì
+Bohu¾el hrad je od jedenácti do dvanácti uzavøen. Na hradním dvoøe je v¹akplno atrakcí.
+Celkem bylo navázáno pøes 500 spojení
+Celkem jsme u¹li asi 115 km na na¹ich toulkách
+Jdeme na pivo. Vracím se tìsnì pøed zaèátkem skedu. Vypínám majáka pøecházím na pøíjem. To je hudba. Opìt pile up. Nejsilnìj¹í tentokrátnení OK1IVU, ale jakási stanice telegrafující na ruèní klíè. Nìjak jsteto ho¹i u¾ zapomnìli. Asi byste si mìli poøídit elbugy. Tro¹ku nás pøekvapuje,¾e i rozhodèí sálové telegrafie tak ¹patnì dávají. Asi stárneme..HI.To v¹e si myslím, kdy¾ odrá¾ím pile up HI. Vzpomínám, ¾e v dobách kdyjsem byl je¹tì OL4AJF, tak nikdo nedokázal poznat, jestli vysílám na elbugèi na ruèní klíè. 
+Kemp se v¹ak jevil dobrý zvlá¹tì pro dámy. Èisto, teplá voda, hospùdka......
+Na Køivoklátì se posilujeme v místní restauraci. Nádhera. Lubo¹ sidává gulá¹ v bramboráku. Mlaská a já mu to závidím.
+Nálada byla skvìlá
+Opìt jen vlhko, zima dé¹». Krátká porada a je rozhodnuto. Balíme.Lubo¹ odjí¾dí do Liberce a my do Chebu vrátit pøívìs. Je¹tì v Chebunatahuji anténu a dìlám poslední sked spojení. Na druhé stranì se mi ozýváOK1UN/p. Lubo¹ u¾ je v Liberci. Jdeme spát a máme v sobì takový ten smutnýpocit, ¾e u¾ nám to konèí. Ráno jen rozlouèení..... a smìr Liberec....
+Pile up = adrenalínový sport
+Po zastávce v restauraci U Zímù se vydáváme dál. Projí¾díme kolemBerounky a podle Hradu Køivoklát ( musíme na pøevodový stupeò jedna, borùvkanechce táhnout HI ) narazíme na první kemp ve vesnièce Zbeèno. Tam Janièkaomylem zajede na ulièky, která ke kempu nevede. Nastává krizová rozvodovásituace, proto¾e je nutné i s pøívìsem vycouvat. Bohu¾el couvání s pøívìsemse neøídí normálními zákony a tak ta potvora vozejk jede v¾dy nìkam jinam,ne¾ kam potøebujeme. Sice jsme si to hned na zaèátku teoreticky vysvìtlili,ale nejde to. Je to jasné. Bude rozvod..... podvìdomì hledám láhev rumu azkou¹ím Janièku uchlácholit. Poslední vìta pøed rozvodem znìla: \"tak si to pojï zkusit, kdy¾ se¹ tak chytrej\". V této fázi já vìt¹inouodpovídám: \" tak proè si tam zají¾dìla, kdy¾ kemp je jinde\". Topokraèuje......... 
+Poèasí tentokrát totálnì zklamalo
+Rychle stavíme pøívìs a stan. Natahuji anténu ( opìt tøikrátzalomenou). Pohled z údolí smìrem ven a poslech FM rozhlasových vysílaèùjasnì naznaèoval, ¾e to z této díry asi chodit nebude. Mìøím i pøesnésouøadnice
+Ráno probuzení do nìjakého rachotu. Veèer jsme Alenì vykouøili sLubo¹em cigarety. Vznikla z toho málem dal¹í rozvodová situace. RadìjiAlenì kupuji nové. Lubo¹ je tentokrát pøesvìdèen, ¾e pùjde s námi na Køivoklát.Procházíme nádhernou oblastí. 
+Tak na dne¹ní den je naplánováno sjí¾dìní Berounky a¾ do Ni¾boru.Nafukujeme èlun ( asi 1 a pùl hodiny). Kdy¾ je koneènì nafouklý, pøi¾enese mrak a zaène pr¹et. Sodoma Gomora. Proflákáme v tom de¹ti skoro celýden. V¹e zaèíná být podezøele vlhké. Posádka ztrácí náladu. Snad jenpravidelné veèerní skedy nám ji navrací.
+Tentokrát jsem Janièku ¹okoval. Sednul jsem si za volant a borùvku i spøívìsem na dva pokusy bezpeènì vyvedl. Bylo mi jasné, ¾e k veèeøi tímpádem dostanu nìco dobrého.
+ KUDY TEÈETAM LÉÈÍ
+Anténní systémy
+Budeme motivováni v jiné kategorii ( navrhuji v poèátku kategorii QRP ).
+Dostávají pocit naplnìní svých snù
+Druhou cestou jak se pøiblí¾it Olympu a dokonce nejjednodu¹¹í, jekoupit nový PA. Zkuste si nìkdy zavysílat s 1KW a ihned pochopíte o èemmluvím. Pøi \"minitropících t.j. vytvoøení takových podmínek natrase, ¾e Vá¹ signál je sly¹et v místì B a to vìt¹inou na nìkolik desíteksekund si budete pøipadat jak Alenka v øí¹i divù. Z nièeho nic Vás tøebazavolá Anglièan. Pøitom nejde o nìjaké umìní, ale skuteènì vybavenístanice A a B je na takové úrovni, ¾e se jen èeká na \"minitropík\"a na to, aby se osa Va¹ich antén setkala. I to je dnes jednoduché, pokud pøipustíme\"rvaní\" signálu do více smìrù souèasnì.
+Dìlají adrenalínový sport
+Jak by se dala opìt získat motivace pro v¹echny?
+Jakto probíhalo v OL4W?
+Jednodu¹e vypsat více kategorií, odstupòované napø. podle výkonu.Toto v¹e v¹ak nará¾í na jednu obrovskou bariéru. Jakou? Pøedpokládá toèestnost jednání. Bohu¾el v¹ak to asi v dne¹ní dobì na¹i zástupci v ÈRKneuznávají a trvají na tom, ¾e jsme vlastnì v¹ichni podvodníci. Tro¹kuse mi z toho zvedá ¾aludek. Skuteènì bych si nikdy nedovolil podvádìt amyslím, ¾e i pøevá¾ná èást HAMù.
+Já pøestal na 70cm vysílat v té dobì co kluci z OK1KIM zaèali dìlatAnglièany. Nìjak mi ode¹la motivace a ¹el jsem radìji sníst dal¹í kolenoa zapít to pivem. 
+Kvalita operátora ( v¹imnìte si, ¾e toto je a¾ na tøetím místì). Jinými slovy... jste-li zku¹ený operátor, který ji¾ nìkdy vyhrál nìjaký závod, pak urèitì pøi splnìní podmínek 1 a 2 vyhrajete z Klínovce ( tím se nechci dotknout kvalit Zdeòka OK1AR).
+Kvalita zaøízení
+Kóta ( nejlépe v Kru¹ných horách, tam máte na dosah spousty stanic ze západu)
+Na této fotografii vpravo nahoøe vidíte døevìný triangolaèní bodna¹í kóty. Byl postaven na pahorku v nadmoøské vý¹ce 750 m a spadl po bouøcev roce 1963 ( opìt jsem pamìtník). Polní den pro nás mláde¾ to bylo nìcokouzelného. V¹ichni jsme se na tento den nesmírnì tì¹ili. Pamatuji, ¾e nakótu na¹e maminka brala i peøiny ( spacák je¹tì nebyl HI). My dìti jsmese vìnovali takovým zábavám jako støelba ze vzduchovky èi studiu okolníkrajiny pomocí hvìzdáøského dalekohledu ( vlastnil ho pan ©tok, nafotografii sedící na lehátku). Pamatuji na veliký po¾ár, který vznikl vroce 1955 po bouøce, která se pøehnala nad na¹imi hlavami. Pamatuji i na krásnìvoòavý vzduch plný ozónu, který se po této bouøce projevil. Zkrátka polníden....  to jsou pro mne vzpomínky na mé rodièe na \"ryzí amatérismus\",na pøátelství...
+Nìkdo by mo¾ná se mnou polemizoval, jestli to není tro¹ku jinak. Vposlední dobì se velice mluví a pøeceòuje kvalita zaøízení. Uvìdomme siv¹ak to, ¾e témìø v¹echna moderní profesionální zaøízení umí doceladobøe poslouchat. Problém je v¹ak v tom, ¾e signál z nich se nedá zesílitnad takových 300W, aby neunikly pozornosti okolí. 
+Ostatní jsou ... \"ménì úspì¹né stanice, které do na¹eho sportu nemají co mluvit\" ( ano to jsou slova volnì pøelo¾ená..)
+POLNÍ DEN 2002 OÈIMA OL4W
+POLNÍ DEN 2002 OÈIMAOL4W
+Podle varianty è. 3. Jak? 
+Pøednì musím podotkonout, ¾e právì leto¹ní polní den mne pøesvìdèil,¾e láska k pobytu v pøírodì pøetrvává. Sleduji tu mláde¾, která s námijezdí ji¾ nìkolik rokù a mám z toho dobrý pocit. Nìkteøí na¹i noví èlenovéjako Adam (4 roky) Honzíka OK1IR, vlastnì na PD spal poprvé ve stanu. Urèitìto v této nové generaci vyvolá lásku a úctu k pøírodì.
+Pùjdeme cestou \"bojù o kóty\". Souèasnì  budeme zvy¹ovatna¹e výkony do oblastí asi tak 3 kW a sna¾it se o vysílání pokud mo¾nodo v¹ech smìrù. 
+Tak a nyní jeden fenomén poslední doby. V¹imli jste si, ¾e ubývásoutì¾ících stanic z kót? Èím je to zpùsobeno? Je to pøesnì o tom o èemse zde ji¾ psalo. Ka¾dý má svoji kótu pøeètenou a ji¾ ho nebaví na nijezdit pro stále stejné výsledky. V¹ichni tu úèast podjímají jako spí¹e\"spoleèenskou\" zále¾itost ne¾ soutì¾ní. A co na¹e ¹pièky?
+Taktedy jak to vidím já?
+Taky si zavysíláme. Hlavní na¹e èinnost na kótì bude... pokecat,popít, najíst se nìèeho exotického.
+To nám to holenkové ubìhlo. Èlovìk seani nenadìje a je tu dal¹í PD. Tì¾ko nìkomu øíkat, co pro nás slu¾ebnìstar¹í vlastnì PD znamená. Pøi leto¹ním polním dnu jsme i zavzpomínalina to, ¾e jsem vlastnì ji¾ nejstar¹ím pamìtníkem této na¹í kóty u ©ámalù.Ano...  Podle oèitých pamìtníkù polního dne 1950 ( OK1FW ), byl mùj¾ivot poèat právì na polním dnu ( narodil jsem se 18.4.1951 ). A mùj skuteènìprvní polní den byl ( fyzicky ) v roce 1952. V té dobì je¹tì Je¹tìdskýhøeben byl plný opu¹tìných chalup. Nebyl vlastnì ani zalesnìn a z kóty U©ámalù byl nádherný výhled na v¹echny strany. Nevìøíte?
+Tìm je celkem hej.... Pøi vyzáøených výkonech kolem 50KW dokonce ido rùzných smìrù, jsou perfektnì sly¹et do vzdálenosti kolem 200 km a» mátenatoèenou anténu kamkoliv ( odrazy...). Jestli¾e nepodcení pøíjmovou stránkuvìci, pak musí udìlat v¹echny mo¾né stanice vyskytující se na pásmu vOK. Jejich hlavní doména je v¹ak v DL. Víte kolik tam tìch IC706 IC746FT847 FT817.....je?. Mraky... Jestli¾e si i ten nejménì zku¹ený amatér naprùmìrnou anténu proladí knoflíkem, urèitì usly¹í onìch 50 KW vyzáøenéhovýkonu z Kru¹ných hor. To jsou pøesnì ty signály, které my nemù¾eme sly¹et.
+Uvedené poøadí samozøejmì pøedpokládá, ¾e pou¾íváte poèítaè,¾e sedíte v teple a nepr¹í na Vás, ¾e pou¾íváte prùmìrný anténnísystém se ziskem alespoò 15 dB a ¾e máte podporu a zázemí svého okolí.Bez toho se skuteènì nedá závodit. 
+Varianta è. 1
+Varianta è. 2
+Varianta è. 3
+Výkonový zesilovaè ( podle obrázku uveøejòovaných nìkdy na Internetu, lze identifikovat zesilovaèe výkonu, které jsou schopny dát trvale i 3 KW výstupního výkonu)
+Z hlediska tìchto pocitù je to rádio vlastnì nìco, co nás otravuje.Existuje i rok, kdy jsme to rádio vzali na kopec jen z nostalgie a nena¹el setémìø nikdo, kdo by u toho chtìl sedìt. V èem to je? Ono toti¾ to je nynítak. Rádia mají skoro v¹ichni stejná. Antény skoro taky ( my¹leno prùmìrnévybavení). Pak skoro nemá cenu soutì¾it, proto¾e svoji kótu máme ji¾ pøeètenou.U nás je to asi takto: Pokud pou¾ijeme bì¾ný výkon kolem 50W, pak se dá pøivelikém úsilí udìlat kolem 350 spojení. Pokud pou¾ijeme 300W, pak se dáudìlat kolem 450 spojení. Samozøejmì za pøedpokladu, ¾e se tomu rádiu nìkdovìnuje. V tabulkách to pak znamená asi 25 místo v OK.  ©pièkové výsledkytedy dnes dìlá:
+Zde je dùkaz:
+Èlovìk dostal pocit, ¾e u¾ ho snad ani nebaví dìlat \"køoví\"tìmto gigantùm. V¹e je tedy pøedem rozdáno klidnì mohu vyhodnotit PD ani¾byste mi poslali deník. Napi¹te mi odkud jste vysílali, na co a já Vám øeknukolikátí budete. Má pak cenu na VKV závodit. Pro Giganty urèitì ano...
+Jak poslouchá FT817 s pøedzesilovaèem na Je¹tìdu? tak toje 
+P&#345;eci jenom ji¾ nejsme nejmlad¹í a tak nám v závodechsnad ani tak moc nejde o vít&#283;zství, ale hlavn&#283; o krásné pro¾itky.Co je to krásný po¾itek? No to je to, kdy¾ na kopci nepr¹í, je teplo,daleká dohlednost v místním hostinci je dobré pivo, podmínky jsou vynikající,nikdo Vás neru¹í, radio funguje...... a v&#367;bec, zkrátka pohoda. Lzehodnotit leto¹ní 2. subregionální závod jako úsp&#283;¹ný? Mé zá¾itkyjsou 
+TAKY JSTE PO NEVYDA&#344;ENÉMZÁVOD&#282; NA©TVANÍ ?
+Vìt¹ina tìchto pøíspìvkù èasem ztratila na aktuálnosti. V¾dy ¹lo oreakci na nìco podmìtného. Asi u¾ nemá smysl zji¹»ovat v které dobì tovznikalo a co tím chtìl autor øíci. Pøesto si v¹ak myslím, ¾e by to vtom ko¹i mohlo zùstat ( a moc se v tom nehrabte  HI ).
+    Zde dosti pomáhá znalost contestových volaèek z minulýchzávodù. 
+    Závod jsem tedy rozjí¾dìl témìø v 00 UTC. Tro¹kumi dìlalo problém vstát. Znáte ten nepøíjemný pocit HI.. Pøesto jsem sedonutil. Zapnul jsem laptop a byl jsem pøipraven na ¹ílené mrhání èasu ahrozné problémy s dovoláváním. Postupnì jsem v¹ak koukal, ¾e je to nìjakélep¹í ne¾ jindy. Rate i pøi volání dosahoval hodnot a¾ 80, co¾ je v QRPkategorii vynikající. Obèas se na bandu objevily lahùdky typu A61AJ a tøebai JY9NX. Tro¹ku sice bylo ru¹ení, ale ne zas tak hrozné. No jak takové signálybyly na mé 817 sly¹et.
+    Zúèastnit se v QRP kategorii má svoje kouzlo. Nemusítevymý¹let rùzné taktiky a jen musíte stále dokola toèit koleèkem ladìnía zkou¹et volat. Musíte si dát pozor i na jeden QRP fenomén. Jestli se dovoláte,tak vùbec nezále¾í na síle pøijímané stanice. Vìt¹inou se to párkrátzkusí a pokud \" nezabere\", pak ji necháme ule¾et a poèkáme si a¾se podmínky vylep¹í. Vìt¹inou se stra¹nì èasu promrhá pøi otevíráníbandu na východ. Ruské stanice jsou krásnì sly¹itelné, ze západu ¾ádnéru¹ení není, ale dovolat nejde. Nesmíme zapomenout, ¾e na¹ich 5W jevzhledem ke kilowatùm na druhé stranì vlastnì zanedbatelný výkon. Tì¾kose v této dobì podle síly signálu hádá, jestli stanice je QRP a pak mám¹anci se dovolat, èi je¹tì nejsou podmínky a stanice pou¾ívá kilowat.Pak ¹ance na dovolání je nulová.
+ Tak pánové, to je skuteènì s 5W ve vyhledávacím módu. Jako v¾dy v první noci není problém s únavou. Byl jsem nad¹en. Dokonce jsem si troufl dát výzvu. K mému velikému pøekvapení pøi¹el 3V8BB ( v té dobì jsem byl na pásmu jediný násobiè OL4 ). Odcházející podmínky po východu sluníèka silnì srazily rate. Amíci chodili i zde docela slu¹nì, ale bohu¾el, mých 5W bylo málo. Zøejmì tomu pomohlo i to, ¾e nová anténa má hlavní vyzaøovací lalok smìrem na východ.
+ Závìr první noci tedy vypadal takto:
+A co vy? Co øíkáte? Jak FT817 je pou¾itelná v contestech? Jak se Vám z ukázek líbila její odolnost?
+CQ WPX 2002 CW OÈIMA OL4W
+CQWPX 2002 CW OÈIMA OL4W ( OK1IF )
+Dospìl jsem k názoru, ¾e je tøeba jít spát HI. Tentokrát spánek byl a¾ do obìda. Po obìdì vlivem poèasí nebylo nutné mne dále pøesvìdèovat, ¾e spánek je to nejlep¹í, co tento víkend mohu dìlat. Na pásmu jsem se zase objevil a¾:
+Hezké bylo i spojení 
+JY9NX zaèátek závodu
+Je to zajímavé, ale zøejmì by bylo mo¾no s novou anténou závodit s 5 W i na jiných bandech. Urèitì poznáte ten pocit, ¾e to chodí. Zkou¹el jsem je¹tì nìjaká spojení na 40m a na 15m. Opìt bez problémù. OOO díky Janièko za skvìlý nápad pøemístit anténu na jiné místo. Nyní musím svùj hamshack dát do obyváku. Odsud se ji¾ nenechám vyhodit.
+Jo¾o Fero
+KC1XX volání
+Kluk, jak je vidìt podle èísla spojení, se sna¾il.
+N9RV volání
+NE6N volání
+Nakonec pøi¹el i známý
+Nevadí, v¾dy» i OK stanice je za 1 bod a to se také poèítá. Jdu spát. Bohu¾el, to jsem si jen myslel. Jindøí¹ek ( ná¹ malý vnouèek ) mne probudil u¾ asi za dvì hodiny. Nasnídal jsem se a pøeci mi to jen nedalo a tak jsem pøepnul na jiné bandy. Dosti mne pøekvapil cvrkot na 20m. Vy¹¹í bandy na tom byly podstatnì hùøe. 10m band byl témìø zavøen. Zkusil jsem volat pod moji znaèkou OK1IF. Nìkterá spojení jsou zde:
+Nevím proè, ale telegrafní závod WPX jsem nikdy nemiloval. V¾dycky mi topøipadalo jako slabý odvar z CQ WW. Podmínky jsou ji¾ témìø letní a na80m bandu to vìt¹inou nestojí za nic. Je tam i podstatnì ménì stanic jak vCQ WW. Pøi na¹ich \" hovorech \" s Honzou OK1IR, jsme v¹ak na tomto závodìkonstatovali jednu zajímavost. Není rozhodující jestli mám DX antény nebone. Rozhodující je poèet násobièù a tìch je v Evropì, díky její èlenìní,dost. Slovo dalo slovo a tak bylo rozhodnuto. Koneckoncù Honza potøebovalvyzkou¹et i svùj nový 80m deltaloop. Já po odstranìní mé zázraèné antényna 40m mìl jen dvì mo¾nosti. Zkusit závod na 80m nebo na 20m. Pouze na tìchtopásmech jsem mìl pocit, ¾e je anténa docela dobrá. Na dvacítku se mi mocnechtìlo. Toto pásmo nemám \" zmáknuté \" a pak taky drát ¹patnìsoutì¾í se smìrovkama. Jakmile v¹ak pojedu osmdesátku, pak si budeme sHonzou pøímo konkurovat. No co¾, bude alespoò pìkná legrace.
+No co...nejlep¹í je vzít kus deníku:
+Odpoledne po obìdì jsem si ¹el lehnout. Prohodili jsme je¹tì s Honzou pár slov o contestu. Honza zaèal o hodinu pozdìji a tak za mnou trochu pokulhával. Podaøilo se mu v¹ak s 5W udìlat jednoho Amíka. Zøejmì ten jeho loop bude dobrý na západ. 
+Ony toti¾ ty kilowaty jsou zde docela dobøe sly¹et ji¾ pøed západem sluníèka. A tak se èlovìk zdr¾uje jen voláním... Rozjezd byl tedy neslaný nemastný..
+Pak jsem zaslechl nádherný signál HS0/G3DOM. Nikdo ho nevolal. Bohu¾el..5W je QRP. 
+Po dobré veèeøi jsem opìt usedl k osmdesátce. Nastával UA9 fenomén. Ka¾dý contest si øíkám, nevolej je v tuto dobu...nemá to smysl, ale...
+Po témìø rozvodovém øízení a tvrdém nátlaku od Janièky, jsem semusel vystìhovat do obyváku. Na¹tìstí pøenést zdroj, anténí tuner aFT817 je docela legrace. Jak to v tomto provizorním hamshacku vypadalo, je zøejméz pøedchozí fotografie. Samozøejmì, ¾e jsem pou¾íval i laptop s programemN6TR a automatický pamì»ový klíè. Skuteènì si nedovedu pøedstavit, jakbych dokázal uhlídat v tomto závodì násobièe. Rozhodl jsem se i pou¾ítna¹i závodní znaèku OL4W. Kategorie tedy byla jasná. Single operátormonoband a kategorie QRP. Moc jsem si nevìøil. Stále jsem mìl je¹tì v pamìtipøedchozí závody, kdy skuteènì nebylo co dìlat a je¹tì k tomu jakonaschvál v¾dycky byla pøí¹erná bouøka.
+Pokusy dovolat se nebyly úspì¹né.
+Postupnì narùstala únava. U¾ jsem to nìjak nemohl vydr¾et. Kdy¾ se mi pak ruèièka S metru namotala na kolíèek pøi signálu stanice OK1RI
+Potì¹ilo mne i spojení s:
+Poèítaè ukazoval, ¾e mám necelých 200.000 bodù pøi 418 spojeních. No co¾, byl jsem velice spokojen. Vrhnul jsem se na lednièku a pøí¹ernì jsem se pøe¾ral v¹ím, co jsem v ní na¹el. Je¹tì dlouho pøi usínání jsem sly¹el ty nádherné signálky. Nu co¾, snad zas za rok.
+Pásmo se zaèínalo pøed koncem závodu nádhernì otevírat, ale bohu¾el na 5W to ne¹lo. Pøesto poslechnìte ty nìkteré krásné letní signálky.
+Pøesto se v¹ak stále dalo nìco dìlat. Na pásmu jsem postupnì zaèal dìlat i ¹estibodová spojení. V¹em tìmto stanicím kraloval RT9W.
+Tentokrát jeho signál byl dokonalý.
+To bylo ¹ílené spojení,  kolega to nemohl pøeèíst a stále mi tvrdil, ¾e u¾ jsme se dìlali. Jo....je to mo¾né, ale já nyní pøi jakékoliv pochybnosti o korektnosti spojení ho projistotu nepí¹i. Pøi rozborech posledních výsledkù jsem toti¾ byl penalizací stra¹nì po¹kozen. Deník se pomalu ale jistì zaèal plnit. Dokonce i jeden z nejznámìj¹ích èeských operátorù mne zavolal ( a to dokonce 2x ).
+Zajímavé bylo i spojení do W6.
+Ze ¹esti boïákù pøi¹el za první noc je¹tì:
+    Jak to dìlají ty stanice, co budou pou¾ívat 100W? HAtomu Radkovi OK2ON se to øekne...\" vemte si kolo a do nìj do vozíèkuvlo¾te TCVR, anténu baterie...\". A¾ mi to jednou pøedvede, tak to zkusímtaky. 
+    Nedalo se nic dìlat a tak jsem prohrabal svoje zásobybaterií a nakonec jsem mìl k dispozici:
+    Pro tento výkon se mi tedy kapacita 1600 mAh zdála pøíli¾malá. Podle rùzných pramenù by asi bylo nejlep¹í pou¾ít alkalickébaterie. Mohl jsem sice zakoupit ony, které pohánìjí skákací medvídkynejdéle HI, ale cena za 4 baterie kolem 100 Kè se mi pøeci jenom zdála pøíli¾veliká. Kdy¾ jsem potom nav¹tívil na¹i HYPERNOVU a zjistil, ¾e tam mají nìjaké\"zázraèné alkalické baterie\" vyrobené novou technologií a je¹tìk tomu 4 kusy za 69 Kè, bylo rozhodnuto.
+    Pøesnì tak jsem si pøipadal nyní. Kdy¾ jsem chtìl psátna laptopa, tak jsem se musel naklonit dopøedu. Ruce jsem mìl nezvykle vysokoa tak jsem byl po chvíli unaven. Laptop ne¹el dát na kolena, proto¾e jsem mìlkrátké pøívodní vodièe. Chce to vytvoøit úplnì jiný systém....
+ V¹imnìte si, ¾e v pøírodì je minimum mìstského ru¹ení. Poznáteto podle toho, ¾e Smetr ukazuje na nulu ( v mém QTH trvale S5).
+ ®e je mo¾né udìlat DX i s 1W je dokázáno
+A tak snad je¹tì kýèovitý obrázek znázoròující to, na co jsemkoukal z okna auta.
+Anténa?
+Autobaterie mìla 11.8V
+Baterie NiMH 12V/3Ah celkem 4 kusy pro pozdìj¹í napájení laptopa.
+Baterie olovìná gelová 12V/6.8 Ah na prvotní napájení laptopa (nakonec vydr¾ela laptop napájet asi 7 hodin - zøejmì pøi jakémsi úspornémmódu si ten laptop bere      ménì)
+Baterie olovìná gelová 6V/10 Ah na svícení ( ¾árovka 6V/5W by mìlavydr¾et na celou dobu)
+Chce se nìkdo mrknout na deník ve formátu Excel ( 50 KB ), pak je ke sta¾ení
+Co se týká dal¹í strategie v kategorii 8 baterií AA, pak tu¹ím, ¾e vpøí¹tím roce budu následován... Moje nejvìt¹í chyby:
+Gelovka 6V mìla je¹tì asi 5.5 V
+Gelovku 12V jsem totálnì vybil
+Jak anténa vypadala?
+Jak jsem pozdìji zjistil HI ( proè já nikdy nevìøím pouèkám ), ¾e taanténa protiváhu nutnì potøebuje HI ( a nesmìjte se mi ). 
+Jak se pozdìji ukázalo, tato úvaha byla správná a tak po závodì bylokonstatováno:
+Jak to v autì rozmístit?
+Jak u¾ to tak bývá, nic není zázraèného a tak jsem s kvalitou tìchtobaterií byl velice nespokojen. ale o tom dále....
+Louèka pod Javorníkem ( na toto místo jezdí letadýlkaøi a zde svahují se svými modýlky letadel )
+Mám doma malý lehký sto¾árek vysoký asi 8m. Rozhodl jsem se tedy, ¾eanténu pøesnì podle regulí udìlám tak, ¾e na jednom konci bude 10m vysokáa na druhém konci bude tento sto¾árek z kterého pùjde drát pøímo doauta. Zapla»pánbùh, ¾e nebylo v regulích tøeba max do 20m. Pak bych mìl výèitkyHI. Av¹ak s pomocí tohoto sto¾árku se dala tato anténa docela slu¹nìvybudovat. Ji¾ z prvotních zkou¹ek jsem vìdìl, ¾e pomocí ATU Z11 nebudeproblém tuto anténu vyladit od 21 MHz do 3.5 MHz. Na 28 MHz asi stejnì nikdonebude a na 160 m asi taky ne. V¹ude na tìchto pásmech se anténa bude vìt¹inouchovat jako vysokoimpendanèní a tak jsem si nelámal hlavu s protiváhou. Domnívaljsem se, ¾e moje zkorodované auto bude protiváha dostateèná. 
+Místo OK1KAM pro polní den ( zde platí teorie zbloudilých turistù a relativnì ¹patné pøístupnosti )
+Místo atraktivní vzhledem ke zdravému vzduchu
+Místo lehce pøístupné a pøitom splòující regule závodu
+Místo s mo¾ností stavby vhodné antény.
+Místo s pìkným výhledem
+Místo umístìné stranou turistických cest ( jsem ve své podstatì introvert a 20 otázek zbloudilých turistù na smysl mého poèínání, tak to by mne asi otrávilo )
+Na 14 MHz jsem byl na výsost spokojen. Tro¹ku se mi v¹ak nezdálo vyzaøovánína 40m a 15m. Na 15m mi vf lezla do laptopa a ten pak odmítal klíèovat. Na40m po naladìní a pøiblí¾ení se mé ruky ke klávesnici, se to v¹erozladilo. Zezaèátku jsem tomu nevìnoval pozornost a \"boøil\"rekordy na 20m. V nedìli ráno mi v¹ak pøi krátkém oddecho spoèinulo méoko na obrovském vrutu, který jsem mìl v kufru. Jen tak pro legraci jsem hozavrtal do zemì a zaøízení na nìj uzemnil. K mému velikému pøekvapeníjsem zjistil, ¾e anténa tuner se nastavil úplnì jinak a signály stanic na40m bandu vylezly o 2S nahoru HI. Teprve od té doby jsem mìl dobrý pocit i na40m a 80m bandu. ( Pane Bocek prosím nesmìjte se..HI).
+No a co na závìr?
+Nìkterým stanicím nedìlal pobyt na zdravém vzduchu moc dobøe. Mo¾nájim byla i zima a tak za v¹echny snad záznam blí¾e nespecifikované stanice:
+OL4W ( OK1IF ) a úèast v KV polním dnu.
+Pro nedostatek energie jsem musel v závìru pøepnout na1W. I tak napìtí baterií klesalo na 7.7V pøi zatí¾ení a to u¾ je hranicevypnutí FT817náctky.
+Pøeci jenom jsem nechtìl startovat motor a dobíjet a tak jsem chtìl, abyrezerva v baterii staèila na øádné nastartování.
+Pøesnì podle svìtové literatury \" spravoènik dla inostrancev varmii\" ( pøeklad \" pøíruèku ¹piónù\" ), jsem se rozhodl, ¾eanténu natáhnu ve smìru severovýchod. Dospìl jsem k tomu jednoduchou úvahou.Z výsledkových listin minulých polních dnù byla zøejmá veliká aktivitaUA9 stanic. Pokud toto bude jako 6 bodové spojení, bude to fajn. V tuto dobuje ¹íøení na východ daleko výhodnìj¹í jak na západ. To jsem zjistil ji¾pøi úèasti CQ WPX contestu, kde jsem dìlal mraky UA9, ale ani jednoho Amíka( s 5 W).
+Pøi hledání vhodného QTH jsem vycházel z následujících pøedpokladù:
+Pøi ètvrteèní prohlídce rùzných terénù a z hlediska vý¹e uvedenýchomezení jsem postupnì vylouèil:
+Pùvodnì jsem si myslel, ¾e bych oprá¹il svého DATLA a zúèastnil se na80m bandu. Tato my¹lenka mne v¹ak brzy pøe¹la. Tak zaprvé jsem si chtìl ovìøitco vlastnì ta 817 s bateriemi umí. Chtìl jsem vlastnì nastavit jakýsiStartovní bod. Z toho se odvíjela i moje taktika, která vlastnì nebyla ¾ádná.Jedinéco jsem snad malinko odzkou¹el, tak bylo pou¾ití 42m LW, která jde vyladitse Z11 na v¹ech bandech ( pouze na 160m to mnoho nefunguje). Otázka výdr¾ebaterií....to mi vlastnì taky moc nebylo jasné. V souèasné dobì vìt¹inoupou¾ívám NiMH baterie 1600 mAh. U nich ( podle úèasti v OK QRP závodì ) vím,¾e pøi pou¾ití 1W výstupního výkonu je jejich výdr¾ asi 3 hod. FT817bere pøi pøíjmu asi 300 mA a pøi vysílání 1W asi 0.95 A. To pøi rozumnémpomìru pøíjem - vysílání, dá onìch 180 minut práce. Aby závod stál zato, bylo mi jasné, ¾e bude nutné pou¾ívat výkonu asi 2.5W pøi spotøebìpøi vysílání asi 1.3 A. Vloni jsem sice pøi \" blbnutí na kvadrát\"( podmínky diplomu WW817WT) sice tyto tu¾kové baterie pou¾íval s výkonem2.5W, ale to bylo v¾dy na dobu asi 30 minut. Pak jsem je v Campu v¾dy znovudobíjel.
+Souèasnì jsem na laptopa je¹tì spotøeboval 2 kusy baterií 3Ah.
+Svoji úèastí v kategorii QRP jsem si nastavil pro pøí¹tí rok la»ku,kterou asi bude jednoduché pøekonat. Tro¹ku je zará¾ející nepatrná úèastOK OM stanic. Za celou dobu jsem jen dìlal 4 OK/OM stanice a to jen ve volnékategorii. Myslím, ¾e tomuto nádhernému závodu chybí trochu vìt¹ípropagace. Ale kdo ví...po pøeètení tohoto pøíspìvku...a v roce 2003, kdoví?
+Tak pokuï pojedu v kategorii jen 8 baterií typu AA, pak to bylo jasné. Alepokud se èlovìk vypraví na kopec a postaví anténu, pak se mi nechtìlo zastak brzy dolù. Moje strategie byla asi následující:
+Tak tentokrát mi teorie fungovala a skuteènì maximální vyzaøovacílalok na UA9 fungoval skvìle a to dokonce i kdy¾ jsem pou¾íval jen 2.5 W výstupníhovýkonu.
+Tak to je obrovský problém. Jen díky tomu, ¾e jsem tuto my¹lenkupodcenil, tak jsem asi byl ménì aktivní. Velice brzo docházelo k únavì,musel jsem z auta ven a protáhnout se. Ono to má toti¾ svoji logiku. Zkustezavzpomínat na svoje jino¹tví a zkuste udìlat jakousi analogii mezi vysílánímv 50 letech a láskou ve 20 letech. Kdy¾ nám bylo 20, tak jsme vidìli jenproblém ( dívku ) a bylo nám jedno jak a kde ( nìkomu dokonce i s kým). Vìt¹inouse to odehrálo takovým zpùsobem, ¾e jsme na urèitých èástech tìla bylioblepeni jehlièím a kolena jsme mìli od bahna. Zkuste jen pomyslit na to, ¾ebychom to v padesáti zopakovali. Ani nápad.... to radìji pùjdu na pivo.
+To, ¾e se letos zúèastním polního krátkovlnného dne vlastnì rozhodlKarel OK1AIJ a to zveøejnìním podmínek zvlá¹tní kategorie a to kategorie 
+Udìlat omezení pou¾itím pouze 8 tu¾kových baterií, takto bylo velice lákavé. Moje FT817 je sice témìø dokonalá, ale ve srovnánís doma dìlanými zaøízeními vlastnì nemá ¹anci. Je to jakási hozenárukavice v¹em tìm dokonalým továrním zaøízením s displeji a procesory.Tady si èlovìk teprve uvìdomí, ¾e za elektøinu se platí HI.
+Uva¾ujme, ¾e TCVR si v prùmìru vezme asi 1A ( FT817 pøi 5W out odebíráasi 2 A), laptop 1.5A, osvìtlovací ¾árovka asi 1A, pak suma z tìchto potøebje asi 3.5 A. Kdybych toto pou¾íval celou dobu ( poèítal jsem i s osvìtlením,abych mìl urèitou rezervu), pak spotøebuji asi 84 Ah. Tu¹il jsem, ¾e to asinebude pravda, proto¾e budu svítit nìjakých 7 hodin a i tìch 1A ftéèkaasi bude moc.....ale i pøi minimální versi by to dìlalo více ne¾ kolik mákapacitu moje autobaterie. My¹lenka na to, ¾e bych nìkde svoje auto tlaèilpo polní cestì ve mne vyvolávala pupínky na kù¾i.
+V Liberci3.6.2002                               Jo¾o Fero
+V závodì jsem mìl nastaven výkon 2.5W i kdy¾ to nebylo potøeba ( doporuèujinastavit 1W a radìji vyhledávat stanice na které se stoprocentnì dovolám).Zapomnìl jsem na efekt \"obnovy energie ve vybitém èlánku\". Závodby mìl probíhat tedy jaksi pøeru¹ovanì ( vidíte tu analogii s jino¹stvím?). Pak baterie déle vydr¾í. Asi by bylo výhodné závod nezaèínat ihned pozahájení. Tam toti¾ je je¹tì co dìlat a tak se volají spí¹e stanice QROa my musíme èekat. Tím dochází k \"neúèinným voláním\" a zbyteènéztrátì energie.
+Z následujícího obrázku si tedy vzor moc neberte.
+Závod je to skuteènì vynikající. Jak jsem koukal, dá se tam dìlat vkategorii 100W i pøes tisíc spojení. Nikdo se tedy nenudil. Zajímavé je ito, ¾e se na pásmu vyskytovalo plno zemí, které v jiných contestech u¾nejsou tak bì¾né ( GU, GW...)
+Závod jsem skonèil ji¾ v 10 hodin. Pøeci jenom spánek ( nebo polospánekna sedaèce auta) nebyl pøíjemný. Cítil jsem se unavený.....alespoò se pøí¹tírok lehce pøekonám HI.
+Závod zahájit v kategorii 8 baterií AA. Po jejich vyèerpání pøehoditnapájení na autobaterii a závod dokonèit u¾ v normální kategorii. Jsem v¹akveskrze líný èlovìk a tak pøedstava, ¾e budu psát ruèní log a dìlat siruèní pøehledy z ka¾dého pásma...to tedy ne. Tím se situace ponìkudzkomplikovala a to o to, ¾e jsem musel pro svùj laptom zajistit zdroj energie.Pøi zmìøení jsem zjistil, ¾e ten mùj staøeèek si bere skoro 1.5 A. Tak ajsme u toho.
+Zázraèné baterie z Hypernovy
+Èím to napájet?
+Díky Jardovi OK1AYY jsem mohl na tyto stránky umístit jeho\" ¹kolu N6TR \". Myslím, ¾e jsou zde vynikajícím zpùsobem ( problbé ) vysvìtleny základní funkce a ovládání programu. ©kolatr2.zip jeta pùvodní po lekcích s nìjakými DOM a INI, skolatr3.zip je ten samý textbez èlenení na lekce a mo¾ná s nìjakýma opravama. A tak pánové....raètecucat..
+©KOLA N6TR
+©KOLAN6TR 
+Hlavní strana
+na hlavní stránku
+Firmware a pokec o upgrade do pojítka
+Mikrovlné pojítko Breezenet 2,4Ghz
+Ukázka výpisu PEEPROM 28c64
+zpìt na hlavní stránku
+Dal¹í DJ serie
+NASTAVENÍ A DOLA
+Schéma programátoru ERW2
+Schéma programátoru ERW4
+náhled
+zpìt na hlavní stránku
+Nastavení modemu telefon <> PC
+V¹e co mám k Motorole (GSM, RADIO atd.)
+na hlavní stránku
+AE-mikrofoní konektory
+na hlavní stránku
+ A poznámka na závìr - kdy¾ jsme se po ¹»astném doplutí na pevninuocitli na prvním normálním jídle po dvou dnech a dìlaly se plány do budoucna,tak jsem navrhl, aby se pøí¹tí expedice udìlala do jinak témìø nepøístupnéhoprefixu YK - nechci zatím slibovat nemo¾né, ale pokud to skuteènì nakonecdopadne  jak mi bylo ji¾ naznaèeno, tak u¾ to bude jiné ka
+ Brzy poté jsem se se¹el s koordinátorem celé akce, JamilemOD5PN, který se ukázal na místní pomìry jako vynikající organizátor a pøedev¹ímdíky nìmu se nakonec celá tato akce mohla uskuteènit.
+ Bylo 18. záøí roku 99 a mùj pøítel Rami OD5SB mi telefonoval,jestli bych se nechtìl zùèastnit plánované libanonské expedice na ostrovRamkin. Nebylo dlouho o èem pøemý¹let, nebo» jsem zde pracovnì  vLibanonu ji¾ pøes rok a pùl a do této doby jsem se mohl zúèastnit jen nìkolikaCW závodù, nebo» získání vlastní legální koncese je pro cizince v Libanonutémeø nemo¾né, tudí¾ ka¾dá mo¾nost vysílat mì samozøejmì zajímala.
+ Celkem bylo tedy za 38 hodin provozu navázáno cca 6000 QSO (4000SSB a 2000CW)  a musím poznamenat, ¾e dle hodnocení OD hams cose týèe provozu a káznì byli  OK jedny z nejlep¹ích. Sám jsem udìlalasi 160 QSO jenom s OK (celkovì bylo pracováno s 250 OK) a i já sám mohupotvrdit, ¾e tentokráte byly stanice OK perfektní bez vyjímky.
+ Díky spotùm v klástru ale stejnì asi nakonec ka¾dý ham z EUkterý mìl skuteèný  zájem mohl udìlat tento vzácný IOTA ostrov, nebjak jsem pozdìji zji¹»oval, tak OD5RAL tam byla zadávána více ne¾ 160krát.Osobnì chci z tìch mmoha OK podìkovat a gratulovat alespoò Va¹kovi OK1ADM, se kterým jsem mìl jenom já sám 5 QSO a nejednalo se o ¾ádné skedyèi více QSO na jednom bandu a módu. Sám jsem v provozu praktikoval pravidlo,¾e s ka¾dou CALL pouze jedno QSO na bandu a módu. Po zku¹enostech z Afrikypøedev¹ím ze stanicemi z EA a I se to skuteènì vyplatilo, neb nìkteøí jedincijsou prostì nenapravitelní.
+ I pøesto v¹echno skuteènì v pátek 24.záøí dorazila na ostrovprvní skupina hams, která postavila nìkolik jednoduchých antén, rozchodilazaøízení a kolem 19.00 GMT bylo v provozu první pracovi¹tì OD5RAL - na15 a 20 metrech SSB. Jeliko¾ znaèka OD5RAL je znaèka celé libanonské radioamatérskéasociace a ji¾ byla døíve vícekrát pou¾ívána,  bylo  stanoveno,¾e v rozmezí 24. záøí - 26. záøí 1999 bude výhradnì slou¾it jako expedièní,platná do IOTA programu . QSL lístky budou pro tuto akci speciálnì vyti¹tìnybìhem dvou mìsícu, oficiálním QSL managerem je Riri OD5RI a QSL staèí posílatvia OD Buro.
+ Já spoleènì s  dal¹ími OD hams jsme nakonec dorazili naostrov po necelé hodinì plavby rybáøským èlunem v sobotu kolem obìda. Samotnévyloïování dìlalo nìkterým star¹ím èlenùm expedice problémy, nebo» na ostrovìneexistuje ¾ádné místo kde by mohl pøistat alespoò malý èlun, tak¾e bylopotøeba k vylodìní s pomocí lana vy¹plhat na 5-metrový skalní útes kterýcelý ostrov obklopuje. Nìkomu se to povedlo bez problémù, nìkomu a¾ takne, ale celkovì se dá stejnì øíci, ¾e jeliko¾ se nikdo nezabil tak to ipo této stránce dopadlo dobøe....
+ K mému ¹tìstí jsem si sebou na ostrov pøivezl vlastní notebooks N6TR a pamì»ový klíè, tak¾e v kombinaci s unavenìj¹í, ale pøeci jen TS-850, která tam na mne ji¾ èekala a kusem drátu, který nahrazoval anténuv¹e vypadalo celkem provozovatelnì. Nejvìt¹ím problémem se nakonec ukázaloohromné vzájemné ru¹ení mezi stanicemi, tak¾e obèas (obèas více hi) seèlovìk musel pøeladit úplnì nìkam jinám i kdy¾ pile-up slu¹nì  bì¾el.
+ Na veèer vìt¹ina místních \"koukalù\" opìt odplula do svých postelína pevninu, tak¾e byl alespoò klid a na ostrovì zùstali jen Ti OD hams,kteøí vìdìli proè tam vlastnì pøijeli. V tuto dobu byly aktivní souaèasnì3 stanice OD5RAL - vet¹inou dvì na SSB a já na CW. Jeliko¾ jsem mìl zcelavolnou ruku, tak jsem se sna¾il vìnovat støídavì i WARCùm, tak¾e nakonecjenom na 12 metrech to bylo nìco kolem 600 QSO a pile-upy byly solidní,chvílema to bylo i 5 QSO za minutu na CW. Sice jsem mìl z poèátku opìtproblémy, neb mi nìkteøí hams vysvìtlovali, ¾e toto pásmo vùbec neexistuje,ale nakonec se v¹e v dobré obrátilo a pochopili hihi..
+ Samotný ostrov Ramkin le¾í vzdu¹nou èarou pøibli¾nì 8 km odpobøe¾í severního Libanonu konkrétnì od mìsta Tripoli neboli v arabskémjazyce Tarabulus (druhé nejvìt¹í mìsto v OD5), ale jedná se  dnesji¾ o zcela neobydlený kus zemì, na kterém je umístìn jen malý pøíbøe¾nímaják, který je bohu¾el napájen pouze ze sluneèních kolektorù a ty jsouzde jedinou vìcí, která na ostrovì pøipomíná 20. století.K pouhému vstupuna ostrov je potøeba nìkolika pro bì¾ného  smrtelníka naprosto nemo¾nozískatelných povolení a razítek....
+ Tak¾e co øíci závìrem - na místní specifické pomìry se jednaloo vcelku vydaøenou akci a sami místní ji pova¾ují za velký  úspìch.Sám musím potvrdit to, ¾e nikdo jiný na svìtì by zde stejnì nemohl získatpovolení k provozu z tohoto jinak  liduprázdného a \"uzamèeného\" ostrovaa jenom díky práci a kontaktùm Jamila OD5PN se toto v¹e mohlo uskuteènit.Musím také podìkovat v¹em místním hams, kteøí tøeba ne v¾dy oplívají amatérskýmivìdomostmi, ale jinak to jsou velice pøátel¹tí a poho¹tinní lidé.
+ V celém Libanonu je vydaných k dne¹nímu dni cca 160 CALL, aleaktivních hams je z tohoto poètu snad jen desetina a to spí¹e jen rekreaènì na SSB. Opravdu  aktivní jsou  jen Francis OD5PL a Gabi OD5NJ,kteøí jako snad jediný v OD umí i CW. Proto se z této akce stala pro místníamatéry akce roku, ale samozøejmì k evropskému pojetí expedice to mìlopøeci jen trochu daleko.
+ V¹ichni OD kromì sporadicky OD5NJ jeli jenom SSB, tak¾e natelegrafu nebylo do té doby témìø nic udìláno.  První QSO jsem nakonecudìlal na CW a¾ nìkdy kolem 11.00 GMT. Signál od nás nemohl být nic moc,nebo» v¹e bylo napájeno pouze  z bateríí a jediného agregátu - naostrovu samozøejmì nebylo 220V, tak¾e se jelo jen na holá rádia, ale vzhledemk dobré poloze EU to nebylo a¾ tak stra¹né a sly¹et jsme byli.
+ Za zbytek soboty jsem udìlal nìco pøes tisíc CW QSO a v nedìliza dal¹ích 6 hodin co jsem byl QRV dal¹ích 900. V 10.30GMT v nedìli sebohu¾el muselo zaèít balit, tak¾e se urèitì na mnoho hams, kteøí mìli zájemo IOTA AS- 108 nedostalo. Na druhou stranu ale ji¾ urèitì nebude ostrovRamkin v seznamu ¾ádaných IOTA ostrovù figurovat v první padesátce z tìchvíce ne¾ 900 IOTA ostrovù jak tomu bylo pøed zaèátkem této expedice.
+Na 144MHz se doposud povedlo jen jednojediné QSO s 5B4FL (bylo to jeho vùbec první QSO na 144MHz...), nevy¹elprvní pokus M/S s YO3 a ani EME QSO se Standou OK1MS nebylo úspì¹né.....Natomto pásmu je 100 W a 10 el opravdu jen velmi chabá výbava, v¾dy» QRBdo OK je cca 2500 km, na kraj I to mám cca 2100 km a do nejbli¾¹í, alespoòtrochu vékávisti osídlené oblasti - LZ a YO je to pøes vysoké hory 1200km. Snad se ale i na tomto pásmu povede nìco udìlat v maximu nejlep¹íchmeteoritických rojù, nebo pozdìji v období výskytu sporadické vrstvy Es( kvìten - èervenec).
+Po návratu z mé leto¹ní dovolené (21.7.- 15.9.) do¹lo k nìkolika dal¹ím a myslím ¾e i pozitivním zmìnám. Pøivezljsem si IC-706, tak¾e poèínaje prvními øíjnovými dny jsem kromì ALL bandsKV QRV i na 50MHz a 144MHz. Na 6m pou¾ívám IC-706 - 100W + 5 el Yagi, na144MHz IC-706 + malý PA 100W ( výrobek Martina OK1UGA ) + 10 el DL6WU (obì antény jsou z dílny Slávka, OK1TN, jak taky jinak, hi ).
+Pokud by nìkoho zajímalo, jaká je tadyvlastnì aktivita na VKV - konkrétnì na 144MHz, o vy¹¹ích pásmech je u¾vùbec nesmysl mluvit - tady v Libanonu, tak odpovìï je velice jednoduchá- naprosto ¾ádná, jediný amatér, který tady býval kdysi QRV byl jistý Francouz,který skuteènì v letních prázdninových mìsících roku 97 a 98 udìlal párQSO via Es pod OD5RAL , ale díky pozdìj¹ím nedorozumìním ke kterým údajnìdo¹lo, ji¾ pravdìpodobnì vícekrát QRV z této pøevzácné dvojmetrové zemìnikdy nebude.... Dále tady ale bohu¾el není ji¾ nikdo z místních, kdo byse tomuto pásmu alespoò sporadicky vìnoval.......
+Pokud má tedy nìkdy zájem o skeda i natomto pásmu, tak jsem ochoten kdykoliv a cokoliv vyzkou¹et, ale ji¾ dopøedupí¹u, ¾e bez opravdu BIG výbavy to nemá cenu ani zkou¹et.......
+Pokud zde v Bejrútu zapnete rádio a proladítedvojmetrové pásmo, tak signálu je tam ale víc ne¾ dost - mno¾ství pirátskýchstanic vysílajících FM, rùzné domácí sítì, pirátská soukromá rádia, nìcojako profi slu¾by atd atd. Tak¾e aè tady vlastnì není v Libanonu jedinýamatér na 144 MHz QRV, tak najít prázdné a neru¹ené místo v rozmezí 144.000- 144.400 je docela i problém hihi. Jen pro ilustraci jak to tady na VHFchodí - v termínu VHF závodù v letech 98 a 99 jsem byl QRV s FT-726 a 17el. F9FT defacto v¾dy celých 24 hodin - kromì jediného OD5, který mì zavolalFM na 144.300 jsem neudìlal ¾ádné jiné QSO a dokonce ani nezaslechl jedinýsignál za celou tu dobu, co jsem u toho vydr¾el sedìt........
+V Bejrútu, 1.listopadu 2000
+Za poslední dva mìsíce co jsem aktivnína 50MHz je v deníku ji¾ pøes 350 QSO a 57 DXCC a aè jsou ji¾ leto¹ní letníCONDX nenávratnì pryè, tak i pøesto se povedlo chytit pár zajímavých otevøenía v deníku je i pár FB DXCC na toto pásmo - XT, VQ, D2, FR,TR,V5,ZP,ZD7,ZD8,ET,FY, VR, BY, 7Q, 8Q, EA9, SU, ZC4, 3C5,J2 atd atd. S nikým z OK se je¹tìQSO nepovedlo, ale nemìlo by to snad ji¾ moc dlouho trvat, hi. Momentálnìmì bohu¾el ji¾ po tøetí za sebou ode¹el rotátor, a jeliko¾ je to tentokrátji¾ velká závada a právì tady v Libanonu zaèíná období silných vichøica bouøek, tak opravu nechávám a¾ se poèasí opìt umoudøí a bude opìt ¹ance¾e rotátor hned bìhem prvních dní opìt neodejde......
+Zpìt na hlavní stránku
+Závìrem tedy co se týèe dvojmetru a ¹ancena QSO s OK - s mojí výbavou je teoreticky mo¾né udìlat snad jen pár (asidoslova jen pár , hi) QSO via EME s opravdu super vybavenými stanicemi,pak také nìjaké QSO v maximu pøi M/S - pøedev¹ím pak s jihem a jihovýchodemEvropy a pak ji¾ zbývá jen poslední, ale za to reálná varianta - QSO pøesSporadickou vrstvu Es. Tam není problém udìlat i OK, co se týèe vzdálenosti,ale mít to ¹tìstí a nìjakou Es chytit je ji¾ vìc druhá. Tak¾e pokud k tomuopravdu dojde a nìjaká ta Es se skuteènì podaøí, tak se tì¹ím i na tomtokrásném pásmu s Vámi v¹emi z OK a OM nasly¹enou a ji¾ dnes slibuji, ¾emùj QSL Vám pøijde domù ihned a direct hihi.
+Jako snad první se ji¾ v roce 93 pou¹tído prvních pokusù na tomto pásmu Jean-Pierre F6FLV, který Libanon nav¹tìvovalv letních mìsících v rozmezí let 93 - 98. Pou¾íval znaèku OD5/F6FLV, pozdìjivysílal ji¾ radìji pod klubovou CALL OD5RAK. Podle v¹ech dostupných informacíse jednalo o opravdového VHF DX-mana. Sám jsem se s ním ji¾ bohu¾el nesetkala je mi to líto, nebo» materiály které zde o mo¾nostech VHF vysílání zpracovaljsou velice zajímavé a jím vybrané QTH/p které vytipoval jsou pro VHF provoztémìø ideální. Bohu¾el, jeho aktivity zde skonèili kolem roku 98 a o jehopovolení vysílat s prefixem OD5 jsem ji¾ sly¹el mnoho dohadù. Faktem jebohu¾el to, ¾e z nìkolika dùvodù o kterých snad ani nemá cenu psát ji¾z této zemì pravdìpodobnì aktivní nebude a nad jeho platností povolenízùstane asi vìèný otazník. Dal¹ím faktem je i to, ¾e v OD5 není bez speciálníhopovolení mo¾no vysílat z jiného QTH/p ne¾ z toho, je¾ je pøímo uvedenév licenci - co¾ J.P. jistì nemìl pro KM84.. Minimálnì v¹ak QSO, která udìlalpod klubovou CALL OD5RAK ( KM74 ) by mìla být platnými a pokud nìkdo takovýQSL skuteènì obdr¾el tak mi nezbývá ne¾ mu gratulovat hi.
+Kdy¾ mì Zdeno OK2ZW po¾ádal o pøíspìveko aktivitách na 50MHz z mého momentálního pùsobi¹tì v Libanonu pøemý¹leljsem, jak celé toto povídání pojmout. A jeliko¾ jsem nechtìl, aby to bylojen výètem QSO na tomto nádherném pásmu, vezmu to trochu ob¹írnìji a napí¹ii pár informací o celkové situaci na tomto na pásmu v Libanonu.
+Libanon je se svými 10.452 km2 zemívelice malou a pohled na mapu nám lehce napoví, ¾e se v nìm vyskytují pouze3 velké QRA - KM73, KM74 a KM84. První dva QRA jsou celkem dobøe dosa¾itelnédíky velkým mìstùm které se v nich nacházejí - v KM73 je to hlavní mìstoBejrút a v KM74 - druhé nejvìt¹í mìsto Tarabulus. S QRA KM84 je to ji¾podstatnì hor¹í a podle mých informací ¾ádný aktivní OD ham z tohoto QRAnevysílá. Vysíláno z nìj ji¾ ale v minulosti expediènì bylo, ale tím seji¾ dostávám do nedaleké historie.
+Následuje výpis zajímavìj¹ích Q
+To byl tedy pohled do historie magickéhopásma v této bývalé fénické zemi a pomalu se tím dostávám i do pøítomnostia k vlastnímu vysílaní z této krásné zemì. Své vùbec první QSO na 6 jsemudìlal je¹tì v roce 99, kdy jsem se pokou¹el udìlat jakékoliv QSO v IARUVHF závodì. Jeliko¾ ale za celý závod nebyl na 144 MHz jediný signál, vyrobiljsem si doslova na kolenì a z toho co bylo k dispozici nìco jako INV Va s touto smì¹nou anténou jsem udìlal nìkolik desítek QSO pod OD5RAK. Ji¾tehdy jsem se pevnì rozhodl, ¾e jakmile zde získám vlastní licenci musímbýt QRV i na tomto pásmu, nebo» i s takovouto anténou a QRP jsem tenkrátudìlal vùbec první QSO OD5- 5H a OD5- TL a mnoho dal¹ích .
+Tím se dostávám a¾ do roku 98, kdy sekoneènì objevují i první OD HAMs u nich¾ nemù¾e být o platnosti licencepochyb. Jsou to Rami OD5SB ( QRA KM74VJ ) a Samir OD5SX (KM74WK) z mìstaTarabulus. Jediný maják v OD - OD5SIX/B - je také jejich dílem - vysílána FQ 50.078 MHz výkonem cca 10W z prostor jinak spí¹e liduprázdného radioklubuOD5RAK ( QRA KM74WK ). Tøetím aktivním amatérem na 6m se stává od polovinyroku 99 i Jamil OD5PN, který pracuje z Bejrútu z QRA KM73SU a pou¾ívá ji¾100W + 4el Yagi.
+Tím v¹ak ji¾ konèí kompletní výèet v¹echkdykoliv aktivních OD5 na 50 MHz a aè se mù¾e zdát ¾e jich není mnoho,tak ohromné ¹tìstí je v tom, ¾e jak Rami OD5SB, tak OD5SX a tak i JamilOD5PN skuteènì posílají své QSL, co¾ zde není u nìkterých jiných hams vìca¾ tak samozøejmá... Sám znám v¹echny tøi jmenované osobnì a mohu potvrdit,¾e jejich QSL jsou skuteènì vìcí dosa¾itelnou.
+V roce 2000 se aktivita na 50 MHz opìtvylep¹uje - v rozmezí kvìtna a¾ èervna je zde aktivní kromì ji¾ zmínìnýchi OD5/JY4NE ( KM73, QSL po¾adoval via KB6NAN), Jamil OD5PN ( QSL via LX1NO)se zaèíná vìnovat v letní sezónì ¹estce naplno a myslím, ¾e vìt¹inì z Vásnebude tato call v 50MHz v logu chybìt pokud jste OD5 ji¾ udìlali.
+Zcela vyjímeènì se na bandu v tomtoroce objevili i Francis OD5PL, OD5QK a koneènì i poslední novou CALL jei YL OD5QS, která ale zaèala jezdit a¾ v posledních mìsících.
+Zrealizování tohoto pøání se mi povedlouskuteènit letos v záøí, kdy jsem si ze své dovolené pøivezl alespoò IC-706(100W) a 5 el Yagi. Bohu¾el letní sezóna ji¾ byla nenávratnì pryè, tak¾edenní otevøení se nekonala nejen ve støední EU, ale i tady v OD a nezbývalonic jiného ne¾ hlídat pásmo kdy se to opìt otevøe.
+                                                                                                            Vám pøeje
+   73/GL a mnoho krásnýchQSO v roce 2002
+ Magic band je opravdu snad tímnejnádhernìj¹ím pásmem jaké nám pøíroda a povolovací orgány nadìlily. Jenmáloco u¾ teï èlovìka doká¾e zvednout ze ¾idle více,  ne¾ nìkterésituace za¾ité právì na tomto pásmu -  nádherná otevøení na JA s desítkami pøekøikujících se jablek, nebo  situace kdy na pásmu hodinudává své CQ 5 rùzných KH6 v rozmezí 15 KHz,  èi kdy¾ èlovìk dìlá DonaKH8/N5OLS  èi JG3IFX via LP pøi QRB pøes 32.000km ..... Bìhem celéhoroku  jsem ale pracoval pouze s 27 rùznými OK a 19 OM stanicemi ,co¾ je  v porovnání s jinými evropskými zemìmi , kterých je na v¹echjiných KV a VKV pásmech mnohem ménì ne¾ stanic z OK/OM, témìø zanedbatelnéèíslo. Nejvíc se na tom podepsal zákaz tohoto nádherného pásma , kterýu nás trval mnoho let - teï u¾ se ale v¹e zmìnilo a i  zaøízení kterémají KV + 50Mz je na trhu ji¾ solidní výbìr. Pokud tedy nìkdo z Vás stále je¹tì váhá zda to na Magicu zkusit èi ne, tak neèekejte  ani minutu,pøed námi jsou ji¾ jen dva-tøi roky, kdy to bude je¹tì aspoò trochu choditne¾ se pásmo ulo¾í opìt k nìkolikaletému spánku. 50MHz je jedním z málapásem, kde i bez PA a velkých anténích systémù udìláte spoustu  nádhernýchDX QSO a bude o Vás i jako o prefix OK èi OM více ne¾ slu¹ný zájem, kterýna ¾ádném jiném pásmu  se 100W opravdu ji¾ neza¾ijete - neváhejtea  vyu¾ijte toho!
+ Na konci øíjna jsem se zastavilna nr 97 a pevnì vìøil, ¾e ta stovka by se do konce roku mohla povést.Teï, kdy¾ pí¹i tento pøehled (leden 02) u¾ je v¹e jasné a na to, co námnadìlilo pásmo 50MHz v tomto období asi jen tak  nikdo nezapomeneme.Hi, bohu¾el pro mne tentokrát musím podotknout, ¾e tato fantastická nadílkaQSO pøedev¹ím s USA a Karibikem byla urèena v drtivé míøe pro Vás v EUa  tady u nás na Blízkém východì na nás tentokrát témìø zapomìli - ale není v¾dycky posvícení - tak¾e teï pro zmìnu my závídíme Vám domaco  v¹e se  dá na pásmu pøi systematickém hlídání dìlat. Alevezmu postupnì :
+ Tím je rok 2001 definitivnì zanámi a je tudí¾ èas i na malé ohlédnutí a rekapitulaci - za 13 mìsícù èistéhoprovozu na 50MHz je v logu 3020 QSO, 484 QRA a 104 DXCC z nich¾ s cca 40 DXCC jsou to vùbec první QSO s Libanonem. Výbava je stále stejná - pouzeIC706 , 100W ( v OD neexistuje to na¹e èeské veselé omezení o max. výkonu 20W out  hihi ) a 5 el. na 6-ti metrovém sto¾árku s malým televiznímrotátorem ( díky pravidelným vichøicím jsem stálým odbìratelem tìchto rotátorkùèínské výroby - bìhem roku jsem ho mìnil tøikrát -  sto¾ár pouze dvakrát hi ).
+- perfektní mìsíc co do poètu QSO  525 QSO a dal¹í 2 new one
+-poètem pouhých 63 QSO mìsíc slabounký, ale poètem 5-ti new one vynikající :
+01/11 - hned první listopadový den pøedèilv¹echny mé sny a pøání - v rozmezí 40 minut dìlám Choseho KP4EIT z FK68SI - nr 98, 9Z4BM z FK90 - nr 99, KP2BH z FK77NR - nr 100 a jako poslednía asi i nejvìt¹í radost tohoto otevøení  pøichází na mé CW CQ slabouèkýPJ2MI z FK52 - nr 101.Pak je¹tì  volají WP4Q z FK78AJ a WP4G z FK68.Pùl hodina staèila na to, co jindy zabere mìsíc èi dva usilovného hlídánípásma. Stovka je doma !
+03/11 - 9G5AN jsou  na pásmu denco den a témìø nikdo u¾ je nevolá. Dnes jdou vyjímeènì silnì a bourají59+10Db. Motám se na pásmu a vyplácí se to - koneènì dìlám dlouho unikajícíhoTU2OJ z IJ76AF - nr 102. Listopad zaèal opravdu dobøe.
+06/12 -  mezi 08:30 -  10:20GMtsilné otevøení na sever G,GM,SM,OH a mezi mraky G volá  i MU0FAL zIN89RL - nr 103. Poslední QSO je s Janem LA5QFA z vùbec nejsevernìj¹íhoLA rare  QRA - JQ90 - celkem  150QSO. Pásmo se probouzí opìtk ¾ivotu  v 13:45GMt, kdy v rozmezí necelé hodiny dìlám 19 USA - prov¹echny z nich je OD nová DXCC a jsou nad¹ení - já také, jen ¹koda ¾e neprozlje¹tì i nìjaký ten VE hi.
+07/11 - Hned ráno jde nìco málo z východu - dìlám VR2XMT,VR2IL a VR2LC. Pak u¾ jen UN7GM z MN83KE (pou¾ívá IC756PRO,100W a cpe to do KV ant AR6, qsl via PA4PA) a UN7QX také z MN83KE (QSLvia W7BO). Jinak ale u¾ band zeje prázdnotou a otevøení rychle mizí. Veèerje¹tì dìlám 5N6NDP z mìsta Bali - JJ57LU - Pauolo má 100W vysílá do KV3-bandra a QSL po¾aduje via IK5JAN. Claudio ET3VSC se 100W a svými 5 el. dnes také hraje 599.
+07/12 - opakuje se ranní otevøení, alechodí to kapánek severnìji - 70 QSO mezi nimi¾ pøeva¾ují LA a SM.
+19/11 - Poslední zajímavìj¹í den v tomtomìsíci - v krátkém otevøení se daøí  6xUSA. Pro mì malý zázrak dìlatz OD  USA, pro Vás doma poslední dva mìsíce denodenní zále¾itost hi.Toje prostì Magic. Zbytek mìsíce na pásmu u¾ není ani noha.
+30/12 - tøi týdny na pásmu tady v ODnebylo do èeho píchnout (na rozdíl od EU, kde USA a Karibik lámou ve¹kerérekordy a chodí den co den) a a¾ dnes je tady opìt ranní otevøení. Tentokrátto chodí je¹tì severnìji ne¾ minule a ¹lape to super - pøicházejí kvanta LA,OH a ES, a  za necelé 3 hodiny je v logu pøes 220 QSO -super silné a hlavnì FB obsazené otevøení a aè nebyla ¾ádná new one, tak20 nových QRA taky potì¹í.
+31/12 - poslední den roku 2001 to opìtráno chodí, tentokrát na ji¾ní a støední G. Kromì GU6AJE volá i GJ0JSY- nr 104.
+     Po  slabounkémbøeznu a zcela totálním dubnu, kdy jsem za celý mìsíc udìlal v¹ehov¹udy pouhé 4 QSO jsem  netrpìlivì  èekal na zaèátek leto¹ní Es sezóny,proto¾e loòský kvìten a èerven byly co do poètu QSO jasnì nejlep¹í mìsícecelého roku a Eska chodila doslova dennì - za kvìten 01 bylo v logu 470 QSO a za èerven 01 dokonce 820 QSO. Teï, zaèátkem èervence, kdy pí¹itento pøehled jsou oba leto¹ní mìsíce ji¾ minulostí, a aè se kvantita akvalita Es otevøení nedá s minulým rokem srovnávat, tak i letos bylo párdní, kdy bylo na pásmu k udìlání pár zajímavých vìcí.
+     Závìrem - v èervnu jsem si alespoò zakulatil poèet  QSO na Magicu na rovných4000 QSO, 120 DXCC a 540 QRA a teï u¾ je pøede mnou pravdìpodobnì mùj vùbecposlední mìsíc, kdy pùjde  odtud z OD  je¹tì udìlat pár QSO viaEs i do støední EU, nebo» na svoji leto¹ní (a zcela jistì u¾ i poslední)dovolenou odlétam  27.7. a vracím se a¾ v polovinì záøí, kdy u¾ budeEskám odzvonìno..
+ Opìt se také v tìcho dvou mìsícíchpovedlo udìlat nìkolik nových OK/OM, tak¾e k dne¹ku mám v logu 43xOK a22xOM rùzných CALL (jejich kompletní seznam, plus dal¹í info  je nawww.qsl.net/ok1mu). Díky za v¹echna na¹e QSO a tì¹ím se opìt na pásmu nasly¹enouèi je¹tì lépe navidìnou doma v OK - tøeba právì v srpnu v Holicích.
+11/6 - na totálnì prázdném pásmu dávámCQ a smìruji vyjímeènì na YI, neb Peter YI9OM mì stále je¹tì chybí a mám jakýsi naivní vnitøní  dojem, ¾e by to právì v tenhle èas mohlomezi náma být otevøené  - po pár minutách mì volá o cca 600 Hz ní¾slabounký signálek ze slu¹nì øeèeno dost bídnou modulací, hi - klube sez nìho  4L6EZ z LN21LM  - NR 119. Tohle QSO mì dìlá velkou radost, nebo» pak mì ihned volá Nick 5B4FL (dlouholetý král Magicu v tìchtokonèinách - místní obdoba Petera PY5CC, hi), abych mu ho dohodil - kdy¾ho udìlá, tak má ohromnou radost i on, neb i pro nìj to je new one - jens tím \"malým\" rozdílem, ¾e u nìho se jedná o NR 181 hihi..
+12/5 - Kromì D2EB z JI73 vùbec nic..
+12/6 - Co nevy¹lo vèera, podaøilo sednes - na jinak zcela mrtvém bandu dìlám Petra YI9OM z LM23FH- NR 120 -na tomto QSO bylo  zvlá¹tní to, ¾e bìhem pár desítek sekund kolísaljeho signál mezi 59+20DB  a¾ do totální nuly - podobnì jsem byl prý u nìj i já. Takhle extremní a hlavnì periodiocké totální QSB jsem je¹tìsnad u ¾ádného QSO na Magicu neza¾il.
+21/5 - Vlastnì jediný den, kdy to tadyv OD  aspoò trochu v kvìtnu  hrálo - cca 50 QSO a kromì vìt¹inyQSO do ji¾ní EU i 7xSP vèetnì 2 new QRA. Na pásmu se zaèíná pravidelnìobjevovat OD5/IW0GXY - Max je pracovníkem UN a je QRV z KM73NC se 100W- má být v OD QRV cca do 07/02 a licenci prý má skuteènì i na papíøe CFM..
+29/6 - Po dal¹ích 17 dnech mrtva toaspoò trochu v závìru mìsíce opìt o¾ívá - cca 60 QSO, ale nic extra.
+5/5 - Vùbec první leto¹ní  Eska- YO/ER1BL z KN45 je první a zároveò i jedinou CALL, která je tento z ODdìlatelná - oproti loòsku pøichází první QSO via Es s 20-denním zpo¾dìním,co¾ nevì¹tí nic dobrého...
+5/6 - Po 14 dnech mrtva cca 60 QSO,ale kromì MU0FAL vùbec nic zajímavého.
+7/6 - 75 QSO a  zaèíná to celkemslu¹nì  chodit. Po roce a pùl vzájemného hlídání se nám koneènì daøíQSO s Chrisem A45XR z LL93EN - NR 117. Pak snad stojí za zmínku je¹tì celkemrare RA3YO z KO73DG....
+8/6 - nejlep¹í èervnový den - 180 QSO,hraje to s krátkými pøestávkami celý den a volá i Dim SV9COL z KM25NH -NR 118 (QSL chce only direkt..). Jeliko¾ to ¹lape opravdu dobøe, tak hlídámi 2m a vyplácí se to - v rozmezí 08.58 - 09.27 dìlám na 144.300 16 QSOvia Es - UA,UB,LZ,YO,YU - tahle dvojková Eska mì udìlala radost vùbec nejvìt¹í- ODX je YU7EW z KN05HP, QRB 2000 km, ale do støední EU to u¾ bohu¾el nevylezlo,SRI.
+9/6 - v rozmezí 07:20 - 10:00 to opìtjede a dal¹ích 150 QSO je v logu - kromì pár nových \"kostek\" ale opìt niczvlá¹tního..
+Kvìten byl prostì slabota a loòských470 QSO  oproti leto¹ním 95 letos mluví za v¹e.
+Magic band v Libanonu VIII - kvìten a èerven 2002
+Magicband v Libanonu VIII - kvìten a èerven 2002
+kvìten 2002 
+Èerven tedy nakonec pøeci jen nezklamal,i kdy¾ 90% v¹ech èervnových QSO bylo vlastnì bìhem pouhých 5-ti dní a zbytekmìsíce nebylo na pásmu témìø do èeho píchnout . Oproti loòským 820 QSOa hlavnì poètu pou¾itelných dní to ale bylo samozøejmì  mnohem slab¹ía radìji ani nedomý¹let, jak to bude vypadat na pásmu  pøí¹tí rok....
+èerven 2002
+Jmenuji se Svatoslav Bednáø. Narodil jsem se 23.2.1978 v Praze. Bydlím v malévesnici, která le¾í na okraji Prahy. Jmenuje se Horomìøice. Vystudoval jsem Støedníprùmyslovou ¹kolu elektrotechnickou v Praze. Momentálnì nav¹tìvuji ètvrtý roèníkÈeské zemìdìlské univerzity v Praze obor Automatizaèní a øídící technika..
+Koncesi vlastním od roku 1997. K radioamateøinì jsem se dostal pøes bastlení vkrou¾ku mladých elektronikù kde jako mùj vedoucí byl Martin OK1FZM. Pak u¾ to semnou ¹lo z kopce následovali Mirek OK1MJS, Jindra OK1AGA, Va¹ek OK1POY, Honza OK1FNJ adal¹í. Jsem èlenem radioklubu OK1KKG. Mezi mé koníèky patøí kromì amatérskéhorádia i poèítaèe, jízda na kole a spousta dal¹ích vìcí.
+Pøi Z© Sdru¾ení vedu krou¾ek radioelektroniky. Dìti se uèí pájet, principysouèástek a kde si mohou postavit \"skoro\" ka¾dou konstrukci. Na poslech na KVpou¾íváme vojenský pøijímaè R-4 a jako anténu LW.
+info o mnì
+100 - ÈS
+Diplomy ÈR :
+Leti¹tì ÈR
+Na této stránce Vás seznámíms podmínkami nìkterých diplomù
+ Setkání OK1ORA na Panorámì v Teplicích  r. 1998
+Radioamatérská svatba!!
+Setkání OK1ORA na Panorámì v Teplicích  r
+ Evropské zrcadlo 
+. Pan Dolomieu dal návrh, aby novì objevený minerál, který tvoøí horninu pøevá¾né èásti tétooblasti dostal název \"saussurit\". K na¹emu ¹tìstí pan Saussure pøedstavil nerost vìdecké obci podlibozvuènìj¹ím názvem - dolomit.
+Bledé hory
+Dolomity jsou pro svou krásu a jedineènost rok co rok znovu objevovány stovkami turistù více,
+Hlavní strana
+Je zajímavé, ¾e pøed více ne¾ sto lety byste název Dolomity na kartografických mapách tì¾kohledali. Horská oblast, kterou pod tímto názvem známe dnes, døíve nesla oznaèení Ji¾ní vápencové Alpy( Ji¾ní Tyrolské Alpy ). Za své pùvabné jméno vdìèí panu Déodatovi Guy Sylvain Trancré de Gratet deDolomieu ( 1750 - 1801 ), který v osmdesátých letech 18. století putoval touto skalní krajinou. V létìroku 1789 - tehdy devìtatøicetiletý francouzský pøírodní badatel a alpinista, posbíral nìkolik úlomkù bílévápencové horniny. Pozdìji pøi domácím zkoumání horniny zjistil, ¾e tento vápenec pøi styku s kyselinousolnou témìø nezpìnil, co¾ se doposud stávalo u jinak bì¾nì známého vápence. A proto¾e byl pan Dolomieugeologem amatérem rozjel se do ®enevy za profesorem a odborníkem v oblasti mineralogie a petrografie,panem Nicolasem Theodorem Saussurem, jeho¾ po¾ádal o pomoc. Tento syn neménì slavného otce, uèence aprvního pøemo¾itele Mont Blancu, provedl rozbor a zjistil, ¾e hornina nemá stavbu doposud známého vápence- CaMg (CO
+Na závìr dlu¾ím vysvìtlení proè právì \"
+Název Dolomity vznikl a dostal se do povìdomí lidí a¾ roku l864, kdy dva angliètí gentlemani pan Gilberta Curchil vydali knihu \"The Dolomieus Mountains\".
+Pohoøí má v¹ak mnohem pestøej¹í a pohnutìj¹í minulost. Na mnohých místech se setkáváme se stopami podávných bojích. Zbytky kasáren a pøístøe¹kù, zpola zasypané zákopy, poboøené støílny - v¹e je¹tì nestaèilzahladit èas. Nejtì¾¹í dobu, v miliony let staré existenci tìchto hor, pøedstavují pouhé tøi roky války vletech 1915 - 1917. Stovky zmaøených ¾ivotù. Utrpení a zbyteènì prolitá krev. To je bilance první svìtovéválky, její¾ snad nejkrutìj¹í èást se odehrála na frontì v Dolomitech. Paradoxnì právì toto místo, jednoz nejkrásnìj¹ích na svìtì, které by beze studu mohlo nosit pøízvisko \"ráj na zemi\", nás stále upomíná nanesmyslnost války, kdy¾ procházíme kolem bìlostných ¹títu tìchto hor. 
+Za vznik tohoto pøekrásného koutu svìta vdìèíme miliardám drobných moøských ¾ivoèichù, jejich¾tìlesné schránky se po vìky ukládaly na dno dávného Téthyského moøe. Pøed miliony let bylo totomoøské dno vlivem pùsobení geologických sil vyzdvi¾eno nad hladinu a o jeho dal¹í vzhled sepostaralo slunce, vítr, voda a mráz.®ádné jiné pohoøí se nevyznaèuje takovou smìlostí ve stavbì vrcholù. Nikde jinde nelze spatøittak nepøeberné mno¾ství vì¾í, jehel a cimbuøí.Neobvyklou podívanou propùjèuje krajinì východ a západ slunce, kdy se na bìlostných ¹títechhor odrá¾í paprsky slunce a barví je do rù¾ova.
+\". Staré povìsti praví jak za záøných nocí trpaslíci zmìsíèního svìtla pøedou a tkají pro hory svìtlý tøpytivý závoj...
+ne¾ kterékoliv jiné hory v Evropì. Dolomity jsou nejvìt¹ím rájem zaji¹tìných cest v Alpách
+s hustou a propracovanou sítí Via ferrat.
+ Evropské zrcadlo 
+Dolomity - horské skupiny
+Dolomity byly v minulosti dìji¹tìm nesmyslné pozièní války, kde kromì dobytí nìkterých kót nepøinesly boje ani jedné ze stran podstatný zisk území. Celkový poèet mrtvých a tì¾ce ranìných byl pøitom obrovský. Po skonèení války zbyla jen zpusto¹ená krajina, zbrázdìná zákopy, pøetvoøená výbuchy granátù a min. Hory se z tìchto násilných èinù vzpamatovávali celá desetiletí. Síla pøírody a pracovitost lidí postupem èasu pøekryla témìø v¹echny stopy váleèného bìsnìní. Ve skalách se, ale s pozùstatky války mù¾eme setkat dodnes.
+Dolomity dìlíme na západní a èást východní - kam øadíme horské masivy le¾ící východnì od linie vymezené od severu údolími Gadertal, Abteital, Valle di St. Cassiano a Cordevole.Nejvýznamnìj¹ím údolním støediskem nejen východní èásti, ale prakticky celých Dolomit je Cortina d´Ampezzo. Toto dùle¾ité turistické centrum je výchozím bodem pro øadu pøekrásných túr a zaji¹tìných cest.
+Dolomity, patøí mezi jedineènou horskou krajinu, le¾ící na prùseèíku tøech zemí, které pøedstavují naprosto odli¹ná národnostní spoleèenstva - germánské, románské a slovanské.Severní hranici Dolomit tvoøí údolí Rienza, Pustertal a horní tok øeky Drávy. Západní hranici tvoøí toky Eisack a Adige, východní øeky Sextenbach a Piava. Vymezení ji¾ní hranice není pøesné. První varianta pøedstavuje údolí Fleimstal, Travignolo a Colbricon po sedlo Rolle a dále od Fiera di Primiero pøes Agordo po Belluno. Druhá, urèuje hranici od Trenta pøes Fersenbach a údolí Brenty a¾ po ústí øeky Cismone a dále podle tohoto toku po Primiero a odtud opìt pøes Agordo po Belluno.Rozmìry takovéto oblasti èiní vzdu¹nou èarou pøibli¾nì 60 km od severu k jihu a 75 km od západu na východ. Bylo napoèítáno kolem sedmi set \"samostatných skalnatých hor\" s více ne¾ tisícem horolezeckých cest, z nich¾ osmdesát pøedstavuje \"opravdové\" zaji¹tìné cesty. Po tìchto \"Via ferratách\" stoupá ka¾doroènì k vrcholùm více lidí, ne¾ na v¹ech horolezeckých cestách dohromady.
+Hlavní strana
+Horské skupiny
+ Evropské zrcadlo 
+, která Vám má otervøít dveøe dokoøán.
+Aneb zaji¹tìné cesty nabízí zá¾itky, které si lze v takto extrémním terénu vychutnat - ne vytrpìt. 
+Hlavní strana
+Jednou z nejvyhledávanìj¹ích forem pohybu v horských terénech dnes je vysokohorská turistika spojená svýkonnostním lezením po zaji¹tìných cestách.Skuteèností, ¾e se toto sportovní odvìtví stalo èasem velmi oblíbeným je i to, ¾e plní sny tìm pro nì¾je \"opravdové\" extrémní horolezectví z nejrùznìj¹ích pøíèin zapovìzeno.Zaji¹tìné cesty nabízí srovnatelné pocity a vrcholové zá¾itky jaké mívají skuteèní extrémní horolezcis tím rozdílem, ¾e jsou dosa¾eny s ni¾¹í mírou technické nároènosti a minimem rizika. 
+Vysokohorské zaji¹tìné cesty
+V¹echno co je zde uvedeno pøedstavuje jen nepatrný zlomek toho, co bychom mìli znát chceme - li se plnì vìnovat tomutokrásnému sportu. Proto uvádím nìkolik titulù z 
+ ) patøí po masivu Mont Blancu k nejvýznamnìj¹í skupinì Alp ve Francii. Nachází se zde ètyøtisícovka Barre des Ecrins 4 102 m a mnoho dal¹ích vrcholù pøesahuje hranici 3 800 m . Alpy Dauphine lze rozdìlit na centrální oblast Ecrins ( Parc National des Ecrins 9 170 ha ) a ji¾ní oblast s nejvy¹¹ím vrcholem Pic du Bonvoisin 3 560 m. Ji¾ní èást nemá v¹ak tak vysokohorský charakter a nenacházejí se zde ¾ádné ledovce. Turisticky je pohoøí dobøe zpøístupnìno.
+ Dauphineské Alpy ( 2 400 km
+ Evropské zrcadlo 
+ Geologicky jsou Francouzské Alpy velmi pestré. Mají slo¾itou pøíkrovovou stavbu se starými krystalickými jádry ( køída, rula, a pod. ), na nì¾ byly nahrnuty mnohem mlad¹í sedimenty pøedev¹ím vápence. Rozdílnost geologické stavby a znaèné klimatické rozdíly vedly k bohaté rozmanitosti. Vedle sebe stojí vysoké zalednìné hory, jedineèné skalní hroty, rozeklané høebeny i idylická údolí. Znaèné jsou i podnební rozdíly mezi i velmi blízko le¾ícím územím. Zatímco ve Vysokých Alpách (Hautes Alpes) le¾í snìhová pokrývka nìkdy a¾ do èervna v nedaleké Provence nesnì¾í vùbec.
+ \"u pramenù øeky Romanche\"
+( Francouzské Alpy, Prùvodce po evropských horách , Ivo Petrnakl. Mirago Ostrava 1999, str.26 )
+Francouzské Alpy
+Francouzské Alpy str.13, 21
+Hlavní strana
+Je sobota ráno a my se nacházíme asi 40 km od hranic s Itálií v Národním parku Ecrins. Parkujeme v opu¹tìném kempu 3 km od obce Villar d' Aréne v údolí øeky Romanche. Nedaøí se nám sehnat mapu. Zdá se, ¾e s prvním zazvonìním ¹kolního zvonku zde vymøel v¹echen ¾ivot. Dveøe turistické informaèní kanceláøe jsou zamèené a nám nezbývá ne¾ se spoléhat pouze na na¹eho èeského prùvodce, který jak jsme záhy zjistili celou trasu barvitì a dokonale popisuje. Proplétáme se francouzskou stezkou \"Buï fit\", které by víc slu¹el název \"stezka odvahy\". Na konci jsme odmìnìni pohledem na dolní okraj údolí a dal¹í spoøe obsazené parkovi¹tì. Putujeme pøi bøehu stále proti proudu øeky. Pod nohama nám køupe hornina, její¾ jméno neznáme - je to jako kdybyste chodili po podzimní zahradì plné spadaného suchého listí - snad Grafit. Cestièka je sevøena èernými svahy grafitu, z nich¾ musí i sebemen¹í dé¹» nemilosrdnì ukrajovat. Míjíme kaskádovitý vodopád Romanche. Èerò vystøídala ¹eï ¾uly a pøed námi se rozprostírají vysokohorské louky, okupované a¾ k chatì Alpe de Villar d' Aréne nekoneènými stády ovcí. Jsme ve vý¹ce 2 077 m a kromì paní domácí a jejích dvou malých holèièek zeje chata prázdnotou. Dovídáme se, ¾e v¹echny vý¹e polo¾ené horské chaty jsou ji¾ uzavøeny a skoro aprílové poèasí na dobré náladì taky nepøidá. Pøesto jsme se rozhodli pokraèovat dál. Odmìnou je nám pohled na majestátní Le Grande Ruine ( 3 765 m ) její¾ vrchol je zahalen v mracích. Na jejím úpatí se øíèka dìlí do nìkolika ramen dravých potokù, které se proplétají dnem údolí, aby se pod chatou Le Alpe opìt spojily. Poèasí se stává pøátel¹tìj¹ím a my pøicházíme na louku zalitou sluncem, sevøenou ze v¹ech stran hradbou skal s bílými èepièkami na vrcholcích. Z pod umnì navr¹eného mu¾íka vytéká jeden z nìkolika pramenù Romanche.
+Jedná se o nenároènou túru po pohodlných chodnících, vedoucích po vysokohorských loukách bez velkého pøevý¹ení.
+Pravidlo è.1. : Nikdy se nepou¹tím k ledovým vrcholùm bez patøièné výzbroje a umu!
+Romanche je významným tokem Dauphineských Alp, po 60 km se vlévá u mìsta Vizille do øeky Drac.
+Teprve na zpáteèní cestì v pozdních odpoledních hodinách míjíme houstnoucí zástupy domorodcù. V¹ichni dobøe naladìni v \"plné polní\" míøí co nejvý¹e, odpoèinout si a naèerpat energii pro pøí¹tí pracovní týden. Na silnicích potkáváme vyfe¹ákované cyklisty, vozidla obtì¾kaná jednou èi více lodìmi, v údolích hrají v¹ichni domorodci petang.
+èas pøechodu: 5 hod
+ Dlouhý, pøedlouhý èas vládlo v Dolomitech podivuhodné království Fanes, které nemá obdoby do dne¹ních dnù. Království vyniklo díky odvaze a èinùm Dolasilly ... 
+ Dobrotivý Laurino byl králem trpaslíkù a na vysoké hoøe mìl zahradu s rù¾emi. Rù¾ová zahrada nebyla obehnána kamenou zdí, ale ochraòovala ji pøed vetøelci kouzelná hedvábná ni» ... 
+ Evropské zrcadlo 
+ Na úpatí Sassolunga se kdysi dávno nacházel zámek obývaný princeznou nevídané krásy. Kromì toho, ¾e byla nesmírnì pùvabná, mìla dívka výjimeènou schopnost. Kdykoliv se jí zachtìlo, mohla se promìnit ve slavíka ... 
+ Nesmírnì pochmurný je høbet Sciliaru. Na vrchol vysokého Petze se èas od èasu slétávaly èarodìjnice, aby pøivolaly silné bouøe a chladné, de¹tivé poèasí, které je¹tì více ztrpèovalo ji¾ tak nelehké bytí zdej¹ích lidí ... 
+ V prastaré øí¹i Dolomitù zpívají ptáci tuto báj. O zemi hlubokých lesù, prùzraèných jezerech a lukách posetých pestrobarevnými kvìty ... 
+Bledé hory
+Hlavní strana
+Pohádky
+Rù¾ová zahrada krále Laurina
+Slavík ze Sassolunga
+Èarodìjnice ze Sciliaru
+ Evropské zrcadlo 
+Hlavní strana
+ Evropské zrcadlo 
+(Topoljski slap, viz. prùvodce Slovinské a Chorvaské hory, Ivo Petr, 2000, è. 41)
+. Prvním zdrojem øeky Krky je øíèka Krèiè, pramenící pod západnímisvahy vrcholu Dinara nedaleko hranic s Bosnou a Hercegovinou. Dinara nále¾í krasovému masivu Dinara a svými1 830 metry nadmoøské vý¹ky patøí mezi nejvy¹¹í horu Chorvatska. Výchozím bodem pro náv¹tìvu pramenù Krkyje mìsto s bohatou minulostí Knin. V 16. století bylo mìsto tureckou pevností, ale sídlili zde i chorvat¹tíkrálové. Jestli¾e v Kninu odboèíme smìrem na obec Kovaèiè mù¾eme nav¹tívit 22 m vysoký vodopád Topoljski slap.Vzhledem k bojùm, které zde v minulosti probìhli, do¹lo k zaminování celé oblasti. I dnes stále hrozí velkénebezpeèí ze setkání s ná¹lapnými minami. Proto bychom jsme se mìli radìji informovat na aktuální situaci udomorodcù a z tìchto dùvodù nelze doporuèit ani výstup na vrchol Dinary.
+Bilu¹iæa buk 22,4 m
+Budeme-li pokraèovat dále po proudu øeky, pod Brljanským jezerem v podstatì zaèíná celá kaskáda na Krce. Prvním vodopádem je 16 m vysoký Bilu¹uè buk. Na horním toku øeky narazíme na turistu jen výjmeènì, zatímco populární Skradinské vodopády nav¹tìvují roènì statisíce lidí. Po sedmdesáti dvou kilometrech se øeka vléva u mìsta ©ibenik do Jadranského moøe. Nejvýznamìj¹í pamìtihodností mìsta je katedrála sv. Jakuba, která se stavìla témìø 130 let. Staré mìsto si zachovalo svùj kolorit s úzkými kamenými ulièkami. Nejhezèí pohled na ©ibenik je z okolních tvrzí: sv. Anny, ©ubièevaku a sv. Jana.Krasová øeka Krka se svými sedmi krápníkovými pøehradami patøí mezi nejkrásnìj¹í vodní toky Chorvatska.
+Hlavní strana
+Kaskády na Krce
+Manojlovaèki slapovi- øada vodopádù vý¹ky 59,6 m s hlavním schodem 32 m
+Národní park Krka je jedním ze sedmi národních parkù Chorvatska. Nachází se v oblasti ©ibensko-kninského¾upanství a zahrnuje povrch 111km
+Park lze obejít po vodì, silnici èi pì¹ky. Lodí mù¾eme nav¹tívit a prohlédnout si Skradinsky buk ze Skradinu. Ostrov Visovac a Ro¹ky slap z pøístavi¹tì nad Skradinským bukem.Na ¾ádost turistù jsou poøádány i výlety k ústí øeky Èikoly. Motorovými vozidly lze park objet po veøejných cestách znaèených na mapì, kromì výluènì pì¹ích pásem Skradinského buku, Visovce a klá¹tera Krka, kde je náv¹tìva mo¾ná jen v organizaci národního parku lodí èi autokarem.
+Ro¹ki slap 25,5 m - 12 vodopádù pøekonávájících vý¹kový rozdíl 27 m 
+Ro¹njak 8,4 m
+Skradinsky buk - 17 schodù celkové vý¹ky 45,7 m 
+V okolí øeky nacházíme stopy dávného osídlení. Nejstar¹í prehistorické nálezy svìdèí o osídlování této lokality ji¾ v dobì paleolitu. Na pravém bøehu øeky Krky, na linii mìsta Skradin po Skradinsky buk se nacházejí zbytky antického vodovodu øímské Scardony. V oblasti parku se nacházejí i zbytky nìkolika støedovìkých starochorvatských trzí ze 14. století: Tro¹enj-Grad, Neèven-Grad, Bogoèin-Grad a Kljuèica, jen¾ svou velikostí a zachovalostí patøí k nejvýznamnìj¹ím objektùm v Chorvatsku. Mezi sakrálními stavbami je nejhodnotnìj¹í franti¹kánký kostel a klá¹ter na ostrùvku Visovac, jako¾ i pravoslavný klá¹ter Krka (sv. Archandìl). Na vodopádech Ro¹ki slap a Skradinsky buk se zachovaly nesèetné mlýny a valchovny.
+Ve vodì usazený vápenec vytváøí krápníkové prahy, závìsy a dal¹í geomorfologické tvary, které èiní z této øeky ojedinìlý ekosystém. Pøehrady jsou biodynamickými útvary, kde dochází k neustálé pøemìnì a tvorbì krápníkù, tzv. ¾ivé krápníky.V oblasi národního parku se nachází na 860 rostlinných druhù, odrùd a irylsko-jaderských endemitù. ®ivoèi¹ná øí¹e je zastoupena 18 druhy ryb z nich¾ je 10 endemitù. Rákosi¹tì, moèálovité louky a jezírka oplývají oboj¾ivelníky a ptáky. Hou¹tiny a kamenné skalky pak plazy. Hojnost druhù (222) a spoleèenstev ptactva øadí Krku mezi nejvýznamnìj¹í ornitologické oblasti Evropy pro období jarního a zimního stìhování. Nejzajímavìj¹í je Ro¹ki slap se svojí vegetací kaòonu a Skradinsky buk, který nabízí mo¾nost pozorování rostlinných a ¾ivoèi¹ných druhù krápnílových pøehrad.
+Vstupné: 45kn ( info VII/2001 )
+Webové stránky: 
+Æoriæa buk, Brljan 15,5 m
+ Evropské zrcadlo 
+. Do Velké Paklenice vstupujeme z pøímoøského mìsteèka Stari Grad - Paklenica. Ukazatelé pøi silnici nás navedou k prvnímu z parkovi¹t´a pokladnì, kde na po¾ádání obdr¾íme informaèní leták s ponìkud nepøehlednou mapkou okolí. Vstupné èiní 30 kn za osobu (sleva pro horolezce 50 kn za osobu za pìtidenní pobyt). Není-li zaplnìno, u¹etøíme se dvou kilometrové chùze a po asfaltové silnici dojedeme k druhému parkovi¹ti. Zde kromì pohledù a suvenýrù mù¾eme zakoupit i podrobnìj¹í mapy oblasti (35 - 40 kn) a horolezecké prùvodce (85 - 90 kn). Odtud vede kaòonem 10 km dlouhá dobøe upravená stezka podél stejnojmenné bystøiny, její¾ koryto v létì spolu s prameny vysychá. Strmé vápencové stìny svírají dno kaòonu v místì zvaném Klanac do nìkalika metrové ¹tìrbiny. Toto místo, neju¾¹í ve Velké Paklenici, je sevøeno 700 m vysokými stìnami skal, které jsou vyhledávaným cílem horolezcù (obtí¾nost dosahuje a¾ X+ stupnì UIAA). Poté stezka v serpentinách pokraèuje pozvolna vzhùru, soubì¾nì s potokem Paklenica, který má-li vodu uchvacuje kaskádovitými vodopády. V místì zvaném Serpentýny se nám nabízí pohled na jeden z monumentù Velké Paklenice skalní stìnu Aniæev kuk (714 m). Kaòon se poté v prostoru Anièèiny louky (Aniæeva luka) roz¹iøuje do táhlého údolí okle¹tìného vrcholky vápencových skal. Z informaèní tabule mù¾eme vyèíst historii dobývání \"Anièky\". Tak jak se s postupem èasu vyvýjely nové a modernìj¹í horolezecké pomùcky, pøekonávali rùzné mezinárodní expedice stále tì¾¹í úseky tohoto nároèného skalního terénu.Po nìkolika metrech mù¾eme z cesty odboèit vpravo a vyvstoupat cestièkou vlnící se pod mohutnou stìnou na vrchol Aniæa kuk. Stezka je z èásti skryta ve stínu bujné vegetace. Poslední vý¹kové metry vy¾adují trochu balancu na osrých skalnatých výbì¾cích. Více jak sedmiset metrový vrchol nabízí ji¾ním smìrem nádherné panoramatické pohledy na moøe s nesouvyslými pásy pevniny a náznaky Kornatských ostrovù. Ze severu pak zelení porostlými vrcholky Velebitu. 
+Chceme-li si u¾ít ticha, ranního \"chládku\" a vychutnat zpìv ptactva, pøivstat si se urèitì vyplatí ( otevøeno 7.00 - 19.00 hod.).
+Hlavní strana
+Horský masiv Velebit vytváøí pøirozenou hranici mezi vnitrozemskou a pøímoøskou èástí Chorvatské republiky. Rozprostírá se do délky 145 km. Jeho nejvy¹¹í vrcholy pøesahují 1 700 metrù nadmoøské vý¹ky a nacházejí se pøímo v oblasti Národního parku Paklenica. Nejvýznamnìj¹í èástí parku jsou kaòony Velká a Malá Paklenica. Území, které je chránìno ji¾ od roku 1949, vyniká nedotèenou divokou pøírodou, starými bukovými lesy a z geologického hlediska pak nejrozmanitìj¹ími krasovými jevy. Celé pohoøí Velebitu je tvoøeno pøevá¾nì vápencem a dolomitem. Výzkum v horní èásti národního parku prokázal existenci deseti kilimetrového ledovce, který vedl od nejvy¹¹ího vrcholu Velebitu - Vaganského vrchu (1758 m) pøes Ribnická vrata do Velikého záøí (Velike Rujno). NP je bohatý na rozmanité druhy rostlin a ¾ivoèichù, které se jinde ve svìtì nevyskytují. ®ije zde na 200 druhù ptactva, pøi tro¹e ¹tìstí mù¾eme spatøit i ohro¾eného supa bìlohlavého. Národní park se rozprostírá na plo¹e 36 km
+Mirile jsou stará obøadní místa, která slou¾ila jako vzpomínka na mrtvého. S jednou z nich se mù¾eme setkat nedaleko odboèky na Jurline (smìr Malá Paklenice).
+Po západním svahu kaòonu stoupá stezka vzhùru k Manite peè. Jeskynì o délce 175 m má dvì velké sínì s krápníkovou výzdobou. Po zakoupení vstupného mù¾eme obdivovat a¾ 20 m vysoké stalaktity a stalagnity. Cesta dále pokraèuje vìncem skal na vyhlídkový bod Vidakov kuk (843 m) a do vzdáleného skalního labyrintu Bojinac. My se ale vrátíme zpìt na dno údolí a pokraèujeme smìrem na Lugarnici. Cestou, do hodinu vzdálené osady Parici s horskou chatou Borisov planinarsky dom, míjíme staré mlýny. Z horské chaty vede bezpoèet turistických stezek do nejtajnìj¹ích koutù národního parku. Na Èerný vrch (Crni vrh) odkud je vidìt celé pohoøí Velebitu, k napajedlùm divoké zvìøe - Velkým a Malým moèidlùm (Veliko, Malo moèilo), nebo k jeskyni Jama Vodarica.
+Pokud se vydáme mimo hlavní trasy ( Manita peè, Borisov dom), vìt¹inou nenarazíme na ¾iváèka.
+Pøechod z Velké do Malé Paklenice je èasovì nároènìj¹í. Za znaèením Aniæeva luka je odboèka vpravo na Jurline. Stezka stoupá v nesèetných serpentinách strmì vzhùru po východním svahu kaòonu, témìø a¾ k osadì Jurline. Odtud pokraèuje pøes náhorní plató k místu zvanému Sv. Jakov, kde sestupuje do Malé Paklenice.
+V minulosti byla tato oblast hustì osídlena, o èem¾ svìdèí zpustlé kamenné stavby a zarostlá políèka. Zpøístupnìn je starý mlýn, nacházející se nedaleko od vstupu do NP a rovnì¾ náhorní plo¹ina skrývá zbytky nìkolika stavení ( Jurline ). 
+Vstup do kaòonu Malá Paklenica je z mìsteèka Seline, nacházejícího se asi 3 km od Stari Gradu. Neplatí se ¾ádné vstupné, nemají tu informaèní støedisko, za to zde nalezneme nefal¹ovanou divoèinu. Dno kaòonu je bez cesty, zavaleno obrovskými balvany, mezi kterými lze projít jen velmi namáhavì. Pomyslná stezka èásteènì prochází dnem koryta vyschlého potoka. V období vydatnìj¹ich de¹»ù, by jme se proto nemìli do Malé Paklenice vydávat. Kaòon sice pokraèuje dál, ale je zarostlý neprostupnou vegetací. Podle èasových a fyzických mo¾ností se buïto vrátíme po stejné cestì zpìt nebo vystoupáme k sv. Jakovu a pøejdeme do kaòonu Velké Paklenice.
+Vyhledávané horolezecké terény : oblast Klanac, spoøeji pak Aniæa kuk.
+Webové stránky: 
+Znaèení cest je velmi úsporné. Vìt¹inou jen vytýèení smìru a vydupaná stezka, ze které lze v nìkterých místech velmi lehce sejít.
+Zpìt (dno kaòonu) se mù¾eme vrátit sestupem po \"výstupové\" cestì nebo pokraèujeme dále po zarostlém náhorním plató. Sporé znaèení je nutné dobøe sledovat. V nìkterých místech lze snadno sejít z cesty. Úmorné vedro nás nesmí odradit od obutí pevné obuvi, co¾ oceníme zejména rozhodneme-li se pro turistiku mimo hlavní trasy tj.Manita Peè, Borisov Dom. V tìchto pøímoøských oblastech nesmíme zapomínat na výskyt jedovatých plazù.
+ Evropské zrcadlo 
+) zabírají zalesnìné kopce, jen¾ obklopují vodní systém. Nejvìt¹ími jezery jsou Kozjak (81,5 ha) a Pro¹æansko jezero (68 ha), pøièem¾ první uvedené patøí svými 46 m mezi nejhlub¹í. Nejvy¹¹í vodopád dosahuje 78 m a je skokem øíèky Plitvice do kaòonu pod nejni¾¹ím jezírkem Novakovica Brod (502 m. n. m.). Tato øíèka dala název celému parku navzdory tomu, ¾e hlavní jezerní systém napájí vody Matice a Rjeèice. Postupným splynutím tìchto tøí øíèek pokraèuje tok dále jako øeka Korana. 
+A nakonec se pøimlouvám za to, ¾e i kdy¾ se èlovìk øadí mezi kultivované bytosti, prosím chovejme se tak, aby to po nás nevypadalo jako kdy¾ se pøe¾ene stádo slonù.
+Cenové relace vstupného a otvírací doba se mìní v závislosti na roèním období, pøesnìj¹í informace lze nalézt na 
+Hlavní strana
+Jezerní systém není star¹í ne¾ 8 000 let. Narùstání travertinových hrází je velmi dinamické, tak¾e na¹i dìdové si pamatují Plitvická jezera v ponìkud jiné podobì.Veøejnost dnes nemá pøístup do celého parku, mù¾e si v¹ak prohlédnout témìø v¹echna jezera, podél nich¾ jsou vybudovány døevìné chodníèky s rùznì èasovì nároènými okruhy (3-4 h, 5-6 h). Dobøe projít lze celou dolní èást jezerního systému a horní a¾ po hráz Pe¹æanského jezera (A,B). Obì èásti mají zvlá¹tní vstupy. Za projí¾ïku lodí po jezeøe Kozjak a za pou¾ití elektrického vláèku, který spojuje horní a dolní èást je nutné zaplatit. Znepøístupnìním vybraných lokalit je snaha konzervovat tak specifický ekosystém. Zdej¹í lesní porost patøí k nejzachovalej¹ím svého druhu v Evropì. Park je domovem velkých ¹elem - medvìdù, vlkù, rysù. Stejnì hojná je i vysoká a èerná zvìø. Jezera jsou bohatá na ryby, zejména pstruhy. Stopy po bojích, které touto oblastí v minulosti pro¹ly jsou u¾ témìø zahlazeny, ikdy¾ ve vesnicích se lze je¹tì setkat s pøipomínkami na dobu kdy soused nenávidìl souseda.
+Nacionalni park Plitvièka jezera
+Národní park Plitvická jezera je bezesporu nejznámìj¹ím pøírodním fenoménem chorvatského vnitrozemí. Do na¹eho povìdomí se dostal i díky slavné sérii filmù o Vinetuovi - náèelníkovi Apaèù, kdy poslou¾il jako exterier pro natáèení. 
+Otvírací doba: 7,00 - 20,00 hod
+Plitvická jezera jsou souèástí Dinarského krasu. Nacházejí se na polovièní vzdálenosti ze Zagrebu do Zadaru nedaleko hranic s republikou Bosna a Hercegovina. Zdej¹í krajina je pomìrnì èlenitá, i kdy¾ nemá vyslovenì horský charakter. Nejvy¹¹í bod Seli¹ki vrh dosahuje 1 280 m nadmoøské vý¹ky. Pøevá¾nou èást rozlohy parku (295 km
+Pokud se vydáte za slunným pobøe¾ím Jadranu, rozhodnì doporuèuji si vyèlenit alespoò den na návstìvu nìkterého z míst. Krásy tìchto lokalit jistì vynahradí i tu trochu vìt¹í díru v penì¾ence za nemalé vstupné. V sezónì se musíte pøipravit na to, ¾e nejste jedinými kdo chce spatøit tyto konèiny a ozbrojit se trochou trpìlivosti. Jste-li milci samoty a nesná¹íte pøíli¹ná vedra snad se vám více po¹tìstí pøivstanete-li si.
+V horninách, tvoøících podlo¾í chránìného území, pøevládají sedimenty s pøeva¾ujícím podílem uhlièitanu vápenatého. V horní èásti systému a¾ po jezero Kozjak je to pøedev¹ím dolomit. Spodní èást parku budují èisté vápence, v nich¾ mohla øíèka snadno vyhloubit kaòon.
+Vstupné: 80 kn, ( loï 10 kn ) ( info VII/2001 )
+Vznik jezerního systému v¹ak umo¾nila jiná karbonátová hornina - travertin. Voda obsahující uhlièitan vápenatý, rozpu¹tìný z okolních hornin, protéká pøes rostliny, které rostou v místech kde je nejvìt¹í okyslièování. Na jejich koøíncích se uhlièitan vápenatý srá¾í a vytváøí krustu, je¾ je základem travertinových blokù. Ty smìrem vzhùru neustále narùstají a¾ zahradí øeèi¹tì tak dokonale, ¾e vznikne jezero, z nìho¾ pak voda odtéká pøepadem pøes travertinovou hranu. 
+ , tvoøeno mìsty starým Monakem, novým Monte Carlem a ètvrtìmi La Condamine a Foutrielle.
+ Evropské zrcadlo 
+ je obklopeno ze dvou tøetin Francií a z jedné tøetiny jeho bøehy omývá Støedozemní moøe. Odroku 1949 kní¾ectví vládne Ranier III. ( * 1923 ). Ji¾ celá desetiletí se objevuje kní¾ecí rodina na pøedníchstránkách èasopisù, ale od smrti knì¾ny Grace ( rozené Grace Kelly z Holywoodu ) roku 1982, se média soustøedilana nepøíli¹ vydaøená man¾elství jejích dvou dcer Caroline a Stephanie.
+A co øíká prùvodce o noclezích? Levné ubytování v Monaku neexistuje!
+Bodování: akvária*****,	sály***
+Cathédrale de Monaco
+Dal¹í botanické zahrady: Jardin St - Martin ( kvìtena Afriky ), Jardin Japonais
+Dramatickou podívanou na lidi vìdomì riskující své peníze nabízí velkolepé, vyumìlkované kasíno v Monte Carlu, které bylo postaveno mezi lety 1878 - 1910. Náv¹tìva heren je pro vysoké vstupné témìø nemo¾ná ( 50 - 120 Fr ). Vstupovat mohou jen lidé star¹í 21 let. Je zakázáno mít na sobì i v obyèejném salonu krátké kalhoty. V privátních salonech mu¾i musí nosit vázanku a sako. Výhry se zdaòují 4,3 %.
+Exkurse lodí
+Fontvieille, prùmyslová zóna ji¾nì od Monaco Ville 
+Francouzské mìsto Beausoleil je tøi ulice na kopci nad Monte Carlem.
+Hlavní strana
+Jako¾to \"suchozemce\" mne naprosto uchvátilo barevné divadlo, které mi pøedvedli, pro mne naprostoneznámí moø¹tí tvorové. ©koda jen, ¾e ve¹keré fotky z akvárií se podobají shluku mazancù. V tìchto prostorách senesmí pou¾ívat blesk, a tak pokud u¾ se rozhodnete pro náv¹tìvu muzea, vlo¾ite investice i do nákupucitlivìj¹ího filmu. Urèitì se to vyplatí.
+Kombinované lístky ( 40/20 Fr ) platí i pro vstup do Museé des Souvenirs Napoléoniens, muzea vìnovanéhoNapoleonovì dobì a jeho osobním úspìchùm. Situovaném v ji¾ním køídle paláce.
+Kouzelnì krásné Monte Carlo je proslavené svými kasíny od roku 1911. Je ka¾doroèním hostitelem závodù Formule1 - Grand Prix o Velkou cenu Monaka, které sleduje celý svìt. Závodní tra» se klikatí ulicemi mìsta a pøístavu.
+La Condamine, bytová zóna jihozápadnì od pøístavu 
+Larvotto, plá¾e východnì od Monte Carla 
+Malièké kní¾ectví Monacké je pod nadvládou rodiny Grimaldù od roku 1297. Je suverénním státem, jeho¾ území orozloze 1,97 km
+Monacká mìstská hromadná doprava má 6 linek. Linka è. 2 jezdí po trase: Monaco Ville - Monte Carlo a vrací se zpìt k Jardin Exotique.Linka è. 4 jezdí po trase: vlakové nádra¾í ( turistická informaèníkanceláø ) - Casino - ètvr» Larvotto.Autobusy jezdí a¾ do 21.00 hod. Jízdenka stojí 8,50 Fr, lze zakoupit i jednodenní turistický prùkaz za 21 Fr.
+Monaco - Menton ( 12 Fr/ á 10 min. )
+Monaco - první mìsto na Italské pùdì, Ventimiglia/Vintimille ( 19 Fr/ á 25 min. )
+Monaco Ville, známé také jako Staré Monaco a the Rocher de Monaco. Na 60 m vysokém skalním ostrohu, na ji¾ní stranì monackého pøístavu stojí kní¾ecí palác tzv. Palais du Prince. 
+Monaco, Monacké kní¾ectví ( La principanté d Monaco) je druhým nejmen¹ím státem svìta.
+Monako je tvoøeno 5 hlavními èástmi:
+Monte Carlo, herny a kasína, Grand Prix 
+Museé Océanographique
+Museé d´Antropologie
+Nejbli¾¹¹í plá¾e: Plage de Monte Carlo,	Plages du Larvotto, východnì od Monte Carla.
+Náv¹tìva Antropologického muzea zahrnuje i pùlhodinovou prohlídku jeskynì Grottes de l´Observatoire s ukázkou stalaktitù a stalagmitù.
+Obèanù Monaka ( zvaných Monégasques ) je pouhých 5 000 a s \"pøistìhovalci\" èiní celková populace 30 000 lidièek.O monacké obèanství je zøejmì velký zájem, nebo» mzdy se zde nedaní! Tradièním dialektem Monaèanù je Monégasque,co¾ je míchanice francouz¹tiny s ital¹tinou, ale úøedním jazykem je francouz¹tina. Je zakázáno chodit po mìstì ajeho okolí bosý, s obna¾enou hrudí èi nedej bo¾e v bikinách. Pokud se rozhodnete pro piknik ve zdej¹íchupravených parèících, budete ihned nemilosrdnì vykázáni. Národním svátkem je 19. listopad. 
+Otevírací doba: 9.00 - 19. 00 hod. ( o prázdninách do 20.00 )
+Otevírací doba: 9.30 - 18.20 hod.
+Otevírací doba: od poloviny záøí do pùli kvìtna 9.00 - 18.00 hod., po zbytek roku do 19.00 hod.
+PS: Ti co oèekávají nìco velkolepého, mìli by si radìji vy¹etøit volný den na náv¹tìvu na¹eho Národního muzea.Rybièky vynahradí jakýkoliv pocit promarnìného èasu.
+Pravidelnì ka¾dý den za pìt minut dvanáct ( tz. 11. 55 am ) probíhá na námìstíèku pøed kní¾ecím palácem výmìnastrá¾í. Pouze od èervna do øíjna mù¾ete nav¹tívit státní pokoje paláce. Pùlhodinová prohlídka je v Angliètinì. 
+Rozprostírá se na plo¹e necelých 2 km
+U¾ jste to koneènì doèetli..?
+V Monaku je na patnáct lanových drah, vedoucích na vrcholky zdej¹ích kopcù. V¹echny jsou vyznaèeny na informaèním plánku mìsta a vìt¹ina jich funguje ètyøiadvacet hodin dennì.
+V Oceánografickém muzeu na nás èekají nádr¾e plné nejroztodivnìj¹ích moøských potvùrek s dokonalým trojjazyènýmvýkladem. O patro vý¹ ve dvou obrovských sálech se mù¾eme seznámit s historií velrybolovu a vybavením takovýchto polárních výprav z poèátku \"ji¾\" minulého století. Druhá místnost nám nabídne v¹echy produkty Støedozemníhomoøe upravené ve formaldehydu.
+Velkolepá románsko- byzantská stavba z roku 1875 v sobì ukrývá tìlesné ostatky èlenù kní¾ecí rodiny od roku 1885. Hrobka knì¾ny Grace je v¾dy zasypána èerstvými kvìty jejích pøíznivcù.
+Velký problém pøedstavuje parkování. Ve¹keré parkovací plochy jsou placené a pøehlednì zakreslené na turistickém prospektu, av¹ak ne v¾dy se vám podaøí je ve zmìti ulic najít. Pokud nemáte plánek mìsta a zaèínáte propadat panice, zorientujte se na ukazatel Oceánografického muzea, v jeho¾ blízkosti se nachází kromì obrovských placenýh podzemních gará¾í i informaèníkanceláø.Co se týká volného parkování na ulicích, smiøte se stím, ¾e tak mohou parkovat pouze hoteloví hosté a rodilí Monaèané. Pokud si ráno pøivstanete snad budete úspì¹ní nìkde na periferii mìsta. Jestli - ¾e si chcete v klidu vychutnat krásy a pozoruhodnosti tohoto místa ani¾ byste mìli stále pøed oèima ruèièku parkovacích hodin, zapøemý¹lejte zdali by nestálo zato vypravit se do Monaka vlakem z nìjakého poblí¾ se nacházejícího místa.
+Vlaky pøijí¾dìjící a odjí¾dìjící z Monaka jsou vlastnictvím francouzských drah ( SNCF ). ®eleznièní stanice sídlí na Ave Prince Pierre, je otevøena od 9.30 - 12.00 a 14.30 - 18.30 hod. Na nádra¾í je kromì turistické informaèní kanceláøe i automatická úschovna zavazadel ( 20 Fr /72 hod ), která je pøístupná nepøetr¾itì.Pou¾ijete - li pro svoji pøepravu vlaku, poskytne vám nádherné pohledy na zdej¹í kopcovité pobøe¾í a Støedozemní moøe.
+Vody Monaka lze prozkoumat v tzv. glass - bottomeru. Padesát pìt minut této legrace stojí 70/ 50 Fr.
+Vstupné: 60 Fr dospìlí , 30 Fr dìti a studenti ( event. dal¹í mìna )
+Vstupné:> 30/ 25 Fr
+Zahrada, která vlastní pøes 7000 kusù kaktusù a sukulentù z celého svìta.
+Èekám na Va¹e reakce!
+ ...postihl mne osud, který nemilosrdnì pronásleduje, zøejmì v¹echny pøítelkynì a man¾elky radioamatérù. Zaèalo to vyváøkou a odvozem krmì nìkam na kopec, stavìním antén a budováním hamshacku, morální podporou. V¹e vyvrcholilo udìlením èestné koncese LP 1997. 
+ Evropské zrcadlo 
+ Jako¾to velmi vzácná stanice odmìòuji ka¾dého opová¾livce za provedené spojení diplomem 
+Hlavní strana
+Vysokohorské zaji¹tìné cesty
+Zlaté husy..
+ Evropské zrcadlo 
+Hlavní strana
+Jméno:
+Kniha náv¹tìvníkù
+Mìsto:
+Stát/Provincie:
+Webová stránka:
+Zobraz knihu náv¹tìvníkù
+ <!************ poèítadlo QSL net ************ > 
+POÈASÍ
+Zalo¾eno 2.2.2000
+ZÁVODY
+Anténa stanice byla otoèena na jih, pozdìji byla pøesmìrována na východ. Linka na nìkterý z uzlù PR sítì byla sice v plánu, ale  nebyla nikdy  realizována. V této sestavì  pod znaèkou   OK1KWD-6  bì¾ela mnoho mìsícù k plné spokojenosti.  Pozdìji byla demontována...
+Instalaci nové stanice provázelo pøíhodné poèasí. Na parkovi¹iti a zárovìò dolní stanici nákladní lanovky na Mile¹ovku bylo celkem pøíjemnì, od pùlky kopce se ale zaèalo rapidnì mìnit.    Pøede¹lé mlhy a mráz dokázali spoleènì vyèarovat pravé zimní království. Na observatoøi, èi pøesnìji øeèeno na terase, kde mìla být stanice umístìna byla slu¹ná vrstva námrazy.
+Na obrázku uprostøed stojí Dietter DD3FS, vlevo jeho syn, vpravo Dan OK1DIG, do lanovky nakládá Vláïa OK1DGR.
+Nápad zøídit WX stanici pøipojenou do sítì PR vzikl v dobì, kdy  jsem se touto problematikou  zabýval na profesionální úrovni. Ve spolupráci s ÚFA ( Ústav  fyziky atmosféry ) jsme nainstalovali  v  observatoøi na Mile¹ovce PR zaøízení ( TNC2, TRX VR20 v úpravì pro 2m, ant.   4el. KRC) a PC s programem SP (pro mì zatím nepøekonaný Eskay Packet).  Na této stanici je  trvalá obsluha a data z manuálního odeètu na stávajících pøístrojích zapisovala do souboru, který byl poté prostøednictvím SP odesílán do sítì PR.  Metoda to byla velmi primitivní, ale první krùèky byly vykonány. 
+Pøi instalaci samotné WX stanice jsme slu¹nì vymrzli. Ale pohled na scenérii omrzlé vì¾e observatoøe a ledové království okolo v¹e vynahradil. Nyní ji¾ se dalo hovoøit o \"pravé\"  WX stanici.   Byly k dispozici data z mìøení teploty a vlhkosti vzduchu, rychlosti vìtru, smìru vìtru a intenzita srá¾ek srá¾ek. Tyto data byly pøedávány po lince RS232 do systému MFS ( Multi funkèní systém pro PR ) a jeho prostøednictvím prezentována do sítì PR.
+Stanice je v provozu nepravidelnì pod znaèkou OK1UND-6 a je dostupná na 70cm user portu OK0NCK. Jak dovolí podmínky v QRL a v domácnosti, budu pokraèovat na jejím vylep¹ování.....
+Stávající WX stanice je umístìna u mne doma. Èidla jsou na støe¹e patrové bytovky, anténa tamté¾... Jde o jiný typ stanice - Ultimeter 800. Je to stanice stejné kategorie jako Davis Monitor,  pro spojení s dal¹ími zaøízeními nepotøebuje ale specializovaný  interface,   port  RS232 je  pøímo  na  stanicici.  Zpracování dat   opìt  obstarává \"starý dobrý SP\".  SW pro ètení dat ze stanice  a jejich zobrazení jsem vytvoøil  vlastními  silami.   Vyvolává  se jako RUN modul.
+WX stanice pro sí» PR
+Èasem projevil ÚFA zájem o instalaci automatické meteorologické stanice pro observatoø. Volba padla na typ Davis Monitor a SW MFS. Do jisté míry to bylo proto, ¾e Dietter, DD3FS nabídl své zku¹enosti  pøi instalaci takovéto PR WX stanice (sám doma takovou stanici provozuje). WX stanice byla nainstalována   podle  pokynù  pracovníkù ÚFA, aby se její údaje daly porovnat s údaji ze stávajících pøístrojù na observatoøi.
+Aktuální znìní zákonù
+Danì CZ - v¹e o daních
+Elektro - ostatní
+Geodézie ÈS a.s.
+Hledání
+Horolezectví
+INVESTIÈNÍ A PO©TOVNÍ BANKA, a.s.
+Internet OnLine - Telefonní seznam ÈR all
+Meteorologická informaèní stránka
+Meteorologisches Institut der Freien Universität Berlin
+Ministerstvo financí Èeské republiky
+ON-LINE Mapy Geodézie ÈS a.s.
+Obchodní rejstøík
+Ostatní odkazy
+Paegas - Kvalitnìj¹í komunikace
+Sport.cz - nejvíce sportù na jednom místì
+Státní správa
+U¾iteèné odkazy a linky
+Zákony a právní normy
+www.crack.ru - ïîèñê ðåôåðàòîâ, êðÿêîâ, ìóçûêè, MP3, RealAudio
+ÈTK - Èeské noviny
+   Tyto stránky  jsou ve výstavbì a doufám, ¾e se èasemdostanou do podoby, jakou si pøedstavuji.Pøípadné návrhy na vylep¹ení stránek uvítám a dìkuji za pochopení.
+   Vá¾ení náv¹tìvníci
+ <!************ Poslední úpravy ************ >
+ Stránka je ve výstavbì !! 
+49° 57' 37'' N,  14° 19' 01'' E
+<!************ Ve výstavbì ************ > 
+OK1VEI - vítejte na mé domácí stránce.
+Pavel Junek, P.O.Box 12, 252 28 Èerno¹ice
+Poslední úpravy:  5. 6. 2002
+Vítejte na stránce
+Andrlùv chlum
+Babí lom
+Chlum u Hradce Králové
+Háj u ©umperka
+Hýlaèka
+Libníkovice
+Praha - Petøín
+Praha - ®i¾kovská vì¾
+Pøehled rozhleden, které jsem doposud nav¹tívil v rámci diplomu 
+Rozálka
+Suchý vrch
+Zpìt na domovskou stránku
+\"Rozhledny Èeské republiky\"
+Jaroslav Høebík, Pod Horkou 211, 252 28 Èerno¹ice
+Software je velice jednoduchý, zatím bez výpoètu azimutu - to snad vdal¹í verzi
+Zde naleznete software pro výpoèet vzdálenosti mezi dvìma lokátory prozaøízení PDA
+s operaèním systémem WinCE 2.11, ale je odzkou¹en i na PocketPC s dobrýmivýsledky
+           I.subregionální závod 1999
+           II.subregionální závod 1999    
+           Mikrovlný závod 2000
+           Polní den 2000
+I.subregionální závod 2000
+II.subregionální závod 2000
+Obrázky z na¹eho závodního QTH
+Polní den 1997
+Polní den 1999
+Detail paty antény.Èervený køí¾ z trubek dr¾í na ètyøechpneumatikách zalitých betonem.
+Jedná se o místnost tìsnì pod strojovnou výtahu, tak¾e vlastnì nastøe¹e 13-ti podla¾ního paneláku v Orlové  JN99FU.
+Na dal¹í fotce vidíte Romana OK2UKG u svých antén na 2m a70cm.Koaxy jsou vyvedeny i do vysílací místnosti na støe¹e.Anténa na 70cm jenamontována provizornì tìsnì pøed II.subregionálem, nyní je a¾ na ¹picisto¾áru.
+Na fotce je pohled ze støechy.Takhle vidí i na¹e parabola. Pokudkliknete na foto, to se zvìt¹í a uvidíte v pozadí panorama Beskyd, kterému vévodíLysá hora. Pøes tuto hradbu se dostáváme na OE a HG velmi ¹patnì, Hi.
+OK2FUG a OK2UKG u za¾ízení pro 70, 23 a 13cm bìhemII.subregionálu.Zkuste se podívat na výsledkovou listinu, nechceme se chlubit, Hi.
+Smontovaná parabola na svém místì.Za anténou je strojovnavýtahu.Na¹tìstí v tomto zastínìném smìru nejsou ¾ádné stanice.
+Takhle vypadá rozlo¾ená parabola na díly, pøipravené k montá¾i.
+Zde pøiná¹ím pár obrázkù z na¹eho závodního QTH.
+Závodní QTH Orlová
+®ánrový snímeèek, který se nám myslím povedl.To, co tak svítínení slunce, ale mìsíc.Foceno v noci a bez stativu.
+Obrázky z Polního dne 1999 opìt na JavorovémJN99HO 1032 m.n.m
+Poradce ze Saudské Arábie ( OK2FUG ).Bylo horko, ale ochrana pøed¾havým sluncem byla dùle¾itìj¹í, Hi.
+Pøíprava a zkou¹ka zaøízení na 10GHz. Za stolem Eda OK2BPR a RomanOK2UKG, v pozadí Ivan OK2BHK.
+©plhající Roman OK2UKG.
+Zde jsou ulo¾eny jako obrázky GIF:        
+Zde jsou v¹echny tøi strany zpracovány do souboru 
+Èlánek byl uveøejnìn v èasopise PEaR 6/99 na tøech stranách.
+  , rovnì¾  mù¾ete pøes Packet Radio 
+Kde budu mít radost s ka¾dým navázaným  spojením , popøípadì pou¾ijete 
+OK2JPE Èeská stránka 
+QTH  Velké Heraltice ( okres Opava ),
+Vysílám na tìchto  pásmech:
+Vítám Vás na své stránce radioamatéra 
+Zpìt na úvodní stranu
+    Druhé QTH mám\"na chalupì\" u Znojma. Zde pou¾ívám
+ ( 1,8-30MHz 100W CW/SSB/AM/FM ) s antenním tunerem AT-50
+ a pakhlavnì na vinohradské \"kolektivce\" 
+ je dlouholetým aktivním fandou radiovéhoorientaèního bìhu jako závodník èeské reprezentace i jako trenér. K výètu radiem \"posti¾ených\" èlenù mé rodinypatøí i synovec Honza 
+ propadlradioamatérskému hobby. 
+ v oboru letecké navigaèní techniky ateï si zvykám na ¾ivot dùchodce. Není to nic moc, ale beru to jako údìlrentiéra, který ráno místo odchodu do zamìstnání má mo¾nost se v klidua pohodì tøeba podívat, jak \"tlusté\" signály dnes pøicházejí 
+. Tuto znaèku jsempou¾íval a¾ do roku 1994.
+.Její man¾el Jirka 
+Jmenuji se Pavel Borovièka a moje QTH je Brno (JN89he).Narodil jsem se v roce 1940 v Praze, kde jsem také nìkdy v roce 1955 v radioklubuprùmyslové ¹koly elektrotechnické  
+Moje ¾ena Vìra se vysílající radioamatérkounikdy nestala, k získání oprávnìní SWL 
+Mùj ham - shack je vybavený i\"stìhovavým\" zaøízením pro èinnost z druhého QTH u Znojma:
+Od záøí 1963 do èervna 2001 jsempracoval na mezinárodním 
+Pro fungování na amatérských pásmech mám vBrnì jen skromné antenní vybavení, dané tím, ¾e bydlím v soukromém èin¾ovnímdomì (jeho¾ nejsem majitelem):
+Pro vedení deníku pou¾ívámLOG-EQF
+Pìt let poèínaje rokem 1958 jsem pro¾il na 
+Vítej na mém webu!
+a  star¹í dcera Iva je obèas sly¹et na 2m jako 
+a dramatickéstìhování 
+antenu FD4 prov¹echna KV pásma, Yagi 10 el. pro 144MHz advoupásmový VHF/UHF vertikál UV-200.  
+jsem ji v mládí více ménì pøemluvil.Ale patøí jí dík za to, ¾e mnì a tomuto hobby fandí. Mlad¹í dcera Pavlínaje 
+leti¹ti Brno-Tuøany
+multipásmový dipol G5RV - pro KV od 3,5 do 30 MHz (s transmatchem TM535)
+ocelového antenního sto¾áru pro KV smìrovky mám od bøezna 1999 památku pøímo vevlastní tìlesné schránce - ètyøi decimetrové ¹rouby  a nìjakévýztuhy v páteøi. Kvalitní titanový materiál mi zpevòuje rozdrcenýbederní obratel a umo¾òuje témìø pùvodní pohyblivost po úrazu, kterývypadal hrozivì a skonèil zázraènì dobøe díky ¹ikovným rukám chirurgav brnìnské úrazovce.
+tøebaz Pacifiku. To mù¾e být nìkdy dokonce o nìco zajímavìj¹í ne¾pøípadný pøesun v de¹ti a mlze do práce. Nakonec - stejnì se stím nic podstatného dìlat nedá, ¾ivot jde dál (a zapla» pánbu, ¾e poøádje¹tì jde a ne¹matlá ... ).
+v Brnì.  Týden po své svatbì, 1.8.1962,  jsem se koneènì doèkalvytou¾ené vlastní koncese 
+ve státním podniku 
+vertikální antena UV200 pro VKV pásma 144 a 435 MHz
+Øízeníletového provozu ÈR
+ popsána chyba zapojení oscilátoru!
+. Více v rubrice 
+Jako programovací software se nejlépe osvìdèil PROG08SZ of firmy P&E Microcomputer Systems (
+Jsi náv¹tìvník è. 
+Nová verze software (1.2) pro meteosondu
+Nová verze software (1.3) pro displej
+Nìkolik poznámek k programování obvodù 68HC908:
+Procesory se programují pomocí jednoduchého sériového interfejsu (MON08), jeho¾ zapojení ke ka¾dému procesoru je v¾dy v pøíslu¹né dokumentaci (viz kapitola Monitor ROM (MON)) Kompletní informace jsou k nalezení na oficiálních stránkách fy Motorola (
+Pøidán 
+Pøidán software BootLoader - firmware pro upgrade meteo software po sériové lince
+Software pro modul hlasového výstupu (MC68HC908KX8)
+Tato stránka je hlavní rozcestník pro downloadsoftware pro meteostanici a v¹echny ostatní komponenty systému.
+software pro modul hlasového výstupu
+Zajímá vás Packet Radio? Pak kliknìte zde!
+Nyní jsem 
+Modul \"kecafonu\" zjednodu¹uje volání výzvyobzvlá¹» v závodech. Jeho zapojení pøímo do R2CW eliminuje problémy s VF zpìtnouvazbou do modulaèní cesty a násleným rozkmitáním. Modulaèní signál je zavedenpøímo do modulátoru DSB a obchází interní kompresor (regulaèní smyèka v obvoduISD zaruèuje v¾dy konstantní støední úroveò modulace). Do modulu DSB se pøidápouze tantal 10M a kousek koaxu, který se vyvede na volné piny modulu. Na základnídesce R2CW se pøidá relé (viz obr.) dvì SMD diody 1N4148 a pøepojí se NF signálovácesta. Kecafon obsahuje i rozhraní RS485 pro pøipojení k PC a ovládání (PMU log)
+Nìkolik pohledù na upravený R2CW.
+Popis je mo¾né prohlí¾et pomocí verze Acrobat Reader 3.0 avy¹¹í. Pokud jej nemáte, stáhnìte si :
+Popis kecafonu, schema, pøedlohy pl. spoje. - cca 400kB - PDF 
+Program - autodetekce typu ISD a EEPROM pozdìji
+Program - osazení ISD14xx + 93C46
+Program - osazení ISD14xx + 93C66
+Schema úprav základní desky R2CW
+Schema úpravy DSB modulu
+Soubory ke sta¾ení:
+Upravený R2CW
+Vlastní modul kecafonu plnì nahrazuje pùvodní NFZ.
+Úprava horního víka
+Úprava zapojení modulu NFZ
+ (16x84). Pøedpokládaný termín dokonèení verze 6 -
+ ). Procesor není souèástí stavebnice. Pokud sinìkdo nemù¾e nechat naprogramovat procesor obra»te se na mne 
+ Bohu¾el z èasových dùvodù jsem nemohl tento termín dodr¾et.Pokud máte zájem o novou verzi, sledujte aktualizaci této stránky. 
+ CPU je tøebaprogramovat do módu \"RC\", \"Power up timer = ON\" (jen 16F84),pøípadnì \"Code protect = ON\". 
+ Po pøedchozí domluvìzde lze stavebnici vyzvednout osobnì ve firmì Sarcom sídlící v domì kultury Vsetín.
+ Vzhledem k tomu, ¾e se jedná o výprodej,je mo¾né, ¾e vyøízení bude trvat cca 2-3 týdny - poznámka dodavetele 
+ Zájemci o stavebnici,obracejte se prosím na firmu Auris 
+100,- Kè
+400,- Kè
+70,- Kè
+80,- Kè
+HEX kód pro PIC16C56 verze 5 telegraf. klíèe
+HEX kód pro PIC16F84 verze 5 telegraf. klíèe
+Manuál k telegrafnímu klíèi SW verze 5 - èeská verze
+Nová verzenevy¾aduje ¾ádné úpravy plo¹ného spoje a bude pøipravena ji¾ pouze pro procesorPIC16F84
+Schema telegraf. klíèe
+Telegrafní klíè s pamìtí EEPROM
+Tento telegrafní klíè byl popsán v ElektroInzertu 4/96 a ARA5/96 a jeho výrobu zaji¹»ovala bývalá firma Onkel, nyní Auris.
+V souèasné dobì je dokonèena verze s PIC16F84, kteránahrazuje stávající PIC16C56. Výhodou je mo¾nost snadného upgrade na vy¹¹í verzipouhým pøeprogramováním procesoru (u PIC16C56 byla nutná výmìna kus za kus).
+V souèasné dobì pøipravuji novou verzi 6 programovéhovybavení, která bude obsahovat navíc funkci inkrementace èísla spojení, vylep¹eníèasování módu P (èasování mezery pøi opakování pamìti 1 a 5) - odstranìnízávislosti délky mezery na rychlosti klíèování, dále pøesun systémových dat dopamìti CPU a tím zvìt¹ení prostoru pro pamìti, autodetekci typu externí pamìtiEEPROM - bude mo¾né osadit typy 93LC66, 93LC76 nebo 93LC86. 
+Vzhledem k tomu se na mne obèas obrací zájemci o stavbu èiopravu, rozhodl jsem se poskytnout podklady k verzi s PIC16C56. Verze 5 s PIC16F84 jeelektricky shodná a lze jen jednodu¹e vymìnit procesor.
+cena stavebnicevèetnì po¹tovného a balného je 500,- Kè.
+doprodáno
+jen krabièka s potiskem
+jen plo¹ný spoj
+po¹tovné a balné(dobírka)
+Kliknutím na obrázek zobrazíte pùvodní velikost
+Mlha jako obvykle a navíc i námraza.
+Nìkolik obrázkù z provozníchaktivù 12/1999 a 1/2000
+Pavel OK2PKX na pomocném pracovi¹ti        (v tuto chvíli jako druhý \"rotátor\").
+Pøed vyta¾ením magirusu je nutné \"vykopat\" zapadlé kotevní lanka. 
+Zbynìk 
+Zleva - Pavel OK2PMU vysílající a Zbynìk 
+otøepává antény
+zapisující spojení.
+* Vaclavik, R., OK2XDX: Einfach aufzubauende Anlage für Wettersatellitenempfang(1), FUNKAMATEUR 48 (1999) H. 9, S. 1114 (translated and edited by Dr.-Ing.Werner Hegewald, DL2RD)
+* Vaclavik, Radek,OK2XDX: Un systeme simple pour recevoir meteosat (1),MEGAHERTZ MAGAZINE No 200 NOV. 1999 (pages 30 - 35),  (2), MEGAHERTZMAGAZINE No 200 DEC. 1999 (pages 32- 34), (Traduit de l´ anglais par F3TA)
+Jsi náv¹tìvník èíslo 
+   87.5 - 108MHz nebo jednoduchý  
+ (externí odkaz)
+ (vý¹ka,otáèky, napìtí, proud, teplota, ...). Právì probíhá testování. Pìknì otom napsal hlavní testovací pilot na své 
+ - malý a jednoduchýpager pro pásmo CB - ispirace pro konstruktéry
+ - rozli¹ení1 metr, pamì» na 8mi hodinový výlet, barometr a teplomìr
+ - rùzná zapojenímìnièù, stabilizátorù s nízkých úbytkem a nízkopøíkonových operaèních zesilovaèù
+ - výpis programu a soubory pro programátor pamìtí(ZIP, 10kB).
+ ... a dal¹í zajímavosti 
+ Digitální vý¹komìr
+ FM vysílaè
+ Jednoduché makrov MS Excel usnadòující návrh nabíjeèky s MC33341
+ Vý¹komìr pro modeláøe 
+ do výkonu7W s diodami PIN pro pøestavìné mobilní telefony
+ ovládacího SW pro TRX Conrad
+ z posledního ly¾aøskéhovýletu
+(tento typ TRXù byl zakoupen ÈRK na podporu sítì PR)
+* SW pro pøestavbu Nokia MD59 je volnì k dispozici v sekci Packet Radio.Popis pøestavby je na 
+* Vaclavik, R, OK2XDX, Lajsner, P, OK2UCX: Packet Radio od A a¾ do Z.
+* Vaclavik, R., OK2XDX: Einfach aufzubauende Anlage für Wettersatellitenempfang(1), FUNKAMATEUR 48 (1999) H. 9, S. 1114 (translated and edited by Dr.-Ing.Werner Hegewald, DL2RD)
+* Vaclavik, Radek,OK2XDX: Un systeme simple pour recevoir meteosat (1),MEGAHERTZ MAGAZINE No 200 NOV. 1999 (pages 30 - 35),  (2), MEGAHERTZMAGAZINE No 200 DEC. 1999 (pages 32- 34), (Traduit de l´ anglais par F3TA)
+* modeláøi jásejte, první komerènìvyrábìný vý¹komìr je na svìtì. Zkuste 
+* nìco málo o 
+, PDF 800kB, nìmecky
+- jednoduchá a inteligentní rychlonabíjeèka akumulátorù NiCd a NiMH.
+-velmi pøesný a citlivý digitální barometr.
+.Galerie letù, fotografie, dokumetnace.....
+.Stavebnice nìkterých zaøízení si mù¾ete zakoupit u firmy 
+1.èervence 2002
+10kanálù
+1kanál
+Anténní pøepínaè
+BENtechnická literatura
+Co s tu¾kovou baterií
+Digitální barometr 
+Digitální vý¹komìr
+Jednoduchá meteostanice
+Jednoduchý systém pro pøíjem z Meteosatu
+Jsi náv¹tìvník èíslo 
+Konvertory pro pøíjem stacionárníchmeteosatelitù
+MiniTRX©erák
+Máte-li nìjaké dotazy èi pøipomínky, pi¹te!
+Nejoblíbenìj¹í konstrukce na této stránce
+Nìco mám k dispozici já, zkuste poslat 
+Originální návod na stavbu23cm LinkTRX1 podle DF9IC
+Originální návod na stavbu23cm/19200/Fullduplex LinkTRX3 podle DF9IC
+Ostatní
+Poslední zmìna 5/7/2002
+Poèasí
+PøestavbuNMT telefonu Nokia MD59
+Pøijímaè meteosatelitù(PEAR 3,4/1997)
+RC modeláøi
+RCmodeláøi
+Ruèní radiostanice 70cm
+Rychle rychlonabíjeèka 
+Rychlonabíjeèkaakumulátorù
+SW pro pøestavbu Nokie MD59 (viz. http://www.qsl.net/ok0ns). Verze 
+Schéma 23cm PA pro LinkTRX 3
+Star¹í èlánky
+Star¹íèlánky
+Ukázka z prvních testovacích letù 
+VKV generátor
+V¹e pro pøíjem meteosatelitù 
+Více o provozu 
+Vítej na stránce Radka, 
+Základní popis systémumeteostalitù (PEAR 2/1997)
+\"Digitální\" barometr
+a jejich uplatnìní o Vánocích
+elektroluminiscenèních fóliích
+miniauturní záznamník dat
+najdetejiném místì QSL.NETu
+pro mìøení základních meteorologických velièin - tlaku, teploty, vlhkosti,vìtru a srá¾ek. Snadno pøipojitelná do systému Packet Radio i do PC.
+ruèní radiostanici na 430-440MHz
+stránce
+výpis programua soubory pro programátor
+za ménì ne¾ 2000Kè. Zabere Vám to asi 2 hodiny práce a kmitoèty si mù¾etekdykoliv pøeprogramovat z poèítaèe PC! Výstupní výkon a¾ 400mW. POZOR,na stránce je hodnì obrázkù a tak se dlouho stahuje. 
+záznam vý¹komìru
+Øidící jednotka pro VKVpøijímaè (PEAR 9/1995)
+Stránky OM3CUG v slovenèine
+ Home QTH : ©tefánikova 264/34, 029 01 Námestovo, SLOVAKIA, tel ++ (421) 846 5523 865
+I am 27 yers old. I am radioham, from my 13 years, but now I don´t have RIG and canadian licence.
+ Ak máte technické problémy s pou¾ívaním na¹ej stránky spojte sa s 
+ Akostné ukazovatele
+Ak máte otázky alebo poznámky, spojte sa s nami pomocou 
+Bod vzplanutia v otvorenom tégliku, 
+Karbonizaèný zvy¹ok CCT, % hmot
+Pou¾itie 
+Slovnaft VÚRUP - Oleje MADIT - MADIT OK - VC 100, 150, 220
+Trvanlivé kompresorové oleje sú rafinované ropné oleje s veµkou chemickou stálos»ou aj pri vy¹¹ích teplotách. Oleje obsahujú prísady na zvý¹enie viskozitného indexu a zní¾enie bodu tuhnutia.
+Trvanlivé kompresorové oleje sú urèené predov¹etkým na mazanie vzduchových kompresorov s vy¹¹ími teplotami vo výtlaku ( nad 100°C). Sú vhodné aj na mazanie plynových kompresorov, prevodoviek, ako aj menej nároèných obehových mazacích alebo hydraulických sústav. 
+VC podµa DIN 51 506
+Viskozitná trieda
+Viskozitná trieda:
+Viskozitný index
+V¹eobecná charakteristika
+Výkonnostný profil:
+rozpätie
+2d stratégia 2Net v meste
+3d strieµaèka vo fantastickomlabyrinte
+Bachová Jana
+Bajzík Tibor
+BalgaváEva
+BaltováAlexandra
+Balá¾(len L) 
+Bli¾¹ie informácie pre jeho ¹tudentov je mo¾né nájs» na:
+Bujnák Tomá¹
+Chlebíková: 
+Dobi¹ ©tefan
+Dor¹ic Marek
+Dostihy a stávky Net
+Dvoøáková Janka
+Fratriè Michal
+Grafický objektový programovacíjazyk 
+Halický Peter
+Hamaj ¥udovít
+Hamar Du¹an
+Her¹kováJ.
+Hnila Ján
+Hromiak Marián
+Janèo¹ek Michal
+Ja¹ka: 
+Kala¹Matú¹
+Kiács Ladislav
+Kme» Ján
+Koèan Martin
+Krivo¹ík
+Krátky Martin
+Lúèeniè
+Marcinèák
+Michalièka Ján
+Minaroviech Ján
+Moravèík Alexander
+Nalevajko Tomá¹
+Ondrejoviè Pavel
+Oèkaják Martin
+Pernecký Martin
+Petrá¹ek Tomá¹
+Petrík Tomá¹
+Pracovnýpopis
+Rozdelenie ¹tudentov do virtuálnych tried
+Sismis Marián
+Sma¾ák
+Stribraný Peter
+Va¹ko Juraj
+Zvolenská
+\"civilizácia\"
+akèná stratégia
+detské stolové hry
+dosková hra
+editor a vizualizáciamáp
+elektronickýplánovaè
+encyklopédia
+fantónstarej Prahy
+fraktály
+generátor krí¾oviek
+generátor textúr pre 4Kbdemo
+gif animátor (podporaanim. efektov)
+grafyfunkcií
+hazardné hry
+hra \"draèí doupe\"
+kartovéhry
+krvnýobeh
+krí¾ovky
+lietaèka - strieµaèka
+lieèivérastliny
+lingvistický slovník
+matematika pre Z© 1. a2. roèník
+maµované krí¾ovky
+maµovanékrí¾ovky
+návrh papierových modelov
+odovzdané 11.12.2000 - 1
+panáèik a diamant
+spoloè. hra
+súborkartové hry
+súborový mana¾ér ???
+výukový softvér ???
+výukovýprogram na hudbu
+©arkanová
+©imko Daniel
+©iráò Martin
+©míd Martin
+©pecif.
+©tefka Peter
+©tefèek Martin
+»ahová stratégia 2Net
+»ahovástratégia
+Èanecký
+Èervenak
+Èí¾ Filip
+èasticové systémy
+èínskehlavolamy
+ú¾asné 3d poché obrázkya animácie
+ Grafický manipulátor - Filther!
+ Pánik
+(c) 2002 ¥ubomírSALANCI
+3d grafický editor (OpenGL)
+3d logická dobrodru¾ná bludisková hra
+Bujòák Martin
+CAD - návrh domov a bytov (OpenGL)
+Cangár Juraj
+Danè Ján
+Editovanie a zobrazovanie 3D scén a objektov
+Hra podobná hre Dyna Blaster (grafika, zvuk)
+Kostiè Michal
+Kovalíková Magdaléna
+Letecký simulátor s misiami (3D)
+Logická hra - Flappy
+Macháèek Tomá¹
+Morávek Marián
+Navrhol som termíny na odovzdávanieroèníkových projektov. Ak vám nevyhovujú, skontaktujte sa.
+Onderík Juraj
+Pracovný popis
+Rocníkový projekt
+Roèníkový projekt
+Rácko Vladimír
+Simulácia planetárnych sústav (3D)
+Tunelár (pseudo 3D, po sieti)
+Táto stránka je urèená iba druhákom - informatikom, ktorí robia u mòa roèníkovýprojekt. Podrobné informácie o tom, ako má vá¹ projekt vyzera»,èo a dokedy máte urobi», nájdete na nasledujúcej adrese:
+Va¹ko Anton
+Vektorový grafický editor
+Zobrazovanie nameraných meteorologických prvkov SHMÚ
+mapovanie procesorov Motorola v re¾ime \"backround debug mod\"
+termín
+«ahová strategická hra s editormi - Jagged Aliance
+	Kvalifikácia
+BAÈA Peter - SVK
+KOVÁCS Otávio - BRA
+Napí¹te nám:
+PIVARÈI Jozef - SVK
+PYTLÍK Franti¹ek - SVK
+Pilot - ©tát
+STÁHALÍK Martin - CZE
+VERES Zoltán - HUN
+VÖRÖSMARTY Zsolt - HUN
+©AMKO Du¹an - SVK
+ÈIÈO Pavel - SVK
+         Riaditeµ sú»a¾e ¥ubomír Hlaváè 
+        Dovoµte mi, aby som Vás pri príle¾itosti 19. majstrovstiev sveta vleteckej akrobacii pozval v mene organizátorov na letisko Trenèín. Totopodujatie je vrcholom leteckej ¹portovej sezóny nielen v roku 1998, aleaj za pomerne dlhé obdobie, po ktorom sa nám podarilo získa» právousporiada» najhodnotej¹iu sú»a¾ v leteckej akrobacii. Dôkazom toho jefakt, ¾e v dòoch 11. a¾ 24. 8. 1998 budeme hosti» absolútnu ¹pièkupilotov sú»a¾iacich v leteckej akrobacii a reprezentujúcich 21 krajín zov¹etkých kontinentov. Do pretekov sú prihlásení nielen úradujúcimajstri sveta, ale taktie¾ vicemajstri a pretekári, ktorí sa napredchádzajúcich ¹ampionátoch umiestnili na èelných miestach.
+        Moje poïakovanie patrí organizátorom 19.teho roèníka Svetového ¹ampionatu leteckej akrobacie tu v Trenèíne. Organizácia, mana¾ovanie a aministratíva sú»a¾e pre skoro 100 pilotov z viacej ako 20 krajín nikdy nie je µahká. Musí sa urobi» veµký kus prace, sú tu tisícky detailov, ktorým sa musí venova» pozornos» a v¹etko musí do seba perfektne zapada». 
+        Pevne verím, ¾e maximálne úsilie organizaèného výboru o prípravukvalitnej sú»a¾e, tak po ¹portovej ako aj po spoloèenskej stránke, vyústido úspe¹nej realizácie, do spokojnosti úèastníkov a divákov. Súèasneïakujem za pomoc a podporu spoluorganizátorom podujatia apartnerom, najmä Armáde SR, Ministerstvu ¹kolstva SR, Leteckýmopravovniam, ¹.p., akciovým spoloènostiam Coca Cola, DMD Holding,Matador Púchov, MOL Rt., PKB, Slovenská pois»ovòa a ïaµ¹ím. 
+        Spoloènos» leteckej akrobacie CIVA si veµmi vá¾i prácu organizátorov, ktorú robia pri organizacii takéhoto ¹ampionátu. Letecká akrobacia je v súèastnosti jeden z najzaujímavej¹ích a najvyzývavej¹ích leteckých ¹portov. V skorých rokoch letectva, akrobacia bola organizovaná pre zábavu divákov, a aby zaviedla pozornos» na letectvo. Neskôr sa stala dole¾itou èas»ou tréningu v¹etkých vojenských pilotov ako vtedy u¾ táto disciplína nebola iba pre úèely atraktivity pre divákov, ale napomáhala pri vylep¹ovaní pilotských zruèností a skpúseností ... V dne¹nej dobe je akrobacia ¹portom so svojimi ¹pecifickými pravidlami a sú»a¾e v rôznych akrobatických disciplínach sa konajú na celom svete... Akrobacia je veµmi úzka spolupráca èloveka a lietadla - preteky pilotského majstrovstva, jeho lietadla a elementov vietor a poèasie. Sú»a¾ v akrobacii - a ¹peciálne Svetový ©ampionát - je èiste aréna pre najlep¹ích svetových pilotov. Aj napriek tomu, ¾e piloti zvyknú lieta» bezpeène aj dobre, na svetovy ¹ampionát sa dostanú iba najlep¹í. 
+        Vitajte na ¹ampionáte leteckej akrobacie - sú»a¾e, najlep¹ích pilotov sveta v súèasnosti. ©ampionát sa koná pod zá¹titou FAI od roku 1960, keby bola prvý krát usporiadaná v Bratislave, Slovensku. Vraciame sa na Slovensko e¹te raz! 
+        V¹etkým dobrovolníkom, organizátorom, ïakujeme za ich prácu a zápal. Bez ich chuti a zápalu do organizácie by ná¹ ¹port neexistoval. Toto poïakovanie patrí v¹etkým tým ako aj pamiatke akrobatických pilotov, ktorích výsledky vyniesli zapolenie v tomto ¹porte na najvy¹¹ie miesta, na ktorých tento ¹port je momentálne teraz. 
+        ®elám Vám, príjemný zá¾itok. Dr¾te palce spolu s nami slovenskejreprezentácii. V¹etkým pretekárom ¾elám veµa ¹portových úspechov. 
+Vá¾ení pritelia leteckého ¹portu! 
+ The Eric Müller Trophy
+ by José L. Aresti, hecommissioned its creation in Spain in the early '60s. The first WorldChampion to be presented the Aresti Cup was Tomas Castano of Spain in 1964.Without question, the Aresti Cup is the most valuable and coveted trophyin international aerobatics, not only because it is awarded to the pilotearning the highest possible honor, but also because of its intrinsic valueas precious piece of art. The trophy was crafted from silver with goldembellishments. In the interest of producing a truly international trophy,each of the 
+, using it to develop the 'Helicopter Spin'. Eric Müller won the Unknown in Red Deer in 1988. He died of a heartattack just before the 1990 WAC in Yverdon, Switzerland. The trophy wasfirst presented in its completed form at the 1994 WAC in Debrecen, Hungary.
+Bücker Jungmeister
+In 1990 the Swiss Aero Club donated the Eric Müller Trophy to the FAI.This trophy is presented to the overall winner of the Unknown Compulsoryprogram. The Swiss contributed this piece in memory of Muller, theirnational champion for years and another regular top medal winner at theWAC. Eric Müller became the acknowledged master of the 
+ are graphically represented by symbols.The system of graphicallydepicting the figures was devised by José Luis de Aresti of Spain in the early 1960sand it came into use at the WAC in Bilbao, Spain, in 1964. In addition to the symbol,each figure is assigned a difficulty coefficient or \"K factor\", based on the difficultyinvolved in performing the figure. Accompanying is a basic key to the FAI Cataloguefigures. Combinations of these figures are used to make up sequences. This is what theobserver sees pilots fly in competition. The dot signifies the beginning of the figure andthe slash indicates the end of the figure.
+ The rest of the Czech team was close behind in Zlin 226A's,setting a precident for home team victories that would last the decade.In the ensueing 36 years it has grown to become the premiere competition event in sport aviation. However, aerobatics has been going on since virtually the inception of the airplane. The definitive work on the subject, Flight Fantastic has a chapter more than halfway through entitled \"New Influences\", one of which was a young Spanish pilot, Colonel José Luis de Aresti Aguirre, about whose life story the development of the World Aerobatic Championships as we know it today revolves.
+, at WAC XII at Békéscsaba, Hungary. Sovietwomen's pilots Khalide Makagonova and Liubov Nemkova took first andsecond in the Women's, flying the new Yak 55.Debby Rihn-Harvey took third in a
+Bücker Jungmeister
+Colonel José Luis de Aresti Aguirre,a Spanish grandee from an old and distinguished family, was bornin Bilbao and became a flyer in the 1930s in time to get involvedin the horror of the Civil War - which cut short his studies as amedical student.
+José Luis de Aresti
+When the first FAI World Aerobatic Championships came into beingin 1960, what was really needed was some general agreement about atruly international judging method. We have already seen how theFrench pilot François d'Huc Dressler brought out a notationsystem which he published in l955, and which was tried out for writingthe contestants' Free Programmes in the 1960 World Championships. Sadly,he had died in 1957 before he could develop his system any further,but the sport of competition aerobatics was very fortunate in that asuccessor to d'Huc Dressler appeared shortly afterwards on the scene,who took on the mammoth task of creating a dictionary out of the symbolsand their combinations.
+With Spain as the host of the 1964 World Championships, a decisionwas eventually made in 1963 to go ahead with the Spanish system. TheAresti Dictionary has remained in use ever since, growing from aninitial 3,000 or so manoeuvres to a maximum of some 15,000, all withtheir own symbols and difficulty coefficients. François d'HucDressler was not forgotten by the way when the vote was taken by CIVA:a touching note was made in the Minutes paying tribute to 'the lateaerobatic pilot d'Huc Dressler, who was the originator ofAerocryptography'.
+         Prípravu ¹tátnej reprezentácie zabezpeèuje po odbornej a finanènejstránke Slovenské akrobatické centrum Trenèín s podporou M© SR - ©FTK(¹tátny fond telesnej kultúry a ¹portu), ktoré pre tieto úèely zdru¾ujúprostriedky zo ¹tátnej dotácie, príjmov z reklamy a od sponzorov.Èas» prostriedkov sa získava aj vlastnou komerènou èinnos»ou.
+Du¹an ©AMKO
+Franti¹ek PYTLÍK
+Jozef PIVARÈI
+Pavel ÈIÈO
+Pavol SERBÍN
+Peter BAÈA
+Prezident SAC: ¥ubomír HLAVÁÈ 
+Róbert TUPTA
+Tréner mláde¾e: Du¹am ©AMKO
+Vincent MATOU©EK
+©tátny tréner: Pavel ÈIÈO
+Èlenovia reprezentaèných dru¾stiev pre rok 1998:

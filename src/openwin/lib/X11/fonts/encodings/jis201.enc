@@ -1,0 +1,191 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#ident "@(#)jis201.enc	1.2 93/02/01 ENCODINGS SMI"
+STARTENCODING 1.0
+# NAME PostScript -- None
+NAME X11 jisx0201.1976-0
+NAME Human "Japanese localized latin encoding with katakana characters."
+TRUETYPE <3,1> <3,2> <0,0> <1,0>
+STARTCHARACTERS 158
+32	space
+33	exclam
+34	quotdbl
+35	numbersign
+36	dollar
+37	percent
+38	ampersand
+39	quoteright
+40	parenleft
+41	parenright
+42	asterisk
+43	plus
+44	comma
+45	hyphen
+46	period
+47	slash
+48	zero
+49	one
+50	two
+51	three
+52	four
+53	five
+54	six
+55	seven
+56	eight
+57	nine
+58	colon
+59	semicolon
+60	less
+61	equal
+62	greater
+63	question
+64	at
+65	A
+66	B
+67	C
+68	D
+69	E
+70	F
+71	G
+72	H
+73	I
+74	J
+75	K
+76	L
+77	M
+78	N
+79	O
+80	P
+81	Q
+82	R
+83	S
+84	T
+85	U
+86	V
+87	W
+88	X
+89	Y
+90	Z
+91	bracketleft
+92	yen
+93	bracketright
+94	asciicircum
+95	underscore
+96	quoteleft
+97	a
+98	b
+99	c
+100	d
+101	e
+102	f
+103	g
+104	h
+105	i
+106	j
+107	k
+108	l
+109	m
+110	n
+111	o
+112	p
+113	q
+114	r
+115	s
+116	t
+117	u
+118	v
+119	w
+120	x
+121	y
+122	z
+123	braceleft
+124	bar
+125	braceright
+126	overline
+161	jperiod
+162	jbracketleft
+163	jbracketright
+164	jcomma
+165	periodcentered
+166	wokana
+167	asmallkana
+168	ismallkana
+169	usmallkana
+170	esmallkana
+171	osmallkana
+172	yasmallkana
+173	yusmallkana
+174	yosmallkana
+175	tsusmallkana
+176	jprolonged
+177	akana
+178	ikana
+179	ukana
+180	ekana
+181	okana
+182	kakana
+183	kikana
+184	kukana
+185	kekana
+186	kokana
+187	sakana
+188	shikana
+189	sukana
+190	sekana
+191	sokana
+192	takana
+193	chikana
+194	tsukana
+195	tekana
+196	tokana
+197	nakana
+198	nikana
+199	nukana
+200	nekana
+201	nokana
+202	hakana
+203	hikana
+204	fukana
+205	hekana
+206	hokana
+207	makana
+208	mikana
+209	mukana
+210	mekana
+211	mokana
+212	yakana
+213	yukana
+214	yokana
+215	rakana
+216	rikana
+217	rukana
+218	rekana
+219	rokana
+220	wakana
+221	nkana
+222	jvoiced
+223	jsemivoiced
+ENDCHARACTERS
+ENDENCODING

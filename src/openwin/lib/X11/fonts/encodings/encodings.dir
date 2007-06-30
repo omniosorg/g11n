@@ -1,0 +1,124 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+37
+POSTSCRIPT DingbatsEncoding
+X11 dingbats-1
+FILENAME dingbats-1.enc
+POSTSCRIPT ISOLatin1Encoding
+X11 iso8859-1
+FILENAME iso8859-1.enc
+POSTSCRIPT ISOLatin2Encoding
+X11 iso8859-2
+FILENAME iso8859-2.enc
+POSTSCRIPT SymbolEncoding
+X11 symbol
+FILENAME symbol.enc
+X11 adobe-symbol
+FILENAME symbol.enc
+X11 adobe-dingbats
+FILENAME dingbats-1.enc
+POSTSCRIPT ISOLatin13Encoding
+X11 iso8859-13
+FILENAME iso8859-13.enc
+POSTSCRIPT ISOLatin15Encoding
+X11 iso8859-15
+FILENAME iso8859-15.enc
+POSTSCRIPT 1251Encoding
+X11 ansi-1251
+FILENAME ansi-1251.enc 
+POSTSCRIPT ISOLatin4Encoding
+X11 iso8859-4
+FILENAME ISOLatin4.enc 
+POSTSCRIPT ISOLatinCyrillicEncoding
+X11 iso8859-5
+FILENAME ISOLatinCyrillic.enc 
+POSTSCRIPT ISOLatinGreekEncoding
+X11 iso8859-7
+FILENAME ISOLatinGreek.enc
+POSTSCRIPT ISOLatin8Encoding
+X11 iso8859-8
+FILENAME iso8859-8.enc
+POSTSCRIPT ISOLatin5Encoding
+X11 iso8859-9
+FILENAME ISOLatin5.enc 
+X11 iso8859-6
+FILENAME iso8859-6.enc
+X11 gbk-0
+FILENAME gbk.enc
+POSTSCRIPT GB2KEncoding-0
+X11 gb18030.2000-0
+FILENAME gb18030.2000-0.enc
+POSTSCRIPT GB2KEncoding-1
+X11 gb18030.2000-1
+FILENAME gb18030.2000-1.enc
+POSTSCRIPT BIG5Encodings
+X11 big5-1
+FILENAME big5-1.enc
+POSTSCRIPT HKSCSEncodings
+X11 hkscs-1
+FILENAME hkscs-1.enc
+POSTSCRIPT KOI8REncoding
+X11 koi8-r
+FILENAME koi8-r.enc
+POSTSCRIPT CNSEncoding-1
+X11 cns11643-1
+FILENAME cns11643-1.enc
+POSTSCRIPT CNSEncoding-2
+X11 cns11643-2
+FILENAME cns11643-2.enc
+POSTSCRIPT CNSEncoding-3
+X11 cns11643-3
+FILENAME cns11643-3.enc
+POSTSCRIPT CDACIndic
+X11 sun.unicode.india-0
+FILENAME sun.unicode.india-0.enc
+X11 jisx0208.1983-0
+FILENAME jis208.enc
+X11 jisx0201.1976-0
+FILENAME jis201.enc
+X11 jisx0212.1990-0
+FILENAME jis212.enc
+X11 jisx0213.2000-1
+FILENAME jis213-1.enc
+X11 jisx0213.2000-2
+FILENAME jis213-2.enc
+X11 sunudcja.1997-0
+FILENAME sunudcja.enc
+POSTSCRIPT TIS620Encoding
+X11 tis620.2533-0
+FILENAME tis620.enc
+POSTSCRIPT TIS620Encoding
+X11 tis620-2
+FILENAME tis620.enc
+POSTSCRIPT TIS620Encoding
+X11 tis620-0
+FILENAME tis620.enc
+X11 ksc5601.1987-0
+FILENAME ksc5601-1987.enc
+X11 ksc5601.1992-3
+FILENAME ksc5601-1992.enc
+POSTSCRIPT GBEncoding
+X11 gb2312.1980-0
+FILENAME gb2312.enc

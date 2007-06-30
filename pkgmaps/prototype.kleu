@@ -1,0 +1,126 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none usr/include 0755 root bin
+d none usr/include/ko 0755 root bin
+f none usr/include/ko/xctype.h 0644 root bin
+s none usr/include/ko_KR.EUC=./ko
+d none usr/lib 0755 root bin
+d none usr/lib/iconv 0755 root bin
+s none usr/lib/iconv/646%5601.so=./646%CODESET.so
+f none usr/lib/iconv/ko_KR-euc%ko_KR-iso2022-7.so 0755 root bin
+f none usr/lib/iconv/ko_KR-euc%ko_KR-johap.so 0755 root bin
+f none usr/lib/iconv/ko_KR-euc%ko_KR-johap92.so 0755 root bin
+f none usr/lib/iconv/ko_KR-euc%ko_KR-nbyte.so 0755 root bin
+f none usr/lib/iconv/ko_KR-iso2022-7%ko_KR-euc.so 0755 root bin
+f none usr/lib/iconv/ko_KR-johap%ko_KR-euc.so 0755 root bin
+f none usr/lib/iconv/ko_KR-johap92%ko_KR-euc.so 0755 root bin
+f none usr/lib/iconv/ko_KR-nbyte%ko_KR-euc.so 0755 root bin
+s none usr/lib/iconv/ko_KR.euc%ko_KR.iso2022-7.so=./ko_KR-euc%ko_KR-iso2022-7.so
+s none usr/lib/iconv/ko_KR.euc%ko_KR.johap.so=./ko_KR-euc%ko_KR-johap.so
+s none usr/lib/iconv/ko_KR.euc%ko_KR.johap92.so=./ko_KR-euc%ko_KR-johap92.so
+s none usr/lib/iconv/ko_KR.euc%ko_KR.nbyte.so=./ko_KR-euc%ko_KR-nbyte.so
+s none usr/lib/iconv/ko_KR.iso2022-7%ko_KR.euc.so=./ko_KR-iso2022-7%ko_KR-euc.so
+s none usr/lib/iconv/ko_KR.johap%ko_KR.euc.so=./ko_KR-johap%ko_KR-euc.so
+s none usr/lib/iconv/ko_KR.johap92%ko_KR.euc.so=./ko_KR-johap92%ko_KR-euc.so
+s none usr/lib/iconv/ko_KR.nbyte%ko_KR.euc.so=./ko_KR-nbyte%ko_KR-euc.so
+f none usr/lib/libkle.a 0755 root bin
+s none usr/lib/libkle.so=libkle.so.1
+f none usr/lib/libkle.so.1 0755 root bin
+d none usr/lib/locale 0755 root bin
+d none usr/lib/locale/ko 0755 root bin
+d none usr/lib/locale/ko/LC_COLLATE 0755 root bin
+d none usr/lib/locale/ko/LC_CTYPE 0755 root bin
+f none usr/lib/locale/ko/LC_CTYPE/LCL_DEF 0555 root bin
+f none usr/lib/locale/ko/LC_CTYPE/mailcodelist 0555 root bin
+f none usr/lib/locale/ko/LC_CTYPE/wdresolve.so 0555 root bin
+d none usr/lib/locale/ko/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/ko/LC_MONETARY 0755 root bin
+d none usr/lib/locale/ko/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/ko/LC_TIME 0755 root bin
+f none usr/lib/locale/ko/geo_map 0644 root bin
+f none usr/lib/locale/ko/ko.so.3 0555 root bin
+f none usr/lib/locale/ko/locale_map 0644 root bin
+f none usr/lib/locale/ko/methods_ko.so.3 0555 root bin
+f none usr/lib/locale/ko/locale_description 0644 root bin
+d none usr/lib/locale/ko.UTF-8 0755 root bin
+d none usr/lib/locale/ko.UTF-8/LC_CTYPE 0755 root bin
+f none usr/lib/locale/ko.UTF-8/LC_CTYPE/LCL_DEF 0555 root bin
+s none usr/lib/locale/ko.UTF-8/LC_CTYPE/ldterm.dat=../../common/LC_CTYPE/ldterm_unicode.dat
+s none usr/lib/locale/ko.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wdresolve_unicode.so
+d none usr/lib/locale/ko.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/ko.UTF-8/LC_TIME 0755 root bin
+d none usr/lib/locale/ko.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/ko.UTF-8/LO_LTYPE/ko.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+f none usr/lib/locale/ko.UTF-8/geo_map 0644 root bin
+f none usr/lib/locale/ko.UTF-8/ko.UTF-8.so.3 0555 root bin
+f none usr/lib/locale/ko.UTF-8/locale_map 0644 root bin
+s none usr/lib/locale/ko.UTF-8/methods_ko.UTF-8.so.3=../common/methods_unicode.so.3
+f none usr/lib/locale/ko.UTF-8/locale_description 0644 root bin
+d none usr/lib/locale/ko_KR.EUC 0755 root bin
+s none usr/lib/locale/ko_KR.EUC/LC_COLLATE=../ko/LC_COLLATE
+s none usr/lib/locale/ko_KR.EUC/LC_CTYPE=../ko/LC_CTYPE
+s none usr/lib/locale/ko_KR.EUC/LC_MESSAGES=../ko/LC_MESSAGES
+s none usr/lib/locale/ko_KR.EUC/LC_MONETARY=../ko/LC_MONETARY
+s none usr/lib/locale/ko_KR.EUC/LC_NUMERIC=../ko/LC_NUMERIC
+s none usr/lib/locale/ko_KR.EUC/LC_TIME=../ko/LC_TIME
+s none usr/lib/locale/ko_KR.EUC/geo_map=../ko/geo_map
+s none usr/lib/locale/ko_KR.EUC/locale_map=../ko/locale_map
+s none usr/lib/locale/ko_KR.EUC/ko_KR.EUC.so.3=../ko/ko.so.3
+s none usr/lib/locale/ko_KR.EUC/methods_ko_KR.EUC.so.3=../ko/methods_ko.so.3
+s none usr/lib/locale/ko_KR.EUC/locale_description=../ko/locale_description
+d none usr/lib/locale/ko_KR.UTF-8 0755 root bin
+s none usr/lib/locale/ko_KR.UTF-8/LC_CTYPE=../ko.UTF-8/LC_CTYPE
+s none usr/lib/locale/ko_KR.UTF-8/LC_MESSAGES=../ko.UTF-8/LC_MESSAGES
+s none usr/lib/locale/ko_KR.UTF-8/LC_TIME=../ko.UTF-8/LC_TIME
+d none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE 0755 root bin
+s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/ko_KR.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+s none usr/lib/locale/ko_KR.UTF-8/geo_map=../ko.UTF-8/geo_map
+s none usr/lib/locale/ko_KR.UTF-8/locale_map=../ko.UTF-8/locale_map
+s none usr/lib/locale/ko_KR.UTF-8/ko_KR.UTF-8.so.3=../ko.UTF-8/ko.UTF-8.so.3
+s none usr/lib/locale/ko_KR.UTF-8/methods_ko_KR.UTF-8.so.3=../ko.UTF-8/methods_ko.UTF-8.so.3
+s none usr/lib/locale/ko_KR.UTF-8/locale_description=../ko.UTF-8/locale_description
+d none usr/lib/mle 0755 root bin
+d none usr/lib/mle/ko 0755 root bin
+f none usr/lib/mle/ko/keybind.dat 0555 root daemon
+f none usr/lib/mle/ko/libmle.a 0755 root bin
+f none usr/lib/mle/ko/mle.so 0755 root bin
+f none usr/lib/mle/ko/syshjd 0555 root bin
+d none usr/lib/mle/ko.UTF-8 0755 root bin
+f none usr/lib/mle/ko.UTF-8/keybind.dat 0555 root daemon
+f none usr/lib/mle/ko.UTF-8/libmle.a 0755 root bin
+f none usr/lib/mle/ko.UTF-8/mle.so 0755 root bin
+f none usr/lib/mle/ko.UTF-8/syshjd 0555 root bin
+s none usr/lib/mle/ko_KR.EUC=./ko
+s none usr/lib/mle/ko_KR.UTF-8=./ko.UTF-8
+d none usr/share 0755 root sys
+d none usr/share/lib 0755 root sys
+
+d none usr/openwin 0755 root bin
+d none usr/openwin/lib 0755 root bin
+d none usr/openwin/lib/locale 0755 root bin
+d none usr/openwin/lib/locale/ko 0755 root bin
+s none usr/openwin/lib/locale/ko_KR.EUC=./ko
+
+d none usr/kernel 0755 root sys
+d none usr/kernel/strmod 0755 root sys

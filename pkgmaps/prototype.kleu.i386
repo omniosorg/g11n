@@ -1,0 +1,76 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none usr/kernel/strmod/amd64 0755 root sys
+f none usr/kernel/strmod/amd64/kpack 0755 root sys
+d none usr/lib/iconv/amd64 0755 root bin
+s none usr/lib/iconv/amd64/646%5601.so=./646%CODESET.so
+f none usr/lib/iconv/amd64/ko_KR-euc%ko_KR-iso2022-7.so 0755 root bin
+f none usr/lib/iconv/amd64/ko_KR-euc%ko_KR-johap.so 0755 root bin
+f none usr/lib/iconv/amd64/ko_KR-euc%ko_KR-johap92.so 0755 root bin
+f none usr/lib/iconv/amd64/ko_KR-euc%ko_KR-nbyte.so 0755 root bin
+f none usr/lib/iconv/amd64/ko_KR-iso2022-7%ko_KR-euc.so 0755 root bin
+f none usr/lib/iconv/amd64/ko_KR-johap%ko_KR-euc.so 0755 root bin
+f none usr/lib/iconv/amd64/ko_KR-johap92%ko_KR-euc.so 0755 root bin
+f none usr/lib/iconv/amd64/ko_KR-nbyte%ko_KR-euc.so 0755 root bin
+s none usr/lib/iconv/amd64/ko_KR.euc%ko_KR.iso2022-7.so=./ko_KR-euc%ko_KR-iso2022-7.so
+s none usr/lib/iconv/amd64/ko_KR.euc%ko_KR.johap.so=./ko_KR-euc%ko_KR-johap.so
+s none usr/lib/iconv/amd64/ko_KR.euc%ko_KR.johap92.so=./ko_KR-euc%ko_KR-johap92.so
+s none usr/lib/iconv/amd64/ko_KR.euc%ko_KR.nbyte.so=./ko_KR-euc%ko_KR-nbyte.so
+s none usr/lib/iconv/amd64/ko_KR.iso2022-7%ko_KR.euc.so=./ko_KR-iso2022-7%ko_KR-euc.so
+s none usr/lib/iconv/amd64/ko_KR.johap%ko_KR.euc.so=./ko_KR-johap%ko_KR-euc.so
+s none usr/lib/iconv/amd64/ko_KR.johap92%ko_KR.euc.so=./ko_KR-johap92%ko_KR-euc.so
+s none usr/lib/iconv/amd64/ko_KR.nbyte%ko_KR.euc.so=./ko_KR-nbyte%ko_KR-euc.so
+s none usr/lib/locale/ko/LC_CTYPE/64=./amd64
+d none usr/lib/locale/ko/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/ko/LC_CTYPE/amd64/mailcodelist 0555 root bin
+f none usr/lib/locale/ko/LC_CTYPE/amd64/wdresolve.so 0555 root bin
+s none usr/lib/locale/ko/64=./amd64
+d none usr/lib/locale/ko/amd64 0755 root bin
+f none usr/lib/locale/ko/amd64/ko.so.3 0555 root bin
+f none usr/lib/locale/ko/amd64/methods_ko.so.3 0555 root bin
+s none usr/lib/locale/ko.UTF-8/LC_CTYPE/64=./amd64
+d none usr/lib/locale/ko.UTF-8/LC_CTYPE/amd64 0755 root bin
+s none usr/lib/locale/ko.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so
+s none usr/lib/locale/ko.UTF-8/LO_LTYPE/64=./amd64
+d none usr/lib/locale/ko.UTF-8/LO_LTYPE/amd64 0755 root bin
+s none usr/lib/locale/ko.UTF-8/LO_LTYPE/amd64/ko.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
+s none usr/lib/locale/ko.UTF-8/64=./amd64
+d none usr/lib/locale/ko.UTF-8/amd64 0755 root bin
+f none usr/lib/locale/ko.UTF-8/amd64/ko.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/ko.UTF-8/amd64/methods_ko.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+d none usr/lib/amd64 0755 root bin
+f none usr/lib/amd64/libkle.a 0755 root bin
+s none usr/lib/amd64/libkle.so=libkle.so.1
+f none usr/lib/amd64/libkle.so.1 0755 root bin
+s none usr/lib/locale/ko_KR.EUC/64=./amd64
+d none usr/lib/locale/ko_KR.EUC/amd64 0755 root bin
+s none usr/lib/locale/ko_KR.EUC/amd64/ko_KR.EUC.so.3=../../ko/amd64/ko.so.3
+s none usr/lib/locale/ko_KR.EUC/amd64/methods_ko_KR.EUC.so.3=../../ko/amd64/methods_ko.so.3
+s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/64=./amd64
+d none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/amd64 0755 root bin
+s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/amd64/ko_KR.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
+s none usr/lib/locale/ko_KR.UTF-8/64=./amd64
+d none usr/lib/locale/ko_KR.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/ko_KR.UTF-8/amd64/ko_KR.UTF-8.so.3=../../ko.UTF-8/amd64/ko.UTF-8.so.3
+s none usr/lib/locale/ko_KR.UTF-8/amd64/methods_ko_KR.UTF-8.so.3=../../ko.UTF-8/amd64/methods_ko.UTF-8.so.3

@@ -1,0 +1,84 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2000 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+STARTCOMMON
+# 0 portrait, 1 landscape
+ORIENTATION 1
+NUMCOLS  02
+PAGELENGTH 60
+LINELENGTH 80
+# Printing won't exceed this in Y direction.
+YTEXTBOUNDARY	2110
+HDNGFONTSIZE	65
+BODYFONTSIZE	65
+STARTTEXT	120 280
+PROLOGDPI 300
+PAGESTRING	1
+ENDCOMMON
+
+# for US paper size 8.5X11 inches @ 300 dpi
+# that is for a page of pixel width 2550 and height 3300
+# All drawing units in pixels.
+
+STARTPAGE
+ENDPAGE
+
+STARTCOLUMN
+
+LINE 127 27 1175 27
+LINE 102 52 102 175
+LINE 127 200 1175 200
+LINE 1200 52 1200 175
+
+ARC 102 27 50 50 90 90
+ARC 102 150 50 50 180 90
+ARC 1150 27 50 50 0 90
+ARC 1150 150 50 50 270 90
+
+LINE 1248 27 1375 27
+LINE 1400 175 1400 52
+LINE 1248 200 1375 200
+LINE 1223 175 1223 52
+
+ARC 1223 27 50 50 90 90
+ARC 1223 150 50 50 180 90
+ARC 1350 27 50 50 0 90
+ARC 1350 150 50 50 270 90
+
+LINE 127 2110 1375 2110
+LINE 127 2283 1375 2283
+LINE 102 2135 102 2258
+LINE 1400 2135 1400 2258
+
+ARC 102 2110 50 50 90 90
+ARC 102 2233 50 50 180 90
+ARC 1350 2110 50 50 0 90
+ARC 1350 2233 50 50 270 90
+
+USERSTRINGPOS	152 120
+TIMESTRINGPOS	730 120
+PAGESTRINGPOS 	1270 100
+SUBJECTSTRINGPOS 147 2200 
+
+ENDCOLUMN

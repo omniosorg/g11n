@@ -1,0 +1,1357 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#                             LOCALE CONFIG FILE
+#                             ==================
+
+#
+#                      Solaris 11, Australasia partial locales 
+#
+#                 ( en_AU, en_AU.ISO8859-1, en_NZ, en_NZ.ISO8859-1 )
+# 
+
+# loc name field is of format:
+# loc name <region name for locales_installed file> <pkg region name> <locale name>[,<locale name>...]
+
+locname Ausi aua en_AU en_NZ
+
+SUNWauadt	aua	solaris1
+SUNWauaos	aua	c_solaris2
+SUNWauaow	aua	c_solaris1
+SUNWi1cs	aua	solaris1
+SUNWplow	aua	solaris1
+SUNWplow1	aua	solaris1
+
+#
+#                   Solaris 11, Central America partial locales 
+#
+# ( es_CR, es_CR.ISO8859-1, es_GT, es_GT.ISO8859-1, es_MX, es_MX.ISO8859-1,
+#  es_NI, es_NI.ISO8859-1, es_PA, es_PA.ISO8859-1, es_SV, es_SV.ISO8859-1 )
+#
+
+locname C_America cam es_CR es_GT es_PA es_SV es
+
+SUNW5ttf	cam	solaris1
+SUNWcamdt	cam	solaris1
+SUNWcamos	cam	c_solaris2
+SUNWcamow	cam	c_solaris1
+SUNWcttf	cam	solaris1
+SUNWeuluf	cam	solaris1
+SUNWgttf	cam	solaris2
+SUNWi1cs	cam	solaris1
+SUNWinttf	cam	solaris2
+SUNWjxcft	cam	solaris1
+SUNWkttf	cam	solaris1
+SUNWkxfnt	cam	solaris1
+SUNWplow	cam	solaris1
+SUNWplow1	cam	solaris1
+SUNWseudt	cam	solaris1
+SUNWautoef	cam	solaris2
+SUNWeslu	cam	solaris2
+SUNWesspl	cam	solaris2
+SUNWedcl	cam	langcd1
+SUNWedhcm	cam	langcd1
+SUNWefdl	cam	langcd1
+SUNWeladm	cam	langcd1
+SUNWelvma	cam	langcd1
+SUNWelvmg	cam	langcd1
+SUNWemgp	cam	langcd1
+SUNWeorte	cam	langcd1
+SUNWepdas	cam	langcd1
+SUNWermui	cam	langcd1
+SUNWesadl	cam	langcd1
+SUNWesbas	cam	langcd1
+SUNWescgu	cam	langcd1
+SUNWesdis	cam	langcd1
+SUNWesdma	cam	langcd1
+SUNWesdst	cam	langcd1
+SUNWesdte	cam	langcd1
+SUNWesfw	cam	langcd1
+SUNWeshe	cam	langcd1
+SUNWeshed	cam	langcd1
+SUNWeshev	cam	langcd1
+SUNWeshez	cam	langcd1
+SUNWesim	cam	langcd1
+SUNWesos	cam	langcd1
+SUNWespmw	cam	langcd1
+SUNWessmc	cam	langcd1
+SUNWeswbc	cam	langcd1
+SUNWeswm	cam	langcd1
+SUNWesws2	cam	langcd1
+SUNWeswsv	cam	langcd1
+SUNWesxwsvr	cam	langcd1
+SUNWetltk	cam	langcd1
+SUNWewacx	cam	langcd1
+SUNWewdev	cam	langcd1
+SUNWexplt	cam	langcd1
+SUNWemcon	cam	langcd1
+SUNWemctg	cam	langcd1
+SUNWepprou	cam	langcd1
+SUNWgnome-l10ndocument-es	cam	langcd1
+SUNWgnome-l10nmessages-es	cam	langcd1
+SUNWeupdatemgru cam     langcd1
+SUNWebrg        cam     langcd1
+SUNWezfsg       cam     langcd1
+SUNWthunderbirdl10n-es-ES       cam     langcd1
+SUNWfirefoxl10n-es-ES       cam     langcd1
+
+
+#
+#                Solaris 11, Central Europe partial locales
+#
+# ( cs_CZ, cs_CZ.ISO8859-2, cz, de, de_AT, de_AT.ISO8859-1, de_AT.ISO8859-15,
+#  de_AT.ISO8859-15@euro, de_CH, de_CH.ISO8859-1, de_DE, de_DE.ISO8859-1,
+#  de_DE.ISO8859-15, de_DE.ISO8859-15@euro, de_DE.UTF-8, de_DE.UTF-8@euro,
+#  de.ISO8859-15, de.UTF-8, fr_CH, fr_CH.ISO8859-1, hu, hu_HU, hu_HU.ISO8859-2,
+#  pl, pl_PL, pl_PL.ISO8859-2, sk_SK, sk_SK.ISO8859-2, pl_PL.UTF-8 )
+#
+
+locname C_Europe ceu cs_CZ de_AT de_CH de_DE fr_CH hu_HU pl_PL sk_SK de fr
+
+SUNW5ttf	ceu	solaris1
+SUNWceudt	ceu	solaris1
+SUNWceuos	ceu	c_solaris2
+SUNWceuow	ceu	c_solaris1
+SUNWcttf	ceu	solaris1
+SUNWdeiso1	ceu	solaris1
+SUNWeuluf	ceu	solaris1
+SUNWgnome-l10nmessages-cs	ceu	solaris3
+SUNWgnome-l10nmessages-hu	ceu	solaris3
+SUNWgttf	ceu	solaris2
+SUNWi15cs	ceu	solaris1
+SUNWi1cs	ceu	solaris1
+SUNWi2cs	ceu	solaris2
+SUNWinttf	ceu	solaris2
+SUNWjxcft	ceu	solaris1
+SUNWkttf	ceu	solaris1
+SUNWkxfnt	ceu	solaris1
+SUNWplow	ceu	solaris1
+SUNWplow1	ceu	solaris1
+SUNWdelu	ceu	solaris2
+SUNWdespl	ceu	solaris2
+SUNWfrlu	ceu	solaris2
+SUNWfrspl	ceu	solaris2
+SUNWgnome-l10nmessages-pl	ceu	solaris3
+SUNWplxwsvr	ceu	solaris3
+SUNWddcl	ceu	langcd1
+SUNWddhcm	ceu	langcd1
+SUNWdebas	ceu	langcd1
+SUNWdedis	ceu	langcd1
+SUNWdedma	ceu	langcd1
+SUNWdedst	ceu	langcd1
+SUNWdedte	ceu	langcd1
+SUNWdehe	ceu	langcd1
+SUNWdehed	ceu	langcd1
+SUNWdehev	ceu	langcd1
+SUNWdehez	ceu	langcd1
+SUNWdeim	ceu	langcd1
+SUNWdeos	ceu	langcd1
+SUNWdepmw	ceu	langcd1
+SUNWdesmc	ceu	langcd1
+SUNWdewbc	ceu	langcd1
+SUNWdewm	ceu	langcd1
+SUNWdews2	ceu	langcd1
+SUNWdewsv	ceu	langcd1
+SUNWdexwsvr	ceu	langcd1
+SUNWdfdl	ceu	langcd1
+SUNWdladm	ceu	langcd1
+SUNWdlvma	ceu	langcd1
+SUNWdlvmg	ceu	langcd1
+SUNWdmcon	ceu	langcd1
+SUNWdmctg	ceu	langcd1
+SUNWdpprou	ceu	langcd1
+SUNWdmgp	ceu	langcd1
+SUNWdorte	ceu	langcd1
+SUNWdpdas	ceu	langcd1
+SUNWdrmui	ceu	langcd1
+SUNWdsadl	ceu	langcd1
+SUNWdscgu	ceu	langcd1
+SUNWdsfw	ceu	langcd1
+SUNWdtltk	ceu	langcd1
+SUNWdwacx	ceu	langcd1
+SUNWdwdev	ceu	langcd1
+SUNWdxplt	ceu	langcd1
+SUNWdupdatemgru	ceu	langcd1
+SUNWgnome-l10ndocument-de	ceu	langcd1
+SUNWgnome-l10nmessages-de	ceu	langcd1
+SUNWfdcl	ceu	langcd2
+SUNWfdhcm	ceu	langcd2
+SUNWffdl	ceu	langcd2
+SUNWfladm	ceu	langcd2
+SUNWflvma	ceu	langcd2
+SUNWflvmg	ceu	langcd2
+SUNWfmgp	ceu	langcd2
+SUNWforte	ceu	langcd2
+SUNWfpdas	ceu	langcd2
+SUNWfrbas	ceu	langcd2
+SUNWfrdis	ceu	langcd2
+SUNWfrdma	ceu	langcd2
+SUNWfrdst	ceu	langcd2
+SUNWfrdte	ceu	langcd2
+SUNWfrhe	ceu	langcd2
+SUNWfrhed	ceu	langcd2
+SUNWfrhev	ceu	langcd2
+SUNWfrhez	ceu	langcd2
+SUNWfrim	ceu	langcd2
+SUNWfrmui	ceu	langcd2
+SUNWfros	ceu	langcd2
+SUNWfrpmw	ceu	langcd2
+SUNWfrsmc	ceu	langcd2
+SUNWfrwbc	ceu	langcd2
+SUNWfrwm	ceu	langcd2
+SUNWfrws2	ceu	langcd2
+SUNWfrwsv	ceu	langcd2
+SUNWfrxwsvr	ceu	langcd2
+SUNWfsadl	ceu	langcd2
+SUNWfscgu	ceu	langcd2
+SUNWfsfw	ceu	langcd2
+SUNWftltk	ceu	langcd2
+SUNWfwacx	ceu	langcd2
+SUNWfwdev	ceu	langcd2
+SUNWfxplt	ceu	langcd2
+SUNWfmcon	ceu	langcd2
+SUNWfmctg	ceu	langcd2
+SUNWfpprou	ceu	langcd2
+SUNWfupdatemgru	ceu	langcd2
+SUNWgnome-l10ndocument-fr	ceu	langcd2
+SUNWgnome-l10nmessages-fr	ceu	langcd2
+SUNWdbrg        ceu     langcd1
+SUNWdzfsg       ceu     langcd1
+SUNWfbrg        ceu     langcd2
+SUNWfzfsg       ceu     langcd2
+SUNWthunderbirdl10n-pl-PL       ceu     solaris3
+SUNWthunderbirdl10n-de-DE       ceu     langcd1
+SUNWthunderbirdl10n-fr-FR       ceu     langcd2
+SUNWfirefoxl10n-pl-PL       ceu     solaris3
+SUNWfirefoxl10n-de-DE       ceu     langcd1
+SUNWfirefoxl10n-fr-FR       ceu     langcd2
+
+
+#
+#               Solaris 11, Eastern Europe partial locales
+#
+# ( bg_BG, bg_BG.ISO8859-5,  et_EE, et_EE.ISO8859-15, hr_HR, hr_HR.ISO8859-2,
+#  lt_LT, lt_LT.ISO8859-13,  lv_LV, lv_LV.ISO8859-13, mk_MK,
+#  mk_MK.ISO8859-5, ro_RO, ro_RO.ISO8859-2,  ru.koi8-r, ru_RU,
+#  ru_RU.ANSI1251, ru_RU.ISO8859-5, ru_RU.KOI8-R, sh_BA, sh_BA.ISO8859-2@bosnia,
+#  sl_SI, sl_SI.ISO8859-2, sq_AL, sq_AL.ISO8859-2, sr_SP, sr_YU, sr_YU.ISO8859-5,
+#  tr_TR, tr_TR.ISO8859-9, ru_RU.UTF-8, tr_TR.UTF-8 )
+#
+
+locname E_Europe eeu bg_BG et_EE hr_HR lt_LT lv_LV mk_MK ro_RO ru_RU sh_BA sl_SI sq_AL sr_CS sr_SP sr_YU tr_TR
+
+SUNW5ttf	eeu	solaris1
+SUNWcttf	eeu	solaris1
+SUNWeeudt	eeu	solaris1
+SUNWeeuos	eeu	c_solaris2
+SUNWeeuow	eeu	c_solaris1
+SUNWeuluf	eeu	solaris1
+SUNWgttf	eeu	solaris2
+SUNWi13cs	eeu	solaris2
+SUNWi15cs	eeu	solaris1
+SUNWi1cs	eeu	solaris1
+SUNWi2cs	eeu	solaris2
+SUNWi5cs	eeu	solaris2
+SUNWi9cs	eeu	solaris2
+SUNWinttf	eeu	solaris2
+SUNWjxcft	eeu	solaris1
+SUNWkttf	eeu	solaris1
+SUNWkxfnt	eeu	solaris1
+SUNWplow	eeu	solaris1
+SUNWplow1	eeu	solaris1
+SUNWgnome-l10nmessages-ru	eeu	solaris3
+SUNWruxwsvr	eeu	solaris3
+SUNWthunderbirdl10n-ru-RU       eeu     solaris3
+SUNWfirefoxl10n-ru-RU       eeu     solaris3
+
+
+#
+#               Solaris 11, Hindi (Unicode) Locale           
+#
+#                     ( hi_IN.UTF-8)
+#
+
+locname Asia hi_in  hi_IN.UTF-8
+
+SUNW5ttf	hi_in	solaris1
+SUNWcttf	hi_in	solaris1
+SUNWeuluf	hi_in	c_solaris1
+SUNWgttf	hi_in	solaris2
+SUNWindt	hi_in	solaris1
+SUNWinfnt	hi_in	solaris1
+SUNWinleu	hi_in	c_solaris2
+SUNWinplt	hi_in	solaris1
+SUNWinttf	hi_in	solaris2
+SUNWjxcft	hi_in	solaris1
+SUNWkttf	hi_in	solaris1
+SUNWkxfnt	hi_in	solaris1
+SUNWautoef	hi_in	solaris2
+
+
+#                         Solaris 11, Japanese Locale
+#
+#         ( ja, ja_JP.eucJP, ja_JP.EUC, ja_JP.PCK, ja_JP.UTF-8)
+
+locname Asia ja ja ja_JP.PCK ja_JP.UTF-8
+
+JSatsvr		ja	solaris2
+JSatsvu		ja	solaris2
+SUNW5ttf	ja	solaris1
+SUNWale		ja	c_solaris1
+SUNWcttf	ja	solaris1
+SUNWeuluf	ja	c_solaris1
+SUNWgttf	ja	solaris2
+SUNWinttf	ja	solaris2
+SUNWjasu	ja	solaris5
+SUNWjedt	ja	solaris1
+SUNWjfpr	ja	c_solaris1
+SUNWjfpu	ja	c_solaris1
+SUNWjjaf	ja	solaris5
+SUNWjjmail	ja	solaris5
+SUNWjscag	ja	solaris2
+SUNWjxcft	ja	solaris1
+SUNWjxplt	ja	solaris1
+SUNWkttf	ja	solaris1
+SUNWkxfnt	ja	solaris1
+SUNWaled	ja	solaris5
+SUNWautoef	ja	solaris2
+SUNWj3jmp	ja	solaris5
+SUNWjman	ja	solaris5
+SUNWgnome-l10ndocument-ja	ja	langcd1
+SUNWgnome-l10nmessages-ja	ja	langcd1
+SUNWj5jmp	ja	langcd1
+SUNWjadcl	ja	langcd1
+SUNWjadis	ja	langcd1
+SUNWjadma	ja	langcd1
+SUNWjcs3f	ja	langcd1
+SUNWjdab	ja	langcd1
+SUNWjdbas	ja	langcd1
+SUNWjddst	ja	langcd1
+SUNWjddte	ja	langcd1
+SUNWjdhcm	ja	langcd1
+SUNWjdhe	ja	langcd1
+SUNWjdhed	ja	langcd1
+SUNWjdhev	ja	langcd1
+SUNWjdhez	ja	langcd1
+SUNWjdim	ja	langcd1
+SUNWjdma	ja	langcd1
+SUNWjdoc	ja	langcd1
+SUNWjdwm	ja	langcd1
+SUNWject	ja	langcd1
+SUNWjedev	ja	langcd1
+SUNWjeezt	ja	langcd1
+SUNWjeman	ja	langcd1
+SUNWjepmm	ja	langcd1
+SUNWjepmw	ja	langcd1
+SUNWjeudc	ja	langcd1
+SUNWjfdl	ja	langcd1
+SUNWjfpre	ja	langcd1
+SUNWjfpue	ja	langcd1
+SUNWjfxmn	ja	langcd1
+SUNWjiqu	ja	langcd1
+SUNWjiquc	ja	langcd1
+SUNWjladm	ja	langcd1
+SUNWjlvma	ja	langcd1
+SUNWjlvmg	ja	langcd1
+SUNWjmane	ja	langcd1
+SUNWjmcon	ja	langcd1
+SUNWjmctg	ja	langcd1
+SUNWjmfrn	ja	langcd1
+SUNWjmga	ja	langcd1
+SUNWjorte	ja	langcd1
+SUNWjos		ja	langcd1
+SUNWjpdas	ja	langcd1
+SUNWjpprou	ja	langcd1
+SUNWjrmui	ja	langcd1
+SUNWjsadl	ja	langcd1
+SUNWjsfw	ja	langcd1
+SUNWjsmc	ja	langcd1
+SUNWjtlmn	ja	langcd1
+SUNWjtltk	ja	langcd1
+SUNWjwacx	ja	langcd1
+SUNWjwbc	ja	langcd1
+SUNWjwbd	ja	langcd1
+SUNWjwncr	ja	langcd1
+SUNWjwncu	ja	langcd1
+SUNWjwnsr	ja	langcd1
+SUNWjwnsu	ja	langcd1
+SUNWjws2	ja	langcd1
+SUNWjwsv	ja	langcd1
+SUNWjxfa	ja	langcd1
+SUNWjxfnt	ja	langcd1
+SUNWjxim	ja	langcd1
+SUNWjxoft	ja	langcd1
+SUNWjxpmn	ja	langcd1
+SUNWjxumn	ja	langcd1
+SUNWjxwsvr	ja	langcd1
+SUNWudct	ja	langcd1
+SUNWjupdatemgru	ja	langcd1
+SUNWjbrg        ja      langcd1
+SUNWjzfsg       ja      langcd1
+IPLTjadcon      ja      solaris6
+IPLTjadman      ja      solaris6
+IPLTjadmin      ja      solaris6
+IPLTjcons       ja      solaris6
+IPLTjdscon      ja      solaris6
+IPLTjdsman      ja      solaris6
+IPLTjdsu        ja      solaris6
+IPLTjss         ja      solaris6
+SUNWthunderbirdl10n-ja-JP       ja      langcd1
+SUNWfirefoxl10n-ja-JP       ja      langcd1
+
+
+
+#
+#                           Solaris 11, Korean Locale
+#
+#                   ( ko, ko_KR.EUC, ko.UTF-8, ko_KR.UTF-8 )
+
+locname Asia korean ko ko_KR ko.UTF-8
+
+SUNW5ttf	korean	solaris1
+SUNWale		korean	c_solaris1
+SUNWcttf	korean	solaris1
+SUNWeuluf	korean	c_solaris1
+SUNWgttf	korean	solaris2
+SUNWinttf	korean	solaris2
+SUNWjxcft	korean	solaris1
+SUNWkdt		korean	solaris1
+SUNWkleu	korean	c_solaris1
+SUNWkttf	korean	solaris1
+SUNWkxfnt	korean	solaris1
+SUNWkxplt	korean	solaris1
+SUNWaled	korean	solaris5
+SUNWautoef	korean	solaris2
+SUNWgnome-l10ndocument-ko	korean	langcd1
+SUNWgnome-l10nmessages-ko	korean	langcd1
+SUNWkacx	korean	langcd1
+SUNWkadis	korean	langcd1
+SUNWkadma	korean	langcd1
+SUNWkdab	korean	langcd1
+SUNWkdbas	korean	langcd1
+SUNWkdcl	korean	langcd1
+SUNWkdcst	korean	langcd1
+SUNWkddst	korean	langcd1
+SUNWkddte	korean	langcd1
+SUNWkdezt	korean	langcd1
+SUNWkdft	korean	langcd1
+SUNWkdhcm	korean	langcd1
+SUNWkdhe	korean	langcd1
+SUNWkdhev	korean	langcd1
+SUNWkdhez	korean	langcd1
+SUNWkdicn	korean	langcd1
+SUNWkdim	korean	langcd1
+SUNWkdwm	korean	langcd1
+SUNWkepmw	korean	langcd1
+SUNWkfdl	korean	langcd1
+SUNWkladm	korean	langcd1
+SUNWkleue	korean	langcd1
+SUNWklvma	korean	langcd1
+SUNWklvmg	korean	langcd1
+SUNWkmcon	korean	langcd1
+SUNWkmctg	korean	langcd1
+SUNWkmga	korean	langcd1
+SUNWkorte	korean	langcd1
+SUNWkos		korean	langcd1
+SUNWkpdas	korean	langcd1
+SUNWkpprou	korean	langcd1
+SUNWkrmui	korean	langcd1
+SUNWksadl	korean	langcd1
+SUNWkscgu	korean	langcd1
+SUNWksfw	korean	langcd1
+SUNWksmc	korean	langcd1
+SUNWktltk	korean	langcd1
+SUNWkttfe	korean	langcd1
+SUNWkudc	korean	langcd1
+SUNWkuxft	korean	langcd1
+SUNWkwbc	korean	langcd1
+SUNWkwdev	korean	langcd1
+SUNWkwsr2	korean	langcd1
+SUNWkwsrv	korean	langcd1
+SUNWkxe		korean	langcd1
+SUNWkxfte	korean	langcd1
+SUNWkxman	korean	langcd1
+SUNWkxwsvr	korean	langcd1
+SUNWudct	korean	langcd1
+SUNWkupdatemgru	korean	langcd1
+SUNWkbrg        korean  langcd1
+SUNWkzfsg       korean  langcd1
+SUNWthunderbirdl10n-ko-KR       korean  langcd1
+SUNWfirefoxl10n-ko-KR       korean  langcd1
+
+
+#
+#                      Solaris 11, Middle East partial locales 
+#
+#                            ( he, he_IL.UTF-8 )
+#
+
+locname M_East mea he_IL he ar_SA
+
+SUNW5ttf	mea	solaris1
+SUNWcttf	mea	solaris1
+SUNWeuluf	mea	solaris1
+SUNWgttf	mea	solaris2
+SUNWinttf	mea	solaris2
+SUNWjxcft	mea	solaris1
+SUNWkttf	mea	solaris1
+SUNWkxfnt	mea	solaris1
+SUNWmeadt	mea	solaris1
+SUNWmeaos	mea	c_solaris2
+SUNWmeaow	mea	c_solaris1
+SUNWplow	mea	solaris1
+
+#
+#                      Solaris 11, Northern Africa partial locales 
+#
+#                            ( ar, ar_EG.UTF-8 )
+#
+
+locname N_Africa naf ar_EG ar
+
+
+SUNW5ttf	naf	solaris1
+SUNWcttf	naf	solaris1
+SUNWeuluf	naf	solaris1
+SUNWgttf	naf	solaris2
+SUNWinttf	naf	solaris2
+SUNWjxcft	naf	solaris1
+SUNWkttf	naf	solaris1
+SUNWkxfnt	naf	solaris1
+SUNWnafdt	naf	solaris1
+SUNWnafos	naf	c_solaris2
+SUNWnafow	naf	c_solaris1
+SUNWplow	naf	solaris1
+
+#
+#                 Solaris 11, Northern America partial locales 
+#
+# ( en_CA, en_CA.ISO8859-1, en_US, en_US.ISO8859-1, en_US.ISO8859-15,
+#  en_US.ISO8859-15@euro, fr_CA, fr_CA.ISO8859-1 )
+#
+  
+locname N_America nam en_CA en_US es_MX fr_CA en_US.UTF-8 es fr
+
+SUNW5ttf	nam	solaris1
+SUNWale		nam	solaris1
+SUNWcttf	nam	solaris1
+SUNWesiso1	nam	solaris1
+SUNWeu8df	nam	solaris1
+SUNWeu8os	nam	solaris2
+SUNWeudba	nam	solaris1
+SUNWeudda	nam	solaris1
+SUNWeudhr	nam	solaris2
+SUNWeudis	nam	solaris1
+SUNWeudiv	nam	solaris2
+SUNWeudlg	nam	solaris1
+SUNWeudmg	nam	solaris1
+SUNWeuezt	nam	solaris1
+SUNWeuluf	nam	solaris1
+SUNWfriso1	nam	solaris1
+SUNWgttf	nam	solaris2
+SUNWhttf	nam	solaris1
+SUNWi15cs	nam	solaris1
+SUNWi1cs	nam	solaris1
+SUNWi7cs	nam	solaris1
+SUNWinttf	nam	solaris2
+SUNWjxcft	nam	solaris1
+SUNWkttf	nam	solaris1
+SUNWkxfnt	nam	solaris1
+SUNWnamdt	nam	solaris1
+SUNWnamos	nam	c_solaris2
+SUNWnamow	nam	c_solaris1
+SUNWplow	nam	solaris1
+SUNWplow1	nam	solaris1
+SUNWaled	nam	solaris5
+SUNWautoef	nam	solaris2
+SUNWeslu	nam	solaris2
+SUNWesspl	nam	solaris2
+SUNWeudbd	nam	solaris5
+SUNWeudhs	nam	solaris2
+SUNWeuhe	nam	solaris5
+SUNWeuhed	nam	solaris5
+SUNWfrlu	nam	solaris2
+SUNWfrspl	nam	solaris2
+SUNWedcl	nam	langcd1
+SUNWedhcm	nam	langcd1
+SUNWefdl	nam	langcd1
+SUNWeladm	nam	langcd1
+SUNWelvma	nam	langcd1
+SUNWelvmg	nam	langcd1
+SUNWemgp	nam	langcd1
+SUNWeorte	nam	langcd1
+SUNWepdas	nam	langcd1
+SUNWermui	nam	langcd1
+SUNWesadl	nam	langcd1
+SUNWesbas	nam	langcd1
+SUNWescgu	nam	langcd1
+SUNWesdis	nam	langcd1
+SUNWesdma	nam	langcd1
+SUNWesdst	nam	langcd1
+SUNWesdte	nam	langcd1
+SUNWesfw	nam	langcd1
+SUNWeshe	nam	langcd1
+SUNWeshed	nam	langcd1
+SUNWeshev	nam	langcd1
+SUNWeshez	nam	langcd1
+SUNWesim	nam	langcd1
+SUNWesos	nam	langcd1
+SUNWespmw	nam	langcd1
+SUNWessmc	nam	langcd1
+SUNWeswbc	nam	langcd1
+SUNWeswm	nam	langcd1
+SUNWesws2	nam	langcd1
+SUNWeswsv	nam	langcd1
+SUNWesxwsvr	nam	langcd1
+SUNWetltk	nam	langcd1
+SUNWewacx	nam	langcd1
+SUNWewdev	nam	langcd1
+SUNWexplt	nam	langcd1
+SUNWgnome-l10ndocument-es	nam	langcd1
+SUNWgnome-l10nmessages-es	nam	langcd1
+SUNWemcon	nam	langcd1
+SUNWemctg	nam	langcd1
+SUNWepprou	nam	langcd1
+SUNWeupdatemgru	nam	langcd1
+SUNWfdcl	nam	langcd2
+SUNWfdhcm	nam	langcd2
+SUNWffdl	nam	langcd2
+SUNWfladm	nam	langcd2
+SUNWflvma	nam	langcd2
+SUNWflvmg	nam	langcd2
+SUNWfmgp	nam	langcd2
+SUNWforte	nam	langcd2
+SUNWfpdas	nam	langcd2
+SUNWfrbas	nam	langcd2
+SUNWfrdis	nam	langcd2
+SUNWfrdma	nam	langcd2
+SUNWfrdst	nam	langcd2
+SUNWfrdte	nam	langcd2
+SUNWfrhe	nam	langcd2
+SUNWfrhed	nam	langcd2
+SUNWfrhev	nam	langcd2
+SUNWfrhez	nam	langcd2
+SUNWfrim	nam	langcd2
+SUNWfrmui	nam	langcd2
+SUNWfros	nam	langcd2
+SUNWfrpmw	nam	langcd2
+SUNWfrsmc	nam	langcd2
+SUNWfrwbc	nam	langcd2
+SUNWfrwm	nam	langcd2
+SUNWfrws2	nam	langcd2
+SUNWfrwsv	nam	langcd2
+SUNWfrxwsvr	nam	langcd2
+SUNWfsadl	nam	langcd2
+SUNWfscgu	nam	langcd2
+SUNWfsfw	nam	langcd2
+SUNWftltk	nam	langcd2
+SUNWfwacx	nam	langcd2
+SUNWfwdev	nam	langcd2
+SUNWfxplt	nam	langcd2
+SUNWfmcon	nam	langcd2
+SUNWfmctg	nam	langcd2
+SUNWfpprou	nam	langcd2
+SUNWfupdatemgru	nam	langcd2
+SUNWgnome-l10ndocument-fr	nam	langcd2
+SUNWgnome-l10nmessages-fr	nam	langcd2
+SUNWebrg        nam     langcd1
+SUNWezfsg       nam     langcd1
+SUNWfbrg        nam     langcd2
+SUNWfzfsg       nam     langcd2
+SUNWthunderbirdl10n-es-ES       nam     langcd1
+SUNWthunderbirdl10n-fr-FR       nam     langcd2
+SUNWfirefoxl10n-es-ES       nam     langcd1
+SUNWfirefoxl10n-fr-FR       nam     langcd2
+
+
+#
+#                 Solaris 11, Northern Europe partial locales
+#
+# ( da_DK, da_DK.ISO8859-1, da_DK.ISO8859-15, da_DK.ISO8859-15@euro,
+#  da.ISO8859-15, fi_FI, fi_FI.ISO8859-1, fi_FI.ISO8859-15,
+#  fi_FI.ISO8859-15@euro, fi.ISO8859-15, is_IS, is_IS.ISO8859-1, no_NO,
+#  no_NO.ISO8859-1@bokmal, no_NO.ISO8859-1@nynorsk, no_NY, sv.ISO8859-15,
+#  sv_SE, sv_SE.ISO8859-1, sv_SE.ISO8859-15, sv_SE.ISO8859-15@euro, sv_SE.UTF-8,
+#  sv_SE.UTF-8@euro, sv.UTF-8, fi_FI.UTF-8 )
+#
+
+locname N_Europe neu da_DK fi_FI is_IS nn_NO no_NO nb_NO sv_SE sv
+
+SUNW5ttf	neu	solaris1
+SUNWcttf	neu	solaris1
+SUNWeuluf	neu	solaris1
+SUNWgttf	neu	solaris2
+SUNWi15cs	neu	solaris1
+SUNWi1cs	neu	solaris1
+SUNWinttf	neu	solaris2
+SUNWjxcft	neu	solaris1
+SUNWkttf	neu	solaris1
+SUNWkxfnt	neu	solaris1
+SUNWneudt	neu	solaris1
+SUNWneuos	neu	c_solaris2
+SUNWneuow	neu	c_solaris1
+SUNWplow	neu	solaris1
+SUNWplow1	neu	solaris1
+SUNWsviso1	neu	solaris1
+SUNWautoef	neu	solaris2
+SUNWsvlu	neu	solaris2
+SUNWsvspl	neu	solaris2
+SUNWgnome-l10ndocument-sv	neu	langcd1
+SUNWgnome-l10nmessages-sv	neu	langcd1
+SUNWsdcl	neu	langcd1
+SUNWsdhcm	neu	langcd1
+SUNWsfdl	neu	langcd1
+SUNWsladm	neu	langcd1
+SUNWslvma	neu	langcd1
+SUNWslvmg	neu	langcd1
+SUNWsmcon	neu	langcd1
+SUNWsmctg	neu	langcd1
+SUNWsmgp	neu	langcd1
+SUNWsorte	neu	langcd1
+SUNWspdas	neu	langcd1
+SUNWspprou	neu	langcd1
+SUNWsrmui	neu	langcd1
+SUNWssadl	neu	langcd1
+SUNWsscgu	neu	langcd1
+SUNWssfw	neu	langcd1
+SUNWstltk	neu	langcd1
+SUNWsvbas	neu	langcd1
+SUNWsvdis	neu	langcd1
+SUNWsvdma	neu	langcd1
+SUNWsvdst	neu	langcd1
+SUNWsvdte	neu	langcd1
+SUNWsvhe	neu	langcd1
+SUNWsvhed	neu	langcd1
+SUNWsvhev	neu	langcd1
+SUNWsvhez	neu	langcd1
+SUNWsvim	neu	langcd1
+SUNWsvos	neu	langcd1
+SUNWsvpmw	neu	langcd1
+SUNWsvsmc	neu	langcd1
+SUNWsvwbc	neu	langcd1
+SUNWsvwm	neu	langcd1
+SUNWsvws2	neu	langcd1
+SUNWsvwsv	neu	langcd1
+SUNWsvxwsvr	neu	langcd1
+SUNWswacx	neu	langcd1
+SUNWswdev	neu	langcd1
+SUNWsxplt	neu	langcd1
+SUNWsupdatemgru	neu	langcd1
+SUNWsbrg        neu     langcd1
+SUNWszfsg       neu     langcd1
+SUNWthunderbirdl10n-sv-SE       neu     langcd1
+SUNWfirefoxl10n-sv-SE       neu     langcd1
+
+
+
+#
+#                  Solaris 11, Southern America partial locales
+#
+# ( es_AR, es_AR.ISO8859-1, es_BO, es_BO.ISO8859-1, es_CL, es_CL.ISO8859-1,
+#  es_CO, es_CO.ISO8859-1, es_EC, es_EC.ISO8859-1, es_PE, es_PE.ISO8859-1,
+#  es_PY, es_PY.ISO8859-1, es_UY, es_UY.ISO8859-1, es_VE, es_VE.ISO8859-1,
+#  pt_BR, pt_BR.ISO8859-1, pt_BR.UTF-8 )
+#
+
+locname S_America sam es_AR es_BO es_CL es_CO es_EC es_PE es_PY es_UY es_VE pt_BR es
+
+SUNW5ttf        sam     solaris1
+SUNWcttf        sam     solaris1
+SUNWesiso1	sam	solaris1
+SUNWgnome-l10ndocument-ptBR	sam	solaris3
+SUNWgttf        sam     solaris2
+SUNWi1cs        sam     solaris1
+SUNWjxcft       sam     solaris1
+SUNWkttf        sam     solaris1
+SUNWkxfnt       sam     solaris1
+SUNWplow        sam     solaris1
+SUNWplow1       sam     solaris1
+SUNWsamdt       sam     solaris1
+SUNWsamow       sam     c_solaris1
+SUNWautoef      sam     solaris2
+SUNWseudt       sam     solaris1
+SUNWseuow       sam     solaris1
+SUNWgnome-l10nmessages-ptBR     sam     solaris3	
+SUNWsamos       sam     c_solaris2
+SUNWseuos       sam     solaris2
+SUNWedcl        sam     langcd1
+SUNWedhcm       sam     langcd1
+SUNWefdl        sam     langcd1
+SUNWeladm	sam	langcd1
+SUNWelvma       sam     langcd1
+SUNWelvmg       sam     langcd1
+SUNWemgp        sam     langcd1
+SUNWeorte       sam     langcd1
+SUNWepdas       sam     langcd1
+SUNWermui       sam     langcd1
+SUNWesadl       sam     langcd1
+SUNWesbas       sam     langcd1
+SUNWescgu       sam     langcd1
+SUNWesdis       sam     langcd1
+SUNWesdma       sam     langcd1
+SUNWesdst       sam     langcd1
+SUNWesdte       sam     langcd1
+SUNWesfw        sam     langcd1
+SUNWeshe        sam     langcd1
+SUNWeshed       sam     langcd1
+SUNWeshev       sam     langcd1
+SUNWeshez       sam     langcd1
+SUNWesim        sam     langcd1
+SUNWeslu        sam     solaris2
+SUNWesos        sam     langcd1
+SUNWespmw       sam     langcd1
+SUNWessmc       sam     langcd1
+SUNWesspl       sam     solaris2
+SUNWeswbc       sam     langcd1
+SUNWeswm        sam     langcd1
+SUNWesws2       sam     langcd1
+SUNWeswsv       sam     langcd1
+SUNWesxwsvr     sam     langcd1
+SUNWetltk       sam     langcd1
+SUNWeuluf       sam     solaris1
+SUNWewacx       sam     langcd1
+SUNWewdev       sam     langcd1
+SUNWexplt       sam     langcd1
+SUNWemcon	sam	langcd1
+SUNWemctg	sam	langcd1
+SUNWepprou	sam	langcd1
+SUNWgnome-l10ndocument-es       sam     langcd1
+SUNWgnome-l10nmessages-es       sam     langcd1
+SUNWptxwsvr     sam     solaris3
+SUNWeupdatemgru sam     langcd1
+SUNWebrg        sam     langcd1
+SUNWezfsg       sam     langcd1
+SUNWthunderbirdl10n-pt-BR       sam     solaris3
+SUNWthunderbirdl10n-es-ES       sam     langcd1
+SUNWfirefoxl10n-pt-BR       sam     solaris3
+SUNWfirefoxl10n-es-ES       sam     langcd1
+
+
+#
+#               Solaris 11, Southern Europe partial locales 
+#
+# ( el, el_GR, el_GR.ISO8859-7, el_GR.ISO8859-7@euro, el.sun_eu_greek,
+#  es, es_ES, es_ES.ISO8859-1, es_ES.ISO8859-15, es_ES.ISO8859-15@euro,
+#  es_ES.UTF-8, es_ES.UTF-8@euro, es.ISO8859-15, es.UTF-8,
+#  it, it.ISO8859-15, it_IT, it_IT.ISO8859-1, it_IT.ISO8859-15,
+#  it_IT.ISO8859-15@euro, it_IT.UTF-8, it_IT.UTF-8@euro, it.UTF-8,
+#  pt, pt.ISO8859-15, pt_PT, pt_PT.ISO8859-1, pt_PT.ISO8859-15,
+#  pt_PT.ISO8859-15@euro, ca_ES, ca_ES.ISO8859-1, ca_ES.ISO8859-15 )
+#
+   
+locname S_Europe seu ca_ES el_CY el_GR en_MT es_ES it_IT mt_MT pt_PT it es 
+
+SUNW5ttf	seu	solaris1
+SUNWcttf	seu	solaris1
+SUNWesiso1	seu	solaris1
+SUNWeuluf	seu	solaris1
+SUNWgttf	seu	solaris2
+SUNWi15cs	seu	solaris1
+SUNWi1cs	seu	solaris1
+SUNWi7cs	seu	solaris1
+SUNWinttf	seu	solaris2
+SUNWitiso1	seu	solaris1
+SUNWjxcft	seu	solaris1
+SUNWkttf	seu	solaris1
+SUNWkxfnt	seu	solaris1
+SUNWplow	seu	solaris1
+SUNWplow1	seu	solaris1
+SUNWseudt	seu	solaris1
+SUNWseuos	seu	c_solaris2
+SUNWseuow	seu	c_solaris1
+SUNWeslu	seu	solaris2
+SUNWesspl	seu	solaris2
+SUNWitlu	seu	solaris2
+SUNWitspl	seu	solaris2
+SUNWedcl	seu	langcd1
+SUNWedhcm	seu	langcd1
+SUNWefdl	seu	langcd1
+SUNWeladm	seu	langcd1
+SUNWelvma	seu	langcd1
+SUNWelvmg	seu	langcd1
+SUNWemcon	seu	langcd1
+SUNWemctg	seu	langcd1
+SUNWemgp	seu	langcd1
+SUNWepprou	seu	langcd1
+SUNWeorte	seu	langcd1
+SUNWepdas	seu	langcd1
+SUNWermui	seu	langcd1
+SUNWesadl	seu	langcd1
+SUNWesbas	seu	langcd1
+SUNWescgu	seu	langcd1
+SUNWesdis	seu	langcd1
+SUNWesdma	seu	langcd1
+SUNWesdst	seu	langcd1
+SUNWesdte	seu	langcd1
+SUNWesfw	seu	langcd1
+SUNWeshe	seu	langcd1
+SUNWeshed	seu	langcd1
+SUNWeshev	seu	langcd1
+SUNWeshez	seu	langcd1
+SUNWesim	seu	langcd1
+SUNWesos	seu	langcd1
+SUNWespmw	seu	langcd1
+SUNWessmc	seu	langcd1
+SUNWeswbc	seu	langcd1
+SUNWeswm	seu	langcd1
+SUNWesws2	seu	langcd1
+SUNWeswsv	seu	langcd1
+SUNWesxwsvr	seu	langcd1
+SUNWetltk	seu	langcd1
+SUNWewacx	seu	langcd1
+SUNWewdev	seu	langcd1
+SUNWexplt	seu	langcd1
+SUNWeupdatemgru seu     langcd1
+SUNWgnome-l10ndocument-es	seu	langcd1
+SUNWgnome-l10nmessages-es	seu	langcd1
+SUNWgnome-l10ndocument-it	seu	langcd2
+SUNWgnome-l10nmessages-it	seu	langcd2
+SUNWidcl	seu	langcd2
+SUNWidhcm	seu	langcd2
+SUNWifdl	seu	langcd2
+SUNWiladm	seu	langcd2
+SUNWilvma	seu	langcd2
+SUNWilvmg	seu	langcd2
+SUNWimcon	seu	langcd2
+SUNWimctg	seu	langcd2
+SUNWipprou	seu	langcd2
+SUNWimgp	seu	langcd2
+SUNWiorte	seu	langcd2
+SUNWipdas	seu	langcd2
+SUNWirmui	seu	langcd2
+SUNWisadl	seu	langcd2
+SUNWiscgu	seu	langcd2
+SUNWisfw	seu	langcd2
+SUNWitbas	seu	langcd2
+SUNWitdis	seu	langcd2
+SUNWitdma	seu	langcd2
+SUNWitdst	seu	langcd2
+SUNWitdte	seu	langcd2
+SUNWithe	seu	langcd2
+SUNWithed	seu	langcd2
+SUNWithev	seu	langcd2
+SUNWithez	seu	langcd2
+SUNWitim	seu	langcd2
+SUNWitltk	seu	langcd2
+SUNWitos	seu	langcd2
+SUNWitpmw	seu	langcd2
+SUNWitsmc	seu	langcd2
+SUNWitwbc	seu	langcd2
+SUNWitwm	seu	langcd2
+SUNWitws2	seu	langcd2
+SUNWitwsv	seu	langcd2
+SUNWitxwsvr	seu	langcd2
+SUNWiwacx	seu	langcd2
+SUNWiwdev	seu	langcd2
+SUNWixplt	seu	langcd2
+SUNWiupdatemgru	seu	langcd2
+SUNWebrg        seu     langcd1
+SUNWezfsg       seu     langcd1
+SUNWibrg        seu     langcd2
+SUNWizfsg       seu     langcd2
+SUNWthunderbirdl10n-es-ES       seu     langcd1
+SUNWthunderbirdl10n-it-IT       seu     langcd2
+SUNWfirefoxl10n-es-ES       seu     langcd1
+SUNWfirefoxl10n-it-IT       seu     langcd2
+
+
+#
+#                       Solaris 11, Thai Locale
+#
+#    ( th, th_TH, th_TH.TIS620, th_TH.ISO8859-11, th_TH.UTF-8)
+#
+
+locname Asia th_th th_TH th_TH.UTF-8
+
+SUNW5ttf	th_th	solaris1
+SUNWcttf	th_th	solaris1
+SUNWeuluf	th_th	c_solaris1
+SUNWgttf	th_th	solaris2
+SUNWinttf	th_th	solaris2
+SUNWjxcft	th_th	solaris1
+SUNWkttf	th_th	solaris1
+SUNWkxfnt	th_th	solaris1
+SUNWtdbas	th_th	solaris1
+SUNWtddst	th_th	solaris1
+SUNWtddte	th_th	solaris1
+SUNWtdft	th_th	solaris1
+SUNWtdwm	th_th	solaris1
+SUNWtleu	th_th	c_solaris2
+SUNWtxplt	th_th	solaris1
+SUNWautoef	th_th	solaris2
+
+
+#            Solaris 11, Western Europe partial locales
+#
+# ( en_GB, en_GB.ISO8859-1, en_GB.ISO8859-15, en_GB.ISO8859-15@euro,
+#   en_IE, en_IE.ISO8859-1, en_IE.ISO8859-15, en_IE.ISO8859-15@euro,
+#   fr, fr_BE, fr_BE.ISO8859-1, fr_BE.ISO8859-15, fr_BE.ISO8859-15@euro,
+#   fr_FR, fr_FR.ISO8859-1, fr_FR.ISO8859-15, fr_FR.ISO8859-15@euro, 
+#   fr_FR.UTF-8, fr_FR.UTF-8@euro, fr.ISO8859-15, fr.UTF-8, nl, nl_BE,
+#   nl_BE.ISO8859-1, nl_BE.ISO8859-15, nl_BE.ISO8859-15@euro,
+#   nl.ISO8859-15, nl_NL, nl_NL.ISO8859-1, nl_NL.ISO8859-15, 
+#   nl_NL.ISO8859-15@euro, fr_BE.UTF-8 )
+#
+
+locname W_Europe weu de_LU en_GB en_IE fr_BE fr_FR nl_BE nl_NL de fr 
+
+SUNW5ttf	weu	solaris1
+SUNWcttf	weu	solaris1
+SUNWfriso1	weu	solaris1
+SUNWeuluf	weu	solaris1
+SUNWgttf	weu	solaris2
+SUNWi15cs	weu	solaris1
+SUNWi1cs	weu	solaris1
+SUNWinttf	weu	solaris2
+SUNWjxcft	weu	solaris1
+SUNWkttf	weu	solaris1
+SUNWkxfnt	weu	solaris1
+SUNWplow	weu	solaris1
+SUNWplow1	weu	solaris1
+SUNWweudt	weu	solaris1
+SUNWweuos	weu	c_solaris2
+SUNWweuow	weu	c_solaris1
+SUNWautoef	weu	solaris2
+SUNWfrlu	weu	solaris2
+SUNWfrspl	weu	solaris2
+SUNWfdcl	weu	langcd1
+SUNWfdhcm	weu	langcd1
+SUNWffdl	weu	langcd1
+SUNWfladm	weu	langcd1
+SUNWflvma	weu	langcd1
+SUNWflvmg	weu	langcd1
+SUNWfmcon	weu	langcd1
+SUNWfmctg	weu	langcd1
+SUNWfmgp	weu	langcd1
+SUNWforte	weu	langcd1
+SUNWfpdas	weu	langcd1
+SUNWfpprou	weu	langcd1
+SUNWfrbas	weu	langcd1
+SUNWfrdis	weu	langcd1
+SUNWfrdma	weu	langcd1
+SUNWfrdst	weu	langcd1
+SUNWfrdte	weu	langcd1
+SUNWfrhe	weu	langcd1
+SUNWfrhed	weu	langcd1
+SUNWfrhev	weu	langcd1
+SUNWfrhez	weu	langcd1
+SUNWfrim	weu	langcd1
+SUNWfrmui	weu	langcd1
+SUNWfros	weu	langcd1
+SUNWfrpmw	weu	langcd1
+SUNWfrsmc	weu	langcd1
+SUNWfrwbc	weu	langcd1
+SUNWfrwm	weu	langcd1
+SUNWfrws2	weu	langcd1
+SUNWfrwsv	weu	langcd1
+SUNWfrxwsvr	weu	langcd1
+SUNWfsadl	weu	langcd1
+SUNWfscgu	weu	langcd1
+SUNWfsfw	weu	langcd1
+SUNWftltk	weu	langcd1
+SUNWfwacx	weu	langcd1
+SUNWfwdev	weu	langcd1
+SUNWfxplt	weu	langcd1
+SUNWfupdatemgru	weu	langcd1
+SUNWgnome-l10ndocument-fr	weu	langcd1
+SUNWgnome-l10ndocument-de	weu	langcd2
+SUNWgnome-l10nmessages-fr	weu	langcd1
+SUNWgnome-l10nmessages-de	weu	langcd2
+SUNWfbrg        weu     langcd1
+SUNWfzfsg       weu     langcd1
+SUNWdbrg        weu     langcd2
+SUNWdzfsg       weu     langcd2
+SUNWthunderbirdl10n-fr-FR       weu     langcd1
+SUNWthunderbirdl10n-de-DE       weu     langcd2
+SUNWfirefoxl10n-fr-FR       weu     langcd1
+SUNWfirefoxl10n-de-DE       weu     langcd2
+
+
+
+#
+#                     Solaris 11, Simplified Chinese Locale 
+#
+# ( zh_CN.EUC, zh, zh_CN.GB18030, zh_CN.GBK, zh.GBK, zh_CN.UTF-8, zh.UTF-8 )
+#
+
+locname Asia china zh_cn zh_CN zh zh_CN.GB18030 zh.GBK zh.UTF-8
+
+SUNW5ttf	china	solaris1
+SUNWale		china	c_solaris1
+SUNWaled	china	solaris5
+SUNWcasu	china	solaris5
+SUNWcdt		china	solaris1
+SUNWcjaf	china	solaris5
+SUNWcjmail	china	solaris5
+SUNWcleu	china	c_solaris1
+SUNWcleu2	china	solaris2
+SUNWcttf	china	solaris1
+SUNWcufnt	china	solaris1
+SUNWcxplt	china	solaris1
+SUNWeuluf	china	c_solaris1
+SUNWgttf	china	solaris2
+SUNWgxfnt	china	solaris2
+SUNWhkfnt	china	solaris2
+SUNWhkttf	china	solaris1
+SUNWhttf	china	solaris1
+SUNWhxfnt	china	solaris1
+SUNWinttf	china	solaris2
+SUNWautoef	china	solaris2
+SUNWjxcft	china	solaris1
+SUNWkttf	china	solaris1
+SUNWkxfnt	china	solaris1
+SUNWcacx	china	langcd1
+SUNWcadis	china	langcd1
+SUNWcadma	china	langcd1
+SUNWcdab	china	langcd1
+SUNWcdbas	china	langcd1
+SUNWcdcl	china	langcd1
+SUNWcddst	china	langcd1
+SUNWcddte	china	langcd1
+SUNWcdezt	china	langcd1
+SUNWcdft	china	langcd1
+SUNWcdhcm	china	langcd1
+SUNWcdhe	china	langcd1
+SUNWcdhev	china	langcd1
+SUNWcdhez	china	langcd1
+SUNWcdicn	china	langcd1
+SUNWcdim	china	langcd1
+SUNWcdwm	china	langcd1
+SUNWcepmw	china	langcd1
+SUNWcfdl	china	langcd1
+SUNWciqu	china	langcd1
+SUNWciquc	china	langcd1
+SUNWcladm	china	langcd1
+SUNWcleue	china	langcd1
+SUNWclvma	china	langcd1
+SUNWclvmg	china	langcd1
+SUNWcmga	china	langcd1
+SUNWcmcon	china	langcd1
+SUNWcmctg	china	langcd1
+SUNWcorte	china	langcd1
+SUNWcos		china	langcd1
+SUNWcpdas	china	langcd1
+SUNWcpprou	china	langcd1
+SUNWcrmui	china	langcd1
+SUNWcsadl	china	langcd1
+SUNWcscgu	china	langcd1
+SUNWcsfw	china	langcd1
+SUNWcsmc	china	langcd1
+SUNWctltk	china	langcd1
+SUNWcttfe	china	langcd1
+SUNWcudc	china	langcd1
+SUNWcwbc	china	langcd1
+SUNWcwdev	china	langcd1
+SUNWcwsr2	china	langcd1
+SUNWcwsrv	china	langcd1
+SUNWcxe		china	langcd1
+SUNWcxfnt	china	langcd1
+SUNWcxman	china	langcd1
+SUNWcxwsvr	china	langcd1
+SUNWgnome-l10ndocument-zhCN	china	langcd1
+SUNWgnome-l10nmessages-zhCN	china	langcd1
+SUNWgttfe	china	langcd1
+SUNWstardict	china	langcd1
+SUNWstardict-root	china	langcd1
+SUNWudct	china	langcd1
+SUNWcupdatemgru	china	langcd1
+SUNWcbrg        china   langcd1
+SUNWczfsg       china   langcd1
+IPLTcadcon      china   solaris6
+IPLTcadman      china   solaris6
+IPLTcadmin      china   solaris6
+IPLTccons       china   solaris6
+IPLTcdscon      china   solaris6
+IPLTcdsman      china   solaris6
+IPLTcdsu        china   solaris6
+IPLTcss         china   solaris6
+SUNWthunderbirdl10n-zh-CN       china   langcd1
+SUNWfirefoxl10n-zh-CN       china   langcd1
+
+#
+#            Solaris 11, Traditional Chinese (Hong Kong) Locale
+#
+#                 ( zh_HK.BIG5HK, zh_HK.UTF-8)
+#
+
+locname Asia hongkong zh_hk zh_HK.BIG5HK zh_HK.UTF-8
+
+SUNW5ttf	hongkong	solaris1
+SUNWale		hongkong	c_solaris1
+SUNWcttf	hongkong	solaris1
+SUNWeuluf	hongkong	c_solaris1
+SUNWgttf	hongkong	solaris2
+SUNWgxfnt	hongkong	solaris2
+SUNWhdt		hongkong	solaris1
+SUNWhkdt	hongkong	solaris1
+SUNWhkfnt	hongkong	solaris2
+SUNWhkleu	hongkong	c_solaris2
+SUNWhkplt	hongkong	solaris1
+SUNWhkttf	hongkong	solaris1
+SUNWhttf	hongkong	solaris1
+SUNWhxfnt	hongkong	solaris1
+SUNWinttf	hongkong	solaris2
+SUNWjxcft	hongkong	solaris1
+SUNWkttf	hongkong	solaris1
+SUNWkxfnt	hongkong	solaris1
+SUNWautoef	hongkong	solaris2
+SUNW5ttfe	hongkong	langcd1
+SUNW5xfnt	hongkong	langcd1
+SUNWgnome-l10ndocument-zhHK	hongkong	langcd1
+SUNWgnome-l10nmessages-zhHK	hongkong	langcd1
+SUNWhacx	hongkong	langcd1
+SUNWhadis	hongkong	langcd1
+SUNWhadma	hongkong	langcd1
+SUNWhdab	hongkong	langcd1
+SUNWhdbas	hongkong	langcd1
+SUNWhddst	hongkong	langcd1
+SUNWhddte	hongkong	langcd1
+SUNWhdezt	hongkong	langcd1
+SUNWhdft	hongkong	langcd1
+SUNWhdhcm	hongkong	langcd1
+SUNWhdhe	hongkong	langcd1
+SUNWhdhev	hongkong	langcd1
+SUNWhdhez	hongkong	langcd1
+SUNWhdicn	hongkong	langcd1
+SUNWhdim	hongkong	langcd1
+SUNWhdwm	hongkong	langcd1
+SUNWhepmw	hongkong	langcd1
+SUNWhfdl	hongkong	langcd1
+SUNWhkdcl	hongkong	langcd1
+SUNWhkeue	hongkong	langcd1
+SUNWhkezt	hongkong	langcd1
+SUNWhklvmg	hongkong	langcd1
+SUNWhkmga	hongkong	langcd1
+SUNWhkrmui	hongkong	langcd1
+SUNWhksmc	hongkong	langcd1
+SUNWhkxe	hongkong	langcd1
+SUNWhkxwsvr	hongkong	langcd1
+SUNWhladm	hongkong	langcd1
+SUNWhlvma	hongkong	langcd1
+SUNWhmcon	hongkong	langcd1
+SUNWhmctg	hongkong	langcd1
+SUNWhos		hongkong	langcd1
+SUNWhpdas	hongkong	langcd1
+SUNWhpprou	hongkong	langcd1
+SUNWhsadl	hongkong	langcd1
+SUNWhscgu	hongkong	langcd1
+SUNWhsfw	hongkong	langcd1
+SUNWhttfe	hongkong	langcd1
+SUNWhudc	hongkong	langcd1
+SUNWhwbc	hongkong	langcd1
+SUNWhwdev	hongkong	langcd1
+SUNWhwsr2	hongkong	langcd1
+SUNWhwsrv	hongkong	langcd1
+SUNWudct	hongkong	langcd1
+SUNWhupdatemgru	hongkong	langcd1
+SUNWhbrg        hongkong        langcd1
+SUNWhzfsg       hongkong        langcd1
+SUNWthunderbirdl10n-zh-TW       hongkong        langcd1
+SUNWfirefoxl10n-zh-TW       hongkong        langcd1
+
+
+
+#
+#                   Solaris 11, Traditional Chinese Locale               
+#
+#               ( zh_TW, zh_TW.EUC, zh_TW.BIG5, zh_TW.UTF-8 )
+
+locname Asia taiwan zh_tw zh_TW.BIG5 zh_TW zh_TW.UTF-8
+
+SUNW5ttf	taiwan	solaris1
+SUNWale		taiwan	c_solaris1
+SUNWcttf	taiwan	solaris1
+SUNWeuluf	taiwan	c_solaris1
+SUNWgttf	taiwan	solaris2
+SUNWgxfnt	taiwan	solaris2
+SUNWhdt		taiwan	solaris1
+SUNWhkfnt	taiwan	solaris2
+SUNWhkttf	taiwan	solaris1
+SUNWhleu	taiwan	c_solaris1
+SUNWhleu2	taiwan	solaris2
+SUNWhttf	taiwan	solaris1
+SUNWhufnt	taiwan	solaris1
+SUNWhxfnt	taiwan	solaris1
+SUNWhxplt	taiwan	solaris1
+SUNWinttf	taiwan	solaris2
+SUNWjxcft	taiwan	solaris1
+SUNWkttf	taiwan	solaris1
+SUNWkxfnt	taiwan	solaris1
+SUNWaled	taiwan	solaris5
+SUNWautoef	taiwan	solaris2
+SUNW5ttfe	taiwan	langcd1
+SUNW5xfnt	taiwan	langcd1
+SUNWgnome-l10ndocument-zhTW	taiwan	langcd1
+SUNWgnome-l10nmessages-zhTW	taiwan	langcd1
+SUNWhacx	taiwan	langcd1
+SUNWhadis	taiwan	langcd1
+SUNWhadma	taiwan	langcd1
+SUNWhdab	taiwan	langcd1
+SUNWhdbas	taiwan	langcd1
+SUNWhdcl	taiwan	langcd1
+SUNWhddst	taiwan	langcd1
+SUNWhddte	taiwan	langcd1
+SUNWhdezt	taiwan	langcd1
+SUNWhdft	taiwan	langcd1
+SUNWhdhcm	taiwan	langcd1
+SUNWhdhe	taiwan	langcd1
+SUNWhdhev	taiwan	langcd1
+SUNWhdhez	taiwan	langcd1
+SUNWhdicn	taiwan	langcd1
+SUNWhdim	taiwan	langcd1
+SUNWhdwm	taiwan	langcd1
+SUNWhepmw	taiwan	langcd1
+SUNWhfdl	taiwan	langcd1
+SUNWhladm	taiwan	langcd1
+SUNWhleue	taiwan	langcd1
+SUNWhlvma	taiwan	langcd1
+SUNWhlvmg	taiwan	langcd1
+SUNWhmcon	taiwan	langcd1
+SUNWhmctg	taiwan	langcd1
+SUNWhmga	taiwan	langcd1
+SUNWhorte	taiwan	langcd1
+SUNWhos		taiwan	langcd1
+SUNWhpdas	taiwan	langcd1
+SUNWhpprou	taiwan	langcd1
+SUNWhrmui	taiwan	langcd1
+SUNWhsadl	taiwan	langcd1
+SUNWhscgu	taiwan	langcd1
+SUNWhsfw	taiwan	langcd1
+SUNWhsmc	taiwan	langcd1
+SUNWhtltk	taiwan	langcd1
+SUNWhttfe	taiwan	langcd1
+SUNWhudc	taiwan	langcd1
+SUNWhwbc	taiwan	langcd1
+SUNWhwdev	taiwan	langcd1
+SUNWhwsr2	taiwan	langcd1
+SUNWhwsrv	taiwan	langcd1
+SUNWhxe		taiwan	langcd1
+SUNWhxman	taiwan	langcd1
+SUNWhxwsvr	taiwan	langcd1
+SUNWudct	taiwan	langcd1
+SUNWhupdatemgru	taiwan	langcd1
+SUNWhbrg        taiwan  langcd1
+SUNWhzfsg       taiwan  langcd1
+SUNWthunderbirdl10n-zh-TW       taiwan  langcd1
+SUNWfirefoxl10n-zh-TW       taiwan  langcd1

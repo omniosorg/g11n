@@ -1,0 +1,123 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+#ident  "@(#)Makefile.uts 1.14     97/10/08 SMI"
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+# jos/uts/Makefile.uts
+#
+#
+#	This Makefiles contains the common targets and definitions for
+#	all kernels. It is to be included in the Makefiles for specific
+#	implementation architectures and processor architecture dependent
+#	modules: i.e.: all driving kernel Makefiles.
+#
+#	Include global definitions:
+#
+include		$(SRC)/Makefile.master
+# START supplement lines for Makefile.master
+#
+# Define compilation macros.
+#
+COMPILE.c=	$(CC) $(CFLAGS) $(CPPFLAGS) -c
+COMPILE64.c=	$(CC) $(CFLAGS64) $(CPPFLAGS) -c
+LINT.c=		$(LINT) $(LINTFLAGS) $(CPPFLAGS) $(ALWAYS_LINT_DEFS)
+LINT64.c=	$(LINT) $(LINTFLAGS64) $(CPPFLAGS) $(ALWAYS_LINT_DEFS)
+INS.file=	$(RM) $@; $(INS) $(@D) $<
+INS.dir=	$(INSDIR) $@
+# END supplement lines for Makefile.master
+
+#
+#include		$(SRC)/jos/Makefile.master.os
+
+#
+#	Build rules for linting the kernel.
+#
+LHEAD =	( $(ECHO) "\n$@";
+
+LGREP =	grep -v "pointer cast may result in improper alignment" 
+
+LGREP.2 =	grep -v '_init ' | \
+		grep -v '_fini ' | \
+		grep -v '_info ' | \
+		grep -v '_depends_on '
+
+LTAIL =	) 2>&1 | $(LGREP)
+
+LINT.c =	$(LINT) -cu $(LINTFLAGS) $(LINT_DEFS) $(CPPFLAGS)
+LINT64.c =	$(LINT) -cu $(LINTFLAGS64) $(LINT_DEFS) $(CPPFLAGS)
+
+LINT.s =	$(LINT.c)
+LINT64.s =	$(LINT64.c)
+
+#
+#	Build the compile/assemble lines:
+#
+ALWAYS_DEFS	 = -D_KERNEL -D_SYSCALL32
+AS_DEFS		 = -D_ASM -D__STDC__=0
+#
+#   CPPFLAGS is deliberatly set with a "=" and not a "+=".  For the kernel
+#   the header include path should not look for header files outside of
+#   the kernel code.  This "=" removes the search path built in
+#   Makefile.master inside CPPFLAGS.
+#
+CPPFLAGS	+= $(ALWAYS_DEFS) $(ALL_DEFS) $(CONFIG_DEFS) $(INCLUDE_PATH)
+ASFLAGS		+= -P
+AS_CPPFLAGS	+= $(ALWAYS_DEFS) $(ALL_DEFS) $(CONFIG_DEFS) $(AS_DEFS) \
+		   -I. $(AS_INC_PATH)
+LINTFLAGS	 = $(CCMODE) -nsxmuF -I$(SRC)/src/lib/iconv/ja
+LINTFLAGS64	 = $(CCMODE) -nsxmuF -I$(SRC)/src/lib/iconv/ja
+CFLAGS		+= $(INLINES)
+# for UCS-2 <-> EUC/JIS tables
+CFLAGS		+= -I$(SRC)/src/lib/iconv/ja
+CFLAGS64	+= -I$(SRC)/src/lib/iconv/ja
+
+#
+#	Default cleanup definition
+#
+CLEANLINTFILES	= $(MOD_LINT_LIB)
+
+#
+#	Installation constants:
+#
+FILEMODE	 = 755
+DIRMODE		 = 755
+OWNER		 = root
+GROUP		 = sys
+
+#
+#	Installation directories
+#
+ROOT_MOD_DIR	 = $(FILEROOT)/kernel
+ROOT_STRMOD_DIR	 = $(ROOT_MOD_DIR)/strmod
+
+USR_MOD_DIR	 = $(FILEROOT)/usr/kernel
+USR_STRMOD_DIR	 = $(USR_MOD_DIR)/strmod
+
+#
+#	Collection of all relevant, delivered kernel modules.
+#
+KMODS	= $(JFP_KMODS)
+
+LINT_KMODS = $(JFP_KMODS)

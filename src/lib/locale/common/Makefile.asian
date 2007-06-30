@@ -1,0 +1,92 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+#ident	"@(#)Makefile	1.0	06/03/07	SMI"
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+# common makefile to handle the most common parts of code: i.e.
+# copying static files from the src dir to the proto dir.
+
+# NOTE
+# for Asian locales non-UTF-8 locales only!
+
+include $(SRC)/Makefile.master
+
+all:=		TARGET= all
+install :=	TARGET= install
+clean :=	TARGET= clean
+clobber :=	TARGET= clobber
+
+OBJS		= $(SRCS:%.c=%.o)
+OBJS64		= $(OBJS:%=$(MACH64)/%)
+RESOLVE_SO	= wdresolve.so
+
+CLEANFILES	= *.o *.so.* *.so
+
+CFLAGS		= -I/usr/include -I. -K PIC -G -xO3 $(CFLAG_OPT)
+CFLAGS_64	= -I/usr/include -I. -K PIC -G -xO3 $(CFLAG_OPT_64)
+
+LOC_DIR		= $(FILEROOT)/usr/lib/locale/$(LOCALE)
+LOC_DIR_64	= $(LOC_DIR)/$(MACH64)
+LC_CTYPE_DIR	= $(LOC_DIR)/LC_CTYPE
+LC_CTYPE_DIR_64	= $(LC_CTYPE_DIR)/$(MACH64)
+
+TARGETDIRS = $(LOC_DIR) $(LOC_DIR_64) $(LC_CTYPE_DIR) $(LC_CTYPE_DIR_64)
+
+FILES = geo_map locale_description locale_map
+
+TARGETDIR = $(LOC_DIR)
+
+include $(SRC)/src/Makefile.targ
+
+$(MACH64):
+	$(INSDIR) $(MACH64)
+
+$(METHODS_SO): $(OBJS)
+	$(CC) $(CFLAGS) -o $@ $(OBJS)
+	$(CC) $(CFLAGS_64) -o $(MACH64)/$@ $(OBJS64)
+
+$(OBJS): $$(@:%.o=%.c)
+	$(CC) $(CFLAGS) -c -o $@ $*.c
+	$(CC) $(CFLAGS_64) -c -o $(MACH64)/$@ $*.c
+
+$(RESOLVE_SO): wdresolve.o
+	$(CC) $(CFLAGS) -o $@ wdresolve.o
+	$(CC) $(CFLAGS_64) -o $(MACH64)/$@ $(MACH64)/wdresolve.o
+
+wdresolve.o: $(RESOLVE_SRC)
+	$(CC) $(CFLAGS) -c -o $@ wdresolve.c
+	$(CC) $(CFLAGS_64) -c -o $(MACH64)/$@ wdresolve.c
+
+lint: FRC
+
+clobber clean: objclean
+	$(RM) $(CLEANFILES)
+	$(RM) -r $(MACH64)
+
+objclean:
+	$(RM) -r  $(FILES.obj)
+
+FRC:
+

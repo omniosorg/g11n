@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://basil.ireland.sun.com:8080/docbook/docbookx.dtd" [
+  <!ENTITY author1 "Sun">
+  <!ENTITY author2 "Java Desktop System Documentation Team">
+  <!ENTITY publisher "Sun Microsystems, Inc.">
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "0.3">
+  <!ENTITY manrevision "2.0">
+  <!ENTITY date "August 2004">
+  <!ENTITY app "<application>File System Examiner</application>">
+  <!ENTITY appname "File System Examiner">
+]>
+<!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.GNOME.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+  
+-->
+<!--
+
+ CDDL HEADER START
+
+ The contents of this file are subject to the terms of the
+ Common Development and Distribution License (the "License").  
+ You may not use this file except in compliance with the License.
+
+ You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+ or http://www.opensolaris.org/os/licensing.
+ See the License for the specific language governing permissions
+ and limitations under the License.
+
+ When distributing Covered Code, include this CDDL HEADER in each
+ file and include the License file at src/OPENSOLARIS.LICENSE.
+ If applicable, add the following below this CDDL HEADER, with the
+ fields enclosed by brackets "[]" replaced with your own identifying
+ information: Portions Copyright [yyyy] [name of copyright owner]
+
+ CDDL HEADER END
+
+
+ Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+ Use is subject to license terms. 
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>&appname;</title>
+	 <subtitle>&appname; Desktop Application Manual V&manrevision;</subtitle>
+	 <copyright> 
+		<year>2004</year>
+		<holder>&publisher;</holder> </copyright>
+
+	 <publisher> 
+		<publishername>&publisher;</publishername>
+	 </publisher>
+	 &legal; 
+	 <authorgroup> 
+		<author> 
+		  <firstname>&author1;</firstname>
+		  <surname>&author2;</surname> 
+		  <affiliation> 
+			 <orgname>&publisher;</orgname>
+		  </affiliation>
+		</author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+
+	 </authorgroup>
+
+
+
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+   		<revision> 
+		  <revnumber>&appname; Desktop Application Manual V&manrevision;</revnumber>
+		  <date>&date;</date> 
+		  <revdescription> 
+			 <para role="author">&author1; &author2;</para>
+			 <para role="publisher">&publisher;</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo> This manual describes version &appversion; of &appname;.
+		</releaseinfo>
+	 <legalnotice> 
+		<title>Feedback</title>
+		<para>
+                  To send feedback, follow the directions in the <ulink url="ghelp:gnome-feedback" type="help">Feedback Page</ulink>.
+                </para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+  </articleinfo>
+  <indexterm><primary>fsexam command</primary></indexterm>
+  <indexterm><primary>File System Examiner desktop application</primary></indexterm>
+  
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="fsexam-intro"> 
+    <title>Introduction</title>
+       <para>
+         &app; enables you to convert the name of a file, or the contents of a plain-text file, from a legacy character encoding to UTF-8 encoding. 
+       </para>
+       <note>
+         <para>
+         The default internal character encoding in the Sun Java Desktop System is UTF-8 encoding, and the default locale is the UTF-8 locale. If not converted, files with legacy character encoding are displayed as meaningless text.
+	</para>
+       </note>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="fsexam-getting-started"> 
+	 <title>Getting Started</title>
+
+<!-- ============= To Start fsexam ============================ -->
+	 <sect2 id="fsexam-to-start"> 
+		<title>To Start &appname;</title>
+                <para>You can start &app; in the following ways:</para>
+                <variablelist>
+                <varlistentry>
+                <term>Menu</term>
+                <listitem>
+                <para>Click <guibutton>Launch</guibutton>, then choose <menuchoice><guimenu>Applications</guimenu><guisubmenu>Utilities</guisubmenu><guimenuitem>File System Examiner</guimenuitem></menuchoice>. </para>
+                </listitem>
+                </varlistentry>
+                <varlistentry>
+                <term>Command line</term>
+                <listitem>
+                <para>Execute the following command: <userinput>fsexam</userinput></para>
+                </listitem>
+                </varlistentry>
+                </variablelist>
+	</sect2>
+
+        <sect2 id="fsexam-when-you-start">
+
+                <title>When You Start &appname;</title>
+                <para>When you start &app;, the following window is displayed:</para>
+
+                <figure id="fsexam-window">
+                  <title>&appname; Window</title>
+                  <screenshot>
+                         <mediaobject>
+                                <imageobject>
+                                  <imagedata fileref="figures/fsexam.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject> <phrase>Shows fsexam main window.</phrase>
+                                </textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+                <para>The &app; window contains the following elements: </para>
+                <variablelist>
+                  <varlistentry> <term>Menubar</term>
+                         <listitem>
+                                <para>The menus on the menubar contain all of the commands that you need to work with files in &app;.</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Display area</term>
+                         <listitem>
+                                <para> The display area displays the contents of the current directory. </para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry> <term>Statusbar</term>
+                         <listitem>
+                                <para>The statusbar displays information about current &app; activity. </para>
+                         </listitem>
+                  </varlistentry>
+                </variablelist>
+                <para>When you right-click in the &app; window, the application displays a popup menu. The popup menu contains the most common commands. </para>
+
+      <para>
+      This manual documents functionality from the menubar.
+      </para>
+         </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+  <sect1 id="fsexam-usage"> 
+	 <title>Usage</title>
+
+<!-- ============= To Open a File ======================== -->
+	 <sect2 id="fsexam-select"> 
+		<title>To Select a File or Directory</title>
+		<para>
+			Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open</guimenuitem></menuchoice>, then select the file or directory whose character encoding you want to change.
+		 </para>
+		<para>
+			If you select a directory, all of the files and subdirectories in that directory are displayed in the display area.
+		</para>
+	 </sect2>
+
+<!-- ============= To Apply by name  ================================ -->
+	 <sect2 id="fsexam-convert-filename"> 
+		<title>To Convert the Name of a File or Directory</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Select the file or directory, as described in <xref linkend="fsexam-select"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Convert Filename</guimenuitem></menuchoice>.
+                    </para>
+                    <para>By default, the <guilabel>File System Examiner name conversion</guilabel> dialog is displayed. For information on how to display or hide the <guilabel>File System Examiner name conversion</guilabel> dialog, see <xref linkend="fsexam-prefs"/>. 
+                    </para>
+                    <para>The <guilabel>File System Examiner name conversion</guilabel> dialog displays a list of character encodings that &app; can use to convert the filename. 
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Select an encoding, then click <guibutton>OK</guibutton>. 
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			If &app; successfully renames the file, the statusbar displays the name of the legacy character encoding. 
+		</para>
+		<para>
+			If the conversion fails, the statusbar displays an error message.
+		</para>
+	 </sect2>
+
+
+<!-- ============= To Apply by content  ================================ -->
+	 <sect2 id="fsexam-convert-contents"> 
+		<title>To Convert the Contents of a File</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Select the file, as described in <xref linkend="fsexam-select"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Convert Content</guimenuitem></menuchoice>.
+                    </para>
+                    <para>The <guilabel>File System Examiner content conversion</guilabel> window displays the converted contents of the file. 
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>To accept the conversion and overwrite the original file with the converted contents, click <guibutton>OK</guibutton>. 
+                    </para>
+                    <para>To cancel the conversion, close the <guilabel>File System Examiner content conversion</guilabel> window.
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			If &app; successfully converts the file contents, the statusbar displays the following text:
+<screen>File content - convert from <replaceable>original_encoding</replaceable></screen>
+		</para>
+		<para>
+			If the conversion fails, the statusbar displays an error message.
+		</para>
+		<note>
+		  <para>
+			&app; can only convert the contents of a plain-text file. &app; uses the <command>file</command> command to check whether the current file is a plain-text file. If the <command>file</command> command output is not available, &app; displays the following error message:
+			<screen>popen error, please try again</screen>
+		  </para>
+		</note>
+	 </sect2>
+
+
+<!-- ============= To Peek content  ================================ -->
+	 <sect2 id="fsexam-preview-contents"> 
+		<title>To Preview the Contents of a File</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Select the file, as described in <xref linkend="fsexam-select"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Preview Content</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			If &app; successfully previews the file contents, a popup window displays the first part of the file. Click on the popup window to close the window.
+		</para>
+		<para>
+			If the preview fails, the statusbar displays an error message.
+		</para>
+	 </sect2>
+
+<!-- ============== To Undo a Conversion  ====================== -->
+	 <sect2 id="fsexam-undo-conversion"> 
+		<title>To Undo the Last Action</title>
+		<para>
+			Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem></menuchoice>.
+		</para>
+	 </sect2>
+
+
+<!-- ============== To Restore the Original File  ====================== -->
+	 <sect2 id="fsexam-restore-file"> 
+		<title>To Restore the Original File</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Select the file, as described in <xref linkend="fsexam-select"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Restore Original File</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			&app; restores the original file contents in a file with the original filename.
+		</para>
+	 </sect2>
+
+<!-- ============= To Display Report Pane =================== -->
+	 <sect2 id="fsexam-report-pane"> 
+		<title>To Display the Report Pane</title>
+                    <para>Choose <menuchoice><guimenu>View</guimenu><guimenuitem>Report Pane</guimenuitem></menuchoice>.
+                    </para>
+		<para>
+			The report pane displays the directory name, and a list of converted files with corresponding legacy character encoding names. 
+		</para>
+		<para>
+			At the beginning of each line, <literal>[<replaceable>X</replaceable>]</literal> indicates the action that &app; performed, as follows:
+		</para>
+                <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>[<replaceable>X</replaceable>]</para></entry>
+                        <entry colname="COLSPEC1">
+                          <para>Description</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>[C]</para></entry>
+                        <entry><para>Convert file content.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[F]</para></entry>
+                        <entry><para>Convert filename.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[R]</para></entry>
+                        <entry><para>Restore original file.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[UC]</para></entry>
+                        <entry><para>Undo conversion of file content.</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[UF]</para></entry>
+                        <entry><para>Undo conversion of filename.</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+                    <para>To hide the report pane, choose <menuchoice><guimenu>View</guimenu><guimenuitem>Report Pane</guimenuitem></menuchoice> again.
+                    </para>
+	 </sect2>
+  </sect1>
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="fsexam-prefs"> 
+	 <title>Preferences</title>
+	   
+	 <para>To configure &app;, choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>. The <guilabel>File System Examiner preferences</guilabel> dialog is displayed.
+	</para>
+	 
+        <variablelist>
+          <varlistentry> 
+            <term><guilabel>Sub-folder</guilabel> </term>
+            <listitem>
+                  <para>Select the <guilabel>Recursive Mode</guilabel> option to specify that &app; converts the names of all files and subdirectories in the selected directory. </para>
+                  <note><para>&app; does not recursively convert the contents of a directory. </para></note>
+            </listitem>
+          </varlistentry> 
+          <varlistentry> 
+            <term><guilabel>User intervention</guilabel> </term>
+            <listitem>
+                  <para>Select the <guilabel>Automatic Conversion</guilabel> option to specify that &app; uses the first suitable legacy character encoding in the <guilabel>Encode list</guilabel> to convert the names of files and subdirectories to UTF-8 encoding. If you do not select this option, &app; displays the <guilabel>File System Examiner name conversion</guilabel> dialog, as described in <xref linkend="fsexam-convert-filename"/>.
+</para>
+            </listitem>
+          </varlistentry> 
+          <varlistentry> 
+            <term><guilabel>Encode list</guilabel> </term>
+            <listitem>
+                  <para>Displays a list of legacy character encodings available for the current language. Click <guibutton>Up</guibutton> to move an encoding up the list. Click <guibutton>Down</guibutton> to move an encoding down the list. </para>
+            </listitem>
+          </varlistentry> 
+        </variablelist>
+  </sect1>
+</article>

@@ -1,0 +1,162 @@
+%!
+%
+% CDDL HEADER START
+%
+% The contents of this file are subject to the terms of the
+% Common Development and Distribution License (the "License").
+% You may not use this file except in compliance with the License.
+%
+% You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+% or http://www.opensolaris.org/os/licensing.
+% See the License for the specific language governing permissions
+% and limitations under the License.
+%
+% When distributing Covered Code, include this CDDL HEADER in each
+% file and include the License file at src/OPENSOLARIS.LICENSE.
+% If applicable, add the following below this CDDL HEADER, with the
+% fields enclosed by brackets "[]" replaced with your own identifying
+% information: Portions Copyright [yyyy] [name of copyright owner]
+%
+% CDDL HEADER END
+%
+
+% @(#)prolog.ps.PCK	1.5 98/05/22
+% Copyright (c) 1996 by Sun Microsystems, Inc.
+% prolog.ps for PC Kanji locale
+% ----------------------------------------------------------------------------
+
+/RM-Mode false def
+
+/HalfWidthMetrics {
+    CodeSet12 findfont 1000 scalefont setfont
+    <889f> stringwidth pop
+    CodeSet0 findfont 1000 scalefont setfont
+    (a) stringwidth pop
+    2 mul div
+} bind def
+
+/checkJfont {
+   /CodeSet12 exch def
+   /CodeSet0  exch def
+   /Newfont  exch def
+   CodeSet12 findfont /FontName get /Courier eq {
+        false
+   } {
+        true
+   } ifelse
+} bind def
+
+/CopyFont {
+    1 index maxlength add dict begin {
+        1 index /FID ne 2 index /UniqueID ne and {
+            def
+        } {
+            pop pop
+        } ifelse
+    } forall currentdict end
+} bind def
+
+% check printer or DPS can support CID fonts
+/CIDcapable false def
+
+systemdict /composefont known {
+        /CIDInit /ProcSet resourcestatus {
+		pop pop
+		/GothicBBB-Medium-H findfont /FMapType get 9 eq {
+                	/CIDcapable true def
+		} if
+        } if
+} if
+
+% ----------------------------------------------------------------------------
+
+/makeSJISfont {
+    CIDcapable true eq {
+        /CIDInit /ProcSet findresource begin
+        Newfont [ CodeSet12 CodeSet0 ]
+        beginrearrangedfont
+
+        RM-Mode {
+            1 beginusematrix
+              [HalfWidthMetrics 0 0 1 0 0]
+            endusematrix
+        } if
+
+        1 usefont
+        1 beginbfrange
+        <20> <7e>  <20>
+        endbfrange
+        endrearrangedfont
+        end
+    } {
+        CodeSet12 findfont 0 CopyFont
+        dup /FontName Newfont  put
+        dup /FDepVector 2 copy get
+         dup length array copy
+         dup 0 CodeSet0 findfont 
+         RM-Mode {
+          [HalfWidthMetrics 0 0 1 0 0] makefont
+         } if
+         put
+        put
+        Newfont exch definefont pop
+    } ifelse
+} bind def
+
+/makeFakefont {
+        CodeSet0 findfont 0 CopyFont
+        dup /FontName Newfont  put
+        Newfont exch definefont pop
+} bind def
+
+% ----------------------------------------------------------------------------
+
+/Ryumin /Ryumin-Light-Ext-RKSJ-H def
+/Gothic /GothicBBB-Medium-Ext-RKSJ-H def
+
+/LC_Times-Roman /Times-Roman Ryumin  checkJfont {
+	makeSJISfont
+} {
+	makeFakefont
+} ifelse
+
+/LC_Times-Bold /Times-Bold Ryumin checkJfont {
+	makeSJISfont
+} {
+	makeFakefont
+} ifelse
+
+/LC_Times-Italic /Times-Italic Ryumin checkJfont {
+	makeSJISfont
+} {
+	makeFakefont
+} ifelse
+
+/LC_Helvetica /Helvetica Gothic checkJfont {
+	makeSJISfont
+} {
+	makeFakefont
+} ifelse
+
+/LC_Helvetica-Bold /Helvetica-Bold Gothic checkJfont {
+	makeSJISfont
+} {
+	makeFakefont
+} ifelse
+
+/LC_Helvetica-BoldOblique /Helvetica-BoldOblique Gothic checkJfont {
+	makeSJISfont
+} {
+	makeFakefont
+} ifelse
+
+/RM-Mode true def
+/LC_Courier /Courier Ryumin checkJfont {
+	makeSJISfont
+} {
+	makeFakefont
+} ifelse
+
+/RM-Mode false def
+
+% ----------------------------------------------------------------------------

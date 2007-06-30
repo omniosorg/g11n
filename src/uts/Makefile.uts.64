@@ -1,0 +1,70 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+#ident	"@(#)Makefile.uts.64	1.5	04/08/26 SMI"
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+# jos/uts/Makefile.uts.64
+#
+include $(SRC)/src/uts/Makefile.master.64
+
+CLASS=	64
+
+ALWAYS_DEFS_32          = -D_KERNEL -D_SYSCALL32
+ALWAYS_DEFS_64          = -D_KERNEL -D_SYSCALL32 -D_SYSCALL32_IMPL -D_ELF64
+#
+# XX64  This should be defined by the compiler!
+#
+ALWAYS_DEFS_64          += -Dsun -D__sun -D__SVR4
+ALWAYS_DEFS             = $(ALWAYS_DEFS_$(CLASS))
+
+#
+# Need to add -Wu,-xmodel=kernel option for SOS9
+# Without this, relocation error: R_AMD64_32: occurs
+#
+ALWAYS_DEFS	+=  $(STAND_FLAGS_64)
+
+#CFLAGS64	+= -Wc,-xcode=abs32 $(INLINES)
+#CFLAGS64	+= -Wc,-xcode=abs32
+CCMODE		= -Xa
+LINTFLAGS64	+= -errchk=longptr64 -errtags=yes
+
+# Selectively disable certain noisy lint errors
+LENIENT_LINTFLAGS64 = -erroff=E_CAST_INT_TO_SMALL_INT
+LENIENT_LINTFLAGS64 += -erroff=E_CAST_INT_CONST_TO_SMALL_INT
+LENIENT_LINTFLAGS64 += -erroff=E_CAST_TO_PTR_FROM_INT
+LENIENT_LINTFLAGS64 += -erroff=E_ASSIGN_INT_TO_SMALL_INT
+LENIENT_LINTFLAGS64 += -erroff=E_ASSIGN_INT_FROM_BIG_CONST
+LENIENT_LINTFLAGS64 += -erroff=E_CONST_PROMOTED_UNSIGNED_LL
+LENIENT_LINTFLAGS64 += -erroff=E_CONST_PROMOTED_LONG_LONG
+LENIENT_LINTFLAGS64 += -erroff=E_CONST_TRUNCATED_BY_ASSIGN
+LENIENT_LINTFLAGS64 += -erroff=E_PASS_INT_FROM_BIG_CONST
+# These last three are still noisy but a bit more useful.
+# They shouldn't be used on new code.
+LENIENT_LINTFLAGS64 += -erroff=E_ASSIGN_NARROW_CONV
+LENIENT_LINTFLAGS64 += -erroff=E_PASS_INT_TO_SMALL_INT
+LENIENT_LINTFLAGS64 += -erroff=E_PTR_CONV_LOSES_BITS
+
+# Override LENIENT_LINTFLAGS64 to turn on pedantic 64-bit error checking
+LINTFLAGS64 += $(LENIENT_LINTFLAGS64)

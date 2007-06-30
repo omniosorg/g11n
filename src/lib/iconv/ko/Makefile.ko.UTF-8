@@ -1,0 +1,147 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+# @(#)Makefile	1.0 06/03/28 SMI
+#
+
+COMMON  = ../common/
+
+SRCS	= euc_to_utf_main.c \
+	  utf_to_euc_main.c \
+	  njh_to_utf_main.c \
+	  utf_to_njh_main.c \
+	  ojh_to_utf_main.c \
+	  utf_to_ojh_main.c \
+	  iso_to_utf_main.c \
+	  utf_to_iso_main.c
+
+dummy: all
+
+include ../Makefile.asian
+
+E2U	= ko_KR-euc%ko_KR-UTF-8.so
+U2E	= ko_KR-UTF-8%ko_KR-euc.so
+N2U	= ko_KR-johap92%ko_KR-UTF-8.so
+U2N	= ko_KR-UTF-8%ko_KR-johap92.so
+O2U	= ko_KR-johap%ko_KR-UTF-8.so
+U2O	= ko_KR-UTF-8%ko_KR-johap.so
+I2U	= ko_KR-iso2022-7%ko_KR-UTF-8.so
+U2I	= ko_KR-UTF-8%ko_KR-iso2022-7.so
+
+C9332U  = ko_KR-cp933%ko_KR-UTF-8.so
+U2C933  = ko_KR-UTF-8%ko_KR-cp933.so
+
+PROGS	= $(U2E) $(E2U) $(N2U) $(U2N) $(O2U) $(U2O) $(I2U) $(U2I) \
+	  $(C9332U) $(U2C933) 
+
+LDFLAGS = -G -z defs -lc $(CFLAG_OPT)
+LDFLAGS_64 = -G -z defs -lc $(CFLAG_OPT_64)
+CFLAGS += -c -I$(COMMON)
+CFLAGS_64 += -c -I$(COMMON)
+
+install: all $(TARGETDIRS)
+	for i in $(PROGS); do \
+		$(INS) $(ICONV_DIR) -m 644 -u bin -g bin $$i; \
+		$(INS) $(ICONV_DIR_64) -m 644 -u bin -g bin $(MACH64)/$$i; \
+	done
+
+all: $(MACH64) $(PROGS)
+
+#
+# Library
+#
+$(E2U): euc_to_utf_main.o euc_to_utf_sub.o common_utf.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ euc_to_utf_main.o euc_to_utf_sub.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ euc_to_utf_main.o euc_to_utf_sub.o common_utf.o
+
+$(U2E): utf_to_euc_main.o utf_to_euc_sub.o common_utf.o common_utf8.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ utf_to_euc_main.o utf_to_euc_sub.o common_utf.o common_utf8.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ utf_to_euc_main.o utf_to_euc_sub.o common_utf.o common_utf8.o
+
+$(N2U): njh_to_utf_main.o njh_to_utf_sub.o common_utf.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ njh_to_utf_main.o njh_to_utf_sub.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ njh_to_utf_main.o njh_to_utf_sub.o common_utf.o
+
+$(U2N): utf_to_njh_main.o utf_to_njh_sub.o common_utf.o common_utf8.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ utf_to_njh_main.o utf_to_njh_sub.o common_utf.o common_utf8.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ utf_to_njh_main.o utf_to_njh_sub.o common_utf.o common_utf8.o
+
+$(O2U): ojh_to_utf_main.o ojh_to_utf_sub.o common_utf.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ ojh_to_utf_main.o ojh_to_utf_sub.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ ojh_to_utf_main.o ojh_to_utf_sub.o common_utf.o
+
+$(U2O): utf_to_ojh_main.o utf_to_ojh_sub.o common_utf.o common_utf8.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ utf_to_ojh_main.o utf_to_ojh_sub.o common_utf.o common_utf8.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ utf_to_ojh_main.o utf_to_ojh_sub.o common_utf.o common_utf8.o
+
+$(I2U): iso_to_utf_main.o euc_to_utf_sub.o common_utf.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ iso_to_utf_main.o euc_to_utf_sub.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ iso_to_utf_main.o euc_to_utf_sub.o common_utf.o
+
+$(U2I): utf_to_iso_main.o utf_to_euc_sub.o common_utf.o common_utf8.o common_def.h
+	$(CC) $(LDFLAGS) -o $@ utf_to_iso_main.o utf_to_euc_sub.o common_utf.o common_utf8.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ utf_to_iso_main.o utf_to_euc_sub.o common_utf.o common_utf8.o
+
+$(U2C933): UTF8_to_Cp933.o utf8%ibm.o tab_lookup.o $(COMMON)tab_lookup.h 
+	$(CC) $(LDFLAGS) -o $@ UTF8_to_Cp933.o utf8%ibm.o tab_lookup.o 
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ UTF8_to_Cp933.o utf8%ibm.o tab_lookup.o 
+
+$(C9332U): Cp933_to_UTF8.o ibm%utf8.o tab_lookup.o $(COMMON)tab_lookup.h 
+	$(CC) $(LDFLAGS) -o $@ Cp933_to_UTF8.o ibm%utf8.o tab_lookup.o 
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ Cp933_to_UTF8.o ibm%utf8.o tab_lookup.o 
+
+#
+# common submodules
+#
+common_utf8.o: $(COMMON)common_utf8.c common_def.h
+	$(CC) $(CFLAGS) $(COMMON)common_utf8.c
+	$(CC) $(CFLAGS_64) $(COMMON)common_utf8.c -o $(MACH64)/$@
+
+ibm%utf8.o: $(COMMON)ibm%utf8.c common_def.h
+	$(CC) $(CFLAGS) $(COMMON)ibm%utf8.c
+	$(CC) $(CFLAGS_64) $(COMMON)ibm%utf8.c -o $(MACH64)/$@
+
+utf8%ibm.o: $(COMMON)utf8%ibm.c common_def.h
+	$(CC) $(CFLAGS) $(COMMON)utf8%ibm.c
+	$(CC) $(CFLAGS_64) $(COMMON)utf8%ibm.c -o $(MACH64)/$@
+
+cnv_utf8ibm.o: $(COMMON)cnv_utf8ibm.c $(COMMON)tab_lookup.h 
+	$(CC) $(CFLAGS) $(COMMON)cnv_utf8ibm.c
+	$(CC) $(CFLAGS_64) $(COMMON)cnv_utf8ibm.c -o $(MACH64)/$@
+
+cnv_ibmutf8.o: $(COMMON)cnv_ibmutf8.c $(COMMON)tab_lookup.h 
+	$(CC) $(CFLAGS) $(COMMON)cnv_ibmutf8.c
+	$(CC) $(CFLAGS_64) $(COMMON)cnv_ibmutf8.c -o $(MACH64)/$@
+
+tab_lookup.o: $(COMMON)tab_lookup.c $(COMMON)tab_lookup.h 
+	$(CC) $(CFLAGS) $(COMMON)tab_lookup.c
+	$(CC) $(CFLAGS_64) $(COMMON)tab_lookup.c -o $(MACH64)/$@
+
+Cp933_to_UTF8.o: Cp933_to_UTF8.c $(COMMON)tab_lookup.h  cp933_ucs2.h
+	$(CC) $(CFLAGS) Cp933_to_UTF8.c
+	$(CC) $(CFLAGS_64) Cp933_to_UTF8.c -o $(MACH64)/$@
+
+UTF8_to_Cp933.o: UTF8_to_Cp933.c $(COMMON)tab_lookup.h ucs2_cp933.h
+	$(CC) $(CFLAGS) UTF8_to_Cp933.c
+	$(CC) $(CFLAGS_64) UTF8_to_Cp933.c -o $(MACH64)/$@
+

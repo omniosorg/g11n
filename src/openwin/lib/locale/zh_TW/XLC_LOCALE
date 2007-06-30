@@ -1,0 +1,278 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#
+# Copyright (C) 1994 X Consortium
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software. 
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+# X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+# AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNEC-
+# TION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# Except as contained in this notice, the name of the X Consortium shall not
+# be used in advertising or otherwise to promote the sale, use or other deal-
+# ings in this Software without prior written authorization from the X Consor-
+# tium.
+#
+# X Window System is a trademark of X Consortium, Inc.
+#
+
+#
+#  $XConsortium: zh_TW,v 1.3 94/01/22 14:11:36 rws Exp $
+#  XLocale Database Sample for zh_TW
+# 
+
+# 
+# 	XLC_FONTSET category
+# 
+XLC_FONTSET
+# 	fs0 class (7 bit ASCII)
+fs0	{
+	charset		ISO8859-1:GL
+	font		CNS11643-0:GL; ISO8859-1:GL
+}
+# 	fs1 class
+fs1	{
+	charset		CNS11643-1:GR
+	font		CNS11643-1:GL
+}
+# 	fs2 class
+fs2	{
+	charset		CNS11643-1:GR
+	font		CNS11643-1:GL
+}
+# 	fs3 class
+fs3	{	# plane 2
+	charset		CNS11643-2:GR
+	font		CNS11643-2:GL
+}
+# 	fs4 class
+fs4	{	# plane 3
+	charset		CNS11643-3:GR
+	font		CNS11643-3:GL
+}
+# 	fs5 class
+fs5	{	# plane 4
+	charset		CNS11643-4:GR
+	font		CNS11643-4:GL
+}
+# 	fs6 class
+fs6	{	# plane 5
+	charset		CNS11643-5:GR
+	font		CNS11643-5:GL
+}
+# 	fs7 class
+fs7	{	# plane 6
+	charset		CNS11643-6:GR
+	font		CNS11643-6:GL
+}
+# 	fs8 class
+fs8	{	# plane 7
+	charset		CNS11643-7:GR
+	font		CNS11643-7:GL
+}
+# 	fs9 class
+fs9	{	# plane 12
+	charset		CNS11643-12:GR
+	font    {	
+		primary	       CNS11643-12:GL
+	}
+}
+# 	fs10 class
+fs10	{	# plane 13
+	charset		CNS11643-13:GR
+	font	{
+		primary	       CNS11643-13:GL
+	}
+}
+# 	fs11 class
+fs11	{	# plane 14
+	charset		CNS11643-14:GR
+	font	{
+		primary		CNS11643-14:GL
+	}
+}
+# 	fs12 class 
+fs12	{	# plane 15
+	charset		CNS11643-15:GR
+	font		CNS11643-15:GL
+}
+# 	fs13 class 
+fs13	{	# plane 16
+	charset		CNS11643-16:GR
+	font {
+		primary  CNS11643-16:GL
+		supplement sunudczh_TW.2002-0:GL,[\x2121,\x7e7e]->\x2121
+	}
+}
+END XLC_FONTSET
+
+# 
+# 	XLC_XLOCALE category
+# 
+XLC_XLOCALE
+
+encoding_name		zh_TW.euc
+mb_cur_max		4
+state_depend_encoding	False
+wc_encoding_mask	\x3fffc000
+wc_shift_bits		7
+
+# 	cs0 class
+cs0	{
+	side		GL:Default
+	length		1
+	wc_encoding	\x00000000
+	ct_encoding	ISO8859-1:GL; CNS11643-0:GL
+}
+
+# 	cs1 class
+cs1	{
+	side		GR:Default
+	length		2
+	wc_encoding	\x30000000
+	ct_encoding	CNS11643-1:GR
+}
+
+# 	cs2 class
+cs2	{
+	side		GR:Default
+	length		2
+	mb_encoding	<SS> \x8e\xa1
+	wc_encoding	\x10084000
+	ct_encoding	CNS11643-1:GR
+}
+
+# 	cs3 class
+cs3	{	# plane 2
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xa2
+	wc_encoding	\x10088000
+	ct_encoding	CNS11643-2:GR
+}
+
+# 	cs4 class
+cs4	{	# plane 3
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xa3
+	wc_encoding	\x1008c000
+	ct_encoding	CNS11643-3:GR
+}
+
+# 	cs5 class
+cs5	{	# plane 2
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xa4
+	wc_encoding	\x10090000
+	ct_encoding	CNS11643-4:GR
+}
+
+# 	cs6 class
+cs6	{	# plane 5
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xa5
+	wc_encoding	\x10094000
+	ct_encoding	CNS11643-5:GR
+}
+
+# 	cs7 class
+cs7	{	# plane 6
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xa6
+	wc_encoding	\x10098000
+	ct_encoding	CNS11643-6:GR
+}
+
+# 	cs8 class
+cs8	{	# plane 7
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xa7
+	wc_encoding	\x1009c000
+	ct_encoding	CNS11643-7:GR
+}
+
+# 	cs9 class
+cs9	{	# plane 12
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xac
+	wc_encoding	\x100b0000
+	ct_encoding	CNS11643-12:GR
+}
+
+# 	cs10 class
+cs10	{	# plane 13
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xad
+	wc_encoding	\x100b4000
+	ct_encoding	CNS11643-13:GR
+}
+
+# 	cs11 class
+cs11	{	# plane 14
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xae
+	wc_encoding	\x100b8000
+	ct_encoding	CNS11643-14:GR
+}
+
+# 	cs12 class
+cs12	{	# plane 15
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xaf
+	wc_encoding	\x100bc000
+	ct_encoding	CNS11643-15:GR
+}
+
+# 	cs13 class
+cs13	{	# plane 16
+	side		GR
+	length		2
+	mb_encoding	<SS> \x8e\xb0
+	wc_encoding	\x100c0000
+	ct_encoding	CNS11643-16:GR
+}
+
+END XLC_XLOCALE

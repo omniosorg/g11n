@@ -1,0 +1,111 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+#ident  "@(#)Makefile.targ 1.9     97/10/08 SMI"
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+# jos/uts/Makefile.targ
+#
+#	This Makefiles contains the common targets and definitions for
+#	all kernels. It is to be included in the Makefiles for specific
+#	implementation architectures and processor architecture dependent
+#	modules: i.e.: all driving kernel Makefiles.
+#
+
+#
+#	Default rule for building the lint library directory:
+#
+$(LINT_LIB_DIR):
+	-@mkdir $@ 2> /dev/null
+
+#
+#	All C objects depend on inline files. However, cc(1) doesn't generate
+#	the correct dependency info. Also, these Makefiles don't contain a
+#	separate list of C-derived object files (but it is light weight to
+#	let the assembler files think they depend upon this when they don't).
+#	Fortunately, the inline files won't change very often. So, for now,
+#	all objects depend on the inline files. Remove this when the inliner
+#	is fixed to drop correct dependency information.
+#
+$(OBJECTS): $(INLINES)
+
+#
+#	Partially link .o files to generate the kmod. The fake dependency
+#	on modstubs simplifies things...
+#
+$(MODULE):		$(OBJECTS)
+	$(LD) -r -o $@ $(OBJECTS)
+	$(POST_PROCESS)
+
+#
+#	This target checks each kmod undefined entry points. It does not
+#	modify the kmod in any way.  XXX hacked to workaround bugid 1056988
+#
+$(MODULE).check:	$(MODULE) $(OBJECTS) $(UNIX_O) $(MODSTUBS_O)
+	$(LD) -o /dev/null $(OBJECTS) $(UNIX_O) $(MODSTUBS_O)
+
+#
+#	Module lint library construction targets.
+#
+MOD_LINT_LIB	= $(LINT_LIB_DIR)/llib-l$(MODULE).ln
+
+modlintlib:		$(MOD_LINT_LIB)
+
+$(MOD_LINT_LIB):	$(LINT_LIB_DIR) $(LINTS)
+	@-$(ECHO) "\n$(MODULE): (library construction):"
+	@$(LINT) -o$(MODULE) -u $(LINTFLAGS) $(LINTS)
+	@$(MV) $(@F) $@
+
+$(MODULE).lint:		$(MOD_LINT_LIB)
+
+#
+#	Installation targets and rules:
+#
+$(ROOT_MOD_DIR) $(USR_MOD_DIR):
+	-$(INS.dir)
+
+$(ROOT_STRMOD_DIR): $(ROOT_MOD_DIR)
+	-$(INS.dir)
+
+$(USR_STRMOD_DIR): $(USR_MOD_DIR)
+	-$(INS.dir)
+
+$(ROOT_STRMOD_DIR)/%:	% $(ROOT_STRMOD_DIR)
+	$(INS.file)
+
+$(USR_STRMOD_DIR)/%:	% $(USR_STRMOD_DIR)
+	$(INS.file)
+
+#
+#
+#
+clean.lint:
+	$(RM) $(LINTS) $(CLEANLINTFILES)
+
+clean:	clean.lint
+	$(RM) $(OBJECTS) $(CLEANFILES)
+
+clobber:	clean
+	$(RM) $(CLOBBERFILES)
+

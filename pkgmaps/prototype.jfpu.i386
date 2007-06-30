@@ -1,0 +1,105 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+f none usr/kernel/strmod/jconvu 0755 root sys
+f none usr/kernel/strmod/jconvs 0755 root sys
+f none usr/kernel/strmod/jconv7 0755 root sys
+f none usr/kernel/strmod/jconv8 0755 root sys
+f none usr/kernel/strmod/jconvrs 0755 root sys
+f none usr/kernel/strmod/jconvru 0755 root sys
+#
+# SUNWjfpux
+#
+d none usr/kernel/strmod/amd64 0755 root sys
+f none usr/kernel/strmod/amd64/jconvu 0755 root sys
+f none usr/kernel/strmod/amd64/jconvs 0755 root sys
+f none usr/kernel/strmod/amd64/jconv7 0755 root sys
+f none usr/kernel/strmod/amd64/jconv8 0755 root sys
+d none usr/lib/iconv/amd64 0755 root bin
+f none usr/lib/iconv/amd64/ISO-2022-JP%PCK.so 0755 root bin
+f none usr/lib/iconv/amd64/ISO-2022-JP%eucJP.so 0755 root bin
+f none usr/lib/iconv/amd64/PCK%ISO-2022-JP.so 0755 root bin
+f none usr/lib/iconv/amd64/PCK%eucJP.so 0755 root bin
+f none usr/lib/iconv/amd64/PCK%jis.so 0755 root bin
+f none usr/lib/iconv/amd64/eucJP%ISO-2022-JP.so 0755 root bin
+f none usr/lib/iconv/amd64/eucJP%PCK.so 0755 root bin
+f none usr/lib/iconv/amd64/eucJP%jis.so 0755 root bin
+f none usr/lib/iconv/amd64/jis%PCK.so 0755 root bin
+f none usr/lib/iconv/amd64/jis%eucJP.so 0755 root bin
+f none usr/lib/iconv/amd64/PCK%ISO-2022-JP.RFC1468.so 0755 root bin
+f none usr/lib/iconv/amd64/eucJP%ISO-2022-JP.RFC1468.so 0755 root bin
+s none usr/lib/iconv/amd64/JIS7%eucJP.so=./ISO-2022-JP%eucJP.so
+s none usr/lib/iconv/amd64/eucJP%JIS7.so=./eucJP%ISO-2022-JP.so
+s none usr/lib/iconv/amd64/ISO-2022-JP%SJIS.so=./ISO-2022-JP%PCK.so
+s none usr/lib/iconv/amd64/SJIS%ISO-2022-JP.so=./PCK%ISO-2022-JP.so
+s none usr/lib/iconv/amd64/SJIS%eucJP.so=./PCK%eucJP.so
+s none usr/lib/iconv/amd64/SJIS%jis.so=./PCK%jis.so
+s none usr/lib/iconv/amd64/eucJP%SJIS.so=./eucJP%PCK.so
+s none usr/lib/iconv/amd64/jis%SJIS.so=./jis%PCK.so
+
+#
+# SUNWjeucx
+#
+d none usr/lib/locale/ja/amd64 0755 root bin
+f none usr/lib/locale/ja/amd64/ja.so.3 0755 root bin
+d none usr/lib/locale/ja/LC_CTYPE/amd64 0755 root bin
+s none usr/lib/locale/ja/LC_CTYPE/amd64/wdresolve.so=../../../ja_JP.eucJP/LC_CTYPE/amd64/wdresolve.so
+d none usr/lib/locale/ja_JP.eucJP/amd64 0755 root bin
+f none usr/lib/locale/ja_JP.eucJP/amd64/ja_JP.eucJP.so.3 0755 root bin
+d none usr/lib/locale/ja_JP.eucJP/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/ja_JP.eucJP/LC_CTYPE/amd64/wdresolve.so 0644 root bin
+
+#
+# SUNWjpckx
+#
+d none usr/kernel/strmod/amd64 0755 root sys
+f none usr/kernel/strmod/amd64/jconvrs 0755 root sys
+d none usr/lib/locale/ja_JP.PCK/amd64 0755 root bin
+f none usr/lib/locale/ja_JP.PCK/amd64/ja_JP.PCK.so.3 0755 root bin
+d none usr/lib/locale/ja_JP.PCK/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/ja_JP.PCK/LC_CTYPE/amd64/wdresolve.so 0644 root bin
+
+#
+# SUNWju8x
+#
+d none usr/kernel/strmod/amd64 0755 root sys
+f none usr/kernel/strmod/amd64/jconvru 0755 root sys
+d none usr/lib/locale/ja_JP.UTF-8/amd64 0755 root bin
+f none usr/lib/locale/ja_JP.UTF-8/amd64/ja_JP.UTF-8.so.3 0755 root bin
+d none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/amd64/wdresolve.so 0644 root bin
+d none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE/amd64 0755 root bin
+#
+# Add 64 symlinks
+#
+s none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE/amd64/ja_JP.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
+s none usr/lib/locale/ja/64=amd64
+s none usr/lib/locale/ja/LC_CTYPE/64=amd64
+s none usr/lib/locale/ja_JP.eucJP/64=amd64
+s none usr/lib/locale/ja_JP.eucJP/LC_CTYPE/64=amd64
+s none usr/lib/locale/ja_JP.PCK/64=amd64
+s none usr/lib/locale/ja_JP.PCK/LC_CTYPE/64=amd64
+s none usr/lib/locale/ja_JP.UTF-8/64=amd64
+s none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/64=amd64
+s none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE/64=amd64

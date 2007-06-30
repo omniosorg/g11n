@@ -1,0 +1,166 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+f none usr/lib/locale/es/LC_MESSAGES/SUNW_OST_ADMIN.mo 0644 root bin 
+f none usr/lib/locale/es/LC_MESSAGES/SUNW_OST_NETRPC.mo 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/SUNW_OST_OSCMD.mo 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/SUNW_OST_OSLIB.mo 0644 root bin 
+f none usr/lib/locale/es/LC_MESSAGES/SUNW_OST_SGS.mo 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/SUNW_OST_SYSOSPAM.mo 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/SUNW_OST_UCBCMD.mo 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/SUNW_OST_ZONEINFO.mo 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/magic 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/mailx.help 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/more.help 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/priv_names 0644 root bin
+f none usr/lib/locale/es/LC_MESSAGES/uxlibc 0644 root bin
+f none usr/lib/locale/es/LC_TIME/SUNW_OST_OSCMD.mo 0644 root bin
+f none usr/lib/locale/es/LC_TIME/SUNW_OST_OSLIB.mo 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/SUNW_OST_ADMIN.mo 0644 root bin 
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/SUNW_OST_NETRPC.mo 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/SUNW_OST_OSCMD.mo 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/SUNW_OST_OSLIB.mo 0644 root bin 
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/SUNW_OST_SGS.mo 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/SUNW_OST_SYSOSPAM.mo 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/SUNW_OST_UCBCMD.mo 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/SUNW_OST_ZONEINFO.mo 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/magic 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/mailx.help 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/more.help 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/priv_names 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_MESSAGES/uxlibc 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_TIME/SUNW_OST_OSCMD.mo 0644 root bin
+f none usr/lib/locale/es.UTF-8/LC_TIME/SUNW_OST_OSLIB.mo 0644 root bin
+d none usr 0755 root sys
+d none usr/lib 0755 root bin
+d none usr/lib/help 0755 root bin
+d none usr/lib/help/auths 0755 root bin
+d none usr/lib/help/auths/locale 0755 root bin
+d none usr/lib/help/auths/locale/es 0755 root bin
+d none usr/lib/help/profiles 0755 root bin
+d none usr/lib/help/profiles/locale 0755 root bin
+d none usr/lib/help/profiles/locale/es 0755 root bin
+d none usr/lib/locale 0755 root bin
+d none usr/lib/locale/es 0755 root bin
+d none usr/lib/locale/es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es/LC_TIME 0755 root bin
+d none usr/lib/locale/es.UTF-8 0755 root bin
+d none usr/lib/locale/es.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es.UTF-8/LC_TIME 0755 root bin
+d none usr/share 0755 root sys
+d none usr/share/lib 0755 root sys
+d none usr/share/lib/locale 0755 root bin
+d none usr/share/lib/locale/com 0755 root bin
+d none usr/share/lib/locale/com/sun 0755 root bin
+d none usr/share/lib/locale/com/sun/admin 0755 root bin
+d none usr/share/lib/locale/com/sun/admin/pm 0755 root bin
+d none usr/share/lib/locale/com/sun/admin/pm/client 0755 root bin
+d none usr/share/lib/locale/com/sun/slp 0755 root bin
+f none usr/lib/help/auths/locale/es/AllSolAuthsHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuditConfig.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuditHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuditRead.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthJobsAdmin.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthJobsUser.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthProfmgrAssign.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthProfmgrDelegate.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthProfmgrExecattrWrite.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthProfmgrRead.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthProfmgrWrite.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthRoleAssign.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthRoleDelegate.html 0444 root bin
+f none usr/lib/help/auths/locale/es/AuthRoleWrite.html 0444 root bin
+f none usr/lib/help/auths/locale/es/BindStates.html 0444 root bin
+f none usr/lib/help/auths/locale/es/DevAllocHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/DevAllocate.html 0444 root bin
+f none usr/lib/help/auths/locale/es/DevConfig.html 0444 root bin
+f none usr/lib/help/auths/locale/es/DevGrant.html 0444 root bin
+f none usr/lib/help/auths/locale/es/DevRevoke.html 0444 root bin
+f none usr/lib/help/auths/locale/es/DhcpmgrHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/DhcpmgrWrite.html 0444 root bin
+f none usr/lib/help/auths/locale/es/JobHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/JobsGrant.html 0444 root bin
+f none usr/lib/help/auths/locale/es/LoginEnable.html 0444 root bin
+f none usr/lib/help/auths/locale/es/LoginHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/LoginRemote.html 0444 root bin
+f none usr/lib/help/auths/locale/es/PriAdmin.html 0444 root bin
+f none usr/lib/help/auths/locale/es/ProfmgrHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/RoleHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfAutofsStates.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfCronStates.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfManageHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfModifyAppl.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfModifyDepend.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfModifyFramework.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfModifyHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfModifyMethod.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfNscdStates.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfPowerStates.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfSendmailStates.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfSshStates.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SmfSyslogStates.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SysDate.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SysHeader.html 0444 root bin
+f none usr/lib/help/auths/locale/es/SysShutdown.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtAll.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtAuditCtrl.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtAuditReview.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtContractObserver.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtCronMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtCryptoMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtDHCPMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtDatAdmin.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtDefault.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtDeviceMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtDeviceSecurity.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtFTPMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtFileSysMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtFileSysSecurity.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtIPFilterMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtKerberosClntMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtKerberosSrvrMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtLogMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtMailMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtMaintAndRepair.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtMediaBkup.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtMediaRestore.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtNameServiceAdmin.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtNameServiceSecure.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtNetMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtNetSecure.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtObAccessMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtPrntAdmin.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtProcManagement.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtRightsDelegate.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtSoftwareInstall.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtSysEvMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtUserMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtUserSecurity.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtZFSFileSysMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtZFSStorageMngmnt.html 0444 root bin
+f none usr/lib/help/profiles/locale/es/RtZoneMngmnt.html 0444 root bin
+f none usr/share/lib/locale/com/sun/admin/pm/client/pmHelpResources_es.class 0644 root lp 
+f none usr/share/lib/locale/com/sun/admin/pm/client/pmResources_es.class 0644 root lp 
+f none usr/share/lib/locale/com/sun/slp/ClientLib_es.properties 0644 root sys 
+f none usr/share/lib/locale/com/sun/slp/Server_es.properties 0644 root sys 

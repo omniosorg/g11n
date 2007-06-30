@@ -1,0 +1,52 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none lib 0755 root bin
+d none lib/locale 0755 root bin
+d none lib/locale/common 0755 root bin
+s none lib/locale/common/32=.
+f none lib/locale/common/methods_unicode.so.3 0555 root bin
+d none lib/locale/common/LC_CTYPE 0755 root bin
+s none lib/locale/common/LC_CTYPE/32=.
+f none lib/locale/common/LC_CTYPE/wdresolve_unicode.so 0555 root bin
+f none lib/locale/common/LC_CTYPE/LCL_DEF_unicode 0555 root bin
+f none lib/locale/common/LC_CTYPE/ldterm_unicode.dat 0555 root bin
+d none lib/locale/common/LO_LTYPE 0755 root bin
+s none lib/locale/common/LO_LTYPE/32=.
+f none lib/locale/common/LO_LTYPE/umle.layout.so.1 0555 root bin
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/pub 0755 root bin
+f none share/lib/pub/UTF-8 0644 root bin
+s none share/lib/pub/utf-8=./UTF-8
+d none lib/localedef 0755 root bin
+d none lib/localedef/extensions 0755 root bin
+f none lib/localedef/extensions/UTF-8.x 0444 root bin
+d none lib/localedef/charmaps 0755 root bin
+f none lib/localedef/charmaps/UTF-8.src.Z 0444 root bin
+d none lib/localedef/src 0755 root bin
+d none lib/localedef/src/en_US.UTF-8 0755 root bin
+f none lib/localedef/src/en_US.UTF-8/localedef.src.Z 0444 root bin
+s none lib/localedef/src/en_US.UTF-8/charmap.src.Z=../../charmaps/UTF-8.src.Z
+s none lib/localedef/src/en_US.UTF-8/extension.src=../../extensions/UTF-8.x
+

@@ -1,0 +1,291 @@
+﻿<?xml version="1.0"?><!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+  <!ENTITY author1 "Sun" >
+  <!ENTITY author2 "Java Desktop System 文档小组" >
+  <!ENTITY publisher "Sun Microsystems, Inc." >
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "0.3" >
+  <!ENTITY manrevision "2.0" >
+  <!ENTITY date "2004 年 8 月" >
+  <!ENTITY app "<application>文件系统检查器</application>" >
+  <!ENTITY appname "文件系统检查器" >
+]><!-- 
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.GNOME.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Jan 30, 2002
+  
+-->
+<!--
+
+ CDDL HEADER START
+
+ The contents of this file are subject to the terms of the
+ Common Development and Distribution License (the "License").  
+ You may not use this file except in compliance with the License.
+
+ You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+ or http://www.opensolaris.org/os/licensing.
+ See the License for the specific language governing permissions
+ and limitations under the License.
+
+ When distributing Covered Code, include this CDDL HEADER in each
+ file and include the License file at src/OPENSOLARIS.LICENSE.
+ If applicable, add the following below this CDDL HEADER, with the
+ fields enclosed by brackets "[]" replaced with your own identifying
+ information: Portions Copyright [yyyy] [name of copyright owner]
+
+ CDDL HEADER END
+
+
+ Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+ Use is subject to license terms. 
+
+
+-->
+<!-- =============Document Header ============================= -->
+
+
+
+<article id="index" lang="zh_CN"><!-- please do not change the id; for translations, change lang to --><!-- appropriate code -->
+
+
+  <articleinfo><title>&appname;</title> <subtitle>&appname; 桌面应用程序手册 V&manrevision;</subtitle> <copyright> 
+		<year>2004</year>
+		<holder>&publisher;</holder> </copyright> <publisher> 
+		<publishername>&publisher;</publishername>
+	 </publisher> &legal;  <authorgroup> 
+		<author><firstname>&author1;</firstname> <surname>&author2;</surname> <affiliation> 
+			 <orgname>&publisher;</orgname>
+		  </affiliation></author><!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+
+
+
+	 </authorgroup>
+
+
+
+
+
+	 <revhistory><!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+
+   		<revision><revnumber>&appname; 桌面应用程序手册 V&manrevision;</revnumber> <date>&date;</date><revdescription> 
+			 <para role="author">&author1; &author2;</para>
+			 <para role="publisher">&publisher; </para>
+		  </revdescription>
+		</revision>
+	 </revhistory><releaseinfo> 本手册介绍 &appname; &appversion; 版。</releaseinfo><releaseinfo></releaseinfo><legalnotice><title>反馈</title><para>要发送反馈，请按照<ulink url="ghelp:gnome-feedback" type="help">反馈页</ulink>中的说明执行操作。</para><!-- Translators may also add here feedback address for translations -->
+
+	 </legalnotice>
+  </articleinfo><!-- ============= Document Body ============================= --><!-- ============= Introduction ============================== --><indexterm><primary>fsexam 命令</primary></indexterm> <indexterm><primary>文件系统检查器桌面应用程序</primary></indexterm><sect1 id="fsexam-intro"><title>简介</title><para>&app;可将文件名或纯文本文件的内容从传统字符编码转换为 UTF-8 编码。</para>
+       <note>
+         <para>Sun Java Desktop System 的默认内部字符编码为 UTF-8 编码，默认语言环境为 UTF-8 语言环境。如果不进行转换，传统字符编码的文件就会显示为无意义的文本。</para>
+       </note>
+  </sect1><!-- ============= Getting Started =========================== -->
+
+
+  <sect1 id="fsexam-getting-started"><!-- ============= To Start fsexam ============================ --><title>入门</title><sect2 id="fsexam-to-start"><title>启动 &appname;</title><para>可以通过以下方式启动 &app;：</para>
+                <variablelist>
+                <varlistentry><term>菜单</term><listitem>
+                <para>单击<guibutton>&ldquo;启动&rdquo;</guibutton>，然后选择<menuchoice><guimenu>&ldquo;应用程序&rdquo;</guimenu><guisubmenu>&ldquo;实用程序&rdquo;</guisubmenu><guimenuitem>&ldquo;文件系统检查器&rdquo;</guimenuitem></menuchoice>。</para>
+                </listitem>
+                </varlistentry>
+                <varlistentry><term>命令行</term><listitem>
+                <para>执行以下命令：<userinput>fsexam</userinput></para>
+                </listitem>
+                </varlistentry>
+                </variablelist>
+	</sect2>
+
+        <sect2 id="fsexam-when-you-start"><title>启动 &appname; 时</title><para>在启动 &app; 时，系统会显示下面的窗口：</para>
+
+                <figure id="fsexam-window"><title>&appname; 窗口</title><screenshot>
+                         <mediaobject>
+                                <imageobject>
+                                  <imagedata fileref="figures/fsexam.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject><phrase>显示文件系统检查器主窗口。</phrase></textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+                <para>&app; 窗口包含以下元素：</para>
+                <variablelist>
+                  <varlistentry><term>菜单栏</term><listitem>
+                                <para>菜单栏上的菜单包含您在 &app; 中处理文件所需的所有命令。</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry><term>显示区域</term><listitem>
+                                <para>显示区域显示当前目录的内容。</para>
+                         </listitem>
+                  </varlistentry>
+                  <varlistentry><term>状态栏</term><listitem>
+                                <para>状态栏显示&app;的当前活动的信息。</para>
+                         </listitem>
+                  </varlistentry>
+                </variablelist>
+                <para>当在&app;窗口中右键单击时，应用程序将会显示一个弹出菜单。弹出菜单中包含最常用的命令。</para>
+
+      <para>本手册介绍菜单栏的功能。</para>
+         </sect2>
+  </sect1><!-- ================ Usage ================================ -->
+
+
+  <sect1 id="fsexam-usage"><!-- ============= To Open a File ======================== --><title>用法</title><sect2 id="fsexam-select"><title>选择文件或目录</title><para>选择<menuchoice><guimenu>&ldquo;文件&rdquo;</guimenu><guimenuitem>&ldquo;打开&rdquo;</guimenuitem></menuchoice>，然后选择要更改字符编码的文件或目录。</para>
+		<para>如果选择目录，则该目录中的所有文件和子目录都会显示在显示区域中。</para>
+	 </sect2><!-- ============= To Apply by name  ================================ -->
+
+
+	 <sect2 id="fsexam-convert-filename"><title>转换文件或目录的名称</title><para>请执行以下步骤：</para>
+                <orderedlist>
+                  <listitem>
+                    <para>选择文件或目录，如 <xref linkend="fsexam-select"/> 所述。</para>
+                  </listitem>
+                  <listitem>
+                    <para>选择<menuchoice><guimenu>&ldquo;编辑&rdquo;</guimenu><guimenuitem>&ldquo;转换文件名&rdquo;</guimenuitem></menuchoice>。</para>
+                    <para>缺省情况下，会出现<guilabel>&ldquo;文件系统检查器名称转换&rdquo;</guilabel>对话框。有关如何显示或隐藏<guilabel>文件系统检查器名称转换</guilabel>对话框的信息，请参见 <xref linkend="fsexam-prefs"/>。</para>
+                    <para><guilabel>&ldquo;文件系统检查器名称转换&rdquo;</guilabel>对话框中显示&app;可用来转换文件名的字符编码列表。</para>
+                  </listitem>
+                  <listitem>
+                    <para>选择一种编码，然后单击<guibutton>&ldquo;确定&rdquo;</guibutton>。</para>
+                  </listitem>
+                </orderedlist>
+		<para>如果&app;重命名文件成功，状态栏会显示传统字符编码的名称。</para>
+		<para>如果转换失败，状态栏会显示一个错误消息。</para>
+	 </sect2><!-- ============= To Apply by content  ================================ -->
+
+
+
+	 <sect2 id="fsexam-convert-contents"><title>转换文件的内容</title><para>请执行以下步骤：</para>
+                <orderedlist>
+                  <listitem>
+                    <para>选择文件，如 <xref linkend="fsexam-select"/> 所述。</para>
+                  </listitem>
+                  <listitem>
+                    <para>选择<menuchoice><guimenu>&ldquo;编辑&rdquo;</guimenu><guimenuitem>&ldquo;转换内容&rdquo;</guimenuitem></menuchoice>。</para>
+                    <para><guilabel>&ldquo;文件系统检查器内容转换&rdquo;</guilabel>窗口显示经转换的文件内容。</para>
+                  </listitem>
+                  <listitem>
+                    <para>要接受转换并用转换内容覆盖原文件，请单击<guibutton>&ldquo;确定&rdquo;</guibutton>。</para>
+                    <para>要取消转换，请关闭<guilabel>&ldquo;文件系统检查器内容转换&rdquo;</guilabel>窗口。</para>
+                  </listitem>
+                </orderedlist>
+		<para>如果&app;转换文件内容成功，状态栏会显示以下文本：<screen>文件内容 - 转换自<replaceable>原编码</replaceable></screen></para>
+		<para>如果转换失败，状态栏会显示一个错误消息。</para>
+		<note>
+		  <para>&app;只能转换纯文本文件的内容。&app;使用 <command>file</command> 命令检查当前文件是否为纯文本文件。如果 <command>file</command> 命令没有输出，则&app;显示以下错误消息：<screen>popen 错误，请重试</screen></para>
+		</note>
+	 </sect2><!-- ============= To Peek content  ================================ -->
+
+
+
+	 <sect2 id="fsexam-preview-contents"><title>预览文件的内容</title><para>请执行以下步骤：</para>
+                <orderedlist>
+                  <listitem>
+                    <para>选择文件，如 <xref linkend="fsexam-select"/> 所述。</para>
+                  </listitem>
+                  <listitem>
+                    <para>选择<menuchoice><guimenu>&ldquo;编辑&rdquo;</guimenu><guimenuitem>&ldquo;预览内容&rdquo;</guimenuitem></menuchoice>。</para>
+                  </listitem>
+                </orderedlist>
+		<para>如果&app;预览文件内容成功，会在一个弹出窗口中显示文件的前一部分。单击弹出窗口将其关闭。</para>
+		<para>如果预览失败，状态栏会显示一个错误消息。</para>
+	 </sect2><!-- ============== To Undo a Conversion  ====================== -->
+
+
+	 <sect2 id="fsexam-undo-conversion"><title>撤销上次操作</title><para>选择<menuchoice><guimenu>&ldquo;编辑&rdquo;</guimenu><guimenuitem>&ldquo;撤消&rdquo;</guimenuitem></menuchoice>。</para>
+	 </sect2><!-- ============== To Restore the Original File  ====================== -->
+
+
+
+	 <sect2 id="fsexam-restore-file"><title>恢复原文件</title><para>请执行以下步骤：</para>
+                <orderedlist>
+                  <listitem>
+                    <para>选择文件，如 <xref linkend="fsexam-select"/> 所述。</para>
+                  </listitem>
+                  <listitem>
+                    <para>选择<menuchoice><guimenu>&ldquo;编辑&rdquo;</guimenu><guimenuitem>&ldquo;恢复原文件&rdquo;</guimenuitem></menuchoice>。</para>
+                  </listitem>
+                </orderedlist>
+		<para>&app;将原文件的内容恢复到新文件中，新文件的名称与原文件名相同。</para>
+	 </sect2><!-- ============= To Display Report Pane =================== -->
+
+
+	 <sect2 id="fsexam-report-pane"><title>显示报告窗格</title><para>选择<menuchoice><guimenu>&ldquo;查看&rdquo;</guimenu><guimenuitem>&ldquo;报告窗格&rdquo;</guimenuitem></menuchoice>。</para>
+		<para>报告窗格显示目录名称、已转换文件的列表及相应的传统字符编码名称。</para>
+		<para>每行开始处的 <literal>[<replaceable>X</replaceable>]</literal> 表示&app;执行的操作，如下所示：</para>
+                <informaltable frame="all">
+                  <tgroup cols="2" colsep="1" rowsep="1">
+                    <colspec colname="COLSPEC0" colwidth="50*"/>
+                    <colspec colname="COLSPEC1" colwidth="50*"/>
+                    <thead>
+                      <row valign="top">
+                        <entry colname="COLSPEC0">
+                          <para>[<replaceable>X</replaceable>]</para></entry>
+                        <entry colname="COLSPEC1">
+                          <para>说明</para></entry>
+                      </row>
+                    </thead>
+                    <tbody>
+                      <row valign="top">
+                        <entry><para>[C]</para></entry>
+                        <entry><para>转换文件内容。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[F]</para></entry>
+                        <entry><para>转换文件名。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[R]</para></entry>
+                        <entry><para>恢复原文件。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[UC]</para></entry>
+                        <entry><para>撤消文件内容转换。</para></entry>
+                      </row>
+                      <row valign="top">
+                        <entry><para>[UF]</para></entry>
+                        <entry><para>撤消文件名转换。</para></entry>
+                      </row>
+                    </tbody>
+                  </tgroup>
+                </informaltable>
+
+                    <para>要隐藏报告窗格，请再次选择<menuchoice><guimenu>&ldquo;查看&rdquo;</guimenu><guimenuitem>&ldquo;报告窗格&rdquo;</guimenuitem></menuchoice>。</para>
+	 </sect2>
+  </sect1><!-- ============= Preferences ============================= -->
+
+
+
+  <sect1 id="fsexam-prefs"><title>首选项</title><para>要配置&app;，请选择<menuchoice><guimenu>&ldquo;编辑&rdquo;</guimenu><guimenuitem>&ldquo;首选项&rdquo;</guimenuitem></menuchoice>。即显示<guilabel>&ldquo;文件系统检查器首选项&rdquo;</guilabel>对话框。</para>
+	 
+        <variablelist>
+          <varlistentry><term><guilabel>子文件夹</guilabel> </term><listitem>
+                  <para>选择<guilabel>&ldquo;递归模式&rdquo;</guilabel>选项指定&app;转换所选目录中的全部文件和子目录的名称。</para>
+                  <note><para>&app;不递归转换目录的内容。</para></note>
+            </listitem>
+          </varlistentry> 
+          <varlistentry><term><guilabel>用户介入</guilabel> </term><listitem>
+                  <para>选择<guilabel>&ldquo;自动转换&rdquo;</guilabel>选项可指定&app;使用<guilabel>&ldquo;编码列表&rdquo;</guilabel>中第一个适合的传统字符编码将文件和子目录名称转换为 UTF-8 编码。如果未选择该选项，&app; 将显示<guilabel>文件系统检查器名称转换</guilabel>对话框，如 <xref linkend="fsexam-convert-filename"/> 所述。</para>
+            </listitem>
+          </varlistentry> 
+          <varlistentry><term><guilabel>编码列表</guilabel> </term><listitem>
+                  <para>显示当前语言可用的传统字符编码列表。单击<guibutton>&ldquo;向上&rdquo;</guibutton>在列表中向上移动编码。单击<guibutton>&ldquo;向下&rdquo;</guibutton>在列表中向下移动编码。</para>
+            </listitem>
+          </varlistentry> 
+        </variablelist>
+  </sect1>
+</article>

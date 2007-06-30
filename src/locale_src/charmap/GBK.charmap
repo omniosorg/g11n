@@ -1,0 +1,465 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# $Id: charmap.zh.GBK,v 1.1 1998/10/20 15:37:28 jkang Exp $
+#
+#   (C) COPYRIGHT Sun Microsystems, Inc. 1997
+#   All Rights Reserved
+#
+#   charmap for zh.GBK locale (simplified Chinese, GBK)
+#
+##############################################################################
+#
+#		CHARMAP
+#
+
+<code_set_name>		GBK
+<mb_cur_max>		2
+<mb_cur_min>        1
+
+CHARMAP
+#
+#       Portable Character Set (ASCII)
+#
+<NUL>                           \x00
+<SOH>                           \x01
+<STX>                           \x02
+<ETX>                           \x03
+<EOT>                           \x04
+<ENQ>                           \x05
+<ACK>                           \x06
+<alert>                         \x07
+<BEL>                           \x07
+<backspace>                     \x08
+<tab>                           \x09
+<newline>                       \x0a
+<vertical-tab>                  \x0b
+<form-feed>                     \x0c
+<carriage-return>               \x0d
+<SO>                            \x0e
+<SI>                            \x0f
+<DLE>                           \x10
+<DC1>                           \x11
+<DC2>                           \x12
+<DC3>                           \x13
+<DC4>                           \x14
+<NAK>                           \x15
+<SYN>                           \x16
+<ETB>                           \x17
+<CAN>                           \x18
+<EM>                            \x19
+<SUB>                           \x1a
+<ESC>                           \x1b
+<IS4>                           \x1c
+<IS3>                           \x1d
+<IS2>                           \x1e
+<IS1>                           \x1f
+<space>                         \x20
+<SP>                            \x20
+<exclamation-mark>              \x21
+<quotation-mark>                \x22
+<number-sign>                   \x23
+<dollar-sign>                   \x24
+<percent-sign>                  \x25
+<ampersand>                     \x26
+<apostrophe>                    \x27
+<left-parenthesis>              \x28
+<right-parenthesis>             \x29
+<asterisk>                      \x2a
+<plus-sign>                     \x2b
+<comma>                         \x2c
+<hyphen>                        \x2d
+<hyphen-minus>                  \x2d
+<period>                        \x2e
+<full-stop>                     \x2e
+<slash>                         \x2f
+<solidus>                       \x2f
+<zero>                          \x30
+<one>                           \x31
+<two>                           \x32
+<three>                         \x33
+<four>                          \x34
+<five>                          \x35
+<six>                           \x36
+<seven>                         \x37
+<eight>                         \x38
+<nine>                          \x39
+<colon>                         \x3a
+<semicolon>                     \x3b
+<less-than-sign>                \x3c
+<equals-sign>                   \x3d
+<greater-than-sign>             \x3e
+<question-mark>                 \x3f
+<commercial-at>                 \x40
+<A>                             \x41
+<B>                             \x42
+<C>                             \x43
+<D>                             \x44
+<E>                             \x45
+<F>                             \x46
+<G>                             \x47
+<H>                             \x48
+<I>                             \x49
+<J>                             \x4a
+<K>                             \x4b
+<L>                             \x4c
+<M>                             \x4d
+<N>                             \x4e
+<O>                             \x4f
+<P>                             \x50
+<Q>                             \x51
+<R>                             \x52
+<S>                             \x53
+<T>                             \x54
+<U>                             \x55
+<V>                             \x56
+<W>                             \x57
+<X>                             \x58
+<Y>                             \x59
+<Z>                             \x5a
+<left-square-bracket>           \x5b
+<backslash>                     \x5c
+<reverse-solidus>               \x5c
+<right-square-bracket>          \x5d
+<circumflex>                    \x5e
+<circumflex-accent>             \x5e
+<underscore>                    \x5f
+<low-line>                      \x5f
+<grave-accent>                  \x60
+<a>                             \x61
+<b>                             \x62
+<c>                             \x63
+<d>                             \x64
+<e>                             \x65
+<f>                             \x66
+<g>                             \x67
+<h>                             \x68
+<i>                             \x69
+<j>                             \x6a
+<k>                             \x6b
+<l>                             \x6c
+<m>                             \x6d
+<n>                             \x6e
+<o>                             \x6f
+<p>                             \x70
+<q>                             \x71
+<r>                             \x72
+<s>                             \x73
+<t>                             \x74
+<u>                             \x75
+<v>                             \x76
+<w>                             \x77
+<x>                             \x78
+<y>                             \x79
+<z>                             \x7a
+<left-curly-bracket>            \x7b
+<vertical-line>                 \x7c
+<right-curly-bracket>           \x7d
+<tilde>                         \x7e
+<DEL>                           \x7f
+# End Portable Character Set
+
+#
+#       GBK Characters
+#
+
+#-------------------------------------------------------------
+#       GBK/3: 	Extended Chinese Ideographics(0x8140 - 0xA0FE)
+#               Not include xx7F
+#               Total Num is: 32 * 190 = 6080
+#-------------------------------------------------------------
+
+<gbk00001>...<gbk00063>               \x81\x40
+<gbk00064>...<gbk00190>               \x81\x80
+<gbk00191>...<gbk00253>               \x82\x40
+<gbk00254>...<gbk00380>               \x82\x80
+<gbk00381>...<gbk00443>               \x83\x40
+<gbk00444>...<gbk00570>               \x83\x80
+<gbk00571>...<gbk00633>               \x84\x40
+<gbk00634>...<gbk00760>               \x84\x80
+<gbk00761>...<gbk00823>               \x85\x40
+<gbk00824>...<gbk00950>               \x85\x80
+<gbk00951>...<gbk01013>               \x86\x40
+<gbk01014>...<gbk01140>               \x86\x80
+<gbk01141>...<gbk01203>               \x87\x40
+<gbk01204>...<gbk01330>               \x87\x80
+<gbk01331>...<gbk01393>               \x88\x40
+<gbk01394>...<gbk01520>               \x88\x80
+<gbk01521>...<gbk01583>               \x89\x40
+<gbk01584>...<gbk01710>               \x89\x80
+<gbk01711>...<gbk01773>               \x8a\x40
+<gbk01774>...<gbk01900>               \x8a\x80
+<gbk01901>...<gbk01963>               \x8b\x40
+<gbk01964>...<gbk02090>               \x8b\x80
+<gbk02091>...<gbk02153>               \x8c\x40
+<gbk02154>...<gbk02280>               \x8c\x80
+<gbk02281>...<gbk02343>               \x8d\x40
+<gbk02344>...<gbk02470>               \x8d\x80
+<gbk02471>...<gbk02533>               \x8e\x40
+<gbk02534>...<gbk02660>               \x8e\x80
+<gbk02661>...<gbk02723>               \x8f\x40
+<gbk02724>...<gbk02850>               \x8f\x80
+<gbk02851>...<gbk02913>               \x90\x40
+<gbk02914>...<gbk03040>               \x90\x80
+<gbk03041>...<gbk03103>               \x91\x40
+<gbk03104>...<gbk03230>               \x91\x80
+<gbk03231>...<gbk03293>               \x92\x40
+<gbk03294>...<gbk03420>               \x92\x80
+<gbk03421>...<gbk03483>               \x93\x40
+<gbk03484>...<gbk03610>               \x93\x80
+<gbk03611>...<gbk03673>               \x94\x40
+<gbk03674>...<gbk03800>               \x94\x80
+<gbk03801>...<gbk03863>               \x95\x40
+<gbk03864>...<gbk03990>               \x95\x80
+<gbk03991>...<gbk04053>               \x96\x40
+<gbk04054>...<gbk04180>               \x96\x80
+<gbk04181>...<gbk04243>               \x97\x40
+<gbk04244>...<gbk04370>               \x97\x80
+<gbk04371>...<gbk04433>               \x98\x40
+<gbk04434>...<gbk04560>               \x98\x80
+<gbk04561>...<gbk04623>               \x99\x40
+<gbk04624>...<gbk04750>               \x99\x80
+<gbk04751>...<gbk04813>               \x9a\x40
+<gbk04814>...<gbk04940>               \x9a\x80
+<gbk04941>...<gbk05003>               \x9b\x40
+<gbk05004>...<gbk05130>               \x9b\x80
+<gbk05131>...<gbk05193>               \x9c\x40
+<gbk05194>...<gbk05320>               \x9c\x80
+<gbk05321>...<gbk05383>               \x9d\x40
+<gbk05384>...<gbk05510>               \x9d\x80
+<gbk05511>...<gbk05573>               \x9e\x40
+<gbk05574>...<gbk05700>               \x9e\x80
+<gbk05701>...<gbk05763>               \x9f\x40
+<gbk05764>...<gbk05890>               \x9f\x80
+<gbk05891>...<gbk05953>               \xa0\x40
+<gbk05954>...<gbk06080>               \xa0\x80
+
+
+#---------------------------------------------------------------------------------
+#       The Third User Defined (Restricted Reserved) Area (A140 - A7A0)  [672/000]
+#       GBK/5:  Extended Non_Chinese Ideographics Symbols (A840 - A9A0)  [192/166]
+#       GBK/1:  GB2312 Non_Chinese Ideographics Symbols   (A1A1 - A9FE)  [846/717]
+#               Not include xx7F
+#---------------------------------------------------------------------------------
+
+<gbk06081>...<gbk06143>               \xa1\x40
+<gbk06144>...<gbk06270>               \xa1\x80
+<gbk06271>...<gbk06333>               \xa2\x40
+<gbk06334>...<gbk06460>               \xa2\x80
+<gbk06461>...<gbk06523>               \xa3\x40
+<gbk06524>...<gbk06650>               \xa3\x80
+<gbk06651>...<gbk06713>               \xa4\x40
+<gbk06714>...<gbk06840>               \xa4\x80
+<gbk06841>...<gbk06903>               \xa5\x40
+<gbk06904>...<gbk07030>               \xa5\x80
+<gbk07031>...<gbk07093>               \xa6\x40
+<gbk07094>...<gbk07220>               \xa6\x80
+<gbk07221>...<gbk07283>               \xa7\x40
+<gbk07284>...<gbk07410>               \xa7\x80
+<gbk07411>...<gbk07473>               \xa8\x40
+<gbk07474>...<gbk07600>               \xa8\x80
+<gbk07601>...<gbk07663>               \xa9\x40
+<gbk07664>...<gbk07790>               \xa9\x80
+
+
+#------------------------------------------------------------------------------------
+#       GBK/4:  Extended Chinese Ideographics (AA40 - FEA0)
+#       First User Defined Area                            (AAA1 - AFFE)  [ 564/ 000]
+#       GBK/2:  GB2312 Chinese Ideographics                (B0A1 - F7FE)  [6768/6763]
+#       Second User Defined Area                           (F8A1 - FEFE)  [ 658/ 000]
+#               Not include xx7F
+#------------------------------------------------------------------------------------
+
+<gbk07791>...<gbk07853>               \xaa\x40
+<gbk07854>...<gbk07980>               \xaa\x80
+<gbk07981>...<gbk08043>               \xab\x40
+<gbk08044>...<gbk08170>               \xab\x80
+<gbk08171>...<gbk08233>               \xac\x40
+<gbk08234>...<gbk08360>               \xac\x80
+<gbk08361>...<gbk08423>               \xad\x40
+<gbk08424>...<gbk08550>               \xad\x80
+<gbk08551>...<gbk08613>               \xae\x40
+<gbk08614>...<gbk08740>               \xae\x80
+<gbk08741>...<gbk08803>               \xaf\x40
+<gbk08804>...<gbk08930>               \xaf\x80
+<gbk08931>...<gbk08993>               \xb0\x40
+<gbk08994>...<gbk09120>               \xb0\x80
+<gbk09121>...<gbk09183>               \xb1\x40
+<gbk09184>...<gbk09310>               \xb1\x80
+<gbk09311>...<gbk09373>               \xb2\x40
+<gbk09374>...<gbk09500>               \xb2\x80
+<gbk09501>...<gbk09563>               \xb3\x40
+<gbk09564>...<gbk09690>               \xb3\x80
+<gbk09691>...<gbk09753>               \xb4\x40
+<gbk09754>...<gbk09880>               \xb4\x80
+<gbk09881>...<gbk09943>               \xb5\x40
+<gbk09944>...<gbk10070>               \xb5\x80
+<gbk10071>...<gbk10133>               \xb6\x40
+<gbk10134>...<gbk10260>               \xb6\x80
+<gbk10261>...<gbk10323>               \xb7\x40
+<gbk10324>...<gbk10450>               \xb7\x80
+<gbk10451>...<gbk10513>               \xb8\x40
+<gbk10514>...<gbk10640>               \xb8\x80
+<gbk10641>...<gbk10703>               \xb9\x40
+<gbk10704>...<gbk10830>               \xb9\x80
+<gbk10831>...<gbk10893>               \xba\x40
+<gbk10894>...<gbk11020>               \xba\x80
+<gbk11021>...<gbk11083>               \xbb\x40
+<gbk11084>...<gbk11210>               \xbb\x80
+<gbk11211>...<gbk11273>               \xbc\x40
+<gbk11274>...<gbk11400>               \xbc\x80
+<gbk11401>...<gbk11463>               \xbd\x40
+<gbk11464>...<gbk11590>               \xbd\x80
+<gbk11591>...<gbk11653>               \xbe\x40
+<gbk11654>...<gbk11780>               \xbe\x80
+<gbk11781>...<gbk11843>               \xbf\x40
+<gbk11844>...<gbk11970>               \xbf\x80
+<gbk11971>...<gbk12033>               \xc0\x40
+<gbk12034>...<gbk12160>               \xc0\x80
+<gbk12161>...<gbk12223>               \xc1\x40
+<gbk12224>...<gbk12350>               \xc1\x80
+<gbk12351>...<gbk12413>               \xc2\x40
+<gbk12414>...<gbk12540>               \xc2\x80
+<gbk12541>...<gbk12603>               \xc3\x40
+<gbk12604>...<gbk12730>               \xc3\x80
+<gbk12731>...<gbk12793>               \xc4\x40
+<gbk12794>...<gbk12920>               \xc4\x80
+<gbk12921>...<gbk12983>               \xc5\x40
+<gbk12984>...<gbk13110>               \xc5\x80
+<gbk13111>...<gbk13173>               \xc6\x40
+<gbk13174>...<gbk13300>               \xc6\x80
+<gbk13301>...<gbk13363>               \xc7\x40
+<gbk13364>...<gbk13490>               \xc7\x80
+<gbk13491>...<gbk13553>               \xc8\x40
+<gbk13554>...<gbk13680>               \xc8\x80
+<gbk13681>...<gbk13743>               \xc9\x40
+<gbk13744>...<gbk13870>               \xc9\x80
+<gbk13871>...<gbk13933>               \xca\x40
+<gbk13934>...<gbk14060>               \xca\x80
+<gbk14061>...<gbk14123>               \xcb\x40
+<gbk14124>...<gbk14250>               \xcb\x80
+<gbk14251>...<gbk14313>               \xcc\x40
+<gbk14314>...<gbk14440>               \xcc\x80
+<gbk14441>...<gbk14503>               \xcd\x40
+<gbk14504>...<gbk14630>               \xcd\x80
+<gbk14631>...<gbk14693>               \xce\x40
+<gbk14694>...<gbk14820>               \xce\x80
+<gbk14821>...<gbk14883>               \xcf\x40
+<gbk14884>...<gbk15010>               \xcf\x80
+<gbk15011>...<gbk15073>               \xd0\x40
+<gbk15074>...<gbk15200>               \xd0\x80
+<gbk15201>...<gbk15263>               \xd1\x40
+<gbk15264>...<gbk15390>               \xd1\x80
+<gbk15391>...<gbk15453>               \xd2\x40
+<gbk15454>...<gbk15580>               \xd2\x80
+<gbk15581>...<gbk15643>               \xd3\x40
+<gbk15644>...<gbk15770>               \xd3\x80
+<gbk15771>...<gbk15833>               \xd4\x40
+<gbk15834>...<gbk15960>               \xd4\x80
+<gbk15961>...<gbk16023>               \xd5\x40
+<gbk16024>...<gbk16150>               \xd5\x80
+<gbk16151>...<gbk16213>               \xd6\x40
+<gbk16214>...<gbk16340>               \xd6\x80
+<gbk16341>...<gbk16403>               \xd7\x40
+<gbk16404>...<gbk16530>               \xd7\x80
+<gbk16531>...<gbk16593>               \xd8\x40
+<gbk16594>...<gbk16720>               \xd8\x80
+<gbk16721>...<gbk16783>               \xd9\x40
+<gbk16784>...<gbk16910>               \xd9\x80
+<gbk16911>...<gbk16973>               \xda\x40
+<gbk16974>...<gbk17100>               \xda\x80
+<gbk17101>...<gbk17163>               \xdb\x40
+<gbk17164>...<gbk17290>               \xdb\x80
+<gbk17291>...<gbk17353>               \xdc\x40
+<gbk17354>...<gbk17480>               \xdc\x80
+<gbk17481>...<gbk17543>               \xdd\x40
+<gbk17544>...<gbk17670>               \xdd\x80
+<gbk17671>...<gbk17733>               \xde\x40
+<gbk17734>...<gbk17860>               \xde\x80
+<gbk17861>...<gbk17923>               \xdf\x40
+<gbk17924>...<gbk18050>               \xdf\x80
+<gbk18051>...<gbk18113>               \xe0\x40
+<gbk18114>...<gbk18240>               \xe0\x80
+<gbk18241>...<gbk18303>               \xe1\x40
+<gbk18304>...<gbk18430>               \xe1\x80
+<gbk18431>...<gbk18493>               \xe2\x40
+<gbk18494>...<gbk18620>               \xe2\x80
+<gbk18621>...<gbk18683>               \xe3\x40
+<gbk18684>...<gbk18810>               \xe3\x80
+<gbk18811>...<gbk18873>               \xe4\x40
+<gbk18874>...<gbk19000>               \xe4\x80
+<gbk19001>...<gbk19063>               \xe5\x40
+<gbk19064>...<gbk19190>               \xe5\x80
+<gbk19191>...<gbk19253>               \xe6\x40
+<gbk19254>...<gbk19380>               \xe6\x80
+<gbk19381>...<gbk19443>               \xe7\x40
+<gbk19444>...<gbk19570>               \xe7\x80
+<gbk19571>...<gbk19633>               \xe8\x40
+<gbk19634>...<gbk19760>               \xe8\x80
+<gbk19761>...<gbk19823>               \xe9\x40
+<gbk19824>...<gbk19950>               \xe9\x80
+<gbk19951>...<gbk20013>               \xea\x40
+<gbk20014>...<gbk20140>               \xea\x80
+<gbk20141>...<gbk20203>               \xeb\x40
+<gbk20204>...<gbk20330>               \xeb\x80
+<gbk20331>...<gbk20393>               \xec\x40
+<gbk20394>...<gbk20520>               \xec\x80
+<gbk20521>...<gbk20583>               \xed\x40
+<gbk20584>...<gbk20710>               \xed\x80
+<gbk20711>...<gbk20773>               \xee\x40
+<gbk20774>...<gbk20900>               \xee\x80
+<gbk20901>...<gbk20963>               \xef\x40
+<gbk20964>...<gbk21090>               \xef\x80
+<gbk21091>...<gbk21153>               \xf0\x40
+<gbk21154>...<gbk21280>               \xf0\x80
+<gbk21281>...<gbk21343>               \xf1\x40
+<gbk21344>...<gbk21470>               \xf1\x80
+<gbk21471>...<gbk21533>               \xf2\x40
+<gbk21534>...<gbk21660>               \xf2\x80
+<gbk21661>...<gbk21723>               \xf3\x40
+<gbk21724>...<gbk21850>               \xf3\x80
+<gbk21851>...<gbk21913>               \xf4\x40
+<gbk21914>...<gbk22040>               \xf4\x80
+<gbk22041>...<gbk22103>               \xf5\x40
+<gbk22104>...<gbk22230>               \xf5\x80
+<gbk22231>...<gbk22293>               \xf6\x40
+<gbk22294>...<gbk22420>               \xf6\x80
+<gbk22421>...<gbk22483>               \xf7\x40
+<gbk22484>...<gbk22610>               \xf7\x80
+<gbk22611>...<gbk22673>               \xf8\x40
+<gbk22674>...<gbk22800>               \xf8\x80
+<gbk22801>...<gbk22863>               \xf9\x40
+<gbk22864>...<gbk22990>               \xf9\x80
+<gbk22991>...<gbk23053>               \xfa\x40
+<gbk23054>...<gbk23180>               \xfa\x80
+<gbk23181>...<gbk23243>               \xfb\x40
+<gbk23244>...<gbk23370>               \xfb\x80
+<gbk23371>...<gbk23433>               \xfc\x40
+<gbk23434>...<gbk23560>               \xfc\x80
+<gbk23561>...<gbk23623>               \xfd\x40
+<gbk23624>...<gbk23750>               \xfd\x80
+<gbk23751>...<gbk23813>               \xfe\x40
+<gbk23814>...<gbk23940>               \xfe\x80
+
+#
+# End GBK
+#
+
+END CHARMAP
