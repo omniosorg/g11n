@@ -1,10 +1,12 @@
-README.opensolaris.g11n v1.9 22 Dec 2006 - 07:49 GMT
+README.opensolaris.g11n v2.0, Jul 3, 2007
 
-OPENSOLARIS.ORG G11N WORKSPACE BUILDABLE SOURCE
 
-This file contains the instructions for downloading and building the G11n
+OPENSOLARIS.ORG NEVADA G11N WORKSPACE BUILD INSTRUCTIONS
+
+This file contains the instructions for checking out and building the G11N
 workspace for OpenSolaris, where to file bug or RFE (Request For Enhancement)
 reports, and also how to contribute.
+
 
 
 G11N Workspace Build Instructions
@@ -16,7 +18,7 @@ G11N Workspace Build Instructions
 
    Currently, the build machines must have Developer System Support or higher
    meta-cluster and all locales installed. It is recommended to have at least
-   1GB of swan space or memory combined for a proper build.
+   1GB of swap space or memory combined for a proper build.
 
    After the build machine installation, about 3.2GB of free disk space is
    needed to keep the downloaded tarballs and also to build.
@@ -47,21 +49,18 @@ G11N Workspace Build Instructions
 
 4. Unpack the binary tarballs at the root file system as root:
 
-	$ su 
+	$ su -
 	# bzcat g11n-closed-bins-20061220.sparc.tar.bz2 | (cd / ; tar xvf -)
 	# bzcat g11n-GPL-bins-20061220.sparc.tar.bz2 | (cd / ; tar xvf -)
 
-5. Download the latest source tarball by following the link shown in
-   the following:
+5. Check out the latest source codes from live repository
 
-	http://www.opensolaris.org/os/community/int_localization/sources/
+    # cd /build
+    # hg clone ssh://anon@hg.opensolaris.org/hg/nv-g11n/g11n
 
-   and unpack the tarball to a directory of your choosing, for instance:
+    More details about G11N live repository can be found from:
 
-	# cd /build     
-	# bzcat g11n-src-20061220.tar.bz2  | tar xvf -
-
-   This will give you a g11n directory containing all of the code.
+    http://www.opensolaris.org/os/project/nv-g11n/documents/repository/
 
 6. Set an environment variable called 'SRC' to the full path of the g11n
    directory, i.e., if you extracted it into a /build directory then SRC
@@ -73,7 +72,7 @@ G11N Workspace Build Instructions
    make and '/opt/SUNWspro/bin' for compilers. These should be near
    the beginning so that they are the first to be picked up.
 
-	# export PATH=/usr/ccs/bin:/opt/SUNWspro/bin:$PATH
+	# export PATH=/opt/SUNWspro/bin:/usr/ccs/bin:/usr/openwin/bin:/usr/bin
 
 8. Run 'make all' to build the workspace in its entirety. This will compile
    and generate binary files and create an empty directory tree in
@@ -134,6 +133,9 @@ G11N Workspace Build Instructions
     updating /usr/openwin/lib/locale/ko/X11/fonts/TrueType/fonts.cache-1...
     # 
 
+
+
+
 Bug/RFE Reports
 ---------------
 
@@ -149,6 +151,8 @@ other community members at i18n-discuss at opensolaris.org mailing list and
 other language mailing lists shown at the following:
 
 	http://www.opensolaris.org/os/community/int_localization/discussions/
+
+
 
 
 How to Contribute
@@ -177,3 +181,4 @@ a request from the following:
 Shortly after your email, there will be a sponsor contacting you and work
 together with you to integrate your contributions into G11N or any other
 consolidation/community's workspaces as needed.
+
