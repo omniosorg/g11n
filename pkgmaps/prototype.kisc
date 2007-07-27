@@ -27,15 +27,15 @@ d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/ko 0755 root bin
 d none usr/lib/locale/ko/LC_CTYPE 0755 root bin
 f none usr/lib/locale/ko/LC_CTYPE/wdresolve.so 0555 root bin
-f none usr/lib/locale/ko/geo_map 0644 root bin
-f none usr/lib/locale/ko/locale_description 0644 root bin
-f none usr/lib/locale/ko/locale_map 0644 root bin
+f none usr/lib/locale/ko/geo_map=usr/lib/locale/ko/geo_map.miniroot 0644 root bin
+f none usr/lib/locale/ko/locale_description=usr/lib/locale/ko/locale_description.miniroot 0644 root bin
+f none usr/lib/locale/ko/locale_map=usr/lib/locale/ko/locale_map.miniroot 0644 root bin
 d none usr/lib/locale/ko.UTF-8 0755 root bin
 s none usr/lib/locale/ko.UTF-8/LC_CTYPE=../ko/LC_CTYPE
 s none usr/lib/locale/ko.UTF-8/LC_COLLATE=../ko/LC_COLLATE
 s none usr/lib/locale/ko.UTF-8/geo_map=../ko/geo_map
-f none usr/lib/locale/ko.UTF-8/locale_description 0644 root bin
-f none usr/lib/locale/ko.UTF-8/locale_map 0644 root bin
+f none usr/lib/locale/ko.UTF-8/locale_description=usr/lib/locale/ko.UTF-8/locale_description.miniroot 0644 root bin
+f none usr/lib/locale/ko.UTF-8/locale_map=usr/lib/locale/ko.UTF-8/locale_map.miniroot 0644 root bin
 d none usr/openwin/lib/locale 0755 root bin
 d none usr/openwin/lib/locale/ko 0755 root bin
 f none usr/openwin/lib/locale/ko/CT_Encoding 0644 root bin

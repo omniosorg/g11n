@@ -26,9 +26,9 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/hi_IN.UTF-8 0755 root bin
 s none usr/lib/locale/hi_IN.UTF-8/hi_IN.UTF-8.so.3=../en_US.UTF-8/en_US.UTF-8.so.3
-f none usr/lib/locale/hi_IN.UTF-8/locale_map 0755 root bin
-f none usr/lib/locale/hi_IN.UTF-8/locale_description 0644 root bin
-f none usr/lib/locale/hi_IN.UTF-8/geo_map 0755 root bin
+f none usr/lib/locale/hi_IN.UTF-8/locale_map=usr/lib/locale/hi_IN.UTF-8/locale_map.miniroot 0755 root bin
+f none usr/lib/locale/hi_IN.UTF-8/locale_description=usr/lib/locale/hi_IN.UTF-8/locale_description.miniroot 0644 root bin
+f none usr/lib/locale/hi_IN.UTF-8/geo_map=usr/lib/locale/hi_IN.UTF-8/geo_map.miniroot 0755 root bin
 d none usr/lib/locale/hi_IN.UTF-8/LC_COLLATE 0755 root bin
 d none usr/lib/locale/hi_IN.UTF-8/LC_CTYPE 0755 root bin
 f none usr/lib/locale/hi_IN.UTF-8/LC_CTYPE/wdresolve.so 0555 root bin
