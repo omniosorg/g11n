@@ -55,6 +55,7 @@ LC_CTYPE_DIR_64	= $(LC_CTYPE_DIR)/$(MACH64)
 TARGETDIRS = $(LOC_DIR) $(LOC_DIR_64) $(LC_CTYPE_DIR) $(LC_CTYPE_DIR_64)
 
 FILES = geo_map locale_description locale_map
+FILES += geo_map.miniroot locale_description.miniroot locale_map.miniroot
 
 TARGETDIR = $(LOC_DIR)
 
