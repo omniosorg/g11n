@@ -51,11 +51,8 @@
 #
 
 #
-#
 # Copyright (c) 1996-2001 by Sun Microsystems, Inc.
 # All rights reserved.
-#
-#ident	"@(#)Compose	1.13 02/10/15 SMI"
 #
 # Compose table for the en_US.UTF-8 locale
 #
@@ -114,6 +111,7 @@ Ctrl<T> <c> <equal>	: "\xe2\x82\xac"
 Ctrl<T> <equal> <c>	: "\xe2\x82\xac"
 Ctrl<T> <C> <equal>	: "\xe2\x82\xac"
 Ctrl<T> <equal> <C>	: "\xe2\x82\xac"
+<EuroSign>		: "\xe2\x82\xac"
 
 <Multi_key> <plus> <plus>		: "\x23"	numbersign
 <Multi_key> <apostrophe> <space>	: "\x27"	apostrophe
@@ -1623,6 +1621,114 @@ Ctrl<T> <o> <e> 		: "\xc5\x93"
 Ctrl<T> <O> <E> 		: "\xc5\x92"
 Ctrl<T> <Y> <quotedbl> 		: "\xc5\xb8"
 Ctrl<T> <quotedbl> <Y>		: "\xc5\xb8"
+#
+# Rules for SunXK_FA_* keysyms:
+<SunFA_Acute> <apostrophe>	: "\xc2\xb4"
+<SunFA_Acute> <A>		: "\xc3\x81"
+<SunFA_Acute> <a>		: "\xc3\xa1"
+<SunFA_Acute> <C>		: "\xc4\x86"
+<SunFA_Acute> <c>		: "\xc4\x87"
+<SunFA_Acute> <E>		: "\xc3\x89"
+<SunFA_Acute> <e>		: "\xc3\xa9"
+<SunFA_Acute> <I>		: "\xc3\x8d"
+<SunFA_Acute> <i>		: "\xc3\xad"
+<SunFA_Acute> <L>		: "\xc4\xb9"
+<SunFA_Acute> <l>		: "\xc4\xba"
+<SunFA_Acute> <N>		: "\xc5\x83"
+<SunFA_Acute> <n>		: "\xc5\x84"
+<SunFA_Acute> <O>		: "\xc3\x93"
+<SunFA_Acute> <o>		: "\xc3\xb3"
+<SunFA_Acute> <R>		: "\xc5\x94"
+<SunFA_Acute> <r>		: "\xc5\x95"
+<SunFA_Acute> <space>		: "\x27"
+<SunFA_Acute> <S>		: "\xc5\x9a"
+<SunFA_Acute> <s>		: "\xc5\x9b"
+<SunFA_Acute> <U>		: "\xc3\x9a"
+<SunFA_Acute> <u>		: "\xc3\xba"
+<SunFA_Acute> <Y>		: "\xc3\x9d"
+<SunFA_Acute> <y>		: "\xc3\xbd"
+<SunFA_Acute> <Z>		: "\xc4\xbe"
+<SunFA_Acute> <z>		: "\xc5\xba"
+<SunFA_Cedilla> <comma>		: "\xc2\xb8"
+<SunFA_Cedilla> <C>		: "\xc3\x87"
+<SunFA_Cedilla> <c>		: "\xc3\xa7"
+<SunFA_Cedilla> <G>		: "\xc4\xa2"
+<SunFA_Cedilla> <g>		: "\xc4\xa3"
+<SunFA_Cedilla> <K>		: "\xc4\xb6"
+<SunFA_Cedilla> <k>		: "\xc4\xb7"
+<SunFA_Cedilla> <L>		: "\xc4\xbb"
+<SunFA_Cedilla> <l>		: "\xc4\xbc"
+<SunFA_Cedilla> <minus>		: "\xc2\xac"
+<SunFA_Cedilla> <N>		: "\xc5\x85"
+<SunFA_Cedilla> <n>		: "\xc5\x86"
+<SunFA_Cedilla> <R>		: "\xc5\x96"
+<SunFA_Cedilla> <r>		: "\xc5\x97"
+<SunFA_Cedilla> <S>		: "\xc5\x9e"
+<SunFA_Cedilla> <s>		: "\xc5\x9f"
+<SunFA_Cedilla> <T>		: "\xc5\xa2"
+<SunFA_Cedilla> <t>		: "\xc5\xa3"
+<SunFA_Circum> <0>		: "\xc2\xb0"
+<SunFA_Circum> <1>		: "\xc2\xb9"
+<SunFA_Circum> <2>		: "\xc2\xb2"
+<SunFA_Circum> <3>		: "\xc2\xb3"
+<SunFA_Circum> <A>		: "\xc3\x82"
+<SunFA_Circum> <a>		: "\xc3\xa2"
+<SunFA_Circum> <C>		: "\xc4\x88"
+<SunFA_Circum> <c>		: "\xc4\x89"
+<SunFA_Circum> <E>		: "\xc3\x8a"
+<SunFA_Circum> <e>		: "\xc3\xaa"
+<SunFA_Circum> <exclam>		: "\xc2\xa6"
+<SunFA_Circum> <G>		: "\xc4\x9c"
+<SunFA_Circum> <g>		: "\xc4\x9d"
+<SunFA_Circum> <H>		: "\xc4\xa4"
+<SunFA_Circum> <h>		: "\xc4\xa5"
+<SunFA_Circum> <I>		: "\xc3\x8e"
+<SunFA_Circum> <i>		: "\xc3\xae"
+<SunFA_Circum> <J>		: "\xc4\xb4"
+<SunFA_Circum> <j>		: "\xc4\xb5"
+<SunFA_Circum> <minus>		: "\xc2\xaf"
+<SunFA_Circum> <O>		: "\xc3\x94"
+<SunFA_Circum> <o>		: "\xc3\xb4"
+<SunFA_Circum> <period>		: "\xc2\xb7"
+<SunFA_Circum> <slash>		: "\x7c"
+<SunFA_Circum> <space>		: "\x5e"
+<SunFA_Circum> <S>		: "\xc5\x9c"
+<SunFA_Circum> <s>		: "\xc5\x9d"
+<SunFA_Circum> <underscore>	: "\xc2\xaf"
+<SunFA_Circum> <U>		: "\xc3\x9b"
+<SunFA_Circum> <u>		: "\xc3\xbb"
+<SunFA_Diaeresis> <A>		: "\xc3\x84"
+<SunFA_Diaeresis> <a>		: "\xc3\xa4"
+<SunFA_Diaeresis> <E>		: "\xc3\x8b"
+<SunFA_Diaeresis> <e>		: "\xc3\xab"
+<SunFA_Diaeresis> <I>		: "\xc3\x8f"
+<SunFA_Diaeresis> <i>		: "\xc3\xaf"
+<SunFA_Diaeresis> <O>		: "\xc3\x96"
+<SunFA_Diaeresis> <o>		: "\xc3\xb6"
+<SunFA_Diaeresis> <quotedbl>	: "\xc2\xa8"
+<SunFA_Diaeresis> <space>	: "\xc2\xa8"
+<SunFA_Diaeresis> <U>		: "\xc3\x9c"
+<SunFA_Diaeresis> <u>		: "\xc3\xbc"
+<SunFA_Diaeresis> <y>		: "\xc3\xbf"
+<SunFA_Diaeresis> <Y>		: "\xc5\xb8"
+<SunFA_Grave> <A>		: "\xc3\x80"
+<SunFA_Grave> <a>		: "\xc3\xa0"
+<SunFA_Grave> <E>		: "\xc3\x88"
+<SunFA_Grave> <e>		: "\xc3\xa8"
+<SunFA_Grave> <I>		: "\xc3\x8c"
+<SunFA_Grave> <i>		: "\xc3\xac"
+<SunFA_Grave> <O>		: "\xc3\x92"
+<SunFA_Grave> <o>		: "\xc3\xb2"
+<SunFA_Grave> <space>		: "\x60"
+<SunFA_Grave> <U>		: "\xc3\x99"
+<SunFA_Grave> <u>		: "\xc3\xb9"
+<SunFA_Tilde> <A>		: "\xc3\x83"
+<SunFA_Tilde> <a>		: "\xc3\xa3"
+<SunFA_Tilde> <N>		: "\xc3\x91"
+<SunFA_Tilde> <n>		: "\xc3\xb1"
+<SunFA_Tilde> <O>		: "\xc3\x95"
+<SunFA_Tilde> <o>		: "\xc3\xb5"
+<SunFA_Tilde> <space>		: "\x7e"
 END_STATE
 
 STATE "[ Cyrillic ]"
@@ -1700,7 +1806,7 @@ Lock<bracketright>	: "\xd0\xaa"	Cyrillic_HARDSIGN
 <j>		: "\xd0\xbe"	Cyrillic_o
 <k>		: "\xd0\xbb"	Cyrillic_el
 <l>		: "\xd0\xb4"	Cyrillic_de
-<semicolon>	: "\xd0\xb6"	Cyrillic_ghe
+<semicolon>	: "\xd0\xb6"	Cyrillic_zhe
 <quoteright>	: "\xd1\x8d"	Cyrillic_e
 <A>		: "\xd0\xa4"	Cyrillic_EF
 <S>		: "\xd0\xab"	Cyrillic_YERU
@@ -1711,7 +1817,7 @@ Lock<bracketright>	: "\xd0\xaa"	Cyrillic_HARDSIGN
 <J>		: "\xd0\x9e"	Cyrillic_O
 <K>		: "\xd0\x9b"	Cyrillic_EL
 <L>		: "\xd0\x94"	Cyrillic_DE
-<colon>		: "\xd0\x96"	Cyrillic_GHE
+<colon>		: "\xd0\x96"	Cyrillic_ZHE
 <quotedbl>	: "\xd0\xad"	Cyrillic_E
 <z>		: "\xd1\x8f"	Cyrillic_ya
 <x>		: "\xd1\x87"	Cyrillic_che
@@ -1790,6 +1896,7 @@ Ctrl<T> <c> <equal>	: "\xe2\x82\xac"
 Ctrl<T> <equal> <c>	: "\xe2\x82\xac"
 Ctrl<T> <C> <equal>	: "\xe2\x82\xac"
 Ctrl<T> <equal> <C>	: "\xe2\x82\xac"
+<EuroSign>		: "\xe2\x82\xac"
 
 #
 # The following seven mappings are not appropriate here; this kind of mappings
