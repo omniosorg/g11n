@@ -1,0 +1,60 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none usr 0755 root sys
+d none usr/share 0755 root sys
+d none usr/share/lib 0755 root sys
+d none usr/share/lib/locale 0755 root bin
+d none usr/share/lib/locale/com 0755 root bin
+d none usr/share/lib/locale/com/sun 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/bridge 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/cli 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/cli/common 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/cli/dhcpbatch 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/cli/dhcpconfig 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/cli/dhtadm 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/cli/pntadm 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/client 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/client/SUNWbinfiles 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/client/SUNWfiles 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/client/SUNWnisplus 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/common 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/data 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/server 0755 root bin
+d none usr/share/lib/locale/com/sun/dhcpmgr/ui 0755 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/bridge/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/cli/common/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/cli/dhcpbatch/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/cli/dhcpconfig/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/cli/dhtadm/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/cli/pntadm/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/client/OptionDescriptions_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/client/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/client/SUNWbinfiles/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/client/SUNWfiles/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/client/SUNWnisplus/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/common/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/data/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/server/ResourceBundle_cs.properties 0644 root bin
+f none usr/share/lib/locale/com/sun/dhcpmgr/ui/ResourceBundle_cs.properties 0644 root bin
