@@ -34,7 +34,7 @@ s none usr/lib/locale/sv_SE.ISO8859-1/LC_CTYPE/LCL_DEF=../../iso_8859_1/LC_CTYPE
 s none usr/lib/locale/sv_SE.ISO8859-1/LC_MESSAGES=../sv/LC_MESSAGES 0755 root bin
 d none usr/lib/locale/sv_SE.ISO8859-1/LC_MONETARY 0755 root bin
 d none usr/lib/locale/sv_SE.ISO8859-1/LC_NUMERIC 0755 root bin
-d none usr/lib/locale/sv_SE.ISO8859-1/LC_TIME 0755 root bin
+s none usr/lib/locale/sv_SE.ISO8859-1/LC_TIME=../sv/LC_TIME 
 f none usr/lib/locale/sv_SE.ISO8859-1/sv_SE.ISO8859-1.so.3 0555 root bin
 d none usr/lib/locale/sv 0755 root bin
 s none usr/lib/locale/sv/sv.so.3=../sv_SE.ISO8859-1/sv_SE.ISO8859-1.so.3

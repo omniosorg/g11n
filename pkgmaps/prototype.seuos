@@ -102,7 +102,7 @@ s none usr/lib/locale/es_ES.ISO8859-15/LC_CTYPE/LCL_DEF=../../iso_8859_15/LC_CTY
 s none usr/lib/locale/es_ES.ISO8859-15/LC_MESSAGES=../es/LC_MESSAGES 0755 root bin
 d none usr/lib/locale/es_ES.ISO8859-15/LC_MONETARY 0755 root bin
 d none usr/lib/locale/es_ES.ISO8859-15/LC_NUMERIC 0755 root bin
-d none usr/lib/locale/es_ES.ISO8859-15/LC_TIME 0755 root bin
+s none usr/lib/locale/es_ES.ISO8859-15/LC_TIME=../es/LC_TIME
 f none usr/lib/locale/es_ES.ISO8859-15/es_ES.ISO8859-15.so.3 0555 root bin
 f none usr/lib/locale/es_ES.ISO8859-15/locale_description 0644 root bin
 f none usr/lib/locale/es_ES.ISO8859-15/locale_map 0644 root bin
@@ -119,7 +119,7 @@ s none usr/lib/locale/es_ES.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wd
 s none usr/lib/locale/es_ES.UTF-8/LC_MESSAGES=../es.UTF-8/LC_MESSAGES
 d none usr/lib/locale/es_ES.UTF-8/LC_MONETARY 0755 root bin
 d none usr/lib/locale/es_ES.UTF-8/LC_NUMERIC 0755 root bin
-d none usr/lib/locale/es_ES.UTF-8/LC_TIME 0755 root bin
+s none usr/lib/locale/es_ES.UTF-8/LC_TIME=../es.UTF-8/LC_TIME 
 d none usr/lib/locale/es_ES.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_ES.UTF-8/LO_LTYPE/es_ES.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
 f none usr/lib/locale/es_ES.UTF-8/es_ES.UTF-8.so.3 0555 root bin
@@ -139,7 +139,7 @@ s none usr/lib/locale/it_IT.ISO8859-15/LC_CTYPE/LCL_DEF=../../iso_8859_15/LC_CTY
 s none usr/lib/locale/it_IT.ISO8859-15/LC_MESSAGES=../it/LC_MESSAGES 0755 root bin
 d none usr/lib/locale/it_IT.ISO8859-15/LC_MONETARY 0755 root bin
 d none usr/lib/locale/it_IT.ISO8859-15/LC_NUMERIC 0755 root bin
-d none usr/lib/locale/it_IT.ISO8859-15/LC_TIME 0755 root bin
+s none usr/lib/locale/it_IT.ISO8859-15/LC_TIME=../it/LC_TIME 
 f none usr/lib/locale/it_IT.ISO8859-15/it_IT.ISO8859-15.so.3 0555 root bin
 d none usr/lib/locale/it_IT.ISO8859-15@euro 0755 root bin
 s none usr/lib/locale/it_IT.ISO8859-15@euro/it_IT.ISO8859-15@euro.so.3=../it_IT.ISO8859-15/it_IT.ISO8859-15.so.3
@@ -155,7 +155,7 @@ s none usr/lib/locale/it_IT.UTF-8/LC_CTYPE/wdresolve.so=../../common/LC_CTYPE/wd
 s none usr/lib/locale/it_IT.UTF-8/LC_MESSAGES=../it.UTF-8/LC_MESSAGES
 d none usr/lib/locale/it_IT.UTF-8/LC_MONETARY 0755 root bin
 d none usr/lib/locale/it_IT.UTF-8/LC_NUMERIC 0755 root bin
-d none usr/lib/locale/it_IT.UTF-8/LC_TIME 0755 root bin
+s none usr/lib/locale/it_IT.UTF-8/LC_TIME=../it.UTF-8/LC_TIME
 d none usr/lib/locale/it_IT.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/it_IT.UTF-8/LO_LTYPE/it_IT.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
 f none usr/lib/locale/it_IT.UTF-8/it_IT.UTF-8.so.3 0555 root bin
