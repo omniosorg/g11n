@@ -120,9 +120,20 @@ WC=             /usr/bin/wc
 XARGS=          /usr/bin/xargs
 ELFSIGN=        /usr/bin/elfsign
 PKGMK= 		pkgmk
-TAR=		/usr/bin/tar -cf
+TAR=		/usr/bin/tar
 LD=		/usr/ccs/bin/ld
 BDFTOPCF =	/usr/openwin/bin/bdftopcf
+
+# SUNWwgetu
+WGET=		/usr/sfw/bin/wget
+
+# SUNWxsun-server
+XKBCOMP_XSUN=	/usr/openwin/lib/X11/xkb/xkbcomp
+
+# SUNWxorg-server
+XKBCOMP_XORG=	/usr/X11/lib/X11/xkb/xkbcomp
+
+
 
 # MACH must be set in the shell environment per uname -p on the build host
 # More specific architecture variables should be set in lower makefiles.
