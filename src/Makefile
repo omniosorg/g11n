@@ -24,7 +24,7 @@
 #ident	"@(#)Makefile	1.0	06/03/07	SMI"
 #
 
-SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ openwin/keytables share/lib/ uts cmd
+SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ share/lib/ uts cmd
 
 all:=		TARGET= all
 install :=	TARGET= install
