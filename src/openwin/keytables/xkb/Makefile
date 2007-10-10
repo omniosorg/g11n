@@ -38,7 +38,7 @@ $(TARGETDIR):
 	$(INSDIR) "$@"
 
 %.dir:
-	(cd $($@:%.dir=%); $(XKBCOMP_XSUN) -lfhlpR -o ../$@ '*')
+	(cd $(@:%.dir=%); $(XKBCOMP_XSUN) -lfhlpR -o ../$@ '*')
 
 .install_list:
 	find $(SUBDIRS) -type f ! -name Imakefile > $@
