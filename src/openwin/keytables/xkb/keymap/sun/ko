@@ -1,0 +1,41 @@
+
+xkb_keymap "Korea4" {
+    xkb_keycodes	{ include "sun(type4)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/ko(type4)"	};
+    xkb_geometry	{ include "sun(type4)"		};
+};
+
+xkb_keymap "Korea5" {
+    xkb_keycodes	{ include "sun(type5)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/ko(type5)"	};
+    xkb_geometry	{ include "sun(type5)"		};
+};
+
+xkb_keymap "Korea5_Hobo" {
+    xkb_keycodes	{ include "sun(type5p)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/ko(type5)"	};
+    xkb_geometry	{ include "sun(type5)"		};
+};
+
+xkb_keymap "Korea6" {
+    xkb_keycodes	{ include "sun(type6)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/ko(type5)"	};
+    xkb_geometry	{ include "sun(type6)"		};
+};
+
+xkb_keymap "Korea6_usb" {
+    xkb_keycodes	{ include "sun(type6_usb)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/ko(type5)"	};
+    xkb_geometry	{ include "sun(type6)"		};
+};
+

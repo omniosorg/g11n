@@ -1,0 +1,12 @@
+XCOMM $TOG: Imakefile /main/16 1997/10/24 14:30:46 kaleb $
+#define IHaveSubdirs
+
+      TESTDATA = 
+     DATAFILES = al az be bg br by ca ca_enhanced cs ctrl cz cz_qwerty de de_CH dk dvorak ee el en_US es fi fr fr_CH \
+		 gb group hr hu hu_US il il_phonetic is iso9995-3 it jp keypad lock lt lt_p lt_std lv mk mt mt_us nl no pc104 pl \
+		 pt ro ru se si sk sr sk_qwerty sr th tr tr_f ua us vn
+       SUBDIRS = digital fujitsu hp nec sgi sony sun xfree68
+
+MakeXkbDir($(LIBDIR)/xkb,symbols)
+InstallMultiple($(DATAFILES),$(LIBDIR)/xkb/symbols)
+DependTarget()

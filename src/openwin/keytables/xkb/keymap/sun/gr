@@ -1,0 +1,9 @@
+
+xkb_keymap "Greece5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/gr(type5)"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+

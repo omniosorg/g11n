@@ -1,0 +1,58 @@
+
+xkb_keymap "Turkey5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/tr(type5)"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Turkey6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/tr"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "Turkey6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/tr"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "TurkeyQ6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/tr(type6Q)"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "TurkeyQ6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/tr(type6Q)"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "TurkeyF6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/tr(type6F)"};
+    xkb_geometry	{ include "sun(type6)"	};
+};
+
+xkb_keymap "TurkeyF6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/tr(type6F)"};
+    xkb_geometry	{ include "sun(type6)"	};
+};
+
+

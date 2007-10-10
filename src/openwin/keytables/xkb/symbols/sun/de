@@ -1,0 +1,42 @@
+
+
+
+xkb_symbols "type4" {
+    include "sun/us(type4basic)"
+    // A few keys are different
+    key <BKSL> { [ less, braceleft      ]                       };
+
+    key <BRCR> { [ greater, braceright  ]                       };
+    key <DELE> { [ Delete               ]                       };
+
+    key <AE01> { [ 1, plus              ], [exclam      ]       };
+    key <AE02> { [ 2, quotedbl          ], [at          ]       };
+    key <AE03> { [ 3, asterisk          ], [numbersign  ]       };
+    key <AE04> { [ 4, ccedilla          ], [cent        ]       };
+    key <AE05> { [ 5, percent           ], [asciitilde  ]       };
+    key <AE06> { [ 6, ampersand         ], [section     ]       };
+    key <AE07> { [ 7, slash             ], [bar         ]       };
+    key <AE08> { [ 8, parenleft         ], [degree      ]       };
+    key <AE09> { [ 9, parenright        ], [backslash   ]       };
+    key <AE10> { [ 0, equal             ], [asciicircum ]       };
+    Key <AE11> { [ quoteright, question ], [quoteleft   ]       };
+    key <AE12> { [ SunFA_Circum, SunFA_Grave    ]               };
+    key <AD03> { [ e, E                 ], [EuroSign    ]       };
+    key <AD06> { [ Z                    ]                       };
+    key <AD11> { [ udiaeresis, egrave   ]                       };
+    key <AD12> { [ SunFA_Diaeresis, SunFA_Acute ]               };
+    key <AC10> { [ odiaeresis, eacute   ]                       };
+    key <AC11> { [ adiaeresis, agrave   ]                       };
+    key <TLDE> { [ dollar, SunFA_Tilde  ], [sterling    ]       };
+    key <LSGT> { [ bracketright, bracketleft   ], [ backslash ] };
+    key <AB01> { [ Y                    ]                       };
+    key <AB07> { [ M, NoSymbol          ], [mu  ]               };
+    key <AB08> { [ comma, semicolon     ]                       };
+    key <AB09> { [ period, colon        ]                       };
+    key <AB10> { [ minus, underscore    ]                       };
+    key <COMP> { [ SunAltGraph          ]                       };
+    key <ALGR> { [ SunCompose           ]                       };
+
+
+
+};

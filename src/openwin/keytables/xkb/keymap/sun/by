@@ -1,0 +1,15 @@
+xkb_keymap "Belarus6" {
+    xkb_keycodes        { include "sun(type6tuv)"       };
+    xkb_types           { include "default"             };
+    xkb_compatibility   { include "default"             };
+    xkb_symbols         { include "sun/us(type6)+by"    };
+    xkb_geometry        { include "sun(type6tuv)"       };
+};
+
+xkb_keymap "Belarus6_usb" {
+    xkb_keycodes        { include "sun(type6tuv_usb)"   };
+    xkb_types           { include "default"             };
+    xkb_compatibility   { include "default"             };
+    xkb_symbols         { include "sun/us(type6)+by"    };
+    xkb_geometry        { include "sun(type6tuv)"       };
+};

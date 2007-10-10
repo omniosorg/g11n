@@ -1,0 +1,65 @@
+// $TOG: hu /main/2 1997/06/13 06:25:05 kaleb $
+default partial alphanumeric_keys 
+xkb_symbols "type5" {
+
+    // Describes the differences between a very simple US/ASCII
+    // keyboard and a very simple Hungarian keyboard.
+
+    // Alphanumeric section
+
+    name[group1]="Hungarian";
+
+    key <TLDE> {	[	0,		section		]	};
+    key <AE01> {	[	1,      	apostrophe	]	};
+    key <AE02> {	[	2,		quotedbl	]	};
+    key <AE03> {	[	3,		plus		],
+			[	numbersign			]	};
+    key <AE04> {	[	4,		exclam		],
+			[	dollar				]	};
+    key <AE06> {	[	6,		slash		],
+			[	asciicircum			]	};
+    key <AE07> {	[	7,		equal		],
+			[	braceleft			]	};
+    key <AE08> {	[	8,		parenleft	],
+			[	bracketleft			]	};
+    key <AE09> {	[	9,		parenright	],
+			[	bracketright			]	};
+    key <AE10> {	[	odiaeresis,	Odiaeresis	],
+			[	braceright  			]	};
+    key <AE11> {	[	udiaeresis,	Udiaeresis	],
+			[	backslash			]	};
+    key <AE12> {	[	oacute,		Oacute		],
+			[	asciitilde				]	};
+
+    key <AD01> {	[	q,		Q		],
+			[	at				]	};
+    key <AD06> {        [       z,              Z               ]	};
+    key <AD11> {	[	odoubleacute,	Odoubleacute	]	};
+    key <AD12> {	[	uacute,		Uacute		]	};
+
+    key <AC02> {	[	s,		S		],
+			[	ssharp				]	};
+    key <AC08> {	[	k,		K		],
+			[	ampersand			]	};
+    key <AC10> {	[	eacute,		Eacute		],
+			[	semicolon			]	};
+    key <AC11> {	[	aacute,		Aacute		],
+			[	adiaeresis,	Adiaeresis	]	};
+    key <BKSL> {	[	udoubleacute,	Udoubleacute	]	};
+
+    key <LSGT> {	[	iacute,		Iacute		],
+			[       bar				]	};
+    key <AB01> {	[	y,		Y		],
+			[	less				]	};
+    key <AB02> {	[	x,		X		],
+			[	greater			]	};
+    key <AB03> {	[	c,		C		],
+			[	quoteleft			]	};
+    key <AB08> {	[	comma,		question	],
+			[	asterisk			]	};
+    key <AB09> {	[	period,		colon		]	};
+    key <AB10> {	[	minus,		underscore	]	};
+
+    // End alphanumeric section
+};
+

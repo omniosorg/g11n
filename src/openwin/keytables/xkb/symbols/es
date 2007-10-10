@@ -1,0 +1,63 @@
+// $XConsortium: es /main/3 1996/08/31 12:19:38 kaleb $
+partial default alphanumeric_keys 
+xkb_symbols "basic" {
+
+    // Describes the differences between a very simple en_US
+    // keyboard and a very simple Spanish keybaord
+
+    name[Group1]= "Spanish";
+
+    key <TLDE> {	[       masculine,     ordfeminine      ],	
+    			[	backslash,       backslash	]	};
+    key <LSGT> {	[	     less,	   greater	],
+			[	      bar,       brokenbar	]	};
+    key <AE01> {	[         	1,	exclam 		],
+			[	      bar,	exclamdown	]	};
+    key <AE02> {	[               2,        quotedbl     	],	
+			[	       at,	 oneeighth	]	};
+    key <AE03> {	[               3,          degree     	],	
+			[      numbersign,        sterling	]	};
+    key <AE06> {	[               6,       ampersand     	],	
+			[	  notsign,     fiveeighths	]	};
+    key <AE07> {	[               7,           slash     	]	};
+    key <AE08> {	[               8,       parenleft     	]	};
+    key <AB08> {	[           comma,       semicolon     	]	};
+    key <AE10> {	[               0,           equal     	]	};
+    key <AE09> {	[               9,      parenright     	]	};
+    key <AB09> {	[          period,           colon     	]	};
+    key <AB10> {	[           minus,      underscore     	]	};
+    key	<AC10> {	[	   ntilde,          Ntilde  	],	
+			[      asciitilde,dead_doubleacute	]	};
+    key <AE11> {	[           acute,        question      ]	};
+    key <AC11> {	[      apostrophe,       diaeresis 	],	
+			[	braceleft,       braceleft	]	};
+    key <BKSL> {	[	 ccedilla,        Ccedilla	],
+			[      braceright,      dead_breve	]	};
+    key <AD11> {	[	    grave,     asciicircum     	],	
+			[     bracketleft,  dead_abovering	]	};
+    key <AE12> {	[      exclamdown,    questiondown	]	};
+    key <AD12> {	[            plus,        asterisk	],
+			[    bracketright,     dead_macron	]	};
+
+    // End alphanumeric section
+
+    // Begin modifier mappings
+    modifier_map Shift  { Shift_L };
+    modifier_map Lock   { Caps_Lock };
+    modifier_map Control{ Control_L };
+    modifier_map Mod3   { Mode_switch };
+};
+
+partial alphanumeric_keys 
+xkb_symbols "nodeadkeys" {
+    include "es(basic)"
+
+    key	<AC10> {	[	   ntilde,          Ntilde  	],	
+			[      asciitilde,     doubleacute	]	};
+    key <BKSL> {	[	 ccedilla,        Ccedilla	],
+			[      braceright,           breve	]	};
+    key <AD11> {	[	    grave,     asciicircum     	],	
+			[     bracketleft,          degree	]	};
+    key <AD12> {	[            plus,        asterisk	],
+			[    bracketright,          macron	]	};
+};

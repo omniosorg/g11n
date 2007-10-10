@@ -1,0 +1,8 @@
+XCOMM $XConsortium: Imakefile /main/2 1996/08/31 12:18:50 kaleb $
+
+     DATAFILES = all al bg by ca ch cz de dk es fi fr gr hu it is jp ko lt lv nl mt mt_us no pl pt ru se si sk sr tr tw uk us
+
+all::
+
+InstallMultiple($(DATAFILES),$(LIBDIR)/xkb/keymap/sun)
+DependTarget()

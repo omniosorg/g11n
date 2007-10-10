@@ -1,0 +1,30 @@
+
+xkb_symbols "type5" {
+    include "sun/us(type5)"
+    include "cz"
+
+    // A few keys are different
+    
+
+    key <TLDE> { [ quoteleft, asciitilde	]			};
+//     key <AE02> { [ ecaron, 2		], [ at 		]	};
+//     key <AE03> { [ scaron, 3		], [ numbersign		]	};
+//     key <AE04> { [ ccaron, 4		], [ dollar		]	};
+//     key <AE05> { [ rcaron, 5		], [ percent		]	};
+//     key <AE06> { [ zcaron, 6		], [ asciicircum	]	};
+//     key <AE07> { [ yacute, 7		], [ ampersand		]	};
+//     key <AE08> { [ aacute, 8		], [ asterisk		]	};
+    key <AE09> { [ iacute, 9		], [ braceleft		]	};
+    key <AE10> { [ eacute, 0		], [ braceright		]	};
+
+    key <AD03> { [ e, E		        ]                               };
+    key <AD11> { [ uacute, slash        ], [ bracketleft		] };
+    key <AD12> { [ parenright, parenleft], [ bracketright		] };
+    
+    key <AC02> { [ s, S			], [ ssharp, ssharp		] };
+    key <BKSL> { [ SunFA_Diaeresis, backslash	]			  };
+
+    key <LSGT> { [ backslash, bar		]			};
+    
+};
+

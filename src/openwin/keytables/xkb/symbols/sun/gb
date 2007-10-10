@@ -1,0 +1,18 @@
+xkb_symbols "type4" {
+    include "sun/us(type4basic)"
+    // A few keys are different
+    key <AE01> { [ 1, exclam		], [brokenbar	]	};
+    key <AE03> { [ 3, sterling		], [numbersign	]	};
+    key <AE04> { [ 4, dollar		], [EuroSign	]	};
+    key <AE11> { [ minus, underscore	], [notsign	]	};
+    key <AD03> { [ e, E			], [EuroSign	]	};
+
+
+};
+
+xkb_symbols "type5" {
+    include "gb"
+
+    key <TLDE> { [ quoteleft, notsign	], [ brokenbar		]};
+    key <LSGT> { [ backslash, bar 	]			};
+};

@@ -1,0 +1,50 @@
+xkb_symbols "type4" {
+	include "sun/us(type4)"
+
+    key <BKSL> { [ bracketleft, braceleft ], [ guillemotleft	] };
+    key <BRCR> { [ bracketright, braceright ], [ guillemotright ] };
+    key <AE02> { [ 2, quotedbl		], [ at			] };
+    key <AE03> { [ 3, periodcentered    ], [ numbersign       ] };
+    key <AE05> { [ 5, percent           ], [ degree           ] };
+    key <AE06> { [ 6, ampersand         ], [ notsign          ] };
+    key <AE07> { [ 7, slash             ]                       };
+    key <AE08> { [ 8, parenleft         ] 			};
+    key <AE09> { [ 9, parenright        ], [ backslash        ] };
+    key <AE10> { [ 0, equal             ], [ bar              ] };
+    key <AE11> { [ quoteright, question ], [ quoteleft        ] };
+    key <AE12> { [ exclamdown, questiondown ] };
+    key <AD03> { [ e, E                 ], [ EuroSign         ] };
+    key <AD09> { [ o, O                 ], [ masculine        ] };
+    key <AD11> { [ SunFA_Grave, SunFA_Circum ], [ asciicircum ] };
+    key <AD12> { [ plus, asterisk       ], [ asciitilde       ] };
+    key <AC01> { [ a, A			], [ ordfeminine      ] };
+    key <AC10> { [ Ntilde		]			};
+    key <AC11> { [ SunFA_Acute, SunFA_Diaeresis ]			};
+    key <TLDE> { [ Ccedilla		]			};
+    key <RALT> { [ Alt_R                ]                       };
+    key <LCTL> { [ Caps_Lock ] };
+    key <CAPS> { [ Control_L ] };
+    key <LSGT> { [ less, greater	]			};
+    key <AB08> { [ comma, semicolon	]			};
+    key <AB09> { [ period, colon	]			};
+    key <AB10> { [ minus, underscore	]			};
+};
+
+
+xkb_symbols "type5" {
+    include "es"
+
+    key <AE03> { [ 3, periodcentered	], [ numbersign			] };
+    key <AE04> { [ 4, dollar		], [ asciicircum		] };
+    key <AE05> { [ 5, percent		], [ asciitilde			] };
+    key <AE07> { [ 7, slash		], [ braceleft			]};
+    key <AE08> { [ 8, parenleft		], [ bracketleft		]};
+    key <AE09> { [ 9, parenright	], [ bracketright		]};
+    key <AE10> { [ 0, equal		], [ braceright			]};
+    key <AE11> { [ quoteright, question	], [ quoteleft			] };
+
+    key <AD11> { [ SunFA_Grave, SunFA_Circum ], [ bracketleft		] };
+
+    key <AC11> { [ SunFA_Acute, SunFA_Diaeresis ], [ braceleft		] };
+};
+

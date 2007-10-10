@@ -1,0 +1,13 @@
+
+xkb_symbols "basic" {
+    include "ru"
+    // A few keys are different
+    key	<BKSL> {	[	backslash,	       bar	],
+			[	slash,           question	]	};
+    key	<AE04> {	[		4,	    dollar	],
+			[		percent,	 4	]	};
+   key	<AB10> {	[	    slash,	  question	],
+			[	  ediaeresis,	Ediaeresis	]	};
+
+};
+

@@ -1,0 +1,11 @@
+XCOMM $TOG: Imakefile /main/13 1997/08/02 10:10:54 kaleb $
+#define IHaveSubdirs
+
+    DATAFILES = amiga ataritt fujitsu hp ibm sony sun usb xfree86 xfree98
+      SUBDIRS = digital sgi
+
+all::
+
+MakeXkbDir($(LIBDIR)/xkb,keycodes)
+InstallMultiple($(DATAFILES),$(LIBDIR)/xkb/keycodes)
+DependTarget()

@@ -1,0 +1,11 @@
+XCOMM $TOG: Imakefile /main/5 1997/08/02 10:10:30 kaleb $
+XCOMM $Sun: @(#)Imakefile	1.2	01/11/15 SMI $
+
+     DATAFILES = accessx basic complete default group_led iso9995 japan \
+		 keypad leds misc mousekeys norepeat pc pc98 xtest
+
+all::
+
+MakeXkbDir($(LIBDIR)/xkb,compat)
+InstallMultiple($(DATAFILES),$(LIBDIR)/xkb/compat)
+DependTarget()

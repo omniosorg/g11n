@@ -1,0 +1,189 @@
+#
+# Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+# ident "@(#)xkbtable.map 1.5     07/03/27 SMI"
+#
+########################################################################
+# xkbtable.map
+#
+# The xkbtable map associates a keyboard with its corresponding XKB names,
+# in order to associate it
+#
+# The keyboard Type and Layout are generally obtained from the kernel using
+# appropriate ioctl calls.  The keyboard Type is stored in a keyboard PROM.
+# The keyboard Layout may be stored in a keyboard PROM or determined by a 
+# DIP switch setting.
+#
+# Format of an entry:
+# Type  Layout  XKB_Keymap	XKB_Model	XKB_Layout
+#
+# The XKB_Model and XKB_Layout fields are optional, but you must specify an
+# XKB_model in order to specify an XKB_Layout
+#
+# The layout field may be a * to indicate a default entry for a keyboard
+# of the specified type if an exact match is not found.
+#
+# The type & layout fields may be both be a * to indicate a default entry 
+# for a keyboard if an exact match is not found, and a default entry of 
+# the correct type is not found.
+#
+# Defaults:
+*	*	sun/all(US6)
+#
+# Type 4 Keyboards
+#
+4	0	sun/all(US4)		type4		us		
+4	1	sun/all(US4)		type4		us
+4	2	sun/all(FranceBelg4)	type4_euro	fr
+4	3	sun/all(Canada4)	type4_ca	ca
+4	4	sun/all(Denmark4)	type4_euro	dk
+4	5	sun/all(Germany4)	type4_euro	de
+4	6	sun/all(Italy4)		type4_euro	it
+4	7	sun/all(Netherland4)	type4_euro	nl
+4	8	sun/all(Norway4)	type4_euro	no
+4	9	sun/all(Portugal4)	type4_euro	pt
+4	10	sun/all(SpainLatAm4)	type4_euro	es
+4	11	sun/all(SwedenFin4)	type4_euro	se
+4	12	sun/all(Switzer_Fr4)	type4_euro	fr_CH
+4	13	sun/all(Switzer_Ge4)	type4_euro	de_CH
+4	14	sun/all(UK4)		type4_euro	gb
+4	16	sun/all(Korea4)		type4		ko
+4	17	sun/all(Taiwan4)	type4		tw
+4	32	sun/all(Japan4)		type4_jp	jp
+#
+# Uncomment either the PC compatible or Sun compatible layout
+# Sun 101A -- PC compatible layout:
+4	19	sun/all(US101A_PC)	type5		us
+# Sun 101A -- Sun compatible layout:
+#4	19	sun/all(US101A_Sun)	type5		us
+#
+#
+# Type 5 Keyboards
+#
+# Type 5 keyboards identify themselves as type 4 for backward compatibility
+#
+4	33	sun/all(US5)		type5			us
+4	34	sun/all(US_UNIX5)	type5_unix		us
+4	35	sun/all(France5)	type5_euro		fr
+4	36	sun/all(Denmark5)	type5_euro		dk
+4	37	sun/all(Germany5)	type5_euro		de
+4	38	sun/all(Italy5)		type5_euro		it
+4	39	sun/all(Netherland5)	type5_euro		nl
+4	40	sun/all(Norway5)	type5_euro		no
+4	41	sun/all(Portugal5)	type5_euro		pt
+4	42	sun/all(Spain5)		type5_euro		es
+4	43	sun/all(Sweden5)	type5_euro		se
+4	44	sun/all(Switzer_Fr5)	type5_euro		fr_CH
+4	45	sun/all(Switzer_Ge5)	type5_euro		de_CH
+4	46	sun/all(UK5)		type5_euro		gb
+4	47	sun/all(Korea5)		type5			ko
+4	48	sun/all(Taiwan5)	type5			tw
+4	49	sun/all(Japan5)		type5_jp		
+4	50	sun/all(Canada_Fr5)	type5_euro		fr_CA
+4	51	sun/all(Hungary5)	type5_euro		hu
+4	52	sun/all(Poland5)	type5_euro		pl
+4	53	sun/all(Czech5)		type5_euro		cz
+4	54	sun/all(Russia5)	type5_euro		ru
+4	55	sun/all(Latvia5)	type5_euro		lv
+4	57	sun/all(Greece5)	type5_euro		gr
+4	59	sun/all(Lithuania5)	type5_euro		lt
+4	63	sun/all(Canada_Fr5_TBITS5)	type5_euro
+4	56	sun/all(TurkeyQ5)	type5_euro
+4	58	sun/all(Arabic5)	type5_euro		ar
+4	60	sun/all(Belgian5)	type5_euro		be
+4	62	sun/all(TurkeyF5)	type5_euro
+#
+# Type 5 Hobo Keyboards
+#
+4	80	sun/all(US5_Hobo)		type5_hobo		us
+4	81	sun/all(US_UNIX5_Hobo)		type5_unix_hobo		us
+4	82	sun/all(France5_Hobo)		type5_euro_hobo		fr
+4	83	sun/all(Denmark5_Hobo)		type5_euro_hobo		dk
+4	84	sun/all(Germany5_Hobo)		type5_euro_hobo		de
+4	85	sun/all(Italy5_Hobo)		type5_euro_hobo		it
+4	86	sun/all(Netherland5_Hobo)	type5_euro_hobo		nl
+4	87	sun/all(Norway5_Hobo)		type5_euro_hobo		no
+4	88	sun/all(Portugal5_Hobo)		type5_euro_hobo		pt
+4	89	sun/all(Spain5_Hobo)		type5_euro_hobo		es
+4	90	sun/all(Sweden5_Hobo)		type5_euro_hobo		se
+4	91	sun/all(Switzer_Fr5_Hobo)	type5_euro_hobo		fr_CH
+4	92	sun/all(Switzer_Ge5_Hobo)	type5_euro_hobo		de_CH
+4	93	sun/all(UK5_Hobo)		type5_euro_hobo		gb
+4	94	sun/all(Korea5_Hobo)		type5_hobo		ko
+4	95	sun/all(Taiwan5_Hobo)		type5_hobo		tw
+4	96	sun/all(Japan5_Hobo)		type5_jp_hobo		jp
+4	97	sun/all(Canada_Fr5_Hobo)	type5_euro_hobo		fr_CA
+#
+# Type 101 Keyboards (Solaris x86 Keyboards)
+#
+101	*	sun/all(MS_US101A_x86)
+101	1	sun/all(US101A_x86)
+101	34	sun/all(J3100_x86)
+101	35	sun/all(France_x86)
+101	36	sun/all(Denmark_x86)
+101	37	sun/all(Germany_x86)
+101	38	sun/all(Italy_x86)
+101	39	sun/all(Netherland_x86)
+101	40	sun/all(Norway_x86)
+101	41	sun/all(Portugal_x86)
+101	42	sun/all(Spain_x86)
+101	43	sun/all(Sweden_x86)
+101	44	sun/all(Switzer_Fr_x86)
+101	45	sun/all(Switzer_Ge_x86)
+101	46	sun/all(UK_x86)	
+101	47	sun/all(Korea_x86)
+101	48	sun/all(Taiwan_x86)
+101	49	sun/all(Japan_x86)
+101	50	sun/all(Canada_Fr2_x86)
+101	51	sun/all(Hungary_x86)
+101	52	sun/all(Poland_x86)
+101	53	sun/all(Czech_x86)
+101	54	sun/all(Russia_x86)
+101	55	sun/all(Latvia_x86)
+101	56	sun/all(Turkey_x86)
+101	57	sun/all(Greece_x86)
+101	59	sun/all(Lithuania_x86)
+101	1001	sun/all(MS_US101A_x86)
+#
+# Type 6 USB Keyboards
+#
+6	*	sun/all(US6_usb)		type6_usb	us
+6       1       sun/all(Arabic6_usb)            type6_euro_usb  ar
+6       2       sun/all(Belgian6_usb)           type6_euro_usb  be
+6	6	sun/all(Denmark6_usb)		type6_euro_usb	dk
+6	7	sun/all(Finnish6_usb)		type6_euro_usb	fi
+6	8	sun/all(France6_usb)		type6_euro_usb	fr
+6	9	sun/all(Germany6_usb)		type6_euro_usb	de
+6	14	sun/all(Italy6_usb)		type6_euro_usb	it
+6	15	sun/all(Japan7_usb)		type7_jp_usb	jp
+6	271	sun/all(Japan6_usb)		type6_jp_usb	jp
+6	16	sun/all(Korea6_usb)		type6_usb	ko
+6	18	sun/all(Netherland6_usb)	type6_euro_usb	nl
+6	19	sun/all(Norway6_usb)		type6_euro_usb	no
+6	22	sun/all(Portugal6_usb)		type6_euro_usb	pt
+6	23	sun/all(Russia6_usb)		type6_euro_usb	ru
+6	24	sun/all(Slovakia6_usb)		type6_euro_usb  sk
+6	25	sun/all(Spain6_usb)		type6_euro_usb	es
+6	26	sun/all(Sweden6_usb)		type6_euro_usb	se
+6	27	sun/all(Switzer_Fr6_usb)	type6_euro_usb	fr_CH
+6	28	sun/all(Switzer_Ge6_usb)	type6_euro_usb	de_CH
+6	30	sun/all(Taiwan6_usb)		type6_usb	tw
+6	32	sun/all(UK6_usb)		type6_euro_usb	gb
+6	33	sun/all(US6_usb)		type6_usb	us
+6	31	sun/all(TurkeyQ6_usb)		type6_euro_usb  tr 
+6	35	sun/all(TurkeyF6_usb)		type6_euro_usb  tr_f
+6       259     sun/all(Croatia6_usb)           type6_euro_usb 	hr
+6       267     sun/all(Macedonia6_usb)         type6_euro_usb  mk
+6       256     sun/all(Slovenia6_usb)		type6_euro_usb	si
+6       24      sun/all(Slovakia6_usb)		type6_euro_usb	sk
+6       257     sun/all(SerbiaandMontenegro6_usb)	type6_euro_usb	sr
+6       258     sun/all(Iceland6_usb)		type6_euro_usb	is
+6       260     sun/all(Bulgaria6_usb)		type6_usb	bg
+6       261     sun/all(Belarus6_usb)		type6_euro_usb	by	
+6       262     sun/all(Malta_US6_usb)		type6_euro_usb	mt_us
+6       263     sun/all(Malta_UK6_usb)		type6_euro_usb	mt	
+6       264     sun/all(Albania6_usb)		type6_euro_usb	al	
+6       265     sun/all(Lithuania6_usb)		type6_euro_usb	lt	
+6	266     sun/all(Latvia6_usb)		type6_euro_usb	lv
+6	5     	sun/all(Czech6_usb)		type6_euro_usb	cz

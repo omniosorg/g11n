@@ -1,0 +1,41 @@
+
+xkb_keymap "SpainLatAm4" {
+    xkb_keycodes	{ include "sun(type4tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type4)+es"	};
+    xkb_geometry	{ include "sun(type4tuv)"	};
+};
+
+xkb_keymap "Spain5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+es"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Spain5_Hobo" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+es"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Spain6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/es(type5)"	};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "Spain6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/es(type5)"	};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+

@@ -1,0 +1,34 @@
+
+xkb_keymap "Russia4" {
+    xkb_keycodes	{ include "sun(type4)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/ru"		};
+    xkb_geometry	{ include "sun(type4)"		};
+};
+
+xkb_keymap "Russia5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/ru"		};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Russia6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/ru"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "Russia6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/ru"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+

@@ -1,0 +1,16 @@
+
+xkb_keymap "Slovenia6" {
+    xkb_keycodes        { include "sun(type6tuv)"       };
+    xkb_types           { include "default"             };
+    xkb_compatibility   { include "default"             };
+    xkb_symbols         { include "sun/us(type6)+si"    };
+    xkb_geometry        { include "sun(type6tuv)"       };
+};
+
+xkb_keymap "Slovenia6_usb" {
+    xkb_keycodes        { include "sun(type6tuv_usb)"   };
+    xkb_types           { include "default"             };
+    xkb_compatibility   { include "default"             };
+    xkb_symbols         { include "sun/us(type6)+si"    };
+    xkb_geometry        { include "sun(type6tuv)"       };
+};

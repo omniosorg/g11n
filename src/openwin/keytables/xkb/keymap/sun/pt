@@ -1,0 +1,42 @@
+
+xkb_keymap "Portugal4" {
+    xkb_keycodes	{ include "sun(type4tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type4)+pt"	};
+    xkb_geometry	{ include "sun(type4tuv)"	};
+};
+
+xkb_keymap "Portugal5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+pt"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Portugal5_Hobo" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+pt"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Portugal6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/pt(type5)"	};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "Portugal6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/pt(type5)"	};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+

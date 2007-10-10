@@ -1,0 +1,42 @@
+
+xkb_keymap "Taiwan4" {
+    xkb_keycodes	{ include "sun(type4tw)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/tw(type4)"	};
+    xkb_geometry	{ include "sun(type4tw)"	};
+};
+
+xkb_keymap "Taiwan5" {
+    xkb_keycodes	{ include "sun(type5_tw)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/tw(type5)"	};
+    xkb_geometry	{ include "sun(type5tw)"	};
+};
+
+xkb_keymap "Taiwan5_Hobo" {
+    xkb_keycodes	{ include "sun(type5_tw)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/tw(type5)"	};
+    xkb_geometry	{ include "sun(type5tw)"	};
+};
+
+xkb_keymap "Taiwan6" {
+    xkb_keycodes	{ include "sun(type6)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/tw(type5)"	};
+    xkb_geometry	{ include "sun(type6)"	};
+};
+
+xkb_keymap "Taiwan6_usb" {
+    xkb_keycodes	{ include "sun(type6_usb)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/tw(type5)"	};
+    xkb_geometry	{ include "sun(type6)"	};
+};
+
+

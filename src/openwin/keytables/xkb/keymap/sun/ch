@@ -1,0 +1,81 @@
+
+xkb_keymap "Switzer_Fr4" {
+    xkb_keycodes	{ include "sun(type4tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type4)+fr"	};
+    xkb_geometry	{ include "sun(type4tuv)"	};
+};
+
+xkb_keymap "Switzer_Fr5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+fr"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Switzer_Fr5_Hobo" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+fr"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Switzer_Fr6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/sw(type5fr)"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "Switzer_Fr6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/sw(type5fr)"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "Switzer_Ge4" {
+    xkb_keycodes	{ include "sun(type4tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type4)+de"	};
+    xkb_geometry	{ include "sun(type4tuv)"	};
+};
+
+xkb_keymap "Switzer_Ge5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+de"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Switzer_Ge5_Hobo" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+de"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Switzer_Ge6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/sw(type5de)"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "Switzer_Ge6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/sw(type5de)"};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+

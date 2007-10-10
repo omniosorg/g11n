@@ -1,0 +1,39 @@
+xkb_symbols "type4" {
+    include "sun/us(type4basic)"
+    // A few keys are different
+
+    key <BKSL> { [ at, section		], [notsign ]		};
+    key <BRCR> { [ backslash, bar	]			};
+    key <AE01> { [ 1, exclam		], [onesuperior	]	};
+    key <AE02> { [ 2, quotedbl		], [twosuperior	]	};
+    key <AE03> { [ 3, numbersign	], [threesuperior]	};
+    key <AE04> { [ 4, dollar		], [onequarter	]	};
+    key <AE05> { [ 5, percent		], [onehalf	]	};
+    key <AE06> { [ 6, ampersand		], [threequarters]	};
+    key <AE07> { [ 7, underscore	], [sterling	]	};
+    key <AE08> { [ 8, parenleft		], [braceleft	]	};
+    key <AE09> { [ 9, parenright	], [braceright	]	};
+    key <AE10> { [ 0, quoteright	], [quoteleft	]	};
+    key <AE11> { [ slash, question	]			};
+    key <AE12> { [ degree, SunFA_Tilde	], [SunFA_Cedilla]	};
+    key <AD03> { [ e, E			], [EuroSign	]	};
+    key <AD11> { [ SunFA_Diaeresis, asciicircum], [SunFA_Circum]};
+    key <AD12> { [ asterisk, brokenbar	], [asciitilde	]	};
+    key <AC02> { [ S, NoSymbol		], [ssharp	]	};
+    key <AC10> { [ plus, plusminus	]			};
+    key <AC11> { [ SunFA_Acute, SunFA_Grave]			};
+    key <TLDE> { [ less, greater	]			};
+    key <LSGT> { [ bracketright, bracketleft]			};
+    key <AB01> { [ Z, NoSymbol		], [guillemotleft]	};
+    key <AB02> { [ X, NoSymbol		], [guillemotright]	};
+    key <AB03> { [ C, NoSymbol		], [cent	]	};
+    key <AB07> { [ M, NoSymbol		], [mu		]	};
+    key <AB08> { [ comma, semicolon	] 			};
+    key <AB09> { [ period, colon	]			};
+    key <AB10> { [ minus, equal		]			};
+    key <CAPS> { [ SunAltGraph		]			};
+//    key <COMP> { [ SunCompose		]			};
+    key <ALGR> { [ Caps_Lock		]			};
+ 
+};
+

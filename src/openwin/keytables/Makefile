@@ -18,13 +18,14 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
 #
 #ident	"@(#)Makefile	1.0	06/03/07	SMI"
 #
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
 
-SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ openwin/share/lib/ openwin/keytables uts cmd
+SUBDIRS = xkb sunKeytables
 
 all:=		TARGET= all
 install :=	TARGET= install

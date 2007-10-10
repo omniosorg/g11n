@@ -1,0 +1,28 @@
+
+xkb_symbols "type5" {
+    include "sun/us(type5basic)"
+    // A few keys are different
+    key <TLDE> { [ quoteleft, asciitilde], [ degree, degree ]	};
+    key <AE02> { [ 2, quotedbl		], [ at		]	};
+    key <AE03> { [ 3, colon		], [ numbersign	]	};
+    key <AE04> { [ 4, question		], [ dollar	]	};
+    key <AE06> { [ 6, plus		], [ asciicircum ]	};
+    key <AE07> { [ 7, underscore	], [ ampersand	]	};
+    key <AE08> { [ 8, parenleft		], [ asterisk	]	};
+    key <AE09> { [ 9, parenright	]			};
+    key <AE10> { [ 0, equal		]			};
+    key <AE11> { [ zabovedot, Zabovedot	]			};
+    key <AE12> { [ dead_ogonek, Aacute ]			};
+    key <AD11> { [ oacute, zacute	], [ bracketleft, braceleft ] };
+    key <AD12> { [ slash, section	], [ bracketright, braceright ] };
+    key <AC02> { [ s, S			], [ ssharp	]	};
+    key <AC08> { [ k, K			], [ ampersand	]	};
+    key <AC10> { [ lstroke, Lstroke	]			};
+    key <AC11> { [ aogonek, eogonek	], [ quoteright	]	};
+    key <BKSL> { [ backslash, semicolon	], [ currency, bar ]	};
+    key <LSGT> { [ less, greater	]			};
+    key <AB08> { [ comma, sacute	], [ less	]	};
+    key <AB09> { [ period, nacute	], [ greater	]	};
+    key <AB10> { [ minus, cacute	]			};
+};
+

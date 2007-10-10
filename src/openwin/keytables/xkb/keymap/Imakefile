@@ -1,0 +1,11 @@
+XCOMM $TOG: Imakefile /main/11 1997/08/02 10:11:09 kaleb $
+#define IHaveSubdirs
+
+     DATAFILES = amiga ataritt sony xfree86 xfree98
+       SUBDIRS = digital sgi sun
+
+all::
+
+MakeXkbDir($(LIBDIR)/xkb,keymap)
+InstallMultiple($(DATAFILES),$(LIBDIR)/xkb/keymap)
+DependTarget()

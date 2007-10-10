@@ -1,0 +1,9 @@
+XCOMM $XConsortium: Imakefile /main/1 1996/01/23 06:59:52 kaleb $
+
+     DATAFILES = al be bg br by ca cs cz de dk es fi fr gb gr hu it is jp ko lt lv nl no \
+		 mt mt_us pl pt ru se sr sw tr tr_f tuv tw us
+
+all::
+
+InstallMultiple($(DATAFILES),$(LIBDIR)/xkb/symbols/sun)
+DependTarget()

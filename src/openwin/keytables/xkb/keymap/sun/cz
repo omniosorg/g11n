@@ -1,0 +1,9 @@
+
+xkb_keymap "Czech5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+cz"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+

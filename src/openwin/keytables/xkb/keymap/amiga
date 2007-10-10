@@ -1,0 +1,12 @@
+// $TOG: amiga /main/1 1997/08/02 10:11:13 kaleb $
+
+
+
+// $XFree86: xc/programs/xkbcomp/keymap/amiga,v 3.0 1996/08/18 01:55:42 dawes Exp $
+default xkb_keymap "usa1" {
+    xkb_keycodes	{ include "amiga(usa1)"		};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "xfree68/amiga(usa1)"	};
+    xkb_geometry	{ include "amiga(usa1)"		};
+};

@@ -1,0 +1,44 @@
+xkb_symbols "type4" {
+	include "sun/us(type4)"
+
+    key <BKSL> { [ bracketleft, braceleft ], [ guillemotleft	]	 };
+    key <BRCR> { [ bracketright, braceright ], [ guillemotright ] 	};
+    key <AE02> { [ 2, quotedbl		], [ twosuperior	] 	};
+    key <AE03> { [ 3, sterling		], [ threesuperior	] 	};
+    key <AE06> { [ 6, ampersand		], [ notsign		] 	};
+    key <AE06> { [ 7, slash		]				};
+    key <AE06> { [ 8, parenleft		]				};
+    key <AE09> { [ 9, parenright        ], [ backslash		] 	};
+    key <AE10> { [ 0, equal             ], [ bar		] 	};
+    key <AE11> { [ quoteright, question ], [ quoteleft		] 	};
+    key <AE12> { [ igrave, asciicircum	] };
+
+    key <AD11> { [ egrave, eacute       ]				};
+    key <AD12> { [ plus, asterisk       ], [ asciitilde   	]	};
+
+    key <AC10> { [ ograve, ccedilla 	], [ at			]	};
+    key <AC11> { [ agrave, degree	], [ numbersign		]	};
+    key <TLDE> { [ ugrave, section	]				};
+
+    key <LSGT> { [ less, greater	]				};
+    key <AB08> { [ comma, semicolon	]				};
+    key <AB09> { [ period, colon	]				};
+    key <AB10> { [ minus, underscore	]				};
+    
+
+    key <LALT> { [ Alt_L	       	]              	       		};
+    key <COMP> { [ SunCompose       	]				};
+    key <RALT> { [ SunAltGraph		]				};
+    key <LCTL> { [ Caps_Lock 		] 				};
+    key <CAPS> { [ Control_L 		] 				};
+
+};
+
+xkb_symbols "type5" {
+    include "it"
+
+    key <AE08> { [ 8, parenleft		], [ braceleft			] };
+    key <AE09> { [ 9, parenright	], [ braceright			] };
+
+    key <BKSL> { [ ugrave, section	], [ asciitilde			] };
+};

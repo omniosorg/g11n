@@ -1,0 +1,42 @@
+
+xkb_keymap "Italy4" {
+    xkb_keycodes	{ include "sun(type4tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type4)+it"	};
+    xkb_geometry	{ include "sun(type4tuv)"	};
+};
+
+xkb_keymap "Italy5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+it"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Italy5_Hobo" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+it"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Italy6" {
+    xkb_keycodes	{ include "sun(type6tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/it(type5)"	};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+xkb_keymap "Italy6_usb" {
+    xkb_keycodes	{ include "sun(type6tuv_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+sun/it(type5)"	};
+    xkb_geometry	{ include "sun(type6tuv)"	};
+};
+
+

@@ -1,0 +1,25 @@
+
+xkb_keymap "Canada4" {
+    xkb_keycodes	{ include "sun(type4tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/ca(type4)"	};
+    xkb_geometry	{ include "sun(type4tuv)"	};
+};
+
+xkb_keymap "Canada_Fr5" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+ca"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+
+xkb_keymap "Canada_Fr5_Hobo" {
+    xkb_keycodes	{ include "sun(type5tuv)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/us(type5)+ca"	};
+    xkb_geometry	{ include "sun(type5tuv)"	};
+};
+

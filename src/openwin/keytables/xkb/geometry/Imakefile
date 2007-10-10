@@ -1,0 +1,13 @@
+XCOMM $TOG: Imakefile /main/16 1997/08/02 10:10:37 kaleb $
+#define IHaveSubdirs
+
+     TESTDATA = 
+    DATAFILES = amiga ataritt dell everex fujitsu hp keytronic kinesis \
+		microsoft nec northgate pc sony sun winbook $(TESTDATA)
+      SUBDIRS = digital sgi
+
+all::
+
+MakeXkbDir($(LIBDIR)/xkb,geometry)
+InstallMultiple($(DATAFILES),$(LIBDIR)/xkb/geometry)
+DependTarget()

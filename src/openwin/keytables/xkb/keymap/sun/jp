@@ -1,0 +1,42 @@
+
+xkb_keymap "Japan4" {
+    xkb_keycodes	{ include "sun(type4jp)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/jp(type4)"	};
+    xkb_geometry	{ include "sun(type4jp)"	};
+};
+
+xkb_keymap "Japan5" {
+    xkb_keycodes	{ include "sun(type5_jp)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/jp(type5)"	};
+    xkb_geometry	{ include "sun(type5jp)"	};
+};
+
+xkb_keymap "Japan5_Hobo" {
+    xkb_keycodes	{ include "sun(type5_jp)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/jp(type5)"	};
+    xkb_geometry	{ include "sun(type5jp)"	};
+};
+
+xkb_keymap "Japan6" {
+    xkb_keycodes	{ include "sun(type6_jp)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/jp(type5)"	};
+    xkb_geometry	{ include "sun(type6jp)"	};
+};
+
+xkb_keymap "Japan6_usb" {
+    xkb_keycodes	{ include "sun(type6_jp_usb)"	};
+    xkb_types		{ include "default"		};
+    xkb_compatibility	{ include "default"		};
+    xkb_symbols		{ include "sun/jp(type5)"	};
+    xkb_geometry	{ include "sun(type6jp)"	};
+};
+
+

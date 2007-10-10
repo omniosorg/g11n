@@ -1,0 +1,65 @@
+XCOMM
+XCOMM Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+XCOMM Use is subject to license terms.
+XCOMM
+XCOMM ident "@(#)Imakefile 35.24     06/11/24 SMI"
+XCOMM
+
+#ifdef ProjectRoot
+#define KEYTABLEDIR Concat(ProjectRoot,/share/etc/keytables)
+#endif
+
+all::
+
+#ifdef KEYTABLEDIR
+#ifdef SparcArchitecture
+XCOMM Type 4 & 5 are installed on Sparc only since they cannot be connected
+XCOMM to non-sparc systems.  See below for Type 6 (USB) which can be used
+XCOMM on both sparc & intel. 
+SPARC_KEYBOARDS = Arabic5.kt Belgian5.kt Canada4.kt Canada_Fr5.kt Canada_Fr5_Hobo.kt \
+	Canada_Fr5_TBITS5.kt Czech5.kt Denmark4.kt Denmark5.kt \
+	Denmark5_Hobo.kt France5.kt France5_Hobo.kt FranceBelg4.kt \
+	Germany4.kt Germany5.kt Germany5_Hobo.kt Hungary5.kt \
+	Italy4.kt Italy5.kt Italy5_Hobo.kt Japan4.kt Japan5.kt \
+	Japan5_Hobo.kt Korea4.kt Korea5.kt Korea5_Hobo.kt Netherland4.kt \
+	Netherland5.kt Netherland5_Hobo.kt Norway4.kt Norway5.kt \
+	Norway5_Hobo.kt Poland5.kt Poland5_pr.kt Portugal4.kt Portugal5.kt \
+	Portugal5_Hobo.kt Russia5.kt Spain5.kt Spain5_Hobo.kt SpainLatAm4.kt \
+	Sweden5.kt Sweden5_Hobo.kt SwedenFin4.kt Switzer_Fr4.kt \
+	Switzer_Fr5.kt Switzer_Fr5_Hobo.kt Switzer_Ge4.kt Switzer_Ge5.kt \
+	Switzer_Ge5_Hobo.kt Taiwan4.kt Taiwan5.kt Taiwan5_Hobo.kt Turkey5.kt \
+	TurkeyF5.kt TurkeyQ5.kt UK4.kt UK5.kt UK5_Hobo.kt US101A_PC.kt \
+	US101A_Sun.kt US3.kt US4.kt US5.kt US5_Hobo.kt US_UNIX5.kt \
+	US_UNIX5_Hobo.kt Greece5.kt Latvia5.kt Lithuania5.kt 
+#endif
+#ifdef i386Architecture
+X86_KEYBOARDS = Canada_Fr_x86.kt Canada_Fr2_x86.kt Denmark_x86.kt \
+	France_x86.kt Germany_x86.kt Italy_x86.kt Japan_x86.kt \
+	Japan_Muhenkan_x86.kt J3100_x86.kt Korea_x86.kt Netherland_x86.kt \
+	Norway_x86.kt Portugal_x86.kt Spain_x86.kt Sweden_x86.kt \
+	Switzer_Fr_x86.kt Switzer_Ge_x86.kt Taiwan_x86.kt UK_x86.kt \
+	US101A_x86.kt MS_US101A_x86.kt 
+#endif
+
+XCOMM Type 6 (USB) keytables are installed on all platforms
+USB_KEYBOARDS = Arabic6.kt Belgian6.kt Canada6.kt Denmark6.kt Estonia6.kt \
+	Finnish6.kt France6.kt Germany6.kt Italy6.kt Japan6.kt Korea6.kt \
+	Netherland6.kt Norway6.kt Portugal6.kt Russia6.kt Spain6.kt \
+	Sweden6.kt Switzer_Fr6.kt Switzer_Ge6.kt Taiwan6.kt TurkeyF6.kt \
+	TurkeyQ6.kt UK6.kt US6.kt Japan7.kt Slovenia6.kt Slovakia6.kt \
+	SerbiaandMontenegro6.kt Iceland6.kt Croatia6.kt Bulgaria6.kt \
+	Belarus6.kt Malta_US6.kt Malta_UK6.kt Albania6.kt Czech6.kt \
+	Greece6.kt Hungary6.kt Latvia6.kt Lithuania6.kt Poland6.kt \ 
+	Macedonia6.kt Canada_Fr6.kt Portugal_Br6.kt Romania6.kt 
+
+
+
+XCOMM Map files are installed on all platforms
+MAP_FILES = keytable.map xkbtable.map
+
+ALL_FILES = $(SPARC_KEYBOARDS) $(X86_KEYBOARDS) $(USB_KEYBOARDS) $(MAP_FILES) 
+
+InstallMultiple($(ALL_FILES),KEYTABLEDIR)
+
+#endif
+

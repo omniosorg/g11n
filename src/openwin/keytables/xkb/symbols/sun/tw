@@ -1,0 +1,22 @@
+//
+// Taiwanese layout for a Type 4 Sun keyboard
+xkb_symbols "type4" {
+    include "sun/us(type4basic)"
+
+    key <BKSL> { [ backslash, bar	], [ brokenbar	]		};
+
+//    key <LNFD> { [ Hangul		]			};
+//    key <RALT> { [ Linefeed		]			};
+    key <COMP> { [ Henkan_Mode		]			};
+
+};
+
+// US/ASCII layout for a Type 5 Sun keyboard
+xkb_symbols "type5" {
+
+    // A few keys are different
+    key <ALGR> { [ Henkan_Mode		]			};
+    key <BKSL> { [ backslash, bar	], [ brokenbar	]		};
+
+};
+
