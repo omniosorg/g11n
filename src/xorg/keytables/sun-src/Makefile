@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,13 +18,14 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 
-SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ openwin/share/lib/ openwin/keytables xorg/keytables uts cmd
+include $(SRC)/Makefile.master
+
+TARGETDIR = $(FILEROOT)/X11/lib/X11/xkb
+
+XKB_DIRFILES = compat.dir geometry.dir keycodes.dir keymap.dir symbols.dir types.dir
+SUBDIRS = compat compiled geometry keycodes keymap rules semantics symbols types
+
 
 all:=		TARGET= all
 install :=	TARGET= install
@@ -32,10 +33,19 @@ clean :=	TARGET= clean
 clobber :=	TARGET= clobber
 
 
-all install clean: $(SUBDIRS)
+$(TARGETDIR):
+	$(INSDIR) "$@"
 
-$(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
+%.dir:
+	(cd $(@:%.dir=%); $(XKBCOMP_XSUN) -lfhlpR -o ../$@ '*')
 
-FRC:
+.install_list:
+	find $(SUBDIRS) -type f ! -name Imakefile > $@
 
+all: $(XKB_DIRFILES)
+
+install: all $(TARGETDIR) .install_list
+	$(TAR) cf - -I .install_list | (cd $(TARGETDIR); $(TAR) xf -)
+
+clean:
+	$(RM) -f $(XKB_DIRFILES) .install_list

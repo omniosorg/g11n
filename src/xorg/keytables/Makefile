@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,24 +18,27 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 
-SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ openwin/share/lib/ openwin/keytables xorg/keytables uts cmd
+include $(SRC)/Makefile.master
 
-all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
+XKBDATA_SOURCE = xkbdata-1.0.1.tar.gz
+XKBDATA_SITE = ftp://ftp.x.org/pub/individual/data
+XKBDATA_DIR = xkbdata-1.0.1
 
+$(XKBDATA_SOURCE):
+	$(WGET) $(XKBDATA_SITE)/$(XKBDATA_SOURCE)
 
-all install clean: $(SUBDIRS)
+$(XKBDATA_DIR): $(XKBDATA_SOURCE) FRC
+	gzip -dc $(XKBDATA_SOURCE)|tar xf -
+	# FIXME: use the same strange way as DGE_PKG ws
+	for i in `cd sun-src ; find . -type f -print` ; \
+	do \
+		mkdir -p $(XKBDATA_DIR)/`dirname $$i` ; \
+		[ -f $(XKBDATA_DIR)/$$i ] || cp -p sun-src/$$i xkb/$$i ; \
+	done
 
-$(SUBDIRS): FRC
+all install:  $(XKBDATA_DIR)
 	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
 
-FRC:
-
+clean:
+	rm -Rf $(XKBDATA_DIR) $(XKBDATA_SOURCE)
