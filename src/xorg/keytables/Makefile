@@ -25,20 +25,27 @@ XKBDATA_SOURCE = xkbdata-1.0.1.tar.gz
 XKBDATA_SITE = ftp://ftp.x.org/pub/individual/data
 XKBDATA_DIR = xkbdata-1.0.1
 
+all:=           TARGET= all
+install :=      TARGET= install
+clean :=        TARGET= clean
+clobber :=      TARGET= clobber
+
 $(XKBDATA_SOURCE):
 	$(WGET) $(XKBDATA_SITE)/$(XKBDATA_SOURCE)
 
-$(XKBDATA_DIR): $(XKBDATA_SOURCE) FRC
+$(XKBDATA_DIR): $(XKBDATA_SOURCE)
 	gzip -dc $(XKBDATA_SOURCE)|tar xf -
 	# FIXME: use the same strange way as DGE_PKG ws
 	for i in `cd sun-src ; find . -type f -print` ; \
 	do \
 		mkdir -p $(XKBDATA_DIR)/`dirname $$i` ; \
-		[ -f $(XKBDATA_DIR)/$$i ] || cp -p sun-src/$$i xkb/$$i ; \
+		[ -f $(XKBDATA_DIR)/$$i ] || cp -p sun-src/$$i $(XKBDATA_DIR)/$$i ; \
 	done
 
 all install:  $(XKBDATA_DIR)
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
+	@cd $(XKBDATA_DIR); pwd; $(MAKE) $(MFLAGS) $(TARGET)
 
 clean:
 	rm -Rf $(XKBDATA_DIR) $(XKBDATA_SOURCE)
+
+FRC:
