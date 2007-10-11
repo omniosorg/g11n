@@ -46,7 +46,7 @@ $(TARGETDIR):
 all: $(XKB_DIRFILES)
 
 install: all $(TARGETDIR) .install_list
-	$(TAR) cf - -I .install_list | (cd $(TARGETDIR); $(TAR) xf -)
+	$(TAR) cf - -I .install_list $(XKB_DIRFILES)| (cd $(TARGETDIR); $(TAR) xf -)
 
 clean:
 	$(RM) -f $(XKB_DIRFILES) .install_list

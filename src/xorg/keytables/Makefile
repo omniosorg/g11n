@@ -21,19 +21,27 @@
 
 include $(SRC)/Makefile.master
 
+TARGETDIR = $(FILEROOT)/X11/lib/X11/xkb
+
+XKB_DIRFILES = compat.dir geometry.dir keycodes.dir keymap.dir symbols.dir types.dir
+SUBDIRS = compat compiled geometry keycodes keymap rules semantics symbols types
+
 XKBDATA_SOURCE = xkbdata-1.0.1.tar.gz
 XKBDATA_SITE = ftp://ftp.x.org/pub/individual/data
 XKBDATA_DIR = xkbdata-1.0.1
+
 
 all:=           TARGET= all
 install :=      TARGET= install
 clean :=        TARGET= clean
 clobber :=      TARGET= clobber
 
+DIRFILES = $(XKB_DIRFILES:%=$(XKBDATA_DIR)/%)
+
 $(XKBDATA_SOURCE):
 	$(WGET) $(XKBDATA_SITE)/$(XKBDATA_SOURCE)
 
-$(XKBDATA_DIR): $(XKBDATA_SOURCE)
+$(XKBDATA_DIR)/.unpack: $(XKBDATA_SOURCE)
 	gzip -dc $(XKBDATA_SOURCE)|tar xf -
 	# FIXME: use the same strange way as DGE_PKG ws
 	for i in `cd sun-src ; find . -type f -print` ; \
@@ -41,11 +49,23 @@ $(XKBDATA_DIR): $(XKBDATA_SOURCE)
 		mkdir -p $(XKBDATA_DIR)/`dirname $$i` ; \
 		[ -f $(XKBDATA_DIR)/$$i ] || cp -p sun-src/$$i $(XKBDATA_DIR)/$$i ; \
 	done
+	touch $@
 
-all install:  $(XKBDATA_DIR)
-	@cd $(XKBDATA_DIR); pwd; $(MAKE) $(MFLAGS) $(TARGET)
+$(TARGETDIR):
+	$(INSDIR) "$@"
+
+$(XKBDATA_DIR)/%.dir: $(XKBDATA_DIR)/.unpack
+	(cd $(@:%.dir=%); $(XKBCOMP_XORG) -lfhlpR -o ../../$@ '*')
+
+$(XKBDATA_DIR)/.install_list: $(XKBDATA_DIR)/.unpack
+	(cd $(XKBDATA_DIR); find $(SUBDIRS) -type f ! -name 'Makefile*') > $@
+
+all: $(DIRFILES)
+
+install: all $(TARGETDIR) $(XKBDATA_DIR)/.install_list
+	(cd $(XKBDATA_DIR); $(TAR) cf - -I .install_list $(XKB_DIRFILES)) | (cd $(TARGETDIR); $(TAR) xf -)
 
 clean:
-	rm -Rf $(XKBDATA_DIR) $(XKBDATA_SOURCE)
+	rm -Rf .install.list $(XKBDATA_DIR) $(XKBDATA_SOURCE)
 
 FRC:

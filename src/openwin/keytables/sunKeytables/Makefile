@@ -35,7 +35,7 @@ $(TARGETDIR):
 	$(INSDIR) "$@"
 
 .install_list:
-	find . -type f ! -name .install_list > $@
+	find . -type f ! -name .install_list -name Makefile > $@
 
 all:
 
