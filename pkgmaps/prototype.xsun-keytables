@@ -1,0 +1,371 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none openwin 0755 root bin
+d none openwin/lib 0755 root bin
+d none openwin/lib/X11 0755 root bin
+d none openwin/lib/X11/xkb 0755 root bin
+
+f none openwin/lib/X11/xkb/compat.dir 0644 root bin
+d none openwin/lib/X11/xkb/compat 0755 root bin
+f none openwin/lib/X11/xkb/compat/accessx 0444 root bin
+f none openwin/lib/X11/xkb/compat/basic 0444 root bin
+f none openwin/lib/X11/xkb/compat/complete 0444 root bin
+f none openwin/lib/X11/xkb/compat/default 0444 root bin
+f none openwin/lib/X11/xkb/compat/group_led 0444 root bin
+f none openwin/lib/X11/xkb/compat/iso9995 0444 root bin
+f none openwin/lib/X11/xkb/compat/japan 0444 root bin
+f none openwin/lib/X11/xkb/compat/keypad 0444 root bin
+f none openwin/lib/X11/xkb/compat/leds 0444 root bin
+f none openwin/lib/X11/xkb/compat/misc 0444 root bin
+f none openwin/lib/X11/xkb/compat/mousekeys 0444 root bin
+f none openwin/lib/X11/xkb/compat/norepeat 0444 root bin
+f none openwin/lib/X11/xkb/compat/pc 0444 root bin
+f none openwin/lib/X11/xkb/compat/pc98 0444 root bin
+f none openwin/lib/X11/xkb/compat/xtest 0444 root bin
+
+d none openwin/lib/X11/xkb/compiled 0755 root bin
+f none openwin/lib/X11/xkb/compiled/README 0444 root bin
+
+f none openwin/lib/X11/xkb/geometry.dir 0444 root bin
+d none openwin/lib/X11/xkb/geometry 0755 root bin
+f none openwin/lib/X11/xkb/geometry/amiga 0444 root bin
+f none openwin/lib/X11/xkb/geometry/ataritt 0444 root bin
+f none openwin/lib/X11/xkb/geometry/dell 0444 root bin
+f none openwin/lib/X11/xkb/geometry/everex 0444 root bin
+f none openwin/lib/X11/xkb/geometry/fujitsu 0444 root bin
+f none openwin/lib/X11/xkb/geometry/hp 0444 root bin
+f none openwin/lib/X11/xkb/geometry/keytronic 0444 root bin
+f none openwin/lib/X11/xkb/geometry/kinesis 0444 root bin
+f none openwin/lib/X11/xkb/geometry/microsoft 0444 root bin
+f none openwin/lib/X11/xkb/geometry/nec 0444 root bin
+f none openwin/lib/X11/xkb/geometry/northgate 0444 root bin
+f none openwin/lib/X11/xkb/geometry/pc 0444 root bin
+f none openwin/lib/X11/xkb/geometry/sony 0444 root bin
+f none openwin/lib/X11/xkb/geometry/sun 0444 root bin
+f none openwin/lib/X11/xkb/geometry/winbook 0444 root bin
+
+d none openwin/lib/X11/xkb/geometry/digital 0755 root bin
+f none openwin/lib/X11/xkb/geometry/digital/lk 0444 root bin
+f none openwin/lib/X11/xkb/geometry/digital/pc 0444 root bin
+f none openwin/lib/X11/xkb/geometry/digital/unix 0444 root bin
+
+d none openwin/lib/X11/xkb/geometry/sgi 0755 root bin
+f none openwin/lib/X11/xkb/geometry/sgi/indy 0444 root bin
+f none openwin/lib/X11/xkb/geometry/sgi/indigo 0444 root bin
+f none openwin/lib/X11/xkb/geometry/sgi/O2 0444 root bin
+
+f none openwin/lib/X11/xkb/keycodes.dir 0444 root bin
+d none openwin/lib/X11/xkb/keycodes 0755 root bin
+f none openwin/lib/X11/xkb/keycodes/amiga 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/ataritt 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/fujitsu 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/hp 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/ibm 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/sony 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/sun 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/usb 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/xfree86 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/xfree98 0444 root bin
+
+d none openwin/lib/X11/xkb/keycodes/digital 0755 root bin
+f none openwin/lib/X11/xkb/keycodes/digital/lk 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/digital/pc 0444 root bin
+
+d none openwin/lib/X11/xkb/keycodes/sgi 0755 root bin
+f none openwin/lib/X11/xkb/keycodes/sgi/indy 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/sgi/indigo 0444 root bin
+f none openwin/lib/X11/xkb/keycodes/sgi/iris 0444 root bin
+
+f none openwin/lib/X11/xkb/keymap.dir 0444 root bin
+d none openwin/lib/X11/xkb/keymap 0755 root bin
+f none openwin/lib/X11/xkb/keymap/amiga 0444 root bin
+f none openwin/lib/X11/xkb/keymap/ataritt 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sony 0444 root bin
+f none openwin/lib/X11/xkb/keymap/xfree86 0444 root bin
+f none openwin/lib/X11/xkb/keymap/xfree98 0444 root bin
+
+d none openwin/lib/X11/xkb/keymap/digital 0755 root bin
+f none openwin/lib/X11/xkb/keymap/digital/us 0444 root bin
+
+d none openwin/lib/X11/xkb/keymap/sgi 0755 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/be 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/bg 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/ca 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/cs 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/cz 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/cz_qwerty 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/de 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/de_CH 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/dk 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/dvorak 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/en_US 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/es 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/fi 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/fr 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/fr_CH 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/gb 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/hu 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/it 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/jp 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/no 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/pl 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/pt 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/ru 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/se 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/sk 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/sk_qwerty 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/th 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sgi/us 0444 root bin
+
+d none openwin/lib/X11/xkb/keymap/sun 0755 root bin
+f none openwin/lib/X11/xkb/keymap/sun/all 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/ca 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/ch 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/cz 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/de 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/dk 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/es 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/fi 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/fr 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/gr 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/hu 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/it 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/jp 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/ko 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/lt 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/lv 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/nl 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/no 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/pl 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/pt 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/ru 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/se 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/tr 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/tw 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/uk 0444 root bin
+f none openwin/lib/X11/xkb/keymap/sun/us 0444 root bin
+
+d none openwin/lib/X11/xkb/rules 0755 root bin
+f none openwin/lib/X11/xkb/rules/sgi 0444 root bin
+f none openwin/lib/X11/xkb/rules/sgi.lst 0444 root bin
+f none openwin/lib/X11/xkb/rules/sun 0444 root bin
+f none openwin/lib/X11/xkb/rules/sun.lst 0444 root bin
+f none openwin/lib/X11/xkb/rules/xfree86 0444 root bin
+f none openwin/lib/X11/xkb/rules/xfree86.lst 0444 root bin
+f none openwin/lib/X11/xkb/rules/xfree86-it.lst 0444 root bin
+
+d none openwin/lib/X11/xkb/semantics 0755 root bin
+f none openwin/lib/X11/xkb/semantics/basic 0444 root bin
+f none openwin/lib/X11/xkb/semantics/complete 0444 root bin
+f none openwin/lib/X11/xkb/semantics/default 0444 root bin
+f none openwin/lib/X11/xkb/semantics/xtest 0444 root bin
+
+f none openwin/lib/X11/xkb/symbols.dir 0444 root bin
+d none openwin/lib/X11/xkb/symbols 0755 root bin
+f none openwin/lib/X11/xkb/symbols/az 0444 root bin
+f none openwin/lib/X11/xkb/symbols/be 0444 root bin
+f none openwin/lib/X11/xkb/symbols/bg 0444 root bin
+f none openwin/lib/X11/xkb/symbols/br 0444 root bin
+f none openwin/lib/X11/xkb/symbols/by 0444 root bin
+f none openwin/lib/X11/xkb/symbols/ca 0444 root bin
+f none openwin/lib/X11/xkb/symbols/ca_enhanced 0444 root bin
+f none openwin/lib/X11/xkb/symbols/cs 0444 root bin
+f none openwin/lib/X11/xkb/symbols/ctrl 0444 root bin
+f none openwin/lib/X11/xkb/symbols/cz 0444 root bin
+f none openwin/lib/X11/xkb/symbols/cz_qwerty 0444 root bin
+f none openwin/lib/X11/xkb/symbols/de 0444 root bin
+f none openwin/lib/X11/xkb/symbols/de_CH 0444 root bin
+f none openwin/lib/X11/xkb/symbols/dk 0444 root bin
+f none openwin/lib/X11/xkb/symbols/dvorak 0444 root bin
+f none openwin/lib/X11/xkb/symbols/ee 0444 root bin
+f none openwin/lib/X11/xkb/symbols/el 0444 root bin
+f none openwin/lib/X11/xkb/symbols/en_US 0444 root bin
+f none openwin/lib/X11/xkb/symbols/es 0444 root bin
+f none openwin/lib/X11/xkb/symbols/fi 0444 root bin
+f none openwin/lib/X11/xkb/symbols/fr 0444 root bin
+f none openwin/lib/X11/xkb/symbols/fr_CH 0444 root bin
+f none openwin/lib/X11/xkb/symbols/gb 0444 root bin
+f none openwin/lib/X11/xkb/symbols/group 0444 root bin
+f none openwin/lib/X11/xkb/symbols/hr 0444 root bin
+f none openwin/lib/X11/xkb/symbols/hu 0444 root bin
+f none openwin/lib/X11/xkb/symbols/hu_US 0444 root bin
+f none openwin/lib/X11/xkb/symbols/il 0444 root bin
+f none openwin/lib/X11/xkb/symbols/il_phonetic 0444 root bin
+f none openwin/lib/X11/xkb/symbols/is 0444 root bin
+f none openwin/lib/X11/xkb/symbols/iso9995-3 0444 root bin
+f none openwin/lib/X11/xkb/symbols/it 0444 root bin
+f none openwin/lib/X11/xkb/symbols/jp 0444 root bin
+f none openwin/lib/X11/xkb/symbols/keypad 0444 root bin
+f none openwin/lib/X11/xkb/symbols/lock 0444 root bin
+f none openwin/lib/X11/xkb/symbols/lt 0444 root bin
+f none openwin/lib/X11/xkb/symbols/lt_p 0444 root bin
+f none openwin/lib/X11/xkb/symbols/lt_std 0444 root bin
+f none openwin/lib/X11/xkb/symbols/lv 0444 root bin
+f none openwin/lib/X11/xkb/symbols/mk 0444 root bin
+f none openwin/lib/X11/xkb/symbols/nl 0444 root bin
+f none openwin/lib/X11/xkb/symbols/no 0444 root bin
+f none openwin/lib/X11/xkb/symbols/pc104 0444 root bin
+f none openwin/lib/X11/xkb/symbols/pl 0444 root bin
+f none openwin/lib/X11/xkb/symbols/pt 0444 root bin
+f none openwin/lib/X11/xkb/symbols/ro 0444 root bin
+f none openwin/lib/X11/xkb/symbols/ru 0444 root bin
+f none openwin/lib/X11/xkb/symbols/se 0444 root bin
+f none openwin/lib/X11/xkb/symbols/si 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sk 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sk_qwerty 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sr 0444 root bin
+f none openwin/lib/X11/xkb/symbols/th 0444 root bin
+f none openwin/lib/X11/xkb/symbols/tr 0444 root bin
+f none openwin/lib/X11/xkb/symbols/ua 0444 root bin
+f none openwin/lib/X11/xkb/symbols/us 0444 root bin
+f none openwin/lib/X11/xkb/symbols/vn 0444 root bin
+
+d none openwin/lib/X11/xkb/symbols/digital 0755 root bin
+f none openwin/lib/X11/xkb/symbols/digital/lk 0444 root bin
+f none openwin/lib/X11/xkb/symbols/digital/pc 0444 root bin
+f none openwin/lib/X11/xkb/symbols/digital/us 0444 root bin
+f none openwin/lib/X11/xkb/symbols/digital/vt 0444 root bin
+
+d none openwin/lib/X11/xkb/symbols/fujitsu 0755 root bin
+f none openwin/lib/X11/xkb/symbols/fujitsu/jp 0444 root bin
+f none openwin/lib/X11/xkb/symbols/fujitsu/us 0444 root bin
+
+d none openwin/lib/X11/xkb/symbols/hp 0755 root bin
+f none openwin/lib/X11/xkb/symbols/hp/us 0444 root bin
+
+d none openwin/lib/X11/xkb/symbols/nec 0755 root bin
+f none openwin/lib/X11/xkb/symbols/nec/jp 0444 root bin
+
+d none openwin/lib/X11/xkb/symbols/sgi 0755 root bin
+f none openwin/lib/X11/xkb/symbols/sgi/jp 0444 root bin
+
+d none openwin/lib/X11/xkb/symbols/sony 0755 root bin
+f none openwin/lib/X11/xkb/symbols/sony/us 0444 root bin
+
+d none openwin/lib/X11/xkb/symbols/sun 0755 root bin
+f none openwin/lib/X11/xkb/symbols/sun/ca 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/cs 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/cz 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/de 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/dk 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/es 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/fi 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/fr 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/gb 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/gr 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/hu 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/it 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/jp 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/ko 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/lt 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/lv 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/nl 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/no 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/pl 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/pt 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/ru 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/se 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/sw 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/tr 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/tuv 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/tw 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/us 0444 root bin
+
+d none openwin/lib/X11/xkb/symbols/xfree68 0755 root bin
+f none openwin/lib/X11/xkb/symbols/xfree68/amiga 0444 root bin
+f none openwin/lib/X11/xkb/symbols/xfree68/ataritt 0444 root bin
+
+f none openwin/lib/X11/xkb/types.dir 0444 root bin
+d none openwin/lib/X11/xkb/types 0755 root bin
+f none openwin/lib/X11/xkb/types/basic 0444 root bin
+f none openwin/lib/X11/xkb/types/cancel 0444 root bin
+f none openwin/lib/X11/xkb/types/complete 0444 root bin
+f none openwin/lib/X11/xkb/types/default 0444 root bin
+f none openwin/lib/X11/xkb/types/extra 0444 root bin
+f none openwin/lib/X11/xkb/types/iso9995 0444 root bin
+f none openwin/lib/X11/xkb/types/mousekeys 0444 root bin
+f none openwin/lib/X11/xkb/types/nocancel 0444 root bin
+f none openwin/lib/X11/xkb/types/pc 0444 root bin
+
+d none openwin/share 0755 root bin
+
+s none openwin/etc=./share/etc
+d none openwin/share/etc 0755 root bin
+
+d none openwin/share/etc/keytables 0755 root bin
+
+f none openwin/share/etc/keytables/xkbtable.map 0444 root bin
+e keytable openwin/share/etc/keytables/keytable.map 0644 root bin
+
+#
+# Type 6 layouts are USB keyboard models used on both SPARC & x86
+#
+
+f none openwin/share/etc/keytables/Arabic6.kt 0444 root bin
+f none openwin/share/etc/keytables/Belgian6.kt 0444 root bin
+f none openwin/share/etc/keytables/Canada6.kt 0444 root bin
+f none openwin/share/etc/keytables/Canada_Fr6.kt 0444 root bin
+f none openwin/share/etc/keytables/Czech6.kt 0444 root bin
+f none openwin/share/etc/keytables/Denmark6.kt 0444 root bin
+f none openwin/share/etc/keytables/Estonia6.kt 0444 root bin
+f none openwin/share/etc/keytables/France6.kt 0444 root bin
+f none openwin/share/etc/keytables/Finnish6.kt 0444 root bin
+f none openwin/share/etc/keytables/Germany6.kt 0444 root bin
+f none openwin/share/etc/keytables/Greece6.kt 0444 root bin
+f none openwin/share/etc/keytables/Hungary6.kt 0444 root bin
+f none openwin/share/etc/keytables/Italy6.kt 0444 root bin
+f none openwin/share/etc/keytables/Japan6.kt 0444 root bin
+f none openwin/share/etc/keytables/Japan7.kt 0444 root bin
+f none openwin/share/etc/keytables/Korea6.kt 0444 root bin
+f none openwin/share/etc/keytables/Latvia6.kt 0444 root bin
+f none openwin/share/etc/keytables/Lithuania6.kt 0444 root bin
+f none openwin/share/etc/keytables/Netherland6.kt 0444 root bin
+f none openwin/share/etc/keytables/Macedonia6.kt 0444 root bin
+f none openwin/share/etc/keytables/Norway6.kt 0444 root bin
+f none openwin/share/etc/keytables/Poland6.kt 0444 root bin
+f none openwin/share/etc/keytables/Portugal6.kt 0444 root bin
+f none openwin/share/etc/keytables/Russia6.kt 0444 root bin
+f none openwin/share/etc/keytables/Spain6.kt 0444 root bin
+f none openwin/share/etc/keytables/Sweden6.kt 0444 root bin
+f none openwin/share/etc/keytables/Switzer_Fr6.kt 0444 root bin
+f none openwin/share/etc/keytables/Switzer_Ge6.kt 0444 root bin
+f none openwin/share/etc/keytables/Taiwan6.kt 0444 root bin
+f none openwin/share/etc/keytables/TurkeyF6.kt 0444 root bin
+f none openwin/share/etc/keytables/TurkeyQ6.kt 0444 root bin
+f none openwin/share/etc/keytables/UK6.kt 0444 root bin
+f none openwin/share/etc/keytables/US6.kt 0444 root bin
+f none openwin/share/etc/keytables/Slovenia6.kt 0444 root bin
+f none openwin/share/etc/keytables/Slovakia6.kt 0444 root bin
+f none openwin/share/etc/keytables/SerbiaandMontenegro6.kt 0444 root bin
+f none openwin/share/etc/keytables/Iceland6.kt 0444 root bin
+f none openwin/share/etc/keytables/Croatia6.kt 0444 root bin
+f none openwin/share/etc/keytables/Bulgaria6.kt 0444 root bin
+f none openwin/share/etc/keytables/Belarus6.kt 0444 root bin
+f none openwin/share/etc/keytables/Malta_US6.kt 0444 root bin
+f none openwin/share/etc/keytables/Malta_UK6.kt 0444 root bin
+f none openwin/share/etc/keytables/Albania6.kt 0444 root bin
+f none openwin/share/etc/keytables/Portugal_Br6.kt 0444 root bin
+f none openwin/share/etc/keytables/Romania6.kt 0444 root bin
+

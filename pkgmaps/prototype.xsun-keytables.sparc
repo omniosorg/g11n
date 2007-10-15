@@ -1,0 +1,100 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+#
+# Sun Type 4 and 5 keyboards can only be used on SPARC machines
+# (no one ever built a PC with the type of connector they use)
+#
+
+f none openwin/share/etc/keytables/Belgian5.kt 0444 root bin
+f none openwin/share/etc/keytables/Canada4.kt 0444 root bin
+f none openwin/share/etc/keytables/Canada_Fr5.kt 0444 root bin
+f none openwin/share/etc/keytables/Canada_Fr5_TBITS5.kt 0444 root bin
+f none openwin/share/etc/keytables/Canada_Fr5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Czech5.kt 0444 root bin
+f none openwin/share/etc/keytables/Denmark4.kt 0444 root bin
+f none openwin/share/etc/keytables/Denmark5.kt 0444 root bin
+f none openwin/share/etc/keytables/Denmark5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/France5.kt 0444 root bin
+f none openwin/share/etc/keytables/France5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/FranceBelg4.kt 0444 root bin
+f none openwin/share/etc/keytables/Germany4.kt 0444 root bin
+f none openwin/share/etc/keytables/Germany5.kt 0444 root bin
+f none openwin/share/etc/keytables/Germany5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Hungary5.kt 0444 root bin
+f none openwin/share/etc/keytables/Italy4.kt 0444 root bin
+f none openwin/share/etc/keytables/Italy5.kt 0444 root bin
+f none openwin/share/etc/keytables/Italy5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Japan4.kt 0444 root bin
+f none openwin/share/etc/keytables/Japan5.kt 0444 root bin
+f none openwin/share/etc/keytables/Japan5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Korea4.kt 0444 root bin
+f none openwin/share/etc/keytables/Korea5.kt 0444 root bin
+f none openwin/share/etc/keytables/Korea5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Netherland4.kt 0444 root bin
+f none openwin/share/etc/keytables/Netherland5.kt 0444 root bin
+f none openwin/share/etc/keytables/Netherland5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Norway4.kt 0444 root bin
+f none openwin/share/etc/keytables/Norway5.kt 0444 root bin
+f none openwin/share/etc/keytables/Norway5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Poland5_pr.kt 0444 root bin
+f none openwin/share/etc/keytables/Poland5.kt 0444 root bin
+f none openwin/share/etc/keytables/Portugal4.kt 0444 root bin
+f none openwin/share/etc/keytables/Portugal5.kt 0444 root bin
+f none openwin/share/etc/keytables/Portugal5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Russia5.kt 0444 root bin
+f none openwin/share/etc/keytables/Spain5.kt 0444 root bin
+f none openwin/share/etc/keytables/Spain5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/SpainLatAm4.kt 0444 root bin
+f none openwin/share/etc/keytables/Sweden5.kt 0444 root bin
+f none openwin/share/etc/keytables/Sweden5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/SwedenFin4.kt 0444 root bin
+f none openwin/share/etc/keytables/Switzer_Fr4.kt 0444 root bin
+f none openwin/share/etc/keytables/Switzer_Fr5.kt 0444 root bin
+f none openwin/share/etc/keytables/Switzer_Fr5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Switzer_Ge4.kt 0444 root bin
+f none openwin/share/etc/keytables/Switzer_Ge5.kt 0444 root bin
+f none openwin/share/etc/keytables/Switzer_Ge5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Taiwan4.kt 0444 root bin
+f none openwin/share/etc/keytables/Taiwan5.kt 0444 root bin
+f none openwin/share/etc/keytables/Taiwan5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/UK4.kt 0444 root bin
+f none openwin/share/etc/keytables/UK5.kt 0444 root bin
+f none openwin/share/etc/keytables/UK5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/US101A_PC.kt 0444 root bin
+f none openwin/share/etc/keytables/US101A_Sun.kt 0444 root bin
+f none openwin/share/etc/keytables/US3.kt 0444 root bin
+f none openwin/share/etc/keytables/US4.kt 0444 root bin
+f none openwin/share/etc/keytables/US5.kt 0444 root bin
+f none openwin/share/etc/keytables/US5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/US_UNIX5.kt 0444 root bin
+f none openwin/share/etc/keytables/US_UNIX5_Hobo.kt 0444 root bin
+f none openwin/share/etc/keytables/Greece5.kt 0444 root bin
+f none openwin/share/etc/keytables/Latvia5.kt 0444 root bin
+f none openwin/share/etc/keytables/Lithuania5.kt 0444 root bin
+
+f none openwin/share/etc/keytables/Arabic5.kt 0444 root bin
+f none openwin/share/etc/keytables/TurkeyQ5.kt 0444 root bin
+f none openwin/share/etc/keytables/TurkeyF5.kt 0444 root bin
+
