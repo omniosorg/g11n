@@ -22,7 +22,7 @@
 
 include $(SRC)/Makefile.master
 
-TARGETDIR = $(FILEROOT)/openwin/lib/X11/xkb/
+TARGETDIR = $(FILEROOT)/usr/openwin/lib/X11/xkb/
 
 XKB_DIRFILES = compat.dir geometry.dir keycodes.dir keymap.dir symbols.dir types.dir
 SUBDIRS = compat compiled geometry keycodes keymap rules semantics symbols types
