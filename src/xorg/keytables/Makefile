@@ -27,7 +27,7 @@ XKB_DIRFILES = compat.dir geometry.dir keycodes.dir keymap.dir symbols.dir types
 SUBDIRS = compat compiled geometry keycodes keymap rules semantics symbols types
 
 XKBDATA_SOURCE = xkbdata-1.0.1.tar.gz
-XKBDATA_SITE = ftp://ftp.x.org/pub/individual/data
+XKBDATA_SITE = http://ftp.x.org/pub/individual/data
 XKBDATA_DIR = xkbdata-1.0.1
 
 
