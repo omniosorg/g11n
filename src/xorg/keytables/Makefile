@@ -59,6 +59,8 @@ $(XKBDATA_DIR)/%.dir: $(XKBDATA_DIR)/.unpack
 
 $(XKBDATA_DIR)/.install_list: $(XKBDATA_DIR)/.unpack
 	(cd $(XKBDATA_DIR); find $(SUBDIRS) -type f ! -name 'Makefile*') > $@
+	echo ./README >> $@
+	echo ./xkbtable.map >> $@
 
 all: $(DIRFILES)
 
