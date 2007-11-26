@@ -1,5 +1,26 @@
 XCOMM $XConsortium: Imakefile /main/2 1996/09/03 19:45:57 kaleb $
 
+XCOMM
+XCOMM CDDL HEADER START
+XCOMM
+XCOMM The contents of this file are subject to the terms of the
+XCOMM Common Development and Distribution License (the "License").
+XCOMM You may not use this file except in compliance with the License.
+XCOMM
+XCOMM You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+XCOMM or http://www.opensolaris.org/os/licensing.
+XCOMM See the License for the specific language governing permissions
+XCOMM and limitations under the License.
+XCOMM
+XCOMM When distributing Covered Code, include this CDDL HEADER in each
+XCOMM file and include the License file at src/OPENSOLARIS.LICENSE.
+XCOMM If applicable, add the following below this CDDL HEADER, with the
+XCOMM fields enclosed by brackets "[]" replaced with your own identifying
+XCOMM information: Portions Copyright [yyyy] [name of copyright owner]
+XCOMM
+XCOMM CDDL HEADER END
+XCOMM
+
      DATAFILES = basic cancel complete default extra iso9995 mousekeys nocancel  pc
 
 all::
