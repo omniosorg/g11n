@@ -1,9 +1,0 @@
-#!/bin/bash
-for i   in /net/cats/3310/t3/DGE_PKG/Xsun/sunKeytables/*kt 
-do
-
-      sed 's/^mod1[ ]/mod__/' $i|sed 's/^mod4[ ]/mod1/'|sed
-      's/^mod__[]/mod4/' > /tmp/tempkeytable;
-      mv /tmp/tempkeytable $i;
-
-done
