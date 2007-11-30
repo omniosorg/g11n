@@ -43,11 +43,10 @@ $(XKBDATA_SOURCE):
 
 $(XKBDATA_DIR)/.unpack: $(XKBDATA_SOURCE)
 	gzip -dc $(XKBDATA_SOURCE)|tar xf -
-	# FIXME: use the same strange way as DGE_PKG ws
 	for i in `cd sun-src ; find . -type f -print` ; \
 	do \
 		mkdir -p $(XKBDATA_DIR)/`dirname $$i` ; \
-		[ -f $(XKBDATA_DIR)/$$i ] || cp -p sun-src/$$i $(XKBDATA_DIR)/$$i ; \
+		cp -p sun-src/$$i $(XKBDATA_DIR)/$$i ; \
 	done
 	touch $@
 
