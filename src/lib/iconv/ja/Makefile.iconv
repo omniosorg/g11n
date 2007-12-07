@@ -261,8 +261,8 @@ $(MACH64)/PCK_TO_UTF-8-Java.o $(MACH64)/PCK_TO_UTF-8-Java.lint \
 $(MACH64)/UTF-8-Java_TO_PCK.o $(MACH64)/UTF-8-Java_TO_PCK.lint \
 	:= ICONV_DEFS +=	-DJAVA_CONV_COMPAT
 
-$(MODULES_uni_ms:_TO_=_TO_.o) $(MODULES_uni_ms:_TO_=_TO_.lint) \
-$(MODULES_uni_ms:_TO_=$(MACH64)/_TO_.o) $(MODULES_uni_ms:_TO_=$(MACH64)/_TO_.lint) \
+$(MODULES_uni_ms:%=%.o) $(MODULES_uni_ms:%=%.lint) \
+$(MODULES_uni_ms:%=$(MACH64)/%.o) $(MODULES_uni_ms:%=$(MACH64)/%.lint) \
 	:= ICONV_DEFS +=	-DJFP_ICONV_MS932
 
 UTF-8_TO_ISO-2022-JP.RFC1468.o UTF-8_TO_ISO-2022-JP.RFC1468.lint \
