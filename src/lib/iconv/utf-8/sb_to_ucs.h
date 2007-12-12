@@ -19,14 +19,14 @@
  * CDDL HEADER END
  */
 /*
- * Copyright 1998-1999, 2001, 2003 Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
 
 #ifndef	SB_TO_UCS_H
 #define	SB_TO_UCS_H
 
-#pragma	ident	"@(#)sb_to_ucs.h	1.5 04/09/13 SMI"
+#pragma	ident	"@(#)sb_to_ucs.h	1.6 07/12/03 SMI"
 
 #include "common_defs.h"
 
@@ -88,6 +88,9 @@ static const to_utf8_table_component_t sb_u4_tbl[256] = {
 
 #elif defined(CP437)
 #include "tbls/cp437_to_ucs4.tbl"
+
+#elif defined(CP720)
+#include "tbls/cp720_to_ucs4.tbl"
 
 #elif defined(CP737)
 #include "tbls/cp737_to_ucs4.tbl"

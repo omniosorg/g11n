@@ -19,7 +19,7 @@
  * CDDL HEADER END
  */
 /*
- * Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
  * Use is subject to license terms.
  *
  * This program covers conversion from UTF-8, UCS-2, and, UCS-4 to UTF-7.
@@ -29,7 +29,7 @@
  * reason.
  */
 
-#pragma ident	"@(#)ucs_to_utf7.c	1.4	04/10/07 SMI"
+#pragma ident	"@(#)ucs_to_utf7.c	1.5	07/12/11 SMI"
 
 #include <stdlib.h>
 #include <errno.h>
@@ -190,8 +190,30 @@ _icv_iconv(utf7_state_t *cd, char **inbuf, size_t *inbufleft, char **outbuf,
 		ib += ICV_FETCH_UCS_SIZE;
 #endif
 
-		if (u4 == 0x00fffe || u4 == 0x00ffff || u4 > 0x7fffffff ||
-			(u4 >= 0x00d800 && u4 <= 0x00dfff)) {
+		/* Check against known non-characters. */
+#if defined(UTF_8)
+		if ((u4 & ICV_UTF32_NONCHAR_mask) == ICV_UTF32_NONCHAR_fffe ||
+		    (u4 & ICV_UTF32_NONCHAR_mask) == ICV_UTF32_NONCHAR_ffff ||
+		    u4 > ICV_UTF32_LAST_VALID_CHAR ||
+		    (u4 >= ICV_UTF32_SURROGATE_START_d800 &&
+		    u4 <= ICV_UTF32_SURROGATE_END_dfff) ||
+		    (u4 >= ICV_UTF32_ARABIC_NONCHAR_START_fdd0 &&
+		    u4 <= ICV_UTF32_ARABIC_NONCHAR_END_fdef)) {
+#elif defined(UCS_2)
+		if (u4 >= ICV_UTF32_NONCHAR_fffe ||
+		    (u4 >= ICV_UTF32_SURROGATE_START_d800 &&
+		    u4 <= ICV_UTF32_SURROGATE_END_dfff) ||
+		    (u4 >= ICV_UTF32_ARABIC_NONCHAR_START_fdd0 &&
+		    u4 <= ICV_UTF32_ARABIC_NONCHAR_END_fdef)) {
+#else
+		if ((u4 & ICV_UTF32_NONCHAR_mask) == ICV_UTF32_NONCHAR_fffe ||
+		    (u4 & ICV_UTF32_NONCHAR_mask) == ICV_UTF32_NONCHAR_ffff ||
+		    u4 > ICV_UCS4_LAST_VALID_CHAR ||
+		    (u4 >= ICV_UTF32_SURROGATE_START_d800 &&
+		    u4 <= ICV_UTF32_SURROGATE_END_dfff) ||
+		    (u4 >= ICV_UTF32_ARABIC_NONCHAR_START_fdd0 &&
+		    u4 <= ICV_UTF32_ARABIC_NONCHAR_END_fdef)) {
+#endif
 			ib = ib_org;
 			errno = EILSEQ;
 			ret_val = (size_t)-1;

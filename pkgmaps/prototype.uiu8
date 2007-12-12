@@ -18,7 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 d none lib 0755 root bin
@@ -1461,3 +1461,29 @@ f none lib/iconv/UTF-8%CP865.so 0555 root bin
 f none lib/iconv/UTF-8%CP866.so 0555 root bin
 f none lib/iconv/UTF-8%CP869.so 0555 root bin
 f none lib/iconv/UTF-8%CP874.so 0555 root bin
+f none lib/iconv/CP720%UCS-2.so 0555 root bin
+f none lib/iconv/CP720%UCS-2BE.so 0555 root bin
+f none lib/iconv/CP720%UCS-2LE.so 0555 root bin
+f none lib/iconv/CP720%UCS-4.so 0555 root bin
+f none lib/iconv/CP720%UCS-4BE.so 0555 root bin
+f none lib/iconv/CP720%UCS-4LE.so 0555 root bin
+f none lib/iconv/CP720%UTF-16.so 0555 root bin
+f none lib/iconv/CP720%UTF-16BE.so 0555 root bin
+f none lib/iconv/CP720%UTF-16LE.so 0555 root bin
+f none lib/iconv/CP720%UTF-32.so 0555 root bin
+f none lib/iconv/CP720%UTF-32BE.so 0555 root bin
+f none lib/iconv/CP720%UTF-32LE.so 0555 root bin
+f none lib/iconv/CP720%UTF-8.so 0555 root bin
+f none lib/iconv/UCS-2%CP720.so 0555 root bin
+f none lib/iconv/UCS-2BE%CP720.so 0555 root bin
+f none lib/iconv/UCS-2LE%CP720.so 0555 root bin
+f none lib/iconv/UCS-4%CP720.so 0555 root bin
+f none lib/iconv/UCS-4BE%CP720.so 0555 root bin
+f none lib/iconv/UCS-4LE%CP720.so 0555 root bin
+f none lib/iconv/UTF-16%CP720.so 0555 root bin
+f none lib/iconv/UTF-16BE%CP720.so 0555 root bin
+f none lib/iconv/UTF-16LE%CP720.so 0555 root bin
+f none lib/iconv/UTF-32%CP720.so 0555 root bin
+f none lib/iconv/UTF-32BE%CP720.so 0555 root bin
+f none lib/iconv/UTF-32LE%CP720.so 0555 root bin
+f none lib/iconv/UTF-8%CP720.so 0555 root bin

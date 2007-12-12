@@ -19,14 +19,14 @@
  * CDDL HEADER END
  */
 /*
- * Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
 
 #ifndef	COMMON_DEFS_H
 #define	COMMON_DEFS_H
 
-#pragma ident	"@(#)common_defs.h	1.8	04/07/21 SMI"
+#pragma ident	"@(#)common_defs.h	1.9	07/12/03 SMI"
 
 
 #define	MAGIC_NUMBER			201513
@@ -134,7 +134,7 @@ static const char number_of_bytes_in_utf8_char[0x100] = {
 	 3,  3,  3,  3,  3,  3,  3,  3,  3,  3,  3,  3,  3,  3,  3,  3, 
 
     /*  F0  F1  F2  F3  F4  F5  F6  F7  F8  F9  FA  FB  FC  FD  FE  FF  */
-	 4,  4,  4,  4,  4,  4,  4,  4,  5,  5,  5,  5,  6,  6, IL_,IL_,
+	 4,  4,  4,  4,  4, IL_,IL_,IL_,IL_,IL_,IL_,IL_,IL_,IL_,IL_,IL_,
 };
 
 #undef IL_
@@ -272,6 +272,24 @@ static const unsigned char valid_max_2nd_byte[0x100] = {
 #define	ICV_UTF8_REPRESENTATION_ffff_mask	(0x000fffffUL)
 
 #define	ICV_UTF8_REPRESENTATION_10fffd		(0xf48fbfbdUL)
+
+/*
+ * UTF-32 and UCS-4 representations of some useful Unicode values for
+ * non-character and out of bound invalid character detection.
+ */
+#define	ICV_UTF32_NONCHAR_fffe			(0xfffeU)
+#define	ICV_UTF32_NONCHAR_ffff			(0xffffU)
+#define	ICV_UTF32_NONCHAR_mask			(0xffffU)
+
+#define	ICV_UTF32_SURROGATE_START_d800		(0xd800U)
+#define	ICV_UTF32_SURROGATE_END_dfff		(0xdfffU)
+
+#define	ICV_UTF32_ARABIC_NONCHAR_START_fdd0	(0xfdd0U)
+#define	ICV_UTF32_ARABIC_NONCHAR_END_fdef	(0xfdefU)
+
+#define	ICV_UTF32_LAST_VALID_CHAR		(0x10fffdU)
+
+#define	ICV_UCS4_LAST_VALID_CHAR		(0x7fffffff)
 
 
 #endif	/* COMMON_DEFS_H */

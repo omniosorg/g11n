@@ -19,11 +19,11 @@
  * CDDL HEADER END
  */
 /*
- * Copyright 1999, 2002 by Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2007 by Sun Microsystems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
 
-#pragma	ident  "@(#)utf8_to_utf_ebcdic.c 1.4     02/01/18 SMI"
+#pragma	ident  "@(#)utf8_to_utf_ebcdic.c 1.5     07/12/03 SMI"
 
 #include <stdlib.h>
 #include <errno.h>
@@ -126,8 +126,14 @@ _icv_iconv(int *cd, char **inbuf, size_t *inbufleft, char **outbuf,
 			ib++;
 		}
 
-		if (u4 == 0x00fffe || u4 == 0x00ffff || u4 > 0x7fffffff ||
-		    (u4 >= 0x00d800 && u4 <= 0x00dfff)) {
+		/* Check against known non-characters. */
+		if ((u4 & ICV_UTF32_NONCHAR_mask) == ICV_UTF32_NONCHAR_fffe ||
+		    (u4 & ICV_UTF32_NONCHAR_mask) == ICV_UTF32_NONCHAR_ffff ||
+		    u4 > ICV_UTF32_LAST_VALID_CHAR ||
+		    (u4 >= ICV_UTF32_SURROGATE_START_d800 &&
+		    u4 <= ICV_UTF32_SURROGATE_END_dfff) ||
+		    (u4 >= ICV_UTF32_ARABIC_NONCHAR_START_fdd0 &&
+		    u4 <= ICV_UTF32_ARABIC_NONCHAR_END_fdef)) {
 			ib = ib_org;
 			errno = EILSEQ;
 			ret_val = (size_t)-1;

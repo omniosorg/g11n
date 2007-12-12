@@ -19,14 +19,14 @@
  * CDDL HEADER END
  */
 /*
- * Copyright 1998-1999, 2001, 2003 Sun Microsystems, Inc.  All rights reserved.
+ * Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
  * Use is subject to license terms.
  */
 
 #ifndef	UTF8_TO_SB_H
 #define	UTF8_TO_SB_H
 
-#pragma	ident	"@(#)utf8_to_sb.h	1.5 04/09/13 SMI"
+#pragma	ident	"@(#)utf8_to_sb.h	1.6 07/12/03 SMI"
 
 #include "common_defs.h"
 
@@ -96,6 +96,9 @@ static const to_sb_table_component_t u8_sb_tbl[] = {
 
 #elif defined(CP437)
 #include "tbls/utf8_to_cp437.tbl"
+
+#elif defined(CP720)
+#include "tbls/utf8_to_cp720.tbl"
 
 #elif defined(CP737)
 #include "tbls/utf8_to_cp737.tbl"
