@@ -18,12 +18,6 @@
  *
  * CDDL HEADER END
  */
-#ifndef lint
-#ifdef sccs
-static char     sccsid[] = "@(#)layout_default.c 1.18 98/06/04";
-#endif
-#endif
-
 /*
  *      (c) Copyright 1995 Sun Microsystems, Inc. 
  *	All rights reserved.  
