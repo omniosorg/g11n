@@ -59,8 +59,8 @@ xkb_symbols "basic" {
     key <AD08> { [  ], [       Arabic_ha,        division      ]       };
     key <AD09> { [  ], [     Arabic_khah,       multiply       ]       };
     key <AD10> { [  ], [      Arabic_hah,    Arabic_semicolon  ]       };
-    key <AD11> { [  ], [     Arabic_jeem,            less      ]       };
-    key <AD12> { [  ], [      Arabic_dal,          greater     ]       };	    
+    key <AD11> { [  ], [     Arabic_jeem,          greater     ]       };
+    key <AD12> { [  ], [      Arabic_dal,          less        ]       };	    
 
     key <AC01> { [  ], [    Arabic_sheen,	Arabic_kasra   ]       };
     key <AC02> { [  ], [     Arabic_seen,       Arabic_kasratan    ]       };
