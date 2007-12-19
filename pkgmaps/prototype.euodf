@@ -1,0 +1,17 @@
+d none openwin 0755 root bin
+d none openwin/lib 0755 root bin
+d none openwin/lib/locale 0755 root bin
+d none openwin/lib/locale/en_US.UTF-8 0755 root bin
+f none openwin/lib/locale/en_US.UTF-8/OWfontpath 0644 root bin
+d none openwin/lib/locale/en_US.UTF-8/xview 0755 root bin
+f none openwin/lib/locale/en_US.UTF-8/xview/defaults 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/xview/.text_extras_menu 0644 root bin
+d none openwin/lib/locale/en_US.UTF-8/X11 0755 root bin
+d none openwin/lib/locale/en_US.UTF-8/X11/fonts 0755 root bin
+d none openwin/lib/locale/en_US.UTF-8/X11/fonts/misc 0755 root bin
+f none openwin/lib/locale/en_US.UTF-8/X11/fonts/misc/fonts.alias 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/X11/fonts/misc/splmt12.pcf.Z 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/X11/fonts/misc/splmt14.pcf.Z 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/X11/fonts/misc/splmt16.pcf.Z 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/X11/fonts/misc/splmt20.pcf.Z 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/X11/fonts/misc/splmt24.pcf.Z 0644 root bin
