@@ -22,7 +22,7 @@
 # Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-#ident	"@(#)Makefile.common	1.9	07/12/03 SMI"
+#ident	"@(#)Makefile.common	1.10	07/12/13 SMI"
 #
 
 #
@@ -6763,10 +6763,7 @@ CODESETS	= IBM-037 \
 		  IBM-921 IBM-922 IBM-1025 IBM-1026 IBM-1112 \
 		  IBM-1122 \
 		  IBM-1140 IBM-1141 IBM-1142 IBM-1143 IBM-1144 IBM-1145 \
-		  IBM-1146 IBM-1147 IBM-1148 IBM-1149 \
-		  CP850 CP852 CP855 CP857 CP862 CP864 CP869 CP866 CP874 \
-		  CP1250 CP1251 CP1252 CP1253 CP1254 CP1255 CP1256 CP1257 \
-		  CP1258
+		  IBM-1146 IBM-1147 IBM-1148 IBM-1149
 
 INPUTFILES1	= $(CODESETS:%=%+UTF-8.src)
 INPUTFILES2	= $(CODESETS:%=UTF-8+%.src)

@@ -631,24 +631,6 @@ f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-869.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-921.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-922.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-1046.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP874.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1250.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1251.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1252.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1253.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1254.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1255.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1256.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1257.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP1258.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP850.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP852.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP855.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP857.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP862.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP864.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP866.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%CP869.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-037%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-273%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-277%UTF-8.bt 0444 root bin
@@ -690,96 +672,6 @@ f none lib/iconv/geniconvtbl/binarytables/IBM-869%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-921%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-922%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-1046%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP874%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1250%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1251%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1252%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1253%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1254%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1255%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1256%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1257%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP1258%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP850%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP852%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP855%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP857%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP862%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP864%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP866%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/CP869%UTF-8.bt 0444 root bin
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1250.bt=./UTF-8%CP1250.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1251.bt=./UTF-8%CP1251.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1252.bt=./UTF-8%CP1252.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1253.bt=./UTF-8%CP1253.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1254.bt=./UTF-8%CP1254.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1255.bt=./UTF-8%CP1255.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1256.bt=./UTF-8%CP1256.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1257.bt=./UTF-8%CP1257.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ANSI-1258.bt=./UTF-8%CP1258.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1250.bt=./UTF-8%CP1250.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1251.bt=./UTF-8%CP1251.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1252.bt=./UTF-8%CP1252.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1253.bt=./UTF-8%CP1253.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1254.bt=./UTF-8%CP1254.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1255.bt=./UTF-8%CP1255.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1256.bt=./UTF-8%CP1256.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1257.bt=./UTF-8%CP1257.bt
-s none lib/iconv/geniconvtbl/binarytables/UTF-8%ansi-1258.bt=./UTF-8%CP1258.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1250.bt=./UTF-8%CP1250.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1251.bt=./UTF-8%CP1251.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1252.bt=./UTF-8%CP1252.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1253.bt=./UTF-8%CP1253.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1254.bt=./UTF-8%CP1254.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1255.bt=./UTF-8%CP1255.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1256.bt=./UTF-8%CP1256.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1257.bt=./UTF-8%CP1257.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ANSI-1258.bt=./UTF-8%CP1258.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1250.bt=./UTF-8%CP1250.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1251.bt=./UTF-8%CP1251.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1252.bt=./UTF-8%CP1252.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1253.bt=./UTF-8%CP1253.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1254.bt=./UTF-8%CP1254.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1255.bt=./UTF-8%CP1255.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1256.bt=./UTF-8%CP1256.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1257.bt=./UTF-8%CP1257.bt
-s none lib/iconv/geniconvtbl/binarytables/utf-8%ansi-1258.bt=./UTF-8%CP1258.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1250%UTF-8.bt=./CP1250%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1251%UTF-8.bt=./CP1251%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1252%UTF-8.bt=./CP1252%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1253%UTF-8.bt=./CP1253%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1254%UTF-8.bt=./CP1254%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1255%UTF-8.bt=./CP1255%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1256%UTF-8.bt=./CP1256%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1257%UTF-8.bt=./CP1257%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1258%UTF-8.bt=./CP1258%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1250%UTF-8.bt=./CP1250%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1251%UTF-8.bt=./CP1251%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1252%UTF-8.bt=./CP1252%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1253%UTF-8.bt=./CP1253%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1254%UTF-8.bt=./CP1254%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1255%UTF-8.bt=./CP1255%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1256%UTF-8.bt=./CP1256%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1257%UTF-8.bt=./CP1257%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1258%UTF-8.bt=./CP1258%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1250%utf-8.bt=./CP1250%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1251%utf-8.bt=./CP1251%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1252%utf-8.bt=./CP1252%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1253%utf-8.bt=./CP1253%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1254%utf-8.bt=./CP1254%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1255%utf-8.bt=./CP1255%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1256%utf-8.bt=./CP1256%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1257%utf-8.bt=./CP1257%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ANSI-1258%utf-8.bt=./CP1258%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1250%utf-8.bt=./CP1250%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1251%utf-8.bt=./CP1251%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1252%utf-8.bt=./CP1252%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1253%utf-8.bt=./CP1253%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1254%utf-8.bt=./CP1254%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1255%utf-8.bt=./CP1255%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1256%utf-8.bt=./CP1256%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1257%utf-8.bt=./CP1257%UTF-8.bt
-s none lib/iconv/geniconvtbl/binarytables/ansi-1258%utf-8.bt=./CP1258%UTF-8.bt
 f none lib/iconv/8859-16%UCS-2.so 0555 root bin
 f none lib/iconv/UCS-2%8859-16.so 0555 root bin
 f none lib/iconv/8859-16%UCS-2BE.so 0555 root bin
