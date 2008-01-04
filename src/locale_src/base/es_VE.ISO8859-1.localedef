@@ -1383,8 +1383,8 @@ END LC_NUMERIC
 LC_MONETARY
 *************
 
-int_curr_symbol       "<V><E><B><space>"
-currency_symbol       "<B><e>"
+int_curr_symbol       "<V><E><F><space>"
+currency_symbol       "<B><s><FULL_STOP><F><FULL_STOP>"
 mon_decimal_point     "<COMMA>"
 mon_thousands_sep     "<FULL_STOP>"
 mon_grouping          3
