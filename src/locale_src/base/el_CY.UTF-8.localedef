@@ -104,8 +104,8 @@ END LC_NUMERIC
 LC_MONETARY
 *************
 
-int_curr_symbol       "<C><Y><P><space>"
-currency_symbol       "<POUND_SIGN>"
+int_curr_symbol       "<E><U><R><space>"
+currency_symbol       "<EURO_SIGN>"
 mon_decimal_point     "<COMMA>"
 mon_thousands_sep     "<FULL_STOP>"
 mon_grouping          3
