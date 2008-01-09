@@ -34,10 +34,12 @@ xkb_symbols "basic" {
     key <AE03> {	[               3,        sterling     	]	};
     key <AE06> {	[               6,       ampersand     	]	};
     key <AE07> {	[               7,           slash     	]	};
-    key <AE08> {	[               8,       parenleft     	]	};
+    key <AE08> {	[               8,       parenleft     	],	
+                        [       braceleft,                      ]       };
     key <AB08> {	[           comma,       semicolon     	]	};
     key <AE10> {	[               0,           equal     	]	};
-    key <AE09> {	[               9,      parenright     	]	};
+    key <AE09> {	[               9,      parenright     	],	
+                        [      braceright,                      ]       };
     key <AB09> {	[          period,           colon     	]	};
     key <AB10> {	[           minus,      underscore     	]	};
     key	<AC10> {	[	   ograve,        ccedilla  	],	
