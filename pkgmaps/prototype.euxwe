@@ -1,0 +1,41 @@
+d none openwin 0755 root bin
+d none openwin/lib 0755 root bin
+d none openwin/lib/locale 0755 root bin
+d none openwin/lib/locale/en_US.UTF-8 0755 root bin
+f none openwin/lib/locale/en_US.UTF-8/XLC_LOCALE 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/CT_Encoding 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/XI18N_OBJS 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/Compose 0644 root bin
+d none openwin/lib/locale/en_US.UTF-8/conv_tables 0755 root bin
+f none openwin/lib/locale/en_US.UTF-8/conv_tables/U32_TO_CS_0 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/conv_tables/U32_TO_CS_1 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/conv_tables/U32_TO_CS_2 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/conv_tables/U32_TO_CS_14 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/conv_tables/U32_TO_CS_15 0644 root bin
+f none openwin/lib/locale/en_US.UTF-8/conv_tables/U32_TO_CS_16 0644 root bin
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-1.GL=../../common/conv_tables/ISO8859-1.GL
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-1.GR=../../common/conv_tables/ISO8859-1.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-2.GR=../../common/conv_tables/ISO8859-2.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-4.GR=../../common/conv_tables/ISO8859-4.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-5.GR=../../common/conv_tables/ISO8859-5.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-6.GLGR=../../common/conv_tables/ISO8859-6.GLGR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-7.GR=../../common/conv_tables/ISO8859-7.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-8.GR=../../common/conv_tables/ISO8859-8.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-9.GR=../../common/conv_tables/ISO8859-9.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/ISO8859-15.GR=../../common/conv_tables/ISO8859-15.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/GB2312-0.GR=../../common/conv_tables/GB2312-0.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/KSC-JOHAP.GLGR=../../common/conv_tables/KSC-JOHAP.GLGR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/BIG5-1.GLGR=../../common/conv_tables/BIG5-1.GLGR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/GBK-0.GLGR=../../common/conv_tables/GBK-0.GLGR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/JISX0201-0.GR=../../common/conv_tables/JISX0201-0.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/JISX0208-0.GR=../../common/conv_tables/JISX0208-0.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/JISX0212-0.GR=../../common/conv_tables/JISX0212-0.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/SUNUDCJA.GL=../../common/conv_tables/SUNUDCJA.GL
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/TIS620.2533-0.GR=../../common/conv_tables/TIS620.2533-0.GR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/GB18030.2000-0.GLGR=../../common/conv_tables/GB18030.2000-0.GLGR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/GB18030.2000-1.GLGR=../../common/conv_tables/GB18030.2000-1.GLGR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/HKSCS-1.GLGR=../../common/conv_tables/HKSCS-1.GLGR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/SUN.UNICODE.INDIA-0.GLGR=../../common/conv_tables/SUN.UNICODE.INDIA-0.GLGR
+s none openwin/lib/locale/en_US.UTF-8/conv_tables/UNICODE-FONTSPECIFIC.GLGR=../../common/conv_tables/UNICODE-FONTSPECIFIC.GLGR
+d none openwin/lib/locale/en_US.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/en_US.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
