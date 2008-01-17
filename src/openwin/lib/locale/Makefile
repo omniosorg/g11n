@@ -58,9 +58,12 @@ dummy: all
 
 include $(SRC)/src/Makefile.targ
 
-all: $(LOCALES) 
+all: $(FILES) $(LOCALES) 
 
 install: $(FILES.obj) $(LOCALES)
+
+$(FILES) : $$@.src
+	$(GREP) -v '^#' $@.src > $@
 
 $(LOCALES): FRC
 	cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
