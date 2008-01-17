@@ -39,12 +39,12 @@ TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 
 TARGETDIRS = $(TARGETDIR)
 
-SUBDIRS = fonts
+SUBDIRS = fonts conv_tables
 
 all:=		TARGET= all
 install :=	TARGET= install
 clean :=	TARGET= clean
-objclean := TARGET = objclean
+objclean := 	TARGET= objclean
 clobber :=	TARGET= clobber
 
 all: $(TARGETDIRS) $(SUBDIRS)

@@ -1,0 +1,113 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+\xA0->\x00A0,
+\xA1->\x02BD,
+\xA2->\x02BC,
+\xA3->\x00A3,
+\xA6->\x00A6,
+\xA7->\x00A7,
+\xA8->\x00A8,
+\xA9->\x00A9,
+\xAB->\x00AB,
+\xAC->\x00AC,
+\xAD->\x00AD,
+\xAF->\x2015,
+\xB0->\x00B0,
+\xB1->\x00B1,
+\xB2->\x00B2,
+\xB3->\x00B3,
+\xB4->\x0384,
+\xB5->\x0385,
+\xB6->\x0386,
+\xB7->\x00B7,
+\xB8->\x0388,
+\xB9->\x0389,
+\xBA->\x038A,
+\xBB->\x00BB,
+\xBC->\x038C,
+\xBD->\x00BD,
+\xBE->\x038E,
+\xBF->\x038F,
+\xC0->\x0390,
+\xC1->\x0391,
+\xC2->\x0392,
+\xC3->\x0393,
+\xC4->\x0394,
+\xC5->\x0395,
+\xC6->\x0396,
+\xC7->\x0397,
+\xC8->\x0398,
+\xC9->\x0399,
+\xCA->\x039A,
+\xCB->\x039B,
+\xCC->\x039C,
+\xCD->\x039D,
+\xCE->\x039E,
+\xCF->\x039F,
+\xD0->\x03A0,
+\xD1->\x03A1,
+\xD3->\x03A3,
+\xD4->\x03A4,
+\xD5->\x03A5,
+\xD6->\x03A6,
+\xD7->\x03A7,
+\xD8->\x03A8,
+\xD9->\x03A9,
+\xDA->\x03AA,
+\xDB->\x03AB,
+\xDC->\x03AC,
+\xDD->\x03AD,
+\xDE->\x03AE,
+\xDF->\x03AF,
+\xE0->\x03B0,
+\xE1->\x03B1,
+\xE2->\x03B2,
+\xE3->\x03B3,
+\xE4->\x03B4,
+\xE5->\x03B5,
+\xE6->\x03B6,
+\xE7->\x03B7,
+\xE8->\x03B8,
+\xE9->\x03B9,
+\xEA->\x03BA,
+\xEB->\x03BB,
+\xEC->\x03BC,
+\xED->\x03BD,
+\xEE->\x03BE,
+\xEF->\x03BF,
+\xF0->\x03C0,
+\xF1->\x03C1,
+\xF2->\x03C2,
+\xF3->\x03C3,
+\xF4->\x03C4,
+\xF5->\x03C5,
+\xF6->\x03C6,
+\xF7->\x03C7,
+\xF8->\x03C8,
+\xF9->\x03C9,
+\xFA->\x03CA,
+\xFB->\x03CB,
+\xFC->\x03CC,
+\xFD->\x03CD,
+\xFE->\x03CE,

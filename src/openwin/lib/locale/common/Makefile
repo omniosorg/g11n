@@ -27,19 +27,14 @@
 #
 
 include $(SRC)/Makefile.master
-#include ../../Makefile.master.ow
-
-#PWD:sh = pwd
-
-LOCALE:sh = basename `pwd`
 
 FILES =  
 
-TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
+TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/common
 
 TARGETDIRS = $(TARGETDIR)
 
-SUBDIRS = imsscript
+SUBDIRS = imsscript conv_tables
 
 all:=		TARGET= all
 install :=	TARGET= install
@@ -47,11 +42,11 @@ clean :=	TARGET= clean
 objclean := TARGET = objclean
 clobber :=	TARGET= clobber
 
-all: $(TARGETDIRS)
+all: $(TARGETDIRS) $(SUBDIRS)
 
 include $(SRC)/src/Makefile.targ
 
-install: all $(FILES.obj) $(SUBDIRS)
+install: $(FILES.obj) $(SUBDIRS)
 
 clean: objclean $(SUBDIRS)
 	$(RM) -r $(TARGETDIR)
