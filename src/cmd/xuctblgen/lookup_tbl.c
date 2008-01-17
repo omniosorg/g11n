@@ -27,6 +27,7 @@
 
 #include <X11/Xmd.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <string.h>
 #include <sys/isa_defs.h>
 

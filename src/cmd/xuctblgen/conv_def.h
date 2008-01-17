@@ -34,5 +34,6 @@
 #define RANGE_TRANS_CHAR1	'-'
 #define RANGE_TRANS_CHAR2	'>'
 #define DELIMIT_CHAR		','
+#define COMMENT_CHAR		'#'
 
 #endif	/* CONV_DEF_H */

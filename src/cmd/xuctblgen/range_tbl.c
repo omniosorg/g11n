@@ -25,6 +25,8 @@
 
 #pragma	ident	"@(#)range_tbl.c	1.3 01/08/17 SMI"
 
+#include <stdlib.h>
+
 #include "range_tbl.h"
 
 RangeTbl *

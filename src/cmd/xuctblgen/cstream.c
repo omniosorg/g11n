@@ -113,6 +113,15 @@ CStream_getc(CStream *stream)
 			c = getc(stream->fp);
 			if (c == '\n')
 				c = getc(stream->fp);
+
+			while (c == COMMENT_CHAR) {
+				do {
+					c = getc(stream->fp);
+				} while (c != '\n' && c != EOF);
+				
+				if (c != EOF)
+					c = getc(stream->fp);
+			}
 		}else{
 			c = *(stream->cp + stream->ptr);
 			if (c == NULL)
