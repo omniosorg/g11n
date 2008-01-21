@@ -65,7 +65,7 @@ $(SUBDIRS): FRC
 $(FILES):
 
 objclean:
-	$(RM) -r  $(FILES.obj)
+	$(RM) -r  $(FILES.obj) $(FILES_MACH.obj)
 
 FRC:
 
