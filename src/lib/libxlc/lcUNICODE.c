@@ -26,6 +26,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/mman.h>
+#include <unistd.h>
 
 /* UNICODE locale headers */
 #include "XlcPublicUnicode.h"
@@ -474,7 +475,7 @@ open_wcstoutf8s(XLCd from_lcd, char *from_type, XLCd to_lcd, char *to_type)
 	to_type is XlcNMultiByte, or to wide char string in case that
 	to_type is XlcNWideChar.
 */
-static
+static int
 ctstostr(XLCd lcd, char *to_type, XPointer *from, int *from_left,
 	 XPointer *to, int *to_left, XPointer *args, int num_args)
 {
@@ -1178,20 +1179,6 @@ static int uc_utf8stowcs(XlcConv conv, XPointer *from, int *from_left,
 	return uc_mbstowcs(conv, from, from_left, to, to_left, args, num_args);
 }
 
-static int uc_mbstoutf8s(XlcConv conv, XPointer *from, int *from_left,
-			XPointer *to, int *to_left, XPointer *args,
-			int num_args) 
-{
-	return copy (conv, from, from_left, to, to_left, args, num_args);
-}
-
-static int uc_utf8stombs(XlcConv conv, XPointer *from, int *from_left,
-			XPointer *to, int *to_left, XPointer *args,
-			int num_args) 
-{
-	return copy (conv, from, from_left, to, to_left, args, num_args);
-}
-
 static int copy(XlcConv conv, XPointer *from, int *from_left, XPointer *to,
     int *to_left, XPointer *args, int num_args)
 {
@@ -1217,6 +1204,20 @@ static int copy(XlcConv conv, XPointer *from, int *from_left, XPointer *to,
     *to_left = dstend - dst;
 
     return 0;
+}
+
+static int uc_mbstoutf8s(XlcConv conv, XPointer *from, int *from_left,
+			XPointer *to, int *to_left, XPointer *args,
+			int num_args) 
+{
+	return copy (conv, from, from_left, to, to_left, args, num_args);
+}
+
+static int uc_utf8stombs(XlcConv conv, XPointer *from, int *from_left,
+			XPointer *to, int *to_left, XPointer *args,
+			int num_args) 
+{
+	return copy (conv, from, from_left, to, to_left, args, num_args);
 }
 
 static void
