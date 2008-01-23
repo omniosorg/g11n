@@ -175,6 +175,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_00A2_DEST	(0xa1f1)	/* Cent sign */
 #define		U2E_00A3_DEST	(0xa1f2)	/* Pound sign */
 #define		U2E_00A5_DEST	U2E_NODEST_COL1	/* Yen sign */
+#define		U2E_00A6_DEST	JISX0212(0xa243)/* Broken bar */
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
@@ -187,12 +188,14 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_FFE0_DEST	U2E_NODEST_COL2	/* fullwidth Cent sign */
 #define		U2E_FFE1_DEST	U2E_NODEST_COL2	/* fullwidth Pound sign */
 #define		U2E_FFE2_DEST	U2E_NODEST_COL2	/* fullwidth not sign */
+#define		U2E_FFE4_DEST	U2E_NODEST_COL2	/* fullwidth vert. broken bar */
 #elif	defined(JFP_U2E_ICONV_JAVA)
 #define		U2E_005C_DEST	(0x005c)	/* backslash */
 #define		U2E_007E_DEST	(0x007e)	/* tilde */
 #define		U2E_00A2_DEST	(0xa1f1)	/* Cent sign */
 #define		U2E_00A3_DEST	(0xa1f2)	/* Pound sign */
 #define		U2E_00A5_DEST	(0x005c)	/* Yen sign */
+#define		U2E_00A6_DEST	JISX0212(0xa243)/* Broken bar */
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
@@ -205,12 +208,14 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_FFE0_DEST	U2E_NODEST_COL2	/* fullwidth Cent sign */
 #define		U2E_FFE1_DEST	U2E_NODEST_COL2	/* fullwidth Pound sign */
 #define		U2E_FFE2_DEST	U2E_NODEST_COL2	/* fullwidth not sign */
+#define		U2E_FFE4_DEST	U2E_NODEST_COLX	/* fullwidth vert. broken bar */
 #elif	defined(JFP_U2E_ICONV_RFC1468)
 #define		U2E_005C_DEST	(0x005c)	/* backslash */
 #define		U2E_007E_DEST	(0x007e)	/* tilde */
 #define		U2E_00A2_DEST	(0xa1f1)	/* Cent sign */
 #define		U2E_00A3_DEST	(0xa1f2)	/* Pound sign */
 #define		U2E_00A5_DEST	U2E_NODEST_COL1	/* Yen sign */
+#define		U2E_00A6_DEST	U2E_NODEST_COLX	/* Broken bar */
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
@@ -223,12 +228,14 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_FFE0_DEST	U2E_NODEST_COL2	/* fullwidth Cent sign */
 #define		U2E_FFE1_DEST	U2E_NODEST_COL2	/* fullwidth Pound sign */
 #define		U2E_FFE2_DEST	U2E_NODEST_COL2	/* fullwidth not sign */
+#define		U2E_FFE4_DEST	U2E_NODEST_COLX	/* fullwidth vert. broken bar */
 #elif	defined(JFP_U2E_ICONV_UNICODEINC)
 #define		U2E_005C_DEST	(0xa1c0)	/* backslash */
 #define		U2E_007E_DEST	(0xa237)	/* tilde */
 #define		U2E_00A2_DEST	(0xa1f1)	/* Cent sign */
 #define		U2E_00A3_DEST	(0xa1f2)	/* Pound sign */
 #define		U2E_00A5_DEST	(0x005c)	/* Yen sign */
+#define		U2E_00A6_DEST	JISX0212(0xa243)/* Broken bar */
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	(0x007e)	/* overline */
@@ -241,12 +248,14 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_FFE0_DEST	U2E_NODEST_COL2	/* fullwidth Cent sign */
 #define		U2E_FFE1_DEST	U2E_NODEST_COL2	/* fullwidth Pound sign */
 #define		U2E_FFE2_DEST	U2E_NODEST_COL2	/* fullwidth not sign */
+#define		U2E_FFE4_DEST	U2E_NODEST_COLX	/* fullwidth vert. broken bar */
 #elif	defined(JFP_U2E_ICONV_MS932)
 #define		U2E_005C_DEST	(0x005c)	/* backslash */
 #define		U2E_007E_DEST	(0x007e)	/* tilde */
 #define		U2E_00A2_DEST	U2E_NODEST_COLX	/* Cent sign */
 #define		U2E_00A3_DEST	U2E_NODEST_COLX	/* Pound sign */
 #define		U2E_00A5_DEST	(0x005c)	/* Yen sign */
+#define		U2E_00A6_DEST	U2E_NODEST_COLX	/* Broken bar */
 #define		U2E_00AC_DEST	U2E_NODEST_COLX	/* not sign */
 #define		U2E_2016_DEST	U2E_NODEST_COLX	/* double vertical line */
 #define		U2E_203E_DEST	(0x007e)	/* overline */
@@ -259,12 +268,14 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_FFE0_DEST	(0xa1f1)	/* fullwidth Cent sign */
 #define		U2E_FFE1_DEST	(0xa1f2)	/* fullwidth Pound sign */
 #define		U2E_FFE2_DEST	(0xa2cc)	/* fullwidth not sign */
+#define		U2E_FFE4_DEST	JISX0212(0xa243)/* fullwidth vert. broken bar */
 #elif	defined(JFP_U2E_ICONV_X0213)
 #define		U2E_005C_DEST	(0x005c)	/* backslash */
 #define		U2E_007E_DEST	(0x007e)	/* tilde */
 #define		U2E_00A2_DEST	(0xa1f1)	/* Cent sign */
 #define		U2E_00A3_DEST	(0xa1f2)	/* Pound sign */
 #define		U2E_00A5_DEST	U2E_NODEST_COL1	/* Yen sign */
+#define		U2E_00A6_DEST	JISX0213_1(0xa9a5)/* Broken bar */
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
@@ -277,12 +288,14 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_FFE0_DEST	U2E_NODEST_COL2	/* fullwidth Cent sign */
 #define		U2E_FFE1_DEST	U2E_NODEST_COL2	/* fullwidth Pound sign */
 #define		U2E_FFE2_DEST	U2E_NODEST_COL2	/* fullwidth not sign */
+#define		U2E_FFE4_DEST	U2E_NODEST_COLX	/* fullwidth vert. broken bar */
 #elif	defined(JFP_U2E_ICONV)
 #define		U2E_005C_DEST	(0x005c)	/* backslash */
 #define		U2E_007E_DEST	(0x007e)	/* tilde */
 #define		U2E_00A2_DEST	(0xa1f1)	/* Cent sign */
 #define		U2E_00A3_DEST	(0xa1f2)	/* Pound sign */
 #define		U2E_00A5_DEST	U2E_NODEST_COL1	/* Yen sign */
+#define		U2E_00A6_DEST	JISX0212(0xa243)/* Broken bar */
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
@@ -295,6 +308,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_FFE0_DEST	U2E_NODEST_COL2	/* fullwidth Cent sign */
 #define		U2E_FFE1_DEST	U2E_NODEST_COL2	/* fullwidth Pound sign */
 #define		U2E_FFE2_DEST	U2E_NODEST_COL2	/* fullwidth not sign */
+#define		U2E_FFE4_DEST	U2E_NODEST_COLX	/* fullwidth vert. broken bar */
 #endif
 
 /*
@@ -468,7 +482,7 @@ static const _jfp_euc16_t _jfp_tbl_ucs2_to_euc16_block_00[] = {
 	/* U+00A3 */	U2E_00A3_DEST,
 	/* U+00A4 */	IFX0213(JISX0213_1(0xa9a4),	JISX0212(0xa270)),
 	/* U+00A5 */	U2E_00A5_DEST,
-	/* U+00A6 */	IFX0213(JISX0213_1(0xa9a5),	JISX0212(0xa243)),
+	/* U+00A6 */	U2E_00A6_DEST,
 	/* U+00A7 */	JISX0208(0xa1f8),
 	/* U+00A8 */	JISX0208(0xa1af),
 	/* U+00A9 */	IFX0213(JISX0213_1(0xa9a6),	JISX0212(0xa26d)),
@@ -36763,7 +36777,7 @@ static const _jfp_euc16_t _jfp_tbl_ucs2_to_euc16_block_FF[] = {
 	/* U+FFE1 */	U2E_FFE1_DEST,
 	/* U+FFE2 */	U2E_FFE2_DEST,
 	/* U+FFE3 */	JISX0208(0xa1b1),
-	/* U+FFE4 */	U2E_NODEST_COLX,
+	/* U+FFE4 */	U2E_FFE4_DEST,
 	/* U+FFE5 */	JISX0208(0xa1ef),
 	/* U+FFE6 */	U2E_NODEST_COLX,
 	/* U+FFE7 */	U2E_NODEST_COLX,
@@ -70015,6 +70029,7 @@ _jfp_u32_to_euc16(unsigned int u32)
 #undef		U2E_00A2_DEST
 #undef		U2E_00A3_DEST
 #undef		U2E_00A5_DEST
+#undef		U2E_00A6_DEST
 #undef		U2E_00AC_DEST
 #undef		U2E_2016_DEST
 #undef		U2E_203E_DEST
@@ -70027,5 +70042,6 @@ _jfp_u32_to_euc16(unsigned int u32)
 #undef		U2E_FFE0_DEST
 #undef		U2E_FFE1_DEST
 #undef		U2E_FFE2_DEST
+#undef		U2E_FFE4_DEST
 
 #endif	/* !_JFP_UCS2_TO_EUC16_H */

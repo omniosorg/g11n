@@ -10162,8 +10162,13 @@ static const _jfp_ucs2_t _jfp_tbl_jisx0212_to_ucs2[] = {
        0x0384,          0x0385,          J2U_NODEST_COL2, J2U_NODEST_COL2,
     /* 28               29               30               31               */
        J2U_NODEST_COL2, J2U_NODEST_COL2, J2U_NODEST_COL2, J2U_NODEST_COL2,
+#if	defined(JFP_J2U_ICONV_MS932)
+    /* 32               33               34               35               */
+       J2U_NODEST_COL2, J2U_NODEST_COL2, 0x00a1,          0xffe4,
+#else	/* !defined(JFP_J2U_ICONV_MS932) */
     /* 32               33               34               35               */
        J2U_NODEST_COL2, J2U_NODEST_COL2, 0x00a1,          0x00a6,
+#endif	/* defined(JFP_J2U_ICONV_MS932) */
     /* 36               37               38               39               */
        0x00bf,          J2U_NODEST_COL2, J2U_NODEST_COL2, J2U_NODEST_COL2,
     /* 40               41               42               43               */
