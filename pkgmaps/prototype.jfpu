@@ -55,7 +55,6 @@ s none usr/lib/iconv/SJIS%eucJP.so=./PCK%eucJP.so
 s none usr/lib/iconv/SJIS%jis.so=./PCK%jis.so
 s none usr/lib/iconv/eucJP%SJIS.so=./eucJP%PCK.so
 s none usr/lib/iconv/jis%SJIS.so=./jis%PCK.so
-s none usr/lib/mle/ja_JP.eucJP=./ja
 
 #
 # SUNWjeuc
