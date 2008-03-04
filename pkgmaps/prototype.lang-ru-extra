@@ -1,0 +1,69 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none usr 0755 root sys
+d none usr/lib 0755 root bin
+d none usr/lib/locale 0755 root bin
+d none usr/lib/locale/ru 0755 root bin
+d none usr/lib/locale/ru.koi8-r 0755 root bin
+s none usr/lib/locale/ru.koi8-r/ru.koi8-r.so.3=../ru_RU.KOI8-R/ru_RU.KOI8-R.so.3
+d none usr/lib/locale/ru_RU 0755 root bin
+d none usr/lib/locale/ru_RU 0755 root bin
+d none usr/lib/locale/ru_RU.ANSI1251 0755 root bin
+d none usr/lib/locale/ru_RU.ANSI1251/LC_COLLATE 0755 root bin
+d none usr/lib/locale/ru_RU.ANSI1251/LC_CTYPE 0755 root bin
+f none usr/lib/locale/ru_RU.ANSI1251/LC_CTYPE/LCL_DEF 0555 root bin
+d none usr/lib/locale/ru_RU.ANSI1251/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/ru_RU.ANSI1251/LC_MONETARY 0755 root bin
+d none usr/lib/locale/ru_RU.ANSI1251/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/ru_RU.ANSI1251/LC_TIME 0755 root bin
+f none usr/lib/locale/ru_RU.ANSI1251/locale_description 0644 root bin
+f none usr/lib/locale/ru_RU.ANSI1251/locale_map 0644 root bin
+f none usr/lib/locale/ru_RU.ANSI1251/ru_RU.ANSI1251.so.3 0555 root bin
+f none usr/lib/locale/ru_RU/geo_map 0644 root bin
+d none usr/lib/locale/ru_RU.ISO8859-5 0755 root bin
+d none usr/lib/locale/ru_RU.ISO8859-5/LC_COLLATE 0755 root bin
+d none usr/lib/locale/ru_RU.ISO8859-5/LC_CTYPE 0755 root bin
+s none usr/lib/locale/ru_RU.ISO8859-5/LC_CTYPE/LCL_DEF=../../iso_8859_5/LC_CTYPE/LCL_DEF
+d none usr/lib/locale/ru_RU.ISO8859-5/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/ru_RU.ISO8859-5/LC_MONETARY 0755 root bin
+d none usr/lib/locale/ru_RU.ISO8859-5/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/ru_RU.ISO8859-5/LC_TIME 0755 root bin
+f none usr/lib/locale/ru_RU.ISO8859-5/locale_description 0644 root bin
+f none usr/lib/locale/ru_RU.ISO8859-5/locale_map 0644 root bin
+f none usr/lib/locale/ru_RU.ISO8859-5/ru_RU.ISO8859-5.so.3 0555 root bin
+d none usr/lib/locale/ru_RU.KOI8-R 0755 root bin
+d none usr/lib/locale/ru_RU.KOI8-R/LC_COLLATE 0755 root bin
+d none usr/lib/locale/ru_RU.KOI8-R/LC_CTYPE 0755 root bin
+f none usr/lib/locale/ru_RU.KOI8-R/LC_CTYPE/LCL_DEF 0555 root bin
+d none usr/lib/locale/ru_RU.KOI8-R/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/ru_RU.KOI8-R/LC_MONETARY 0755 root bin
+d none usr/lib/locale/ru_RU.KOI8-R/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/ru_RU.KOI8-R/LC_TIME 0755 root bin
+f none usr/lib/locale/ru_RU.KOI8-R/locale_description 0644 root bin
+f none usr/lib/locale/ru_RU.KOI8-R/locale_map 0644 root bin
+f none usr/lib/locale/ru_RU.KOI8-R/ru_RU.KOI8-R.so.3 0555 root bin
+s none usr/lib/locale/ru_RU/locale_description=../ru_RU.ISO8859-5/locale_description
+s none usr/lib/locale/ru_RU/ru_RU.so.3=../ru_RU.ISO8859-5/ru_RU.ISO8859-5.so.3
+s none usr/lib/locale/ru/ru.so.3=../ru_RU.ISO8859-5/ru_RU.ISO8859-5.so.3

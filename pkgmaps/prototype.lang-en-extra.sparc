@@ -1,0 +1,63 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none usr 0755 root sys
+d none usr/lib 0755 root bin
+d none usr/lib/locale 0755 root bin
+d none usr/lib/locale/en_AU.ISO8859-1/sparcv9 0755 root bin
+f none usr/lib/locale/en_AU.ISO8859-1/sparcv9/en_AU.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/en_AU/sparcv9 0755 root bin
+s none usr/lib/locale/en_AU/sparcv9/en_AU.so.3=../../en_AU.ISO8859-1/sparcv9/en_AU.ISO8859-1.so.3
+d none usr/lib/locale/en_CA.ISO8859-1/sparcv9 0755 root bin
+f none usr/lib/locale/en_CA.ISO8859-1/sparcv9/en_CA.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/en_CA/sparcv9 0755 root bin
+s none usr/lib/locale/en_CA/sparcv9/en_CA.so.3=../../en_CA.ISO8859-1/sparcv9/en_CA.ISO8859-1.so.3
+d none usr/lib/locale/en_GB.ISO8859-15@euro/sparcv9 0755 root bin
+s none usr/lib/locale/en_GB.ISO8859-15@euro/sparcv9/en_GB.ISO8859-15@euro.so.3=../../en_GB.ISO8859-15/sparcv9/en_GB.ISO8859-15.so.3
+d none usr/lib/locale/en_GB.ISO8859-15/sparcv9 0755 root bin
+f none usr/lib/locale/en_GB.ISO8859-15/sparcv9/en_GB.ISO8859-15.so.3 0555 root bin
+d none usr/lib/locale/en_GB.ISO8859-1/sparcv9 0755 root bin
+f none usr/lib/locale/en_GB.ISO8859-1/sparcv9/en_GB.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/en_GB/sparcv9 0755 root bin
+s none usr/lib/locale/en_GB/sparcv9/en_GB.so.3=../../en_GB.ISO8859-1/sparcv9/en_GB.ISO8859-1.so.3
+d none usr/lib/locale/en_IE.ISO8859-15@euro/sparcv9 0755 root bin
+s none usr/lib/locale/en_IE.ISO8859-15@euro/sparcv9/en_IE.ISO8859-15@euro.so.3=../../en_IE.ISO8859-15/sparcv9/en_IE.ISO8859-15.so.3
+d none usr/lib/locale/en_IE.ISO8859-15/sparcv9 0755 root bin
+f none usr/lib/locale/en_IE.ISO8859-15/sparcv9/en_IE.ISO8859-15.so.3 0555 root bin
+d none usr/lib/locale/en_IE.ISO8859-1/sparcv9 0755 root bin
+f none usr/lib/locale/en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/en_IE/sparcv9 0755 root bin
+s none usr/lib/locale/en_IE/sparcv9/en_IE.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/en_NZ.ISO8859-1/sparcv9 0755 root bin
+f none usr/lib/locale/en_NZ.ISO8859-1/sparcv9/en_NZ.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/en_NZ/sparcv9 0755 root bin
+s none usr/lib/locale/en_NZ/sparcv9/en_NZ.so.3=../../en_NZ.ISO8859-1/sparcv9/en_NZ.ISO8859-1.so.3
+d none usr/lib/locale/en_US.ISO8859-15@euro/sparcv9 0755 root bin
+s none usr/lib/locale/en_US.ISO8859-15@euro/sparcv9/en_US.ISO8859-15@euro.so.3=../../en_US.ISO8859-15/sparcv9/en_US.ISO8859-15.so.3
+d none usr/lib/locale/en_US.ISO8859-15/sparcv9 0755 root bin
+f none usr/lib/locale/en_US.ISO8859-15/sparcv9/en_US.ISO8859-15.so.3 0555 root bin
+d none usr/lib/locale/en_US.ISO8859-1/sparcv9 0755 root bin
+f none usr/lib/locale/en_US.ISO8859-1/sparcv9/en_US.ISO8859-1.so.3 0555 root bin
+d none usr/lib/locale/en_US/sparcv9 0755 root bin
+s none usr/lib/locale/en_US/sparcv9/en_US.so.3=../../en_US.ISO8859-1/sparcv9/en_US.ISO8859-1.so.3
