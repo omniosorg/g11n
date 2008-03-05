@@ -21,11 +21,6 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none usr 0755 root sys
-d none usr/include 0755 root bin
-d none usr/include/zh_TW 0755 root bin
-f none usr/include/zh_TW/xctype.h 0644 root bin
-s none usr/include/zh_TW.EUC=./zh_TW
 d none usr/lib 0755 root bin
 d none usr/lib/iconv 0755 root bin
 s none usr/lib/iconv/646%BIG5.so=./646%CODESET.so
@@ -54,43 +49,3 @@ s none usr/lib/iconv/zh_TW.iso2022-7%zh_TW.euc.so=./zh_TW-iso2022-7%zh_TW-euc.so
 s none usr/lib/iconv/zh_TW.iso2022-CN%zh_TW.big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
 s none usr/lib/iconv/zh_TW.iso2022-CN-EXT%zh_TW.big5.so=./zh_TW-iso2022-CN-EXT%zh_TW-big5.so
 s none usr/lib/iconv/zh_TW.iso2022-CN-EXT%zh_TW.euc.so=./zh_TW-iso2022-CN-EXT%zh_TW-euc.so
-d none usr/lib 0755 root bin
-
-
-d none usr/openwin 0755 root bin
-d none usr/openwin/lib 0755 root bin
-d none usr/openwin/lib/locale 0755 root bin
-d none usr/openwin/lib/locale/zh_TW 0755 root bin
-d none usr/openwin/lib/locale/zh_TW/imsscript 0755 root bin
-s none usr/openwin/lib/locale/zh_TW/imsscript/S516twle=../../common/imsscript/S505multi
-d none usr/openwin/lib/locale/zh_TW.BIG5 0755 root bin
-d none usr/openwin/lib/locale/zh_TW.BIG5/imsscript 0755 root bin
-s none usr/openwin/lib/locale/zh_TW.BIG5/imsscript/S516twle=../../common/imsscript/S505multi
-
-d none usr/lib/locale 0755 root bin
-d none usr/lib/locale/zh_TW 0755 root bin
-d none usr/lib/locale/zh_TW/LC_COLLATE 0755 root bin
-d none usr/lib/locale/zh_TW/LC_CTYPE 0755 root bin
-f none usr/lib/locale/zh_TW/LC_CTYPE/LCL_DEF 0555 root bin
-f none usr/lib/locale/zh_TW/LC_CTYPE/mailcodelist 0555 root bin
-f none usr/lib/locale/zh_TW/LC_CTYPE/wdresolve.so 0555 root bin
-d none usr/lib/locale/zh_TW/LC_MONETARY 0755 root bin
-d none usr/lib/locale/zh_TW/LC_NUMERIC 0755 root bin
-d none usr/lib/locale/zh_TW/LC_TIME 0755 root bin
-f none usr/lib/locale/zh_TW/geo_map 0644 root bin
-f none usr/lib/locale/zh_TW/locale_map 0644 root bin
-f none usr/lib/locale/zh_TW/methods_zh_TW.so.3 0555 root bin
-f none usr/lib/locale/zh_TW/zh_TW.so.3 0555 root bin
-f none usr/lib/locale/zh_TW/locale_description 0644 root bin
-d none usr/lib/locale/zh_TW.EUC 0755 root bin
-s none usr/lib/locale/zh_TW.EUC/LC_COLLATE=../zh_TW/LC_COLLATE
-s none usr/lib/locale/zh_TW.EUC/LC_CTYPE=../zh_TW/LC_CTYPE
-s none usr/lib/locale/zh_TW.EUC/LC_MONETARY=../zh_TW/LC_MONETARY
-s none usr/lib/locale/zh_TW.EUC/LC_NUMERIC=../zh_TW/LC_NUMERIC
-s none usr/lib/locale/zh_TW.EUC/LC_TIME=../zh_TW/LC_TIME
-s none usr/lib/locale/zh_TW.EUC/geo_map=../zh_TW/geo_map
-s none usr/lib/locale/zh_TW.EUC/locale_map=../zh_TW/locale_map
-s none usr/lib/locale/zh_TW.EUC/methods_zh_TW.EUC.so.3=../zh_TW/methods_zh_TW.so.3
-s none usr/lib/locale/zh_TW.EUC/zh_TW.EUC.so.3=../zh_TW/zh_TW.so.3
-s none usr/lib/locale/zh_TW.EUC/locale_description=../zh_TW/locale_description
-

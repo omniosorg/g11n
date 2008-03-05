@@ -21,11 +21,28 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
+d none usr/kernel/strmod/amd64 0755 root sys
+f none usr/kernel/strmod/amd64/kpack 0755 root sys
+
+s none usr/lib/locale/ko/LC_CTYPE/64=./amd64
+d none usr/lib/locale/ko/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/ko/LC_CTYPE/amd64/mailcodelist 0555 root bin
+f none usr/lib/locale/ko/LC_CTYPE/amd64/wdresolve.so 0555 root bin
+s none usr/lib/locale/ko/64=./amd64
+d none usr/lib/locale/ko/amd64 0755 root bin
+f none usr/lib/locale/ko/amd64/ko.so.3 0555 root bin
+f none usr/lib/locale/ko/amd64/methods_ko.so.3 0555 root bin
+s none usr/lib/locale/ko_KR.EUC/64=./amd64
+d none usr/lib/locale/ko_KR.EUC/amd64 0755 root bin
+s none usr/lib/locale/ko_KR.EUC/amd64/ko_KR.EUC.so.3=../../ko/amd64/ko.so.3
+s none usr/lib/locale/ko_KR.EUC/amd64/methods_ko_KR.EUC.so.3=../../ko/amd64/methods_ko.so.3
 s none usr/lib/locale/ko_KR.EUC@dict/64=./amd64
 d none usr/lib/locale/ko_KR.EUC@dict/amd64 0755 root bin
 s none usr/lib/locale/ko_KR.EUC@dict/amd64/methods_ko_KR.EUC@dict.so.3=../../ko/amd64/methods_ko.so.3
 f none usr/lib/locale/ko_KR.EUC@dict/amd64/ko_KR.EUC@dict.so.3=usr/lib/locale/ko@dict/amd64/ko@dict.so.3 0555 root bin
-s none usr/lib/locale/ko_KR.UTF-8@dict/64=./amd64
-d none usr/lib/locale/ko_KR.UTF-8@dict/amd64 0755 root bin
-s none usr/lib/locale/ko_KR.UTF-8@dict/amd64/methods_ko_KR.UTF-8@dict.so.3=../../ko.UTF-8/amd64/methods_ko.UTF-8.so.3
-f none usr/lib/locale/ko_KR.UTF-8@dict/amd64/ko_KR.UTF-8@dict.so.3=usr/lib/locale/ko.UTF-8@dict/amd64/ko.UTF-8@dict.so.3 0555 root bin
+
+
+d none usr/lib/amd64 0755 root bin
+f none usr/lib/amd64/libkle.a 0755 root bin
+s none usr/lib/amd64/libkle.so=libkle.so.1
+f none usr/lib/amd64/libkle.so.1 0755 root bin

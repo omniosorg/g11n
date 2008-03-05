@@ -1,0 +1,84 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none usr/kernel 0755 root sys
+d none usr/kernel/strmod 0755 root sys
+d none usr/kernel/strmod/amd64 0755 root sys
+f none usr/kernel/strmod/amd64/b5euc 0755 root sys
+f none usr/kernel/strmod/amd64/big5euc 0755 root sys
+s none usr/lib/locale/zh_TW/LC_CTYPE/64=./amd64
+d none usr/lib/locale/zh_TW/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/zh_TW/LC_CTYPE/amd64/mailcodelist 0555 root bin
+f none usr/lib/locale/zh_TW/LC_CTYPE/amd64/wdresolve.so 0555 root bin
+s none usr/lib/locale/zh_TW/64=./amd64
+d none usr/lib/locale/zh_TW/amd64 0755 root bin
+f none usr/lib/locale/zh_TW/amd64/methods_zh_TW.so.3 0555 root bin
+f none usr/lib/locale/zh_TW/amd64/zh_TW.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC/64=./amd64
+d none usr/lib/locale/zh_TW.EUC/amd64 0755 root bin
+s none usr/lib/locale/zh_TW.EUC/amd64/methods_zh_TW.EUC.so.3=../../zh_TW/amd64/methods_zh_TW.so.3
+s none usr/lib/locale/zh_TW.EUC/amd64/zh_TW.EUC.so.3=../../zh_TW/amd64/zh_TW.so.3
+s none usr/lib/locale/zh_TW.BIG5/LC_CTYPE/64=./amd64
+d none usr/lib/locale/zh_TW.BIG5/LC_CTYPE/amd64 0755 root bin
+f none usr/lib/locale/zh_TW.BIG5/LC_CTYPE/amd64/wdresolve.so 0555 root bin
+s none usr/lib/locale/zh_TW.BIG5/64=./amd64
+d none usr/lib/locale/zh_TW.BIG5/amd64 0755 root bin
+f none usr/lib/locale/zh_TW.BIG5/amd64/methods_zh_TW.BIG5.so.3 0555 root bin
+f none usr/lib/locale/zh_TW.BIG5/amd64/zh_TW.BIG5.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@pinyin/64=./amd64
+d none usr/lib/locale/zh_TW.EUC@pinyin/amd64 0755 root bin
+f none usr/lib/locale/zh_TW.EUC@pinyin/amd64/zh_TW.EUC@pinyin.so.3=usr/lib/locale/zh_TW@pinyin/amd64/zh_TW@pinyin.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@pinyin/amd64/methods_zh_TW.EUC@pinyin.so.3=../../zh_TW/amd64/methods_zh_TW.so.3
+s none usr/lib/locale/zh_TW.EUC@radical/64=./amd64
+d none usr/lib/locale/zh_TW.EUC@radical/amd64 0755 root bin
+f none usr/lib/locale/zh_TW.EUC@radical/amd64/zh_TW.EUC@radical.so.3=usr/lib/locale/zh_TW@radical/amd64/zh_TW@radical.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@radical/amd64/methods_zh_TW.EUC@radical.so.3=../../zh_TW/amd64/methods_zh_TW.so.3
+s none usr/lib/locale/zh_TW.EUC@stroke/64=./amd64
+d none usr/lib/locale/zh_TW.EUC@stroke/amd64 0755 root bin
+f none usr/lib/locale/zh_TW.EUC@stroke/amd64/zh_TW.EUC@stroke.so.3=usr/lib/locale/zh_TW@stroke/amd64/zh_TW@stroke.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@stroke/amd64/methods_zh_TW.EUC@stroke.so.3=../../zh_TW/amd64/methods_zh_TW.so.3
+s none usr/lib/locale/zh_TW.EUC@zhuyin/64=./amd64
+d none usr/lib/locale/zh_TW.EUC@zhuyin/amd64 0755 root bin
+f none usr/lib/locale/zh_TW.EUC@zhuyin/amd64/zh_TW.EUC@zhuyin.so.3=usr/lib/locale/zh_TW@zhuyin/amd64/zh_TW@zhuyin.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@zhuyin/amd64/methods_zh_TW.EUC@zhuyin.so.3=../../zh_TW/amd64/methods_zh_TW.so.3
+s none usr/lib/locale/zh_TW.BIG5@pinyin/64=./amd64
+d none usr/lib/locale/zh_TW.BIG5@pinyin/amd64 0755 root bin
+s none usr/lib/locale/zh_TW.BIG5@pinyin/amd64/methods_zh_TW.BIG5@pinyin.so.3=../../zh_TW.BIG5/amd64/methods_zh_TW.BIG5.so.3
+f none usr/lib/locale/zh_TW.BIG5@pinyin/amd64/zh_TW.BIG5@pinyin.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.BIG5@radical/64=./amd64
+d none usr/lib/locale/zh_TW.BIG5@radical/amd64 0755 root bin
+s none usr/lib/locale/zh_TW.BIG5@radical/amd64/methods_zh_TW.BIG5@radical.so.3=../../zh_TW.BIG5/amd64/methods_zh_TW.BIG5.so.3
+f none usr/lib/locale/zh_TW.BIG5@radical/amd64/zh_TW.BIG5@radical.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.BIG5@stroke/64=./amd64
+d none usr/lib/locale/zh_TW.BIG5@stroke/amd64 0755 root bin
+s none usr/lib/locale/zh_TW.BIG5@stroke/amd64/methods_zh_TW.BIG5@stroke.so.3=../../zh_TW.BIG5/amd64/methods_zh_TW.BIG5.so.3
+f none usr/lib/locale/zh_TW.BIG5@stroke/amd64/zh_TW.BIG5@stroke.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.BIG5@zhuyin/64=./amd64
+d none usr/lib/locale/zh_TW.BIG5@zhuyin/amd64 0755 root bin
+s none usr/lib/locale/zh_TW.BIG5@zhuyin/amd64/methods_zh_TW.BIG5@zhuyin.so.3=../../zh_TW.BIG5/amd64/methods_zh_TW.BIG5.so.3
+f none usr/lib/locale/zh_TW.BIG5@zhuyin/amd64/zh_TW.BIG5@zhuyin.so.3 0555 root bin
+
+d none usr/lib/amd64 0755 root bin
+f none usr/lib/amd64/libhle.a 0755 root bin
+s none usr/lib/amd64/libhle.so=libhle.so.1
+f none usr/lib/amd64/libhle.so.1 0755 root bin

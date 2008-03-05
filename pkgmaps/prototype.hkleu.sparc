@@ -28,29 +28,3 @@ s none usr/lib/iconv/sparcv9/zh_HK-big5hk%zh_TW-big5p.so=./zh_HK.hkscs%zh_TW-big
 f none usr/lib/iconv/sparcv9/zh_TW-big5p%zh_HK.hkscs.so 0755 root bin
 s none usr/lib/iconv/sparcv9/zh_TW-big5p%zh_HK.big5hk.so=./zh_TW-big5p%zh_HK.hkscs.so
 s none usr/lib/iconv/sparcv9/zh_TW-big5p%zh_HK-big5hk.so=./zh_TW-big5p%zh_HK.hkscs.so
-s none usr/lib/locale/zh_HK.BIG5HK/64=./sparcv9
-d none usr/lib/locale/zh_HK.BIG5HK/sparcv9 0755 root bin
-f none usr/lib/locale/zh_HK.BIG5HK/sparcv9/methods_zh_HK.BIG5HK.so.3 0555 root bin
-f none usr/lib/locale/zh_HK.BIG5HK/sparcv9/zh_HK.BIG5HK.so.3 0555 root bin
-s none usr/lib/locale/zh_HK.BIG5HK@radical/64=./sparcv9
-d none usr/lib/locale/zh_HK.BIG5HK@radical/sparcv9 0755 root bin
-s none usr/lib/locale/zh_HK.BIG5HK@radical/sparcv9/methods_zh_HK.BIG5HK@radical.so.3=../../zh_HK.BIG5HK/sparcv9/methods_zh_HK.BIG5HK.so.3
-s none usr/lib/locale/zh_HK.BIG5HK@stroke/64=./sparcv9
-d none usr/lib/locale/zh_HK.BIG5HK@stroke/sparcv9 0755 root bin
-s none usr/lib/locale/zh_HK.BIG5HK@stroke/sparcv9/methods_zh_HK.BIG5HK@stroke.so.3=../../zh_HK.BIG5HK/sparcv9/methods_zh_HK.BIG5HK.so.3
-s none usr/lib/locale/zh_HK.UTF-8@radical/64=./sparcv9
-d none usr/lib/locale/zh_HK.UTF-8@radical/sparcv9 0755 root bin
-s none usr/lib/locale/zh_HK.UTF-8@radical/sparcv9/methods_zh_HK.UTF-8@radical.so.3=../../zh_HK.UTF-8/sparcv9/methods_zh_HK.UTF-8.so.3
-s none usr/lib/locale/zh_HK.UTF-8@stroke/64=./sparcv9
-d none usr/lib/locale/zh_HK.UTF-8@stroke/sparcv9 0755 root bin
-s none usr/lib/locale/zh_HK.UTF-8@stroke/sparcv9/methods_zh_HK.UTF-8@stroke.so.3=../../zh_HK.UTF-8/sparcv9/methods_zh_HK.UTF-8.so.3
-s none usr/lib/locale/zh_HK.UTF-8/64=./sparcv9
-d none usr/lib/locale/zh_HK.UTF-8/sparcv9 0755 root bin
-s none usr/lib/locale/zh_HK.UTF-8/sparcv9/methods_zh_HK.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
-f none usr/lib/locale/zh_HK.UTF-8/sparcv9/zh_HK.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/zh_HK.UTF-8/LC_CTYPE/64=./sparcv9
-d none usr/lib/locale/zh_HK.UTF-8/LC_CTYPE/sparcv9 0755 root bin
-s none usr/lib/locale/zh_HK.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
-s none usr/lib/locale/zh_HK.UTF-8/LO_LTYPE/64=./sparcv9
-d none usr/lib/locale/zh_HK.UTF-8/LO_LTYPE/sparcv9 0755 root bin
-s none usr/lib/locale/zh_HK.UTF-8/LO_LTYPE/sparcv9/zh_HK.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1

@@ -59,38 +59,3 @@ s none usr/lib/iconv/sparcv9/zh_HK.big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.g
 s none usr/lib/iconv/sparcv9/zh_HK-big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
 s none usr/lib/iconv/sparcv9/zh_TW-big5%zh_CN.gb18030.so=./zh_TW-big5%zh_CN.gbk.so
 s none usr/lib/iconv/sparcv9/zh_TW-big5p%zh_CN.gb18030.so=./zh_TW-big5p%zh_CN.gbk.so
-s none usr/lib/locale/zh.GBK/LC_CTYPE/64=./sparcv9
-d none usr/lib/locale/zh.GBK/LC_CTYPE/sparcv9 0755 root bin
-f none usr/lib/locale/zh.GBK/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
-s none usr/lib/locale/zh.GBK/64=./sparcv9
-d none usr/lib/locale/zh.GBK/sparcv9 0755 root bin
-f none usr/lib/locale/zh.GBK/sparcv9/methods_zh.GBK.so.3 0555 root bin
-f none usr/lib/locale/zh.GBK/sparcv9/zh.GBK.so.3 0555 root bin
-s none usr/lib/locale/zh_CN.GB18030/64=./sparcv9
-d none usr/lib/locale/zh_CN.GB18030/sparcv9 0755 root bin
-f none usr/lib/locale/zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3 0555 root bin
-f none usr/lib/locale/zh_CN.GB18030/sparcv9/zh_CN.GB18030.so.3 0555 root bin
-s none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/64=./sparcv9
-d none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/sparcv9 0755 root bin
-f none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
-s none usr/lib/locale/zh.UTF-8/LC_CTYPE/64=./sparcv9
-d none usr/lib/locale/zh.UTF-8/LC_CTYPE/sparcv9 0755 root bin
-s none usr/lib/locale/zh.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
-s none usr/lib/locale/zh.UTF-8/LO_LTYPE/64=./sparcv9
-d none usr/lib/locale/zh.UTF-8/LO_LTYPE/sparcv9 0755 root bin
-s none usr/lib/locale/zh.UTF-8/LO_LTYPE/sparcv9/zh.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
-s none usr/lib/locale/zh.UTF-8/64=./sparcv9
-d none usr/lib/locale/zh.UTF-8/sparcv9 0755 root bin
-s none usr/lib/locale/zh.UTF-8/sparcv9/methods_zh.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
-f none usr/lib/locale/zh.UTF-8/sparcv9/zh.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/zh_CN.GBK/64=./sparcv9
-d none usr/lib/locale/zh_CN.GBK/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.GBK/sparcv9/methods_zh_CN.GBK.so.3=../../zh.GBK/sparcv9/methods_zh.GBK.so.3
-s none usr/lib/locale/zh_CN.GBK/sparcv9/zh_CN.GBK.so.3=../../zh.GBK/sparcv9/zh.GBK.so.3
-s none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/64=./sparcv9
-d none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/sparcv9/zh_CN.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
-s none usr/lib/locale/zh_CN.UTF-8/64=./sparcv9
-d none usr/lib/locale/zh_CN.UTF-8/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.UTF-8/sparcv9/methods_zh_CN.UTF-8.so.3=../../zh.UTF-8/sparcv9/methods_zh.UTF-8.so.3
-s none usr/lib/locale/zh_CN.UTF-8/sparcv9/zh_CN.UTF-8.so.3=../../zh.UTF-8/sparcv9/zh.UTF-8.so.3

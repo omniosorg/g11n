@@ -21,10 +21,13 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none usr/lib/locale/zh/LC_CTYPE/amd64 0755 root bin
-f none usr/lib/locale/zh/LC_CTYPE/amd64/mailcodelist 0555 root bin
-f none usr/lib/locale/zh/LC_CTYPE/amd64/wdresolve.so 0555 root bin
-d none usr/lib/locale/zh/amd64 0755 root bin
-f none usr/lib/locale/zh/amd64/zh.so.3 0555 root bin
-d none usr/lib/locale/zh_CN.EUC/amd64 0755 root bin
-s none usr/lib/locale/zh_CN.EUC/amd64/zh_CN.EUC.so.3=../../zh/amd64/zh.so.3
+s none usr/lib/locale/th_TH.UTF-8/64=./sparcv9
+d none usr/lib/locale/th_TH.UTF-8/sparcv9 0755 root bin
+f none usr/lib/locale/th_TH.UTF-8/sparcv9/th_TH.UTF-8.so.3 0755 root bin
+s none usr/lib/locale/th_TH.UTF-8/sparcv9/methods_th_TH.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/64=./sparcv9
+d none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/sparcv9 0755 root bin
+s none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
+s none usr/lib/locale/th_TH.UTF-8/LO_LTYPE/64=./sparcv9
+d none usr/lib/locale/th_TH.UTF-8/LO_LTYPE/sparcv9 0755 root bin
+s none usr/lib/locale/th_TH.UTF-8/LO_LTYPE/sparcv9/th_TH.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1

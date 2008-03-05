@@ -39,13 +39,3 @@ s none usr/lib/locale/th_TH.TIS620/amd64/th_TH.TIS620.so.3=../../th_TH/amd64/th_
 s none usr/lib/locale/th_TH.ISO8859-11/64=./amd64
 d none usr/lib/locale/th_TH.ISO8859-11/amd64 0755 root bin
 s none usr/lib/locale/th_TH.ISO8859-11/amd64/th_TH.ISO8859-11.so.3=../../th_TH/amd64/th_TH.so.3
-s none usr/lib/locale/th_TH.UTF-8/64=./amd64
-d none usr/lib/locale/th_TH.UTF-8/amd64 0755 root bin
-f none usr/lib/locale/th_TH.UTF-8/amd64/th_TH.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/th_TH.UTF-8/amd64/methods_th_TH.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
-s none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/64=./amd64
-d none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/amd64 0755 root bin
-s none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so
-s none usr/lib/locale/th_TH.UTF-8/LO_LTYPE/64=./amd64
-d none usr/lib/locale/th_TH.UTF-8/LO_LTYPE/amd64 0755 root bin
-s none usr/lib/locale/th_TH.UTF-8/LO_LTYPE/amd64/th_TH.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1

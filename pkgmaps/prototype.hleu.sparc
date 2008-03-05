@@ -21,9 +21,6 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none usr/kernel/strmod/sparcv9 0755 root sys
-f none usr/kernel/strmod/sparcv9/b5euc 0755 root sys
-f none usr/kernel/strmod/sparcv9/big5euc 0755 root sys
 d none usr/lib/iconv/sparcv9 0755 root bin
 s none usr/lib/iconv/sparcv9/646%BIG5.so=./646%CODESET.so
 s none usr/lib/iconv/sparcv9/646%cns11643.so=./646%CODESET.so
@@ -51,19 +48,3 @@ s none usr/lib/iconv/sparcv9/zh_TW.iso2022-7%zh_TW.euc.so=./zh_TW-iso2022-7%zh_T
 s none usr/lib/iconv/sparcv9/zh_TW.iso2022-CN%zh_TW.big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
 s none usr/lib/iconv/sparcv9/zh_TW.iso2022-CN-EXT%zh_TW.big5.so=./zh_TW-iso2022-CN-EXT%zh_TW-big5.so
 s none usr/lib/iconv/sparcv9/zh_TW.iso2022-CN-EXT%zh_TW.euc.so=./zh_TW-iso2022-CN-EXT%zh_TW-euc.so
-s none usr/lib/locale/zh_TW/LC_CTYPE/64=./sparcv9
-d none usr/lib/locale/zh_TW/LC_CTYPE/sparcv9 0755 root bin
-f none usr/lib/locale/zh_TW/LC_CTYPE/sparcv9/mailcodelist 0555 root bin
-f none usr/lib/locale/zh_TW/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
-s none usr/lib/locale/zh_TW/64=./sparcv9
-d none usr/lib/locale/zh_TW/sparcv9 0755 root bin
-f none usr/lib/locale/zh_TW/sparcv9/methods_zh_TW.so.3 0555 root bin
-f none usr/lib/locale/zh_TW/sparcv9/zh_TW.so.3 0555 root bin
-s none usr/lib/locale/zh_TW.EUC/64=./sparcv9
-d none usr/lib/locale/zh_TW.EUC/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3=../../zh_TW/sparcv9/methods_zh_TW.so.3
-s none usr/lib/locale/zh_TW.EUC/sparcv9/zh_TW.EUC.so.3=../../zh_TW/sparcv9/zh_TW.so.3
-d none usr/lib/sparcv9 0755 root bin
-f none usr/lib/sparcv9/libhle.a 0755 root bin
-s none usr/lib/sparcv9/libhle.so=libhle.so.1
-f none usr/lib/sparcv9/libhle.so.1 0755 root bin

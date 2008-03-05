@@ -59,38 +59,3 @@ s none usr/lib/iconv/amd64/zh_HK.big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk
 s none usr/lib/iconv/amd64/zh_HK-big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
 s none usr/lib/iconv/amd64/zh_TW-big5%zh_CN.gb18030.so=./zh_TW-big5%zh_CN.gbk.so
 s none usr/lib/iconv/amd64/zh_TW-big5p%zh_CN.gb18030.so=./zh_TW-big5p%zh_CN.gbk.so
-s none usr/lib/locale/zh.GBK/LC_CTYPE/64=./amd64
-d none usr/lib/locale/zh.GBK/LC_CTYPE/amd64 0755 root bin
-f none usr/lib/locale/zh.GBK/LC_CTYPE/amd64/wdresolve.so 0555 root bin
-s none usr/lib/locale/zh.GBK/64=./amd64
-d none usr/lib/locale/zh.GBK/amd64 0755 root bin
-f none usr/lib/locale/zh.GBK/amd64/methods_zh.GBK.so.3 0555 root bin
-f none usr/lib/locale/zh.GBK/amd64/zh.GBK.so.3 0555 root bin
-s none usr/lib/locale/zh_CN.GB18030/64=./amd64
-d none usr/lib/locale/zh_CN.GB18030/amd64 0755 root bin
-f none usr/lib/locale/zh_CN.GB18030/amd64/methods_zh_CN.GB18030.so.3 0555 root bin
-f none usr/lib/locale/zh_CN.GB18030/amd64/zh_CN.GB18030.so.3 0555 root bin
-s none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/64=./amd64
-d none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/amd64 0755 root bin
-f none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/amd64/wdresolve.so 0555 root bin
-s none usr/lib/locale/zh.UTF-8/LC_CTYPE/64=./amd64
-d none usr/lib/locale/zh.UTF-8/LC_CTYPE/amd64 0755 root bin
-s none usr/lib/locale/zh.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so
-s none usr/lib/locale/zh.UTF-8/LO_LTYPE/64=./amd64
-d none usr/lib/locale/zh.UTF-8/LO_LTYPE/amd64 0755 root bin
-s none usr/lib/locale/zh.UTF-8/LO_LTYPE/amd64/zh.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
-s none usr/lib/locale/zh.UTF-8/64=./amd64
-d none usr/lib/locale/zh.UTF-8/amd64 0755 root bin
-s none usr/lib/locale/zh.UTF-8/amd64/methods_zh.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
-f none usr/lib/locale/zh.UTF-8/amd64/zh.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/zh_CN.GBK/64=./amd64
-d none usr/lib/locale/zh_CN.GBK/amd64 0755 root bin
-s none usr/lib/locale/zh_CN.GBK/amd64/methods_zh_CN.GBK.so.3=../../zh.GBK/amd64/methods_zh.GBK.so.3
-s none usr/lib/locale/zh_CN.GBK/amd64/zh_CN.GBK.so.3=../../zh.GBK/amd64/zh.GBK.so.3
-s none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/64=./amd64
-d none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/amd64 0755 root bin
-s none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/amd64/zh_CN.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
-s none usr/lib/locale/zh_CN.UTF-8/64=./amd64
-d none usr/lib/locale/zh_CN.UTF-8/amd64 0755 root bin
-s none usr/lib/locale/zh_CN.UTF-8/amd64/methods_zh_CN.UTF-8.so.3=../../zh.UTF-8/amd64/methods_zh.UTF-8.so.3
-s none usr/lib/locale/zh_CN.UTF-8/amd64/zh_CN.UTF-8.so.3=../../zh.UTF-8/amd64/zh.UTF-8.so.3

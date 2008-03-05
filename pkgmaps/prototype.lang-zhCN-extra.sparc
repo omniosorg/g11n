@@ -1,0 +1,85 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+d none usr/lib/locale/zh/LC_CTYPE/sparcv9 0755 root bin
+f none usr/lib/locale/zh/LC_CTYPE/sparcv9/mailcodelist 0555 root bin
+f none usr/lib/locale/zh/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
+d none usr/lib/locale/zh/sparcv9 0755 root bin
+f none usr/lib/locale/zh/sparcv9/zh.so.3 0555 root bin
+s none usr/lib/locale/zh.GBK/LC_CTYPE/64=./sparcv9
+d none usr/lib/locale/zh.GBK/LC_CTYPE/sparcv9 0755 root bin
+f none usr/lib/locale/zh.GBK/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
+s none usr/lib/locale/zh.GBK/64=./sparcv9
+d none usr/lib/locale/zh.GBK/sparcv9 0755 root bin
+f none usr/lib/locale/zh.GBK/sparcv9/methods_zh.GBK.so.3 0555 root bin
+f none usr/lib/locale/zh.GBK/sparcv9/zh.GBK.so.3 0555 root bin
+d none usr/lib/locale/zh_CN.EUC/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.EUC/sparcv9/zh_CN.EUC.so.3=../../zh/sparcv9/zh.so.3
+s none usr/lib/locale/zh_CN.GB18030/64=./sparcv9
+d none usr/lib/locale/zh_CN.GB18030/sparcv9 0755 root bin
+f none usr/lib/locale/zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3 0555 root bin
+f none usr/lib/locale/zh_CN.GB18030/sparcv9/zh_CN.GB18030.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/64=./sparcv9
+d none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/sparcv9 0755 root bin
+f none usr/lib/locale/zh_CN.GB18030/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
+s none usr/lib/locale/zh_CN.GBK/64=./sparcv9
+d none usr/lib/locale/zh_CN.GBK/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.GBK/sparcv9/methods_zh_CN.GBK.so.3=../../zh.GBK/sparcv9/methods_zh.GBK.so.3
+s none usr/lib/locale/zh_CN.GBK/sparcv9/zh_CN.GBK.so.3=../../zh.GBK/sparcv9/zh.GBK.so.3
+
+s none usr/lib/locale/zh_CN.EUC@pinyin/64=./sparcv9
+d none usr/lib/locale/zh_CN.EUC@pinyin/sparcv9 0755 root bin
+f none usr/lib/locale/zh_CN.EUC@pinyin/sparcv9/zh_CN.EUC@pinyin.so.3=usr/lib/locale/zh@pinyin/sparcv9/zh@pinyin.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.EUC@pinyin/sparcv9/methods_zh_CN.EUC@pinyin.so.3=../../zh/sparcv9/methods_zh.so.3
+s none usr/lib/locale/zh_CN.EUC@radical/64=./sparcv9
+d none usr/lib/locale/zh_CN.EUC@radical/sparcv9 0755 root bin
+f none usr/lib/locale/zh_CN.EUC@radical/sparcv9/zh_CN.EUC@radical.so.3=usr/lib/locale/zh@radical/sparcv9/zh@radical.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.EUC@radical/sparcv9/methods_zh_CN.EUC@radical.so.3=../../zh/sparcv9/methods_zh.so.3
+s none usr/lib/locale/zh_CN.EUC@stroke/64=./sparcv9
+d none usr/lib/locale/zh_CN.EUC@stroke/sparcv9 0755 root bin
+f none usr/lib/locale/zh_CN.EUC@stroke/sparcv9/zh_CN.EUC@stroke.so.3=usr/lib/locale/zh@stroke/sparcv9/zh@stroke.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.EUC@stroke/sparcv9/methods_zh_CN.EUC@stroke.so.3=../../zh/sparcv9/methods_zh.so.3
+s none usr/lib/locale/zh_CN.GBK@pinyin/64=./sparcv9
+d none usr/lib/locale/zh_CN.GBK@pinyin/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.GBK@pinyin/sparcv9/methods_zh_CN.GBK@pinyin.so.3=../../zh.GBK/sparcv9/methods_zh.GBK.so.3
+f none usr/lib/locale/zh_CN.GBK@pinyin/sparcv9/zh_CN.GBK@pinyin.so.3=usr/lib/locale/zh.GBK@pinyin/sparcv9/zh.GBK@pinyin.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GBK@radical/64=./sparcv9
+d none usr/lib/locale/zh_CN.GBK@radical/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.GBK@radical/sparcv9/methods_zh_CN.GBK@radical.so.3=../../zh.GBK/sparcv9/methods_zh.GBK.so.3
+f none usr/lib/locale/zh_CN.GBK@radical/sparcv9/zh_CN.GBK@radical.so.3=usr/lib/locale/zh.GBK@radical/sparcv9/zh.GBK@radical.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GBK@stroke/64=./sparcv9
+d none usr/lib/locale/zh_CN.GBK@stroke/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.GBK@stroke/sparcv9/methods_zh_CN.GBK@stroke.so.3=../../zh.GBK/sparcv9/methods_zh.GBK.so.3
+f none usr/lib/locale/zh_CN.GBK@stroke/sparcv9/zh_CN.GBK@stroke.so.3=usr/lib/locale/zh.GBK@stroke/sparcv9/zh.GBK@stroke.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GB18030@pinyin/64=./sparcv9
+d none usr/lib/locale/zh_CN.GB18030@pinyin/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.GB18030@pinyin/sparcv9/methods_zh_CN.GB18030@pinyin.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
+f none usr/lib/locale/zh_CN.GB18030@pinyin/sparcv9/zh_CN.GB18030@pinyin.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GB18030@radical/64=./sparcv9
+d none usr/lib/locale/zh_CN.GB18030@radical/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.GB18030@radical/sparcv9/methods_zh_CN.GB18030@radical.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
+f none usr/lib/locale/zh_CN.GB18030@radical/sparcv9/zh_CN.GB18030@radical.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.GB18030@stroke/64=./sparcv9
+d none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9/methods_zh_CN.GB18030@stroke.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
+f none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9/zh_CN.GB18030@stroke.so.3 0555 root bin
