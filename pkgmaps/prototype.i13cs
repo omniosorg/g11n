@@ -31,9 +31,4 @@ f none usr/openwin/lib/locale/iso8859-13/XLC_LOCALE 0755 root bin
 f none usr/openwin/lib/locale/iso8859-13/CT_Encoding 0755 root bin
 s none usr/openwin/lib/locale/iso8859-13/XI18N_OBJS=../iso8859-1/XI18N_OBJS root bin
 s none usr/openwin/lib/locale/iso8859-13/xomEuro.so.2=../iso8859-1/xomEuro.so.2 root bin
-d none usr/lib 0755 root bin
-d none usr/lib/locale 0755 root bin
-d none usr/lib/locale/iso_8859_13 0755 root bin
-d none usr/lib/locale/iso_8859_13/LC_CTYPE 0755 root bin
-f none usr/lib/locale/iso_8859_13/LC_CTYPE/LCL_DEF 0555 root bin
 

@@ -54,3 +54,8 @@ d none usr/lib/locale/en_US.ISO8859-1/LC_TIME 0755 root bin
 f none usr/lib/locale/en_US.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/en_US.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/en_US/locale_description=../en_US.ISO8859-1/locale_description
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/setterm 0755 root bin
+d none share/lib/setterm/en_US.UTF-8 0755 root bin
+f none share/lib/setterm/en_US.UTF-8/conf.file 0555 root bin

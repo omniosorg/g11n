@@ -21,11 +21,6 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none usr 0755 root sys
-d none usr/lib 0755 root bin
-d none usr/lib/locale 0755 root bin
-f none usr/lib/locale/geo 0644 root bin
-f none usr/lib/locale/lcttab 0644 root bin
 d none usr/openwin 0755 root bin
 d none usr/openwin/lib 0755 root bin
 d none usr/openwin/lib/locale 0755 root bin

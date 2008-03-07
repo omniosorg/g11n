@@ -32,6 +32,8 @@ f none usr/lib/locale/common/LC_CTYPE/wdresolve_unicode.so 0555 root bin
 f none usr/lib/locale/common/LC_CTYPE/LCL_DEF_unicode 0555 root bin
 d none usr/lib/locale/common/LO_LTYPE 0755 root bin
 f none usr/lib/locale/common/LO_LTYPE/umle.layout.so.1 0555 root bin
+f none usr/lib/locale/geo 0644 root bin
+f none usr/lib/locale/lcttab 0644 root bin
 d none usr/share 0755 root sys
 d none usr/share/lib 0755 root sys
 d none usr/share/lib/pub 0755 root bin

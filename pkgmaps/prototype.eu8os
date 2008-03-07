@@ -44,8 +44,4 @@ s none lib/locale/en_US.UTF-8/LO_LTYPE/32=.
 s none lib/locale/en_US.UTF-8/LO_LTYPE/en_US.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
 s none lib/locale/en_US.UTF-8/methods_en_US.UTF-8.so.3=../common/methods_unicode.so.3
 f none lib/locale/en_US.UTF-8/en_US.UTF-8.so.3 0555 root bin
-d none share 0755 root sys
-d none share/lib 0755 root sys
-d none share/lib/setterm 0755 root bin
-d none share/lib/setterm/en_US.UTF-8 0755 root bin
-f none share/lib/setterm/en_US.UTF-8/conf.file 0555 root bin
+
