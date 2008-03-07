@@ -25,21 +25,13 @@
 #
 # SUNWjexpx
 #
-d none openwin 0755 root bin
-d none openwin/lib 0755 root bin
-d none openwin/lib/locale 0755 root bin
-d none openwin/lib/locale/ja 0755 root bin
-d none openwin/lib/locale/ja/sparcv9 0755 root bin
-f none openwin/lib/locale/ja/sparcv9/xlibi18n_ja.so.2 0444 root bin
+#XSUN#d none openwin/lib/locale/ja/sparcv9 0755 root bin
+#XSUN#f none openwin/lib/locale/ja/sparcv9/xlibi18n_ja.so.2 0444 root bin
 #s none openwin/lib/locale/japanese=./ja
 #s none openwin/lib/locale/ja_JP.eucJP=./ja
 
 #
 # SUNWjpxpx
 #
-d none openwin 0755 root bin
-d none openwin/lib 0755 root bin
-d none openwin/lib/locale 0755 root bin
-d none openwin/lib/locale/ja_JP.PCK 0755 root bin
-d none openwin/lib/locale/ja_JP.PCK/sparcv9 0755 root bin
-f none openwin/lib/locale/ja_JP.PCK/sparcv9/xlibi18n_PCK.so.2 0444 root bin
+#XSUN#d none openwin/lib/locale/ja_JP.PCK/sparcv9 0755 root bin
+#XSUN#f none openwin/lib/locale/ja_JP.PCK/sparcv9/xlibi18n_PCK.so.2 0444 root bin

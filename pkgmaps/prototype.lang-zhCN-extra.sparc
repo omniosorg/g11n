@@ -21,11 +21,14 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
+s none usr/lib/locale/zh/64=./sparcv9
+s none usr/lib/locale/zh/LC_CTYPE/64=./sparcv9
 d none usr/lib/locale/zh/LC_CTYPE/sparcv9 0755 root bin
 f none usr/lib/locale/zh/LC_CTYPE/sparcv9/mailcodelist 0555 root bin
 f none usr/lib/locale/zh/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
 d none usr/lib/locale/zh/sparcv9 0755 root bin
 f none usr/lib/locale/zh/sparcv9/zh.so.3 0555 root bin
+f none usr/lib/locale/zh/sparcv9/methods_zh.so.3 0555 root bin
 s none usr/lib/locale/zh.GBK/LC_CTYPE/64=./sparcv9
 d none usr/lib/locale/zh.GBK/LC_CTYPE/sparcv9 0755 root bin
 f none usr/lib/locale/zh.GBK/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
@@ -33,8 +36,10 @@ s none usr/lib/locale/zh.GBK/64=./sparcv9
 d none usr/lib/locale/zh.GBK/sparcv9 0755 root bin
 f none usr/lib/locale/zh.GBK/sparcv9/methods_zh.GBK.so.3 0555 root bin
 f none usr/lib/locale/zh.GBK/sparcv9/zh.GBK.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.EUC/64=./sparcv9
 d none usr/lib/locale/zh_CN.EUC/sparcv9 0755 root bin
 s none usr/lib/locale/zh_CN.EUC/sparcv9/zh_CN.EUC.so.3=../../zh/sparcv9/zh.so.3
+s none usr/lib/locale/zh_CN.EUC/sparcv9/methods_zh_CN.EUC.so.3=../../zh/sparcv9/methods_zh.so.3
 s none usr/lib/locale/zh_CN.GB18030/64=./sparcv9
 d none usr/lib/locale/zh_CN.GB18030/sparcv9 0755 root bin
 f none usr/lib/locale/zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3 0555 root bin
