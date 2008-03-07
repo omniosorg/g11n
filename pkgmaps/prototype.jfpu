@@ -28,56 +28,56 @@
 #
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
-d none usr/lib/iconv 0755 root bin
-d none usr/kernel 0755 root sys
-d none usr/kernel/strmod 0755 root sys
+#MOVED#d none usr/lib/iconv 0755 root bin
+#MOVED#d none usr/kernel 0755 root sys
+#MOVED#d none usr/kernel/strmod 0755 root sys
 d none usr/lib/css.d 0755 root sys
-f none usr/lib/iconv/ISO-2022-JP%PCK.so 0755 root bin
-f none usr/lib/iconv/ISO-2022-JP%eucJP.so 0755 root bin
-f none usr/lib/iconv/PCK%ISO-2022-JP.so 0755 root bin
-f none usr/lib/iconv/PCK%eucJP.so 0755 root bin
-f none usr/lib/iconv/PCK%jis.so 0755 root bin
-f none usr/lib/iconv/eucJP%ISO-2022-JP.so 0755 root bin
-f none usr/lib/iconv/eucJP%PCK.so 0755 root bin
-f none usr/lib/iconv/eucJP%jis.so 0755 root bin
-f none usr/lib/iconv/jis%PCK.so 0755 root bin
-f none usr/lib/iconv/jis%eucJP.so 0755 root bin
-f none usr/lib/iconv/PCK%ISO-2022-JP.RFC1468.so 0755 root bin
-f none usr/lib/iconv/eucJP%ISO-2022-JP.RFC1468.so 0755 root bin
-s none usr/lib/iconv/JIS7%eucJP.so=./ISO-2022-JP%eucJP.so
-s none usr/lib/iconv/eucJP%JIS7.so=./eucJP%ISO-2022-JP.so
-s none usr/lib/iconv/646%eucJP.so=./646%CODESET.so
-s none usr/lib/iconv/646%PCK.so=./646%CODESET.so
-s none usr/lib/iconv/646%SJIS.so=./646%CODESET.so
-s none usr/lib/iconv/ISO-2022-JP%SJIS.so=./ISO-2022-JP%PCK.so
-s none usr/lib/iconv/SJIS%ISO-2022-JP.so=./PCK%ISO-2022-JP.so
-s none usr/lib/iconv/SJIS%eucJP.so=./PCK%eucJP.so
-s none usr/lib/iconv/SJIS%jis.so=./PCK%jis.so
-s none usr/lib/iconv/eucJP%SJIS.so=./eucJP%PCK.so
-s none usr/lib/iconv/jis%SJIS.so=./jis%PCK.so
+#MOVED#f none usr/lib/iconv/ISO-2022-JP%PCK.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ISO-2022-JP%eucJP.so 0755 root bin
+#MOVED#f none usr/lib/iconv/PCK%ISO-2022-JP.so 0755 root bin
+#MOVED#f none usr/lib/iconv/PCK%eucJP.so 0755 root bin
+#MOVED#f none usr/lib/iconv/PCK%jis.so 0755 root bin
+#MOVED#f none usr/lib/iconv/eucJP%ISO-2022-JP.so 0755 root bin
+#MOVED#f none usr/lib/iconv/eucJP%PCK.so 0755 root bin
+#MOVED#f none usr/lib/iconv/eucJP%jis.so 0755 root bin
+#MOVED#f none usr/lib/iconv/jis%PCK.so 0755 root bin
+#MOVED#f none usr/lib/iconv/jis%eucJP.so 0755 root bin
+#MOVED#f none usr/lib/iconv/PCK%ISO-2022-JP.RFC1468.so 0755 root bin
+#MOVED#f none usr/lib/iconv/eucJP%ISO-2022-JP.RFC1468.so 0755 root bin
+#MOVED#s none usr/lib/iconv/JIS7%eucJP.so=./ISO-2022-JP%eucJP.so
+#MOVED#s none usr/lib/iconv/eucJP%JIS7.so=./eucJP%ISO-2022-JP.so
+#MOVED#s none usr/lib/iconv/646%eucJP.so=./646%CODESET.so
+#MOVED#s none usr/lib/iconv/646%PCK.so=./646%CODESET.so
+#MOVED#s none usr/lib/iconv/646%SJIS.so=./646%CODESET.so
+#MOVED#s none usr/lib/iconv/ISO-2022-JP%SJIS.so=./ISO-2022-JP%PCK.so
+#MOVED#s none usr/lib/iconv/SJIS%ISO-2022-JP.so=./PCK%ISO-2022-JP.so
+#MOVED#s none usr/lib/iconv/SJIS%eucJP.so=./PCK%eucJP.so
+#MOVED#s none usr/lib/iconv/SJIS%jis.so=./PCK%jis.so
+#MOVED#s none usr/lib/iconv/eucJP%SJIS.so=./eucJP%PCK.so
+#MOVED#s none usr/lib/iconv/jis%SJIS.so=./jis%PCK.so
 
 #
 # SUNWjeuc
 #
-d none usr 0755 root sys
-d none usr/lib 0755 root bin
-d none usr/lib/locale 0755 root bin
+#MOVED#d none usr 0755 root sys
+#MOVED#d none usr/lib 0755 root bin
+#MOVED#d none usr/lib/locale 0755 root bin
 #d none usr/lib/localedef 0755 root bin
 #d none usr/lib/localedef/src 0755 root bin
-d none usr/lib/locale/ja 0755 root bin
-d none usr/lib/locale/ja/LC_CTYPE 0755 root bin
-s none usr/lib/locale/ja/LC_CTYPE/wdresolve.so=../../ja_JP.eucJP/LC_CTYPE/wdresolve.so
-f none usr/lib/locale/ja/ja.so.3 0755 root bin
-f none usr/lib/locale/ja/locale_description 0644 root bin
-f none usr/lib/locale/ja/locale_map 0644 root bin
-f none usr/lib/locale/ja/geo_map 0644 root bin
-d none usr/lib/locale/ja_JP.eucJP 0755 root bin
-d none usr/lib/locale/ja_JP.eucJP/LC_CTYPE 0755 root bin
-f none usr/lib/locale/ja_JP.eucJP/LC_CTYPE/wdresolve.so 0644 root bin
-f none usr/lib/locale/ja_JP.eucJP/ja_JP.eucJP.so.3 0755 root bin
-f none usr/lib/locale/ja_JP.eucJP/locale_description 0644 root bin
-f none usr/lib/locale/ja_JP.eucJP/locale_map 0644 root bin
-s none usr/lib/locale/ja_JP.eucJP/geo_map=../ja/geo_map
+#MOVED#d none usr/lib/locale/ja 0755 root bin
+#MOVED#d none usr/lib/locale/ja/LC_CTYPE 0755 root bin
+#MOVED#s none usr/lib/locale/ja/LC_CTYPE/wdresolve.so=../../ja_JP.eucJP/LC_CTYPE/wdresolve.so
+#MOVED#f none usr/lib/locale/ja/ja.so.3 0755 root bin
+#MOVED#f none usr/lib/locale/ja/locale_description 0644 root bin
+#MOVED#f none usr/lib/locale/ja/locale_map 0644 root bin
+#MOVED#f none usr/lib/locale/ja/geo_map 0644 root bin
+#MOVED#d none usr/lib/locale/ja_JP.eucJP 0755 root bin
+#MOVED#d none usr/lib/locale/ja_JP.eucJP/LC_CTYPE 0755 root bin
+#MOVED#f none usr/lib/locale/ja_JP.eucJP/LC_CTYPE/wdresolve.so 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.eucJP/ja_JP.eucJP.so.3 0755 root bin
+#MOVED#f none usr/lib/locale/ja_JP.eucJP/locale_description 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.eucJP/locale_map 0644 root bin
+#MOVED#s none usr/lib/locale/ja_JP.eucJP/geo_map=../ja/geo_map
 #d none usr/lib/localedef/src/ja 0755 root bin
 #s none usr/lib/localedef/src/ja/charmap.src=../ja_JP.eucJP/charmap.src
 #f none usr/lib/localedef/src/ja/localedef.src 0644 root bin
@@ -96,15 +96,15 @@ s none usr/lib/locale/ja_JP.eucJP/geo_map=../ja/geo_map
 #
 # SUNWjpck
 #
-d none usr 0755 root sys
-d none usr/kernel 0755 root sys
-d none usr/kernel/strmod 0755 root sys
-d none usr/lib 0755 root bin
-d none usr/lib/locale 0755 root bin
-d none usr/lib/locale/ja_JP.PCK 0755 root bin
-d none usr/lib/locale/ja_JP.PCK/LC_CTYPE 0755 root bin
-f none usr/lib/locale/ja_JP.PCK/LC_CTYPE/wdresolve.so 0644 root bin
-f none usr/lib/locale/ja_JP.PCK/LC_CTYPE/ldterm.dat 0555 root bin
+#MOVED#d none usr 0755 root sys
+#MOVED#d none usr/kernel 0755 root sys
+#MOVED#d none usr/kernel/strmod 0755 root sys
+#MOVED#d none usr/lib 0755 root bin
+#MOVED#d none usr/lib/locale 0755 root bin
+#MOVED#d none usr/lib/locale/ja_JP.PCK 0755 root bin
+#MOVED#d none usr/lib/locale/ja_JP.PCK/LC_CTYPE 0755 root bin
+#MOVED#f none usr/lib/locale/ja_JP.PCK/LC_CTYPE/wdresolve.so 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.PCK/LC_CTYPE/ldterm.dat 0555 root bin
 #d none usr/lib/localedef 0755 root bin
 #d none usr/lib/localedef/src 0755 root bin
 #d none usr/lib/localedef/src/ja_JP.PCK 0755 root bin
@@ -116,26 +116,26 @@ f none usr/lib/locale/ja_JP.PCK/LC_CTYPE/ldterm.dat 0555 root bin
 #d none usr/share/lib/setterm 0755 root bin
 #d none usr/share/lib/setterm/ja_JP.PCK 0755 root bin
 #f none usr/share/lib/setterm/ja_JP.PCK/conf.file 0555 root bin
-f none usr/lib/locale/ja_JP.PCK/ja_JP.PCK.so.3 0755 root bin
-f none usr/lib/locale/ja_JP.PCK/locale_description 0644 root bin
-f none usr/lib/locale/ja_JP.PCK/locale_map 0644 root bin
-f none usr/lib/locale/ja_JP.PCK/geo_map 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.PCK/ja_JP.PCK.so.3 0755 root bin
+#MOVED#f none usr/lib/locale/ja_JP.PCK/locale_description 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.PCK/locale_map 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.PCK/geo_map 0644 root bin
 
 #
 # SUNWju8
 #
-d none usr 0755 root sys
-d none usr/kernel 0755 root sys
-d none usr/kernel/strmod 0755 root sys
-d none usr/lib 0755 root bin
-d none usr/lib/locale 0755 root bin
-d none usr/lib/locale/ja_JP.UTF-8 0755 root bin
-d none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE 0755 root bin
-f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/wdresolve.so 0644 root bin
-f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/ldterm.dat 0555 root bin
-f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/LCL_DEF 0644 root bin
-d none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE 0755 root bin
-s none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE/ja_JP.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
+#MOVED#d none usr 0755 root sys
+#MOVED#d none usr/kernel 0755 root sys
+#MOVED#d none usr/kernel/strmod 0755 root sys
+#MOVED#d none usr/lib 0755 root bin
+#MOVED#d none usr/lib/locale 0755 root bin
+#MOVED#d none usr/lib/locale/ja_JP.UTF-8 0755 root bin
+#MOVED#d none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE 0755 root bin
+#MOVED#f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/wdresolve.so 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/ldterm.dat 0555 root bin
+#MOVED#f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/LCL_DEF 0644 root bin
+#MOVED#d none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE 0755 root bin
+#MOVED#s none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE/ja_JP.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
 #d none usr/lib/localedef 0755 root bin
 #d none usr/lib/localedef/src 0755 root bin
 #d none usr/lib/localedef/src/ja_JP.UTF-8 0755 root bin
@@ -147,27 +147,27 @@ s none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE/ja_JP.UTF-8.layout.so.1=../../common/
 #d none usr/share/lib/setterm 0755 root bin
 #d none usr/share/lib/setterm/ja_JP.UTF-8 0755 root bin
 #f none usr/share/lib/setterm/ja_JP.UTF-8/conf.file 0555 root bin
-f none usr/lib/locale/ja_JP.UTF-8/ja_JP.UTF-8.so.3 0755 root bin
-f none usr/lib/locale/ja_JP.UTF-8/locale_description 0644 root bin
-f none usr/lib/locale/ja_JP.UTF-8/locale_map 0644 root bin
-f none usr/lib/locale/ja_JP.UTF-8/geo_map 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.UTF-8/ja_JP.UTF-8.so.3 0755 root bin
+#MOVED#f none usr/lib/locale/ja_JP.UTF-8/locale_description 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.UTF-8/locale_map 0644 root bin
+#MOVED#f none usr/lib/locale/ja_JP.UTF-8/geo_map 0644 root bin
 
 #
 # SUNWjulcf
-d none usr 0755 root sys
-d none usr/lib 0755 root bin
-d none usr/lib/lp 0755 root lp
-d none usr/lib/lp/locale 0755 root lp
-d none usr/lib/lp/locale/ja_JP.UTF-8 0755 root lp
-d none usr/lib/lp/locale/ja_JP.UTF-8/mp 0755 root lp
-f none usr/lib/lp/locale/ja_JP.UTF-8/mp/mp.conf 0444 root lp
-f none usr/lib/lp/locale/ja_JP.UTF-8/mp/xu2UTF8.so 0555 root lp
-d none usr/lib/lp/locale/ja_JP.eucJP 0755 root lp
-d none usr/lib/lp/locale/ja_JP.eucJP/mp 0755 root lp
-f none usr/lib/lp/locale/ja_JP.eucJP/mp/mp.conf 0444 root lp
-f none usr/lib/lp/locale/ja_JP.eucJP/mp/xwc2eucJP.so 0555 root lp
-s none usr/lib/lp/locale/ja=./ja_JP.eucJP
-d none usr/lib/lp/locale/ja_JP.PCK 0755 root lp
-d none usr/lib/lp/locale/ja_JP.PCK/mp 0755 root lp
-f none usr/lib/lp/locale/ja_JP.PCK/mp/mp.conf 0444 root lp
-f none usr/lib/lp/locale/ja_JP.PCK/mp/xwc2PCK.so 0555 root lp
+#MOVED#d none usr 0755 root sys
+#MOVED#d none usr/lib 0755 root bin
+#MOVED#d none usr/lib/lp 0755 root lp
+#MOVED#d none usr/lib/lp/locale 0755 root lp
+#MOVED#d none usr/lib/lp/locale/ja_JP.UTF-8 0755 root lp
+#MOVED#d none usr/lib/lp/locale/ja_JP.UTF-8/mp 0755 root lp
+#MOVED#f none usr/lib/lp/locale/ja_JP.UTF-8/mp/mp.conf 0444 root lp
+#MOVED#f none usr/lib/lp/locale/ja_JP.UTF-8/mp/xu2UTF8.so 0555 root lp
+#MOVED#d none usr/lib/lp/locale/ja_JP.eucJP 0755 root lp
+#MOVED#d none usr/lib/lp/locale/ja_JP.eucJP/mp 0755 root lp
+#MOVED#f none usr/lib/lp/locale/ja_JP.eucJP/mp/mp.conf 0444 root lp
+#MOVED#f none usr/lib/lp/locale/ja_JP.eucJP/mp/xwc2eucJP.so 0555 root lp
+#MOVED#s none usr/lib/lp/locale/ja=./ja_JP.eucJP
+#MOVED#d none usr/lib/lp/locale/ja_JP.PCK 0755 root lp
+#MOVED#d none usr/lib/lp/locale/ja_JP.PCK/mp 0755 root lp
+#MOVED#f none usr/lib/lp/locale/ja_JP.PCK/mp/mp.conf 0444 root lp
+#MOVED#f none usr/lib/lp/locale/ja_JP.PCK/mp/xwc2PCK.so 0555 root lp

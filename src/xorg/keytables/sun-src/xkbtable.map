@@ -220,4 +220,22 @@
 6	31	-	sun_type6_euro_usb	tr	# TurkeyQ6_usb
 6	35	-	sun_type6_euro_usb	tr_f	# TurkeyF6_usb
 6	271	-	sun_type6_jp_usb	jp	# Japan6_usb
+6	264	-	sun_type6_euro_usb	al	# Albanian6_usb
+6	261	-	sun_type6_euro_usb	by	# Belarusian6_usb
+6	260	-	sun_type6_euro_usb	bg	# Bulgarian6_usb
+6	259	-	sun_type6_euro_usb	hr	# Croatian6_usb
+6	5	-	sun_type6_euro_usb	cz	# Czech6_usb
+6	4	-	sun_type6_euro_usb	ca_enhanced	# French-Canadian6_usb
+6	12	-	sun_type6_euro_usb	hu	# Hungarian6_usb
+6	10	-	sun_type6_euro_usb	el	# Greek6_usb
+6	17	-	sun_type6_usb		la	# Latin-American6_usb
+6	265	-	sun_type6_euro_usb	lt	# Lithuanian6_usb
+6	266	-	sun_type6_euro_usb	lv	# Latvian6_usb
+6	267	-	sun_type6_euro_usb	mk	# Macedonian6_usb
+6	263	-	sun_type6_euro_usb	mt	# Malta_UK6_usb
+6	262	-	sun_type6_euro_usb	mt_us	# Malta_US6_usb
+6	21	-	sun_type6_euro_usb	pl	# Polish6_usb
+6	257	-	sun_type6_euro_usb	sr	# Serbia-And-Montenegro6_usb
+6	256	-	sun_type6_euro_usb	si	# Slovenian6_usb
+6	24	-	sun_type6_euro_usb	sk	# Slovakian6_usb
 
