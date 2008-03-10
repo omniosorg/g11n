@@ -26,11 +26,9 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/sv/amd64 0755 root bin
-d none usr/lib/locale/sv/amd64 0755 root bin
 s none usr/lib/locale/sv/amd64/sv.so.3=../../sv_SE.ISO8859-1/amd64/sv_SE.ISO8859-1.so.3
 d none usr/lib/locale/sv.ISO8859-15/amd64 0755 root bin
 s none usr/lib/locale/sv.ISO8859-15/amd64/sv.ISO8859-15.so.3=../../sv_SE.ISO8859-15/amd64/sv_SE.ISO8859-15.so.3
-d none usr/lib/locale/sv_SE/amd64 0755 root bin
 d none usr/lib/locale/sv_SE/amd64 0755 root bin
 s none usr/lib/locale/sv_SE/amd64/sv_SE.so.3=../../sv_SE.ISO8859-1/amd64/sv_SE.ISO8859-1.so.3
 d none usr/lib/locale/sv_SE.ISO8859-15/amd64 0755 root bin

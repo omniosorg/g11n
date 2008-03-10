@@ -27,7 +27,6 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/no 0755 root bin
 d none usr/lib/locale/no_NO 0755 root bin
-d none usr/lib/locale/no_NO 0755 root bin
 f none usr/lib/locale/no_NO/geo_map 0644 root bin
 d none usr/lib/locale/no_NO.ISO8859-1@bokmal 0755 root bin
 d none usr/lib/locale/no_NO.ISO8859-1@bokmal/LC_COLLATE 0755 root bin

@@ -27,7 +27,6 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/lv 0755 root bin
 d none usr/lib/locale/lv_LV 0755 root bin
-d none usr/lib/locale/lv_LV 0755 root bin
 f none usr/lib/locale/lv_LV/geo_map 0644 root bin
 d none usr/lib/locale/lv_LV.ISO8859-13 0755 root bin
 d none usr/lib/locale/lv_LV.ISO8859-13/LC_COLLATE 0755 root bin

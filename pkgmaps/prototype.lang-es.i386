@@ -72,7 +72,6 @@ d none usr/lib/locale/es_SV.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_SV.UTF-8/amd64/es_SV.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/es_SV.UTF-8/amd64/methods_es_SV.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es.UTF-8/amd64 0755 root bin
-d none usr/lib/locale/es.UTF-8/amd64 0755 root bin
 s none usr/lib/locale/es.UTF-8/amd64/es.UTF-8.so.3=../../es_ES.UTF-8/amd64/es_ES.UTF-8.so.3
 d none usr/lib/locale/es_UY.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_UY.UTF-8/amd64/es_UY.UTF-8.so.3 0555 root bin

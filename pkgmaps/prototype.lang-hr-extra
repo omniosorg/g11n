@@ -26,7 +26,6 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/hr_HR 0755 root bin
-d none usr/lib/locale/hr_HR 0755 root bin
 f none usr/lib/locale/hr_HR/geo_map 0644 root bin
 s none usr/lib/locale/hr_HR/hr_HR.so.3=../hr_HR.ISO8859-2/hr_HR.ISO8859-2.so.3
 d none usr/lib/locale/hr_HR.ISO8859-2 0755 root bin

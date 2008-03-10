@@ -27,7 +27,6 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 s none usr/lib/locale/nr/nr.so.3=../sh_BA.ISO8859-2@bosnia/sh_BA.ISO8859-2@bosnia.so.3
 d none usr/lib/locale/sh_BA 0755 root bin
-d none usr/lib/locale/sh_BA 0755 root bin
 f none usr/lib/locale/sh_BA/geo_map 0644 root bin
 d none usr/lib/locale/sh_BA.ISO8859-2@bosnia 0755 root bin
 d none usr/lib/locale/sh_BA.ISO8859-2@bosnia/LC_COLLATE 0755 root bin

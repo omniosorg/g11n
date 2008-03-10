@@ -27,7 +27,6 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/nl 0755 root bin
 d none usr/lib/locale/nl_BE 0755 root bin
-d none usr/lib/locale/nl_BE 0755 root bin
 f none usr/lib/locale/nl_BE/geo_map 0644 root bin
 d none usr/lib/locale/nl_BE.ISO8859-1 0755 root bin
 d none usr/lib/locale/nl_BE.ISO8859-15 0755 root bin
@@ -57,7 +56,6 @@ s none usr/lib/locale/nl_BE/locale_description=../nl_BE.ISO8859-1/locale_descrip
 s none usr/lib/locale/nl_BE/nl_BE.so.3=../nl_BE.ISO8859-1/nl_BE.ISO8859-1.so.3
 d none usr/lib/locale/nl.ISO8859-15 0755 root bin
 s none usr/lib/locale/nl.ISO8859-15/nl.ISO8859-15.so.3=../nl_NL.ISO8859-15/nl_NL.ISO8859-15.so.3
-d none usr/lib/locale/nl_NL 0755 root bin
 d none usr/lib/locale/nl_NL 0755 root bin
 f none usr/lib/locale/nl_NL/geo_map 0644 root bin
 d none usr/lib/locale/nl_NL.ISO8859-1 0755 root bin

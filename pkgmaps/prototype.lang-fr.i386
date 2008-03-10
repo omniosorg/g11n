@@ -49,5 +49,4 @@ d none usr/lib/locale/fr_LU.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/fr_LU.UTF-8/amd64/fr_LU.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/fr_LU.UTF-8/amd64/methods_fr_LU.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/fr.UTF-8/amd64 0755 root bin
-d none usr/lib/locale/fr.UTF-8/amd64 0755 root bin
 s none usr/lib/locale/fr.UTF-8/amd64/fr.UTF-8.so.3=../../fr_FR.UTF-8/amd64/fr_FR.UTF-8.so.3

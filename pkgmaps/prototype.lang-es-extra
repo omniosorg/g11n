@@ -26,11 +26,6 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/es 0755 root bin
-d none usr/lib/locale/es 0755 root bin
-d none usr/lib/locale/es 0755 root bin
-d none usr/lib/locale/es 0755 root bin
-d none usr/lib/locale/es 0755 root bin
-d none usr/lib/locale/es_AR 0755 root bin
 d none usr/lib/locale/es_AR 0755 root bin
 s none usr/lib/locale/es_AR/es_AR.so.3=../es_AR.ISO8859-1/es_AR.ISO8859-1.so.3
 f none usr/lib/locale/es_AR/geo_map 0644 root bin
@@ -47,7 +42,6 @@ f none usr/lib/locale/es_AR.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_AR.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_AR/locale_description=../es_AR.ISO8859-1/locale_description
 d none usr/lib/locale/es_BO 0755 root bin
-d none usr/lib/locale/es_BO 0755 root bin
 s none usr/lib/locale/es_BO/es_BO.so.3=../es_BO.ISO8859-1/es_BO.ISO8859-1.so.3
 f none usr/lib/locale/es_BO/geo_map 0644 root bin
 d none usr/lib/locale/es_BO.ISO8859-1 0755 root bin
@@ -62,7 +56,6 @@ s none usr/lib/locale/es_BO.ISO8859-1/LC_TIME=../es/LC_TIME
 f none usr/lib/locale/es_BO.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_BO.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_BO/locale_description=../es_BO.ISO8859-1/locale_description
-d none usr/lib/locale/es_CL 0755 root bin
 d none usr/lib/locale/es_CL 0755 root bin
 s none usr/lib/locale/es_CL/es_CL.so.3=../es_CL.ISO8859-1/es_CL.ISO8859-1.so.3
 f none usr/lib/locale/es_CL/geo_map 0644 root bin
@@ -79,7 +72,6 @@ f none usr/lib/locale/es_CL.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_CL.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_CL/locale_description=../es_CL.ISO8859-1/locale_description
 d none usr/lib/locale/es_CO 0755 root bin
-d none usr/lib/locale/es_CO 0755 root bin
 s none usr/lib/locale/es_CO/es_CO.so.3=../es_CO.ISO8859-1/es_CO.ISO8859-1.so.3
 f none usr/lib/locale/es_CO/geo_map 0644 root bin
 d none usr/lib/locale/es_CO.ISO8859-1 0755 root bin
@@ -94,7 +86,6 @@ s none usr/lib/locale/es_CO.ISO8859-1/LC_TIME=../es/LC_TIME
 f none usr/lib/locale/es_CO.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_CO.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_CO/locale_description=../es_CO.ISO8859-1/locale_description
-d none usr/lib/locale/es_CR 0755 root bin
 d none usr/lib/locale/es_CR 0755 root bin
 s none usr/lib/locale/es_CR/es_CR.so.3=../es_CR.ISO8859-1/es_CR.ISO8859-1.so.3
 f none usr/lib/locale/es_CR/geo_map 0644 root bin
@@ -111,7 +102,6 @@ f none usr/lib/locale/es_CR.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_CR.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_CR/locale_description=../es_CR.ISO8859-1/locale_description
 d none usr/lib/locale/es_EC 0755 root bin
-d none usr/lib/locale/es_EC 0755 root bin
 s none usr/lib/locale/es_EC/es_EC.so.3=../es_EC.ISO8859-1/es_EC.ISO8859-1.so.3
 f none usr/lib/locale/es_EC/geo_map 0644 root bin
 d none usr/lib/locale/es_EC.ISO8859-1 0755 root bin
@@ -126,7 +116,6 @@ s none usr/lib/locale/es_EC.ISO8859-1/LC_TIME=../es/LC_TIME
 f none usr/lib/locale/es_EC.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_EC.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_EC/locale_description=../es_EC.ISO8859-1/locale_description
-d none usr/lib/locale/es_ES 0755 root bin
 d none usr/lib/locale/es_ES 0755 root bin
 s none usr/lib/locale/es_ES/es_ES.so.3=../es_ES.ISO8859-1/es_ES.ISO8859-1.so.3
 f none usr/lib/locale/es_ES/geo_map 0644 root bin
@@ -161,7 +150,6 @@ s none usr/lib/locale/es_ES.UTF-8@euro/es_ES.UTF-8@euro.so.3=../es_ES.UTF-8/es_E
 s none usr/lib/locale/es_ES.UTF-8@euro/methods_es_ES.UTF-8@euro.so.3=../common/methods_unicode.so.3
 f none usr/lib/locale/es/geo_map 0644 root bin
 d none usr/lib/locale/es_GT 0755 root bin
-d none usr/lib/locale/es_GT 0755 root bin
 s none usr/lib/locale/es_GT/es_GT.so.3=../es_GT.ISO8859-1/es_GT.ISO8859-1.so.3
 f none usr/lib/locale/es_GT/geo_map 0644 root bin
 d none usr/lib/locale/es_GT.ISO8859-1 0755 root bin
@@ -178,11 +166,7 @@ f none usr/lib/locale/es_GT.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_GT/locale_description=../es_GT.ISO8859-1/locale_description
 d none usr/lib/locale/es.ISO8859-15 0755 root bin
 d none usr/lib/locale/es/LC_MESSAGES 0755 root bin
-d none usr/lib/locale/es/LC_MESSAGES 0755 root bin
-d none usr/lib/locale/es/LC_MESSAGES 0755 root bin
-d none usr/lib/locale/es/LC_MESSAGES 0755 root bin
 f none usr/lib/locale/es/locale_description 0644 root bin
-d none usr/lib/locale/es_MX 0755 root bin
 d none usr/lib/locale/es_MX 0755 root bin
 s none usr/lib/locale/es_MX/es_MX.so.3=../es_MX.ISO8859-1/es_MX.ISO8859-1.so.3
 f none usr/lib/locale/es_MX/geo_map 0644 root bin
@@ -199,7 +183,6 @@ f none usr/lib/locale/es_MX.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_MX.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_MX/locale_description=../es_MX.ISO8859-1/locale_description
 d none usr/lib/locale/es_NI 0755 root bin
-d none usr/lib/locale/es_NI 0755 root bin
 s none usr/lib/locale/es_NI/es_NI.so.3=../es_NI.ISO8859-1/es_NI.ISO8859-1.so.3
 f none usr/lib/locale/es_NI/geo_map 0644 root bin
 d none usr/lib/locale/es_NI.ISO8859-1 0755 root bin
@@ -214,7 +197,6 @@ s none usr/lib/locale/es_NI.ISO8859-1/LC_TIME=../es/LC_TIME
 f none usr/lib/locale/es_NI.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_NI.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_NI/locale_description=../es_NI.ISO8859-1/locale_description
-d none usr/lib/locale/es_PA 0755 root bin
 d none usr/lib/locale/es_PA 0755 root bin
 s none usr/lib/locale/es_PA/es_PA.so.3=../es_PA.ISO8859-1/es_PA.ISO8859-1.so.3
 f none usr/lib/locale/es_PA/geo_map 0644 root bin
@@ -231,7 +213,6 @@ f none usr/lib/locale/es_PA.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_PA.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_PA/locale_description=../es_PA.ISO8859-1/locale_description
 d none usr/lib/locale/es_PE 0755 root bin
-d none usr/lib/locale/es_PE 0755 root bin
 s none usr/lib/locale/es_PE/es_PE.so.3=../es_PE.ISO8859-1/es_PE.ISO8859-1.so.3
 f none usr/lib/locale/es_PE/geo_map 0644 root bin
 d none usr/lib/locale/es_PE.ISO8859-1 0755 root bin
@@ -246,7 +227,6 @@ s none usr/lib/locale/es_PE.ISO8859-1/LC_TIME=../es/LC_TIME
 f none usr/lib/locale/es_PE.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_PE.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_PE/locale_description=../es_PE.ISO8859-1/locale_description
-d none usr/lib/locale/es_PY 0755 root bin
 d none usr/lib/locale/es_PY 0755 root bin
 s none usr/lib/locale/es_PY/es_PY.so.3=../es_PY.ISO8859-1/es_PY.ISO8859-1.so.3
 f none usr/lib/locale/es_PY/geo_map 0644 root bin
@@ -263,7 +243,6 @@ f none usr/lib/locale/es_PY.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_PY.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_PY/locale_description=../es_PY.ISO8859-1/locale_description
 d none usr/lib/locale/es_SV 0755 root bin
-d none usr/lib/locale/es_SV 0755 root bin
 s none usr/lib/locale/es_SV/es_SV.so.3=../es_SV.ISO8859-1/es_SV.ISO8859-1.so.3
 f none usr/lib/locale/es_SV/geo_map 0644 root bin
 d none usr/lib/locale/es_SV.ISO8859-1 0755 root bin
@@ -279,7 +258,6 @@ f none usr/lib/locale/es_SV.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_SV.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_SV/locale_description=../es_SV.ISO8859-1/locale_description
 d none usr/lib/locale/es_UY 0755 root bin
-d none usr/lib/locale/es_UY 0755 root bin
 s none usr/lib/locale/es_UY/es_UY.so.3=../es_UY.ISO8859-1/es_UY.ISO8859-1.so.3
 f none usr/lib/locale/es_UY/geo_map 0644 root bin
 d none usr/lib/locale/es_UY.ISO8859-1 0755 root bin
@@ -294,7 +272,6 @@ s none usr/lib/locale/es_UY.ISO8859-1/LC_TIME=../es/LC_TIME
 f none usr/lib/locale/es_UY.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/es_UY.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/es_UY/locale_description=../es_UY.ISO8859-1/locale_description
-d none usr/lib/locale/es_VE 0755 root bin
 d none usr/lib/locale/es_VE 0755 root bin
 s none usr/lib/locale/es_VE/es_VE.so.3=../es_VE.ISO8859-1/es_VE.ISO8859-1.so.3
 f none usr/lib/locale/es_VE/geo_map 0644 root bin

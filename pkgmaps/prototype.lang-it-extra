@@ -26,11 +26,9 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/it 0755 root bin
-d none usr/lib/locale/it 0755 root bin
 f none usr/lib/locale/it/geo_map 0644 root bin
 d none usr/lib/locale/it.ISO8859-15 0755 root bin
 s none usr/lib/locale/it.ISO8859-15/it.ISO8859-15.so.3=../it_IT.ISO8859-15/it_IT.ISO8859-15.so.3
-d none usr/lib/locale/it_IT 0755 root bin
 d none usr/lib/locale/it_IT 0755 root bin
 f none usr/lib/locale/it_IT/geo_map 0644 root bin
 d none usr/lib/locale/it_IT.ISO8859-1 0755 root bin

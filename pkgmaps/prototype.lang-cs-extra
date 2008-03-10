@@ -26,7 +26,6 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/cs_CZ 0755 root bin
-d none usr/lib/locale/cs_CZ 0755 root bin
 s none usr/lib/locale/cs_CZ/cs_CZ.so.3=../cs_CZ.ISO8859-2/cs_CZ.ISO8859-2.so.3
 f none usr/lib/locale/cs_CZ/geo_map 0644 root bin
 d none usr/lib/locale/cs_CZ.ISO8859-2 0755 root bin

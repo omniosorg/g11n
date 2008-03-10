@@ -26,7 +26,6 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/bg_BG 0755 root bin
-d none usr/lib/locale/bg_BG 0755 root bin
 s none usr/lib/locale/bg_BG/bg_BG.so.3=../bg_BG.ISO8859-5/bg_BG.ISO8859-5.so.3
 f none usr/lib/locale/bg_BG/geo_map 0644 root bin
 d none usr/lib/locale/bg_BG.ISO8859-5 0755 root bin

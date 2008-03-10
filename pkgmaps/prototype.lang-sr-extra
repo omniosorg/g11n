@@ -30,7 +30,6 @@ f none usr/lib/locale/sr_CS/geo_map 0644 root bin
 d none usr/lib/locale/sr_SP 0755 root bin
 s none usr/lib/locale/sr_SP/sr_SP.so.3=../sr_YU.ISO8859-5/sr_YU.ISO8859-5.so.3
 d none usr/lib/locale/sr_YU 0755 root bin
-d none usr/lib/locale/sr_YU 0755 root bin
 f none usr/lib/locale/sr_YU/geo_map 0644 root bin
 d none usr/lib/locale/sr_YU.ISO8859-5 0755 root bin
 d none usr/lib/locale/sr_YU.ISO8859-5/LC_COLLATE 0755 root bin

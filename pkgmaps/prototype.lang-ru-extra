@@ -29,7 +29,6 @@ d none usr/lib/locale/ru 0755 root bin
 d none usr/lib/locale/ru.koi8-r 0755 root bin
 s none usr/lib/locale/ru.koi8-r/ru.koi8-r.so.3=../ru_RU.KOI8-R/ru_RU.KOI8-R.so.3
 d none usr/lib/locale/ru_RU 0755 root bin
-d none usr/lib/locale/ru_RU 0755 root bin
 d none usr/lib/locale/ru_RU.ANSI1251 0755 root bin
 d none usr/lib/locale/ru_RU.ANSI1251/LC_COLLATE 0755 root bin
 d none usr/lib/locale/ru_RU.ANSI1251/LC_CTYPE 0755 root bin

@@ -25,6 +25,13 @@
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
+d none usr/lib/locale/pt_BR.UTF-8/LC_CTYPE/sparcv9 0755 root bin
+s none usr/lib/locale/pt_BR.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
+d none usr/lib/locale/pt_BR.UTF-8/LO_LTYPE/sparcv9  0755 root bin
+s none usr/lib/locale/pt_BR.UTF-8/LO_LTYPE/sparcv9/pt_BR.UTF-8.layout.so.1=../../../common/LO_LTYPE/umle.layout.so.1
+d none usr/lib/locale/pt_BR.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/pt_BR.UTF-8/sparcv9/methods_pt_BR.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+f none usr/lib/locale/pt_BR.UTF-8/sparcv9/pt_BR.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/pt_PT.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/pt_PT.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/pt_PT.UTF-8/LO_LTYPE/sparcv9 0755 root bin

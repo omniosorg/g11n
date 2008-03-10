@@ -28,7 +28,6 @@ d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/el 0755 root bin
 s none usr/lib/locale/el/el.so.3=../el_GR.ISO8859-7/el_GR.ISO8859-7.so.3
 d none usr/lib/locale/el_GR 0755 root bin
-d none usr/lib/locale/el_GR 0755 root bin
 s none usr/lib/locale/el_GR/el_GR.so.3=../el_GR.ISO8859-7/el_GR.ISO8859-7.so.3
 f none usr/lib/locale/el_GR/geo_map 0644 root bin
 d none usr/lib/locale/el_GR.ISO8859-7 0755 root bin

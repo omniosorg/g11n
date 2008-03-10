@@ -54,13 +54,11 @@ d none usr/lib/locale/fr_CH.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/fr_CH.UTF-8/sparcv9/fr_CH.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/fr_CH.UTF-8/sparcv9/methods_fr_CH.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/fr_LU.UTF-8/LC_CTYPE/sparcv9 0755 root bin
-d none usr/lib/locale/fr_LU.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/fr_LU.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/fr_LU.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/fr_LU.UTF-8/LO_LTYPE/sparcv9/fr_LU.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/fr_LU.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/fr_LU.UTF-8/sparcv9/fr_LU.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/fr_LU.UTF-8/sparcv9/methods_fr_LU.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
-d none usr/lib/locale/fr.UTF-8/sparcv9 0755 root bin
 d none usr/lib/locale/fr.UTF-8/sparcv9 0755 root bin
 s none usr/lib/locale/fr.UTF-8/sparcv9/fr.UTF-8.so.3=../../fr_FR.UTF-8/sparcv9/fr_FR.UTF-8.so.3

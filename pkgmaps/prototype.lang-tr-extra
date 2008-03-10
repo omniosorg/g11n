@@ -27,7 +27,6 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/tr 0755 root bin
 d none usr/lib/locale/tr_TR 0755 root bin
-d none usr/lib/locale/tr_TR 0755 root bin
 f none usr/lib/locale/tr_TR/geo_map 0644 root bin
 d none usr/lib/locale/tr_TR.ISO8859-9 0755 root bin
 d none usr/lib/locale/tr_TR.ISO8859-9/LC_COLLATE 0755 root bin

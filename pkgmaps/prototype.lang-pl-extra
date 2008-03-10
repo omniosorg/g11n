@@ -27,7 +27,6 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/pl 0755 root bin
 d none usr/lib/locale/pl_PL 0755 root bin
-d none usr/lib/locale/pl_PL 0755 root bin
 f none usr/lib/locale/pl_PL/geo_map 0644 root bin
 d none usr/lib/locale/pl_PL.ISO8859-2 0755 root bin
 d none usr/lib/locale/pl_PL.ISO8859-2/LC_COLLATE 0755 root bin

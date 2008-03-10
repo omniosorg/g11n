@@ -26,8 +26,6 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/de 0755 root bin
-d none usr/lib/locale/de 0755 root bin
-d none usr/lib/locale/de_AT 0755 root bin
 d none usr/lib/locale/de_AT 0755 root bin
 s none usr/lib/locale/de_AT/de_AT.so.3=../de_AT.ISO8859-1/de_AT.ISO8859-1.so.3
 f none usr/lib/locale/de_AT/geo_map 0644 root bin
@@ -56,7 +54,6 @@ s none usr/lib/locale/de_AT.ISO8859-1/LC_TIME=../de/LC_TIME
 f none usr/lib/locale/de_AT.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/de_AT.ISO8859-1/locale_map 0644 root bin
 s none usr/lib/locale/de_AT/locale_description=../de_AT.ISO8859-1/locale_description
-d none usr/lib/locale/de_DE 0755 root bin
 d none usr/lib/locale/de_DE 0755 root bin
 s none usr/lib/locale/de_DE/de_DE.so.3=../de_DE.ISO8859-1/de_DE.ISO8859-1.so.3
 f none usr/lib/locale/de_DE/geo_map 0644 root bin
@@ -90,7 +87,6 @@ d none usr/lib/locale/de_DE.UTF-8@euro 0755 root bin
 s none usr/lib/locale/de_DE.UTF-8@euro/de_DE.UTF-8@euro.so.3=../de_DE.UTF-8/de_DE.UTF-8.so.3
 s none usr/lib/locale/de_DE.UTF-8@euro/methods_de_DE.UTF-8@euro.so.3=../common/methods_unicode.so.3
 f none usr/lib/locale/de/geo_map 0644 root bin
-d none usr/lib/locale/de_CH 0755 root bin
 d none usr/lib/locale/de_CH 0755 root bin
 s none usr/lib/locale/de_CH/de_CH.so.3=../de_CH.ISO8859-1/de_CH.ISO8859-1.so.3
 f none usr/lib/locale/de_CH/geo_map 0644 root bin

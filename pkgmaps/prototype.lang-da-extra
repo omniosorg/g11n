@@ -28,7 +28,6 @@ d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/da 0755 root bin
 s none usr/lib/locale/da/da.so.3=../da_DK.ISO8859-1/da_DK.ISO8859-1.so.3
 d none usr/lib/locale/da_DK 0755 root bin
-d none usr/lib/locale/da_DK 0755 root bin
 s none usr/lib/locale/da_DK/da_DK.so.3=../da_DK.ISO8859-1/da_DK.ISO8859-1.so.3
 f none usr/lib/locale/da_DK/geo_map 0644 root bin
 d none usr/lib/locale/da_DK.ISO8859-1 0755 root bin

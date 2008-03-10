@@ -27,7 +27,6 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/hu 0755 root bin
 d none usr/lib/locale/hu_HU 0755 root bin
-d none usr/lib/locale/hu_HU 0755 root bin
 f none usr/lib/locale/hu_HU/geo_map 0644 root bin
 s none usr/lib/locale/hu_HU/hu_HU.so.3=../hu_HU.ISO8859-2/hu_HU.ISO8859-2.so.3
 d none usr/lib/locale/hu_HU.ISO8859-2 0755 root bin
