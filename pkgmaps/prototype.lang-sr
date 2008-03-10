@@ -25,8 +25,6 @@
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
-s none usr/lib/locale/sr_CS/locale_description=../sr_CS.UTF-8/locale_description
-s none usr/lib/locale/sr_CS/sr_CS.so.3=../sr_CS.UTF-8/sr_CS.UTF-8.so.3
 d none usr/lib/locale/sr_CS.UTF-8 0755 root bin
 d none usr/lib/locale/sr_CS.UTF-8/LC_COLLATE 0755 root bin
 d none usr/lib/locale/sr_CS.UTF-8/LC_CTYPE 0755 root bin

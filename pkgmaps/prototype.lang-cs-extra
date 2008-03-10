@@ -56,4 +56,5 @@ f none usr/lib/locale/cs_CZ.UTF-8@euro/locale_map 0644 root bin
 d none usr/lib/locale/cs_CZ.UTF-8@euro/LO_LTYPE/ 0755 root bin
 s none usr/lib/locale/cs_CZ.UTF-8@euro/LO_LTYPE/cs_CZ.UTF-8@euro.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
 s none usr/lib/locale/cs_CZ.UTF-8@euro/methods_cs_CZ.UTF-8@euro.so.3=../common/methods_unicode.so.3
-s none usr/lib/locale/cz/cz.so.3=../cs_CZ.ISO8859-2/cs_CZ.ISO8859-2.so.3
+d none usr/lib/locale/cs 0755 root bin
+s none usr/lib/locale/cs/cs.so.3=../cs_CZ.ISO8859-2/cs_CZ.ISO8859-2.so.3
