@@ -30,7 +30,9 @@ include $(SRC)/Makefile.master
 
 LOCALE:sh = basename `pwd`
 
-FILES = CT_Encoding OWfontpath XI18N_OBJS XLC_LOCALE 
+#FILES = CT_Encoding OWfontpath XI18N_OBJS XLC_LOCALE 
+#remove CT_Encoding XI18N_OBJS XLC_LOCALE for Xorg
+FILES = OWfontpath 
 
 TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 

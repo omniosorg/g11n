@@ -34,7 +34,9 @@ TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/common
 
 TARGETDIRS = $(TARGETDIR)
 
-SUBDIRS = imsscript conv_tables
+#SUBDIRS = imsscript conv_tables
+#remove conv_tables for using Xorg
+SUBDIRS = imsscript 
 
 all:=		TARGET= all
 install :=	TARGET= install
