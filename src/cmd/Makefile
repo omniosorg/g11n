@@ -24,7 +24,7 @@
 #ident	"@(#)Makefile	1.0	06/03/07	SMI"
 #
 
-SUBDIRS = auto_ef fsexam localeadm mp xuctblgen
+SUBDIRS = auto_ef fsexam localeadm mp 
 
 all:=		TARGET= all
 install :=	TARGET= install
