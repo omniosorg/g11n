@@ -33,13 +33,13 @@ include $(SRC)/Makefile.master
 LOCALE:sh = basename `pwd`
 
 MOD_FILES = OWfontpath
-FILES = Compose CT_Encoding XI18N_OBJS XLC_LOCALE $(MOD_FILES)
+FILES = $(MOD_FILES)
 
 TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 
 TARGETDIRS = $(TARGETDIR)
 
-SUBDIRS = app-defaults conv_tables
+SUBDIRS = app-defaults 
 
 all:=		TARGET= all
 install :=	TARGET= install

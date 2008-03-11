@@ -33,7 +33,7 @@ include $(SRC)/Makefile.master
 
 LOCALE:sh = basename `pwd`
 
-FILES = CT_Encoding Compose OWfontpath XI18N_OBJS XLC_LOCALE 
+FILES = OWfontpath  
 
 TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 

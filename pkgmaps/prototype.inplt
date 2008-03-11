@@ -26,42 +26,21 @@ d none openwin 0755 root bin
 d none openwin/lib 0755 root bin
 d none openwin/lib/locale 0755 root bin
 d none openwin/lib/locale/hi_IN.UTF-8 0755 root bin
-f none openwin/lib/locale/hi_IN.UTF-8/CT_Encoding 0644 root bin 
-f none openwin/lib/locale/hi_IN.UTF-8/Compose 0644 root bin 
 f none openwin/lib/locale/hi_IN.UTF-8/OWfontpath 0644 root bin 
-f none openwin/lib/locale/hi_IN.UTF-8/XI18N_OBJS 0644 root bin 
-f none openwin/lib/locale/hi_IN.UTF-8/XLC_LOCALE 0644 root bin 
-d none openwin/lib/locale/hi_IN.UTF-8/conv_tables 0755 root bin
-f none openwin/lib/locale/hi_IN.UTF-8/conv_tables/U32_TO_CS_0 0644 root bin
-f none openwin/lib/locale/hi_IN.UTF-8/conv_tables/U32_TO_CS_1 0644 root bin
-f none openwin/lib/locale/hi_IN.UTF-8/conv_tables/U32_TO_CS_14 0644 root bin
-f none openwin/lib/locale/hi_IN.UTF-8/conv_tables/U32_TO_CS_15 0644 root bin
-f none openwin/lib/locale/hi_IN.UTF-8/conv_tables/U32_TO_CS_16 0644 root bin
-f none openwin/lib/locale/hi_IN.UTF-8/conv_tables/U32_TO_CS_2 0644 root bin
 d none openwin/lib/locale/hi_IN.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/hi_IN.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 d none openwin/share/locale/hi_IN.UTF-8 0755 root bin
 
 # new tamil locale
 d none openwin/lib/locale/ta_IN.UTF-8 0755 root bin
-f none openwin/lib/locale/ta_IN.UTF-8/CT_Encoding 0644 root bin 
-f none openwin/lib/locale/ta_IN.UTF-8/Compose 0644 root bin 
 f none openwin/lib/locale/ta_IN.UTF-8/OWfontpath 0644 root bin 
-f none openwin/lib/locale/ta_IN.UTF-8/XI18N_OBJS 0644 root bin
-f none openwin/lib/locale/ta_IN.UTF-8/XLC_LOCALE 0644 root bin 
-s none openwin/lib/locale/ta_IN.UTF-8/conv_tables=../hi_IN.UTF-8/conv_tables
 d none openwin/lib/locale/ta_IN.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/ta_IN.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 d none openwin/share/locale/ta_IN.UTF-8 0755 root bin
 
 # new telugu locale
 d none openwin/lib/locale/te_IN.UTF-8 0755 root bin
-f none openwin/lib/locale/te_IN.UTF-8/CT_Encoding 0644 root bin 
-f none openwin/lib/locale/te_IN.UTF-8/Compose 0644 root bin 
 f none openwin/lib/locale/te_IN.UTF-8/OWfontpath 0644 root bin 
-f none openwin/lib/locale/te_IN.UTF-8/XI18N_OBJS 0644 root bin 
-f none openwin/lib/locale/te_IN.UTF-8/XLC_LOCALE 0644 root bin 
-s none openwin/lib/locale/te_IN.UTF-8/conv_tables=../hi_IN.UTF-8/conv_tables
 d none openwin/lib/locale/te_IN.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/te_IN.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 d none openwin/share/locale/te_IN.UTF-8 0755 root bin

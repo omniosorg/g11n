@@ -33,13 +33,12 @@ include $(SRC)/Makefile.master
 
 LOCALE:sh = basename `pwd`
 
-FILES = CT_Encoding Compose OWfontpath XI18N_OBJS XLC_LOCALE 
+FILES = OWfontpath 
 
 TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 
 TARGETDIRS = $(TARGETDIR)
 
-SUBDIRS = fonts conv_tables
 
 all:=		TARGET= all
 install :=	TARGET= install
@@ -47,11 +46,11 @@ clean :=	TARGET= clean
 objclean := 	TARGET= objclean
 clobber :=	TARGET= clobber
 
-all: $(TARGETDIRS) $(SUBDIRS)
+all: $(TARGETDIRS) 
 
 include $(SRC)/src/Makefile.targ
 
-install: $(SUBDIRS) all $(FILES.obj) 
+install: all $(FILES.obj) 
 
 clean: objclean $(SUBDIRS)
 	$(RM) -r $(TARGETDIR)
