@@ -38,14 +38,9 @@ LOCALE:sh = basename `pwd`
 
 TARGETDIR =	$(FILEROOT)/usr/openwin/lib/locale/iso8859-1
 
-SRCS = 		omEuro.c omImText.c omText.c omTextEsc.c omTextExt.c omTextPer.c omXChar.c 
 
-HEADERS = 	XomGeneric.h
 
-OBJS		= $(SRCS:%.c=%.o)
-OBJS64		= $(SRCS:%.c=$(MACH64)/%.o)
-
-XOM_SO	= xomEuro.so.2
+#XOM_SO	= xomEuro.so.2
 
 FILES =  Compose XI18N_OBJS XLC_LOCALE
 
@@ -53,7 +48,7 @@ SUBDIRS =
 
 TARGETDIRS = $(TARGETDIR)
 
-all: $(TARGETDIRS) $(MACH64) $(XOM_SO) $(SUBDIRS)
+all: $(TARGETDIRS) $(MACH64)  $(SUBDIRS)
 
 include $(SRC)/src/Makefile.targ
 
@@ -67,8 +62,8 @@ LDFLAGS_amd64	= $(LDFLAGS) -xarch=amd64
 
 install: all $(FILES.obj) $(SUBDIRS)
 	$(INSDIR) $(TARGETDIR)/$(MACH64)
-	$(INS) $(TARGETDIR) $(XOM_SO)
-	$(INS) $(TARGETDIR)/$(MACH64) $(MACH64)/$(XOM_SO)
+	$(INS) $(TARGETDIR) 
+	$(INS) $(TARGETDIR)/$(MACH64) 
 
 clean: objclean $(SUBDIRS)
 	$(RM) -r $(TARGETDIR)
@@ -78,13 +73,7 @@ clean: objclean $(SUBDIRS)
 $(MACH64):
 	$(INSDIR) $(MACH64)
 
-$(XOM_SO): $(OBJS)
-	$(CC) $(LDFLAGS) -o $@ $(OBJS)
-	$(CC) $(LDFLAGS_$(MACH64)) -o $(MACH64)/$@ $(OBJS64)
 
-$(OBJS): $$(@:%.o=%.c)
-	$(CC) $(CFLAGS) -c -o $@ $*.c
-	$(CC) $(CFLAGS_$(MACH64)) -c -o $(MACH64)/$@ $*.c
 
 FRC:
 

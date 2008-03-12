@@ -21,36 +21,4 @@
 # Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none openwin 0755 root bin
-d none openwin/lib 0755 root bin
-d none openwin/lib/locale 0755 root bin
-d none openwin/lib/locale/common 0755 root bin
-f none openwin/lib/locale/common/xlcUTF-8.so.2 0644 root bin
-d none openwin/lib/locale/common/conv_tables 0755 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-1.GL 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-1.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-2.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-4.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-5.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-6.GLGR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-7.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-8.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-9.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/ISO8859-15.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/GB2312-0.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/KSC-JOHAP.GLGR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/BIG5-1.GLGR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/GBK-0.GLGR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/JISX0201-0.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/JISX0208-0.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/JISX0212-0.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/JISX0213-1.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/JISX0213-2.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/SUNUDCJA.GL 0644 root bin
-f none openwin/lib/locale/common/conv_tables/TIS620.2533-0.GR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/GB18030.2000-0.GLGR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/GB18030.2000-1.GLGR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/HKSCS-1.GLGR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/SUN.UNICODE.INDIA-0.GLGR 0644 root bin
-f none openwin/lib/locale/common/conv_tables/UNICODE-FONTSPECIFIC.GLGR 0644 root bin
 

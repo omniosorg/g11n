@@ -21,5 +21,3 @@
 # Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none openwin/lib/locale/common/amd64 0755 root bin
-f none openwin/lib/locale/common/amd64/xlcUTF-8.so.2 0644 root bin
