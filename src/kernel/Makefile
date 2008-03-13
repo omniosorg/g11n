@@ -24,9 +24,7 @@
 #ident	"@(#)Makefile	1.0	06/03/07	SMI"
 #
 
-#FIXME: removed openwin/lib/locale from the build targets, since we're using Xorg's Xi18n locale database files.
-#SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables uts cmd
-SUBDIRS = lib kernel locale_src/base openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables uts cmd
+SUBDIRS = utf8sb
 
 all:=		TARGET= all
 install :=	TARGET= install
