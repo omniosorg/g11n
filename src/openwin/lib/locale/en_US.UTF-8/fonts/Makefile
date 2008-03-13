@@ -36,7 +36,7 @@ LOCALE:sh = cd ..;basename `pwd`
 SRCS            = splmt12.bdf splmt14.bdf splmt16.bdf splmt20.bdf splmt24.bdf
 PCFS            = $(SRCS:%.bdf=%.pcf.Z)
 
-FILES =  	$(PCFS)
+FILES =  	$(PCFS) fonts.alias
 
 TARGETDIR = 	$(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)/X11/fonts/misc
 
