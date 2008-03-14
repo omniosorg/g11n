@@ -37,8 +37,4 @@ s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/amd64/ko_KR.UTF-8.layout.so.1=../../.
 s none usr/lib/locale/ko_KR.UTF-8/64=./amd64
 d none usr/lib/locale/ko_KR.UTF-8/amd64 0755 root bin
 s none usr/lib/locale/ko_KR.UTF-8/amd64/ko_KR.UTF-8.so.3=../../ko.UTF-8/amd64/ko.UTF-8.so.3
-s none usr/lib/locale/ko_KR.UTF-8@dict/64=./amd64
-d none usr/lib/locale/ko_KR.UTF-8@dict/amd64 0755 root bin
-s none usr/lib/locale/ko_KR.UTF-8@dict/amd64/methods_ko_KR.UTF-8@dict.so.3=../../ko.UTF-8/amd64/methods_ko.UTF-8.so.3
-f none usr/lib/locale/ko_KR.UTF-8@dict/amd64/ko_KR.UTF-8@dict.so.3=usr/lib/locale/ko.UTF-8@dict/amd64/ko.UTF-8@dict.so.3 0555 root bin
 s none usr/lib/locale/ko_KR.UTF-8/amd64/methods_ko_KR.UTF-8.so.3=../../ko.UTF-8/amd64/methods_ko.UTF-8.so.3

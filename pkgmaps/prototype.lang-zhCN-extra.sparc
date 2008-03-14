@@ -88,3 +88,16 @@ s none usr/lib/locale/zh_CN.GB18030@stroke/64=./sparcv9
 d none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9 0755 root bin
 s none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9/methods_zh_CN.GB18030@stroke.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
 f none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9/zh_CN.GB18030@stroke.so.3 0555 root bin
+
+s none usr/lib/locale/zh_CN.UTF-8@pinyin/64=./sparcv9
+d none usr/lib/locale/zh_CN.UTF-8@pinyin/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.UTF-8@pinyin/sparcv9/methods_zh_CN.UTF-8@pinyin.so.3=../../zh.UTF-8/sparcv9/methods_zh.UTF-8.so.3
+f none usr/lib/locale/zh_CN.UTF-8@pinyin/sparcv9/zh_CN.UTF-8@pinyin.so.3=usr/lib/locale/zh.UTF-8@pinyin/sparcv9/zh.UTF-8@pinyin.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.UTF-8@radical/64=./sparcv9
+d none usr/lib/locale/zh_CN.UTF-8@radical/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.UTF-8@radical/sparcv9/methods_zh_CN.UTF-8@radical.so.3=../../zh.UTF-8/sparcv9/methods_zh.UTF-8.so.3
+f none usr/lib/locale/zh_CN.UTF-8@radical/sparcv9/zh_CN.UTF-8@radical.so.3=usr/lib/locale/zh.UTF-8@radical/sparcv9/zh.UTF-8@radical.so.3 0555 root bin
+s none usr/lib/locale/zh_CN.UTF-8@stroke/64=./sparcv9
+d none usr/lib/locale/zh_CN.UTF-8@stroke/sparcv9 0755 root bin
+s none usr/lib/locale/zh_CN.UTF-8@stroke/sparcv9/methods_zh_CN.UTF-8@stroke.so.3=../../zh.UTF-8/sparcv9/methods_zh.UTF-8.so.3
+f none usr/lib/locale/zh_CN.UTF-8@stroke/sparcv9/zh_CN.UTF-8@stroke.so.3=usr/lib/locale/zh.UTF-8@stroke/sparcv9/zh.UTF-8@stroke.so.3 0555 root bin
