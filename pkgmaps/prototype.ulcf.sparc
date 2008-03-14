@@ -18,42 +18,11 @@
 #
 # CDDL HEADER END
 #
-
-#
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
+d none kernel/strmod/sparcv9 0755 root sys
+f none kernel/strmod/sparcv9/u8koi8 0755 root sys
+f none kernel/strmod/sparcv9/u8lat1 0755 root sys
+f none kernel/strmod/sparcv9/u8lat2 0755 root sys
 
-include $(SRC)/Makefile.master
-#include ../../Makefile.master.ow
-
-#PWD:sh = pwd
-
-LOCALE:sh = basename `pwd`
-
-FILES =
-
-TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
-
-TARGETDIRS = $(TARGETDIR)
-
-SUBDIRS = app-defaults print
-
-all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-objclean := TARGET = objclean
-clobber :=	TARGET= clobber
-
-all: $(TARGETDIRS)
-
-include $(SRC)/src/Makefile.targ
-
-install: all $(FILES.obj) $(SUBDIRS)
-
-clean: objclean $(SUBDIRS)
-	$(RM) -r $(TARGETDIR)
-
-FRC:

@@ -41,6 +41,11 @@ d none usr/lib/locale/ko_KR.EUC@dict/sparcv9 0755 root bin
 s none usr/lib/locale/ko_KR.EUC@dict/sparcv9/methods_ko_KR.EUC@dict.so.3=../../ko/sparcv9/methods_ko.so.3
 f none usr/lib/locale/ko_KR.EUC@dict/sparcv9/ko_KR.EUC@dict.so.3=usr/lib/locale/ko@dict/sparcv9/ko@dict.so.3 0555 root bin
 
+s none usr/lib/locale/ko_KR.UTF-8@dict/64=./sparcv9
+d none usr/lib/locale/ko_KR.UTF-8@dict/sparcv9 0755 root bin
+s none usr/lib/locale/ko_KR.UTF-8@dict/sparcv9/methods_ko_KR.UTF-8@dict.so.3=../../ko.UTF-8/sparcv9/methods_ko.UTF-8.so.3
+f none usr/lib/locale/ko_KR.UTF-8@dict/sparcv9/ko_KR.UTF-8@dict.so.3=usr/lib/locale/ko.UTF-8@dict/sparcv9/ko.UTF-8@dict.so.3 0555 root bin
+
 d none usr/lib/sparcv9 0755 root bin
 f none usr/lib/sparcv9/libkle.a 0755 root bin
 s none usr/lib/sparcv9/libkle.so=libkle.so.1

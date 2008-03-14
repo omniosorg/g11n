@@ -49,17 +49,3 @@ s none usr/lib/locale/ko_KR.UTF-8/locale_map=../ko.UTF-8/locale_map
 s none usr/lib/locale/ko_KR.UTF-8/ko_KR.UTF-8.so.3=../ko.UTF-8/ko.UTF-8.so.3
 s none usr/lib/locale/ko_KR.UTF-8/methods_ko_KR.UTF-8.so.3=../ko.UTF-8/methods_ko.UTF-8.so.3
 s none usr/lib/locale/ko_KR.UTF-8/locale_description=../ko.UTF-8/locale_description
-d none usr/lib/locale/ko_KR.UTF-8@dict 0755 root bin
-s none usr/lib/locale/ko_KR.UTF-8@dict/LC_CTYPE=../ko.UTF-8/LC_CTYPE
-s none usr/lib/locale/ko_KR.UTF-8@dict/LC_MESSAGES=../ko.UTF-8/LC_MESSAGES
-s none usr/lib/locale/ko_KR.UTF-8@dict/LC_TIME=../ko.UTF-8/LC_TIME
-s none usr/lib/locale/ko_KR.UTF-8@dict/LO_LTYPE=../ko.UTF-8/LO_LTYPE
-f none usr/lib/locale/ko_KR.UTF-8@dict/ko_KR.UTF-8@dict.so.3=usr/lib/locale/ko.UTF-8@dict/ko.UTF-8@dict.so.3 0555 root bin
-s none usr/lib/locale/ko_KR.UTF-8@dict/methods_ko_KR.UTF-8@dict.so.3=../ko.UTF-8/methods_ko.UTF-8.so.3
-d none usr/lib/mle 0755 root bin
-d none usr/lib/mle/ko.UTF-8 0755 root bin
-f none usr/lib/mle/ko.UTF-8/keybind.dat 0555 root daemon
-f none usr/lib/mle/ko.UTF-8/libmle.a 0755 root bin
-f none usr/lib/mle/ko.UTF-8/mle.so 0755 root bin
-f none usr/lib/mle/ko.UTF-8/syshjd 0555 root bin
-s none usr/lib/mle/ko_KR.UTF-8=./ko.UTF-8

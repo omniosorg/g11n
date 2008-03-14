@@ -18,42 +18,24 @@
 #
 # CDDL HEADER END
 #
-
-#
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
+#ident	"@(#)Makefile	1.0	06/03/07	SMI"
+#
 
-include $(SRC)/Makefile.master
-#include ../../Makefile.master.ow
-
-#PWD:sh = pwd
-
-LOCALE:sh = basename `pwd`
-
-FILES =
-
-TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
-
-TARGETDIRS = $(TARGETDIR)
-
-SUBDIRS = app-defaults print
+SUBDIRS = utf8sb
 
 all:=		TARGET= all
 install :=	TARGET= install
 clean :=	TARGET= clean
-objclean := TARGET = objclean
 clobber :=	TARGET= clobber
 
-all: $(TARGETDIRS)
 
-include $(SRC)/src/Makefile.targ
+all install clean: $(SUBDIRS)
 
-install: all $(FILES.obj) $(SUBDIRS)
-
-clean: objclean $(SUBDIRS)
-	$(RM) -r $(TARGETDIR)
+$(SUBDIRS): FRC
+	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
 
 FRC:
+
