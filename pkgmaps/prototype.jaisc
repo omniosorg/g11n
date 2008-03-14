@@ -36,9 +36,9 @@ d none usr/openwin/lib/locale 0755 root bin
 d none usr/openwin/lib/locale/ja 0755 root bin
 s none usr/openwin/lib/locale/ja_JP.PCK=./ja
 s none usr/openwin/lib/locale/ja_JP.UTF-8=./ja
-f none usr/openwin/lib/locale/ja/CT_Encoding=usr/openwin/lib/locale/ja/CT_Encoding 0444 root bin
-f none usr/openwin/lib/locale/ja/XLC_LOCALE=usr/openwin/lib/locale/ja/XLC_LOCALE.miniroot 0444 root bin
-f none usr/openwin/lib/locale/ja/XI18N_OBJS=usr/openwin/lib/locale/ja/XI18N_OBJS.miniroot 0444 root bin
+#XSUN#f none usr/openwin/lib/locale/ja/CT_Encoding=usr/openwin/lib/locale/ja/CT_Encoding 0444 root bin
+#XSUN#f none usr/openwin/lib/locale/ja/XLC_LOCALE=usr/openwin/lib/locale/ja/XLC_LOCALE.miniroot 0444 root bin
+#XSUN#f none usr/openwin/lib/locale/ja/XI18N_OBJS=usr/openwin/lib/locale/ja/XI18N_OBJS.miniroot 0444 root bin
 d none usr/openwin/lib/locale/ja/OW_FONT_SETS 0755 root bin
 f none usr/openwin/lib/locale/ja/OW_FONT_SETS/OpenWindows.fs=usr/openwin/lib/locale/ja/OW_FONT_SETS/OpenWindows.fs.miniroot 0444 root bin
 #

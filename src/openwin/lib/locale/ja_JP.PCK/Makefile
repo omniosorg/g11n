@@ -33,13 +33,13 @@ include $(SRC)/Makefile.master
 
 LOCALE:sh = basename `pwd`
 
-FILES = CT_Encoding XI18N_OBJS XLC_LOCALE
+FILES =
 
 TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 
 TARGETDIRS = $(TARGETDIR)
 
-SUBDIRS = xlibi18n app-defaults print
+SUBDIRS = app-defaults print
 
 all:=		TARGET= all
 install :=	TARGET= install

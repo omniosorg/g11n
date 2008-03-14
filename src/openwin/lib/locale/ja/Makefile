@@ -31,14 +31,14 @@ include $(SRC)/Makefile.master
 LOCALE:sh = basename `pwd`
 
 MOD_FILES = OWfontpath
-FILES_miniroot = XI18N_OBJS.miniroot XLC_LOCALE.miniroot
-FILES = CT_Encoding XI18N_OBJS XLC_LOCALE $(MOD_FILES) $(FILES_miniroot)
+FILES_miniroot =
+FILES = $(MOD_FILES) $(FILES_miniroot)
 
 TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 
 TARGETDIRS = $(TARGETDIR)
 
-SUBDIRS = xlibi18n app-defaults print
+SUBDIRS = app-defaults print
 
 all:=		TARGET= all
 install :=	TARGET= install
