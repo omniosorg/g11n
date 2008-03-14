@@ -27,8 +27,5 @@ d none usr/openwin 0755 root bin
 d none usr/openwin/lib 0755 root bin
 d none usr/openwin/lib/locale 0755 root bin
 d none usr/openwin/lib/locale/iso8859-7 0755 root bin
-f none usr/openwin/lib/locale/iso8859-7/XLC_LOCALE 0755 root bin
-f none usr/openwin/lib/locale/iso8859-7/Compose 0755 root bin
-s none usr/openwin/lib/locale/iso8859-7/XI18N_OBJS=../iso8859-1/XI18N_OBJS root bin
 s none usr/openwin/lib/locale/iso8859-7/xomEuro.so.2=../iso8859-1/xomEuro.so.2 root bin
 

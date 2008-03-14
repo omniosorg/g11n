@@ -27,6 +27,3 @@ d none usr/openwin 0755 root bin
 d none usr/openwin/lib 0755 root bin
 d none usr/openwin/lib/locale 0755 root bin
 d none usr/openwin/lib/locale/iso8859-1 0755 root bin
-f none usr/openwin/lib/locale/iso8859-1/XI18N_OBJS 0444 root bin
-f none usr/openwin/lib/locale/iso8859-1/XLC_LOCALE 0444 root bin
-f none usr/openwin/lib/locale/iso8859-1/Compose 0444 root bin

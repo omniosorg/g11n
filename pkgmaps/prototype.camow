@@ -46,8 +46,6 @@ s none openwin/lib/locale/es_SV.ISO8859-1=es_ES.ISO8859-1
 
 d none openwin/share/locale/es_CR.UTF-8 0755 root bin
 d none openwin/lib/locale/es_CR.UTF-8 0755 root bin
-f none openwin/lib/locale/es_CR.UTF-8/Compose 0644 root bin
-s none openwin/lib/locale/es_CR.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/es_CR.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/es_CR.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/es_CR.UTF-8/imsscript 0755 root bin
@@ -55,8 +53,6 @@ s none openwin/lib/locale/es_CR.UTF-8/imsscript/S505multi=../../common/imsscript
 
 d none openwin/share/locale/es_GT.UTF-8 0755 root bin
 d none openwin/lib/locale/es_GT.UTF-8 0755 root bin
-f none openwin/lib/locale/es_GT.UTF-8/Compose 0644 root bin
-s none openwin/lib/locale/es_GT.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/es_GT.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/es_GT.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/es_GT.UTF-8/imsscript 0755 root bin
@@ -64,8 +60,6 @@ s none openwin/lib/locale/es_GT.UTF-8/imsscript/S505multi=../../common/imsscript
 
 d none openwin/share/locale/es_NI.UTF-8 0755 root bin
 d none openwin/lib/locale/es_NI.UTF-8 0755 root bin
-f none openwin/lib/locale/es_NI.UTF-8/Compose 0644 root bin
-s none openwin/lib/locale/es_NI.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/es_NI.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/es_NI.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/es_NI.UTF-8/imsscript 0755 root bin
@@ -73,8 +67,6 @@ s none openwin/lib/locale/es_NI.UTF-8/imsscript/S505multi=../../common/imsscript
 
 d none openwin/share/locale/es_PA.UTF-8 0755 root bin
 d none openwin/lib/locale/es_PA.UTF-8 0755 root bin
-f none openwin/lib/locale/es_PA.UTF-8/Compose 0644 root bin
-s none openwin/lib/locale/es_PA.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/es_PA.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/es_PA.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/es_PA.UTF-8/imsscript 0755 root bin
@@ -82,8 +74,6 @@ s none openwin/lib/locale/es_PA.UTF-8/imsscript/S505multi=../../common/imsscript
 
 d none openwin/share/locale/es_SV.UTF-8 0755 root bin
 d none openwin/lib/locale/es_SV.UTF-8 0755 root bin
-f none openwin/lib/locale/es_SV.UTF-8/Compose 0644 root bin
-s none openwin/lib/locale/es_SV.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/es_SV.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/es_SV.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/es_SV.UTF-8/imsscript 0755 root bin

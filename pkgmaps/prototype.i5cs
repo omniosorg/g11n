@@ -27,17 +27,8 @@ d none usr/openwin 0755 root bin
 d none usr/openwin/lib 0755 root bin
 d none usr/openwin/lib/locale 0755 root bin
 d none usr/openwin/lib/locale/iso8859-5 0755 root bin
-f none usr/openwin/lib/locale/iso8859-5/XLC_LOCALE 0755 root bin
-f none usr/openwin/lib/locale/iso8859-5/Compose 0755 root bin
-s none usr/openwin/lib/locale/iso8859-5/XI18N_OBJS=../iso8859-1/XI18N_OBJS root bin
 s none usr/openwin/lib/locale/iso8859-5/xomEuro.so.2=../iso8859-1/xomEuro.so.2 root bin
 d none usr/openwin/lib/locale/ru_RU.ANSI1251 0755 root bin
-f none usr/openwin/lib/locale/ru_RU.ANSI1251/XLC_LOCALE 0755 root bin
-f none usr/openwin/lib/locale/ru_RU.ANSI1251/Compose 0644 root bin
-f none usr/openwin/lib/locale/ru_RU.ANSI1251/XI18N_OBJS 0444 root bin
 s none usr/openwin/lib/locale/ru_RU.ANSI1251/xomEuro.so.2=../iso8859-1/xomEuro.so.2
 d none usr/openwin/lib/locale/ru_RU.KOI8-R 0755 root bin
-f none usr/openwin/lib/locale/ru_RU.KOI8-R/XLC_LOCALE 0755 root bin
-f none usr/openwin/lib/locale/ru_RU.KOI8-R/Compose 0644 root bin
-f none usr/openwin/lib/locale/ru_RU.KOI8-R/XI18N_OBJS 0444 root bin
 s none usr/openwin/lib/locale/ru_RU.KOI8-R/xomEuro.so.2=../iso8859-1/xomEuro.so.2

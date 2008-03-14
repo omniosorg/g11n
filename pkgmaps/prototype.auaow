@@ -51,12 +51,7 @@ s none openwin/lib/locale/en_NZ=./en_NZ.ISO8859-1
 
 d none openwin/share/locale/en_AU.UTF-8 0755 root bin
 d none openwin/lib/locale/en_AU.UTF-8 0755 root bin
-f none openwin/lib/locale/en_AU.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/en_AU.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/en_AU.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/en_AU.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/en_AU.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/en_AU.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/en_AU.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/en_AU.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/en_AU.UTF-8/imsscript 0755 root bin
@@ -64,12 +59,7 @@ s none openwin/lib/locale/en_AU.UTF-8/imsscript/S505multi=../../common/imsscript
 
 d none openwin/share/locale/en_NZ.UTF-8 0755 root bin
 d none openwin/lib/locale/en_NZ.UTF-8 0755 root bin
-f none openwin/lib/locale/en_NZ.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/en_NZ.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/en_NZ.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/en_NZ.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/en_NZ.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/en_NZ.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/en_NZ.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/en_NZ.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/en_NZ.UTF-8/imsscript 0755 root bin

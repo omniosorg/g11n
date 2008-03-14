@@ -28,6 +28,4 @@ d none openwin/lib 0755 root bin
 d none openwin/lib/locale 0755 root bin
 d none openwin/lib/locale/es_ES.ISO8859-1 0755 root bin
 d none openwin/lib/locale/es 0755 root bin
-f none openwin/lib/locale/es_ES.ISO8859-1/CT_Encoding 0644 root bin
 f none openwin/lib/locale/es_ES.ISO8859-1/Codeset 0644 root bin
-f none openwin/lib/locale/es_ES.ISO8859-1/Compose 0644 root bin

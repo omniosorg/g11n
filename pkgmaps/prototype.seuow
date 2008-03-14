@@ -51,19 +51,13 @@ s none openwin/lib/locale/ca.ISO8859-15=./ca_ES.ISO8859-15
 s none openwin/lib/locale/ca_ES=./ca_ES.ISO8859-1
 d none openwin/lib/locale/ca_ES.ISO8859-1 0755 root bin
 d none openwin/lib/locale/ca_ES.ISO8859-15 0755 root bin
-s none openwin/lib/locale/ca_ES.ISO8859-15/XI18N_OBJS=../iso8859-15/XI18N_OBJS
-s none openwin/lib/locale/ca_ES.ISO8859-15/XLC_LOCALE=../iso8859-15/XLC_LOCALE
 s none openwin/lib/locale/ca_ES.ISO8859-15/libs=../iso_8859_1/libs
 d none openwin/lib/locale/el_GR.ISO8859-7 0755 root bin
 s none openwin/lib/locale/el=el_GR.ISO8859-7
 s none openwin/lib/locale/el_GR=./el_GR.ISO8859-7
 s none openwin/lib/locale/el.sun_eu_greek=./el_GR.ISO8859-7@euro
 s none openwin/lib/locale/el_GR.ISO8859-7/libs=../iso_8859_1/libs
-s none openwin/lib/locale/el_GR.ISO8859-7/XLC_LOCALE=../iso8859-7/XLC_LOCALE
 d none openwin/lib/locale/el_GR.ISO8859-7@euro 0755 root bin
-f none openwin/lib/locale/el_GR.ISO8859-7@euro/XI18N_OBJS 0444 root bin
-f none openwin/lib/locale/el_GR.ISO8859-7@euro/XLC_LOCALE 0444 root bin
-f none openwin/lib/locale/el_GR.ISO8859-7@euro/Compose 0444 root bin
 s none openwin/lib/locale/el_GR.ISO8859-7@euro/xomEuro.so.2=../iso8859-1/xomEuro.so.2
 s none openwin/lib/locale/el_GR.ISO8859-7@euro/libs=../iso_8859_1/libs
 
@@ -82,8 +76,6 @@ s none openwin/lib/locale/it.ISO8859-15=it_IT.ISO8859-15
 d none openwin/lib/locale/it_IT.ISO8859-15/help 0755 root bin
 s none openwin/lib/locale/it_IT.ISO8859-15/LC_MESSAGES=../it_IT.ISO8859-1/LC_MESSAGES
 s none openwin/lib/locale/it_IT.ISO8859-15/libs=../iso_8859_1/libs
-s none openwin/lib/locale/it_IT.ISO8859-15/XLC_LOCALE=../iso8859-15/XLC_LOCALE
-s none openwin/lib/locale/it_IT.ISO8859-15/XI18N_OBJS=../iso8859-15/XI18N_OBJS
 d none openwin/lib/locale/es 0755 root bin
 d none openwin/lib/locale/es/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/es/help 0755 root bin
@@ -97,8 +89,6 @@ s none openwin/lib/locale/es.ISO8859-15=es_ES.ISO8859-15
 d none openwin/lib/locale/es_ES.ISO8859-15/help 0755 root bin
 s none openwin/lib/locale/es_ES.ISO8859-15/LC_MESSAGES=../es_ES.ISO8859-1/LC_MESSAGES
 s none openwin/lib/locale/es_ES.ISO8859-15/libs=../iso_8859_1/libs
-s none openwin/lib/locale/es_ES.ISO8859-15/XLC_LOCALE=../iso8859-15/XLC_LOCALE
-s none openwin/lib/locale/es_ES.ISO8859-15/XI18N_OBJS=../iso8859-15/XI18N_OBJS
 
 d none openwin/lib/locale/pt_PT.ISO8859-1 0755 root bin
 s none openwin/lib/locale/pt_PT=./pt_PT.ISO8859-1
@@ -106,54 +96,31 @@ s none openwin/lib/locale/pt_PT=./pt_PT.ISO8859-1
 d none openwin/lib/locale/pt_PT.ISO8859-15 0755 root bin
 s none openwin/lib/locale/pt.ISO8859-15=pt_PT.ISO8859-15
 s none openwin/lib/locale/pt_PT.ISO8859-15/libs=../iso_8859_1/libs
-s none openwin/lib/locale/pt_PT.ISO8859-15/XLC_LOCALE=../iso8859-15/XLC_LOCALE
-s none openwin/lib/locale/pt_PT.ISO8859-15/XI18N_OBJS=../iso8859-15/XI18N_OBJS
 
-# Changed the below to add the correct Compose file (which should be 
 # localised). This meant adding lots to en_US.UTF-8 links.
 s none openwin/lib/locale/it.UTF-8=it_IT.UTF-8
 s none openwin/lib/locale/es.UTF-8=es_ES.UTF-8
 
 d none openwin/lib/locale/it_IT.UTF-8  0755 root bin
-f none openwin/lib/locale/it_IT.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/it_IT.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/it_IT.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/it_IT.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/it_IT.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/it_IT.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/it_IT.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/it_IT.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
 
 d none openwin/lib/locale/es_ES.UTF-8 0755 root bin
-f none openwin/lib/locale/es_ES.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/es_ES.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/es_ES.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/es_ES.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/es_ES.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/es_ES.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/es_ES.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/es_ES.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
 d none openwin/share/locale/el_GR.UTF-8 0755 root bin
 d none openwin/lib/locale/el_GR.UTF-8 0755 root bin
-f none openwin/lib/locale/el_GR.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/el_GR.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/el_GR.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/el_GR.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/el_GR.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/el_GR.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/el_GR.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/el_GR.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
 #d none openwin/share/locale/pt_PT.UTF-8 0755 root bin
 #d none openwin/lib/locale/pt_PT.UTF-8 0755 root bin
-#f none openwin/lib/locale/pt_PT.UTF-8/Compose 0644 root bin
 #s none openwin/lib/locale/pt_PT.UTF-8/X11=../en_US.UTF-8/X11
-#s none openwin/lib/locale/pt_PT.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-#s none openwin/lib/locale/pt_PT.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-#s none openwin/lib/locale/pt_PT.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-#s none openwin/lib/locale/pt_PT.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 #d none openwin/lib/locale/pt_PT.UTF-8/imsscript 0755 root bin
 #s none openwin/lib/locale/pt_PT.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
@@ -164,60 +131,35 @@ s none openwin/lib/locale/el_GR.UTF-8/imsscript/S505multi=../../common/imsscript
 
 d none openwin/share/locale/pt_PT.UTF-8 0755 root bin
 d none openwin/lib/locale/pt_PT.UTF-8 0755 root bin
-f none openwin/lib/locale/pt_PT.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/pt_PT.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/pt_PT.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/pt_PT.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/pt_PT.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/pt_PT.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/pt_PT.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/pt_PT.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/pt_PT.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
 d none openwin/share/locale/el_CY.UTF-8 0755 root bin
 d none openwin/lib/locale/el_CY.UTF-8 0755 root bin
-f none openwin/lib/locale/el_CY.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/el_CY.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/el_CY.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/el_CY.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/el_CY.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/el_CY.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/el_CY.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/el_CY.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/el_CY.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
 d none openwin/share/locale/ca_ES.UTF-8 0755 root bin
 d none openwin/lib/locale/ca_ES.UTF-8 0755 root bin
-f none openwin/lib/locale/ca_ES.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/ca_ES.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/ca_ES.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/ca_ES.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/ca_ES.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/ca_ES.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/ca_ES.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/ca_ES.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/ca_ES.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
 d none openwin/share/locale/en_MT.UTF-8 0755 root bin
 d none openwin/lib/locale/en_MT.UTF-8 0755 root bin
-f none openwin/lib/locale/en_MT.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/en_MT.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/en_MT.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/en_MT.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/en_MT.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/en_MT.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/en_MT.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/en_MT.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/en_MT.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
 d none openwin/share/locale/mt_MT.UTF-8 0755 root bin
 d none openwin/lib/locale/mt_MT.UTF-8 0755 root bin
-f none openwin/lib/locale/mt_MT.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/mt_MT.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/mt_MT.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/mt_MT.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/mt_MT.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/mt_MT.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/mt_MT.UTF-8/LC_MESSAGES 0755 root bin
 d none openwin/lib/locale/mt_MT.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/mt_MT.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi

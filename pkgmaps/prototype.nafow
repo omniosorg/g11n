@@ -29,19 +29,10 @@ d none openwin/share 0755 root bin
 d none openwin/share/locale 0755 root bin
 
 d none openwin/lib/locale/ar 0755 root bin
-f none openwin/lib/locale/ar/Compose 0644 root bin
-f none openwin/lib/locale/ar/XI18N_OBJS 0644 root bin
-f none openwin/lib/locale/ar/XLC_LOCALE 0644 root bin
-f none openwin/lib/locale/ar/CT_Encoding 0644 root bin
 d none openwin/share/locale/ar 0755 root bin
 
 d none openwin/share/locale/ar_EG.UTF-8 0755 root bin
 d none openwin/lib/locale/ar_EG.UTF-8 0755 root bin
-f none openwin/lib/locale/ar_EG.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/ar_EG.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/ar_EG.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
-s none openwin/lib/locale/ar_EG.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/ar_EG.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
-s none openwin/lib/locale/ar_EG.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 d none openwin/lib/locale/ar_EG.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/ar_EG.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi

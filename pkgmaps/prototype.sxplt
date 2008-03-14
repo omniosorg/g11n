@@ -27,6 +27,4 @@ d none openwin/lib 0755 root bin
 d none openwin/lib/locale 0755 root bin
 d none openwin/lib/locale/sv_SE.ISO8859-1 755 root bin
 d none openwin/lib/locale/sv 0755 root bin
-f none openwin/lib/locale/sv_SE.ISO8859-1/CT_Encoding 0644 root bin
 f none openwin/lib/locale/sv_SE.ISO8859-1/Codeset 0644 root bin
-f none openwin/lib/locale/sv_SE.ISO8859-1/Compose 0644 root bin

@@ -29,10 +29,7 @@ d none openwin/share 0755 root bin
 d none openwin/share/locale 0755 root bin
 
 d none openwin/lib/locale/he 0755 root bin
-f none openwin/lib/locale/he/Compose 0644 root bin
 f none openwin/lib/locale/he/OWfontpath 0644 root bin
-f none openwin/lib/locale/he/XI18N_OBJS 0644 root bin
-f none openwin/lib/locale/he/XLC_LOCALE 0644 root bin
 d none openwin/lib/locale/he/print 0755 root bin
 f none openwin/lib/locale/he/print/prolog.ps 0644 root bin
 f none openwin/lib/locale/he/print/ctlmpresource 0644 root bin
@@ -42,14 +39,9 @@ d none openwin/share/locale/he 0755 root bin
 
 d none openwin/share/locale/he_IL.UTF-8 0755 root bin
 d none openwin/lib/locale/he_IL.UTF-8 0755 root bin
-f none openwin/lib/locale/he_IL.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/he_IL.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/he_IL.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
 f none openwin/lib/locale/he_IL.UTF-8/OWfontpath=openwin/lib/locale/OWfontpath 0644 root bin
-s none openwin/lib/locale/he_IL.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/he_IL.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
 s none openwin/lib/locale/he_IL.UTF-8/app-defaults=../en_US.UTF-8/app-defaults
-s none openwin/lib/locale/he_IL.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/he_IL.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/he_IL.UTF-8/imsscript 0755 root bin 
 s none openwin/lib/locale/he_IL.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
@@ -58,15 +50,10 @@ s none openwin/lib/locale/he_IL.UTF-8/imsscript/S505multi=../../common/imsscript
 
 d none openwin/share/locale/ar_SA.UTF-8 0755 root bin
 d none openwin/lib/locale/ar_SA.UTF-8 0755 root bin
-f none openwin/lib/locale/ar_SA.UTF-8/Compose 0644 root bin
 s none openwin/lib/locale/ar_SA.UTF-8/X11=../en_US.UTF-8/X11
-s none openwin/lib/locale/ar_SA.UTF-8/CT_Encoding=../en_US.UTF-8/CT_Encoding
 f none openwin/lib/locale/ar_SA.UTF-8/OWfontpath=openwin/lib/locale/OWfontpath 0644 root bin
-s none openwin/lib/locale/ar_SA.UTF-8/XI18N_OBJS=../en_US.UTF-8/XI18N_OBJS
-s none openwin/lib/locale/ar_SA.UTF-8/XLC_LOCALE=../en_US.UTF-8/XLC_LOCALE
 d none openwin/lib/locale/ar_SA.UTF-8/app-defaults 0755 root bin
 f none openwin/lib/locale/ar_SA.UTF-8/app-defaults/XTerm 0644 root bin
-s none openwin/lib/locale/ar_SA.UTF-8/conv_tables=../en_US.UTF-8/conv_tables
 s none openwin/lib/locale/ar_SA.UTF-8/xview=../en_US.UTF-8/xview
 d none openwin/lib/locale/ar_SA.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/ar_SA.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
