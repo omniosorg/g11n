@@ -25,7 +25,6 @@
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
-s none usr/lib/locale/sr_CS/sparcv9/sr_CS.so.3=../../sr_CS.UTF-8/sparcv9/sr_CS.UTF-8.so.3
 d none usr/lib/locale/sr_CS.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/sr_CS.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/sr_CS.UTF-8/LO_LTYPE/sparcv9 0755 root bin

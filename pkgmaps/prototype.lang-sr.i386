@@ -25,7 +25,6 @@
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
-s none usr/lib/locale/sr_CS/amd64/sr_CS.so.3=../../sr_CS.UTF-8/amd64/sr_CS.UTF-8.so.3
 d none usr/lib/locale/sr_CS.UTF-8/amd64 0755 root bin
 s none usr/lib/locale/sr_CS.UTF-8/amd64/methods_sr_CS.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
 f none usr/lib/locale/sr_CS.UTF-8/amd64/sr_CS.UTF-8.so.3 0555 root bin
