@@ -1293,3 +1293,54 @@ f none lib/iconv/amd64/UTF-32%CP720.so 0555 root bin
 f none lib/iconv/amd64/UTF-32BE%CP720.so 0555 root bin
 f none lib/iconv/amd64/UTF-32LE%CP720.so 0555 root bin
 f none lib/iconv/amd64/UTF-8%CP720.so 0555 root bin
+# from SUNWiconv-unicode
+f none lib/iconv/amd64/UTF-8%zh_CN.gbk.so 0755 root bin
+f none lib/iconv/amd64/zh_CN.gbk%UTF-8.so 0755 root bin
+s none lib/iconv/amd64/GB18030%UTF-8.so=./zh_CN.gbk%UTF-8.so
+s none lib/iconv/amd64/GBK%UTF-8.so=./zh_CN.gbk%UTF-8.so
+s none lib/iconv/amd64/UTF-8%GB18030.so=./UTF-8%zh_CN.gbk.so
+s none lib/iconv/amd64/UTF-8%GBK.so=./UTF-8%zh_CN.gbk.so
+s none lib/iconv/amd64/UTF-8%zh_CN.gb18030.so=./UTF-8%zh_CN.gbk.so
+s none lib/iconv/amd64/zh_CN.gb18030%UTF-8.so=./zh_CN.gbk%UTF-8.so
+f none lib/iconv/amd64/UTF-8%zh_TW-big5.so 0755 root bin
+f none lib/iconv/amd64/zh_TW-big5%UTF-8.so 0755 root bin
+s none lib/iconv/amd64/BIG5%UTF-8.so=./zh_TW-big5%UTF-8.so
+s none lib/iconv/amd64/UTF-8%BIG5.so=./UTF-8%zh_TW-big5.so
+s none lib/iconv/amd64/UTF-8%zh_TW.big5.so=./UTF-8%zh_TW-big5.so
+s none lib/iconv/amd64/zh_TW.big5%UTF-8.so=./zh_TW-big5%UTF-8.so
+f none lib/iconv/amd64/UCS-2%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UCS-2BE%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UCS-2LE%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UTF-16%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UTF-16BE%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UTF-16LE%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UTF-32%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UTF-32BE%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UTF-32LE%eucJP.so 0755 root bin
+f none lib/iconv/amd64/UTF-8%eucJP.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UCS-2.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UCS-2BE.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UCS-2LE.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UTF-16.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UTF-16BE.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UTF-16LE.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UTF-32.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UTF-32BE.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UTF-32LE.so 0755 root bin
+f none lib/iconv/amd64/eucJP%UTF-8.so 0755 root bin
+s none lib/iconv/amd64/UCS-4%eucJP.so=./UTF-32%eucJP.so
+s none lib/iconv/amd64/UCS-4BE%eucJP.so=./UTF-32BE%eucJP.so
+s none lib/iconv/amd64/UCS-4LE%eucJP.so=./UTF-32LE%eucJP.so
+s none lib/iconv/amd64/eucJP%UCS-4.so=./eucJP%UTF-32.so
+s none lib/iconv/amd64/eucJP%UCS-4BE.so=./eucJP%UTF-32BE.so
+s none lib/iconv/amd64/eucJP%UCS-4LE.so=./eucJP%UTF-32LE.so
+f none lib/iconv/amd64/UTF-8%eucTH.so 0755 root bin
+f none lib/iconv/amd64/eucTH%UTF-8.so 0755 root bin
+s none lib/iconv/amd64/ISO8859-11%UTF-8.so=./eucTH%UTF-8.so
+s none lib/iconv/amd64/TIS620.2533%UTF-8.so=./eucTH%UTF-8.so
+s none lib/iconv/amd64/UTF-8%ISO8859-11.so=./UTF-8%eucTH.so
+s none lib/iconv/amd64/UTF-8%TIS620.2533.so=./UTF-8%eucTH.so
+s none lib/iconv/amd64/UTF-8%iso8859-11.so=./UTF-8%eucTH.so
+s none lib/iconv/amd64/UTF-8%tis620.2533.so=./UTF-8%eucTH.so
+s none lib/iconv/amd64/iso8859-11%UTF-8.so=./eucTH%UTF-8.so
+s none lib/iconv/amd64/tis620.2533%UTF-8.so=./eucTH%UTF-8.so
