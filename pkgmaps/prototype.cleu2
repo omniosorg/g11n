@@ -21,41 +21,41 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none usr/lib/iconv 0755 root bin
-s none usr/lib/iconv/646%GBK.so=./646%CODESET.so
-f none usr/lib/iconv/zh_CN.gbk%zh_CN.iso2022-CN.so 0755 root bin
-s none usr/lib/iconv/zh_CN.gb18030%zh_CN.iso2022-CN.so=./zh_CN.gbk%zh_CN.iso2022-CN.so
-f none usr/lib/iconv/zh_CN.iso2022-CN%zh_CN.gbk.so 0755 root bin
-f none usr/lib/iconv/zh_CN.gbk%zh_TW-big5.so 0755 root bin
-s none usr/lib/iconv/zh_CN.gb18030%zh_TW-big5.so=./zh_CN.gbk%zh_TW-big5.so
-f none usr/lib/iconv/zh_TW-big5%zh_CN.gbk.so 0755 root bin
-s none usr/lib/iconv/zh_TW-big5%zh_CN.gb18030.so=./zh_TW-big5%zh_CN.gbk.so
-f none usr/lib/iconv/zh_CN.gbk%zh_TW-big5p.so 0755 root bin
-s none usr/lib/iconv/zh_CN.gb18030%zh_TW-big5p.so=./zh_CN.gbk%zh_TW-big5p.so
-f none usr/lib/iconv/zh_TW-big5p%zh_CN.gbk.so 0755 root bin
-s none usr/lib/iconv/zh_TW-big5p%zh_CN.gb18030.so=./zh_TW-big5p%zh_CN.gbk.so
-f none usr/lib/iconv/zh_CN.gbk%zh_HK.hkscs.so 0755 root bin
-s none usr/lib/iconv/zh_CN.gb18030%zh_HK.hkscs.so=./zh_CN.gbk%zh_HK.hkscs.so
-s none usr/lib/iconv/zh_CN.gb18030%zh_HK.big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
-s none usr/lib/iconv/zh_CN.gb18030%zh_HK-big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
-s none usr/lib/iconv/zh_CN.gbk%zh_HK.big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
-s none usr/lib/iconv/zh_CN.gbk%zh_HK-big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
-f none usr/lib/iconv/zh_HK.hkscs%zh_CN.gbk.so 0755 root bin
-s none usr/lib/iconv/zh_HK.hkscs%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
-s none usr/lib/iconv/zh_HK.big5hk%zh_CN.gbk.so=./zh_HK.hkscs%zh_CN.gbk.so
-s none usr/lib/iconv/zh_HK.big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
-s none usr/lib/iconv/zh_HK-big5hk%zh_CN.gbk.so=./zh_HK.hkscs%zh_CN.gbk.so
-s none usr/lib/iconv/zh_HK-big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
-s none usr/lib/iconv/646%gb2312.so=./646%CODESET.so
-f none usr/lib/iconv/zh_CN.euc%zh_CN.iso2022-CN.so 0755 root bin
-f none usr/lib/iconv/zh_CN.iso2022-CN%zh_CN.euc.so 0755 root bin
-f none usr/lib/iconv/HZ-GB-2312%zh_CN.euc.so 0755 root bin
-f none usr/lib/iconv/zh_CN.euc%HZ-GB-2312.so 0755 root bin
-f none usr/lib/iconv/zh_CN.gbk%HZ-GB-2312.so 0755 root bin
-s none usr/lib/iconv/HZ-GB-2312%zh_CN.gbk.so=./HZ-GB-2312%zh_CN.euc.so
-f none usr/lib/iconv/zh_TW-big5%zh_CN.euc.so 0755 root bin
-f none usr/lib/iconv/zh_CN.euc%zh_TW-big5.so 0755 root bin
-s none usr/lib/iconv/zh_CN.euc%zh_CN.iso2022-7.so=./zh_CN.euc%zh_CN.iso2022-CN.so
-s none usr/lib/iconv/zh_CN.iso2022-7%zh_CN.euc.so=./zh_CN.iso2022-CN%zh_CN.euc.so
-s none usr/lib/iconv/gb2312%iso2022.so=./zh_CN.euc%zh_CN.iso2022-CN.so
-s none usr/lib/iconv/iso2022%gb2312.so=./zh_CN.iso2022-CN%zh_CN.euc.so
+#MOVED#d none usr/lib/iconv 0755 root bin
+#MOVED#s none usr/lib/iconv/646%GBK.so=./646%CODESET.so
+#MOVED#f none usr/lib/iconv/zh_CN.gbk%zh_CN.iso2022-CN.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_CN.gb18030%zh_CN.iso2022-CN.so=./zh_CN.gbk%zh_CN.iso2022-CN.so
+#MOVED#f none usr/lib/iconv/zh_CN.iso2022-CN%zh_CN.gbk.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_CN.gbk%zh_TW-big5.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_CN.gb18030%zh_TW-big5.so=./zh_CN.gbk%zh_TW-big5.so
+#MOVED#f none usr/lib/iconv/zh_TW-big5%zh_CN.gbk.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_TW-big5%zh_CN.gb18030.so=./zh_TW-big5%zh_CN.gbk.so
+#MOVED#f none usr/lib/iconv/zh_CN.gbk%zh_TW-big5p.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_CN.gb18030%zh_TW-big5p.so=./zh_CN.gbk%zh_TW-big5p.so
+#MOVED#f none usr/lib/iconv/zh_TW-big5p%zh_CN.gbk.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_TW-big5p%zh_CN.gb18030.so=./zh_TW-big5p%zh_CN.gbk.so
+#MOVED#f none usr/lib/iconv/zh_CN.gbk%zh_HK.hkscs.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_CN.gb18030%zh_HK.hkscs.so=./zh_CN.gbk%zh_HK.hkscs.so
+#MOVED#s none usr/lib/iconv/zh_CN.gb18030%zh_HK.big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
+#MOVED#s none usr/lib/iconv/zh_CN.gb18030%zh_HK-big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
+#MOVED#s none usr/lib/iconv/zh_CN.gbk%zh_HK.big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
+#MOVED#s none usr/lib/iconv/zh_CN.gbk%zh_HK-big5hk.so=./zh_CN.gbk%zh_HK.hkscs.so
+#MOVED#f none usr/lib/iconv/zh_HK.hkscs%zh_CN.gbk.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_HK.hkscs%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
+#MOVED#s none usr/lib/iconv/zh_HK.big5hk%zh_CN.gbk.so=./zh_HK.hkscs%zh_CN.gbk.so
+#MOVED#s none usr/lib/iconv/zh_HK.big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
+#MOVED#s none usr/lib/iconv/zh_HK-big5hk%zh_CN.gbk.so=./zh_HK.hkscs%zh_CN.gbk.so
+#MOVED#s none usr/lib/iconv/zh_HK-big5hk%zh_CN.gb18030.so=./zh_HK.hkscs%zh_CN.gbk.so
+#MOVED#s none usr/lib/iconv/646%gb2312.so=./646%CODESET.so
+#MOVED#f none usr/lib/iconv/zh_CN.euc%zh_CN.iso2022-CN.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_CN.iso2022-CN%zh_CN.euc.so 0755 root bin
+#MOVED#f none usr/lib/iconv/HZ-GB-2312%zh_CN.euc.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_CN.euc%HZ-GB-2312.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_CN.gbk%HZ-GB-2312.so 0755 root bin
+#MOVED#s none usr/lib/iconv/HZ-GB-2312%zh_CN.gbk.so=./HZ-GB-2312%zh_CN.euc.so
+#MOVED#f none usr/lib/iconv/zh_TW-big5%zh_CN.euc.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_CN.euc%zh_TW-big5.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_CN.euc%zh_CN.iso2022-7.so=./zh_CN.euc%zh_CN.iso2022-CN.so
+#MOVED#s none usr/lib/iconv/zh_CN.iso2022-7%zh_CN.euc.so=./zh_CN.iso2022-CN%zh_CN.euc.so
+#MOVED#s none usr/lib/iconv/gb2312%iso2022.so=./zh_CN.euc%zh_CN.iso2022-CN.so
+#MOVED#s none usr/lib/iconv/iso2022%gb2312.so=./zh_CN.iso2022-CN%zh_CN.euc.so

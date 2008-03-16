@@ -24,8 +24,8 @@
 
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
-d none usr/lib/iconv 0755 root bin
-f none usr/lib/iconv/pc-iscii%iscii91.so 0755 root bin
-f none usr/lib/iconv/ea-iscii%iscii91.so 0755 root bin
-f none usr/lib/iconv/iscii91%ea-iscii.so 0755 root bin
-f none usr/lib/iconv/iscii91%pc-iscii.so 0755 root bin
+#MOVED#d none usr/lib/iconv 0755 root bin
+#MOVED#f none usr/lib/iconv/pc-iscii%iscii91.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ea-iscii%iscii91.so 0755 root bin
+#MOVED#f none usr/lib/iconv/iscii91%ea-iscii.so 0755 root bin
+#MOVED#f none usr/lib/iconv/iscii91%pc-iscii.so 0755 root bin

@@ -21,8 +21,8 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none usr/lib/iconv/sparcv9 0755 root bin
-f none usr/lib/iconv/sparcv9/pc-iscii%iscii91.so 0755 root bin
-f none usr/lib/iconv/sparcv9/ea-iscii%iscii91.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iscii91%ea-iscii.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iscii91%pc-iscii.so 0755 root bin
+#MOVED#d none usr/lib/iconv/sparcv9 0755 root bin
+#MOVED#f none usr/lib/iconv/sparcv9/pc-iscii%iscii91.so 0755 root bin
+#MOVED#f none usr/lib/iconv/sparcv9/ea-iscii%iscii91.so 0755 root bin
+#MOVED#f none usr/lib/iconv/sparcv9/iscii91%ea-iscii.so 0755 root bin
+#MOVED#f none usr/lib/iconv/sparcv9/iscii91%pc-iscii.so 0755 root bin

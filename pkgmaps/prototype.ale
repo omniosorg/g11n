@@ -23,5 +23,5 @@
 #
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
-d none usr/lib/iconv 0755 root bin
-f none usr/lib/iconv/646%CODESET.so 0644 root bin
+#MOVED#d none usr/lib/iconv 0755 root bin
+#MOVED#f none usr/lib/iconv/646%CODESET.so 0644 root bin

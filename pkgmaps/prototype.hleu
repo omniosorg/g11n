@@ -22,30 +22,30 @@
 # Use is subject to license terms.
 #
 d none usr/lib 0755 root bin
-d none usr/lib/iconv 0755 root bin
-s none usr/lib/iconv/646%BIG5.so=./646%CODESET.so
-s none usr/lib/iconv/646%cns11643.so=./646%CODESET.so
-f none usr/lib/iconv/zh_TW-big5%zh_TW-euc.so 0755 root bin
-f none usr/lib/iconv/zh_TW-big5%zh_TW-iso2022-7.so 0755 root bin
-f none usr/lib/iconv/zh_TW-big5%zh_TW-iso2022-CN-EXT.so 0755 root bin
-s none usr/lib/iconv/zh_TW-big5%zh_TW-iso2022-CN.so=./zh_TW-big5%zh_TW-iso2022-7.so
-f none usr/lib/iconv/zh_TW-euc%zh_TW-big5.so 0755 root bin
-f none usr/lib/iconv/zh_TW-euc%zh_TW-iso2022-7.so 0755 root bin
-f none usr/lib/iconv/zh_TW-euc%zh_TW-iso2022-CN-EXT.so 0755 root bin
-f none usr/lib/iconv/zh_TW-iso2022-7%zh_TW-big5.so 0755 root bin
-f none usr/lib/iconv/zh_TW-iso2022-7%zh_TW-euc.so 0755 root bin
-s none usr/lib/iconv/zh_TW-iso2022-CN%zh_TW-big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
-f none usr/lib/iconv/zh_TW-iso2022-CN-EXT%zh_TW-big5.so 0755 root bin
-f none usr/lib/iconv/zh_TW-iso2022-CN-EXT%zh_TW-euc.so 0755 root bin
-s none usr/lib/iconv/zh_TW.big5%zh_TW.euc.so=./zh_TW-big5%zh_TW-euc.so
-s none usr/lib/iconv/zh_TW.big5%zh_TW.iso2022-7.so=./zh_TW-big5%zh_TW-iso2022-7.so
-s none usr/lib/iconv/zh_TW.big5%zh_TW.iso2022-CN-EXT.so=./zh_TW-big5%zh_TW-iso2022-CN-EXT.so
-s none usr/lib/iconv/zh_TW.big5%zh_TW.iso2022-CN.so=./zh_TW-big5%zh_TW-iso2022-7.so
-s none usr/lib/iconv/zh_TW.euc%zh_TW.big5.so=./zh_TW-euc%zh_TW-big5.so
-s none usr/lib/iconv/zh_TW.euc%zh_TW.iso2022-7.so=./zh_TW-euc%zh_TW-iso2022-7.so
-s none usr/lib/iconv/zh_TW.euc%zh_TW.iso2022-CN-EXT.so=./zh_TW-euc%zh_TW-iso2022-CN-EXT.so
-s none usr/lib/iconv/zh_TW.iso2022-7%zh_TW.big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
-s none usr/lib/iconv/zh_TW.iso2022-7%zh_TW.euc.so=./zh_TW-iso2022-7%zh_TW-euc.so
-s none usr/lib/iconv/zh_TW.iso2022-CN%zh_TW.big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
-s none usr/lib/iconv/zh_TW.iso2022-CN-EXT%zh_TW.big5.so=./zh_TW-iso2022-CN-EXT%zh_TW-big5.so
-s none usr/lib/iconv/zh_TW.iso2022-CN-EXT%zh_TW.euc.so=./zh_TW-iso2022-CN-EXT%zh_TW-euc.so
+#MOVED#d none usr/lib/iconv 0755 root bin
+#MOVED#s none usr/lib/iconv/646%BIG5.so=./646%CODESET.so
+#MOVED#s none usr/lib/iconv/646%cns11643.so=./646%CODESET.so
+#MOVED#f none usr/lib/iconv/zh_TW-big5%zh_TW-euc.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_TW-big5%zh_TW-iso2022-7.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_TW-big5%zh_TW-iso2022-CN-EXT.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_TW-big5%zh_TW-iso2022-CN.so=./zh_TW-big5%zh_TW-iso2022-7.so
+#MOVED#f none usr/lib/iconv/zh_TW-euc%zh_TW-big5.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_TW-euc%zh_TW-iso2022-7.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_TW-euc%zh_TW-iso2022-CN-EXT.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_TW-iso2022-7%zh_TW-big5.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_TW-iso2022-7%zh_TW-euc.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_TW-iso2022-CN%zh_TW-big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
+#MOVED#f none usr/lib/iconv/zh_TW-iso2022-CN-EXT%zh_TW-big5.so 0755 root bin
+#MOVED#f none usr/lib/iconv/zh_TW-iso2022-CN-EXT%zh_TW-euc.so 0755 root bin
+#MOVED#s none usr/lib/iconv/zh_TW.big5%zh_TW.euc.so=./zh_TW-big5%zh_TW-euc.so
+#MOVED#s none usr/lib/iconv/zh_TW.big5%zh_TW.iso2022-7.so=./zh_TW-big5%zh_TW-iso2022-7.so
+#MOVED#s none usr/lib/iconv/zh_TW.big5%zh_TW.iso2022-CN-EXT.so=./zh_TW-big5%zh_TW-iso2022-CN-EXT.so
+#MOVED#s none usr/lib/iconv/zh_TW.big5%zh_TW.iso2022-CN.so=./zh_TW-big5%zh_TW-iso2022-7.so
+#MOVED#s none usr/lib/iconv/zh_TW.euc%zh_TW.big5.so=./zh_TW-euc%zh_TW-big5.so
+#MOVED#s none usr/lib/iconv/zh_TW.euc%zh_TW.iso2022-7.so=./zh_TW-euc%zh_TW-iso2022-7.so
+#MOVED#s none usr/lib/iconv/zh_TW.euc%zh_TW.iso2022-CN-EXT.so=./zh_TW-euc%zh_TW-iso2022-CN-EXT.so
+#MOVED#s none usr/lib/iconv/zh_TW.iso2022-7%zh_TW.big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
+#MOVED#s none usr/lib/iconv/zh_TW.iso2022-7%zh_TW.euc.so=./zh_TW-iso2022-7%zh_TW-euc.so
+#MOVED#s none usr/lib/iconv/zh_TW.iso2022-CN%zh_TW.big5.so=./zh_TW-iso2022-7%zh_TW-big5.so
+#MOVED#s none usr/lib/iconv/zh_TW.iso2022-CN-EXT%zh_TW.big5.so=./zh_TW-iso2022-CN-EXT%zh_TW-big5.so
+#MOVED#s none usr/lib/iconv/zh_TW.iso2022-CN-EXT%zh_TW.euc.so=./zh_TW-iso2022-CN-EXT%zh_TW-euc.so

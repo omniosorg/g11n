@@ -22,21 +22,21 @@
 # Use is subject to license terms.
 #
 d none usr/lib 0755 root bin
-d none usr/lib/iconv 0755 root bin
-s none usr/lib/iconv/646%5601.so=./646%CODESET.so
-f none usr/lib/iconv/ko_KR-euc%ko_KR-iso2022-7.so 0755 root bin
-f none usr/lib/iconv/ko_KR-euc%ko_KR-johap.so 0755 root bin
-f none usr/lib/iconv/ko_KR-euc%ko_KR-johap92.so 0755 root bin
-f none usr/lib/iconv/ko_KR-euc%ko_KR-nbyte.so 0755 root bin
-f none usr/lib/iconv/ko_KR-iso2022-7%ko_KR-euc.so 0755 root bin
-f none usr/lib/iconv/ko_KR-johap%ko_KR-euc.so 0755 root bin
-f none usr/lib/iconv/ko_KR-johap92%ko_KR-euc.so 0755 root bin
-f none usr/lib/iconv/ko_KR-nbyte%ko_KR-euc.so 0755 root bin
-s none usr/lib/iconv/ko_KR.euc%ko_KR.iso2022-7.so=./ko_KR-euc%ko_KR-iso2022-7.so
-s none usr/lib/iconv/ko_KR.euc%ko_KR.johap.so=./ko_KR-euc%ko_KR-johap.so
-s none usr/lib/iconv/ko_KR.euc%ko_KR.johap92.so=./ko_KR-euc%ko_KR-johap92.so
-s none usr/lib/iconv/ko_KR.euc%ko_KR.nbyte.so=./ko_KR-euc%ko_KR-nbyte.so
-s none usr/lib/iconv/ko_KR.iso2022-7%ko_KR.euc.so=./ko_KR-iso2022-7%ko_KR-euc.so
-s none usr/lib/iconv/ko_KR.johap%ko_KR.euc.so=./ko_KR-johap%ko_KR-euc.so
-s none usr/lib/iconv/ko_KR.johap92%ko_KR.euc.so=./ko_KR-johap92%ko_KR-euc.so
-s none usr/lib/iconv/ko_KR.nbyte%ko_KR.euc.so=./ko_KR-nbyte%ko_KR-euc.so
+#MOVED#d none usr/lib/iconv 0755 root bin
+#MOVED#s none usr/lib/iconv/646%5601.so=./646%CODESET.so
+#MOVED#f none usr/lib/iconv/ko_KR-euc%ko_KR-iso2022-7.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ko_KR-euc%ko_KR-johap.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ko_KR-euc%ko_KR-johap92.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ko_KR-euc%ko_KR-nbyte.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ko_KR-iso2022-7%ko_KR-euc.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ko_KR-johap%ko_KR-euc.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ko_KR-johap92%ko_KR-euc.so 0755 root bin
+#MOVED#f none usr/lib/iconv/ko_KR-nbyte%ko_KR-euc.so 0755 root bin
+#MOVED#s none usr/lib/iconv/ko_KR.euc%ko_KR.iso2022-7.so=./ko_KR-euc%ko_KR-iso2022-7.so
+#MOVED#s none usr/lib/iconv/ko_KR.euc%ko_KR.johap.so=./ko_KR-euc%ko_KR-johap.so
+#MOVED#s none usr/lib/iconv/ko_KR.euc%ko_KR.johap92.so=./ko_KR-euc%ko_KR-johap92.so
+#MOVED#s none usr/lib/iconv/ko_KR.euc%ko_KR.nbyte.so=./ko_KR-euc%ko_KR-nbyte.so
+#MOVED#s none usr/lib/iconv/ko_KR.iso2022-7%ko_KR.euc.so=./ko_KR-iso2022-7%ko_KR-euc.so
+#MOVED#s none usr/lib/iconv/ko_KR.johap%ko_KR.euc.so=./ko_KR-johap%ko_KR-euc.so
+#MOVED#s none usr/lib/iconv/ko_KR.johap92%ko_KR.euc.so=./ko_KR-johap92%ko_KR-euc.so
+#MOVED#s none usr/lib/iconv/ko_KR.nbyte%ko_KR.euc.so=./ko_KR-nbyte%ko_KR-euc.so

@@ -21,10 +21,10 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none usr/lib/iconv/amd64 0755 root bin
-f none usr/lib/iconv/amd64/zh_HK.hkscs%zh_TW-big5p.so 0755 root bin
-s none usr/lib/iconv/amd64/zh_HK.big5hk%zh_TW-big5p.so=./zh_HK.hkscs%zh_TW-big5p.so
-s none usr/lib/iconv/amd64/zh_HK-big5hk%zh_TW-big5p.so=./zh_HK.hkscs%zh_TW-big5p.so
-f none usr/lib/iconv/amd64/zh_TW-big5p%zh_HK.hkscs.so 0755 root bin
-s none usr/lib/iconv/amd64/zh_TW-big5p%zh_HK.big5hk.so=./zh_TW-big5p%zh_HK.hkscs.so
-s none usr/lib/iconv/amd64/zh_TW-big5p%zh_HK-big5hk.so=./zh_TW-big5p%zh_HK.hkscs.so
+#MOVED#d none usr/lib/iconv/amd64 0755 root bin
+#MOVED#f none usr/lib/iconv/amd64/zh_HK.hkscs%zh_TW-big5p.so 0755 root bin
+#MOVED#s none usr/lib/iconv/amd64/zh_HK.big5hk%zh_TW-big5p.so=./zh_HK.hkscs%zh_TW-big5p.so
+#MOVED#s none usr/lib/iconv/amd64/zh_HK-big5hk%zh_TW-big5p.so=./zh_HK.hkscs%zh_TW-big5p.so
+#MOVED#f none usr/lib/iconv/amd64/zh_TW-big5p%zh_HK.hkscs.so 0755 root bin
+#MOVED#s none usr/lib/iconv/amd64/zh_TW-big5p%zh_HK.big5hk.so=./zh_TW-big5p%zh_HK.hkscs.so
+#MOVED#s none usr/lib/iconv/amd64/zh_TW-big5p%zh_HK-big5hk.so=./zh_TW-big5p%zh_HK.hkscs.so
