@@ -28,6 +28,7 @@
 
 include $(SRC)/Makefile.master
 
+
 LOCALES = ar ar_EG.UTF-8 ar_SA.UTF-8 bg_BG.ISO8859-5 bg_BG.UTF-8 ca_ES.ISO8859-15 ca_ES.UTF-8 common cs_CZ.ISO8859-2 cs_CZ.UTF-8 \
 cs_CZ.UTF-8@euro da_DK.UTF-8 da_DK.ISO8859-15 de_AT.ISO8859-15 de_AT.UTF-8 de_CH.UTF-8 de_DE.ISO8859-1 de_DE.ISO8859-15 de_DE.UTF-8 de_LU.UTF-8 el_CY.UTF-8 \
 el_GR.ISO8859-7 el_GR.ISO8859-7@euro el_GR.UTF-8 en_AU.UTF-8 en_CA.UTF-8 en_GB.ISO8859-15 en_GB.UTF-8 en_IE.ISO8859-15 en_IE.UTF-8 en_NZ.UTF-8 \
