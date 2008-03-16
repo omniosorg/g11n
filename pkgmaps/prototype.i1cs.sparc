@@ -23,4 +23,4 @@
 #
 
 d none usr/openwin/lib/locale/iso8859-1/sparcv9 0755 root bin
-f none usr/openwin/lib/locale/iso8859-1/sparcv9/xomEuro.so.2 0644 root bin
+#f none usr/openwin/lib/locale/iso8859-1/sparcv9/xomEuro.so.2 0644 root bin
