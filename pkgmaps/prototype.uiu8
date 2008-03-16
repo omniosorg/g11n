@@ -604,7 +604,7 @@ f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-500.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-870.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-871.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-875.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-880.bt 0444 root bin
+#f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-880.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-1025.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-1026.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-1112.bt 0444 root bin
@@ -630,7 +630,7 @@ f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-866.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-869.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-921.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-922.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-1046.bt 0444 root bin
+#f none lib/iconv/geniconvtbl/binarytables/UTF-8%IBM-1046.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-037%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-273%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-277%UTF-8.bt 0444 root bin
@@ -645,7 +645,7 @@ f none lib/iconv/geniconvtbl/binarytables/IBM-500%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-870%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-871%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-875%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/IBM-880%UTF-8.bt 0444 root bin
+#f none lib/iconv/geniconvtbl/binarytables/IBM-880%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-1025%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-1026%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-1112%UTF-8.bt 0444 root bin
@@ -671,7 +671,7 @@ f none lib/iconv/geniconvtbl/binarytables/IBM-866%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-869%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-921%UTF-8.bt 0444 root bin
 f none lib/iconv/geniconvtbl/binarytables/IBM-922%UTF-8.bt 0444 root bin
-f none lib/iconv/geniconvtbl/binarytables/IBM-1046%UTF-8.bt 0444 root bin
+#f none lib/iconv/geniconvtbl/binarytables/IBM-1046%UTF-8.bt 0444 root bin
 f none lib/iconv/8859-16%UCS-2.so 0555 root bin
 f none lib/iconv/UCS-2%8859-16.so 0555 root bin
 f none lib/iconv/8859-16%UCS-2BE.so 0555 root bin
