@@ -28,10 +28,7 @@ d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/en_US.UTF-8 0755 root bin
 d none usr/lib/locale/en_US.UTF-8 0755 root bin
 s none usr/lib/locale/en_US.UTF-8/32=.
-s none usr/lib/locale/en_US.UTF-8/32=.
 f none usr/lib/locale/en_US.UTF-8/en_US.UTF-8.so.3 0555 root bin
-f none usr/lib/locale/en_US.UTF-8/en_US.UTF-8.so.3 0555 root bin
-f none usr/lib/locale/en_US.UTF-8/geo_map 0444 root bin
 f none usr/lib/locale/en_US.UTF-8/geo_map 0444 root bin
 d none usr/lib/locale/en_US.UTF-8/LC_COLLATE 0755 root bin
 d none usr/lib/locale/en_US.UTF-8/LC_COLLATE 0755 root bin
@@ -50,8 +47,6 @@ d none usr/lib/locale/en_US.UTF-8/LC_NUMERIC 0755 root bin
 d none usr/lib/locale/en_US.UTF-8/LC_TIME 0755 root bin
 d none usr/lib/locale/en_US.UTF-8/LC_TIME 0755 root bin
 f none usr/lib/locale/en_US.UTF-8/locale_description 0444 root bin
-f none usr/lib/locale/en_US.UTF-8/locale_description 0444 root bin
-f none usr/lib/locale/en_US.UTF-8/locale_map 0444 root bin
 f none usr/lib/locale/en_US.UTF-8/locale_map 0444 root bin
 d none usr/lib/locale/en_US.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/en_US.UTF-8/LO_LTYPE/32=.
