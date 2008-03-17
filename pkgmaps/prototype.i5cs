@@ -27,8 +27,5 @@ d none usr/openwin 0755 root bin
 d none usr/openwin/lib 0755 root bin
 d none usr/openwin/lib/locale 0755 root bin
 d none usr/openwin/lib/locale/iso8859-5 0755 root bin
-s none usr/openwin/lib/locale/iso8859-5/xomEuro.so.2=../iso8859-1/xomEuro.so.2 root bin
 d none usr/openwin/lib/locale/ru_RU.ANSI1251 0755 root bin
-s none usr/openwin/lib/locale/ru_RU.ANSI1251/xomEuro.so.2=../iso8859-1/xomEuro.so.2
 d none usr/openwin/lib/locale/ru_RU.KOI8-R 0755 root bin
-s none usr/openwin/lib/locale/ru_RU.KOI8-R/xomEuro.so.2=../iso8859-1/xomEuro.so.2

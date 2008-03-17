@@ -58,7 +58,6 @@ s none openwin/lib/locale/el_GR=./el_GR.ISO8859-7
 s none openwin/lib/locale/el.sun_eu_greek=./el_GR.ISO8859-7@euro
 s none openwin/lib/locale/el_GR.ISO8859-7/libs=../iso_8859_1/libs
 d none openwin/lib/locale/el_GR.ISO8859-7@euro 0755 root bin
-s none openwin/lib/locale/el_GR.ISO8859-7@euro/xomEuro.so.2=../iso8859-1/xomEuro.so.2
 s none openwin/lib/locale/el_GR.ISO8859-7@euro/libs=../iso_8859_1/libs
 
 d none openwin/lib/locale/el_GR.ISO8859-7@euro/xview 0755 root bin
