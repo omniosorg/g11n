@@ -67,3 +67,14 @@ s none usr/lib/locale/en_NZ.UTF-8/LO_LTYPE/sparcv9/en_NZ.UTF-8.layout.so.1=../..
 d none usr/lib/locale/en_NZ.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/en_NZ.UTF-8/sparcv9/en_NZ.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/en_NZ.UTF-8/sparcv9/methods_en_NZ.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/en_US.UTF-8/64=sparcv9
+s none usr/lib/locale/en_US.UTF-8/LC_CTYPE/64=sparcv9
+d none usr/lib/locale/en_US.UTF-8/LC_CTYPE/sparcv9 0755 root bin
+s none usr/lib/locale/en_US.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
+s none usr/lib/locale/en_US.UTF-8/LO_LTYPE/64=sparcv9
+d none usr/lib/locale/en_US.UTF-8/LO_LTYPE/sparcv9 0755 root bin
+s none usr/lib/locale/en_US.UTF-8/LO_LTYPE/sparcv9/en_US.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
+d none usr/lib/locale/en_US.UTF-8/sparcv9 0755 root bin
+d none usr/lib/locale/en_US.UTF-8/sparcv9 0755 root bin
+f none usr/lib/locale/en_US.UTF-8/sparcv9/en_US.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/en_US.UTF-8/sparcv9/methods_en_US.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
