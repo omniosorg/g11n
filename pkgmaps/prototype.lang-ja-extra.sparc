@@ -36,6 +36,9 @@ f none usr/lib/locale/ja/sparcv9/ja.so.3 0755 root bin
 #f none usr/lib/locale/ja/sparcv9/methods_ja.so.3 0755 root bin
 d none usr/lib/locale/ja/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/ja/LC_CTYPE/sparcv9/wdresolve.so=../../../ja_JP.eucJP/LC_CTYPE/amd64/wdresolve.so
+### code conversion STREAMS modules
+d none usr/kernel 0755 root sys
+d none usr/kernel/strmod 0755 root sys
 d none usr/kernel/strmod/sparcv9 0755 root sys
 f none usr/kernel/strmod/sparcv9/jconv7 0755 root sys
 f none usr/kernel/strmod/sparcv9/jconv8 0755 root sys

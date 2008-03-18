@@ -61,15 +61,6 @@ d none usr/lib/locale/ja/LO_LTYPE 0755 root bin
 f none usr/lib/locale/ja/locale_description 0644 root bin
 f none usr/lib/locale/ja/locale_map 0644 root bin
 f none usr/lib/locale/ja/geo_map 0644 root bin
-### code conversion STREAMS modules
-d none usr/kernel 0755 root sys
-d none usr/kernel/strmod 0755 root sys
-f none usr/kernel/strmod/jconv7 0755 root sys
-f none usr/kernel/strmod/jconv8 0755 root sys
-f none usr/kernel/strmod/jconvrs 0755 root sys
-f none usr/kernel/strmod/jconvru 0755 root sys
-f none usr/kernel/strmod/jconvs 0755 root sys
-f none usr/kernel/strmod/jconvu 0755 root sys
 ### mp l10n files - common
 d none usr/lib/lp 0755 root lp
 d none usr/lib/lp/locale 0755 root lp
