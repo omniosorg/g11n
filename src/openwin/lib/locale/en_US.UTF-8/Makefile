@@ -39,6 +39,8 @@ TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 
 TARGETDIRS = $(TARGETDIR)
 
+SUBDIRS = fonts
+
 
 all:=		TARGET= all
 install :=	TARGET= install
@@ -46,7 +48,7 @@ clean :=	TARGET= clean
 objclean := 	TARGET= objclean
 clobber :=	TARGET= clobber
 
-all: $(TARGETDIRS) 
+all: $(TARGETDIRS) $(SUBDIRS)
 
 include $(SRC)/src/Makefile.targ
 
