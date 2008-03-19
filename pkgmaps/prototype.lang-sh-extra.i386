@@ -25,7 +25,6 @@
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
-s none usr/lib/locale/nr/amd64/nr.so.3=../../sh_BA.ISO8859-2@bosnia/amd64/sh_BA.ISO8859-2@bosnia.so.3
 d none usr/lib/locale/sh_BA/amd64 0755 root bin
 s none usr/lib/locale/sh_BA/amd64/sh_BA.so.3=../../sh_BA.ISO8859-2@bosnia/amd64/sh_BA.ISO8859-2@bosnia.so.3
 d none usr/lib/locale/sh_BA.ISO8859-2@bosnia/amd64 0755 root bin
