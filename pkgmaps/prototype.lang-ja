@@ -29,7 +29,7 @@ f none usr/lib/locale/ja_JP.UTF-8/ja_JP.UTF-8.so.3 0755 root bin
 d none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE 0755 root bin
 f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/ldterm.dat 0555 root bin
 f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/wdresolve.so 0555 root bin
-s none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/LCL_DEF=../../common/LC_CTYPE/LCL_DEF_unicode
+f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/LCL_DEF 0644 root bin
 d none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE/ja_JP.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
 f none usr/lib/locale/ja_JP.UTF-8/locale_description 0644 root bin
