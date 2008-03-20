@@ -21,6 +21,8 @@
 # Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
+d none usr/lib/locale/common/sparcv9 0755 root bin
+f none usr/lib/locale/common/sparcv9/methods_unicode.so.3 0555 root bin
 d none usr/lib/locale/common/LC_CTYPE/sparcv9 0755 root bin
 f none usr/lib/locale/common/LC_CTYPE/sparcv9/wdresolve_unicode.so 0555 root bin
 d none usr/lib/locale/common/LO_LTYPE/sparcv9 0755 root bin
