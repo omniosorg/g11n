@@ -48,11 +48,11 @@ clean :=	TARGET= clean
 objclean := 	TARGET= objclean
 clobber :=	TARGET= clobber
 
-all: $(TARGETDIRS) $(SUBDIRS)
+all: $(TARGETDIRS)
 
 include $(SRC)/src/Makefile.targ
 
-install: all $(FILES.obj) 
+install: all $(FILES.obj) $(SUBDIRS)
 
 clean: objclean $(SUBDIRS)
 	$(RM) -r $(TARGETDIR)
