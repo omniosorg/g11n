@@ -108,4 +108,5 @@ s none usr/lib/locale/fr_LU.UTF-8/methods_fr_LU.UTF-8.so.3=../common/methods_uni
 d none usr/lib/locale/fr.UTF-8 0755 root bin
 s none usr/lib/locale/fr.UTF-8/fr.UTF-8.so.3=../fr_FR.UTF-8/fr_FR.UTF-8.so.3
 d none usr/lib/locale/fr.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/fr.UTF-8/LC_TIME 0755 root bin
 s none usr/lib/locale/fr.UTF-8/locale_description=../fr_FR.UTF-8/locale_description

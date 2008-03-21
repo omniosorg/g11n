@@ -26,6 +26,8 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/es 0755 root bin
+d none usr/lib/locale/es/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/es/LC_TIME 0755 root bin
 d none usr/lib/locale/es_AR 0755 root bin
 s none usr/lib/locale/es_AR/es_AR.so.3=../es_AR.ISO8859-1/es_AR.ISO8859-1.so.3
 f none usr/lib/locale/es_AR/geo_map 0644 root bin

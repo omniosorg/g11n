@@ -106,4 +106,5 @@ d none usr/lib/locale/de.ISO8859-15 0755 root bin
 s none usr/lib/locale/de.ISO8859-15/de.ISO8859-15.so.3=../de_DE.ISO8859-15/de_DE.ISO8859-15.so.3
 s none usr/lib/locale/de.ISO8859-15/locale_description=../de_DE.ISO8859-15/locale_description
 d none usr/lib/locale/de/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/de/LC_TIME 0755 root bin
 f none usr/lib/locale/de/locale_description 0644 root bin

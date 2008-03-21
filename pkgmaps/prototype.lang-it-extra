@@ -60,4 +60,5 @@ d none usr/lib/locale/it_IT.UTF-8@euro 0755 root bin
 s none usr/lib/locale/it_IT.UTF-8@euro/it_IT.UTF-8@euro.so.3=../it_IT.UTF-8/it_IT.UTF-8.so.3
 s none usr/lib/locale/it_IT.UTF-8@euro/methods_it_IT.UTF-8@euro.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/it/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/it/LC_TIME 0755 root bin
 f none usr/lib/locale/it/locale_description 0644 root bin

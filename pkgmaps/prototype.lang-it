@@ -43,5 +43,6 @@ s none usr/lib/locale/it_IT.UTF-8/LO_LTYPE/it_IT.UTF-8.layout.so.1=../../common/
 s none usr/lib/locale/it_IT.UTF-8/methods_it_IT.UTF-8.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/it.UTF-8 0755 root bin
 s none usr/lib/locale/it.UTF-8/it.UTF-8.so.3=../it_IT.UTF-8/it_IT.UTF-8.so.3
+d none usr/lib/locale/it.UTF-8/LC_TIME 0755 root bin
 d none usr/lib/locale/it.UTF-8/LC_MESSAGES 0755 root bin
 s none usr/lib/locale/it.UTF-8/locale_description=../it_IT.UTF-8/locale_description
