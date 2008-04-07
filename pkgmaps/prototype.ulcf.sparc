@@ -21,8 +21,3 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none kernel/strmod/sparcv9 0755 root sys
-f none kernel/strmod/sparcv9/u8koi8 0755 root sys
-f none kernel/strmod/sparcv9/u8lat1 0755 root sys
-f none kernel/strmod/sparcv9/u8lat2 0755 root sys
-

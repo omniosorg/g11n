@@ -21,31 +21,3 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none kernel 0755 root sys
-d none kernel/strmod 0755 root sys
-d none lib 0755 root bin
-d none lib/lp 0755 root lp
-d none lib/lp/locale 0755 root lp
-d none lib/lp/locale/en_US.UTF-8 0755 root lp
-d none lib/lp/locale/en_US.UTF-8/mp 0755 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/mp.conf 0444 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xuiso88591.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xuiso88592.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xuiso88594.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xuiso88595.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xuiso88597.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xuiso88599.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xuiso885910.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xubig5.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xugb2312.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xujisx0201.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xujisx0208.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xujisx0212.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xujohap92.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xugbk.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xufallback.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/xuunicode.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/ctlarabic.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/ctlthai.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/ctlhebrew.so 0555 root lp
-f none lib/lp/locale/en_US.UTF-8/mp/ctlhindi.so 0555 root lp
