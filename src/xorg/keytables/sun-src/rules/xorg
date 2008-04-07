@@ -941,9 +941,10 @@
   yu		yz		=	+pc/srp(latinyz):4
   yu		unicodeyz	=	+pc/srp(latinunicodeyz):4
 
-! model		=	symbols
-  $inetkbds     =       +inet(%m)
-  *	        =       +sun/solaris(defaults)
+! model		layout	=	symbols
+  $inetkbds     *	=       +inet(%m)
+  $sun_type7	jp	=	+sun/solaris(defaults_type7jp)
+  *	        *	=       +sun/solaris(defaults)
 
 ! model		layout		=	compat
   $sun_jp	jp		=	+japan(kana_lock)

@@ -814,6 +814,6 @@ xkb_symbols "type7" {
     key <AE10> { [ 0, asciitilde       ], [ kana_WA, kana_WO   ]       };
     key <HZTG> { [ Henkan_Mode ] };
     key <HENK> { [ Kana_Lock, Mode_switch ] };
-    key <ALGR> { [ Alt_R ] };
+    key <ALGR> { [ Alt_R, Alt_R ] };
 };
 
