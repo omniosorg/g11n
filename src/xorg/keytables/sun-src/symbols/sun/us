@@ -75,6 +75,7 @@
 
 // Symbols shared by all Sun Keyboard layouts
 xkb_symbols "sunbasic" {
+    include "srvr_ctrl(xfree86)"
     include "srvr_ctrl(stdkeypad)"
     include "us(basic)"
 
