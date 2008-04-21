@@ -2,7 +2,7 @@
 
 // $XFree86: xc/programs/xkbcomp/symbols/pl,v 3.5 2001/01/17 23:45:59 dawes Exp $
 
-//  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+//  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 
 //
 // CDDL HEADER START
@@ -29,7 +29,7 @@ partial default alphanumeric_keys
 xkb_symbols "basic" {
 
     // Describes the differences between a very simple en_US
-    // keyboard and a very simple QWERTZ Polish keybaord
+    // keyboard and a very simple QWERTY Polish keybaord
     // Polish Developer version
 
     name[Group1]= "Polish";
@@ -61,8 +61,8 @@ xkb_symbols "basic" {
     key <AD09> { [ o,			O		],	
 		 [ oacute,		Oacute		]	};
     key <AD10> { [ p,			P		]	};
-    key <AD11> { [ braceleft, 		bracketleft	]	};
-    key <AD12> { [ braceright,          bracketright	]	};
+    key <AD11> { [ bracketleft, 	braceleft	]	};
+    key <AD12> { [ bracketright,	braceright	]	};
 
     key <RTRN> { [ Return				]	};
 
