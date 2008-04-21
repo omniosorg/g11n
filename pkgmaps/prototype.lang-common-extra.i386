@@ -21,13 +21,13 @@
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-d none kernel 0755 root sys
-d none kernel/strmod 0755 root sys
-f none kernel/strmod/u8koi8 0755 root sys
-f none kernel/strmod/u8lat1 0755 root sys
-f none kernel/strmod/u8lat2 0755 root sys
-d none kernel/strmod/amd64 0755 root sys
-f none kernel/strmod/amd64/u8koi8 0755 root sys
-f none kernel/strmod/amd64/u8lat1 0755 root sys
-f none kernel/strmod/amd64/u8lat2 0755 root sys
+d none usr/kernel 0755 root sys
+d none usr/kernel/strmod 0755 root sys
+f none usr/kernel/strmod/u8koi8 0755 root sys
+f none usr/kernel/strmod/u8lat1 0755 root sys
+f none usr/kernel/strmod/u8lat2 0755 root sys
+d none usr/kernel/strmod/amd64 0755 root sys
+f none usr/kernel/strmod/amd64/u8koi8 0755 root sys
+f none usr/kernel/strmod/amd64/u8lat1 0755 root sys
+f none usr/kernel/strmod/amd64/u8lat2 0755 root sys
 

@@ -27,7 +27,7 @@
 
 include $(SRC)/Makefile.master
 
-TARGETDIR =	$(FILEROOT)/kernel/strmod
+TARGETDIR =	$(FILEROOT)/usr/kernel/strmod
 
 SOURCES =	u8sb.c common.h iso-8859-1_to_utf8.h iso-8859-2_to_utf8.h koi8-r_to_utf8.h utf8_to_iso-8859-1.h utf8_to_iso-8859-2.h utf8_to_koi8-r.h
 
