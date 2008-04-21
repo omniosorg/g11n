@@ -50,7 +50,7 @@ msgstr "File System Examiner"
 #: src/fsexam-conversion.c:213
 #, fuzzy
 msgid "Folder already exists"
-msgstr "Soubor již existuje"
+msgstr "Adresář již existuje"
 
 #: src/fsexam-conversion.c:218
 msgid "File already exists"
