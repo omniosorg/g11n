@@ -1,0 +1,51 @@
+* force convert for file content: bypass type check
+
+* preview in hex mode
+
+* Windows carriage return and line return (0x0a0d --> 0x0a)
+- don't ask me again
+	:used for cancel or for the first encoding.
+	:even click the last one, always apply the first encoding for later
+	 conversion.
+
+	 lack one way to communicate with internal code!!!!
+
+	 lack the communications between internal code and GUI!!
+	
+- error information for special type of file (compress/uncompress)
+  * Windows carriage return and line return (0x0a0d --> 0x0a)
+    MS-Windows \r\n
+    Unix       \n
+    Macintosh or mail boday \r
+    Default conversion can be changed by the preference dialog
+
+  * Enable user to remove and add encoding from encoding list
+
+- error information for special type of file (compress/uncompress)
+
+- Translation
+
+- progress bar
+
+- Speed 
+
+- shift+F12
+
+- Disable some UI such as peek when no possibility
+
+- integrate errno and fsexam_errno
+
+- pixbuf for icon (gsearch tool)
+
+- Refresh load the current directory or selected item
+
+- Code refactory
+
+- head file relationship
+
+- gnome/gtk options handling
+
+- verbose of the display msg
+
+- Peference setting:
+    only reset when we changed something
