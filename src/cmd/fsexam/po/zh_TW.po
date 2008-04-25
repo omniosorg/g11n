@@ -1,0 +1,2419 @@
+# 
+# CDDL HEADER START
+# 
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+# 
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+# 
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+# 
+# CDDL HEADER END
+# 
+
+# 
+# Copyright 2008 Sun Microsystems, Inc. All rights reserved.
+# Use is subject to license terms.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fsexeam HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-17 17:07+0800\n"
+"PO-Revision-Date: 2004-06-16 15:05+0900\n"
+"Last-Translator: desktop-discuss@opensolaris.org\n"
+"Language-Team: desktop-discuss@opensolaris.org\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:1
+msgid "<b>Available encoding:</b>"
+msgstr "<b>可用的編碼：</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:2
+msgid "<b>Conversion Setting:</b>"
+msgstr "<b>轉換設定：</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:3
+msgid "<b>Encoding List:</b>"
+msgstr "<b>編碼清單：</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:4
+msgid "<b>Encoding Selected:</b>"
+msgstr "<b>選取的編碼：</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:5
+msgid "<b>Search Result</b>"
+msgstr "<b>搜尋結果</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:6
+msgid "<b>_Dryrun Result</b>"
+msgstr "<b>模擬測試結果(_D)</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:7
+msgid "<b>_Location:</b>"
+msgstr "<b>位置(_L)：</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:8
+msgid "<b>_Report Pane</b>"
+msgstr "<b>報告窗格(_R)</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:9
+msgid "Add or Remove Encoding"
+msgstr "新增或移除編碼"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:10
+msgid "Archive or Compress files"
+msgstr "歸檔或壓縮檔案"
+
+#: ../src/fsexam.glade2.h:11
+msgid "Based on seconds"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:12
+msgid "Clear Searc_h Result"
+msgstr "清除搜尋結果(_H)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:13
+msgid "Clear the search result"
+msgstr "清除搜尋結果"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:14
+msgid "Content Conversion _Mode"
+msgstr "內容轉換模式(_M)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:15
+msgid "Convert"
+msgstr "轉換"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:16
+msgid "Convert file name or content based on previous dryrun result"
+msgstr "以先前的模擬測試結果為基礎來轉換檔案名稱或內容"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:17
+msgid ""
+"Convert file using the first candidate automatically instead of interactive "
+"converting"
+msgstr "自動使用第一個候選方式來轉換檔案，而不是使用互動式轉換"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:18
+msgid "Convert selected files' name or content according to the current mode"
+msgstr "根據目前的模式來轉換選取檔案的名稱或內容"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:19
+msgid "Convert without detecting whether encoding is UTF-8 or not"
+msgstr "在不偵測編碼是否為 UTF-8 的情況下轉換"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:20
+msgid "Data modified more than:"
+msgstr "資料的修改超過："
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:21
+msgid "Detect the encoding of file name or file content automatically"
+msgstr "自動偵測檔案名稱或檔案內容的編碼"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:22
+msgid "Don't Chec_k Symlink Content"
+msgstr "請勿檢查符號連結內容(_K)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:23
+msgid ""
+"Don't try to keep the consistency between symbolic link file and its target "
+"file"
+msgstr "請勿嘗試將符號連結檔案和其目標檔案保持一致"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:24
+msgid "Dryrun"
+msgstr "模擬測試"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:25
+msgid "Dryrun without changing any file name or content in the disk"
+msgstr "在不變更磁碟中任何檔案名稱或內容的情況下進行模擬測試"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:26
+msgid "Dryrun without changing files on disk"
+msgstr "在不變更磁碟中檔案的情況下進行模擬測試"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:27
+msgid "File Content _Mode"
+msgstr "檔案內容模式(_M)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:28 ../src/fsexam.c:395 ../src/fsexam.c:473
+#: ../data/fsexam.desktop.in.h:1
+msgid "File Encoding Examiner"
+msgstr "檔案編碼檢查程式"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:29
+msgid "File Encoding Examiner Preferences"
+msgstr "檔案編碼檢查程式喜好設定"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:30
+msgid "File _Name Mode"
+msgstr "檔案名稱模式(_N)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:31
+msgid "File content conversion mode"
+msgstr "檔案內容轉換模式"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:32
+msgid "File name conversion mode"
+msgstr "檔案名稱轉換模式"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:33
+msgid "Follow _Symbolic Link"
+msgstr "跟隨符號連結(_S)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:34 ../data/fsexam.schemas.in.h:2
+msgid "Follow symbolic link"
+msgstr "跟隨符號連結"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:35
+msgid "Forcibly Convert"
+msgstr "強制轉換"
+
+#: ../src/fsexam.glade2.h:36
+msgid "Group name"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:37
+msgid "Handle _Hidden Files"
+msgstr "處理隱藏式檔案(_H)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:38
+msgid "Handle _Remote Files"
+msgstr "處理遠端檔案(_R)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:39
+msgid "Hide search result"
+msgstr "隱藏搜尋結果"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:40
+msgid "History Length:"
+msgstr "歷程記錄長度："
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:41
+msgid "Log File Name:"
+msgstr "記錄檔名稱："
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:42
+msgid "Look in folder:"
+msgstr "在資料夾中查詢："
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:43
+msgid "Name Contains:"
+msgstr "名稱包含："
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:44
+msgid "Open file"
+msgstr "開啟檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:45
+msgid "Owned by group:"
+msgstr "所屬群組："
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:46
+msgid "Owned by user:"
+msgstr "所屬使用者："
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:47
+msgid "Processing archive or compress file"
+msgstr "正在處理歸檔或壓縮檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:48
+msgid "Processing hidden file"
+msgstr "正在處理隱藏式檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:49
+msgid "Processing non-local files such as NFS file"
+msgstr "正在處理非本機檔案，例如 NFS 檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:50
+msgid "Processing special type of file"
+msgstr "正在處理特殊類型的檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:51
+msgid "Recursive handle files under folder"
+msgstr "遞迴處理以下資料夾中的檔案："
+
+#: ../src/fsexam.glade2.h:52
+msgid "Remove encoding"
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:53
+msgid "Restore"
+msgstr "復原"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:54
+msgid "Restore given files' name or content according to conversion mode"
+msgstr "根據轉換模式來復原指定檔案的名稱或內容"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:55
+msgid "Restore selected files' name or content"
+msgstr "復原選取檔案的名稱或內容"
+
+#: ../src/fsexam.glade2.h:56
+msgid ""
+"Save the encoding list permanently, otherwise used only for current session"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:57
+msgid "Scenario"
+msgstr "方案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:58
+msgid "Search Result"
+msgstr "搜尋結果"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:59
+msgid "Search for _Files..."
+msgstr "搜尋檔案(_F)…"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:60
+msgid "Search for files"
+msgstr "搜尋檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:61
+msgid "Search for files according to user given criteria"
+msgstr "根據使用者指定的條件來搜尋檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:62
+msgid "Select A Folder"
+msgstr "選取資料夾"
+
+#: ../src/fsexam.glade2.h:63
+msgid "Select encoding"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:64
+msgid "Special File Handling"
+msgstr "特殊檔案處理"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:65
+msgid "Status modified more than:"
+msgstr "狀態的修改超過："
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:66
+msgid "Stop _Searching"
+msgstr "停止搜尋(_S)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:67
+msgid "Stop searching files"
+msgstr "停止搜尋檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:68
+msgid ""
+"The number of conversion is stored. Converting multiple files at one time "
+"count as 1 time"
+msgstr "轉換的次數已儲存。一次轉換多個檔案的計數為 1 次"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:69
+msgid "Undo the last action"
+msgstr "還原上個動作"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:70
+msgid "Use Log File"
+msgstr "使用記錄檔"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:71
+msgid "Use log file"
+msgstr "使用記錄檔"
+
+#: ../src/fsexam.glade2.h:72
+msgid "Use shell glob pattern"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:73
+msgid "User name"
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:74
+msgid "_Auto Conversion"
+msgstr "自動轉換(_A)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:75
+msgid "_Auto Detection"
+msgstr "自動偵測(_A)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:76
+msgid "_Content"
+msgstr "內容(_C)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:77
+msgid "_Convert"
+msgstr "轉換(_C)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:78
+msgid "_Dryrun"
+msgstr "模擬測試(_D)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:79
+msgid "_Dryrun Result Pane"
+msgstr "模擬測試結果窗格(_D)"
+
+#: ../src/fsexam.glade2.h:80
+msgid "_Edit"
+msgstr "編輯(_E)"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam.glade2.h:81
+msgid "_File"
+msgstr "檔案(_F)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:82
+msgid "_Forcibly Convert"
+msgstr "強制轉換(_F)"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam.glade2.h:83
+msgid "_Help"
+msgstr "說明(_H)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:84
+msgid "_Name Conversion Mode"
+msgstr "名稱轉換模式(_N)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:85
+msgid "_Preview Content"
+msgstr "預覽內容(_P)"
+
+#: ../src/fsexam.glade2.h:86
+msgid "_Recursive Mode"
+msgstr "遞迴模式(_R)"
+
+#: ../src/fsexam.glade2.h:87
+msgid "_Report Pane"
+msgstr "報告窗格(_R)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:88
+msgid "_Restore"
+msgstr "復原(_R)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:89
+msgid "_Scenario"
+msgstr "方案(_S)"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam.glade2.h:90
+msgid "_View"
+msgstr "檢視(_V)"
+
+#: ../src/fsexam.glade2.h:91
+msgid "gtk-about"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:92
+msgid "gtk-open"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:93
+msgid "gtk-preferences"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:94
+msgid "gtk-quit"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:95
+msgid "gtk-undo"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-application-server.c:92
+msgid "One instance of fsexam is running already.\n"
+msgstr "已有一個 Fsexam 實例正在執行中。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/auto-detect.c:206 ../src/auto-detect.c:247
+#, c-format
+msgid ""
+"Warning: can not convert encoding %s to canonical encoding name, will ignore "
+"it.\n"
+msgstr "警告：無法將編碼 %s 轉換成正式的編碼名稱，將會忽略它。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:72
+msgid ""
+"No encoding provided. Please check 'Auto Detect' button in preferences "
+"dialog or add encoding through encoding dialog.\n"
+msgstr ""
+"沒有提供任何編碼。請勾選喜好設定對話方塊中的「自動偵測」按鈕或透過編碼對話方"
+"塊來增加編碼。\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/callbacks.c:124
+msgid "No Selection"
+msgstr "沒有選取"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:131
+msgid "No files need to handle"
+msgstr "沒有需要處理的檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:316
+msgid "Nothing need to undo"
+msgstr "沒有需要還原的項目"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:355
+msgid "No results. Please see report pane for more information.\n"
+msgstr "沒有任何結果。如需更多資訊，請參閱報告窗格。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:734
+msgid "Stop the Searching..."
+msgstr "停止搜尋..."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:796
+msgid "Search Result has been cleared."
+msgstr "搜尋結果已清除。"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/encoding.c:90
+#, c-format
+msgid ""
+"%s is not supported encoding name, use 'fsexamc -l' to list supported "
+"encoding.\n"
+msgstr "%s 不是支援的編碼名稱，請使用「fsexamc –l」來列出支援的編碼。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/encoding.c:108
+#, c-format
+msgid ""
+"Your system do not support conversion from '%s' to 'UTF-8',will ignore it.\n"
+msgstr "您的系統不支援從「%s」到「UTF-8」的轉換，將會忽略它。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:82 ../src/file-filter.c:155
+msgid "Parameters of find(1) is empty.\n"
+msgstr "find(1) 的參數是空的。\n"
+
+#: ../src/file-filter.c:105 ../src/fsexam-plaintext.c:74
+#: ../src/fsexam-plaintext.c:145
+msgid "Can't open pipe file descriptor.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:111 ../src/file-filter.c:221
+msgid "Searching..."
+msgstr "正在搜尋..."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:123 ../src/file-filter.c:285
+msgid "Search finished"
+msgstr "搜尋完成"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:175
+msgid "Error occurs during executing the search command."
+msgstr "執行搜尋指令期間發生錯誤。"
+
+#: ../src/file-filter.c:196
+msgid "Error occurs when open fd."
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:253 ../src/file-filter.c:274
+#, c-format
+msgid "%d files found"
+msgstr "找到 %d 個檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:284
+msgid "Search stopped"
+msgstr "搜尋已停止"
+
+#: ../src/file-validate.c:166 ../src/file-validate.c:194
+#, c-format
+msgid "Can't open file %s.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convcontent.c:76 ../src/fsexam-specialfile.c:734
+#, c-format
+msgid "[Content] %s -> %s"
+msgstr "[內容] %s - > %s"
+
+#: ../src/fsexam-convcontent.c:466
+msgid "Can't new hash table.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:175
+msgid "Re-create symbolic link success"
+msgstr "重新建立符號連結成功"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:291
+#, c-format
+msgid "[Name] %s -> %s"
+msgstr "[名稱] %s -> %s"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:973
+#, c-format
+msgid "Candidate list:\n"
+msgstr "候選清單：\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:974
+#, c-format
+msgid "\t[No.] Encoding name\tConversion Result\n"
+msgstr "\t[號碼] 編碼名稱\t轉換結果\n"
+
+#: ../src/fsexam-convname.c:1262
+#, c-format
+msgid "Can't access dry run result information.\n"
+msgstr ""
+
+#: ../src/fsexam-convname.c:1290
+msgid "Don't support this restore type.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:1317
+#, c-format
+msgid "No proper encoding.\n"
+msgstr "沒有適當的編碼。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:1322
+#, c-format
+msgid "Please select No.('s' to skip): "
+msgstr "請選取號碼 (「s」則略過)： "
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-dialog.c:135
+msgid "Please select candidate"
+msgstr "請選取候選項目"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. Ask me button
+#: ../src/fsexam-dialog.c:171
+msgid "Don't ask me again"
+msgstr "不要再問這個問題"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. Index                    Charset        Cononical Name   Name                        locale
+#: ../src/fsexam-encoding-dialog.c:54 ../src/fsexam-encoding-dialog.c:85
+msgid "Chinese Traditional"
+msgstr "繁體中文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:55
+msgid "Chinese Traditional(Hong Kong)"
+msgstr "繁體中文 (香港)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:56 ../src/fsexam-encoding-dialog.c:99
+msgid "Central European"
+msgstr "中歐"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:57 ../src/fsexam-encoding-dialog.c:102
+msgid "Cyrillic"
+msgstr "斯拉夫文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:58 ../src/fsexam-encoding-dialog.c:92
+#: ../src/fsexam-encoding-dialog.c:97
+msgid "Western"
+msgstr "西歐"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:59 ../src/fsexam-encoding-dialog.c:66
+#: ../src/fsexam-encoding-dialog.c:76 ../src/fsexam-encoding-dialog.c:104
+msgid "Greek"
+msgstr "希臘文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:60 ../src/fsexam-encoding-dialog.c:70
+#: ../src/fsexam-encoding-dialog.c:106
+msgid "Turkish"
+msgstr "土耳其文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:61 ../src/fsexam-encoding-dialog.c:105
+msgid "Hebrew"
+msgstr "希伯來文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:62 ../src/fsexam-encoding-dialog.c:103
+msgid "Arabic"
+msgstr "阿拉伯文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:63 ../src/fsexam-encoding-dialog.c:95
+#: ../src/fsexam-encoding-dialog.c:101
+msgid "Baltic"
+msgstr "波羅的海文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:64
+msgid "Vietnamese"
+msgstr "越南文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:65 ../src/fsexam-encoding-dialog.c:67
+msgid "Western Europe"
+msgstr "西歐"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:68
+msgid "Central Europe"
+msgstr "中歐"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:69
+msgid "Russian"
+msgstr "俄文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:71
+msgid "Portuguese"
+msgstr "葡萄牙文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:72
+msgid "Icelandic"
+msgstr "冰島文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:73
+msgid "French Canadian"
+msgstr "加拿大法文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:74 ../src/fsexam-encoding-dialog.c:93
+msgid "Nordic"
+msgstr "日耳曼文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:75
+msgid "Cyrillic/Russian"
+msgstr "斯拉夫文/俄文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:77 ../src/fsexam-encoding-dialog.c:84
+#: ../src/fsexam-encoding-dialog.c:94
+msgid "Thai"
+msgstr "泰文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. { FSEXAM_ENCODING_CP949,    "CP950",       "CP950",         N_("Traditional Chinese"),  NULL },
+#: ../src/fsexam-encoding-dialog.c:78 ../src/fsexam-encoding-dialog.c:82
+#: ../src/fsexam-encoding-dialog.c:90 ../src/fsexam-encoding-dialog.c:108
+msgid "Japanese"
+msgstr "日文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. { FSEXAM_ENCODING_CP949,    "CP936",       "CP936",         N_("Simplified Chinese"),   NULL },
+#: ../src/fsexam-encoding-dialog.c:80 ../src/fsexam-encoding-dialog.c:83
+#: ../src/fsexam-encoding-dialog.c:91 ../src/fsexam-encoding-dialog.c:107
+msgid "Korean"
+msgstr "韓文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:86 ../src/fsexam-encoding-dialog.c:87
+#: ../src/fsexam-encoding-dialog.c:88 ../src/fsexam-encoding-dialog.c:89
+msgid "Chinese Simplified"
+msgstr "簡體中文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:96
+msgid "Celtic"
+msgstr "塞爾特文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:98
+msgid "Romanian"
+msgstr "羅馬尼亞文"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:100
+msgid "South European"
+msgstr "南歐"
+
+#. { FSEXAM_ENCODING_UTF_16,   "UTF-16",       "UTF16",        N_("Unicode"),              NULL },
+#. { FSEXAM_ENCODING_UTF_16BE, "UTF-16BE",     "UTF16BE",      N_("Unicode"),              NULL },
+#. { FSEXAM_ENCODING_UTF_16LE, "UTF-16LE",     "UTF16LE",      N_("Unicode"),              NULL },
+#.
+#: ../src/fsexam-encoding-dialog.c:113
+msgid "Unicode"
+msgstr ""
+
+#: ../src/fsexam-encoding-dialog.c:124
+#, c-format
+msgid "Warning: The encoding id %d is greater than max length %d.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:183
+#, c-format
+msgid "Encoding '%s' is not supported.\n"
+msgstr "不支援編碼「%s」。\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:206
+msgid "The supported encoding list:\n"
+msgstr "支援的編碼清單：\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:583 ../src/fsexam-encoding-dialog.c:620
+msgid "_Description"
+msgstr "說明(_D)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:591 ../src/fsexam-encoding-dialog.c:628
+msgid "_Encoding"
+msgstr "編碼(_E)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:33
+msgid "Success"
+msgstr "成功"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_OK
+#: ../src/fsexam-error.c:34
+msgid "File name is UTF-8 already"
+msgstr "檔案名稱已經是 UTF-8 編碼"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_NAME_UTF8_ALREADY
+#: ../src/fsexam-error.c:35
+msgid "File content is UTF-8 already"
+msgstr "檔案內容已經是 UTF-8 編碼"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CONTENT_UTF8_ALREADY
+#: ../src/fsexam-error.c:36
+msgid "New name is the same as old name"
+msgstr "新的名稱與舊的名稱相同"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:40 ../src/fsexam-ui.c:780
+msgid "File doesn't exist"
+msgstr "檔案不存在"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_FILE_NONEXIST
+#: ../src/fsexam-error.c:41
+msgid "No Memory"
+msgstr "沒有記憶體"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NO_MEMORY
+#: ../src/fsexam-error.c:42
+msgid "Invalid encoding index"
+msgstr "無效的編碼索引"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_ENCODING_INDEX_INVALID
+#: ../src/fsexam-error.c:43
+msgid "Can't open file"
+msgstr "無法開啟檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_OPEN
+#: ../src/fsexam-error.c:44
+msgid "Can't rename file"
+msgstr "無法重新命名檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_RENAME
+#: ../src/fsexam-error.c:45
+msgid "Can't write file"
+msgstr "無法寫入檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_WRITE
+#: ../src/fsexam-error.c:46
+msgid "Given encoding list is not suitable"
+msgstr "指定的編碼清單不適合"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NO_PROPER_ENCODING
+#: ../src/fsexam-error.c:47
+msgid "Is not regular file"
+msgstr "不是一般檔案"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_NOT_REG_FILE
+#: ../src/fsexam-error.c:48
+msgid "Symlink target don't exist"
+msgstr "符號連結目標不存在"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_SYMLINK_TARGET_NOEXIST
+#: ../src/fsexam-error.c:49
+msgid "Can't convert given file"
+msgstr "無法轉換指定的檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_CONVERT
+#: ../src/fsexam-error.c:50
+msgid "Can't read file"
+msgstr "無法讀取檔案"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_READ
+#: ../src/fsexam-error.c:51
+msgid "No proper permission"
+msgstr "沒有適當的權限"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NO_RIGHTS
+#. ERR_CANNOT_RM_SYMLINK
+#: ../src/fsexam-error.c:53
+msgid "Can't relink symbolic link which will break symbolic link"
+msgstr "無法重新連結符號連結，這會中斷符號連結"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_LOST_SYMLINK_FILE
+#: ../src/fsexam-error.c:55
+msgid "Have deleted symbolic link file, but can't recreate it"
+msgstr "已刪除符號連結檔案，但是無法重新建立它"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:56
+msgid "Dryrun file format is invalid"
+msgstr "模擬測試檔案的格式無效"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_DRYRUN_FILE_INVALID
+#: ../src/fsexam-error.c:57
+msgid "Can't get current directory"
+msgstr "無法取得目前的目錄"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_GET_CWD
+#: ../src/fsexam-error.c:58
+msgid "Can't change directory"
+msgstr "無法變更目錄"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:62
+msgid "No history information for current file"
+msgstr "沒有目前檔案的歷程記錄資訊"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_HIST_NO_ITEM
+#: ../src/fsexam-error.c:63
+msgid "No given files or all files are UTF-8 already"
+msgstr "沒有指定的檔案，或所有檔案都已經是 UTF-8 編碼"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_TREE_IS_EMPTY
+#. ERR_NAME_EXIST
+#: ../src/fsexam-error.c:65
+msgid "Same name file exists, will append 'utf-8' as suffix"
+msgstr "存在相同名稱的檔案，將會附加「utf-8」做為字尾。"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:66
+msgid "Skip hidden file"
+msgstr "略過隱藏式檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_IGNORE_HIDDEN_FILE
+#: ../src/fsexam-error.c:67
+msgid "Skip non-local file"
+msgstr "略過非本機檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_IGNORE_REMOTE_FILE
+#: ../src/fsexam-error.c:68 ../src/fsexam-ui.c:2691
+msgid "Empty file"
+msgstr "空檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_EMPTY_FILE
+#: ../src/fsexam-error.c:69
+msgid "No parameters"
+msgstr "沒有參數"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NO_PARAMS
+#: ../src/fsexam-error.c:70
+msgid "Error occurred during filtering"
+msgstr "篩選期間發生錯誤"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_FILTER
+#: ../src/fsexam-error.c:71
+msgid "Don't support this kind of file type"
+msgstr "不支援此種檔案類型"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_FILE_TYPE_NOT_SUPPORT
+#: ../src/fsexam-error.c:72
+msgid "Buffer overflow"
+msgstr "緩衝區溢位"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_BUFFER_OVERFLOW
+#: ../src/fsexam-error.c:73
+msgid "Canceled the conversion"
+msgstr "已取消轉換"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:77
+msgid "Can't write dryrun result file"
+msgstr "無法寫入模擬測試結果檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_WRITE_DRYRUN
+#: ../src/fsexam-error.c:78
+msgid "Can't open dryrun result file"
+msgstr "無法開啟模擬測試結果檔案"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_OPEN_DYRRUN
+#: ../src/fsexam-error.c:79
+msgid "Can't convert filename to URI"
+msgstr "無法將檔案名稱轉換成 URI"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_CONVERT_TO_URI
+#. MISC
+#. unknow error
+#: ../src/fsexam-error.c:82 ../src/fsexam-log.c:124
+msgid "Unknown error occurred"
+msgstr "發生不明的錯誤"
+
+#: ../src/fsexam-error.c:98
+#, c-format
+msgid "ERROR ==> %s:%d (%s): %s\n"
+msgstr ""
+
+#: ../src/fsexam-error.c:103
+#, c-format
+msgid "ERROR ==> %s:%d %s\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-helper.c:334 ../src/fsexam-helper.c:345
+#, c-format
+msgid "Encoding '%s' is not supported\n"
+msgstr "不支援編碼「%s」\n"
+
+#: ../src/fsexam-plaintext.c:98
+msgid "The system has no UTF-8 locale\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-preference-dialog.c:368
+msgid "Do you want to save this encoding list permanently?"
+msgstr "是否要永久儲存此編碼清單？"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-preference-dialog.c:520 ../src/fsexam-ui.c:1340
+#, c-format
+msgid "There was an error when displaying help: %s"
+msgstr "顯示說明時發生錯誤：%s"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-setting.c:94 ../src/fsexam-ui.c:1974
+#, c-format
+msgid "Rough summary: %d given, %d total, %d ignore, %d fail, %d succeed\n"
+msgstr ""
+"簡略摘要：已指定 %d 個、總數 %d 個、忽略 %d 個、失敗 %d 個、成功 %d 個\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1068
+msgid ""
+"Can not run tar command due to lack of iso8859-1 locale, please see fsexam"
+"(1) man page for more info."
+msgstr ""
+"由於缺少 iso8859-1 語言環境，無法執行 tar 指令。如需更多資訊，請參閱「fsexam"
+"(1) 線上手冊」。"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1412 ../src/fsexam-specialfile.c:1588
+msgid "Don't support this file type"
+msgstr "不支援此檔案類型"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1678
+msgid ""
+"The archive file is empty or has absolute path, so can not convert files in "
+"this archive file"
+msgstr "歸檔檔案是空的，或是具有絕對路徑，因此無法在此歸檔檔案中轉換檔案"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam-ui.c:777 ../src/fsexam-ui.c:1006
+msgid "No read permission"
+msgstr "沒有讀取權限"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam-ui.c:785
+msgid "No folder specified"
+msgstr "未指定資料夾"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:825
+msgid "File does not exist or no access permission."
+msgstr "檔案不存在或沒有存取權限。"
+
+#: ../src/fsexam-ui.c:831
+msgid "File type is not supported."
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1009
+msgid "Empty folder"
+msgstr "空資料夾"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1088 ../src/fsexam-ui.c:1626
+msgid "Symlink target doesn't exist"
+msgstr "符號連結目標不存在"
+
+#: ../src/fsexam-ui.c:1089 ../src/fsexam-ui.c:1627
+msgid "doesn't exist"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1190
+msgid "The selected file is not empty, do you want to override it?"
+msgstr "選取的檔案不是空的，是否要覆寫它？"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1191
+msgid ""
+"The selected file is not UTF-8 encoded, we strongly suggest you to use UTF-8 "
+"filename.\n"
+"\n"
+" Do you want to convert it to UTF8?"
+msgstr ""
+"選取的檔案不是 UTF-8 編碼，我們強烈建議您使用 UTF-8 檔案名稱\n"
+"\n"
+" 是否要將它轉換成 UTF8？"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1192
+#, c-format
+msgid ""
+"Can't convert %s to UTF8: %s.\n"
+"\n"
+"Please Note that there may exist partial conversion.\n"
+" So please Refresh you directory and select file again."
+msgstr ""
+"無法將 %s 轉換成 UTF8：%s。\n"
+"\n"
+"請注意，可能已轉換一部分。\n"
+"因此，請重新整理您的目錄，然後再次選取檔案。"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam-ui.c:1316
+msgid "Folder Selection"
+msgstr "資料夾選取範圍"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam-ui.c:1375
+msgid ""
+"fsexam is to help migrate file name and file content from legacy encoding to "
+"UTF8"
+msgstr "fsexam 可以協助將檔案名稱和檔案內容的現用編碼方式轉換為 UTF8"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2057
+#, c-format
+msgid "The file \"%s\" is missing."
+msgstr "缺少檔案「%s」。"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2577
+msgid "No selection"
+msgstr "沒有選取"
+
+#: ../src/fsexam-ui.c:2586
+msgid "Cannot preview multiple selections"
+msgstr "無法預覽多重選取"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2597
+msgid "Cannot preview contents of folder"
+msgstr "無法預覽資料夾的內容"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2680
+msgid "Can't access"
+msgstr "無法存取"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2686
+msgid "Not regular file"
+msgstr "不是一般檔案"
+
+#: ../src/fsexam-ui.c:2696
+msgid "Not plain text"
+msgstr "非純文字"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:155 ../src/fsexam.c:212
+msgid "Another fsexam is running, will quit soon\n"
+msgstr "另一個 fsexam 正在執行中，將立即退出\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:325
+#, c-format
+msgid "Run 'fsexam --help' for usage information.\n"
+msgstr "執行「fsexam --help」以取得使用資訊。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:331
+#, c-format
+msgid ""
+"Warning: The given history length is too short, will reset to default value %"
+"d\n"
+msgstr "警告：指定的歷程記錄長度太短，將重設成預設值 %d\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:373
+#, c-format
+msgid "Please enter the file name:\n"
+msgstr "請輸入檔案名稱：\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:431
+msgid "Error: No given encoding and disabled auto detection.\n"
+msgstr "錯誤：沒有指定的編碼並且已停用自動偵測。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:441
+#, c-format
+msgid "Can't open dryrun file %s\n"
+msgstr "無法開啟模擬測試檔案 %s\n"
+
+#: ../src/fsexam.c:539
+msgid "The configuration directory is NULL\n"
+msgstr ""
+
+#: ../src/fsexam.c:546
+#, c-format
+msgid "Can't create configuration directory %s for fsexam\n"
+msgstr ""
+
+#: ../src/fsexam.c:557
+#, c-format
+msgid "file %s exist and is not one directory, please rename it.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:675
+#, c-format
+msgid "Usage:\n"
+msgstr "用法：\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:676
+#, c-format
+msgid "    fsexam [OPTION] ... [file]\n"
+msgstr "    fsexam [選項] ...[檔案]\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:678
+#, c-format
+msgid ""
+"\n"
+"Supported options:\n"
+msgstr ""
+"\n"
+"支援的選項：\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:680
+#, c-format
+msgid "    -a, --auto-detect      Enable encoding auto detection\n"
+msgstr "    -a, --auto-detect      啟用編碼自動偵測\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:682
+#, c-format
+msgid "    -d dry-run-result      Specify the dryrun result file\n"
+msgstr "    -d dry-run-result      指定模擬測試結果檔案\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:683
+#, c-format
+msgid "    -E module-name         Enable special file handling\n"
+msgstr "    -E module-name         啟用特殊檔案處理\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:684
+#, c-format
+msgid "    -e encoding-list       Specify additional encoding list\n"
+msgstr "    -e encoding-list       指定附加的編碼清單\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:685
+#, c-format
+msgid "    -F, --force-convert    Forceful conversion mode\n"
+msgstr "    -F, --force-convert    強制轉換模式\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:686
+#, c-format
+msgid "    -f 'expression'        Specify file filter criteria\n"
+msgstr "    -f 'expression'        指定檔案篩選條件\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:687
+#, c-format
+msgid "    -H, --hidden           Turn on hidden file handling\n"
+msgstr "    -H, --hidden           啟動隱藏式檔案處理\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:688
+#, c-format
+msgid "    -b, --auto-conversion  Interactive mode\n"
+msgstr "    -b, --auto-conversion  互動式模式\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:689
+#, c-format
+msgid "    -l, list-encoding      List all supported encoding\n"
+msgstr "    -l, list-encoding      列出所有支援的編碼\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:690
+#, c-format
+msgid "    -k, --no-check-symlink-content\n"
+msgstr "    -k, --no-check-symlink-content\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:691
+#, c-format
+msgid ""
+"                           Don't check the consistency between\n"
+"                           symbolic link and its target name\n"
+msgstr ""
+"                           請勿檢查符號連結和\n"
+"                           其目標檔案名稱之間的一致性\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:693
+#, c-format
+msgid "    -L logfile             Specify log file\n"
+msgstr "    -L logfile             指定記錄檔\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:695
+#, c-format
+msgid "    -n, --dry-run          Dryrun mode\n"
+msgstr "    -n, --dry-run          模擬測試模式\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:696
+#, c-format
+msgid "    -P, --append-encoding-list\n"
+msgstr "    -P, --append-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:697
+#, c-format
+msgid ""
+"                           Append encoding list specified by\n"
+"                           '-e' to predefined encoding list\n"
+msgstr ""
+"                           將「-e」指定的編碼清單附加到\n"
+"                           預先定義的編碼清單\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:699
+#, c-format
+msgid "    -p, --prepend-encoding-list\n"
+msgstr "    -p, --prepend-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:700
+#, c-format
+msgid ""
+"                           Prepend encoding list specified by\n"
+"                           '-e' to predefined encoding list\n"
+msgstr ""
+"                           將「-e」指定的編碼清單前置於\n"
+"                           預先定義的編碼清單\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:702
+#, c-format
+msgid "    -R, --recursive        Recursive mode\n"
+msgstr "    -R, --recursive        遞迴模式\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:703
+#, c-format
+msgid "    -r, --remote           Turn on nfs files handling\n"
+msgstr "    -r, --remote           啟動 nfs 檔案處理\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:704
+#, c-format
+msgid "    -S, --save-encoding-list\n"
+msgstr "    -S, --save-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:705
+#, c-format
+msgid ""
+"                           Save encoding list specified by\n"
+"                           '-e' permanently\n"
+msgstr ""
+"                           永久儲存「-e」\n"
+"                           指定的編碼清單\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:707
+#, c-format
+msgid ""
+"    -s, --restore          Restore the original name or\n"
+"                           content for given files\n"
+msgstr ""
+"    -s, --restore          復原指定檔案的\n"
+"                           原始名稱或內容\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:709
+#, c-format
+msgid ""
+"    -t, --conv-content     Convert file content rather than\n"
+"                           file name\n"
+msgstr ""
+"    -t, --conv-content     轉換檔案內容\n"
+"                           而非檔案名稱\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:711
+#, c-format
+msgid "    -w, --follow           Follow symbolic link\n"
+msgstr "    -w, --follow           跟隨符號連結\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:712
+#, c-format
+msgid "    -V, --version          Print the version information\n"
+msgstr "    -V, --version          列示版本資訊\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:713
+#, c-format
+msgid "    -?, --help             Print this usage information for fsexam\n"
+msgstr "    -?, --help             列示 fsexam 的用法資訊\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:1
+msgid "Encoding auto detection"
+msgstr "編碼自動偵測"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:3
+msgid "Hidden file handling"
+msgstr "隱藏式檔案處理"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:4
+msgid "Hist length"
+msgstr "歷程記錄長度"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:5
+msgid "Keep symbolic link and its reference consistent"
+msgstr "保持符號連結和其參照一致"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:6
+msgid "Log file name"
+msgstr "記錄檔名稱"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:7
+msgid "NFS file handling"
+msgstr "NFS 檔案處理"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:8
+msgid "Special file type module"
+msgstr "特殊檔案類型模組"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:9
+msgid "Write log or not"
+msgstr "是否寫入記錄"
+
+#: ../data/fsexam.schemas.in.h:10
+msgid "[ISO8859-1]"
+msgstr "[BIG5,EUC-TW,GB18030]"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../data/fsexam.schemas.in.h:11
+msgid "automatic mode"
+msgstr "自動模式"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../data/fsexam.schemas.in.h:12
+msgid "encoding list"
+msgstr "編碼清單"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../data/fsexam.schemas.in.h:13
+msgid "recursive mode"
+msgstr "遞迴模式"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.desktop.in.h:2
+msgid "Help migrate from legacy encoding to Unicode(UTF8)"
+msgstr "協助從原來的編碼遷移至 Unicode (UTF8)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "*"
+#~ msgstr "*"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Display the dryrun result pane"
+#~ msgstr "顯示模擬測試結果窗格"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Display the report pane"
+#~ msgstr "顯示報告窗格"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Display the search result window"
+#~ msgstr "顯示搜尋結果視窗"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Preview plain text file content"
+#~ msgstr "預覽一般文字檔案內容"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Select A File"
+#~ msgstr "選取檔案"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "[Content] %s - >%s"
+#~ msgstr "[內容] %s - > %s"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Display help content"
+#~ msgstr "顯示說明內容"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Preference setting"
+#~ msgstr "喜好設定"
+
+#~ msgid "File has been emptied, can not be restored!"
+#~ msgstr "檔案已清空，無法復原！"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Folder already exists"
+#~ msgstr "資料夾已存在"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Folder doesn't exist yet"
+#~ msgstr "資料夾不存在"
+
+#~ msgid "add Carriage Return"
+#~ msgstr "新增換行鍵"
+
+#~ msgid "_Open..."
+#~ msgstr "開啟(_O)..."
+
+#~ msgid "_Restore Original File"
+#~ msgstr "復原原始檔案(_R)"
+
+#~ msgid "_Convert Content"
+#~ msgstr "轉換內容(_C)"
+
+#~ msgid "_About"
+#~ msgstr "關於(_A)"
+
+#~ msgid "Sub-folder:"
+#~ msgstr "子資料夾："
+
+#~ msgid "User intervention:"
+#~ msgstr "使用者介入："
+
+#~ msgid "text"
+#~ msgstr "文字"
+
+#~ msgid "Restore %s and add Carriage Return"
+#~ msgstr "復原 %s 並新增換行鍵"
+
+#~ msgid "Restore by adding Carriage Return"
+#~ msgstr "新增換行鍵即可復原"
+
+#~ msgid "Restore UTF8"
+#~ msgstr "復原 UTF8"
+
+#~ msgid "File System Examiner name conversion"
+#~ msgstr "檔案系統檢查程式名稱轉換"
+
+#~ msgid "delete Carriage Return"
+#~ msgstr "刪除換行鍵"
+
+#~ msgid "delete Carriage Return only"
+#~ msgstr "只刪除換行鍵"
+
+#~ msgid "add Carriage Return only"
+#~ msgstr "只新增換行鍵"
+
+#~ msgid "_Preferences"
+#~ msgstr "喜好設定(_P)"
+
+#~ msgid "Encode list:"
+#~ msgstr "編碼清單："
+
+#~ msgid "File System Examiner content conversion"
+#~ msgstr "檔案系統檢查程式內容轉換"
+
+#~ msgid "File content - convert from %s"
+#~ msgstr "檔案內容 - 從 %s 轉換"
+
+#~ msgid "File content - convert from %s and delete Carriage Return"
+#~ msgstr "檔案內容 - 從 %s 轉換並刪除換行鍵"
+
+#~ msgid "File content - delete Carriage Return only"
+#~ msgstr "檔案內容 - 只刪除換行鍵"
+
+#~ msgid "%s doesn't exist yet"
+#~ msgstr "%s 不存在"
+
+#~ msgid "Restore UTF8 and delete Carriage Return"
+#~ msgstr "復原 UTF8 並刪除換行鍵"
+
+#~ msgid "Restore by deleting Carriage Return"
+#~ msgstr "刪除換行鍵即可復原"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid ""
+#~ "A list of suffix. Any file whose suffix belongs to the list are assumed "
+#~ "by fsexam as plain text file."
+#~ msgstr "字尾清單。Fsexam 會將字尾屬於此清單的檔案假設為純文字檔。"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid ""
+#~ "Only applicable for file name conversion! It's recursive mode, by "
+#~ "enabling it, fsexam will convert the name of file and subdirectory to "
+#~ "UTF8 recursively."
+#~ msgstr ""
+#~ "僅適用於檔案名稱轉換！這是遞迴模式，啟動此模式，Fsexam 將轉換檔案的名稱與"
+#~ "子目錄為 UTF8。"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid ""
+#~ "Only applicable for file name conversion. It's automatic mode, by "
+#~ "enabling it, fsexam will automatically convert with the best conversion "
+#~ "result without user interference. Otherwise, a dialog will display with "
+#~ "several conversion candidates and user needs to decide which conversion "
+#~ "is the best one."
+#~ msgstr ""
+#~ "僅適用於檔案名稱轉換。這是自動模式，啟動自動模式，不需使用者介入，Fsexam "
+#~ "就會自動轉換成最佳的轉換結果。否則，將顯示具有數項轉換選項的對話方塊，使用"
+#~ "者需要決定最佳的轉換方式。"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid ""
+#~ "The list of legacy encoding name available for the specific language. "
+#~ "Note that the order within the list is significant. fsexam treats as the "
+#~ "best one the first one from which conversion can be made successfully."
+#~ msgstr ""
+#~ "可供特定的語言使用之舊編碼名稱清單。請注意：清單內為有效的排序。Fsexam 會"
+#~ "將最佳的視為第一個，並成功對其執行轉換。"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "suffix list"
+#~ msgstr "字尾清單"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File already exists"
+#~ msgstr "檔案已存在"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Apply by name"
+#~ msgstr "依名稱套用"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Apply by content"
+#~ msgstr "依內容套用"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Peek content"
+#~ msgstr "窺看內容"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Error loading icon %s\n"
+#~ msgstr "載入圖示 %s 時發生錯誤\n"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "popen error, please try again!"
+#~ msgstr "popen 錯誤，請再試一次！"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Not one plain text"
+#~ msgstr "不是一個純文字"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content candidate window"
+#~ msgstr "檔案內容可選用視窗"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Byte sequence not recognized yet"
+#~ msgstr "無法識別位元數序列"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - open failure"
+#~ msgstr "檔案內容 - 開啟失敗"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - write error"
+#~ msgstr "檔案內容 - 寫入錯誤"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - successful conversion"
+#~ msgstr "檔案內容 - 成功轉換"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - UTF8 alreay"
+#~ msgstr "檔案內容 - 已經是 UTF8"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - successful undo"
+#~ msgstr "檔案內容 - 成功還原"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Directory already exists"
+#~ msgstr "目錄已存在"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Null directory"
+#~ msgstr "空目錄"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Directory node"
+#~ msgstr "目錄節點"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "No permission to rename"
+#~ msgstr "不允許重新命名"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File Hierarchy"
+#~ msgstr "檔案階層"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "No directory specified"
+#~ msgstr "沒有指定目錄"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Directory Selection"
+#~ msgstr "目錄選取"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "fsexam"
+#~ msgstr "fsexam"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Report Pane"
+#~ msgstr "報告窗格"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Welcome"
+#~ msgstr "歡迎使用"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Recursive Mode"
+#~ msgstr "遞迴模式"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Automatic Conversion"
+#~ msgstr "自動轉換"

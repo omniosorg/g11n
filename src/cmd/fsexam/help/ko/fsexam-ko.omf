@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF8"?>
+<omf>
+<!--
+CDDL HEADER START
+
+The contents of this file are subject to the terms of the
+Common Development and Distribution License (the "License").
+You may not use this file except in compliance with the License.
+
+You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+or http://www.opensolaris.org/os/licensing.
+See the License for the specific language governing permissions
+and limitations under the License.
+
+When distributing Covered Code, include this CDDL HEADER in each
+file and include the License file at src/OPENSOLARIS.LICENSE.
+If applicable, add the following below this CDDL HEADER, with the
+fields enclosed by brackets "[]" replaced with your own identifying
+information: Portions Copyright [yyyy] [name of copyright owner]
+
+CDDL HEADER END
+
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+-->
+  <resource>
+    <creator>Sun Java Desktop System 문서 팀</creator>
+    <maintainer>Sun Java Desktop System 문서 팀</maintainer>
+    <title>파일 시스템 검사기 </title>    
+    <date>2004년 8월 26일 </date>
+    <version identifier="2.0" date="2004-08-26" description="Updated for Sun Java Desktop System Release 3, program version 0.3"/>
+    <subject category="GNOME|Applications|System Tools"/>
+    <description>파일 시스템 검사기 데스크탑 응용프로그램의 사용자 설명서입니다. </description>
+    <type>사용자 설명서</type>
+    <format mime="text/xml" dtd="-//OASIS//DTD DocBook XML V4.1.2//EN"/>
+    <identifier url="fsexam.xml"/>
+    <language code="ko"/>
+    <relation seriesid="844e0a76-d656-11d8-88f6-c813db71eddc"/>
+  </resource>        
+</omf>

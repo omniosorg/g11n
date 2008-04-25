@@ -1,0 +1,2469 @@
+# 
+# CDDL HEADER START
+# 
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+# 
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+# 
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+# 
+# CDDL HEADER END
+# 
+
+# 
+# Copyright 2008 Sun Microsystems, Inc. All rights reserved.
+# Use is subject to license terms.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fsexeam HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-17 17:07+0800\n"
+"PO-Revision-Date: 2008-02-26 14:08+0100\n"
+"Last-Translator: desktop-discuss@opensolaris.org\n"
+"Language-Team: desktop-discuss@opensolaris.org\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:1
+msgid "<b>Available encoding:</b>"
+msgstr "<b>Codificação disponível:</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:2
+msgid "<b>Conversion Setting:</b>"
+msgstr "<b>Configuração da conversão:</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:3
+msgid "<b>Encoding List:</b>"
+msgstr "<b>Lista de codificação:</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:4
+msgid "<b>Encoding Selected:</b>"
+msgstr "<b>Codificação selecionada:</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:5
+msgid "<b>Search Result</b>"
+msgstr "<b>Resultado da pesquisa</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:6
+msgid "<b>_Dryrun Result</b>"
+msgstr "<b>_Resultado do dryrun</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:7
+msgid "<b>_Location:</b>"
+msgstr "<b>_Local:</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:8
+msgid "<b>_Report Pane</b>"
+msgstr "<b>_Painel de relatórios</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:9
+msgid "Add or Remove Encoding"
+msgstr "Adicionar ou remover codificação"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:10
+msgid "Archive or Compress files"
+msgstr "Arquivamento ou arquivos compactados"
+
+#: ../src/fsexam.glade2.h:11
+msgid "Based on seconds"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:12
+msgid "Clear Searc_h Result"
+msgstr "Limpar resultado da pesquis_a"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:13
+msgid "Clear the search result"
+msgstr "Limpar o resultado da pesquisa"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:14
+msgid "Content Conversion _Mode"
+msgstr "_Modo de conversão de conteúdo"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:15
+msgid "Convert"
+msgstr "Conversão"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:16
+msgid "Convert file name or content based on previous dryrun result"
+msgstr ""
+"Converter o nome do arquivo ou conteúdo com base no resultado prévio do "
+"dryrun"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:17
+msgid ""
+"Convert file using the first candidate automatically instead of interactive "
+"converting"
+msgstr ""
+"Converter arquivo usando o primeiro candidato automaticamente em vez de a "
+"conversão interativa"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:18
+msgid "Convert selected files' name or content according to the current mode"
+msgstr ""
+"Converter nome ou conteúdo dos arquivos selecionados de acordo com o modo "
+"atual"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:19
+msgid "Convert without detecting whether encoding is UTF-8 or not"
+msgstr "Converter sem detectar se a codificação é UTF-8 ou não"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:20
+msgid "Data modified more than:"
+msgstr "Dados modificados mais de:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:21
+msgid "Detect the encoding of file name or file content automatically"
+msgstr "Detectar a codificação do nome ou conteúdo do arquivo automaticamente"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:22
+msgid "Don't Chec_k Symlink Content"
+msgstr "Não verifica_r o conteúdo Symlink"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:23
+msgid ""
+"Don't try to keep the consistency between symbolic link file and its target "
+"file"
+msgstr ""
+"Não tentar manter a consistência entre o arquivo de link simbólico e seu "
+"arquivo de destino"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:24
+msgid "Dryrun"
+msgstr "Dryrun"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:25
+msgid "Dryrun without changing any file name or content in the disk"
+msgstr "Fazer dryrun sem alterar o nome ou conteúdo do arquivo no disco"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:26
+msgid "Dryrun without changing files on disk"
+msgstr "Fazer dryrun sem modificar arquivos no disco"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:27
+msgid "File Content _Mode"
+msgstr "_Modo do conteúdo do arquivo"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:28 ../src/fsexam.c:395 ../src/fsexam.c:473
+#: ../data/fsexam.desktop.in.h:1
+msgid "File Encoding Examiner"
+msgstr "Examinador de codificação de arquivos"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:29
+msgid "File Encoding Examiner Preferences"
+msgstr "Preferências do examinador de codificação de arquivos"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:30
+msgid "File _Name Mode"
+msgstr "Modo do _nome do arquivo"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:31
+msgid "File content conversion mode"
+msgstr "Modo de conversão do conteúdo de arquivos"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:32
+msgid "File name conversion mode"
+msgstr "Modo de conversão do nome de arquivos"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:33
+msgid "Follow _Symbolic Link"
+msgstr "Seguir link _simbólico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:34 ../data/fsexam.schemas.in.h:2
+msgid "Follow symbolic link"
+msgstr "Seguir link simbólico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:35
+msgid "Forcibly Convert"
+msgstr "Conversão forçada"
+
+#: ../src/fsexam.glade2.h:36
+msgid "Group name"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:37
+msgid "Handle _Hidden Files"
+msgstr "Tratar arquivos _ocultos"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:38
+msgid "Handle _Remote Files"
+msgstr "Tratar arquivos _remotos"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:39
+msgid "Hide search result"
+msgstr "Ocultar resultado da pesquisa"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:40
+msgid "History Length:"
+msgstr "Comprimento do histórico:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:41
+msgid "Log File Name:"
+msgstr "Nome do arquivo de log:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:42
+msgid "Look in folder:"
+msgstr "Procurar na pasta:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:43
+msgid "Name Contains:"
+msgstr "O nome contém:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:44
+msgid "Open file"
+msgstr "Abrir arquivo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:45
+msgid "Owned by group:"
+msgstr "Pertencente ao grupo:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:46
+msgid "Owned by user:"
+msgstr "Pertencente ao usuário:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:47
+msgid "Processing archive or compress file"
+msgstr "Processando arquivamento ou arquivo compactado"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:48
+msgid "Processing hidden file"
+msgstr "Processando arquivo oculto"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:49
+msgid "Processing non-local files such as NFS file"
+msgstr "Processando arquivo não locais, como arquivo NFS"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:50
+msgid "Processing special type of file"
+msgstr "Processando tipo especial de arquivo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:51
+msgid "Recursive handle files under folder"
+msgstr "Tratamento recursivo de arquivos na pasta"
+
+#: ../src/fsexam.glade2.h:52
+msgid "Remove encoding"
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:53
+msgid "Restore"
+msgstr "Restaurar"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:54
+msgid "Restore given files' name or content according to conversion mode"
+msgstr ""
+"Restaurar nome ou conteúdo de arquivos dados de acordo com o modo de "
+"conversão"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:55
+msgid "Restore selected files' name or content"
+msgstr "Restaurar nome ou conteúdo de arquivos selecionados"
+
+#: ../src/fsexam.glade2.h:56
+msgid ""
+"Save the encoding list permanently, otherwise used only for current session"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:57
+msgid "Scenario"
+msgstr "Cenário"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:58
+msgid "Search Result"
+msgstr "Resultado da pesquisa"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:59
+msgid "Search for _Files..."
+msgstr "Pesquisar _arquivos..."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:60
+msgid "Search for files"
+msgstr "Pesquisar arquivos"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:61
+msgid "Search for files according to user given criteria"
+msgstr "Pesquisar arquivos de acordo com o critério do usuário"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:62
+msgid "Select A Folder"
+msgstr "Selecionar uma pasta"
+
+#: ../src/fsexam.glade2.h:63
+msgid "Select encoding"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:64
+msgid "Special File Handling"
+msgstr "Tratamento especial de arquivos"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:65
+msgid "Status modified more than:"
+msgstr "Status modificado mais de:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:66
+msgid "Stop _Searching"
+msgstr "Interromper _pesquisa"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:67
+msgid "Stop searching files"
+msgstr "Interromper a pesquisa de arquivos"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:68
+msgid ""
+"The number of conversion is stored. Converting multiple files at one time "
+"count as 1 time"
+msgstr ""
+"O número da conversão é armazenado. A conversão de diversos arquivos de uma "
+"única vez conta como 1 vez"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:69
+msgid "Undo the last action"
+msgstr "Desfazer a última ação"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:70
+msgid "Use Log File"
+msgstr "Usar arquivo de log"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:71
+msgid "Use log file"
+msgstr "Usar arquivo de log"
+
+#: ../src/fsexam.glade2.h:72
+msgid "Use shell glob pattern"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:73
+msgid "User name"
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:74
+msgid "_Auto Conversion"
+msgstr "_Conversão automática"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:75
+msgid "_Auto Detection"
+msgstr "_Detecção automática"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:76
+msgid "_Content"
+msgstr "_Conteúdo"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:77
+msgid "_Convert"
+msgstr "_Converter"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:78
+msgid "_Dryrun"
+msgstr "_Dryrun"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:79
+msgid "_Dryrun Result Pane"
+msgstr "Painel de resultados de _dryrun"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: ../src/fsexam.glade2.h:80
+msgid "_Edit"
+msgstr "_Editar"
+
+# SUN MESSAGE
+#: ../src/fsexam.glade2.h:81
+msgid "_File"
+msgstr "_Arquivo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:82
+msgid "_Forcibly Convert"
+msgstr "Conversão _forçada"
+
+# SUN MESSAGE
+#: ../src/fsexam.glade2.h:83
+msgid "_Help"
+msgstr "_Ajuda"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:84
+msgid "_Name Conversion Mode"
+msgstr "_Modo de conversão de nomes"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:85
+msgid "_Preview Content"
+msgstr "_Visualização do conteúdo"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: ../src/fsexam.glade2.h:86
+msgid "_Recursive Mode"
+msgstr "Modo _recursivo"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: ../src/fsexam.glade2.h:87
+msgid "_Report Pane"
+msgstr "Painel de _relatório"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:88
+msgid "_Restore"
+msgstr "_Restaurar"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:89
+msgid "_Scenario"
+msgstr "_Cenário"
+
+# SUN MESSAGE
+#: ../src/fsexam.glade2.h:90
+msgid "_View"
+msgstr "_Exibir"
+
+#: ../src/fsexam.glade2.h:91
+msgid "gtk-about"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:92
+msgid "gtk-open"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:93
+msgid "gtk-preferences"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:94
+msgid "gtk-quit"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:95
+msgid "gtk-undo"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-application-server.c:92
+msgid "One instance of fsexam is running already.\n"
+msgstr "Uma instância de fsexam já está em execução.\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/auto-detect.c:206 ../src/auto-detect.c:247
+#, c-format
+msgid ""
+"Warning: can not convert encoding %s to canonical encoding name, will ignore "
+"it.\n"
+msgstr ""
+"Aviso: não é possível converter a codificação %s para o nome da codificação "
+"canônica, ignorará isso.\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:72
+msgid ""
+"No encoding provided. Please check 'Auto Detect' button in preferences "
+"dialog or add encoding through encoding dialog.\n"
+msgstr ""
+"Codificação não fornecida. Marque o botão \"Detectar automaticamente\" na "
+"caixa de diálogo de preferências ou adicione a codificação mediante a caixa "
+"de diálogo de codificação.\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:124
+msgid "No Selection"
+msgstr "Sem seleção"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:131
+msgid "No files need to handle"
+msgstr "Não é necessário tratar nenhum arquivo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:316
+msgid "Nothing need to undo"
+msgstr "Não há nada que deva ser desfeito"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:355
+msgid "No results. Please see report pane for more information.\n"
+msgstr ""
+"Nenhum resultado. Consulte o painel de relatórios para obter mais "
+"informações.\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:734
+msgid "Stop the Searching..."
+msgstr "Interromper a pesquisa..."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/callbacks.c:796
+msgid "Search Result has been cleared."
+msgstr "O resultado da pesquisa foi limpo."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/encoding.c:90
+#, c-format
+msgid ""
+"%s is not supported encoding name, use 'fsexamc -l' to list supported "
+"encoding.\n"
+msgstr ""
+"%s não é um nome de codificação suportado, use 'fsexamc -l' para listar as "
+"codificações suportadas.\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/encoding.c:108
+#, c-format
+msgid ""
+"Your system do not support conversion from '%s' to 'UTF-8',will ignore it.\n"
+msgstr ""
+"Seu sistema não suporta a conversão de '%s' para 'UTF-8',ignorará isto.\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:82 ../src/file-filter.c:155
+msgid "Parameters of find(1) is empty.\n"
+msgstr "Os parâmetros de pesquisa(1) está vazio.\n"
+
+#: ../src/file-filter.c:105 ../src/fsexam-plaintext.c:74
+#: ../src/fsexam-plaintext.c:145
+msgid "Can't open pipe file descriptor.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:111 ../src/file-filter.c:221
+msgid "Searching..."
+msgstr "Pesquisando..."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:123 ../src/file-filter.c:285
+msgid "Search finished"
+msgstr "Pesquisa terminada"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:175
+msgid "Error occurs during executing the search command."
+msgstr "Ocorreu um erro durante a execução do comando de pesquisa."
+
+#: ../src/file-filter.c:196
+msgid "Error occurs when open fd."
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:253 ../src/file-filter.c:274
+#, c-format
+msgid "%d files found"
+msgstr "%d arquivos encontrados"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/file-filter.c:284
+msgid "Search stopped"
+msgstr "Pesquisa interrompida"
+
+#: ../src/file-validate.c:166 ../src/file-validate.c:194
+#, c-format
+msgid "Can't open file %s.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convcontent.c:76 ../src/fsexam-specialfile.c:734
+#, c-format
+msgid "[Content] %s -> %s"
+msgstr "[Conteúdo] %s - >%s"
+
+#: ../src/fsexam-convcontent.c:466
+msgid "Can't new hash table.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:175
+msgid "Re-create symbolic link success"
+msgstr "Sucesso ao recriar link simbólico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:291
+#, c-format
+msgid "[Name] %s -> %s"
+msgstr "[Nome] %s -> %s"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:973
+#, c-format
+msgid "Candidate list:\n"
+msgstr "Lista de candidatos:\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:974
+#, c-format
+msgid "\t[No.] Encoding name\tConversion Result\n"
+msgstr "\t[Não.] Nome da conversão\tResultado da conversão\n"
+
+#: ../src/fsexam-convname.c:1262
+#, c-format
+msgid "Can't access dry run result information.\n"
+msgstr ""
+
+#: ../src/fsexam-convname.c:1290
+msgid "Don't support this restore type.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:1317
+#, c-format
+msgid "No proper encoding.\n"
+msgstr "Codificação não apropriada.\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:1322
+#, c-format
+msgid "Please select No.('s' to skip): "
+msgstr "Selecione Não.('s' para ignorar): "
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-dialog.c:135
+msgid "Please select candidate"
+msgstr "Selecione candidato"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. Ask me button
+#: ../src/fsexam-dialog.c:171
+msgid "Don't ask me again"
+msgstr "Não perguntar novamente"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. Index                    Charset        Cononical Name   Name                        locale
+#: ../src/fsexam-encoding-dialog.c:54 ../src/fsexam-encoding-dialog.c:85
+msgid "Chinese Traditional"
+msgstr "Chinês (Tradicional)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:55
+msgid "Chinese Traditional(Hong Kong)"
+msgstr "Chinês Traditional (Hong Kong)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:56 ../src/fsexam-encoding-dialog.c:99
+msgid "Central European"
+msgstr "Europa Central"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:57 ../src/fsexam-encoding-dialog.c:102
+msgid "Cyrillic"
+msgstr "Cirílico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:58 ../src/fsexam-encoding-dialog.c:92
+#: ../src/fsexam-encoding-dialog.c:97
+msgid "Western"
+msgstr "Ocidental"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:59 ../src/fsexam-encoding-dialog.c:66
+#: ../src/fsexam-encoding-dialog.c:76 ../src/fsexam-encoding-dialog.c:104
+msgid "Greek"
+msgstr "Grego"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:60 ../src/fsexam-encoding-dialog.c:70
+#: ../src/fsexam-encoding-dialog.c:106
+msgid "Turkish"
+msgstr "Turco"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:61 ../src/fsexam-encoding-dialog.c:105
+msgid "Hebrew"
+msgstr "Hebreu"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:62 ../src/fsexam-encoding-dialog.c:103
+msgid "Arabic"
+msgstr "Árabe"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:63 ../src/fsexam-encoding-dialog.c:95
+#: ../src/fsexam-encoding-dialog.c:101
+msgid "Baltic"
+msgstr "Báltico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:64
+msgid "Vietnamese"
+msgstr "Vietnamita"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:65 ../src/fsexam-encoding-dialog.c:67
+msgid "Western Europe"
+msgstr "Europa Ocidental"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:68
+msgid "Central Europe"
+msgstr "Europa Central"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:69
+msgid "Russian"
+msgstr "Russo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:71
+msgid "Portuguese"
+msgstr "Português"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:72
+msgid "Icelandic"
+msgstr "Islandês"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:73
+msgid "French Canadian"
+msgstr "Francês canadense"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:74 ../src/fsexam-encoding-dialog.c:93
+msgid "Nordic"
+msgstr "Nórdico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:75
+msgid "Cyrillic/Russian"
+msgstr "Cirílico/Russo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:77 ../src/fsexam-encoding-dialog.c:84
+#: ../src/fsexam-encoding-dialog.c:94
+msgid "Thai"
+msgstr "Tailandês"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. { FSEXAM_ENCODING_CP949,    "CP950",       "CP950",         N_("Traditional Chinese"),  NULL },
+#: ../src/fsexam-encoding-dialog.c:78 ../src/fsexam-encoding-dialog.c:82
+#: ../src/fsexam-encoding-dialog.c:90 ../src/fsexam-encoding-dialog.c:108
+msgid "Japanese"
+msgstr "Japonês"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. { FSEXAM_ENCODING_CP949,    "CP936",       "CP936",         N_("Simplified Chinese"),   NULL },
+#: ../src/fsexam-encoding-dialog.c:80 ../src/fsexam-encoding-dialog.c:83
+#: ../src/fsexam-encoding-dialog.c:91 ../src/fsexam-encoding-dialog.c:107
+msgid "Korean"
+msgstr "Coreano"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:86 ../src/fsexam-encoding-dialog.c:87
+#: ../src/fsexam-encoding-dialog.c:88 ../src/fsexam-encoding-dialog.c:89
+msgid "Chinese Simplified"
+msgstr "Chinês (Simplificado)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:96
+msgid "Celtic"
+msgstr "Céltico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:98
+msgid "Romanian"
+msgstr "Romeno"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:100
+msgid "South European"
+msgstr "Europa do Sul"
+
+#. { FSEXAM_ENCODING_UTF_16,   "UTF-16",       "UTF16",        N_("Unicode"),              NULL },
+#. { FSEXAM_ENCODING_UTF_16BE, "UTF-16BE",     "UTF16BE",      N_("Unicode"),              NULL },
+#. { FSEXAM_ENCODING_UTF_16LE, "UTF-16LE",     "UTF16LE",      N_("Unicode"),              NULL },
+#.
+#: ../src/fsexam-encoding-dialog.c:113
+msgid "Unicode"
+msgstr ""
+
+#: ../src/fsexam-encoding-dialog.c:124
+#, c-format
+msgid "Warning: The encoding id %d is greater than max length %d.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:183
+#, c-format
+msgid "Encoding '%s' is not supported.\n"
+msgstr "A codificação '%s' não é suportada.\n"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:206
+msgid "The supported encoding list:\n"
+msgstr "A lista de codificação suportada:\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:583 ../src/fsexam-encoding-dialog.c:620
+msgid "_Description"
+msgstr "_Descrição"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:591 ../src/fsexam-encoding-dialog.c:628
+msgid "_Encoding"
+msgstr "_Codificação"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:33
+msgid "Success"
+msgstr "Sucesso"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_OK
+#: ../src/fsexam-error.c:34
+msgid "File name is UTF-8 already"
+msgstr "O nome do arquivo já está em UTF-8"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NAME_UTF8_ALREADY
+#: ../src/fsexam-error.c:35
+msgid "File content is UTF-8 already"
+msgstr "O conteúdo do arquivo já está em UTF-8"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CONTENT_UTF8_ALREADY
+#: ../src/fsexam-error.c:36
+msgid "New name is the same as old name"
+msgstr "O novo nome é idêntico ao anterior"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:40 ../src/fsexam-ui.c:780
+msgid "File doesn't exist"
+msgstr "O arquivo não existe"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_FILE_NONEXIST
+#: ../src/fsexam-error.c:41
+msgid "No Memory"
+msgstr "Sem memória"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NO_MEMORY
+#: ../src/fsexam-error.c:42
+msgid "Invalid encoding index"
+msgstr "Índice de codificação inválido"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_ENCODING_INDEX_INVALID
+#: ../src/fsexam-error.c:43
+msgid "Can't open file"
+msgstr "Não é possível abrir o arquivo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_OPEN
+#: ../src/fsexam-error.c:44
+msgid "Can't rename file"
+msgstr "Não é possível renomear o arquivo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_RENAME
+#: ../src/fsexam-error.c:45
+msgid "Can't write file"
+msgstr "Não é possível gravar o arquivo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_WRITE
+#: ../src/fsexam-error.c:46
+msgid "Given encoding list is not suitable"
+msgstr "A lista de codificação dada não é apropriada"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NO_PROPER_ENCODING
+#: ../src/fsexam-error.c:47
+msgid "Is not regular file"
+msgstr "Não é um arquivo regular"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NOT_REG_FILE
+#: ../src/fsexam-error.c:48
+msgid "Symlink target don't exist"
+msgstr "O destino symlink não existe"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_SYMLINK_TARGET_NOEXIST
+#: ../src/fsexam-error.c:49
+msgid "Can't convert given file"
+msgstr "Não é possível converter arquivo dado"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_CONVERT
+#: ../src/fsexam-error.c:50
+msgid "Can't read file"
+msgstr "Não é possível ler o arquivo"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_READ
+#: ../src/fsexam-error.c:51
+msgid "No proper permission"
+msgstr "Permissão não apropriada"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NO_RIGHTS
+#. ERR_CANNOT_RM_SYMLINK
+#: ../src/fsexam-error.c:53
+msgid "Can't relink symbolic link which will break symbolic link"
+msgstr ""
+"Não é possível refazer o link do link simbólico que quebrará o link simbólico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_LOST_SYMLINK_FILE
+#: ../src/fsexam-error.c:55
+msgid "Have deleted symbolic link file, but can't recreate it"
+msgstr ""
+"O arquivo do link simbólico foi excluído, mas não foi possível recriá-lo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:56
+msgid "Dryrun file format is invalid"
+msgstr "O formato do arquivo de dryrun é inválido"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_DRYRUN_FILE_INVALID
+#: ../src/fsexam-error.c:57
+msgid "Can't get current directory"
+msgstr "Não é possível obter o diretório atual"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_GET_CWD
+#: ../src/fsexam-error.c:58
+msgid "Can't change directory"
+msgstr "Não é possível modificar o diretório"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:62
+msgid "No history information for current file"
+msgstr "Não existe informações de histórico para o arquivo atual"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_HIST_NO_ITEM
+#: ../src/fsexam-error.c:63
+msgid "No given files or all files are UTF-8 already"
+msgstr "Não há arquivos dados ou todos os arquivos já são UTF-8"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_TREE_IS_EMPTY
+#. ERR_NAME_EXIST
+#: ../src/fsexam-error.c:65
+msgid "Same name file exists, will append 'utf-8' as suffix"
+msgstr ""
+"Já existe um arquivo com o mesmo nome, \"utf-8\" será adicionado como sufixo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:66
+msgid "Skip hidden file"
+msgstr "Ignorar arquivo oculto"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_IGNORE_HIDDEN_FILE
+#: ../src/fsexam-error.c:67
+msgid "Skip non-local file"
+msgstr "Ignorar arquivo não local"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_IGNORE_REMOTE_FILE
+#: ../src/fsexam-error.c:68 ../src/fsexam-ui.c:2691
+msgid "Empty file"
+msgstr "Arquivo vazio"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_EMPTY_FILE
+#: ../src/fsexam-error.c:69
+msgid "No parameters"
+msgstr "Sem parâmetros"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_NO_PARAMS
+#: ../src/fsexam-error.c:70
+msgid "Error occurred during filtering"
+msgstr "Ocorreu um erro durante a filtragem"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_FILTER
+#: ../src/fsexam-error.c:71
+msgid "Don't support this kind of file type"
+msgstr "Este tipo de arquivo não é suportado"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_FILE_TYPE_NOT_SUPPORT
+#: ../src/fsexam-error.c:72
+msgid "Buffer overflow"
+msgstr "Estouro de buffer"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_BUFFER_OVERFLOW
+#: ../src/fsexam-error.c:73
+msgid "Canceled the conversion"
+msgstr "Conversão cancelada"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:77
+msgid "Can't write dryrun result file"
+msgstr "Não é possível gravar o arquivo de resultados de dryrun"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_WRITE_DRYRUN
+#: ../src/fsexam-error.c:78
+msgid "Can't open dryrun result file"
+msgstr "Não é possível abrir o arquivo de resultados de dryrun"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_OPEN_DYRRUN
+#: ../src/fsexam-error.c:79
+msgid "Can't convert filename to URI"
+msgstr "Não é possível converter o nome do arquivo para URI"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#. ERR_CANNOT_CONVERT_TO_URI
+#. MISC
+#. unknow error
+#: ../src/fsexam-error.c:82 ../src/fsexam-log.c:124
+msgid "Unknown error occurred"
+msgstr "Ocorreu um erro desconhecido"
+
+#: ../src/fsexam-error.c:98
+#, c-format
+msgid "ERROR ==> %s:%d (%s): %s\n"
+msgstr ""
+
+#: ../src/fsexam-error.c:103
+#, c-format
+msgid "ERROR ==> %s:%d %s\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-helper.c:334 ../src/fsexam-helper.c:345
+#, c-format
+msgid "Encoding '%s' is not supported\n"
+msgstr "A codificação '%s' não é suportada\n"
+
+#: ../src/fsexam-plaintext.c:98
+msgid "The system has no UTF-8 locale\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-preference-dialog.c:368
+msgid "Do you want to save this encoding list permanently?"
+msgstr "Deseja salvar esta lista de codificação permanentemente?"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-preference-dialog.c:520 ../src/fsexam-ui.c:1340
+#, c-format
+msgid "There was an error when displaying help: %s"
+msgstr "Ocorreu um erro ao exibir a Ajuda: %s"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-setting.c:94 ../src/fsexam-ui.c:1974
+#, c-format
+msgid "Rough summary: %d given, %d total, %d ignore, %d fail, %d succeed\n"
+msgstr ""
+"Resumo preliminar: %d dado, %d total, %d ignorar, %d falha, %d sucesso\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1068
+msgid ""
+"Can not run tar command due to lack of iso8859-1 locale, please see fsexam"
+"(1) man page for more info."
+msgstr ""
+"Não é possível executar o comando tar por causa da ausência da localidade "
+"iso8859-1, consulte a página manual do fsexam(1) para obter mais informações."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1412 ../src/fsexam-specialfile.c:1588
+msgid "Don't support this file type"
+msgstr "Este tipo de arquivo não é suportado"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1678
+msgid ""
+"The archive file is empty or has absolute path, so can not convert files in "
+"this archive file"
+msgstr ""
+"O arquivo está vazio ou tem um caminho absoluto, por isso, não é possível "
+"converter arquivos neste arquivo"
+
+# SUN MESSAGE
+#: ../src/fsexam-ui.c:777 ../src/fsexam-ui.c:1006
+msgid "No read permission"
+msgstr "Sem permissão para leitura"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: ../src/fsexam-ui.c:785
+msgid "No folder specified"
+msgstr "Nenhuma pasta especificada"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:825
+msgid "File does not exist or no access permission."
+msgstr "O arquivo não existe ou não há permissão de acesso."
+
+#: ../src/fsexam-ui.c:831
+msgid "File type is not supported."
+msgstr ""
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1009
+msgid "Empty folder"
+msgstr "Pasta vazia"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1088 ../src/fsexam-ui.c:1626
+msgid "Symlink target doesn't exist"
+msgstr "O destino symlink não existe"
+
+#: ../src/fsexam-ui.c:1089 ../src/fsexam-ui.c:1627
+msgid "doesn't exist"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1190
+msgid "The selected file is not empty, do you want to override it?"
+msgstr "O arquivo selecionado não está vazio, deseja substituí-lo?"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1191
+msgid ""
+"The selected file is not UTF-8 encoded, we strongly suggest you to use UTF-8 "
+"filename.\n"
+"\n"
+" Do you want to convert it to UTF8?"
+msgstr ""
+"O arquivo selecionado não está codificado como UTF-8, recomenda-se usar o "
+"nome de arquivo UTF-8.\n"
+"\n"
+" Deseja convertê-lo para UTF8?"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1192
+#, c-format
+msgid ""
+"Can't convert %s to UTF8: %s.\n"
+"\n"
+"Please Note that there may exist partial conversion.\n"
+" So please Refresh you directory and select file again."
+msgstr ""
+"Não é possível converter %s para UTF8: %s.\n"
+"\n"
+"Observe que pode existir conversão parcial.\n"
+" Por isso, atualize o diretório e selecione o arquivo novamente."
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: ../src/fsexam-ui.c:1316
+msgid "Folder Selection"
+msgstr "Seleção de pasta"
+
+# SUN MESSAGE
+#: ../src/fsexam-ui.c:1375
+msgid ""
+"fsexam is to help migrate file name and file content from legacy encoding to "
+"UTF8"
+msgstr ""
+"fsexam serve para ajudar na migração do nome e do conteúdo do arquivo da "
+"codificação legada para UTF8"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2057
+#, c-format
+msgid "The file \"%s\" is missing."
+msgstr "O arquivo \"%s\" está ausente."
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2577
+msgid "No selection"
+msgstr "Sem seleção"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#: ../src/fsexam-ui.c:2586
+msgid "Cannot preview multiple selections"
+msgstr "Não é possível visualizar várias seleções"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2597
+msgid "Cannot preview contents of folder"
+msgstr "Não é possível visualizar o conteúdo da pasta"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2680
+msgid "Can't access"
+msgstr "Não é possível acessar"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2686
+msgid "Not regular file"
+msgstr "Arquivo não regular"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#: ../src/fsexam-ui.c:2696
+msgid "Not plain text"
+msgstr "Não é um texto simples"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:155 ../src/fsexam.c:212
+msgid "Another fsexam is running, will quit soon\n"
+msgstr "Outro fsexam está sendo executado, encerrará em breve\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:325
+#, c-format
+msgid "Run 'fsexam --help' for usage information.\n"
+msgstr "Executar 'fsexam --ajuda' para obter informações de uso.\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:331
+#, c-format
+msgid ""
+"Warning: The given history length is too short, will reset to default value %"
+"d\n"
+msgstr ""
+"Aviso: O comprimento do histórico dado é muito curto, será redefinido para o "
+"valor padrão %d\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:373
+#, c-format
+msgid "Please enter the file name:\n"
+msgstr "Insira o nome do arquivo:\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:431
+msgid "Error: No given encoding and disabled auto detection.\n"
+msgstr "Erro: Sem codificação dada e detecção automática desativada.\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:441
+#, c-format
+msgid "Can't open dryrun file %s\n"
+msgstr "Não é possível abrir o arquivo de dryrun %s\n"
+
+#: ../src/fsexam.c:539
+msgid "The configuration directory is NULL\n"
+msgstr ""
+
+#: ../src/fsexam.c:546
+#, c-format
+msgid "Can't create configuration directory %s for fsexam\n"
+msgstr ""
+
+#: ../src/fsexam.c:557
+#, c-format
+msgid "file %s exist and is not one directory, please rename it.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:675
+#, c-format
+msgid "Usage:\n"
+msgstr "Uso:\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:676
+#, c-format
+msgid "    fsexam [OPTION] ... [file]\n"
+msgstr "    fsexam [OPTION] ... [file]\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:678
+#, c-format
+msgid ""
+"\n"
+"Supported options:\n"
+msgstr ""
+"\n"
+"Opções suportadas:\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:680
+#, c-format
+msgid "    -a, --auto-detect      Enable encoding auto detection\n"
+msgstr "    -a, --auto-detect      Ativar detecção automática da codificação\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:682
+#, c-format
+msgid "    -d dry-run-result      Specify the dryrun result file\n"
+msgstr ""
+"    -d dry-run-result      Especificar o arquivo de resultados de dryrun\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:683
+#, c-format
+msgid "    -E module-name         Enable special file handling\n"
+msgstr "    -E module-name         Ativar o tratamento de arquivo especial\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:684
+#, c-format
+msgid "    -e encoding-list       Specify additional encoding list\n"
+msgstr ""
+"    -e encoding-list       Especificar a lista de codificação adicional\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:685
+#, c-format
+msgid "    -F, --force-convert    Forceful conversion mode\n"
+msgstr "    -F, --force-convert    Modo de conversão forçada\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:686
+#, c-format
+msgid "    -f 'expression'        Specify file filter criteria\n"
+msgstr ""
+"    -f 'expression'        Especificar o critério de filtro de arquivos\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:687
+#, c-format
+msgid "    -H, --hidden           Turn on hidden file handling\n"
+msgstr "    -H, --hidden           Ativar o tratamento de arquivos ocultos\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:688
+#, c-format
+msgid "    -b, --auto-conversion  Interactive mode\n"
+msgstr "    -b, --auto-conversion  Modo interativo\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:689
+#, c-format
+msgid "    -l, list-encoding      List all supported encoding\n"
+msgstr "    -l, list-encoding      Listar todas as codificações suportadas\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:690
+#, c-format
+msgid "    -k, --no-check-symlink-content\n"
+msgstr "    -k, --no-check-symlink-content\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:691
+#, c-format
+msgid ""
+"                           Don't check the consistency between\n"
+"                           symbolic link and its target name\n"
+msgstr ""
+"                           Não verificar a consistência entre\n"
+"                           o link simbólico e seu nome de destino\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:693
+#, c-format
+msgid "    -L logfile             Specify log file\n"
+msgstr "    -L logfile             Especificar o arquivo de log\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:695
+#, c-format
+msgid "    -n, --dry-run          Dryrun mode\n"
+msgstr "    -n, --dry-run          Modo dryrun\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:696
+#, c-format
+msgid "    -P, --append-encoding-list\n"
+msgstr "    -P, --append-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:697
+#, c-format
+msgid ""
+"                           Append encoding list specified by\n"
+"                           '-e' to predefined encoding list\n"
+msgstr ""
+"                           Anexar lista de codificação especificada por\n"
+"                           '-e' à lista de codificação predefinida\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:699
+#, c-format
+msgid "    -p, --prepend-encoding-list\n"
+msgstr "    -p, --prepend-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:700
+#, c-format
+msgid ""
+"                           Prepend encoding list specified by\n"
+"                           '-e' to predefined encoding list\n"
+msgstr ""
+"                           Antepor a lista de codificação especificada por\n"
+"                           '-e' à lista de codificação predefinida\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:702
+#, c-format
+msgid "    -R, --recursive        Recursive mode\n"
+msgstr "    -R, --recursive        Modo recursivo\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:703
+#, c-format
+msgid "    -r, --remote           Turn on nfs files handling\n"
+msgstr "    -r, --remote           Ativar tratamento de arquivos nfs\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:704
+#, c-format
+msgid "    -S, --save-encoding-list\n"
+msgstr "    -S, --save-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:705
+#, c-format
+msgid ""
+"                           Save encoding list specified by\n"
+"                           '-e' permanently\n"
+msgstr ""
+"                           Salvar a lista de codificação especificada por\n"
+"                           '-e' permanentemente\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:707
+#, c-format
+msgid ""
+"    -s, --restore          Restore the original name or\n"
+"                           content for given files\n"
+msgstr ""
+"    -s, --restore          Restaurar o nome ou\n"
+"                           conteúdo original para os arquivos dados\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:709
+#, c-format
+msgid ""
+"    -t, --conv-content     Convert file content rather than\n"
+"                           file name\n"
+msgstr ""
+"    -t, --conv-content     Converter o conteúdo do arquivo em vez de\n"
+"                           nome de arquivo\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:711
+#, c-format
+msgid "    -w, --follow           Follow symbolic link\n"
+msgstr "    -w, --follow           Seguir o link simbólico\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:712
+#, c-format
+msgid "    -V, --version          Print the version information\n"
+msgstr "    -V, --version          Imprimir as informações de versão\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../src/fsexam.c:713
+#, c-format
+msgid "    -?, --help             Print this usage information for fsexam\n"
+msgstr ""
+"    -?, --help             Imprimir esta informação de uso para fsexam\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:1
+msgid "Encoding auto detection"
+msgstr "Detecção automática da codificação"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:3
+msgid "Hidden file handling"
+msgstr "Tratamento de arquivos ocultos"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:4
+msgid "Hist length"
+msgstr "Comprimento do histórico"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:5
+msgid "Keep symbolic link and its reference consistent"
+msgstr "Manter o link simbólico e sua consistência de referência"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:6
+msgid "Log file name"
+msgstr "Nome do arquivo de log"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:7
+msgid "NFS file handling"
+msgstr "Tratamento de arquivos NFS"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:8
+msgid "Special file type module"
+msgstr "Módulo do tipo de arquivo especial"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:9
+msgid "Write log or not"
+msgstr "Gravar log ou não"
+
+#: ../data/fsexam.schemas.in.h:10
+msgid "[ISO8859-1]"
+msgstr "[ISO8859-1,ISO8859-3,ISO8859-5,ISO8859-8,ISO8859-9]"
+
+# SUN MSG
+#: ../data/fsexam.schemas.in.h:11
+msgid "automatic mode"
+msgstr "modo automático"
+
+# SUN MSG
+#: ../data/fsexam.schemas.in.h:12
+msgid "encoding list"
+msgstr "lista de codificação"
+
+# SUN MSG
+#: ../data/fsexam.schemas.in.h:13
+msgid "recursive mode"
+msgstr "modo recursivo"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#: ../data/fsexam.desktop.in.h:2
+msgid "Help migrate from legacy encoding to Unicode(UTF8)"
+msgstr "Ajudar a migrar da codificação legada à Unicode (UTF8)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "*"
+#~ msgstr "*"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Display the dryrun result pane"
+#~ msgstr "Exibir o painel de resultados de dryrun"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Display the report pane"
+#~ msgstr "Exibir o painel de relatórios"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Display the search result window"
+#~ msgstr "Exibir a janela de resultados da pesquisa"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Preview plain text file content"
+#~ msgstr "Visualizar conteúdo do arquivo de texto simples"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Select A File"
+#~ msgstr "Selecionar um arquivo"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "[Content] %s - >%s"
+#~ msgstr "[Conteúdo] %s - >%s"
+
+# SUN MSG
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Display help content"
+#~ msgstr "Exibição do conteúdo da Ajuda"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN LING REVIEWED
+#~ msgid "Preference setting"
+#~ msgstr "Configuração preferencial"
+
+# SUN MESSAGE
+#~ msgid "File has been emptied, can not be restored!"
+#~ msgstr "O arquivo foi esvaziado, não pode ser restaurado!"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "add Carriage Return"
+#~ msgstr "adicionar Retorno de carro"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "_Open..."
+#~ msgstr "A_brir..."
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "_Restore Original File"
+#~ msgstr "_Restaurar arquivo original"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "_Convert Content"
+#~ msgstr "_Converter conteúdo"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "_About"
+#~ msgstr "_Sobre"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Sub-folder:"
+#~ msgstr "Subpasta:"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "User intervention:"
+#~ msgstr "Intervenção de usuário:"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "text"
+#~ msgstr "texto"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Restore %s and add Carriage Return"
+#~ msgstr "Restaurar %s e adicionar Retorno de carro"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Restore by adding Carriage Return"
+#~ msgstr "Restaurar ao adicionar Retorno de carro"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Restore UTF8"
+#~ msgstr "Restaurar UTF8"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "File System Examiner name conversion"
+#~ msgstr "Conversão de nome do Examinador do sistema de arquivos"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Folder already exists"
+#~ msgstr "A pasta já existe"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "delete Carriage Return"
+#~ msgstr "excluir Retorno de carro"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "delete Carriage Return only"
+#~ msgstr "excluir Retorno de carro somente"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "add Carriage Return only"
+#~ msgstr "adicionar Retorno de carro somente"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Folder doesn't exist yet"
+#~ msgstr "A pasta ainda não existe"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "_Preferences"
+#~ msgstr "_Preferências"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Encode list:"
+#~ msgstr "Lista de codificação:"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "File System Examiner content conversion"
+#~ msgstr "Conversão de conteúdo do Examinador do sistema de arquivos"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "File content - convert from %s"
+#~ msgstr "Conteúdo do arquivo - converter de %s"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "File content - convert from %s and delete Carriage Return"
+#~ msgstr "Conteúdo do arquivo - converter de %s e excluir o Retorno de carro"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "File content - delete Carriage Return only"
+#~ msgstr "Conteúdo do arquivo - excluir Retorno de carro somente"
+
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "%s doesn't exist yet"
+#~ msgstr "%s ainda não existe"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Restore UTF8 and delete Carriage Return"
+#~ msgstr "Restaurar UTF8 e excluir Retorno de carro"
+
+# SUN MSG
+# SUN REVIEWED
+# SUN MESSAGE
+#~ msgid "Restore by deleting Carriage Return"
+#~ msgstr "Restaurar ao excluir o Retorno de carro"
+
+# SUN MSG
+#~ msgid ""
+#~ "A list of suffix. Any file whose suffix belongs to the list are assumed "
+#~ "by fsexam as plain text file."
+#~ msgstr ""
+#~ "Uma lista de sufixos. Qualquer arquivo cujo sufixo pertença à lista é "
+#~ "considerado pelo fsexam como arquivo de texto simples."
+
+# SUN MSG
+#~ msgid ""
+#~ "Only applicable for file name conversion! It's recursive mode, by "
+#~ "enabling it, fsexam will convert the name of file and subdirectory to "
+#~ "UTF8 recursively."
+#~ msgstr ""
+#~ "Aplicável apenas para conversão de nome de arquivo. Modo recursivo. Ao "
+#~ "habilitá-lo, o fsexam converterá o nome do arquivo e o subdiretório em "
+#~ "UTF8 recursivamente."
+
+# SUN MSG
+#~ msgid ""
+#~ "Only applicable for file name conversion. It's automatic mode, by "
+#~ "enabling it, fsexam will automatically convert with the best conversion "
+#~ "result without user interference. Otherwise, a dialog will display with "
+#~ "several conversion candidates and user needs to decide which conversion "
+#~ "is the best one."
+#~ msgstr ""
+#~ "Aplicável apenas para conversão de nome de arquivo. Modo automático. Ao "
+#~ "habilitá-lo, o fsexam automaticamente fará a conversão com o melhor "
+#~ "resultado sem a interferência do usuário. Caso contrário, será exibida "
+#~ "uma caixa de diálogo com várias opções de conversão e o usuário deverá "
+#~ "decidir qual é a melhor."
+
+# SUN MSG
+#~ msgid ""
+#~ "The list of legacy encoding name available for the specific language. "
+#~ "Note that the order within the list is significant. fsexam treats as the "
+#~ "best one the first one from which conversion can be made successfully."
+#~ msgstr ""
+#~ "A lista de nomes de codificação legada para a linguagem específica. "
+#~ "Observe que a ordem na lista é significativa. O fsexam considera a melhor "
+#~ "opção a primeira, da qual a conversão pode ser realizada com sucesso."
+
+# SUN MSG
+#~ msgid "suffix list"
+#~ msgstr "lista de sufixos"
+
+# SUN MSG
+#~ msgid "Directory already exists"
+#~ msgstr "O diretório já existe"
+
+# SUN MSG
+#~ msgid "File already exists"
+#~ msgstr "O arquivo já existe"
+
+# SUN MSG
+#~ msgid "Null directory"
+#~ msgstr "Diretório nulo"
+
+# SUN MSG
+#~ msgid "Apply by name"
+#~ msgstr "Aplicar por nome"
+
+# SUN MSG
+#~ msgid "Apply by content"
+#~ msgstr "Aplicar por conteúdo"
+
+# SUN MSG
+#~ msgid "Peek content"
+#~ msgstr "Conteúdo de pico"
+
+# SUN MSG
+#~ msgid "Error loading icon %s\n"
+#~ msgstr "Erro ao carregar ícone %s\n"
+
+# SUN MSG
+#~ msgid "popen error, please try again!"
+#~ msgstr "Erro de popen, tente novamente!"
+
+# SUN MSG
+#~ msgid "Not one plain text"
+#~ msgstr "Não é um texto simples"
+
+# SUN MSG
+#~ msgid "File content candidate window"
+#~ msgstr "Janela de opção de conteúdo de arquivo"
+
+# SUN MSG
+#~ msgid "Byte sequence not recognized yet"
+#~ msgstr "Seqüência de bytes ainda não reconhecida"
+
+# SUN MSG
+#~ msgid "File content - open failure"
+#~ msgstr "Conteúdo do arquivo - falha ao abrir"
+
+# SUN MSG
+#~ msgid "File content - write error"
+#~ msgstr "Conteúdo do arquivo - erro de gravação"
+
+# SUN MSG
+#~ msgid "File content - successful conversion"
+#~ msgstr "Conteúdo do arquivo - conversão realizada com êxito"
+
+# SUN MSG
+#~ msgid "File content - UTF8 alreay"
+#~ msgstr "Conteúdo do arquivo - já é UTF8"
+
+# SUN MSG
+#~ msgid "Directory node"
+#~ msgstr "Nó de diretório"
+
+# SUN MSG
+#~ msgid "File content - successful undo"
+#~ msgstr "Conteúdo do arquivo - ação desfeita com êxito"
+
+# SUN MESSAGE
+#~ msgid "No permission to rename"
+#~ msgstr "Sem permissão para renomear"
+
+# SUN MESSAGE
+#~ msgid "File Hierarchy"
+#~ msgstr "Hierarquia de arquivos"
+
+# SUN MESSAGE
+#~ msgid "No directory specified"
+#~ msgstr "Nenhum diretório especificado"
+
+# SUN MESSAGE
+#~ msgid "Directory Selection"
+#~ msgstr "Seleção de diretório"
+
+# SUN MESSAGE
+#~ msgid "fsexam"
+#~ msgstr "fsexam"
+
+# SUN MESSAGE
+#~ msgid "Report Pane"
+#~ msgstr "Painel de relatório"
+
+# SUN MESSAGE
+#~ msgid "Welcome"
+#~ msgstr "Bem-vindo"
+
+# SUN MESSAGE
+#~ msgid "Recursive Mode"
+#~ msgstr "Modo recursivo"
+
+# SUN MESSAGE
+#~ msgid "Automatic Conversion"
+#~ msgstr "Conversão automática"
+
+# SUN MESSAGE
+#~ msgid "Conversion failure"
+#~ msgstr "Falha na conversão"
+
+# SUN MESSAGE
+#~ msgid "UTF8 already"
+#~ msgstr "Já é UTF8"

@@ -1,0 +1,2692 @@
+# 
+# CDDL HEADER START
+# 
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+# 
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+# 
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+# 
+# CDDL HEADER END
+# 
+
+# 
+# Copyright 2008 Sun Microsystems, Inc. All rights reserved.
+# Use is subject to license terms.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fsexeam HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-17 17:07+0800\n"
+"PO-Revision-Date: 2004-06-16 15:05+0900\n"
+"Last-Translator: desktop-discuss@opensolaris.org\n"
+"Language-Team: desktop-discuss@opensolaris.org\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:1
+msgid "<b>Available encoding:</b>"
+msgstr "<b>使用可能なエンコーディング:</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:2
+msgid "<b>Conversion Setting:</b>"
+msgstr "<b>変換設定:</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:3
+msgid "<b>Encoding List:</b>"
+msgstr "<b>エンコーディングリスト:</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:4
+msgid "<b>Encoding Selected:</b>"
+msgstr "<b>選択されたエンコーディング:</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:5
+msgid "<b>Search Result</b>"
+msgstr "<b>検索結果</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:6
+msgid "<b>_Dryrun Result</b>"
+msgstr "<b>ドライラン結果(_D)</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:7
+msgid "<b>_Location:</b>"
+msgstr "<b>場所(_L):</b>"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:8
+msgid "<b>_Report Pane</b>"
+msgstr "<b>報告区画(_R)</b>"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:9
+msgid "Add or Remove Encoding"
+msgstr "エンコーディングの追加または削除"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:10
+msgid "Archive or Compress files"
+msgstr "ファイルのアーカイブまたは圧縮"
+
+#: ../src/fsexam.glade2.h:11
+msgid "Based on seconds"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:12
+msgid "Clear Searc_h Result"
+msgstr "検索結果のクリアー(_H)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:13
+msgid "Clear the search result"
+msgstr "検索結果をクリアーする"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:14
+msgid "Content Conversion _Mode"
+msgstr "内容変換モード(_M)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:15
+msgid "Convert"
+msgstr "変換"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:16
+msgid "Convert file name or content based on previous dryrun result"
+msgstr "前回のドライラン結果に基づいてファイルの名前または内容を変換する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:17
+msgid ""
+"Convert file using the first candidate automatically instead of interactive "
+"converting"
+msgstr ""
+"対話形式による変換ではなく、最初の候補を自動的に使用してファイルを変換する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:18
+msgid "Convert selected files' name or content according to the current mode"
+msgstr "選択されたファイルの名前または内容を現在のモードに従って変換する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:19
+msgid "Convert without detecting whether encoding is UTF-8 or not"
+msgstr "エンコーディングが UTF-8 であるかどうかを検出しないで変換する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:20
+msgid "Data modified more than:"
+msgstr "データは次の回数を超えて変更されました:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:21
+msgid "Detect the encoding of file name or file content automatically"
+msgstr "ファイル名またはファイル内容のエンコーディングを自動的に検出する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:22
+msgid "Don't Chec_k Symlink Content"
+msgstr "シンボリックリンクの内容をチェックしない(_K)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:23
+msgid ""
+"Don't try to keep the consistency between symbolic link file and its target "
+"file"
+msgstr ""
+"シンボリックリンクファイルとそのターゲットファイルとの整合性を維持しない"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:24
+msgid "Dryrun"
+msgstr "ドライラン"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:25
+msgid "Dryrun without changing any file name or content in the disk"
+msgstr "ディスク内のファイルの名前または内容を変更しないでドライランする"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:26
+msgid "Dryrun without changing files on disk"
+msgstr "ディスク上のファイルを変更しないでドライランする"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:27
+msgid "File Content _Mode"
+msgstr "ファイル内容モード(_M)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:28 ../src/fsexam.c:395 ../src/fsexam.c:473
+#: ../data/fsexam.desktop.in.h:1
+msgid "File Encoding Examiner"
+msgstr "ファイルエンコーディング検査器"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:29
+msgid "File Encoding Examiner Preferences"
+msgstr "ファイルエンコーディング検査器の設定"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:30
+msgid "File _Name Mode"
+msgstr "ファイル名モード(_N)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:31
+msgid "File content conversion mode"
+msgstr "ファイル内容変換モード"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:32
+msgid "File name conversion mode"
+msgstr "ファイル名変換モード"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:33
+msgid "Follow _Symbolic Link"
+msgstr "シンボリックリンクに従う(_S)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:34 ../data/fsexam.schemas.in.h:2
+msgid "Follow symbolic link"
+msgstr "シンボリックリンクに従う"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:35
+msgid "Forcibly Convert"
+msgstr "強制変換"
+
+#: ../src/fsexam.glade2.h:36
+msgid "Group name"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:37
+msgid "Handle _Hidden Files"
+msgstr "非表示のファイルを処理する(_H)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:38
+msgid "Handle _Remote Files"
+msgstr "リモートファイルを処理する(_R)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:39
+msgid "Hide search result"
+msgstr "検索結果を表示しない"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:40
+msgid "History Length:"
+msgstr "履歴の長さ:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:41
+msgid "Log File Name:"
+msgstr "ログファイル名:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:42
+msgid "Look in folder:"
+msgstr "検索するフォルダ:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:43
+msgid "Name Contains:"
+msgstr "名前に含まれる文字列:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:44
+msgid "Open file"
+msgstr "ファイルを開く"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:45
+msgid "Owned by group:"
+msgstr "次のグループによって所有:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:46
+msgid "Owned by user:"
+msgstr "次のユーザーによって所有:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:47
+msgid "Processing archive or compress file"
+msgstr "アーカイブまたは圧縮ファイルを処理しています"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:48
+msgid "Processing hidden file"
+msgstr "非表示のファイルを処理しています"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:49
+msgid "Processing non-local files such as NFS file"
+msgstr "ローカルではないファイル (NFS ファイルなど) を処理しています"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:50
+msgid "Processing special type of file"
+msgstr "特殊なタイプのファイルを処理しています"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:51
+msgid "Recursive handle files under folder"
+msgstr "フォルダにあるファイルを再帰的に処理する"
+
+#: ../src/fsexam.glade2.h:52
+msgid "Remove encoding"
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:53
+msgid "Restore"
+msgstr "復元"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:54
+msgid "Restore given files' name or content according to conversion mode"
+msgstr "指定されたファイルの名前または内容を変換モードに従って復元する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:55
+msgid "Restore selected files' name or content"
+msgstr "選択されたファイルの名前または内容を復元する"
+
+#: ../src/fsexam.glade2.h:56
+msgid ""
+"Save the encoding list permanently, otherwise used only for current session"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:57
+msgid "Scenario"
+msgstr "シナリオ"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:58
+msgid "Search Result"
+msgstr "検索結果"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:59
+msgid "Search for _Files..."
+msgstr "ファイルの検索(_F)..."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:60
+msgid "Search for files"
+msgstr "ファイルを検索する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:61
+msgid "Search for files according to user given criteria"
+msgstr "ユーザーが指定した条件に従ってファイルを検索する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:62
+msgid "Select A Folder"
+msgstr "フォルダの選択"
+
+#: ../src/fsexam.glade2.h:63
+msgid "Select encoding"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:64
+msgid "Special File Handling"
+msgstr "特殊なファイルの処理"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:65
+msgid "Status modified more than:"
+msgstr "ステータスは次の回数を超えて変更されました:"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:66
+msgid "Stop _Searching"
+msgstr "検索の中止(_S)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:67
+msgid "Stop searching files"
+msgstr "ファイルの検索を中止する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:68
+msgid ""
+"The number of conversion is stored. Converting multiple files at one time "
+"count as 1 time"
+msgstr ""
+"変換の回数が保存されました。複数のファイルを一度に変換した場合のカウント数は "
+"1 です"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:69
+msgid "Undo the last action"
+msgstr "最後に行なった動作を元に戻す"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:70
+msgid "Use Log File"
+msgstr "ログファイルの使用"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:71
+msgid "Use log file"
+msgstr "ログファイルを使用する"
+
+#: ../src/fsexam.glade2.h:72
+msgid "Use shell glob pattern"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:73
+msgid "User name"
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:74
+msgid "_Auto Conversion"
+msgstr "自動変換(_A)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:75
+msgid "_Auto Detection"
+msgstr "自動検出(_A)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:76
+msgid "_Content"
+msgstr "内容(_C)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:77
+msgid "_Convert"
+msgstr "変換(_C)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:78
+msgid "_Dryrun"
+msgstr "ドライラン(_D)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:79
+msgid "_Dryrun Result Pane"
+msgstr "ドライラン結果区画(_D)"
+
+# SUN REVIEWED
+#: ../src/fsexam.glade2.h:80
+msgid "_Edit"
+msgstr "編集(_E)"
+
+# SUN REVIEWED
+#: ../src/fsexam.glade2.h:81
+msgid "_File"
+msgstr "ファイル(_F)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:82
+msgid "_Forcibly Convert"
+msgstr "強制変換(_F)"
+
+# SUN REVIEWED
+#: ../src/fsexam.glade2.h:83
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:84
+msgid "_Name Conversion Mode"
+msgstr "名前変換モード(_N)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:85
+msgid "_Preview Content"
+msgstr "内容をプレビュー(_P)"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam.glade2.h:86
+msgid "_Recursive Mode"
+msgstr "再帰モード(_R)"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam.glade2.h:87
+msgid "_Report Pane"
+msgstr "報告区画(_R)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:88
+msgid "_Restore"
+msgstr "復元(_R)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.glade2.h:89
+msgid "_Scenario"
+msgstr "シナリオ(_S)"
+
+# SUN REVIEWED
+#: ../src/fsexam.glade2.h:90
+msgid "_View"
+msgstr "表示(_V)"
+
+#: ../src/fsexam.glade2.h:91
+msgid "gtk-about"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:92
+msgid "gtk-open"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:93
+msgid "gtk-preferences"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:94
+msgid "gtk-quit"
+msgstr ""
+
+#: ../src/fsexam.glade2.h:95
+msgid "gtk-undo"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-application-server.c:92
+msgid "One instance of fsexam is running already.\n"
+msgstr "fsexam の 1 つのインスタンスがすでに実行されています。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/auto-detect.c:206 ../src/auto-detect.c:247
+#, c-format
+msgid ""
+"Warning: can not convert encoding %s to canonical encoding name, will ignore "
+"it.\n"
+msgstr ""
+"警告: エンコーディング %s は正規のエンコーディング名に変換できないため、無視"
+"されます。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/callbacks.c:72
+msgid ""
+"No encoding provided. Please check 'Auto Detect' button in preferences "
+"dialog or add encoding through encoding dialog.\n"
+msgstr ""
+"エンコーディングが指定されていません。設定の変更ダイアログの「自動判別」ボタ"
+"ンをチェックするか、またはエンコーディングダイアログでエンコーディングを追加"
+"してください。\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/callbacks.c:124
+msgid "No Selection"
+msgstr "選択なし"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/callbacks.c:131
+msgid "No files need to handle"
+msgstr "処理の必要なファイルはありません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/callbacks.c:316
+msgid "Nothing need to undo"
+msgstr "何も元に戻す必要はありません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/callbacks.c:355
+msgid "No results. Please see report pane for more information.\n"
+msgstr "結果はありません。詳細については、レポート区画を参照してください。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/callbacks.c:734
+msgid "Stop the Searching..."
+msgstr "検索を中止しています..."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/callbacks.c:796
+msgid "Search Result has been cleared."
+msgstr "検索結果はクリアーされました。"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/encoding.c:90
+#, c-format
+msgid ""
+"%s is not supported encoding name, use 'fsexamc -l' to list supported "
+"encoding.\n"
+msgstr ""
+"%s はサポートされているエンコーディング名ではありません。'fsexamc -l'を使用す"
+"ると、サポートされているエンコーディングが一覧表示されます。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/encoding.c:108
+#, c-format
+msgid ""
+"Your system do not support conversion from '%s' to 'UTF-8',will ignore it.\n"
+msgstr ""
+"使用しているシステムは '%s' から 'UTF-8' への変換をサポートしていないため、無"
+"視されます。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/file-filter.c:82 ../src/file-filter.c:155
+msgid "Parameters of find(1) is empty.\n"
+msgstr "find(1) のパラメータが空です。\n"
+
+#: ../src/file-filter.c:105 ../src/fsexam-plaintext.c:74
+#: ../src/fsexam-plaintext.c:145
+msgid "Can't open pipe file descriptor.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/file-filter.c:111 ../src/file-filter.c:221
+msgid "Searching..."
+msgstr "検索しています..."
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/file-filter.c:123 ../src/file-filter.c:285
+msgid "Search finished"
+msgstr "検索が完了しました"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/file-filter.c:175
+msgid "Error occurs during executing the search command."
+msgstr "検索コマンドの実行中にエラーが発生しました。"
+
+#: ../src/file-filter.c:196
+msgid "Error occurs when open fd."
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/file-filter.c:253 ../src/file-filter.c:274
+#, c-format
+msgid "%d files found"
+msgstr "%d 個のファイルが見つかりました"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/file-filter.c:284
+msgid "Search stopped"
+msgstr "検索は中止されました"
+
+#: ../src/file-validate.c:166 ../src/file-validate.c:194
+#, c-format
+msgid "Can't open file %s.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-convcontent.c:76 ../src/fsexam-specialfile.c:734
+#, c-format
+msgid "[Content] %s -> %s"
+msgstr "[内容] %s -> %s"
+
+#: ../src/fsexam-convcontent.c:466
+msgid "Can't new hash table.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:175
+msgid "Re-create symbolic link success"
+msgstr "シンボリックリンクの再作成に成功しました"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:291
+#, c-format
+msgid "[Name] %s -> %s"
+msgstr "[名前] %s -> %s"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:973
+#, c-format
+msgid "Candidate list:\n"
+msgstr "候補のリスト:\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:974
+#, c-format
+msgid "\t[No.] Encoding name\tConversion Result\n"
+msgstr "\t[番号] エンコーディング名\t変換結果\n"
+
+#: ../src/fsexam-convname.c:1262
+#, c-format
+msgid "Can't access dry run result information.\n"
+msgstr ""
+
+#: ../src/fsexam-convname.c:1290
+msgid "Don't support this restore type.\n"
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:1317
+#, c-format
+msgid "No proper encoding.\n"
+msgstr "適切なエンコーディングがありません。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-convname.c:1322
+#, c-format
+msgid "Please select No.('s' to skip): "
+msgstr "番号を選択してください (スキップする場合は 's'): "
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-dialog.c:135
+msgid "Please select candidate"
+msgstr "候補を選択してください"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. Ask me button
+#: ../src/fsexam-dialog.c:171
+msgid "Don't ask me again"
+msgstr "今後、このメッセージを表示しない"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. Index                    Charset        Cononical Name   Name                        locale
+#: ../src/fsexam-encoding-dialog.c:54 ../src/fsexam-encoding-dialog.c:85
+msgid "Chinese Traditional"
+msgstr "繁体字中国語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:55
+msgid "Chinese Traditional(Hong Kong)"
+msgstr "繁体字中国語 (香港)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:56 ../src/fsexam-encoding-dialog.c:99
+msgid "Central European"
+msgstr "中央ヨーロッパ言語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:57 ../src/fsexam-encoding-dialog.c:102
+msgid "Cyrillic"
+msgstr "キリル言語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:58 ../src/fsexam-encoding-dialog.c:92
+#: ../src/fsexam-encoding-dialog.c:97
+msgid "Western"
+msgstr "欧米"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:59 ../src/fsexam-encoding-dialog.c:66
+#: ../src/fsexam-encoding-dialog.c:76 ../src/fsexam-encoding-dialog.c:104
+msgid "Greek"
+msgstr "ギリシャ語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:60 ../src/fsexam-encoding-dialog.c:70
+#: ../src/fsexam-encoding-dialog.c:106
+msgid "Turkish"
+msgstr "トルコ語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:61 ../src/fsexam-encoding-dialog.c:105
+msgid "Hebrew"
+msgstr "ヘブライ語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:62 ../src/fsexam-encoding-dialog.c:103
+msgid "Arabic"
+msgstr "アラビア語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:63 ../src/fsexam-encoding-dialog.c:95
+#: ../src/fsexam-encoding-dialog.c:101
+msgid "Baltic"
+msgstr "バルト語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:64
+msgid "Vietnamese"
+msgstr "ベトナム語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:65 ../src/fsexam-encoding-dialog.c:67
+msgid "Western Europe"
+msgstr "西ヨーロッパ"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:68
+msgid "Central Europe"
+msgstr "中央ヨーロッパ"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:69
+msgid "Russian"
+msgstr "ロシア語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:71
+msgid "Portuguese"
+msgstr "ポルトガル語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:72
+msgid "Icelandic"
+msgstr "アイスランド語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:73
+msgid "French Canadian"
+msgstr "フランス語 (カナダ)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:74 ../src/fsexam-encoding-dialog.c:93
+msgid "Nordic"
+msgstr "ノルウェー語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:75
+msgid "Cyrillic/Russian"
+msgstr "キリル言語/ロシア語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:77 ../src/fsexam-encoding-dialog.c:84
+#: ../src/fsexam-encoding-dialog.c:94
+msgid "Thai"
+msgstr "タイ語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. { FSEXAM_ENCODING_CP949,    "CP950",       "CP950",         N_("Traditional Chinese"),  NULL },
+#: ../src/fsexam-encoding-dialog.c:78 ../src/fsexam-encoding-dialog.c:82
+#: ../src/fsexam-encoding-dialog.c:90 ../src/fsexam-encoding-dialog.c:108
+msgid "Japanese"
+msgstr "日本語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. { FSEXAM_ENCODING_CP949,    "CP936",       "CP936",         N_("Simplified Chinese"),   NULL },
+#: ../src/fsexam-encoding-dialog.c:80 ../src/fsexam-encoding-dialog.c:83
+#: ../src/fsexam-encoding-dialog.c:91 ../src/fsexam-encoding-dialog.c:107
+msgid "Korean"
+msgstr "韓国語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:86 ../src/fsexam-encoding-dialog.c:87
+#: ../src/fsexam-encoding-dialog.c:88 ../src/fsexam-encoding-dialog.c:89
+msgid "Chinese Simplified"
+msgstr "簡体字中国語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:96
+msgid "Celtic"
+msgstr "ケルト語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:98
+msgid "Romanian"
+msgstr "ルーマニア語"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:100
+msgid "South European"
+msgstr "南ヨーロッパ言語"
+
+#. { FSEXAM_ENCODING_UTF_16,   "UTF-16",       "UTF16",        N_("Unicode"),              NULL },
+#. { FSEXAM_ENCODING_UTF_16BE, "UTF-16BE",     "UTF16BE",      N_("Unicode"),              NULL },
+#. { FSEXAM_ENCODING_UTF_16LE, "UTF-16LE",     "UTF16LE",      N_("Unicode"),              NULL },
+#.
+#: ../src/fsexam-encoding-dialog.c:113
+msgid "Unicode"
+msgstr ""
+
+#: ../src/fsexam-encoding-dialog.c:124
+#, c-format
+msgid "Warning: The encoding id %d is greater than max length %d.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:183
+#, c-format
+msgid "Encoding '%s' is not supported.\n"
+msgstr "エンコーディング '%s' はサポートされていません。\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:206
+msgid "The supported encoding list:\n"
+msgstr "サポートするエンコーディングリスト:\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:583 ../src/fsexam-encoding-dialog.c:620
+msgid "_Description"
+msgstr "説明(_D)"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-encoding-dialog.c:591 ../src/fsexam-encoding-dialog.c:628
+msgid "_Encoding"
+msgstr "エンコーディング(_E)"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:33
+msgid "Success"
+msgstr "成功"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_OK
+#: ../src/fsexam-error.c:34
+msgid "File name is UTF-8 already"
+msgstr "ファイル名はすでに UTF-8 になっています"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_NAME_UTF8_ALREADY
+#: ../src/fsexam-error.c:35
+msgid "File content is UTF-8 already"
+msgstr "ファイルの内容はすでに UTF-8 になっています"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CONTENT_UTF8_ALREADY
+#: ../src/fsexam-error.c:36
+msgid "New name is the same as old name"
+msgstr "新しい名前が古い名前と同じです"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:40 ../src/fsexam-ui.c:780
+msgid "File doesn't exist"
+msgstr "ファイルが存在しません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_FILE_NONEXIST
+#: ../src/fsexam-error.c:41
+msgid "No Memory"
+msgstr "メモリー不足"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_NO_MEMORY
+#: ../src/fsexam-error.c:42
+msgid "Invalid encoding index"
+msgstr "無効なエンコーディングインデックスです"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_ENCODING_INDEX_INVALID
+#: ../src/fsexam-error.c:43
+msgid "Can't open file"
+msgstr "ファイルを開けません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_OPEN
+#: ../src/fsexam-error.c:44
+msgid "Can't rename file"
+msgstr "ファイルの名前を変更できません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_RENAME
+#: ../src/fsexam-error.c:45
+msgid "Can't write file"
+msgstr "ファイルに書き込めません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_WRITE
+#: ../src/fsexam-error.c:46
+msgid "Given encoding list is not suitable"
+msgstr "指定されたエンコーディングリストが適切ではありません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_NO_PROPER_ENCODING
+#: ../src/fsexam-error.c:47
+msgid "Is not regular file"
+msgstr "通常ファイルではありません"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_NOT_REG_FILE
+#: ../src/fsexam-error.c:48
+msgid "Symlink target don't exist"
+msgstr "シンボリックリンクターゲットが存在しません"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_SYMLINK_TARGET_NOEXIST
+#: ../src/fsexam-error.c:49
+msgid "Can't convert given file"
+msgstr "指定されたファイルを変換できません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_CONVERT
+#: ../src/fsexam-error.c:50
+msgid "Can't read file"
+msgstr "ファイルを読み取れません"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_READ
+#: ../src/fsexam-error.c:51
+msgid "No proper permission"
+msgstr "適切なアクセス権がありません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_NO_RIGHTS
+#. ERR_CANNOT_RM_SYMLINK
+#: ../src/fsexam-error.c:53
+msgid "Can't relink symbolic link which will break symbolic link"
+msgstr ""
+"シンボリックリンクは再リンクできません。再リンクすると、シンボリックリンクが"
+"壊れます"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_LOST_SYMLINK_FILE
+#: ../src/fsexam-error.c:55
+msgid "Have deleted symbolic link file, but can't recreate it"
+msgstr ""
+"シンボリックリンクファイルを削除しましたが、再び作成することができません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:56
+msgid "Dryrun file format is invalid"
+msgstr "ドライランファイル形式が無効です"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_DRYRUN_FILE_INVALID
+#: ../src/fsexam-error.c:57
+msgid "Can't get current directory"
+msgstr "現在のディレクトリを取得できません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_GET_CWD
+#: ../src/fsexam-error.c:58
+msgid "Can't change directory"
+msgstr "ディレクトリを変更できません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:62
+msgid "No history information for current file"
+msgstr "現在のファイルの履歴情報はありません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_HIST_NO_ITEM
+#: ../src/fsexam-error.c:63
+msgid "No given files or all files are UTF-8 already"
+msgstr ""
+"指定されたファイルは存在しないか、またはすべてのファイルがすでに UTF-8 です"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_TREE_IS_EMPTY
+#. ERR_NAME_EXIST
+#: ../src/fsexam-error.c:65
+msgid "Same name file exists, will append 'utf-8' as suffix"
+msgstr ""
+"同じ名前のファイルが存在するため、サフィックスとして 'utf-8' が追加されます"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:66
+msgid "Skip hidden file"
+msgstr "非表示のファイルをスキップする"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_IGNORE_HIDDEN_FILE
+#: ../src/fsexam-error.c:67
+msgid "Skip non-local file"
+msgstr "ローカルではないファイルをスキップする"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_IGNORE_REMOTE_FILE
+#: ../src/fsexam-error.c:68 ../src/fsexam-ui.c:2691
+msgid "Empty file"
+msgstr "空のファイル"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_EMPTY_FILE
+#: ../src/fsexam-error.c:69
+msgid "No parameters"
+msgstr "パラメータなし"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_NO_PARAMS
+#: ../src/fsexam-error.c:70
+msgid "Error occurred during filtering"
+msgstr "フィルタリング中にエラーが発生しました"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_FILTER
+#: ../src/fsexam-error.c:71
+msgid "Don't support this kind of file type"
+msgstr "この種類のファイルタイプはサポートしていません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_FILE_TYPE_NOT_SUPPORT
+#: ../src/fsexam-error.c:72
+msgid "Buffer overflow"
+msgstr "バッファーオーバーフロー"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_BUFFER_OVERFLOW
+#: ../src/fsexam-error.c:73
+msgid "Canceled the conversion"
+msgstr "変換をキャンセルしました"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-error.c:77
+msgid "Can't write dryrun result file"
+msgstr "ドライラン結果ファイルに書き込めません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_WRITE_DRYRUN
+#: ../src/fsexam-error.c:78
+msgid "Can't open dryrun result file"
+msgstr "ドライラン結果ファイルを開けません"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_OPEN_DYRRUN
+#: ../src/fsexam-error.c:79
+msgid "Can't convert filename to URI"
+msgstr "ファイル名を URI に変換できません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#. ERR_CANNOT_CONVERT_TO_URI
+#. MISC
+#. unknow error
+#: ../src/fsexam-error.c:82 ../src/fsexam-log.c:124
+msgid "Unknown error occurred"
+msgstr "不明なエラーが発生しました"
+
+#: ../src/fsexam-error.c:98
+#, c-format
+msgid "ERROR ==> %s:%d (%s): %s\n"
+msgstr ""
+
+#: ../src/fsexam-error.c:103
+#, c-format
+msgid "ERROR ==> %s:%d %s\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-helper.c:334 ../src/fsexam-helper.c:345
+#, c-format
+msgid "Encoding '%s' is not supported\n"
+msgstr "エンコーディング '%s' はサポートされていません\n"
+
+#: ../src/fsexam-plaintext.c:98
+msgid "The system has no UTF-8 locale\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-preference-dialog.c:368
+msgid "Do you want to save this encoding list permanently?"
+msgstr "このエンコーディングリストを永久保存しますか?"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-preference-dialog.c:520 ../src/fsexam-ui.c:1340
+#, c-format
+msgid "There was an error when displaying help: %s"
+msgstr "ヘルプの表示中にエラーが発生しました: %s"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-setting.c:94 ../src/fsexam-ui.c:1974
+#, c-format
+msgid "Rough summary: %d given, %d total, %d ignore, %d fail, %d succeed\n"
+msgstr "簡単な概要: 指定 %d、合計 %d、無視 %d、失敗 %d、成功 %d\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1068
+msgid ""
+"Can not run tar command due to lack of iso8859-1 locale, please see fsexam"
+"(1) man page for more info."
+msgstr ""
+"iso8859-1 ロケールがないため tar コマンドを実行できません。詳細については、"
+"fsexam(1) のマニュアルページを参照してください。"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1412 ../src/fsexam-specialfile.c:1588
+msgid "Don't support this file type"
+msgstr "このファイルタイプはサポートしていません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-specialfile.c:1678
+msgid ""
+"The archive file is empty or has absolute path, so can not convert files in "
+"this archive file"
+msgstr ""
+"このアーカイブファイルは空か、絶対パスが設定されているため、このアーカイブ"
+"ファイル内のファイルは変換できません"
+
+# SUN REVIEWED
+#: ../src/fsexam-ui.c:777 ../src/fsexam-ui.c:1006
+msgid "No read permission"
+msgstr "読み取り権がありません"
+
+# SUN REVIEWED
+#: ../src/fsexam-ui.c:785
+msgid "No folder specified"
+msgstr "フォルダを指定していません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:825
+msgid "File does not exist or no access permission."
+msgstr "ファイルが存在しないか、アクセスが許可されていません。"
+
+#: ../src/fsexam-ui.c:831
+msgid "File type is not supported."
+msgstr ""
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1009
+msgid "Empty folder"
+msgstr "空のフォルダ"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1088 ../src/fsexam-ui.c:1626
+msgid "Symlink target doesn't exist"
+msgstr "シンボリックリンクターゲットが存在しません"
+
+#: ../src/fsexam-ui.c:1089 ../src/fsexam-ui.c:1627
+msgid "doesn't exist"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1190
+msgid "The selected file is not empty, do you want to override it?"
+msgstr "選択されたファイルは空ではありません。上書きしますか?"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1191
+msgid ""
+"The selected file is not UTF-8 encoded, we strongly suggest you to use UTF-8 "
+"filename.\n"
+"\n"
+" Do you want to convert it to UTF8?"
+msgstr ""
+"選択されたファイルは UTF-8 でエンコードされていません。UTF-8 のファイル名を使"
+"用することを強くお勧めします。\n"
+"\n"
+"このファイルを UTF-8 に変換しますか?"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:1192
+#, c-format
+msgid ""
+"Can't convert %s to UTF8: %s.\n"
+"\n"
+"Please Note that there may exist partial conversion.\n"
+" So please Refresh you directory and select file again."
+msgstr ""
+"%s を UTF8 に変換できません: %s。\n"
+"\n"
+"部分的に変換が実行されている場合があります。\n"
+"そのため、現在のディレクトリを更新してファイルを再度選択してください。"
+
+# SUN REVIEWED
+#: ../src/fsexam-ui.c:1316
+msgid "Folder Selection"
+msgstr "フォルダの選択"
+
+# SUN REVIEWED
+#: ../src/fsexam-ui.c:1375
+msgid ""
+"fsexam is to help migrate file name and file content from legacy encoding to "
+"UTF8"
+msgstr ""
+"fsexam は、ファイル名とファイルの内容を従来のエンコードから UTF8 に移行するの"
+"に役立ちます。"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2057
+#, c-format
+msgid "The file \"%s\" is missing."
+msgstr "ファイル \"%s\" が見つかりません。"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2577
+msgid "No selection"
+msgstr "選択なし"
+
+# SUN REVIEWED
+#: ../src/fsexam-ui.c:2586
+msgid "Cannot preview multiple selections"
+msgstr "複数の選択項目をプレビューすることはできません"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2597
+msgid "Cannot preview contents of folder"
+msgstr "フォルダの内容をプレビューできません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2680
+msgid "Can't access"
+msgstr "アクセスできません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam-ui.c:2686
+msgid "Not regular file"
+msgstr "通常ファイルではありません"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#: ../src/fsexam-ui.c:2696
+msgid "Not plain text"
+msgstr "プレーンテキストではありません"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:155 ../src/fsexam.c:212
+msgid "Another fsexam is running, will quit soon\n"
+msgstr "別の fsexam が実行中のため、すぐに終了します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:325
+#, c-format
+msgid "Run 'fsexam --help' for usage information.\n"
+msgstr "使用法については、'fsexam --help' を実行してください。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:331
+#, c-format
+msgid ""
+"Warning: The given history length is too short, will reset to default value %"
+"d\n"
+msgstr ""
+"警告: 指定された履歴の長さは短すぎるため、デフォルト値 %d にリセットされま"
+"す\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:373
+#, c-format
+msgid "Please enter the file name:\n"
+msgstr "ファイル名を入力してください:\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:431
+msgid "Error: No given encoding and disabled auto detection.\n"
+msgstr ""
+"エラー: エンコーディングが指定されていないため、自動検出は無効になりまし"
+"た。\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:441
+#, c-format
+msgid "Can't open dryrun file %s\n"
+msgstr "ドライランファイル %s を開けません\n"
+
+#: ../src/fsexam.c:539
+msgid "The configuration directory is NULL\n"
+msgstr ""
+
+#: ../src/fsexam.c:546
+#, c-format
+msgid "Can't create configuration directory %s for fsexam\n"
+msgstr ""
+
+#: ../src/fsexam.c:557
+#, c-format
+msgid "file %s exist and is not one directory, please rename it.\n"
+msgstr ""
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:675
+#, c-format
+msgid "Usage:\n"
+msgstr "使用法:\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:676
+#, c-format
+msgid "    fsexam [OPTION] ... [file]\n"
+msgstr "    fsexam [オプション] ...[ファイル]\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:678
+#, c-format
+msgid ""
+"\n"
+"Supported options:\n"
+msgstr ""
+"\n"
+"サポートされているオプション:\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:680
+#, c-format
+msgid "    -a, --auto-detect      Enable encoding auto detection\n"
+msgstr "    -a, --auto-detect      エンコーディングの自動検出を有効にします\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:682
+#, c-format
+msgid "    -d dry-run-result      Specify the dryrun result file\n"
+msgstr "    -d dry-run-result      ドライラン結果ファイルを指定します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:683
+#, c-format
+msgid "    -E module-name         Enable special file handling\n"
+msgstr "    -E module-name         特殊なファイルの処理を有効にします\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:684
+#, c-format
+msgid "    -e encoding-list       Specify additional encoding list\n"
+msgstr "    -e encoding-list       追加のエンコーディングリストを指定します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:685
+#, c-format
+msgid "    -F, --force-convert    Forceful conversion mode\n"
+msgstr "    -F, --force-convert    強制変換モード\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:686
+#, c-format
+msgid "    -f 'expression'        Specify file filter criteria\n"
+msgstr "    -f 'expression'        ファイルのフィルタ条件を指定します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:687
+#, c-format
+msgid "    -H, --hidden           Turn on hidden file handling\n"
+msgstr "    -H, --hidden           非表示のファイルの処理をオンにします\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:688
+#, c-format
+msgid "    -b, --auto-conversion  Interactive mode\n"
+msgstr "    -b, --auto-conversion  対話モード\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:689
+#, c-format
+msgid "    -l, list-encoding      List all supported encoding\n"
+msgstr ""
+"    -l, list-encoding      サポートされているすべてのエンコーディングを一覧表"
+"示します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:690
+#, c-format
+msgid "    -k, --no-check-symlink-content\n"
+msgstr "    -k, --no-check-symlink-content\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:691
+#, c-format
+msgid ""
+"                           Don't check the consistency between\n"
+"                           symbolic link and its target name\n"
+msgstr ""
+"                           シンボリックリンクとそのターゲット名\n"
+"                           の整合性をチェックしません\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:693
+#, c-format
+msgid "    -L logfile             Specify log file\n"
+msgstr "    -L logfile             ログファイルを指定します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:695
+#, c-format
+msgid "    -n, --dry-run          Dryrun mode\n"
+msgstr "    -n, --dry-run          ドライランモード\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:696
+#, c-format
+msgid "    -P, --append-encoding-list\n"
+msgstr "    -P, --append-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:697
+#, c-format
+msgid ""
+"                           Append encoding list specified by\n"
+"                           '-e' to predefined encoding list\n"
+msgstr ""
+"                           '-e' で指定されたエンコーディングリストを、\n"
+"                           定義済みのエンコーディングリストに追加します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:699
+#, c-format
+msgid "    -p, --prepend-encoding-list\n"
+msgstr "    -p, --prepend-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:700
+#, c-format
+msgid ""
+"                           Prepend encoding list specified by\n"
+"                           '-e' to predefined encoding list\n"
+msgstr ""
+"                           '-e' で指定されたエンコーディングリストを、\n"
+"                           定義済みのエンコーディングリストの先頭に追加しま"
+"す\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:702
+#, c-format
+msgid "    -R, --recursive        Recursive mode\n"
+msgstr "    -R, --recursive        再帰モード\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:703
+#, c-format
+msgid "    -r, --remote           Turn on nfs files handling\n"
+msgstr "    -r, --remote           nfs ファイルの処理をオンにします\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:704
+#, c-format
+msgid "    -S, --save-encoding-list\n"
+msgstr "    -S, --save-encoding-list\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:705
+#, c-format
+msgid ""
+"                           Save encoding list specified by\n"
+"                           '-e' permanently\n"
+msgstr ""
+"                           '-e' で指定されたエンコーディング\n"
+"                           リストを永久保存します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:707
+#, c-format
+msgid ""
+"    -s, --restore          Restore the original name or\n"
+"                           content for given files\n"
+msgstr ""
+"    -s, --restore          指定されたファイルの元の名前\n"
+"                           または内容を復元します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:709
+#, c-format
+msgid ""
+"    -t, --conv-content     Convert file content rather than\n"
+"                           file name\n"
+msgstr ""
+"    -t, --conv-content     ファイルの名前ではなくファイルの\n"
+"                           内容を変換します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:711
+#, c-format
+msgid "    -w, --follow           Follow symbolic link\n"
+msgstr "    -w, --follow           シンボリックリンクに従います\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:712
+#, c-format
+msgid "    -V, --version          Print the version information\n"
+msgstr "    -V, --version          バージョン情報を表示します\n"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../src/fsexam.c:713
+#, c-format
+msgid "    -?, --help             Print this usage information for fsexam\n"
+msgstr ""
+"    -?, --help             fsexam の使用法に関するこの情報を表示します\n"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:1
+msgid "Encoding auto detection"
+msgstr "エンコーディングの自動検出"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:3
+msgid "Hidden file handling"
+msgstr "非表示のファイルの処理"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:4
+msgid "Hist length"
+msgstr "履歴の長さ"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:5
+msgid "Keep symbolic link and its reference consistent"
+msgstr "シンボリックリンクとその参照の整合性を維持する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:6
+msgid "Log file name"
+msgstr "ログファイル名"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:7
+msgid "NFS file handling"
+msgstr "NFS ファイルの処理"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:8
+msgid "Special file type module"
+msgstr "特殊なファイルタイプのモジュール"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.schemas.in.h:9
+msgid "Write log or not"
+msgstr "ログを書き込むかどうか"
+
+#: ../data/fsexam.schemas.in.h:10
+msgid "[ISO8859-1]"
+msgstr "[EUC-JP,SJIS,ISO-2022-JP]"
+
+# SUN REVIEWED
+#: ../data/fsexam.schemas.in.h:11
+msgid "automatic mode"
+msgstr "自動モード"
+
+# SUN REVIEWED
+#: ../data/fsexam.schemas.in.h:12
+msgid "encoding list"
+msgstr "エンコードリスト"
+
+# SUN REVIEWED
+#: ../data/fsexam.schemas.in.h:13
+msgid "recursive mode"
+msgstr "再帰モード"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#: ../data/fsexam.desktop.in.h:2
+msgid "Help migrate from legacy encoding to Unicode(UTF8)"
+msgstr "従来のエンコーディングから Unicode (UTF8) への移行を支援する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "*"
+#~ msgstr "*"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Display the dryrun result pane"
+#~ msgstr "ドライラン結果区画を表示する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Display the report pane"
+#~ msgstr "レポート区画を表示する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Display the search result window"
+#~ msgstr "検索結果ウィンドウを表示する"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Preview plain text file content"
+#~ msgstr "プレーンテキストファイルの内容をプレビューする"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Select A File"
+#~ msgstr "ファイルの選択"
+
+# COMMUNITY UNTRANS
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "[Content] %s - >%s"
+#~ msgstr "[内容] %s - >%s"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Display help content"
+#~ msgstr "ヘルプの目次の表示"
+
+# COMMUNITY MESSAGE
+# COMMUNITY FUZZY
+# SUN CHANGED MESSAGE
+# SUN TECH REVIEWED
+# SUN LING REVIEWED
+#~ msgid "Preference setting"
+#~ msgstr "設定"
+
+#~ msgid "File has been emptied, can not be restored!"
+#~ msgstr "ファイルが空になりました。元に戻せません。"
+
+# SUN REVIEWED
+#~ msgid "Folder already exists"
+#~ msgstr "そのフォルダはすでに存在します"
+
+# SUN REVIEWED
+#~ msgid "delete Carriage Return"
+#~ msgstr "復帰改行を削除します"
+
+# SUN REVIEWED
+#~ msgid "delete Carriage Return only"
+#~ msgstr "復帰改行のみを削除します"
+
+# SUN REVIEWED
+#~ msgid "add Carriage Return"
+#~ msgstr "復帰改行を追加します"
+
+# SUN REVIEWED
+#~ msgid "add Carriage Return only"
+#~ msgstr "復帰改行のみを追加します"
+
+# SUN REVIEWED
+#~ msgid "Folder doesn't exist yet"
+#~ msgstr "そのフォルダはまだ存在していません"
+
+# SUN REVIEWED
+#~ msgid "File content - convert from %s and delete Carriage Return"
+#~ msgstr "ファイルの内容 - %s から変換して復帰改行を削除します"
+
+# SUN REVIEWED
+#~ msgid "File content - delete Carriage Return only"
+#~ msgstr "ファイルの内容 - 復帰改行のみを削除します"
+
+# SUN REVIEWED
+#~ msgid "Restore %s and add Carriage Return"
+#~ msgstr "%s を復元して復帰改行を追加します"
+
+# SUN REVIEWED
+#~ msgid "Restore by adding Carriage Return"
+#~ msgstr "復帰改行の追加によって復元します"
+
+# SUN REVIEWED
+#~ msgid "Restore UTF8"
+#~ msgstr "UTF8 を復元します"
+
+# SUN REVIEWED
+#~ msgid "Restore UTF8 and delete Carriage Return"
+#~ msgstr "UTF8 を復元して復帰改行を削除します"
+
+# SUN REVIEWED
+#~ msgid "Restore by deleting Carriage Return"
+#~ msgstr "復帰改行の削除によって復元します"
+
+# SUN REVIEWED
+#~ msgid "_Open..."
+#~ msgstr "開く(_O)..."
+
+# SUN REVIEWED
+#~ msgid "_Restore Original File"
+#~ msgstr "元のファイルに戻す(_R)"
+
+# SUN REVIEWED
+#~ msgid "_Convert Content"
+#~ msgstr "内容の変換(_C)"
+
+# SUN REVIEWED
+#~ msgid "_About"
+#~ msgstr "情報(_A)"
+
+# SUN REVIEWED
+#~ msgid "Sub-folder:"
+#~ msgstr "サブフォルダ:"
+
+# SUN REVIEWED
+#~ msgid "User intervention:"
+#~ msgstr "ユーザー介入:"
+
+# SUN REVIEWED
+#~ msgid "Restore %s encoding and add carriage return"
+#~ msgstr "%s エンコーディングを復元して復帰改行を追加します"
+
+# SUN REVIEWED
+#~ msgid "Restore by adding carriage return"
+#~ msgstr "復帰改行の追加によって復元します"
+
+# SUN REVIEWED
+#~ msgid "Restore UTF8 encoding"
+#~ msgstr "UTF8 エンコーディングを復元します"
+
+# SUN REVIEWED
+#~ msgid "Restore UTF8 encoding and delete carriage return"
+#~ msgstr "UTF8 エンコーディングを復元して復帰改行を削除します"
+
+# SUN REVIEWED
+#~ msgid "Restore by deleting carriage return"
+#~ msgstr "復帰改行の削除によって復元します"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File System Examiner name conversion"
+#~ msgstr "ファイルシステム検査器の名前変換"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content with carriage return remove"
+#~ msgstr "復帰改行付きのファイル内容を削除します"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content just carriage return remove"
+#~ msgstr "復帰改行のみのファイル内容を削除します"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "_Preferences"
+#~ msgstr "設定(_P)"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "Encode list:"
+#~ msgstr "エンコードリスト:"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File System Examiner content conversion"
+#~ msgstr "ファイルシステム検査器の内容変換"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - convert from %s"
+#~ msgstr "ファイルの内容 - %s から変換します"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - convert from %s and delete carriage return"
+#~ msgstr "ファイルの内容 - %s から変換して復帰改行を削除します"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "File content - delete carriage return only"
+#~ msgstr "ファイルの内容 - 復帰改行のみを削除します"
+
+# SUN LING UNREVIEWED
+# SUN TECH UNREVIEWED
+#~ msgid "%s doesn't exist yet"
+#~ msgstr "%s がまだ存在しません"
+
+# SUN REVIEWED
+#~ msgid "No permission to rename"
+#~ msgstr "名前を変更するための権限がありません"
+
+# SUN REVIEWED
+#~ msgid "Conversion failure"
+#~ msgstr "変換に失敗しました"
+
+# SUN REVIEWED
+#~ msgid "UTF8 already"
+#~ msgstr "すでに UTF8 です"
+
+# SUN REVIEWED
+#~ msgid "No directory specified"
+#~ msgstr "ディレクトリを指定していません"
+
+# SUN REVIEWED
+#~ msgid "Directory Selection"
+#~ msgstr "ディレクトリの選択"
+
+# SUN REVIEWED
+#~ msgid "fsexam"
+#~ msgstr "fsexam"
+
+# SUN REVIEWED
+#~ msgid "Report Pane"
+#~ msgstr "報告区画"
+
+# SUN REVIEWED
+#~ msgid "Welcome"
+#~ msgstr "ようこそ"
+
+# SUN REVIEWED
+#~ msgid "File Hierarchy"
+#~ msgstr "ファイル階層"
+
+# SUN REVIEWED
+#~ msgid "Recursive Mode"
+#~ msgstr "再帰モード"
+
+# SUN REVIEWED
+#~ msgid "Automatic Conversion"
+#~ msgstr "自動変換"
+
+# SUN REVIEWED
+#~ msgid ""
+#~ "A list of suffix. Any file whose suffix belongs to the list are assumed "
+#~ "by fsexam as plain text file."
+#~ msgstr ""
+#~ "拡張子のリスト。このリストに拡張子が登録されているファイルを、fsexam はプ"
+#~ "レーンテキストファイルであると想定します。"
+
+# SUN REVIEWED
+#~ msgid ""
+#~ "Only applicable for file name conversion! It's recursive mode, by "
+#~ "enabling it, fsexam will convert the name of file and subdirectory to "
+#~ "UTF8 recursively."
+#~ msgstr ""
+#~ "ファイル名の変換だけに適用されます。再帰モードが有効である場合、fsexam は"
+#~ "ファイルとサブディレクトリの名前を再帰的に UTF8 に変換します。"
+
+# SUN REVIEWED
+#~ msgid ""
+#~ "Only applicable for file name conversion. It's automatic mode, by "
+#~ "enabling it, fsexam will automatically convert with the best conversion "
+#~ "result without user interference. Otherwise, a dialog will display with "
+#~ "several conversion candidates and user needs to decide which conversion "
+#~ "is the best one."
+#~ msgstr ""
+#~ "ファイル名の変換だけに適用されます。自動モードが有効である場合、fsexam が"
+#~ "最良の変換を自動的に行うため、ユーザーは何もしなくてもかまいません。自動"
+#~ "モードが有効でない場合、fsexam は変換の候補をダイアログに表示します。この"
+#~ "場合、ユーザーが最良の変換を選択する必要があります。"
+
+# SUN REVIEWED
+#~ msgid ""
+#~ "The list of legacy encoding name available for the specific language. "
+#~ "Note that the order within the list is significant. fsexam treats as the "
+#~ "best one the first one from which conversion can be made successfully."
+#~ msgstr ""
+#~ "特定の言語で利用できる従来のエンコード名のリスト。リスト内における順序は重"
+#~ "要です。ファイル名を変換するとき、fsexam はリストの一番上にあるエンコード"
+#~ "が最良であると想定します。"
+
+# SUN REVIEWED
+#~ msgid "suffix list"
+#~ msgstr "拡張子リスト"
+
+# SUN REVIEWED
+#~ msgid "Directory already exists"
+#~ msgstr "そのディレクトリはすでに存在します"
+
+# SUN REVIEWED
+#~ msgid "File already exists"
+#~ msgstr "そのファイルはすでに存在します"
+
+# SUN REVIEWED
+#~ msgid "Null directory"
+#~ msgstr "空のディレクトリ"
+
+# SUN REVIEWED
+#~ msgid "Apply by name"
+#~ msgstr "名前で適用"
+
+# SUN REVIEWED
+#~ msgid "Apply by content"
+#~ msgstr "内容で適用"
+
+# SUN REVIEWED
+#~ msgid "Peek content"
+#~ msgstr "内容を表示"
+
+# SUN REVIEWED
+#~ msgid "Error loading icon %s\n"
+#~ msgstr "アイコン %s のロード中にエラーが発生しました\n"
+
+# SUN REVIEWED
+#~ msgid "popen error, please try again!"
+#~ msgstr "popen エラーが発生しました。もう一度やり直してください"
+
+# SUN REVIEWED
+#~ msgid "Not one plain text"
+#~ msgstr "プレーンテキストではありません"
+
+# SUN REVIEWED
+#~ msgid "File content candidate window"
+#~ msgstr "ファイルの内容候補ウィンドウ"
+
+# SUN REVIEWED
+#~ msgid "Byte sequence not recognized yet"
+#~ msgstr "バイトシーケンスがまだ認識されていません"
+
+# SUN REVIEWED
+#~ msgid "File content - open failure"
+#~ msgstr "ファイルの内容 - 開くのに失敗しました"
+
+# SUN REVIEWED
+#~ msgid "File content - write error"
+#~ msgstr "ファイルの内容 - 書き込みに失敗しました"
+
+# SUN REVIEWED
+#~ msgid "File content - successful conversion"
+#~ msgstr "ファイルの内容 - 変換に成功しました"
+
+# SUN REVIEWED
+#~ msgid "File content - UTF8 alreay"
+#~ msgstr "ファイルの内容 - すでに UTF8 です"
+
+# SUN REVIEWED
+#~ msgid "Directory node"
+#~ msgstr "ディレクトリノード"
+
+# SUN REVIEWED
+#~ msgid "File content - successful undo"
+#~ msgstr "ファイルの内容 - 元に戻すのに成功しました"

@@ -1,0 +1,530 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://basil.ireland.sun.com:8080/docbook/docbookx.dtd" [
+  <!ENTITY author1 "Sun">
+  <!ENTITY author2 "Java Desktop System Documentation Team">
+  <!ENTITY publisher "Sun Microsystems, Inc.">
+  <!ENTITY appversion "0.8.0">
+  <!ENTITY manrevision "2.0">
+  <!ENTITY date "August 2007">
+  <!ENTITY app "<application>File Encoding Examiner</application>">
+  <!ENTITY appname "File Encoding Examiner">
+]>
+<!--
+CDDL HEADER START
+
+The contents of this file are subject to the terms of the
+Common Development and Distribution License (the "License").
+You may not use this file except in compliance with the License.
+
+You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+or http://www.opensolaris.org/os/licensing.
+See the License for the specific language governing permissions
+and limitations under the License.
+
+When distributing Covered Code, include this CDDL HEADER in each
+file and include the License file at src/OPENSOLARIS.LICENSE.
+If applicable, add the following below this CDDL HEADER, with the
+fields enclosed by brackets "[]" replaced with your own identifying
+information: Portions Copyright [yyyy] [name of copyright owner]
+
+CDDL HEADER END
+
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+-->
+
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo> 
+	 <title>&appname;</title>
+	 <subtitle>&appname; Desktop Application Manual V&manrevision;</subtitle>
+	 <copyright> 
+		<year>2007</year>
+		<holder>&publisher;</holder> </copyright>
+
+	 <publisher> 
+		<publishername>&publisher;</publishername>
+	 </publisher>
+	 &legal; 
+	 <authorgroup> 
+		<author> 
+		  <firstname>&author1;</firstname>
+		  <surname>&author2;</surname> 
+		  <affiliation> 
+			 <orgname>&publisher;</orgname>
+		  </affiliation>
+		</author>
+
+<!-- This is appropriate place for other contributors: translators,
+      maintainers,  etc. Commented out by default.
+       <othercredit role="translator">
+        <firstname>Latin</firstname>
+        <surname>Translator 1</surname>
+        <affiliation>
+          <orgname>Latin Translation Team</orgname>
+          <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+
+	 </authorgroup>
+
+
+
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+	 <revhistory>
+<!-- Remember to remove the &manrevision; entity from the revision entries other
+   than the current revision. -->
+   		<revision> 
+		  <revnumber>&appname; Desktop Application Manual V&manrevision;</revnumber>
+		  <date>&date;</date> 
+		  <revdescription> 
+			 <para role="author">&author1; &author2;</para>
+			 <para role="publisher">&publisher;</para>
+		  </revdescription>
+		</revision>
+	 </revhistory>
+	 <releaseinfo> This manual describes version &appversion; of &appname;.
+		</releaseinfo>
+	 <legalnotice> 
+		<title>Feedback</title>
+		<para>
+                  To send feedback, follow the directions in the <ulink url="ghelp:gnome-feedback" type="help">Feedback Page</ulink>.
+                </para>
+<!-- Translators may also add here feedback address for translations -->
+	 </legalnotice>
+  </articleinfo>
+  <indexterm><primary>fsexam command</primary></indexterm>
+  <indexterm><primary>&appname; desktop application</primary></indexterm>
+  
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="fsexam-intro"> 
+    <title>Introduction</title>
+       <para>
+         &app; enables you to convert the name of a file, or the contents of a plain-text file, from a legacy character encoding to UTF-8 encoding. 
+       </para>
+       <para>
+         When converting file name, &app; processes regular file, folder file and symbolic link. When converting file content, it handles regular plain text file only. &app; support special file type also, curently &app; only support .tar, .tar.gz, .tar.bz2, .zip and .tar.Z compress or archive format.
+	    </para>
+        <para>
+         &app; will ignore most of non-plain text file such as binary file, office document and image file. It might produce unexpected result if convert these type of files forcibly. Internally &app; uses file(1) utility to determine whether one file is plain text file or not.
+        </para>
+
+       <note>
+        <para>
+         The default internal character encoding in the Sun Java Desktop System is UTF-8 encoding, and the default locale is the UTF-8 locale. If not converted, files with legacy character encoding are displayed as meaningless text. For more information about UTF-8, please visit http://www.unicode.org.
+	    </para>
+       </note>
+  </sect1>
+
+<!-- ============= Getting Started =========================== -->
+  <sect1 id="fsexam-getting-started"> 
+	 <title>Getting Started</title>
+
+<!-- ============= To Start fsexam ============================ -->
+	 <sect2 id="fsexam-to-start"> 
+		<title>To Start &appname;</title>
+                <para>You can start &app; in the following ways:</para>
+                <variablelist>
+                <varlistentry>
+                <term>Menu</term>
+                <listitem>
+                <para>Click <guibutton>Launch</guibutton>, then choose <menuchoice><guimenu>Applications</guimenu><guisubmenu>Utilities</guisubmenu><guimenuitem>File Encoding Examiner</guimenuitem></menuchoice>. </para>
+                </listitem>
+                </varlistentry>
+                <varlistentry>
+                <term>Command line</term>
+                <listitem>
+                <para>Execute the following command: <userinput>fsexam</userinput></para>
+                </listitem>
+                </varlistentry>
+                </variablelist>
+	</sect2>
+
+        <sect2 id="fsexam-when-you-start">
+
+                <title>When You Start &appname;</title>
+                <para>When you start &app;, the following window is displayed:</para>
+
+                <figure id="fsexam-window">
+                  <title>&appname; Window</title>
+                  <screenshot>
+                         <mediaobject>
+                                <imageobject>
+                                  <imagedata fileref="figures/fsexam.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject> <phrase>Shows fsexam main window.</phrase>
+                                </textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+                <para>The &app; window contains the following elements: </para>
+                <variablelist>
+                  <varlistentry> <term>Menubar</term>
+                         <listitem>
+                                <para>The menus on the menubar contain all of the commands that you need to work with files in &app;.</para>
+                         </listitem>
+                  </varlistentry>
+
+                  <varlistentry> <term>Toolbar</term>
+                         <listitem>
+                                <para>The toolbar buttons on the toolbar contain commands that you frequently use to work with files in &app;.</para>
+                         </listitem>
+                  </varlistentry>
+
+                  <varlistentry> <term>File tree</term>
+                         <listitem>
+                                <para> The files tree display the contents of the current directory. </para>
+                         </listitem>
+                  </varlistentry>
+                  
+                  <varlistentry> <term>Report area</term>
+                         <listitem>
+                                <para> The report area displays the conversion result or dry run result. </para>
+                         </listitem>
+                  </varlistentry>
+
+                  <varlistentry> <term>Statusbar</term>
+                         <listitem>
+                                <para>The statusbar displays information about current &app; activity. </para>
+                         </listitem>
+                  </varlistentry>
+                </variablelist>
+                <para>When you right-click in the &app; window, the application displays a popup menu. The popup menu contains the most common commands. </para>
+
+      <para>
+      This manual documents functionality from the menubar.
+      </para>
+         </sect2>
+  </sect1>
+
+<!-- ================ Usage ================================ -->
+  <sect1 id="fsexam-usage"> 
+	 <title>Usage</title>
+
+<!-- ============= To Open a File ======================== -->
+	 <sect2 id="fsexam-select"> 
+		<title>To Select a File or Directory</title>
+		<para>
+			Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Open...</guimenuitem></menuchoice>, then select the file or directory whose character encoding you want to change.
+		 </para>
+		<para>
+			If you select a directory, all of the files and subdirectories in that directory are displayed in the file tree.
+		</para>
+	 </sect2>
+
+<!-- ============= To Search for Files ======================== -->
+	 <sect2 id="fsexam-search"> 
+		<title>To Search Files</title>
+		<para>
+			Choose <menuchoice><guimenu>File</guimenu><guimenuitem>Search for files...</guimenuitem></menuchoice>, then input the search criterias to search according to them. To stop searching, choose <menuchoice><guimenu>File</guimenu><guimenuitem>Stop Searching</guimenuitem></menuchoice>.
+		</para>
+        <para>
+            Internally &app; use find(1) utility to search files.
+        </para>
+	 </sect2>
+
+<!-- ============= To Convert ================================ -->
+	 <sect2 id="fsexam-convert"> 
+		<title>To Convert the Name or Content of Files</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Select the file or directory as described in <xref linkend="fsexam-select"/>, or search files as described in <xref linkend="fsexam-search"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Convert</guimenuitem></menuchoice>.
+                    </para>
+                    <para>If the current conversion mode is name conversion, the <guilabel>&appname; name conversion</guilabel> dialog is displayed. If the current conversion mode is content conversion mode, the <guilabel>&appname; content conversion</guilabel> dialog is displayed. For information on how to display or hide the <guilabel>File Encoding Examiner name conversion</guilabel> or <guilabel>File Encoding Examiner content conversion</guilabel> dialog, see <xref linkend="fsexam-prefs"/>. 
+                    </para>
+                    <para>The <guilabel>&appname; name conversion</guilabel> dialog or <guilabel>&appname; content conversion</guilabel> dialog displays a list of character encodings that &app; can use to convert the file name or content. 
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Select an encoding, then click <guibutton>OK</guibutton>. 
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			After &app; finish conversion, the report pane displays conversion information or any other error information, the statusbar displays display one summary report.
+		</para>
+        <note>
+            Please make sure the files' name are UTF-8 already before converting file content. If not, use name conversion mode to convert file name first.
+        </note>
+	 </sect2>
+
+<!-- ============== To Forcibly Convert ====================== -->
+	 <sect2 id="fsexam-forcibly-convert"> 
+		<title>To Forcibly Convert</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Select the file or directory as described in <xref linkend="fsexam-select"/>, or search files as described in <xref linkend="fsexam-search"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Forcibly Convert</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			&app; convert selected files without detecting whether the file is UTF-8 already or not.
+		</para>
+	 </sect2>
+
+<!-- ============== To Dry run====================== -->
+	 <sect2 id="fsexam-dry-run"> 
+		<title>To Dry Run</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Select the file or directory as described in <xref linkend="fsexam-select"/>, or search files as described in <xref linkend="fsexam-search"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Dry Run</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			&app; dry run convert selected files and don't modify any file name or content on the disk. The dry run result displays in <guilabel>Dryrun Result</guilabel> tab. Later you can perform scenario based conversion based on the dry run result. For more information about scenario based conversion, refer to <xref linend="fsexam-scenario-convert"/>.
+		</para>
+	 </sect2>
+
+<!-- ============== To Scenario Conversion====================== -->
+	 <sect2 id="fsexam-scenario-convert"> 
+		<title>To Scenario Based Conversion</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Perform dry run conversion as described in <xref linkend="fsexam-dry-run"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Scenario</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+		    Scenario based conversion use the first candidate in dry run result to convert file. If the first candidate is not what you want, you can delete the it and make the right candidate appear firstly. The dry run result is format sensitive, for more information about dry run format, please refer fsexam(4) man page.	
+		</para>
+	 </sect2>
+
+
+<!-- ============== To Undo a Conversion  ====================== -->
+	 <sect2 id="fsexam-undo-conversion"> 
+		<title>To Undo the Last Action</title>
+		<para>
+			Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem></menuchoice>.
+		</para>
+	 </sect2>
+
+
+<!-- ============== To Restore the Original File  ====================== -->
+	 <sect2 id="fsexam-restore-file"> 
+		<title>To Restore the Original File name or content</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>
+                        Select the file or directory as described in <xref linkend="fsexam-select"/>, or search files as described in <xref linkend="fsexam-search"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                        Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Restore</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			&app; restores the original file name in name conversion mode and restores file content in content conversion mode.
+		</para>
+        <note>
+        <para>
+            If you convert file content first, then convert file name, you may can't restore file content before you restore file name, as the name of file is changed.
+        </para>
+        </note>
+	 </sect2>
+
+<!-- ============== To Clear Search Results ====================== -->
+	 <sect2 id="fsexam-clear-search-result"> 
+		<title>To Clear Search Result</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                 <listitem>
+                    <para>
+                        Choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Clear Search Result</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                </orderedlist>
+    </sect2>
+
+<!-- ============== To Change Conversion Mode ====================== -->
+	 <sect2 id="fsexam-mode"> 
+		<title>To Change Conversion Mode</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                 <listitem>
+                    <para>
+                        To change the current conversion mode to name conversion, choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Name Conversion Mode</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                        To change the current conversion mode to content conversion, choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Content Conversion Mode</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+
+                </orderedlist>
+    </sect2>
+
+
+<!-- ============= To Display Report Pane =================== -->
+	 <sect2 id="fsexam-report-pane"> 
+		<title>To Display the Report Pane</title>
+                    <para>Choose <menuchoice><guimenu>View</guimenu><guimenuitem>Report Pane</guimenuitem></menuchoice>.
+                    </para>
+		<para>
+			The report pane displays the directory name, and a list of converted files with corresponding conversion information.
+		</para>
+     </sect2>
+
+<!-- ============= To Display Dry Run Result =================== -->
+	 <sect2 id="fsexam-dryrun-result"> 
+		<title>To Display the Dry Run Result</title>
+        <para>Choose <menuchoice><guimenu>View</guimenu><guimenuitem>Dry Run Result Pane</guimenuitem></menuchoice>.
+        </para>
+     </sect2>
+
+<!-- ============= To Display Search Result =================== -->
+	 <sect2 id="fsexam-search-result"> 
+		<title>To Display the Search Result</title>
+        <para>Choose <menuchoice><guimenu>View</guimenu><guimenuitem>Search Result</guimenuitem></menuchoice>.
+        </para>
+     </sect2>
+    
+<!-- ============= To Peek content  ================================ -->
+	 <sect2 id="fsexam-preview-contents"> 
+		<title>To Preview the Contents of a File</title>
+		<para>Perform the following steps:</para>
+                <orderedlist>
+                  <listitem>
+                    <para>Select one single file, as described in <xref linkend="fsexam-select"/>.
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>Choose <menuchoice><guimenu>View</guimenu><guimenuitem>Preview Content</guimenuitem></menuchoice>.
+                    </para>
+                  </listitem>
+                </orderedlist>
+		<para>
+			If &app; successfully previews the file contents, a popup window displays the first part of the file. Click on the popup window to close the window.
+		</para>
+		<para>
+			If the preview fails, the statusbar displays an error message.
+		</para>
+	 </sect2>
+
+  </sect1>
+
+
+<!-- ============= Preferences ============================= -->
+  <sect1 id="fsexam-prefs"> 
+	<title>Preferences</title>
+                
+	<para>To configure &app;, choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>. The following <guilabel>&appname; Preferences</guilabel> dialog is displayed.
+	</para>
+                <figure id="fsexam--pref-dialog">
+                  <title>&appname; Preferences Dialog</title>
+                  <screenshot>
+                         <mediaobject>
+                                <imageobject>
+                                  <imagedata fileref="figures/fsexam-pref.png" format="PNG"/>
+                                         </imageobject>
+                                <textobject> <phrase>Shows fsexam preference dialog.</phrase>
+                                </textobject>
+                        </mediaobject>
+                  </screenshot>
+                </figure>
+
+        <para>The &app; preference dialog contains the following elements: </para>
+
+        <variablelist>
+          <varlistentry> 
+            <term><guilabel>Conversion Setting</guilabel> </term>
+            <listitem>
+                  <para>
+                        <guilabel>Auto Detection</guilabel>: Select this option to enable encoding automatic detection. &app; appends automatic detected encoding into the encoding list. Its priority is lower than the encodings in encoding list.
+                  </para>
+                  <note><para>Sometime &app; may produce wrong encoding, please use it with caution when the <guilabel>Auto Conversion</guilabel> is checked also.</para></note>
+            </listitem>
+            
+            <listitem>
+                  <para>
+                        <guilabel>Auto Conversion</guilabel>: Select this option to specify that &app; uses the first suitable legacy character encoding in the <guilabel>Encoding list</guilabel> to convert the name or content of files and subdirectories to UTF-8 encoding. If you do not select this option, &app; displays the <guilabel>File System Examiner name conversion</guilabel> dialog or <guilabel>&appname; content conversion</guilabel> dialog, as described in <xref linkend="fsexam-convert"/>.
+                  </para>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>Recursive Mode</guilabel>: Select this option to convert the name or content of all files and subdirectories in the selected directory. </para>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>Handle Hidden Files</guilabel>: Select this option to handle hidden files.</para>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>Handle Remote Files</guilabel>: Select this option to handle non-local files, such as NFS files.</para>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>Follow Symbolic link</guilabel>: Select this option to follow symbolic link. If the target of symbolic link is directory and <guilabel>Recursive Mode</guilabel> is selected, files and subdirectories under this directory will be converted also.</para>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>Don't Check Symlink Content</guilabel>: By default, &app; re-create symbolic link after the target file name of the symbolic link is converted. Use this option if you know there is no symbolic link in the files which you want to convert.</para>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>Special File Handling</guilabel>: Select this option to enable special file type support. Currently &app; support compress or archive file only. </para>
+            </listitem>
+            
+            <listitem>
+                  <para><guilabel>Archive or Compress files</guilabel>: Select this option to files in the archive or compress file. Currently &app; support .tar, .tar.gz, .tar.bz2, .tar.Z and .zip file.</para>
+                  <note>As shown in the NOTES section of the tar(1) man page, if an archive is created that contains files whose names were created by processes running in multiple or different locales, a locale that uses a full 8-bit coding space, i.e., 0x0 to 0xff, such as en_US.ISO8859-1 should be used both to create the archive and to extract files from the archive. Due to that, when you specify COMPRESS module with -E option, fsexam(1) tries to use en_US.ISO8859-1, fr_FR.ISO8859-1, de_DE.ISO8859-1, es_ES.ISO8859-1,it_IT.ISO8859-1, or sv_SE.ISO8859-1 locales. If there is no such locale in the current system, use of this option is ignored and a warning message is issued.</note>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>Use Log File</guilabel>: Select this option to specify &app; to write log information to specified log file. By default, &app; don't use log file, as it will display these information in Report Pane. Refer to <xref linkend="fsexam-report-pane"/> to display the report pane.</para>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>Log File Name</guilabel>: Specify the name of log file.</para>
+            </listitem>
+
+            <listitem>
+                  <para><guilabel>History Length</guilabel>: Specify the length of history file. The minimal length is 30.</para>
+                  <note><para>Batch convert multiple files count as one in the history file.</para></note>
+            </listitem>
+          </varlistentry> 
+
+          <varlistentry> 
+            <term><guilabel>Encoding list</guilabel> </term>
+            <listitem>
+                  <para>Displays a list of legacy character encodings available for the current language. When installing &appname;, one predefined encoding list for each language which contains the most popular encodings used for this language will be installed also. </para>
+                  
+                  <para>Click <guibutton>Up</guibutton> to move an encoding up the list. Click <guibutton>Down</guibutton> to move an encoding down the list. Click <guibutton>Delete</guibutton> to delete an encoding from the list. Click <guibutton>Add</guibutton> to add encoding into the list. Click <guibutton>Save</guibutton> to save the current encoding list permanently. By default the changes in encoding list influence the current session only. &app; will restore to the last state after rerun it.</para>
+            </listitem>
+          </varlistentry> 
+        </variablelist>
+  </sect1>
+</article>

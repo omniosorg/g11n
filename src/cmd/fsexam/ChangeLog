@@ -1,0 +1,683 @@
+2007-07-13 Yandong Yao <yandong.yao@sun.com>
+
+	Fix bug: when the initial log file is NULL, can not set new log file
+
+2006-07-21 Yandong Yao <yandong.yao@sun.com>
+
+	Change License to CDDL
+
+2005-03-14  Federic Zhang <federic.zhang@sun.com>
+
+	Add GPL information in source files and header files
+
+2005-01-28  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-history.c: (serialize_history_item),
+	(deserialize_history_data):
+	Use "ESC" (i.e., \27) as the separator instead of "\t".
+
+2004-11-04  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-content.c: (is_plain_text_by_locale),
+	(encoding_to_locale), (fsexam_content_check_filetype),
+	(fsexam_content_check_plain_text): refine the judgement of plain text file.
+
+2004-11-01  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-history.c: (serialize_history_item): Only persist history items of convert action,
+	  not reverse action.
+
+	* src/fsexam-content.c: (fsexam_content_get_selection): Deal with null selection for preview
+
+2004-10-25  Yong Sun <Yong.Sun@Sun.COM>
+
+	* data/fsexam.desktop.in: The desktop.in file should only mark the
+	translatable messages.
+
+2004-09-21  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-preference.c: (create_encodings_treeview): Do not show a
+	  empty header in encoding list (gtk_tree_view).
+
+2004-09-13  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-history.c: re-implement history functions. Save history
+	  items as plain text file.
+
+2004-09-09  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-content.c: (fsexam_content_check_filetype), (fsexam_content_check_plain_text):
+	Add guess list, and loop this list, to find out whether it's a text file. We have to set 
+	LC_CTYPE for non_UTF-8 chinese locales, so that we could expect file utility could return 
+	correct result.
+
+2004-09-06  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-history.c: (fsexam_history_update), (fsexam_history_close):
+	If there is not new history items added, do not invoke the fwrite,
+	which in Solaris will duplicate all previous contents.
+
+	* src/fsexam-ui.c: (fsexam_about): Add Yong to the author list.
+
+2004-09-06  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-content.c: (fsexam_content_check_plain_text): chop '\n' from the status message
+	* src/fsexam-content.c: (fsexam_content_undo): check whether the file is mepty
+
+2004-09-03  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-dnd.c: (drag_data_received_callback): update status bar
+	after dnd operation.
+
+2004-09-03  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam.c: (main): Load ${HOME}/Documents if launch from Launch->Applications->Utility,
+	otherwise, load current directory if launch it on terminal.
+
+2004-08-31  Yong Sun <Yong.Sun@Sun.COM>
+
+	* src/fsexam-content.c: set LC_MESSAGES=c when we use file utility to
+	get file type.
+	
+2004-08-27  Federic Zhang <federic.zhang@sun.com>
+
+	Got final version of file from Gnome Documentation team.
+	* help/C/fsexam-C.omf, fsexam.xml:
+	* help/zh_CN/fsexam-zh_CN.omf, fsexam.xml:
+
+2004-08-27  Federic Zhang <federic.zhang@sun.com>
+
+	Follow the UI spec, put fsexam to Launch->Application->Utility
+	* data/fsexam.desktop.in:
+
+2004-08-24  Federic Zhang <federic.zhang@sun.com>
+
+	Package for build 17. Fix bug 5089799 for Solaris.
+	* src/fsexam-content.c: (fsexam_content_check_filetype): Convert the output of 'file'
+	into UTF8 and check whether the output contains the localized 'text'.
+	* src/fsexam-ui.c: (fsexam_treeitem_create): Fix one qsort problem.
+
+2004-08-23  Federic Zhang <federic.zhang@sun.com>
+
+	Candiate for build 17.  multiple selection conversion is supported now
+	and use better format to display conversion information in report pane
+	and write Undo/Reverse message into the report pane too.
+	* src/encoding.c: (init_encode): Fix bug 5089798 by checking the return value
+	of g_iconv_open.
+	* src/fsexam-content.c: (fsexam_content_check_filetype),
+	(fsexam_content_convert_file),
+	(fsexam_content_convert_single_selection),
+	(fsexam_content_convert), (fsexam_content_undo),
+	(fsexam_content_get_selection), (fsexam_content_peek): Compare localized 'text'
+	as the output of 'file' utility is localized in Solaris. Support multiple selection
+	for content conversion. Write more detailed message on statusbar.
+	* src/fsexam-content.h:
+	* src/fsexam-conversion.c: (fsexam_convert_with_candidates),
+	(write_to_buffer_in_report_pane), (write_to_report_pane),
+	(fsexam_filename_convert_file),
+	(fsexam_filename_convert_single_selection),
+	(fsexam_filename_convert), (fsexam_do_reverse),
+	(fsexam_reverse_single_selection), (fsexam_reverse), (fsexam_undo):
+	Initialize 'indexg' when press the 'Close' button.
+	Support multiple selection for filename conversion and use better format to 
+	display conversion information in report pane.	
+	* src/fsexam-history.c: correct the MATCH_CONVTYPE macro
+	* src/fsexam-ui.c: (fsexam_construct_ui): enable multiple selection
+
+2004-08-23  Yong Sun <Yong.Sun@Sun.COM>
+
+	* fsexam.sol.spec: Add .desktop and omf files to pkgbuild
+
+2004-08-23  Yong Sun <Yong.Sun@Sun.COM>
+
+	* configure.in: Hardcoded locale dir to %{prefix}/share/locale
+	* fsexam.sol.spec: Add mo files for pkgbuild
+
+2004-08-17  Yong Sun <yong.sun@sun.com>
+
+	Fix the online help launch problem
+	* fsexam.spec: add scrollkeep-update to register the omf file
+	* help/C/fsexam-C.omf: have unique seriesid and correct the url info
+	* help/zh_CN/Makefile.am:
+	* help/zh_CN/Makefile.in:
+	* help/zh_CN/fsexam-zh_CN.omf: have unique seriesid and correct the url info
+	* help/zh_CN/fsexam.xml: correct the lang attribute
+	* src/fsexam-preference.c: (show_help): specify the fsexam-prefs location
+	* src/fsexam-ui.c: (show_help): specify the fsexam-intro location
+	* src/fsexam.c: (main): Correct the GNOME_PARAM_APP_DATADIR value
+
+2004-08-11  Federic Zhang <federic.zhang@sun.com>
+
+	* Dump to 0.3
+
+	Drag the "Documents" and "Trash" icon on desktop is supported and UI polish
+	* help/C/fsexam.xml: Modified according to the last change with UI polish
+	* help/zh_CN/fsexam.xml:
+	* src/fsexam-content.c: (fsexam_content_get_selection): UI polish
+	* src/fsexam-dnd.c: (drag_data_received_callback):
+	* src/fsexam-preference.c: (create_pref_dialog): UI polish
+	* src/fsexam-ui.c: (fsexam_construct_menu): UI polish
+
+2004-08-10  Federic Zhang <federic.zhang@sun.com>
+
+	UI polish and simplify the fsexam_content_undo API
+	* src/fsexam-content.c: (include_windows_carriage_return),
+	(fsexam_content_convert_file), (fsexam_content_undo):
+	* src/fsexam-content.h:  Write more descriptive message to statusbar
+	for ConvContent, ConvContentWithCRLF, ConvContentCRLFOnly.
+	Simplify the fsexam_content_undo API.
+	* src/fsexam-conversion.c: (write_to_buffer_in_report_pane),
+	(write_to_report_pane), (fsexam_do_reverse), (fsexam_reverse),
+	(fsexam_undo): Write the correct history item within fsexam_reverse.
+
+2004-08-09  Federic Zhang <federic.zhang@sun.com>
+
+	Implement Undo to act as 'Cancel the last action that user makes".
+	Define new member, 'serial', in history item to implement group Undo.
+	New conversion type, ConvContentWithCRLF, ConvContentCRLFOnly,
+		ConvContentWithCRLFReverse, ConvContentCRLFOnlyReverse
+	    to do automatic conversion from '\r\n' to '\n'.
+	* src/encode.h:
+	* src/encoding.c: (decode_analyzer):
+	* src/fsexam-content.c: (exclude_windows_carriage_return),
+	(include_windows_carriage_return), (fsexam_content_convert_file),
+	(fsexam_content_undo):
+	* src/fsexam-content.h:
+	* src/fsexam-conversion.c: (fsexam_undo_insert),
+	(fsexam_undo_remove), (fsexam_undo_removeall),
+	(write_to_buffer_in_report_pane), (write_to_report_pane),
+	(fsexam_filename_convert_file), (fsexam_filename_convert_dir),
+	(fsexam_do_reverse), (fsexam_reverse), (get_relative_name),
+	(fsexam_undo):
+	* src/fsexam-conversion.h:
+	* src/fsexam-history.c: (fsexam_history_locate_with_serial),
+	(fsexam_history_get_serial), (fsexam_history_put),
+	(fsexam_history_get_reverse),
+	(fsexam_history_get_reverse_by_value2),
+	(fsexam_history_get_reverse_by_value),
+	(fsexam_history_get_reverse_after), (fsexam_history_undo),
+	(fsexam_history_close):
+	* src/fsexam-history.h:
+	* src/fsexam-ui.c: (get_file_pixbuf), (fsexam_chooser_dir),
+	(fsexam_construct_menu):
+	* src/fsexam.h:
+
+2004-08-09  Federic Zhang <federic.zhang@sun.com>
+
+        * src/fsexam-dnd.c: (drag_data_received_callback):
+        fsexam will crash when drag "This Computer" or "Documents" on desktop to desktop,
+        fix it by checking whether the local_path is NULL or not
+
+2004-08-04  Federic Zhang <federic.zhang@sun.com>
+
+	UI polish on the preference dialog
+	* src/fsexam-preference.c: (set_button_sensitive),
+	(create_encodings_treeview), (fsexam_pref_set), (show_help),
+	(create_pref_dialog): Fix 5071819 by packing the Help button into dialog->action_area
+	* src/fsexam-ui.c: (set_item_collation):
+
+2004-08-03  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-ui.c: (key_press_event), (tree_popup_handler),
+	(fsexam_construct_ui): Double click the left button or press Space will
+	invoke fsexam_filename_convert.	
+
+2004-08-02  Federic Zhang <federic.zhang@sun.com>
+
+	Add themed mimetype icons for each file and folder and
+	port to gtk-2.4 file selector.
+	* src/fsexam-ui.c: (get_file_pixbuf), (fsexam_treeitem_create),
+	(treemodel_create_with_treeitem), (fsexam_treeview_expand),
+	(fsexam_treemodel_create_with_treeitem), (fsexam_chooser_dir),
+	(fsexam_construct_ui): New get_file_pixbuf to get icon for each file
+	and folder.
+	* src/fsexam.c: (main): Initialize the pixbuf_hash table.
+	* src/fsexam.h: new pixbuf_hash variable and ICON_COLUMN.
+
+2004-07-30  Federic Zhang <federic.zhang@sun.com>
+
+	Enable the drag-n-drop from nautilus to fsexam
+	* configure.in: Add the dependency on eel-2.0
+	* src/fsexam-ui.c: (fsexam_treeview_set_title),
+	(fsexam_treeview_construct), (fsexam_treeview_reconstruct),
+	(fsexam_construct_ui): Set mainwin as potential drop destination
+	* src/fsexam.h: export fsexam_construct_ui
+	* src/fsexam-dnd.h, fsexam-dnd.c: Define drag_data_received_callback
+
+2004-07-23  Federic Zhang <federic.zhang@sun.com>
+
+	Cinnabar for Solaris Beta build 15
+	* fsexam.sol.spec: Remove fsexam.desktop in order not to let fsexam 
+	  exists on Application --> Accessories menu.
+
+2004-07-20  Federic Zhang <federic.zhang@sun.com>
+
+	UI Polish to try to conform to HIG.
+	Rewrite the fsexam_construct_menu to make its struct flexible and fix those
+	mnomenic and accelerator problems on MENUBAR
+	* src/fsexam-conversion.c: (is_dummy_iter):
+	* src/fsexam-ui.c: (fsexam_treeview_set_title),
+	(fsexam_chooser_dir), (append_menuitem), (append_stock_menuitem),
+	(append_check_menuitem), (set_menuitem_text),
+	(fsexam_construct_menu), (fsexam_construct_ui):
+
+2004-07-15  Federic Zhang <federic.zhang@sun.com>
+
+	Use variable argument list in iterate_encode_with_func to make it more powerful
+	* src/encode.h: variable argument list for iterate_encode_with_func
+	* src/encoding.c: (get_encode_elements),
+	(iterate_encode_with_func), (translate_encode_index): Change
+	translate_encode_index to become one func example for iterate_encode_with_func
+	and break within iterate_encode_with_func once the specified func retruns FALSE
+	* src/fsexam-content.c: (fsexam_content_construct_ui):
+	* src/fsexam-conversion.c: (fsexam_convert_construct_ui),
+	(fsexam_convert_with_candidates), (write_to_buffer_in_report_pane),
+	(write_to_report_pane): New write_to_buffer_in_report_pane which has six
+	arguments
+
+2004-07-14  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-ui.c: (set_item_collation), (fsexam_treeitem_create):
+	Don't display hidden files and fix the wrong collation problem with
+	set_item_collation
+
+2004-07-13  Federic Zhang <federic.zhang@sun.com>
+
+	Package build 14 - Simplify source by introducing iterate_encode_with_func ()
+	* src/encode.h: New APIs get_encode_elements and iterate_encode_with_func
+	* src/encoding.c: (get_encode_elements),
+	(iterate_encode_with_func): Add iterate_encode_with_func
+	* src/fsexam-content.c: (fsexam_content_construct_ui),
+	(fsexam_content_show_candidates): Make call to fsexam_content_construct_ui via
+	iterate_encode_with_func to construct user interface
+	* src/fsexam-conversion.c: (fsexam_convert_candidate_set),
+	(fsexam_convert_construct_ui), (fsexam_convert_with_candidates): Mall call to
+	fsexam_convert_construct_ui via iterate_encode_with_func to construct user 
+	interface and fix wrong index problem in write_to_report_pane
+
+2004-07-12  Federic Zhang <federic.zhang@sun.com>
+
+	Candidate Package build 14
+	* src/encode.h: export translate_encode_index and get_first_encode_index
+	* src/encoding.c: (decode_analyzer), (translate_encode_index): Translate the index
+	of current conversion selection into the index in encode list. Return FAIL if conversion
+	fails. When automatic mode is set, use get_first_encode_index to get first encoding
+	whose score is HIGH othewise the first encoding whose score is LOW if no HIGH score exists
+	* src/fsexam-content.c: (fsexam_content_show_candidates),
+	(fsexam_content_convert_file): Fix wrong index problem with translate_encode_index,
+	don't try to convert if the file content is legacy encoding already during undo
+	* src/fsexam-conversion.c: (fsexam_convert_with_candidates),
+	(fsexam_filename_convert_file): Fix wrong index problem with translate_encode_index
+	call get_first_encode_index to get best encoding index when automatic mode is set
+	* data/fsexam.desktop.in, fsexam.schemas.in: Add ISO8859-1 into encode list for european
+	language
+	* po/de.po, es.po, fr.po, it.po, ja.po, ko.po, pt_BR.po, sv.po, zh_HK.po, zh_TW.po:
+	 Sync with G11N workspace
+
+
+2004-07-09  Federic Zhang <federic.zhang@sun.com>
+
+	* configure.in: Add 'de, es, fr, it, ko, pt_BR, sv, zh_TW and zh_HK'
+	  into ALL_LINGUAS.
+	* data/fsexam.schemas.in: Replace ro with pt_BR
+	* po/de.po, es.po, fr.po, it.po, ja.po, ko.po, pt_BR.po, sv.po, zh_HK.po, zh_TW.po:
+	  Add with sample po file
+
+2004-07-09  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-content.c: (exclude_windows_carriage_return),
+	(fsexam_content_convert_file), (fsexam_content_get_sample),
+	(fsexam_content_peek): Add exclude_windows_carriage_return
+	to replace the occurrence of \r\n with \n.
+
+2004-07-08  Federic Zhang <federic.zhang@sun.com>
+
+	* data/fsexam.schemas.in: Correct the encode list for european language according
+	to http://www.cs.tut.fi/~jkorpela/8859.html.
+
+2004-07-08  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-content.c: (fsexam_content_show_candidates),
+	(fsexam_content_peek):Kill warning
+	* src/fsexam-conversion.c: (fsexam_filename_rename),
+	(fsexam_filename_convert_file), (is_dummy_iter),
+	(fsexam_filename_convert_dir), (fsexam_filename_convert),
+	(get_iter): Add is_dummy_iter to check whether it is null directory and
+	write error msg into statusbar if duplicate filename and dirname happens
+	* src/fsexam-history.c: (fsexam_history_update): Kill warning
+	* src/fsexam-ui.c: (fsexam_treeview_set_title): Kill warning
+
+2004-07-07  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-content.c: (fsexam_content_show_candidates),
+	(fsexam_content_convert_file): set the label with bold markup, fix the wrong 
+	GtkAttachOption for vertical resizing and set default window size.
+	* src/fsexam-ui.c: (fsexam_treeview_expand): Don't delete the dummy iter if it is
+	null directory and disable row expand.
+
+2004-06-29  Federic Zhang <federic.zhang@sun.com>
+
+	Package build 13 - UI and OLH freeze for Cinnabar beta
+	* po/fsexam.pot, zh_CN.po: UI freeze
+	* data/fsexam.schemas.in: Added the encoding list for de, es, fr, it, ro, sv and kr
+	* help/C/fsexam.xml: OLH freeze
+	* help/zh_CN/fsexam.xml: 
+
+2004-06-28  Gavin Tu <gavin.tu@sun.com>
+        * help/C/fsexam.xml: complete OLH excepte section 4.3 "Encoding List"
+
+2004-06-28  Federic Zhang <federic.zhang@sun.com>
+
+	The candidate for build 13 package: Launch peek window from menu item
+	and use one ugly hack to close the window and add candidate window to
+	list file content conversion.
+	* data/fsexam.schemas.in: Added ISO-2002-JP for ja_JP
+	* src/fsexam-content.c: (widget_destroy), (encode_button_press),
+	(fsexam_content_show_candidates), (fsexam_content_convert_file),
+	(fsexam_content_undo), (peekwin_destroy), (fsexam_content_peek):
+	Use one ugly hack to close the preview window and add candidate window
+	to display all file content conversion.
+	* src/fsexam-conversion.c: (write_to_report_pane),
+	(fsexam_filename_convert_file): Fixed write_to_report_pane 
+	* src/fsexam-ui.c: (fsexam_construct_menu): Added 'Peek content' menu item.
+
+2004-06-25  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-history.c: (fsexam_history_open),
+	(fsexam_history_update): fix the wrongly used magic number, Add 
+	fsexam_history_update to update history file at regular intervals
+	* src/fsexam-history.h: Add the fsexam_history_update ()
+	* src/fsexam-ui.c: (button_release_event): Fix the event problem
+	by return either TRUE or FALSE
+	* src/fsexam.c: (main): Set the timeout to call fsexam_history_update
+	at one minute interval.
+
+2004-06-24  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-content.c: (fsexam_content_check_plain_text),
+	(fsexam_content_undo), (create_content_pixmap),
+	(set_window_background), (peek_window_realize),
+	(update_peek_window), (make_peek_window), (get_upper_left_xy),
+	(place_peek_window), (fsexam_content_get_sample),
+	(fsexam_content_peek): Support the peek functionality
+	* src/fsexam-content.h: Added fsexam_content_peek ()
+	* src/fsexam-ui.c: (button_release_event), (tree_popup_handler),
+	(fsexam_construct_ui):
+	* src/fsexam.h: new global variable 'peekwin' for peek window
+
+2004-06-24  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-conversion.c: (fsexam_reverse): when do reverse, if fail to get one
+	  history item with fsexam_history_get_reverse_by_value, exit it immediately
+
+2004-06-24  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-content.c: (fsexam_content_convert): Check whether view->rootdir isn't
+	  set yet to avoid error.
+	* src/fsexam-conversion.c: (fsexam_filename_convert),
+	(fsexam_reverse), (fsexam_undo): Check whether view->rootdir isn't set yet to avoid
+	  crash.
+
+2004-06-24  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-content.c: (fsexam_content_check_filetype),
+	(fsexam_content_check_plain_text), (fsexam_content_convert_file),
+	(fsexam_content_get_selection), (fsexam_content_convert),
+	(fsexam_content_undo): Bugfix and display the filetype information
+	 into status bar if it isn't plain text file.
+	* src/fsexam-conversion.c: (write_to_report_pane),
+	(fsexam_validate_with_newline), (fsexam_filename_convert_file),
+	(fsexam_do_reverse), (fsexam_reverse): Redefine 'reverse': when do 
+	 reverse, fsexam will try to convert both file name and file 
+	 content into native encoding at once. Update the write_to_report_pane
+	 to write file content converion information into report pane.
+	* src/fsexam-conversion.h: Export fsexam_validate_with_newline ()
+	  and write_to_report_pane for file content conversion
+	* src/fsexam-history.c: (fsexam_history_get_reverse_by_value2):
+	  Added to get one history item with the same conversion type
+	* src/fsexam-history.h:
+	* src/fsexam-ui.c:
+	* src/fsexam.h: new global variable 'lineoffset' for report pane
+
+2004-06-17  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-ui.c: (fsexam_treeitem_create), (show_help),
+	(fsexam_about), (fsexam_construct_menu), (load_icon),
+	(fsexam_construct_ui): load_icon is to set the icon for fsexam and
+	set view->rootdir to NULL if the specified dir doesn't exist
+	* src/fsexam.h: Added "icon"
+
+2004-06-16  Federic Zhang <federic.zhang@sun.com>
+
+	file content conversion support
+	* data/fsexam.schemas.in:
+	* src/Makefile.am:
+	* src/Makefile.in:
+	* src/encode.h:
+	* src/encoding.c: (init_encode), (destroy_encode),
+	(decode_analyzer), (cleanup_encode):
+	* src/fsexam-conversion.c: (fsexam_convert_with_candidates),
+	(write_to_report_pane), (fsexam_filename_convert_file),
+	(fsexam_reverse), (fsexam_undo):
+	* src/fsexam-conversion.h:
+	* src/fsexam-history.c: (fsexam_history_put),
+	(fsexam_history_get_reverse),
+	(fsexam_history_get_reverse_by_value), (fsexam_history_undo),
+	(fsexam_history_open):
+	* src/fsexam-history.h:
+	* src/fsexam-preference.c: (create_fsexam_pref):
+	* src/fsexam-preference.h:
+	* src/fsexam-ui.c: (fsexam_construct_menu):
+	* src/fsexam.c:
+	* src/fsexam-content.h, fsexam-content.c: added
+
+2004-06-16  Federic Zhang <federic.zhang@sun.com>
+
+	* Added the 'fsexam_0_1' branch. From now on, the version number will
+	  be 0.2 by adding the functionality of content conversion.
+
+2004-06-15  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-ui.c: (fsexam_treeview_set_title),
+	(fsexam_treeitem_create), (fsexam_treeview_reconstruct),
+	(fsexam_construct_ui): added fsexam_treeview_set_title to indicate the current root
+	directory
+
+2004-06-15  Federic Zhang <federic.zhang@sun.com>
+
+	* fsexam.spec, fsexam.spec.in: For Cinnabar build 12
+
+2004-06-14  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam.c: (main): fixed the wrong usage of gnome_program_init ()
+
+2004-06-11  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-conversion.c: (fsexam_filename_undo): Check whether rootdir is set or not
+	  to fix the undo crash.
+
+2004-06-08  Gavin Tu <gavin.tu@sun.com>
+	*  src/fsexam-ui.c: remove menu item "saveAs"	
+
+2004-06-01  Gavin Tu <gavin.tu@sun.com>
+
+	* todo:add two tasks
+
+2004-05-31  Federic Zhang <federic.zhang@sun.com>
+
+	* data/fsexam.desktop.in: Corrected the name description for build 11
+	* fsexam.spec, fsexam.spec.in: updated for build 11
+	* Makefile.in, src/Makefile.in: Recreated as corresponding Makefile.am
+	  has been modified
+	* help/Makefile.in, help/zh_CN/Makefile.in, help/C/Makefile.in: Added
+
+2004-05-31  Gavin Tu <gavin.tu@sun.com>
+	* fsexam.sol.spec:  For Cinnabar build 11, add l10en menu, context-sensitive menu, help, reverse
+
+2004-05-28  Gavin Tu <gavin.tu@sun.com>
+ 	* fsexam.sol.spec: replace autoconf with autogen.sh
+
+2004-05-27  Federic Zhang <federic.zhang@sun.com>
+
+	* src/fsexam-conversion.c: Rework on fsexam_filename_reverse ()
+	* src/fsexam-history.c: replace fsexam_history_item_reverse and fsexam_history_get_by_fullpath
+	  with fsexam_history_get_reverse and fsexam_history_get_reverse_by_value.
+	* src/fsexam-history.h:
+
+2004-05-27  Gavin Tu <gavin.tu@sun.com>
+	
+	* po/zh_CN.po: change translation for "Recursive Mode"
+
+2004-05-27  Gavin Tu <gavin.tu@sun.com>
+	
+	* src/fsexam-ui.c: add menu item of "Revert"
+	* src/fsexam-convertion.h: 
+        * src/fsexam-convertion.c:add fsexam_filename_reverse()
+        * src/fsexam-history.c: add fsexam_history_item_reverse(), fsexam_history_get_by_fullpath
+ 
+2004-05-26  Gavin Tu <gavin.tu@sun.com>
+	
+	* src/fsexam-ui.c: add context-sensitive menu for treeview
+
+2004-05-26  Gavin Tu <gavin.tu@sun.com>
+	
+	* configure.in: add three output files, including help/Makefile help/C/Makefile help/zh_CN/Makefile
+	* Makefile.am:add dirctory "help"
+	* src/fsexam-ui.c: (show_help), (fsexam_construct_menu):
+	* help/: add help files for zh_CN and C locales
+
+2004-05-25  Gavin Tu <gavin.tu@sun.com>
+
+	* autogen.sh: add this file to execute automake,autoconf
+	* src/Makefile.am: pre-define CPPFLAG, for GNOME_PROGRAM_STANDARD_PROPERTIES
+	* src/fsexam-preference.c: (show_help): 
+	* src/fsexam.c: (main): GNOME_PROGRAM_STANDARD_PROPERTIES
+
+2004-05-25  Gavin Tu <gavin.tu@sun.com>
+
+	* src/fsexam-ui.c: allocate memory for name dynamically, so can deal with very long full dirctory path. 
+
+
+2004-05-25  Gavin Tu <gavin.tu@sun.com>
+
+	* src/fsexam-ui.c: add menu item "Save as", add two menu item separator, add some comments 
+
+2004-05-21 Gavin Tu <gavin.tu@sun.com>
+	* src/fsexam-ui.c:gtk_item_factory_create_items() is deprecated, so create menu with fsexam_construct_menu()
+			  menu can be l10ned.
+ 	* po/zh_CN.po: add some menu items, such as "File", "Action", "View", "Help" etc
+
+
+2004-05-20  Federic Zhang <federic.zhang@sun.com>
+
+	* autom4te.cache/output.0: Removed
+	* autom4te.cache/requests: Removed
+	* autom4te.cache/traces.0: Removed
+	* autom4te.cache: Removed
+
+2004-05-20  Federic Zhang <federic.zhang@sun.com>
+
+	* config.h: Removed
+	* config.log: Removed
+	* config.status: Removed
+	* configure: Removed
+	* fsexam.spec: Updated to use autoconf
+	* fsexam.spec.in: Updated to use autoconf
+	* libtool: Removed
+
+2004-05-20  Federic Zhang <federic.zhang@sun.com>
+
+	* autom4te.cache/output.0:
+	* autom4te.cache/requests:
+	* autom4te.cache/traces.0:
+	* config.log:
+	* config.status:
+	* configure:
+	* libtool:
+	* todo:
+
+2004-05-20  Federic Zhang  <fzhang@prc.sun.com>
+
+        * Have all global variables into FSEXAM_view
+	* src/fsexam-conversion.c: (fsexam_convert_with_candidates),
+	(write_to_report_pane), (fsexam_filename_convert_file),
+	(fsexam_filename_convert_dir), (fsexam_filename_convert),
+	(fsexam_filename_undo):
+	* src/fsexam-preference.c: (create_encodings_treeview),
+	(create_pref_dialog):
+	* src/fsexam-ui.c: (fsexam_treeitem_create),
+	(fsexam_treeview_expand), (fsexam_treeview_construct),
+	(fsexam_statusbar_update), (fsexam_treeview_reconstruct),
+	(show_report_window), (fsexam_construct_ui):
+	* src/fsexam.c: (main):
+	* src/fsexam.h:
+	* todo:
+
+2004-05-17  Federic Zhang  <fzhang@prc.sun.com>
+
+	* The third package for cinnabar build 10
+	* po/POTFILES.in, POTFILES, zh_CN.po: updated with intltool-update --pot
+	* src/fsexam-ui.c: upated to fix one segment error by copying a statically
+	  allocated buffer into heap
+
+2004-05-13  Federic Zhang  <fzhang@prc.sun.com>
+
+	* candidate for build 10
+	* Makefile, src/Makefile: deleted
+	* pixmaps/Makefile.am, Makefile.in, fsexam-icon.png: added
+	* data/Makefile.am, Makefile.in, fsexam.desktop.in: added the menu
+	  entry under 'launch' menu.
+	* data/fsexam.fsexam.in: moved from src to separate data from source
+	* configure, configure.in, Makefile.in, Makefile.am, src/Makefile.in,
+	  Makefile.am: updated with automake and separate data from source
+	* fsexam.spec, fsexam.spec.in: updated to include fsexam.desktop and
+	  fsexam-icon.png
+	* src/fsexam-ui.c: added the 'About' window
+	
+2004-05-10  Federic Zhang  <fzhang@prc.sun.com>
+
+	* More stable version as it has been enhanced in following five aspects:
+		 new Status bar
+		 recursive mode enabled
+		 new treeview load on demand
+		 report pane beautified
+		 comments
+	* src/fsexam.h, fsexam-conversion.h: added status bar and new COLUMN type - LOADED_COLUMN
+	  and export fsexam_filename_get_path ()
+	* src/fsexam-ui.c fsexam-conversion.c: Added new 'loaded' field to mark if one directory 
+	  is loaded or not, Replace the old stupid way with 'load on demand', Added status bar to 
+	  display useful information, Enable recursive mode and Enhance write_to_report_pane ()
+	  with bold font and color tag and Fix the undo bug by modifying get_iter ()
+
+2004-04-29  Federic Zhang  <fzhang@prc.sun.com>
+
+	* src/fsexam-preference.c, fsexam-preference.h: added code to handle help window
+	  and sync with encoding change with fsexam_pref_encoding_sync ()
+	* src/fsexam.c: make a call to fsexam_pref_free () when exit
+	* src/encoding.c, encode.h, fsexam-preference.c: use destroy_encode () to free
+	   and the parameter of init_encode () is singly-linked list instead
+
+2004-04-29  Federic Zhang  <fzhang@prc.sun.com>
+
+	* the second pacakge for Cinnabar build09
+	* src/fsexam-ui.c, encoding.c, fsexam-conversion.c: updated to check permission
+	  issue when rename and use <Ctrl>+Z as keystroke combination for Undo instead
+
+2004-04-27  Federic Zhang  <fzhang@prc.sun.com>
+
+	* src/fsexam-history.c, fsexam-history.h: added to define the general APIs
+	  to access the existing conversion information
+	* src/fsexam-ui.c: updated to free the TreeItem * struct if the current
+	  directory is changed
+	* src/Makefile.in, Makefile.am, fsexam.c, fsexam-conversion.c fsexam-preference.c,
+	  fsexam.h, fsexam-conversion.h:
+	  updated accordingly
+
+2004-04-20  Federic Zhang  <fzhang@prc.sun.com>
+
+	* rewrite the whole stuff to have better data structure
+	* the first package for Cinnabar build08
+
+2004-04-11  Federic Zhang  <fzhang@prc.sun.com>
+
+	* Release version 0.1
