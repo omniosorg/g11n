@@ -218,6 +218,7 @@ f none openwin/lib/X11/xkb/symbols/iso9995-3 0444 root bin
 f none openwin/lib/X11/xkb/symbols/it 0444 root bin
 f none openwin/lib/X11/xkb/symbols/jp 0444 root bin
 f none openwin/lib/X11/xkb/symbols/keypad 0444 root bin
+f none openwin/lib/X11/xkb/symbols/kz 0444 root bin
 f none openwin/lib/X11/xkb/symbols/lock 0444 root bin
 f none openwin/lib/X11/xkb/symbols/lt 0444 root bin
 f none openwin/lib/X11/xkb/symbols/lt_p 0444 root bin
@@ -279,6 +280,7 @@ f none openwin/lib/X11/xkb/symbols/sun/hu 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/it 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/jp 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/ko 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/kz 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/lt 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/lv 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/nl 0444 root bin
