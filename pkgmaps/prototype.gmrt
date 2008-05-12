@@ -1520,3 +1520,16 @@ s none usr/lib/locale/sr_CS/locale_description=../sr_CS.UTF-8/locale_description
 f none usr/lib/locale/sr_CS/geo_map 0644 root bin
 
 # ------------- end New locales added by Yuriy Kuznetsov on 13.10.2005 ---------------
+
+# uk_UA.UTF-8
+d none usr/lib/locale/uk_UA.UTF-8 0755 root bin
+d none usr/lib/locale/uk_UA.UTF-8/LC_MESSAGES 0755 root bin
+s none usr/lib/locale/uk_UA.UTF-8/uk_UA.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+f none usr/lib/locale/uk_UA.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/uk_UA.UTF-8/locale_map 0644 root bin
+
+# uk_UA
+d none usr/lib/locale/uk_UA 0755 root bin
+s none usr/lib/locale/uk_UA/uk_UA.so.3=../uk_UA.UTF-8/uk_UA.UTF-8.so.3
+s none usr/lib/locale/uk_UA/locale_description=../uk_UA.UTF-8/locale_description
+f none usr/lib/locale/uk_UA/geo_map 0644 root bin

@@ -466,3 +466,7 @@ d none usr/lib/locale/tr_TR.ISO8859-9/sparcv9 0755 root bin
 s none usr/lib/locale/tr_TR.ISO8859-9/sparcv9/tr_TR.ISO8859-9.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
 d none usr/lib/locale/tr_TR.UTF-8/sparcv9 0755 root bin
 s none usr/lib/locale/tr_TR.UTF-8/sparcv9/tr_TR.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/uk_UA/sparcv9 0755 root bin
+s none usr/lib/locale/uk_UA/sparcv9/uk_UA.so.3=../../uk_UA.UTF-8/sparcv9/uk_UA.UTF-8.so.3
+d none usr/lib/locale/uk_UA.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/uk_UA.UTF-8/sparcv9/uk_UA.UTF-8.so.3=../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
