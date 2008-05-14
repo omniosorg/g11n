@@ -1452,7 +1452,7 @@ mon     "<J><a><n><u><a><r>";/
         "<N><o><v><e><m><b><e><r>";/
         "<D><e><z><e><m><b><e><r>"
 
-date_fmt    "%A, %e. %B %Y %k:%M Uhr %Z"
+date_fmt    "%A, %e. %B %Y, %H:%M:%S Uhr %Z"
 
 d_fmt    "%d.%m.%y"
 
