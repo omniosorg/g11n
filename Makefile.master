@@ -128,6 +128,7 @@ PKGMK= 		pkgmk
 TAR=		/usr/bin/tar
 LD=		/usr/ccs/bin/ld
 BDFTOPCF =	/usr/openwin/bin/bdftopcf
+BZIP2=		/usr/bin/bzip2 -9
 
 # SUNWwgetu
 WGET=		/usr/sfw/bin/wget

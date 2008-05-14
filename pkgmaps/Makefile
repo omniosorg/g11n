@@ -63,7 +63,7 @@ linkclean:
 
 tarball:  $(DEST)
 	cd $(DEST); $(TAR) cvf all_locales.tar -C $(FILEROOT) usr/; \
-	$(RM) all_locales.tar.bz2; bzip2 -9 all_locales.tar
+	$(RM) all_locales.tar.bz2; $(BZIP2) all_locales.tar
 
 tarballs: $(DEST)
 	for i in $(ALL_LOCALES); do \
