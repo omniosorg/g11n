@@ -30,8 +30,8 @@
 // If you want non-latin layouts implicitly include the en_US layout
 // uncomment lines below
 //! $nonlatin = am ara bg by dev el ge il \
-//              ir iu kan lo mk mm ml ori ru sr syr th \
-//              tj ua kz
+//              ir iu kan kz lo mk mm ml \
+//              ori ru sr syr th tj ua 
 
 // Sun keyboards
 ! model			=    geometry
