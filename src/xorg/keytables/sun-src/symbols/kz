@@ -64,6 +64,7 @@ key.type[group2]="ALPHABETIC";
                         [          Cyrillic_o_bar,          Cyrillic_O_bar      ]       };
     key <AE12> {        [                   equal,                    plus      ],
                         [           Cyrillic_shha,           Cyrillic_SHHA      ]       };
+
     key <AD01> {        [                       q,                       Q      ],
                         [         Cyrillic_shorti,         Cyrillic_SHORTI      ]       };
     key <AD02> {        [                       w,                       W      ],
@@ -88,6 +89,9 @@ key.type[group2]="ALPHABETIC";
                         [             Cyrillic_ha,             Cyrillic_HA      ]       };
     key <AD12> {        [            bracketright,              braceright      ],
                         [       Cyrillic_hardsign,       Cyrillic_HARDSIGN      ]       };
+    key <BKSL> {        [               backslash,                     bar      ],
+                        [               backslash,                   slash      ]       };
+
     key <AC01> {        [                       a,                       A      ],
                         [             Cyrillic_ef,             Cyrillic_EF      ]       };
     key <AC02> {        [                       s,                       S      ],
@@ -110,6 +114,7 @@ key.type[group2]="ALPHABETIC";
                         [            Cyrillic_zhe,            Cyrillic_ZHE      ]       };
     key <AC11> {        [              apostrophe,                quotedbl      ],
                         [              Cyrillic_e,              Cyrillic_E      ]       };
+
     key <AB01> {        [                       z,                       Z      ],
                         [             Cyrillic_ya,             Cyrillic_YA      ]       };
     key <AB02> {        [                       x,                       X      ],
@@ -128,8 +133,9 @@ key.type[group2]="ALPHABETIC";
                         [             Cyrillic_be,             Cyrillic_BE      ]       };
     key <AB09> {        [                  period,                 greater      ],
                         [             Cyrillic_yu,             Cyrillic_YU      ]       };
-key.type[group2]="TWO_LEVEL";
 
+    key <LSGT> {        [                    less,                 greater      ],
+                        [                     bar,               brokenbar      ]       };
     // End alphanumeric section
     
     // Begin modifier mappings 
@@ -141,36 +147,12 @@ key.type[group2]="TWO_LEVEL";
 };
 
 partial alphanumeric_keys
-xkb_symbols "winkeys" {
-    include "kz(basic)"
-    key <AE03> {        [                       3,              numbersign      ],
-                        [             Ukrainian_i,             Ukrainian_I      ]       };
-    key <AE04> {        [                       4,                  dollar      ],
-                        [   Cyrillic_en_descender,   Cyrillic_EN_descender      ]       };
-    key <AE05> {        [                       5,                 percent      ],
-                        [        Cyrillic_ghe_bar,        Cyrillic_GHE_bar      ]       };
-    key <AE06> {        [                       6,             asciicircum      ],
-                        [                   comma,               semicolon      ]       };
-    key <AE07> {        [                       7,               ampersand      ],
-                        [                  period,                   colon      ]       };
-    key <AE08> {        [                       8,                asterisk      ],
-                        [     Cyrillic_u_straight,     Cyrillic_U_straight      ]       };
-    key <AB10> {        [                   slash,                question      ],  
-                        [              numerosign,                question      ]       };
-    key <BKSL> {        [               backslash,                     bar      ],
-                        [               backslash,                   slash      ]       };
+xkb_symbols "Sundeadkeys" {
+include "kz(basic)" // for naming consistency
 };
 
 partial alphanumeric_keys
-xkb_symbols "typewriter" {
-    include "kz(basic)"
+xkb_symbols "sundeadkeys" {
+include "kz(Sundeadkeys)" // for naming consistency
 };
-
-partial alphanumeric_keys
-xkb_symbols "phonetic" {
-    include "kz(basic)"
-
-};
-
-
 
