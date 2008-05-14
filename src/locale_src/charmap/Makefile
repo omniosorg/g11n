@@ -41,14 +41,19 @@ FILES =		$(CHARMAPS:%=charmap.%.bz2)
 TARGETDIRS =	$(TARGETDIR)
 
 
-all: $(TARGETDIRS) $(FILES)
+all: $(TARGETDIRS) $(FILES) UTF-8.src.Z
 
 include $(SRC)/src/Makefile.targ
 
-install: $(FILES) $(TARGETDIRS) $(FILES.obj)
+install: $(FILES) UTF-8.src.Z $(TARGETDIRS) $(FILES.obj)
+	$(INSDIR) $(FILEROOT)/lib/localedef/charmaps
+	$(INS) $(FILEROOT)/lib/localedef/charmaps UTF-8.src.Z
 
 clean:
 	$(RM) $(FILES)
 
 charmap.%.bz2: %.charmap
 	$(BZIP2) -c $< > $@
+
+%.src.Z: %.charmap
+	$(COMPRESS) -c $< > $@
