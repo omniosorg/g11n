@@ -65,13 +65,15 @@ LOCALE.cldr = $(LOCALES_CLDR:%=%_c.so.$(METHOD_VERSION))
 
 LOCALE.localedef = $(LOCALE.so%.so$(METHOD_VERSION).=%.localedef) 
 
+LOCALE_src = $(LOCALE:%=%.src.bz2) $(LOCALE_CLDR:%=%.src.bz2)
+
 all:=		TARGET= all
 install:=	TARGET= install
 clean:=		TARGET= clean
 
 .KEEP_STATE:
 
-all: $(MACH64) $(LOCALE.so) $(LOCALE.cldr) #$(LOCALE_ISO.cldr) 
+all: $(MACH64) $(LOCALE.so) $(LOCALE.cldr) $(LOCALE_src) #$(LOCALE_ISO.cldr) 
 
 %.localedef.build: %.localedef
 	$(SRC)/tools/generatelocaledef -d include/ -i $< -o $@
@@ -242,7 +244,7 @@ th_TH.so.$(METHOD_VERSION): th_TH.localedef
 $(MACH64):
 	$(INSDIR) $(MACH64)
 
-install: all
+install: all install_src
 	for i in $(LOCALE) $(LOCALES_CLDR); do \
 		$(INSDIR) $(FILEROOT)/usr/lib/locale/$$i/$(MACH64) ; \
 		$(INS) $(FILEROOT)/usr/lib/locale/$$i $$i.so.$(METHOD_VERSION) ; \
@@ -253,12 +255,24 @@ install: all
 	compress -f localedef.src
 	$(INS) $(FILEROOT)/usr/lib/localedef/src/en_US.UTF-8/ localedef.src.Z
 
+install_src: $(LOCALE_src)
+	$(INSDIR) $(FILEROOT)/usr/lib/localedef/src/locales
+	for i in $(LOCALE_src); do \
+		$(INS) $(FILEROOT)/usr/lib/localedef/src/locales $$i; \
+	done
+
+%.src.bz2: %.localedef
+	$(BZIP2) -c $< > $@
+
 clean clobber: 
 	$(RM) *.c *.o *.so.* *.localedef.build *.Z 
 	$(RM) -r `ls | sed -e'/localedef/d' -e'/include/d' -e'/Makefile/d'`
 	for i in $(LOCALE) $(LOCALES_CLDR); do \
 		$(RM) $(FILEROOT)/usr/lib/locale/$$i/$$i.so.$(METHOD_VERSION) ; \
 		$(RM) $(FILEROOT)/usr/lib/locale/$$i/$(MACH64)/$$i.so.$(METHOD_VERSION); \
+	done
+	for i in $(LOCALE_src); do \
+		$(RM) $(FILEROOT)/usr/lib/locale/src/locales/$$i; \
 	done
 
 FRC:

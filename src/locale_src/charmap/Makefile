@@ -18,26 +18,37 @@
 #
 # CDDL HEADER END
 #
+#ident  "@(#)Makefile 1.0 10/03/07 SMI"
+#
 # Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 
-#FIXME: removed openwin/lib/locale from the build targets, since we're using Xorg's Xi18n locale database files.
-#SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables uts cmd
-SUBDIRS = lib kernel locale_src/base locale_src/charmap openwin/lib/locale  openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables uts cmd
+include $(SRC)/Makefile.master
+
 
 all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
+install:=	TARGET= install
+clean:=		TARGET= clean
 
 
-all install clean: $(SUBDIRS)
+CHARMAPS = ansi-1251 iso-8859-1 iso-8859-13 iso-8859-15 iso-8859-2 iso-8859-5 iso-8859-6 iso-8859-7 iso-8859-8 iso-8859-9 koi8-r utf-8
 
-$(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
+TARGETDIR =	$(FILEROOT)/usr/lib/localedef/src/charmaps
 
-FRC:
+FILES =		$(CHARMAPS:%=charmap.%.bz2)
 
+TARGETDIRS =	$(TARGETDIR)
+
+
+all: $(TARGETDIRS) $(FILES)
+
+include $(SRC)/src/Makefile.targ
+
+install: $(FILES) $(TARGETDIRS) $(FILES.obj)
+
+clean:
+	$(RM) $(FILES)
+
+charmap.%.bz2: %.charmap
+	$(BZIP2) -c $< > $@
