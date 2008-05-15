@@ -65,7 +65,7 @@ LOCALE.cldr = $(LOCALES_CLDR:%=%_c.so.$(METHOD_VERSION))
 
 LOCALE.localedef = $(LOCALE.so%.so$(METHOD_VERSION).=%.localedef) 
 
-LOCALE_src = $(LOCALE:%=%.src.bz2) $(LOCALE_CLDR:%=%.src.bz2)
+LOCALE_src = $(LOCALE:%=%.src.bz2) $(LOCALES_CLDR:%=%.src.bz2)
 
 all:=		TARGET= all
 install:=	TARGET= install
