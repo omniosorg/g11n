@@ -38,3 +38,10 @@ f none usr/lib/locale/ar/locale_description 0644 root bin
 f none usr/lib/locale/ar/locale_map 0644 root bin
 d none usr/lib/locale/ar/LO_LTYPE 0755 root bin
 f none usr/lib/locale/ar/LO_LTYPE/ar.layout.so.1 0644 root bin
+### mp l10n files - common
+d none usr/lib/lp 0755 root lp
+d none usr/lib/lp/locale 0755 root lp
+### mp l10n files - ar
+d none usr/lib/lp/locale/ar 0755 root lp
+d none usr/lib/lp/locale/ar/mp 0755 root lp
+f none usr/lib/lp/locale/ar/mp/mp.conf 0444 root lp

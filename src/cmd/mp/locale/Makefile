@@ -24,7 +24,7 @@
 #ident	"@(#)Makefile	1.0	06/03/07	SMI"
 #
 
-SUBDIRS = ja_JP.eucJP ja_JP.PCK ja_JP.UTF-8
+SUBDIRS = ja_JP.eucJP ja_JP.PCK ja_JP.UTF-8 ar he
 
 all:=		TARGET= all
 install :=	TARGET= install
