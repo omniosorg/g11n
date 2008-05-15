@@ -1431,18 +1431,18 @@ day     "<d><i><m><a><n><c><h><e>";/
         "<v><e><n><d><r><e><d><i>";/
         "<s><a><m><e><d><i>"
 
-abmon   "<j><a><n><v><FULL_STOP>";/
-        "<f><LATIN_SMALL_LETTER_E_WITH_ACUTE><v><r><FULL_STOP>";/
+abmon   "<j><a><n><v>";/
+        "<f><LATIN_SMALL_LETTER_E_WITH_ACUTE><v><r>";/
         "<m><a><r><s>";/
-        "<a><v><r><FULL_STOP>";/
-        "<m><a><i>";/
+        "<a><v><r><space>";/
+        "<m><a><i><space>";/
         "<j><u><i><n>";/
-        "<j><u><i><l><FULL_STOP>";/
+        "<j><u><i><l>";/
         "<a><o><LATIN_SMALL_LETTER_U_WITH_CIRCUMFLEX><t>";/
-        "<s><e><p><t><FULL_STOP>";/
-        "<o><c><t><FULL_STOP>";/
-        "<n><o><v><FULL_STOP>";/
-        "<d><LATIN_SMALL_LETTER_E_WITH_ACUTE><c><FULL_STOP>"
+        "<s><e><p><t>";/
+        "<o><c><t><space>";/
+        "<n><o><v><space>";/
+        "<d><LATIN_SMALL_LETTER_E_WITH_ACUTE><c><space>"
 
 mon     "<j><a><n><v><i><e><r>";/
         "<f><LATIN_SMALL_LETTER_E_WITH_ACUTE><v><r><i><e><r>";/
