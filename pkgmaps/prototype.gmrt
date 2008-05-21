@@ -231,7 +231,7 @@ d none usr/lib/locale/en_CA.ISO8859-1/LC_MESSAGES 0755 root bin
 
 d none usr/lib/locale/pt_BR.UTF-8 0755 root bin
 d none usr/lib/locale/pt_BR.UTF-8/LC_MESSAGES 0755 root bin
-f none usr/lib/locale/pt_BR.UTF-8/pt_BR.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/pt_BR.UTF-8/pt_BR.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 f none usr/lib/locale/pt_BR.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/pt_BR.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/pt_BR.UTF-8/LC_MONETARY 0755 root bin
@@ -1275,7 +1275,7 @@ f none usr/lib/locale/nn_NO.UTF-8/locale_map 0644 root bin
 # pt_PT.UTF-8
 d none usr/lib/locale/pt_PT.UTF-8 0755 root bin
 d none usr/lib/locale/pt_PT.UTF-8/LC_MESSAGES 0755 root bin
-f none usr/lib/locale/pt_PT.UTF-8/pt_PT.UTF-8.so.3 0644 root bin
+s none usr/lib/locale/pt_PT.UTF-8/pt_PT.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 f none usr/lib/locale/pt_PT.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/pt_PT.UTF-8/locale_map 0644 root bin
 
