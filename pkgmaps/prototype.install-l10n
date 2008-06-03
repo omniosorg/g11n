@@ -69,6 +69,10 @@ d none usr/lib/locale/ru_RU.UTF-8 0755 root bin
 d none usr/lib/locale/ru_RU.UTF-8/LC_MESSAGES 0755 root bin
 f none usr/lib/locale/ru_RU.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo 0755 root bin
 #
+d none usr/lib/locale/sk_SK.UTF-8 0755 root bin
+d none usr/lib/locale/sk_SK.UTF-8/LC_MESSAGES 0755 root bin
+f none usr/lib/locale/sk_SK.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo 0755 root bin
+#
 d none usr/lib/locale/sv.UTF-8 0755 root bin
 d none usr/lib/locale/sv.UTF-8/LC_MESSAGES 0755 root bin
 f none usr/lib/locale/sv.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo=usr/lib/locale/sv_SE.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo 0755 root bin
@@ -132,6 +136,11 @@ d none usr/share/locale/ru 0755 root other
 s none usr/share/locale/ru_RU.UTF-8=ru
 d none usr/share/locale/ru/LC_MESSAGES 0755 root other
 f none usr/share/locale/ru/LC_MESSAGES/gui-install.mo 0644 root other
+#
+d none usr/share/locale/sk 0755 root other
+s none usr/share/locale/sk_SK.UTF-8=sk
+d none usr/share/locale/sk/LC_MESSAGES 0755 root other
+f none usr/share/locale/sk/LC_MESSAGES/gui-install.mo 0644 root other
 #
 d none usr/share/locale/sv 0755 root other
 s none usr/share/locale/sv_SE.UTF-8=sv
@@ -295,6 +304,23 @@ f none usr/share/gui-install/help/ru/INSTALL_USERS_PANEL.txt 0644 root sys
 #f none usr/share/gui-install/help/ru/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
 #f none usr/share/gui-install/help/ru/UPGRADE_REVIEW_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/ru/WELCOME_PANEL.txt 0644 root sys
+#
+d none usr/share/gui-install/help/sk 0755 root sys
+s none usr/share/gui-install/help/sk_SK=sk
+s none usr/share/gui-install/help/sk_SK.UTF-8=sk
+f none usr/share/gui-install/help/sk/FINISH_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/sk/INSTALL_DISK_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/sk/INSTALL_FAILURE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/sk/INSTALL_LANGUAGE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/sk/INSTALL_PROGRESS_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/sk/INSTALL_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/sk/INSTALL_TIMEZONE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/sk/INSTALL_USERS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/sk/UPGRADE_DISK_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/sk/UPGRADE_FAILURE_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/sk/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/sk/UPGRADE_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/sk/WELCOME_PANEL.txt 0644 root sys
 #
 d none usr/share/gui-install/help/sv 0755 root sys
 s none usr/share/gui-install/help/sv_SE.UTF-8=sv
