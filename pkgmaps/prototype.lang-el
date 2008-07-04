@@ -57,3 +57,9 @@ f none usr/lib/locale/el_GR.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/el_GR.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/el_GR.UTF-8/LO_LTYPE/el_GR.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
 s none usr/lib/locale/el_GR.UTF-8/methods_el_GR.UTF-8.so.3=../common/methods_unicode.so.3
+d none usr/lib/locale/el.UTF-8 0755 root bin
+s none usr/lib/locale/el.UTF-8/el.UTF-8.so.3=../el_CY.UTF-8/el_CY.UTF-8.so.3
+d none usr/lib/locale/el.UTF-8/LC_MESSAGES 0755 root bin
+d none usr/lib/locale/el.UTF-8/LC_TIME 0755 root bin
+s none usr/lib/locale/el.UTF-8/locale_description=../el_CY.UTF-8/locale_description
+s none usr/lib/locale/el.UTF-8/geo_map=../el_CY.UTF-8/geo_map
