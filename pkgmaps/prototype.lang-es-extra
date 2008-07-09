@@ -169,7 +169,6 @@ s none usr/lib/locale/es_GT/locale_description=../es_GT.ISO8859-1/locale_descrip
 d none usr/lib/locale/es.ISO8859-15 0755 root bin
 s none usr/lib/locale/es.ISO8859-15/es.ISO8859-15.so.3=../es_ES.ISO8859-15/es_ES.ISO8859-15.so.3
 s none usr/lib/locale/es.ISO8859-15/locale_description=../es_ES.ISO8859-15/locale_description
-s none usr/lib/locale/es.ISO8859-15/geo_map=../es_ES.ISO8859-15/geo_map
 d none usr/lib/locale/es/LC_MESSAGES 0755 root bin
 f none usr/lib/locale/es/locale_description 0644 root bin
 d none usr/lib/locale/es_MX 0755 root bin
