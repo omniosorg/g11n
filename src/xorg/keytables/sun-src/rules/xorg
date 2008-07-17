@@ -944,6 +944,7 @@
 ! model		layout	=	symbols
   $inetkbds     *	=       +inet(%m)
   $sun_type7	jp	=	+sun/solaris(defaults_type7jp)
+  jp106		jp	=	+sun/solaris(defaults_type7jp)
   *	        *	=       +sun/solaris(defaults)
 
 ! model		layout		=	compat
