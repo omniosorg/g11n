@@ -29,3 +29,5 @@ d none usr/lib/locale/sh_BA.ISO8859-2@bosnia/sparcv9 0755 root bin
 f none usr/lib/locale/sh_BA.ISO8859-2@bosnia/sparcv9/sh_BA.ISO8859-2@bosnia.so.3 0555 root bin
 d none usr/lib/locale/sh_BA/sparcv9 0755 root bin
 s none usr/lib/locale/sh_BA/sparcv9/sh_BA.so.3=../../sh_BA.ISO8859-2@bosnia/sparcv9/sh_BA.ISO8859-2@bosnia.so.3
+d none usr/lib/locale/sh/sparcv9 0755 root bin
+s none usr/lib/locale/sh/sparcv9/sh.so.3=../../sh_BA.ISO8859-2@bosnia/sparcv9/sh_BA.ISO8859-2@bosnia.so.3
