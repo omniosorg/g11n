@@ -624,7 +624,7 @@ search_dialog_response_handler (GtkWidget *dialog, gint id, gpointer data)
         param = g_strdup (folder);
         
         if ((name != NULL) && (*name != '\0')) {
-            tmp = g_strdup_printf ("%s -name %s", param, name);
+            tmp = g_strdup_printf ("%s -name *%s*", param, name);
             g_free (param);
             param = tmp;
         }

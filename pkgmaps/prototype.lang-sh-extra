@@ -40,3 +40,6 @@ f none usr/lib/locale/sh_BA.ISO8859-2@bosnia/locale_map 0644 root bin
 f none usr/lib/locale/sh_BA.ISO8859-2@bosnia/sh_BA.ISO8859-2@bosnia.so.3 0555 root bin
 s none usr/lib/locale/sh_BA/locale_description=../sh_BA.ISO8859-2@bosnia/locale_description
 s none usr/lib/locale/sh_BA/sh_BA.so.3=../sh_BA.ISO8859-2@bosnia/sh_BA.ISO8859-2@bosnia.so.3
+d none usr/lib/locale/sh 0755 root bin
+s none usr/lib/locale/sh/locale_description=../sh_BA.ISO8859-2@bosnia/locale_description
+s none usr/lib/locale/sh/sh.so.3=../sh_BA.ISO8859-2@bosnia/sh_BA.ISO8859-2@bosnia.so.3
