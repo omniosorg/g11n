@@ -705,6 +705,43 @@ then
 fi 
 }
 
+
+
+#########################################################################################################
+###### checks whether the path entred by user points to requestd cd image - check the .volumer.inf file
+###### e.g. VI"SOL_10_1008_X86_2"
+#########################################################################################################
+# params: 
+# $1 - the image name langcd1, solaris5... 
+#
+is_correct_cd() {
+        cdName=`echo "$1" | sed -e "s/[0-9]*$//"`
+	cdNum=`echo "$1" | sed -e "s/^[a-z]*//"`
+        if [ $cdNum -eq 1 ]
+	then
+		cdNum=""    #the first CD does not have number in .volume.inf
+	fi
+	# $cdpath is set elsewhere
+	#.volume.inf indicates what cd the image is. 		
+        if [ $cdName = "solaris" ]
+        then
+		cdcheck=`grep "SOL_[0-9]*_.*"$CDLABEL"_*"$cdNum $cdpath/.volume.inf`
+	elif [ $cdName = "langcd" ]
+	then
+		cdcheck=`grep "SOL_[0-9]*.*LANG_"$CDLABEL"_*"$cdNum $cdpath/.volume.inf`
+	fi
+	
+	#if it is not a zero length string, then this is the right cd
+	if [ ! -z "$cdcheck" ]
+	then
+		cdfound=1
+	else 
+		echo ""
+		loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
+		read cdpath
+	fi	
+}
+
 ###########################################################################
 ##################   check for an installed locale   ######################
 ###########################################################################
@@ -1150,29 +1187,29 @@ do
 	position=$?
     done # end "while $position...."
 
-    case $cd in
-	solaris1) 
-	    ADD_DIR=${SOLARIS1_IMG}
-	    ;;
-	solaris2) 
-	    ADD_DIR=${SOLARIS2_IMG}
-	    ;;
-	solaris3) 
-	    ADD_DIR=${SOLARIS3_IMG}
-	    ;;
-	solaris4)
-            ADD_DIR=${SOLARIS4_IMG}
-            ;;
-	solaris5)
-            ADD_DIR=${SOLARIS5_IMG}
-            ;;
-	langcd1) 
-	    ADD_DIR=${LANGCD_IMG1}
-	    ;;
-	langcd2) 
-	    ADD_DIR=${LANGCD_IMG2}
-	    ;;
-    esac
+#    case $cd in
+#	solaris1) 
+#	    ADD_DIR=${SOLARIS1_IMG}
+#	    ;;
+#	solaris2) 
+#	    ADD_DIR=${SOLARIS2_IMG}
+#	    ;;
+#	solaris3) 
+#	    ADD_DIR=${SOLARIS3_IMG}
+#	    ;;
+#	solaris4)
+#            ADD_DIR=${SOLARIS4_IMG}
+#            ;;
+#	solaris5)
+#            ADD_DIR=${SOLARIS5_IMG}
+#            ;;
+#	langcd1) 
+#	    ADD_DIR=${LANGCD_IMG1}
+#	    ;;
+#	langcd2) 
+#	    ADD_DIR=${LANGCD_IMG2}
+#	    ;;
+#    esac
 
     # check the disk here!!!!
 
@@ -1752,6 +1789,141 @@ set -A DEVICES `echo $1 | awk -F"," '{for(i = 1; i <= NF; i++) print $i}'`
 arr=`expr $arr + 1` 
 }
 
+
+
+
+###########################################################################
+#####################  get install dir function   #########################
+###########################################################################
+#
+# $1 = DEVICES - array of dirs passed in as arg
+# $2 = $LOC - locale chosen by user
+# $3 = image - image we are looking for
+
+
+get_install_dir() {
+
+
+typeset -l LOC=$2 image=$3
+get_devices $1
+arr_size=${#DEVICES[*]}
+set -A devices ${DEVICES[*]}
+typeset -i retval=0 arr=0 break=0
+
+while [[ arr -lt arr_size && break -eq 0 ]]
+do
+  retval=0 # reset return val so we don't clobber ourselves each time through...... - KC
+    INIT_DIR=${devices[${arr}]} 
+
+    if [ -d $INIT_DIR/Solaris_$OS_VER ] # we have a 1of 2, 2of2 or combined image
+    then 
+	INST_DIR=$INIT_DIR/Solaris_$OS_VER/Product
+    elif [ -d $INIT_DIR ] # assume just a dir
+    then
+	INST_DIR=${devices[arr]}
+   else
+	loc_prnt "Warning! The directory specified does not exist \n (%s) \n" nolog $INIT_DIR
+	typeset -i retval=`expr $arr+1`
+	return $retval
+    fi
+
+    # are there any packages in the specified path?
+
+    typeset -i pkgcount=`ls $INST_DIR | $grep -c SUNW`
+
+    if [ $pkgcount -eq 0 ]
+    then
+	loc_prnt "Warning! No Solaris packages exist in %s" nolog $INST_DIR
+	typeset -i retval=`expr $arr+1`
+    else
+	# make sure that all pkgs have the same architecture - bugid 5052631
+	if [ -f /var/run/arch.txt ] # make sure this file is clear before we start!
+	then
+	    rm /var/run/arch.txt 
+	fi
+
+	for package in `awk '$2 ~ /'$LOC'/ {print $1}' $CONFIGFILE`
+	do
+
+	    if [ -f  $INST_DIR/$package/pkginfo ]
+	    then
+		tmp_arch=`grep ARCH $INST_DIR/$package/pkginfo | sed -e's/ARCH=//g'`
+		echo $tmp_arch >> /var/run/arch.txt
+	    fi
+	done
+	sort -u /var/run/arch.txt > /var/run/arch_final.txt
+
+	if [ `wc -l /var/run/arch_final.txt | awk '{print $1}'` -gt 1 ]
+	then
+	    typeset -i retval=`expr $arr+1`
+	    echo
+	    loc_prnt "The packages in %s do not appear to be all of the same architecture." nolog $INST_DIR
+ 	    loc_prnt "Please check these packages and re-run localeadm."
+	    echo
+	    break=1
+	else
+	    pkg_arch=`more /var/run/arch_final.txt`
+	fi
+	
+	# clean up all the temp files
+	if [ -f /var/run/arch_final.txt ]
+	then
+	    rm /var/run/arch_final.txt
+	fi
+	if [ -f /var/run/arch.txt ]
+	then
+	    rm /var/run/arch.txt
+	fi
+
+	if [ $pkg_arch != $ARCH -a break -eq 0 ] # if the pkgs aren't the same arch as the system
+ 	then
+	    typeset -i retval=`expr $arr+1`
+	    echo
+	    loc_prnt "The packages in \n%s \nappear to be the incorrect architecture for your system." nolog $INST_DIR
+	    loc_prnt "(packages are %s, your system is %s)" nolog $pkg_arch $ARCH
+ 	    loc_prnt "Please check these packages and re-run localeadm."
+	    echo
+	   # return $retval
+	    break=1
+        elif [ break -eq 0 ]	
+        then
+	    loc_prnt "Checking for a $image in config file" log
+	    check_image $image $LOC
+	    result=$?
+	    if [ $result -eq 1 ]
+	    then
+		loc_prnt "We have a $image: \n%s" log $INST_DIR
+                ADD_DIR=${INST_DIR}
+		break=1
+	    elif [ $result -eq 2 ]
+	    then
+		loc_prnt "We don't need a $image" logvb
+                ADD_DIR=""
+		break=1
+	    else
+	      loc_prnt "No $image image has been found in \n%s " nolog $INST_DIR
+	      echo
+	      typeset -i retval=`expr $arr+1`
+	    fi
+	fi	    
+    fi
+    arr=`expr $arr + 1`
+done
+
+# break -eq 0 means that we didn't find the cd, but overpassed the devices array boundaries
+if [[ break -eq 0 && "$2" != "all" && "$image" = "solaris1" ]]
+then
+    loc_prnt "You need at least a solaris1 image to add any locales." nolog
+    loc_prnt "Please provide the path to a solaris1 image." nolog
+    echo    
+fi
+return $retval
+}
+
+
+
+
+
 ###########################################################################
 #####################  get install dir function   #########################
 ###########################################################################
@@ -1762,7 +1934,7 @@ arr=`expr $arr + 1`
 
 ### major work needed on this function!!! - KC
 
-get_install_dir() {
+get_install_dir_original() {
 
 typeset -l LOC=$2
 
@@ -1802,7 +1974,7 @@ then
     fi
 else
     ### making sure all devices are picked up (could be up to 6 in $DEVICES....) - KC
-    set -a devices ${DEVICES[*]}
+    set -A devices ${DEVICES[*]}
 fi
 # get the new size of the array
 arr_size=${#devices[*]}
@@ -1914,7 +2086,7 @@ do
 	done
 	sort -u /var/run/arch.txt > /var/run/arch_final.txt
 
-	if [ `wc -l /var/run/arch_final.txt | awk '{print $1}'` -ne 1 ]
+	if [ `wc -l /var/run/arch_final.txt | awk '{print $1}'` -gt 1 ]
 	then
 	    typeset -i retval=`expr $arr+1`
 	    echo
@@ -2355,11 +2527,11 @@ echo "------------------------------------------------------"
 loc_prnt "CD installation/net installed CD image option selected"
 echo "------------------------------------------------------"
 
-set -A sources solaris1 solaris2 solaris3 solaris4 solaris5 langcd 
+set -A sources solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2 
 
 # run the retrievecd.pl program for each of the installation sources
 
-for index in 0 1 2 3 4 5
+for index in 0 1 2 3 4 5 6
 do
 
 echo ""
@@ -2408,90 +2580,32 @@ do
 			cdfound=1
 			cdpath="$cdpath/s0/Solaris_*/Product"
 		fi	
-	
-	elif [ "${sources[index]}" == "solaris2" ] 
-	then
-
-		#.volume.inf indicates what cd the image is. 		
-		cdcheck=`grep "SOL_10.*"$CDLABEL"_2" $cdpath/.volume.inf`
-
-		#if it is not a zero length string, then this is the right cd
-		if [ ! -z "$cdcheck" ]
-		then
-			cdfound=1
-		else 
-			echo ""
-			loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-			read cdpath
-		fi	
-	
-
-	elif [ "${sources[index]}" == "solaris3" ] 
-	then
-
-		#.volume.inf indicates what cd the image is.
-		cdcheck=`grep "SOL_10.*"$CDLABEL"_3" $cdpath/.volume.inf`
-		
-		#if it is not a zero length string, then this is the right cd
-		if [ ! -z "$cdcheck" ]
-		then
-			cdfound=1
-		else 
-			echo ""
-			loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-			read cdpath
-		fi	
-	
-
-	elif [ "${sources[index]}" == "solaris4" ] 
-	then
-
-		#.volume.inf indicates what cd the image is.
-		cdcheck=`grep "SOL_10.*"$CDLABEL"_4" $cdpath/.volume.inf`
-
-		#if it is not a zero length string, then this is the right cd
-		if [ ! -z "$cdcheck" ]
-		then
-			cdfound=1
-		else 
-			echo ""
-			loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-			read cdpath
-		fi	
-	
-	elif [ "${sources[index]}" == "solaris5" ] 
-	then
-
-		#.volume.inf indicates what cd the image is.
-		cdcheck=`grep "SOL_10.*"$CDLABEL"_5" $cdpath/.volume.inf`
-
-		#if it is not a zero length string, then this is the right cd
-		if [ ! -z "$cdcheck" ]
-		then
-			cdfound=1
-		else 
-			echo ""
-			loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-			read cdpath
-		fi
-
-	elif [ "${sources[index]}" == "langcd" ] 
-	then
-
-		#.volume.inf indicates what cd the image is.
-		cdcheck=`grep "SOL_10.*LANG_"$CDLABEL $cdpath/.volume.inf`
-
-		#if it is not a zero length string, then this is the right cd
-		if [ ! -z "$cdcheck" ]
-		then
-			cdfound=1
-		else 
-			echo ""
-			loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-			read cdpath
-		fi	
-	
-	fi
+        else
+             is_correct_cd ${sources[index]}
+        fi
+#	elif [ "${sources[index]}" == "solaris2" ] 
+#	then
+#		is_correct_cd "solaris" "2"	
+#
+#	elif [ "${sources[index]}" == "solaris3" ] 
+#	then
+#                is_correct_cd "solaris" "3"	
+#
+#	elif [ "${sources[index]}" == "solaris4" ] 
+#	then
+#                is_correct_cd "solaris" "4"
+#	
+#	elif [ "${sources[index]}" == "solaris5" ] 
+#	then
+#                is_correct_cd "solaris" "5"
+#
+#	elif [ "${sources[index]}" == "langcd1" ] 
+#	then
+#                is_correct_cd "langcd" "1"
+#	elif [ "${sources[index]}" == "langcd2" ] 
+#	then
+#                is_correct_cd "langcd" "2"
+#	fi
 done
 
 # Program continues if the correct CD path has been found
