@@ -33,6 +33,12 @@ expr=/usr/bin/expr
 tee=/usr/bin/tee
 gettext=/usr/bin/gettext
 
+
+
+
+set -A solarisImages solaris1 solaris2 solaris3 solaris4 solaris5
+set -A langcdImages langcd1 langcd2
+
 ###########################################################################
 ###################    print localized messages   #########################
 ###########################################################################
@@ -519,7 +525,7 @@ do
 
 	if [ $core -eq 2 ] # if we have at least a core install (missing core pkgs are as good as no locale installed)
 	then
-	    for disk in solaris1 solaris2 solaris3 solaris4 solaris5 # check each image in turn
+	    for disk in  ${solarisImages[*]}   # check each image in turn
 	    do
 		if [ "$1" = "q" ] # quiet mode
 		then
@@ -1114,7 +1120,7 @@ then
 	fi
 	loc_prnt "Region %s's message packages will be installed." log "$SEL_REGION"
     else # we want everything but the langcd
-	forlist="solaris1 solaris2 solaris3 solaris4 solaris5"
+	forlist="${solarisImages[*]}"     #  "solaris1 solaris2 solaris3 solaris4 solaris5"
 	loc_prnt "Region %s will be installed without messages" log "$SEL_REGION"
     fi
 else
@@ -1126,9 +1132,9 @@ else
     else # we need all of the disk images
 	if [[ "$SEL_REGION" = "ceu" || "$SEL_REGION" = "seu" || "$SEL_REGION" = "weu" || $SEL_REGION = "nam" ]]
 	then # these regions need the 2nd langcd, so add it in
-	    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2"
+	    forlist="${solarisImages[*]} langcd1 langcd2"             #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2"
 	else
-	    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 langcd1"
+	    forlist="${solarisImages[*]} langcd1"        #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd1"
 	fi
 	loc_prnt "Region %s will be installed." log "$SEL_REGION"
     fi
@@ -1380,10 +1386,10 @@ fi
 
 if [ $MESSAGES -eq 1 ] # we only want messages
 then # we only need the langcd
-    forlist="langcd"
+    forlist="langcd1"
 else
     #forlist="1of2 2of2 langcd"
-    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 langcd"
+    forlist="${solarisImages[*]} langcd1"      #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd"
 fi
 #loc_prnt "Image list is %s" $forlist
 
@@ -1714,7 +1720,7 @@ core=`expr $core + $?`
 if [ $core -eq 2 ]
 then
     # we have something on the system, so check for the rest of the pkgs
-    for disk in solaris1 solaris2 solaris3 solaris4 solaris5
+    for disk in ${solarisImages[*]}       #  solaris1 solaris2 solaris3 solaris4 solaris5
     do
 	if [ $ALTROOT = "y" ]
 	then
@@ -1922,450 +1928,6 @@ return $retval
 
 
 
-
-
-###########################################################################
-#####################  get install dir function   #########################
-###########################################################################
-#
-# $1 = DEVICES - array of dirs passed in as arg
-# $2 = $LOC - locale chosen by user
-# $3 = image - image we are looking for
-
-### major work needed on this function!!! - KC
-
-get_install_dir_original() {
-
-typeset -l LOC=$2
-
-echo
-loc_prnt "Operating System is Solaris %s" nolog $OS_VER
-echo 
-loc_prnt "Checking for a valid disk image:" log
-echo
-
-typeset -i pkgcount=0 arr=0 break=0 result=0 arr_size=0 retval=0 cd1=0 cd2=0 cd3=0 cd4=0 cd5=0 langcd1=0 langcd2=0
-
-if [[ "$LOC" = "ceu" || "$LOC" = "seu"  || "$LOC" = "weu" || "$LOC" = "nam" ]]
-then
-    langcd2=1
-fi
-
-get_devices $1
-arr_size=${#DEVICES[*]}
-
-if [ $arr_size -lt 6 ] # if we have less than 6 args, we have to up the number to at least 6
-then
-    if [ "${DEVICES[0]}" = "${DEVICES[$arr_size -1]}" ]
-    then 
-	set -A devices ${DEVICES[*]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[*]}
-	cd2=1
-	cd3=1
-	cd4=1
-	cd5=1
-	langcd=1 # can we always assume a langcd? (what about -m?) - KC
-	echo
-	loc_prnt "Devices are %s " nolog "${DEVICES[*]}"
-    else
-	echo
-	loc_prnt "Please only enter the path for solaris_1 or dvd image" log
-    	rem_lock
-    	exit 1
-    fi
-else
-    ### making sure all devices are picked up (could be up to 6 in $DEVICES....) - KC
-    set -A devices ${DEVICES[*]}
-fi
-# get the new size of the array
-arr_size=${#devices[*]}
-
-# debug stuff
-#echo "DEBUG: New Device 1 is ${devices[0]}"
-#echo "DEBUG: New Device 2 is ${devices[1]}"
-#echo "DEBUG: New Device 3 is ${devices[2]}"
-#echo "DEBUG: New Device 4 is ${devices[3]}"
-
-while [[ arr -lt arr_size && break -eq 0 ]]
-do
-  retval=0 # reset return val so we don't clobber ourselves each time through...... - KC
-    INIT_DIR=${devices[${arr}]} 
-
-    if [ -d $INIT_DIR/Solaris_$OS_VER ] # we have a 1of 2, 2of2 or combined image
-    then 
-	INST_DIR=$INIT_DIR/Solaris_$OS_VER/Product
-
-    elif [ -d $INIT_DIR/components ] # we have a langcd - need to get the correct subdir
-    then
-
-	case $LOC in
-	weu)
-	    dir="French/$ARCH/Packages"
-	    ;;
-	cam)
-	    dir="Spanish/$ARCH/Packages"
-	    ;;
-	ceu)
-	    dir="German/$ARCH/Packages" 
-	    ;;
-	nam)
-	    dir="Spanish/$ARCH/Packages"
-	    ;;
-	neu)
-	    dir="Swedish/$ARCH/Packages"
-	    ;;
-	seu)
-	    dir="Spanish/$ARCH/Packages" 
-	    ;;
-	sam)
-	    dir="Spanish/$ARCH/Packages" 
-	    ;;
-	ja)
-	    dir="Japanese/$ARCH/Packages"
-	    ;;
-	korean)
-	    dir="Korean/$ARCH/Packages"
-	    ;;
-	taiwan)
-	    dir="TraditionalChinese/$ARCH/Packages"
-	    ;;
-	china)
-	    dir="SimplifiedChinese/$ARCH/Packages"
-	    ;;
-	hongkong)
-	    dir="TraditionalChineseHongKong/$ARCH/Packages"
-	    ;;
-	all)
-	    dir="" 
-	    ;;
-	esac
-	
-	INST_DIR=$INIT_DIR/components/$dir
-	loc_prnt "Directory to check is %s" logvb $INST_DIR
-
-	if [ ! -d $INST_DIR ]
-	then # we've been given a langcd but we don't need it
-	    INST_DIR=${devices[arr]}
-	fi
-
-    elif [ -d $INIT_DIR ] # assume just a dir
-    then
-	INST_DIR=${devices[arr]}
-   else
-	loc_prnt "Warning! The directory specified does not exist \n (%s) \n" nolog $INIT_DIR
-	typeset -i retval=`expr $arr+1`
-	return $retval
-    fi
-    if [ `basename $INST_DIR` = "components" ]
-    then
-	typeset -i pkgcount=1
-    else
-    typeset -i pkgcount=`ls $INST_DIR | $grep -c SUNW`
-    fi
-
-
-    if [ $pkgcount -eq 0 ]
-    then
-	loc_prnt "Warning! No Solaris packages exist in %s" nolog $INST_DIR
-	typeset -i retval=`expr $arr+1`
-    else
-	# make sure that all pkgs have the same architecture - bugid 5052631
-	if [ -f /var/run/arch.txt ] # make sure this file is clear before we start!
-	then
-	    rm /var/run/arch.txt 
-	fi
-
-
-	for package in `awk '$2 ~ /'$LOC'/ {print $1}' $CONFIGFILE`
-	do
-
-	    if [ -f  $INST_DIR/$package/pkginfo ]
-	    then
-		tmp_arch=`grep ARCH $INST_DIR/$package/pkginfo | sed -e's/ARCH=//g'`
-		echo $tmp_arch >> /var/run/arch.txt
-	    fi
-	done
-	sort -u /var/run/arch.txt > /var/run/arch_final.txt
-
-	if [ `wc -l /var/run/arch_final.txt | awk '{print $1}'` -gt 1 ]
-	then
-	    typeset -i retval=`expr $arr+1`
-	    echo
-	    loc_prnt "The packages in %s do not appear to be all of the same architecture." nolog $INST_DIR
- 	    loc_prnt "Please check these packages and re-run localeadm."
-	    echo
-	    break=1
-	else
-	    pkg_arch=`more /var/run/arch_final.txt`
-	fi
-	
-	# clean up all the temp files
-	if [ -f /var/run/arch_final.txt ]
-	then
-	    rm /var/run/arch_final.txt
-	fi
-	if [ -f /var/run/arch.txt ]
-	then
-	    rm /var/run/arch.txt
-	fi
-
-	if [ $pkg_arch != $ARCH -a break -eq 0 ] # if the pkgs aren't the same arch as the system
- 	then
-	    typeset -i retval=`expr $arr+1`
-	    echo
-	    loc_prnt "The packages in \n%s \nappear to be the incorrect architecture for your system." nolog $INST_DIR
-	    loc_prnt "(packages are %s, your system is %s)" nolog $pkg_arch $ARCH
- 	    loc_prnt "Please check these packages and re-run localeadm."
-	    echo
-	    #echo "DEBUG: returning $retval"
-	   # return $retval
-	    break=1
-	fi
-
-     if [ $3 = "solaris1" -a break -eq 0 ]
-	then
-	    echo
-	    loc_prnt "Checking for a solaris 1" log
-	    check_image "solaris1" $LOC
-	    result=$?
-	    if [ $result -eq 1 ]
-	    then
-		loc_prnt "We have a solaris1: \n%s" log $INST_DIR
-		SOLARIS1_IMG=${INST_DIR}
-		cd1=1
-		break=1
-	    elif [ $result -eq 2 ]
-	    then
-		loc_prnt "We don't need a solaris1" logvb
-		SOLARIS1_IMG=""
-		cd1=1
-		break=1
-	    else
-	      loc_prnt "No solaris1 image has been found in \n%s " nolog $INST_DIR
-	      echo
-	      typeset -i retval=`expr $arr+1`
-	    fi
-	fi
-
-	if [ $3 = "solaris2" -a break -eq 0 ] 
-	then	
-	    echo
-	    loc_prnt "Checking for a solaris2 image" log
-	    check_image "solaris2" $LOC
-
-	    result=$?
-	    if [ $result -eq 1 ] 
-	    then	
-		loc_prnt "We have a solaris2: \n%s" log $INST_DIR
-		SOLARIS2_IMG=${INST_DIR}
-		cd2=1
-		break=1
-	    elif [ $result -eq 2 ]
-	    then
-		loc_prnt "We don't need a solaris2" logvb
-		SOLARIS2_IMG=""
-		cd2=1
-		break=1
-	    else
-	      loc_prnt "No solaris2 image has been found in \n%s " nolog $INST_DIR
-	      echo
-	      typeset -i retval=`expr $arr+1`
-	    fi
-	fi
-
-	if [ $3 = "solaris3" -a break -eq 0 ] 
-	then	
-	    echo
-	    loc_prnt "Checking for a solaris3 image" log
-	    check_image "solaris3" $LOC
-
-	    result=$?
-	    if [ $result -eq 1 ] 
-	    then	
-		loc_prnt "We have a solaris3: \n%s" log $INST_DIR
-		SOLARIS3_IMG=${INST_DIR}
-		cd3=1
-		break=1
-	    elif [ $result -eq 2 ]
-	    then
-		loc_prnt "We don't need a solaris3" logvb
-		SOLARIS3_IMG=""
-		cd3=1
-		break=1
-	    else
-	      loc_prnt "No solaris3 image has been found in \n%s " nolog $INST_DIR
-	      echo
-	      typeset -i retval=`expr $arr+1`
-	    fi
-	fi
-
-
-	if [ $3 = "solaris4" -a break -eq 0 ]
-	then
-	    echo
-	    loc_prnt "Checking for a solaris4 image" log
-	    check_image "solaris4" $LOC
-
-		result=$?
-            if [ $result -eq 1 ]
-            then       
-                loc_prnt "We have a solaris4: \n%s" log $INST_DIR
-		SOLARIS4_IMG=${INST_DIR}
-		cd4=1
-		break=1
-            elif [ $result -eq 2 ]
-            then
-               	loc_prnt "We don't need a solaris4" logvb
-		SOLARIS4_IMG=""
-		cd4=1
-		break=1
-            else
-              loc_prnt "No solaris4 image has been found in \n%s " nolog $INST_DIR
-		echo
-              typeset -i retval=`expr $arr+1`
-            fi
-             	#echo "DEBUG: returning $retval"
-	fi
-
-	if [ $3 = "solaris5" -a break -eq 0 ]
-	then
-	    echo
-	    loc_prnt "Checking for a solaris5 image" log
-	    check_image "solaris5" $LOC
-
-		result=$?
-            if [ $result -eq 1 ]
-            then       
-                loc_prnt "We have a solaris5: \n%s" log $INST_DIR
-		SOLARIS5_IMG=${INST_DIR}
-		cd5=1
-		break=1
-            elif [ $result -eq 2 ]
-            then
-               	loc_prnt "We don't need a solaris5" logvb
-		SOLARIS5_IMG=""
-		cd5=1
-		break=1
-            else
-              loc_prnt "No solaris5 image has been found in \n%s " nolog $INST_DIR
-		echo
-              typeset -i retval=`expr $arr+1`
-            fi
-             	#echo "DEBUG: returning $retval"
-	fi
-	
-	if [ $3 = "langcd1" -a break -eq 0 ]
-	then	    	
-	    echo
-	    loc_prnt "Checking for a langcd image" log
-	    check_image "langcd1" $LOC
-	    result=$?
-	    if [ $result -eq 1 ] 
-	    then 
-		loc_prnt "We have a langcd: \n%s" log $INST_DIR
-		LANGCD_IMG1="${INST_DIR}"
-		langcd1=1
-		break=1
-	    elif [ $result -eq 2 ]
-	    then
-		loc_prnt "We don't need a langcd" log
-		LANGCD_IMG1=""
-		langcd1=1
-		break=1
-	    else
-	      loc_prnt "No langcd image has been found in \n%s " nolog $INST_DIR
-	      echo
-	      typeset -i retval=`expr $arr+1`
-	    fi
-	fi	# end if langcd    
-
-	if [ $3 = "langcd2" ]
-	then  	
-	    echo
-	    loc_prnt "Checking for a 2nd langcd image" log
-	    if [ -d $INIT_DIR/Solaris_$OS_VER ] # we have a 1of2, 2of2 or combined image
-	    then 
-		INST_DIR=$INIT_DIR/Solaris_$OS_VER/Product
-	    elif [ -d $INIT_DIR/components ]
-	    then
-		case $LOC in
-		seu)
-		    dir="Italian/$ARCH/Packages" 
-		    ;;
-		ceu)
-		    dir="French/$ARCH/Packages"
-		    ;;
-	        weu)
-                    dir="German/$ARCH/Packages"
-                    ;;
-		nam)
-		    dir="French/$ARCH/Packages"
-		    ;;
-		esac
-
-		INST_DIR=$INIT_DIR/components/$dir
-	    else # assume just a dir
-		INST_DIR=$INIT_DIR
-	    fi
-	    check_image "langcd2" $LOC
-	    result=$?
-	    
-	    if [ $result -eq 1 ] 
-	    then 
-		loc_prnt "We have a 2nd langcd: \n%s" log $INST_DIR
-		LANGCD_IMG2="${INST_DIR}"
-		langcd2=0
-		break=1
-	    elif [ $result -eq 2 ]
-	    then
-		loc_prnt "We don't need a 2nd langcd" logvb
-		LANGCD_IMG2=""
-		langcd2=0
-		break=1
-	    else
-	      loc_prnt "No 2nd langcd image has been found in \n%s " nolog $INST_DIR
-	      echo
-	      typeset -i retval=`expr $arr+1`
-	    fi
-	fi
-    fi
-    arr=`expr $arr + 1`
-done
-
-if [[ cd1 -eq 0 && "$2" != "all" && "$3" = "solaris1" ]]
-then
-    loc_prnt "You need at least a solaris1 image to add any locales." nolog
-    loc_prnt "Please provide the path to a solaris1 image." nolog
-    echo    
-fi
-if [[ cd2 -eq 0 && "$3" = "solaris2" ]]
-then
-    loc_prnt "No solaris2 image has been found in \n%s " nolog "${devices[*]}"
-
-fi
-if [[ cd3 -eq 0 && "$3" = "solaris3" ]]
-then
-    loc_prnt "No solaris3 image has been found in \n%s " nolog "${devices[*]}"
-fi
-
-if [[ cd4 -eq 0 && "$3" = "solaris4" ]]
-then
-    loc_prnt "No solaris4 image has been found in \n%s " nolog "${devices[*]}"
-fi
-
-if [[ cd5 -eq 0 && "$3" = "solaris5" ]]
-then
-    loc_prnt "No solaris5 image has been found in \n%s " nolog "${devices[*]}"
-fi
-
-if [[ langcd1 -eq 0 && "$3" = "langcd1" ]]
-then
-    loc_prnt "No langcd image has been found in \n%s " nolog "${devices[*]}"
-fi
-echo
-     
-return $retval
-}
-
 ###########################################################################
 ########################  check user function  ############################
 ###########################################################################
@@ -2527,7 +2089,7 @@ echo "------------------------------------------------------"
 loc_prnt "CD installation/net installed CD image option selected"
 echo "------------------------------------------------------"
 
-set -A sources solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2 
+set -A sources ${solarisImages[*]} langcd1 langcd2        #  solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2 
 
 # run the retrievecd.pl program for each of the installation sources
 
@@ -2555,7 +2117,8 @@ cdfound=0
 while [ "$cdfound" -eq 0 ] 
 do
 	CDLABEL="SPARC"
- 	if test $ARCH = "i386"; then
+ 	if [[ "$ARCH" = "i386" ]]
+        then
  		CDLABEL="X86";
  	fi;
 
