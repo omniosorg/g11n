@@ -478,12 +478,7 @@ then
     rm $LOCALES_LIST
 fi
 
-if [ "$3" = "all" ]
-then
-    loc_prnt "The following regions are available to install from $DEVICE" > $LOCALES_LIST
-echo >> $LOCALES_LIST
-
-elif [ "$TEST" = "n" ]
+if [[ "$TEST" != "y" || "$3" != "all" ]]
 then
     loc_prnt "The following regions are installed on %s on %s" nolog ${HOST} "${date}" > $LOCALES_LIST
     echo >> $LOCALES_LIST
@@ -524,7 +519,7 @@ do
 
 	if [ $core -eq 2 ] # if we have at least a core install (missing core pkgs are as good as no locale installed)
 	then
-	    for disk in solaris1 solaris2 solaris3 solaris4 solaris5 Solaris6 # check each image in turn
+	    for disk in solaris1 solaris2 solaris3 solaris4 solaris5 # check each image in turn
 	    do
 		if [ "$1" = "q" ] # quiet mode
 		then
@@ -559,7 +554,7 @@ do
 	
 	# if we have all the disks, result should be 8 here.
 
-	if [ $result -ge 6 ] # we have at least a core and bits of others: 4 disks x result=1 (pkgs there, but not all)
+	if [ $result -ge 5 ] # we have at least a core and bits of others: 4 disks x result=1 (pkgs there, but not all)
 	then
 	    if [ "$1" = "q" ]
 		then
@@ -608,10 +603,10 @@ do
 			langcd=`expr $langcd + $?`
 		    fi
 		fi
-	fi # end "if result >= 6"
+	fi # end "if result >= 5"
     fi # end if "test mode"
 
-    if [[ $result -eq 12 && $core -eq 2 && langcd -ge 2 ]] # if we have all pkgs incl messages
+    if [[ $result -eq 10 && $core -eq 2 && langcd -ge 2 ]] # if we have all pkgs incl messages
     then
 	case $1 in
 	locale)
@@ -631,7 +626,7 @@ do
 	    echo >> $LOCALES_LIST
 	    ;;
 	esac
-       elif [[ $result -eq 12 && $core -eq 2 ]] # no messages but all solaris_*
+       elif [[ $result -eq 10 && $core -eq 2 ]] # no messages but all solaris_*
     then
 	### need to translate "(no messages)" - KC
 	nomsg_str=`$gettext --domain=localeadm "(no messages)"`
@@ -689,7 +684,7 @@ cat $LOCALES_LIST
 if [ "$1" != "q" ] # check for silent running - no echoes
 then	
     loc_prnt "Done." nolog
-    if [[ "$TEST" != "y"  &&  "$3" != "all" ]]
+    if [ "$TEST" != "y" ]
     then
 	loc_prnt "A copy of this report can be found in %s" nolog $LOCALES_LIST
     fi
@@ -1068,7 +1063,7 @@ echo
 
 rcount=`$grep -c "($SEL_REGION)" $LOCALES_LIST`
 
-# start with solaris_* [1-6 in order], then langcd.
+# start with solaris_* [1-5 in order], then langcd.
 
 if [ $MESSAGES -eq 1 ] # if we only want messages, or we don't want messages
 then
@@ -1082,7 +1077,7 @@ then
 	fi
 	loc_prnt "Region %s's message packages will be installed." log "$SEL_REGION"
     else # we want everything but the langcd
-	forlist="solaris1 solaris2 solaris3 solaris4 solaris5 solaris6"
+	forlist="solaris1 solaris2 solaris3 solaris4 solaris5"
 	loc_prnt "Region %s will be installed without messages" log "$SEL_REGION"
     fi
 else
@@ -1094,9 +1089,9 @@ else
     else # we need all of the disk images
 	if [[ "$SEL_REGION" = "ceu" || "$SEL_REGION" = "seu" || "$SEL_REGION" = "weu" || $SEL_REGION = "nam" ]]
 	then # these regions need the 2nd langcd, so add it in
-	    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 solaris6 langcd1 langcd2"
+	    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2"
 	else
-	    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 solaris6 langcd1"
+	    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 langcd1"
 	fi
 	loc_prnt "Region %s will be installed." log "$SEL_REGION"
     fi
@@ -1115,7 +1110,7 @@ then
     echo >> $LOGFILE
 fi
 
-for cd in ${forlist} # e.g. for cd in solaris_1 solaris_2 solaris_3 solaris_4 solaris_5 solaris_6 (no messages)
+for cd in ${forlist} # e.g. for cd in solaris_1 solaris_2 solaris_3 solaris_4 solaris_5 (no messages)
 do
     # check do we have the image
     get_install_dir ${DEVICE} $SEL_REGION $cd # returns either 0 (good dir) or the position in the array of the bad dir
@@ -1171,9 +1166,6 @@ do
 	solaris5)
             ADD_DIR=${SOLARIS5_IMG}
             ;;
-	solaris6)
-	    ADD_DIR=${SOLARIS6_IMG}
-	    ;;
 	langcd1) 
 	    ADD_DIR=${LANGCD_IMG1}
 	    ;;
@@ -1354,7 +1346,7 @@ then # we only need the langcd
     forlist="langcd"
 else
     #forlist="1of2 2of2 langcd"
-    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 solaris6 langcd"
+    forlist="solaris1 solaris2 solaris3 solaris4 solaris5 langcd"
 fi
 #loc_prnt "Image list is %s" $forlist
 
@@ -1685,7 +1677,7 @@ core=`expr $core + $?`
 if [ $core -eq 2 ]
 then
     # we have something on the system, so check for the rest of the pkgs
-    for disk in solaris1 solaris2 solaris3 solaris4 solaris5 solaris6
+    for disk in solaris1 solaris2 solaris3 solaris4 solaris5
     do
 	if [ $ALTROOT = "y" ]
 	then
@@ -1696,7 +1688,7 @@ then
 	result=`expr $result + $?`
     done
 
-    if [ $result -ge 6 ] # we have a solaris1, solaris 2, solaris3, solaris4, solaris5, solaris6
+    if [ $result -ge 5 ] # we have a solaris1, solaris 2, solaris3, solaris4, solaris5
     then
 	if [ $ALTROOT = "y" ]
 	then
@@ -1719,12 +1711,12 @@ then
     fi
 fi
 
-if [[ $result -eq 6 && $core -eq 2 && langcd -ge 2 ]] # if we have a messages as well
+if [[ $result -eq 5 && $core -eq 2 && langcd -ge 2 ]] # if we have a messages as well
 then
     loc_prnt "The %s region (%s) is installed on this system" nolog "$SEL_STR" "$SEL_REGION"
     echo
     return 1    
-elif [[ $result -eq 12 && $core -eq 2 ]] # no messages but a solaris1, solaris2, solaris3, solaris4, solaris5 and solaris6
+elif [[ $result -eq 10 && $core -eq 2 ]] # no messages but a solaris1, solaris2, solaris3, solaris4 and solaris5
 then
     loc_prnt "The %s region (%s) is installed on this system without messages" nolog "$SEL_STR" "$SEL_REGION"
     echo
@@ -1780,7 +1772,7 @@ echo
 loc_prnt "Checking for a valid disk image:" log
 echo
 
-typeset -i pkgcount=0 arr=0 break=0 result=0 arr_size=0 retval=0 cd1=0 cd2=0 cd3=0 cd4=0 cd5=0 cd6=0 langcd1=0 langcd2=0
+typeset -i pkgcount=0 arr=0 break=0 result=0 arr_size=0 retval=0 cd1=0 cd2=0 cd3=0 cd4=0 cd5=0 langcd1=0 langcd2=0
 
 if [[ "$LOC" = "ceu" || "$LOC" = "seu"  || "$LOC" = "weu" || "$LOC" = "nam" ]]
 then
@@ -1790,16 +1782,15 @@ fi
 get_devices $1
 arr_size=${#DEVICES[*]}
 
-if [ $arr_size -lt 7 ] # if we have less than 6 args, we have to up the number to at least 7
+if [ $arr_size -lt 6 ] # if we have less than 6 args, we have to up the number to at least 6
 then
     if [ "${DEVICES[0]}" = "${DEVICES[$arr_size -1]}" ]
     then 
-	set -A devices ${DEVICES[*]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[*]}
+	set -A devices ${DEVICES[*]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[0]} ${DEVICES[*]}
 	cd2=1
 	cd3=1
 	cd4=1
 	cd5=1
-	cd6=1
 	langcd=1 # can we always assume a langcd? (what about -m?) - KC
 	echo
 	loc_prnt "Devices are %s " nolog "${DEVICES[*]}"
@@ -2089,33 +2080,6 @@ do
             fi
              	#echo "DEBUG: returning $retval"
 	fi
-
-        if [ $3 = "solaris6" -a break -eq 0 ]
-        then
-            echo
-            loc_prnt "Checking for a solaris6 image" log
-            check_image "solaris6" $LOC
-
-                result=$?
-            if [ $result -eq 1 ]
-            then
-                loc_prnt "We have a solaris6: \n%s" log $INST_DIR
-                SOLARIS6_IMG=${INST_DIR}
-                cd6=1
-                break=1
-            elif [ $result -eq 2 ]
-            then
-                loc_prnt "We don't need a solaris6" logvb
-                SOLARIS6_IMG=""
-                cd6=1
-                break=1
-            else
-              loc_prnt "No solaris6 image has been found in \n%s " nolog $INST_DIR
-                echo
-              typeset -i retval=`expr $arr+1`
-            fi
-                #echo "DEBUG: returning $retval"
-        fi
 	
 	if [ $3 = "langcd1" -a break -eq 0 ]
 	then	    	
@@ -2221,11 +2185,6 @@ then
     loc_prnt "No solaris5 image has been found in \n%s " nolog "${devices[*]}"
 fi
 
-if [[ cd6 -eq 0 && "$3" = "solaris6" ]]
-then
-    loc_prnt "No solaris6 image has been found in \n%s " nolog "${devices[*]}"
-fi
-
 if [[ langcd1 -eq 0 && "$3" = "langcd1" ]]
 then
     loc_prnt "No langcd image has been found in \n%s " nolog "${devices[*]}"
@@ -2298,20 +2257,22 @@ PKGTMP=/var/run/pkg.${CMD}
 
 make_lock() {
 
-if [ -L /var/run/localeadm.lock ]
+if [ -L /var/run/localeadm.lock.* ]
 then
-    lock=`ls -la /var/run/localeadm.lock | awk '{ print $NF}'`
+    lock=`ls -la /var/run/localeadm.lock.* | awk '{ print $NF}'`
+    pid=`ls -la /var/run/localeadm.lock.* |sed 's/.*lock.//'`
 
-    loc_prnt "Warning: Another localeadm process seems to be running on display %s" nolog $lock
+    loc_prnt "Warning: Another localeadm process (PID %s) seems to be running on display %s" nolog $pid $lock
     echo
     loc_prnt "Please wait until this process is finished, and if necessary remove the /var/run/localeadm.lock file" nolog
     exit 0
 else
     if [ $DISPLAY="" ]
     then
-	DISPLAY="${HOST}:0.0"
+	DISPLAY="${HOST}:0.0"	
     fi
-    ln -s $DISPLAY /var/run/localeadm.lock
+    LOCKPID=`ps -f| awk '/localead/ && !/awk/ {print $2}'|head -n 1`
+    ln -s $DISPLAY /var/run/localeadm.lock.$LOCKPID
 fi
 }
 
@@ -2321,9 +2282,10 @@ fi
 
 rem_lock() {
 
-    if [ -L /var/run/localeadm.lock ]
+    LOCKPID=`ps -f| awk '/localead/ && !/awk/ {print $2}'|head -n 1`
+    if [ -L /var/run/localeadm.lock.$LOCKPID ]
     then
-	rm /var/run/localeadm.lock
+	rm /var/run/localeadm.lock.$LOCKPID
     fi
 }
 
@@ -2393,11 +2355,11 @@ echo "------------------------------------------------------"
 loc_prnt "CD installation/net installed CD image option selected"
 echo "------------------------------------------------------"
 
-set -A sources solaris1 solaris2 solaris3 solaris4 solaris5 solaris6 langcd 
+set -A sources solaris1 solaris2 solaris3 solaris4 solaris5 langcd 
 
 # run the retrievecd.pl program for each of the installation sources
 
-for index in 0 1 2 3 4 5 6
+for index in 0 1 2 3 4 5
 do
 
 echo ""
@@ -2420,6 +2382,10 @@ cdfound=0
 
 while [ "$cdfound" -eq 0 ] 
 do
+	CDLABEL="SPARC"
+ 	if test $ARCH = "i386"; then
+ 		CDLABEL="X86";
+ 	fi;
 
 	if [ "${sources[index]}" == "solaris1" ] 
 	then
@@ -2446,13 +2412,11 @@ do
 	elif [ "${sources[index]}" == "solaris2" ] 
 	then
 
-		# Path should have _2 in path name if it is solaris2
-		# try removing _2 from end of path to check if it is cd2
+		#.volume.inf indicates what cd the image is. 		
+		cdcheck=`grep "SOL_10.*"$CDLABEL"_2" $cdpath/.volume.inf`
 
-		cdcheck=`echo $cdpath | sed -e 's/_2//g`
-
-		# if the two strings differ then it is install cd2
-		if [ "$cdpath" != "$cdcheck" ]
+		#if it is not a zero length string, then this is the right cd
+		if [ ! -z "$cdcheck" ]
 		then
 			cdfound=1
 		else 
@@ -2465,13 +2429,11 @@ do
 	elif [ "${sources[index]}" == "solaris3" ] 
 	then
 
-		# Path should have _3 in path name if it is solaris3
-		# try removing _3 from end of path to check if it is cd3
-
-		cdcheck=`echo $cdpath | sed -e 's/_3//g`
-
-		# if the two strings differ then it is install cd3
-		if [ "$cdpath" != "$cdcheck" ]
+		#.volume.inf indicates what cd the image is.
+		cdcheck=`grep "SOL_10.*"$CDLABEL"_3" $cdpath/.volume.inf`
+		
+		#if it is not a zero length string, then this is the right cd
+		if [ ! -z "$cdcheck" ]
 		then
 			cdfound=1
 		else 
@@ -2484,13 +2446,11 @@ do
 	elif [ "${sources[index]}" == "solaris4" ] 
 	then
 
-		# Path should have _4 in path name if it is solaris4
-		# try removing _4 from end of path to check if it is cd4
+		#.volume.inf indicates what cd the image is.
+		cdcheck=`grep "SOL_10.*"$CDLABEL"_4" $cdpath/.volume.inf`
 
-		cdcheck=`echo $cdpath | sed -e 's/_4//g`
-
-		# if the two strings differ then it is install cd4
-		if [ "$cdpath" != "$cdcheck" ]
+		#if it is not a zero length string, then this is the right cd
+		if [ ! -z "$cdcheck" ]
 		then
 			cdfound=1
 		else 
@@ -2502,13 +2462,11 @@ do
 	elif [ "${sources[index]}" == "solaris5" ] 
 	then
 
-		# Path should have _5 in path name if it is solaris5
-		# try removing _5 from end of path to check if it is cd5
+		#.volume.inf indicates what cd the image is.
+		cdcheck=`grep "SOL_10.*"$CDLABEL"_5" $cdpath/.volume.inf`
 
-		cdcheck=`echo $cdpath | sed -e 's/_5//g`
-
-		# if the two strings differ then it is install cd5
-		if [ "$cdpath" != "$cdcheck" ]
+		#if it is not a zero length string, then this is the right cd
+		if [ ! -z "$cdcheck" ]
 		then
 			cdfound=1
 		else 
@@ -2517,34 +2475,14 @@ do
 			read cdpath
 		fi
 
-        elif [ "${sources[index]}" == "solaris6" ]
-        then
-
-                # Path should have _6 in path name if it is solaris6
-                # try removing _6 from end of path to check if it is cd6
-
-                cdcheck=`echo $cdpath | sed -e 's/_6//g`
-
-                # if the two strings differ then it is install cd6
-                if [ "$cdpath" != "$cdcheck" ]
-                then
-                        cdfound=1
-                else
-                        echo ""
-                        loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-                        read cdpath
-                fi
-
 	elif [ "${sources[index]}" == "langcd" ] 
 	then
 
-		# Path should have lang in path name if it is langcd
-		# try removing lang from  path to check if it is langcd
+		#.volume.inf indicates what cd the image is.
+		cdcheck=`grep "SOL_10.*LANG_"$CDLABEL $cdpath/.volume.inf`
 
-		cdcheck=`echo $cdpath | sed -e 's/lang//g`
-
-		# if the two strings differ then it is install cd langcd
-		if [ "$cdpath" != "$cdcheck" ]
+		#if it is not a zero length string, then this is the right cd
+		if [ ! -z "$cdcheck" ]
 		then
 			cdfound=1
 		else 
@@ -2736,16 +2674,17 @@ fi
 prompt_user() {
 
 if [ ! -f $CONFIGFILE".old" ]   # Checking if config file has been freshly created
-then
-    echo
-    loc_prnt "You do not appear to have created a fresh config file since you began using this application." 
+then echo loc_prnt "You do not appear to have created a fresh config file since you began using this application." 
     loc_prnt "If you have a set of Solaris install images available to you, it is recommended that you do so before proceeding."
 
     echo
-    typeset -l ans
-    # using gettext rather than a call to loc_prnt 'cos we want to print out thestring using the 'read' cmd
-    ans_str=`$gettext --domain=localeadm "Do you wish to create a new config file? [y/n]: "`
-    read ans?"${ans_str}"
+
+    typeset -l ans 
+    while [ -z $ans ]; do
+	echo       # using gettext rather than a call to loc_prnt 'cos we want to print out thestring using the 'read' cmd
+	ans_str=`$gettext --domain=localeadm "Do you wish to create a new config file? [y/n]: "`
+	read ans?"${ans_str}"
+    done
   
     typeset -i yes=0 no=0
 
@@ -2808,7 +2747,8 @@ OS_VER=${RELEASE#*.} #have to hack for testing on linux
 
 CONFIGFILE=/usr/sadm/lib/localeadm/Locale_config_S${OS_VER}.txt
 
-trap 'rm -f /var/run/localeadm.lock 2>&1 > /dev/null' 0 1 2 3 10 11 15 #Need to remove the lockfile if the running of the application is interupted
+SELFPID=`ps -f| awk '/localead/ && !/awk/ {print $2}'|head -n 1`
+trap 'rm -f /var/run/localeadm.lock.$SELFPID 2>&1 > /dev/null' 0 1 2 3 10 11 15 #Need to remove the lockfile if the running of the application is interupted
 
 #if [ ! -f $CONFIGFILE ]
 #then
