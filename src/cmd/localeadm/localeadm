@@ -510,7 +510,7 @@ do
 	langcd=4
     else 
 	# first, check for core pkgs (minimum locale pkgs)
-	if [ $ALTROOT = "y" ]
+	if [ "$ALTROOT" = "y" ]
 	then
 	    check_locale $region "alt" "c_solaris" # check if an alternative root was used
 	else
@@ -529,7 +529,7 @@ do
 	    do
 		if [ "$1" = "q" ] # quiet mode
 		then
-		    if [ $ALTROOT = "y" ]
+		    if [ "$ALTROOT" = "y" ]
 		    then
 			check_locale $region "alt" "$disk" 2>&1 > /dev/null
 		    else
@@ -542,7 +542,7 @@ do
 		    fi
 		    result=`expr $result + $?`
 		else
-		    if [ $ALTROOT = "y" ]
+		    if [ "$ALTROOT" = "y" ]
 		    then
 			check_locale $region "alt" "$disk" 
 		    else
@@ -564,7 +564,7 @@ do
 	then
 	    if [ "$1" = "q" ]
 		then
-		    if [ $ALTROOT = "y" ]
+		    if [ "$ALTROOT" = "y" ]
 		    then
 			check_locale $region "alt" "langcd1" 2>&1 > /dev/null
 		    else
@@ -575,7 +575,7 @@ do
 		    # some regions need a 2nd langcd, so need to check for that
 		    if [[ $region = "ceu" || "$region" = "seu" || $region = "weu" || $region = "nam" ]]
 		    then
-			if [ $ALTROOT = "y" ]
+			if [ "$ALTROOT" = "y" ]
 			then
 			    check_locale $region "alt" langcd2 2>&1 > /dev/null
 			else
@@ -584,7 +584,7 @@ do
 			langcd=`expr $langcd + $?`
 		    fi
 		else # end "if quiet mode"
-		    if [ $ALTROOT = "y" ]
+		    if [ "$ALTROOT" = "y" ]
 		    then
 			check_locale $region "alt" "langcd1"
 		    else
@@ -600,7 +600,7 @@ do
 		    # some regions need a 2nd langcd, so need to check for that
 		    if [[ $region = "ceu" || "$region" = "seu" ||  "$region" = "weu" || $region = "nam" ]]
 		    then
-			if [ $ALTROOT = "y" ]
+			if [ "$ALTROOT" = "y" ]
 			then
 			    check_locale $region "alt" langcd2
 			else
@@ -729,10 +729,10 @@ is_correct_cd() {
 	fi
 	# $cdpath is set elsewhere
 	#.volume.inf indicates what cd the image is. 		
-        if [ $cdName = "solaris" ]
+        if [ "$cdName" = "solaris" ]
         then
 		cdcheck=`grep "SOL_[0-9]*_.*"$CDLABEL"_*"$cdNum $cdpath/.volume.inf`
-	elif [ $cdName = "langcd" ]
+	elif [ "$cdName" = "langcd" ]
 	then
 		cdcheck=`grep "SOL_[0-9]*.*LANG_"$CDLABEL"_*"$cdNum $cdpath/.volume.inf`
 	fi
@@ -1112,12 +1112,7 @@ if [ $MESSAGES -eq 1 ] # if we only want messages, or we don't want messages
 then
     if [ $rcount -gt 0 ] # locale was installed without msgs
     then # we only need the langcd
-	if [[ "$SEL_REGION" = "ceu" || "$SEL_REGION" = "weu"  || "$SEL_REGION" = "seu" || $SEL_REGION = "nam" ]]
-	then
-	    forlist="langcd1 langcd2"
-	else
-	    forlist="langcd1"
-	fi
+	forlist="langcd1 langcd2"
 	loc_prnt "Region %s's message packages will be installed." log "$SEL_REGION"
     else # we want everything but the langcd
 	forlist="${solarisImages[*]}"     #  "solaris1 solaris2 solaris3 solaris4 solaris5"
@@ -1130,12 +1125,7 @@ else
 	echo
 	return 
     else # we need all of the disk images
-	if [[ "$SEL_REGION" = "ceu" || "$SEL_REGION" = "seu" || "$SEL_REGION" = "weu" || $SEL_REGION = "nam" ]]
-	then # these regions need the 2nd langcd, so add it in
-	    forlist="${solarisImages[*]} langcd1 langcd2"             #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2"
-	else
-	    forlist="${solarisImages[*]} langcd1"        #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd1"
-	fi
+	forlist="${solarisImages[*]} langcd1 langcd2"             #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2"
 	loc_prnt "Region %s will be installed." log "$SEL_REGION"
     fi
 fi
@@ -1146,7 +1136,7 @@ then
 #    echo "Install_Dir=${ONE_OF_TWO_IMG} ${TWO_OF_TWO_IMG} ${LANGCD_IMG1} ${LANGCD_IMG2}" >> $LOGFILE
     echo "Install_Dir=${DEVICES[*]}" >> $LOGFILE
     echo "Region=$SEL_REGION" >> $LOGFILE
-    if [ $"ALTROOT" = "y" ]
+    if [ "$ALTROOT" = "y" ]
     then
 	echo "Alt_Root=$ALT_ROOT_DIR" >> $LOGFILE
     fi
@@ -1224,7 +1214,7 @@ do
     do
 	echo
 	loc_prnt "Checking package %s......" nolog $package
-	if [ $ALTROOT = "y" ] # if alternate root was set (installing somewhere other than /)....
+	if [ "$ALTROOT" = "y" ] # if alternate root was set (installing somewhere other than /)....
 	then
 	    pkginfo -q -R $ALT_ROOT_DIR $pkg
 	else
@@ -1345,7 +1335,7 @@ fi
 
 rem_locales() {
 
-typeset -i num_fails=0 fail=0
+typeset -i num_fails=0 fails=0
 
 SEL_REGION=$1
 check_region $SEL_REGION "uninstall"
@@ -1377,7 +1367,7 @@ fi
 if [ "$2" != "y" ] # don't need to record stuff if we're just doing test mode
 then
     echo "Region=$SEL_REGION" >> $LOGFILE
-    if [ $"ALTROOT" = "y" ]
+    if [ "$ALTROOT" = "y" ]
     then
 	echo "Alt_Root=$ALT_ROOT_DIR" >> $LOGFILE
     fi
@@ -1400,7 +1390,7 @@ do
 	install_flag=0 # reset each time around
 	loc_prnt "Checking package %s......" log $package
     
-	if [ $ALTROOT = "y" ]
+	if [ "$ALTROOT"  = "y" ]
 	then
 	    pkginfo -q -R $ALT_ROOT_DIR $pkg
 	else
@@ -1501,6 +1491,7 @@ do
     done          #end "for package...."
 done              #end "for cd...."
 
+
 # now check were there any packages that failed
 if [ $fails -eq 1 ]
 then
@@ -1531,7 +1522,7 @@ add_region=$1
 # get the name of the region from the config file
 region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $add_region | $awk '{print $1}'`
 
-if [ $region_name != "Asia" ] #Asian does not get entered for a normal install
+if [ "$region_name" != "Asia" ] #Asian does not get entered for a normal install
 then
 
 #echo "DEBUG: region name is $region_name"
@@ -1709,7 +1700,7 @@ typeset -i result=0 core=0 langcd=0
 check_region $SEL_REGION "check"
 
 # check for core cluster pkgs first
-if [ $ALTROOT = "y" ]
+if [ "$ALTROOT" = "y" ]
 then
     check_locale $SEL_REGION "alt" "c_solaris"
 else
@@ -1722,7 +1713,7 @@ then
     # we have something on the system, so check for the rest of the pkgs
     for disk in ${solarisImages[*]}       #  solaris1 solaris2 solaris3 solaris4 solaris5
     do
-	if [ $ALTROOT = "y" ]
+	if [ "$ALTROOT" = "y" ]
 	then
 	    check_locale $SEL_REGION "alt" "$disk"
 	else
@@ -1733,7 +1724,7 @@ then
 
     if [ $result -ge 5 ] # we have a solaris1, solaris 2, solaris3, solaris4, solaris5
     then
-	if [ $ALTROOT = "y" ]
+	if [ "$ALTROOT" = "y" ]
 	then
 	    check_locale $SEL_REGION "alt" langcd1
 	else
@@ -1743,7 +1734,7 @@ then
 
 	if [[ $SEL_REGION = "ceu" || "$SEL_REGION" = "seu" || "$SEL_REGION" = "weu" || $SEL_REGION = "nam" ]]
 	then
-	    if [ $ALTROOT = "y" ]
+	    if [ "$ALTROOT" = "y" ]
 	    then
 		check_locale $SEL_REGION "alt" langcd2
 	    else
@@ -1881,7 +1872,7 @@ do
 	    rm /var/run/arch.txt
 	fi
 
-	if [ $pkg_arch != $ARCH -a break -eq 0 ] # if the pkgs aren't the same arch as the system
+	if [ "$pkg_arch" != $ARCH -a break -eq 0 ] # if the pkgs aren't the same arch as the system
  	then
 	    typeset -i retval=`expr $arr+1`
 	    echo
@@ -2001,7 +1992,7 @@ then
     loc_prnt "Please wait until this process is finished, and if necessary remove the /var/run/localeadm.lock file" nolog
     exit 0
 else
-    if [ $DISPLAY="" ]
+    if [ "$DISPLAY" = "" ]
     then
 	DISPLAY="${HOST}:0.0"	
     fi
