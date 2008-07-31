@@ -42,6 +42,7 @@ set -A solarisImages solaris1 solaris2 solaris3 solaris4 solaris5
 set -A langcdImages langcd1 langcd2
 # MP now only function print_system is using langcd names, all others where removed
 
+
 ###########################################################################
 ###################    print localized messages   #########################
 ###########################################################################
