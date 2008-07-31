@@ -37,7 +37,10 @@ gettext=/usr/bin/gettext
 
 
 set -A solarisImages solaris1 solaris2 solaris3 solaris4 solaris5
+# still have some references to solaris1 image, but that is where the check for CD/DVD is performed
+
 set -A langcdImages langcd1 langcd2
+# MP now only function print_system is using langcd names, all others where removed
 
 ###########################################################################
 ###################    print localized messages   #########################
@@ -497,6 +500,7 @@ for region in aua cam ceu eeu mea naf nam neu sam seu weu ja korean china hongko
 do
     result=0 # first, reset all vars to 0
     core=0
+    langcd=0
     
     get_region_name $region # get the region name we'll be looking for
 
@@ -506,21 +510,24 @@ do
     if [ "$2" = "y" ] # test mode, don't need to check anything
     then	
 	core=2
-	result=8 # set the result to the total for all disks
-	langcd=4
+	result=`expr ${#solarisImages[*]} '*' 2`   # set the result to the total for all disks
+	langcd=`expr ${#langcdImages[*]} '*' 2`
     else 
+	expectedResult=`expr ${#solarisImages[*]} '*' 2`   # all solaris checks succeedes
+	expectedLangcd=`expr ${#langcdImages[*]} '*' 2`    # all langcd check succeedes
 	# first, check for core pkgs (minimum locale pkgs)
 	if [ "$ALTROOT" = "y" ]
 	then
-	    check_locale $region "alt" "c_solaris" # check if an alternative root was used
+            checkImage="alt"         # check if an alternative root was used
 	else
 	    if [ "$3" = "all" ]
 	    then
-		check_locale $region "disk" "c_solaris" # checking an install dir
+               checkImage="disk"     # checking an install dir
 	    else
-		check_locale $region "mach" "c_solaris" # checking locales installed on / on the machine
+                checkImage="mach"    # checking locales installed on / on the machine
 	    fi
 	fi
+	check_locale $region "$checkImage" "c_solaris" # checking locales installed on / on the machine
 	core=`expr $core + $?` # get the result 
 
 	if [ $core -eq 2 ] # if we have at least a core install (missing core pkgs are as good as no locale installed)
@@ -529,90 +536,35 @@ do
 	    do
 		if [ "$1" = "q" ] # quiet mode
 		then
-		    if [ "$ALTROOT" = "y" ]
-		    then
-			check_locale $region "alt" "$disk" 2>&1 > /dev/null
-		    else
-			if [ "$3" = "all" ]
-			then
-			    check_locale $region "disk" "$disk" 2>&1 > /dev/null
-			else
-			    check_locale $region "mach" "$disk" 2>&1 > /dev/null
-			fi
-		    fi
+	 	    check_locale $region "$checkImage" "$disk" 2>&1 > /dev/null
 		    result=`expr $result + $?`
 		else
-		    if [ "$ALTROOT" = "y" ]
-		    then
-			check_locale $region "alt" "$disk" 
-		    else
-			if [ "$3" = "all" ]
-			then
-			    check_locale $region "disk" "$disk"
-			else
-			    check_locale $region "mach" "$disk"
-			fi
-		    fi
+	            check_locale $region "$checkImage" "$disk" 
 		    result=`expr $result + $?`
 		fi
 	    done
 	fi # end "if core=2"
 	
-	# if we have all the disks, result should be 8 here.
 
-	if [ $result -ge 5 ] # we have at least a core and bits of others: 4 disks x result=1 (pkgs there, but not all)
+	if [ $result -eq $expectedResult  ]  
 	then
 	    if [ "$1" = "q" ]
 		then
-		    if [ "$ALTROOT" = "y" ]
-		    then
-			check_locale $region "alt" "langcd1" 2>&1 > /dev/null
-		    else
-			check_locale $region "mach" "langcd1" 2>&1 > /dev/null
-		    fi
+		    check_locale $region "$checkImage" "langcd1" 2>&1 > /dev/null
 		    langcd=`expr $langcd + $?`
-
-		    # some regions need a 2nd langcd, so need to check for that
-		    if [[ $region = "ceu" || "$region" = "seu" || $region = "weu" || $region = "nam" ]]
-		    then
-			if [ "$ALTROOT" = "y" ]
-			then
-			    check_locale $region "alt" langcd2 2>&1 > /dev/null
-			else
-			    check_locale $region "mach" langcd2 2>&1 > /dev/null
-			fi
-			langcd=`expr $langcd + $?`
-		    fi
+		    check_locale $region "$checkImage" langcd2 2>&1 > /dev/null
+		    langcd=`expr $langcd + $?`
 		else # end "if quiet mode"
-		    if [ "$ALTROOT" = "y" ]
-		    then
-			check_locale $region "alt" "langcd1"
-		    else
-			if [ "$3" = "all" ]
-			then
-			    check_locale $region "disk" "langcd1"
-			else
-			    check_locale $region "mach" "langcd1"
-			fi
-		    fi
+		    check_locale $region "$checkImage" "langcd1"
 		    langcd=`expr $langcd + $?`
-
-		    # some regions need a 2nd langcd, so need to check for that
-		    if [[ $region = "ceu" || "$region" = "seu" ||  "$region" = "weu" || $region = "nam" ]]
-		    then
-			if [ "$ALTROOT" = "y" ]
-			then
-			    check_locale $region "alt" langcd2
-			else
-			    check_locale $region "mach" langcd2
-			fi
-			langcd=`expr $langcd + $?`
-		    fi
+		    check_locale $region "$checkImage" langcd2
+	            langcd=`expr $langcd + $?`
 		fi
 	fi # end "if result >= 5"
     fi # end if "test mode"
 
-    if [[ $result -eq 10 && $core -eq 2 && langcd -ge 2 ]] # if we have all pkgs incl messages
+        print "DEBUG core: $core, result: $result, langcd: $langcd \n"
+    if [[ $result -eq $expectedResult && $core -eq 2 && langcd -eq $expectedLangcd ]] # if we have all pkgs incl messages
     then
 	case $1 in
 	locale)
@@ -632,7 +584,7 @@ do
 	    echo >> $LOCALES_LIST
 	    ;;
 	esac
-       elif [[ $result -eq 10 && $core -eq 2 ]] # no messages but all solaris_*
+    elif [[ $result -eq $expectedResult && $core -eq 2 ]] # no messages but all solaris_*
     then
 	### need to translate "(no messages)" - KC
 	nomsg_str=`$gettext --domain=localeadm "(no messages)"`
@@ -655,29 +607,33 @@ do
 	    echo >> $LOCALES_LIST
 	    ;;
 	esac
-    elif [[ $core -eq 2 ]] # a core install, but nothing else (or missing pkgs)
-    then
-	### need to translate "(incomplete)" - KC
-	incomp_str=`$gettext --domain=localeadm "(incomplete)"`
-
-	case $1 in
-	locale)
-	    print_$region "${SEL_STR} ${incomp_str}" >> $LOCALES_LIST
-	    ;;
-	code)
-	    cprint_$region "${SEL_STR} ${incomp_str}" >> $LOCALES_LIST
-	    ;;
-	short)
-	    echo >> $LOCALES_LIST
-	    echo "$SEL_STR ${incomp_str} ($region)" | $tee -a $LOCALES_LIST
-	    echo >> $LOCALES_LIST
-	    ;;
-	q)
-	    echo >> $LOCALES_LIST
-	    echo "$SEL_STR ${incomp_str} ($region)" >> $LOCALES_LIST
-	    echo >> $LOCALES_LIST
-	    ;;
-	esac
+    # MP this is tricky, this can also mean that core packages are shared - e.g. hongkong and taiwan
+    # therefore after removing taiwan those are left on the system and it shows "taiwan incomplete"
+    # as a result honkong does not try to remove those packages either, taiwan uses them....
+    # CR 6638265 - just comment the section below
+#    elif [[ $core -eq 2 ]] # a core install, but nothing else (or missing pkgs)
+#    then
+#	### need to translate "(incomplete)" - KC
+#	incomp_str=`$gettext --domain=localeadm "(incomplete)"`
+#
+#	case $1 in
+#	locale)
+#	    print_$region "${SEL_STR} ${incomp_str}" >> $LOCALES_LIST
+#	    ;;
+#	code)
+#	    cprint_$region "${SEL_STR} ${incomp_str}" >> $LOCALES_LIST
+#	    ;;
+#	short)
+#	    echo >> $LOCALES_LIST
+#	    echo "$SEL_STR ${incomp_str} ($region)" | $tee -a $LOCALES_LIST
+#	    echo >> $LOCALES_LIST
+#	    ;;
+#	q)
+#	    echo >> $LOCALES_LIST
+#	    echo "$SEL_STR ${incomp_str} ($region)" >> $LOCALES_LIST
+#	    echo >> $LOCALES_LIST
+#	    ;;
+#	esac
     fi
 
 done # end "for i in aua....."
@@ -848,7 +804,7 @@ then
     return 2 # we have all of the packages
 elif [ $count -gt 0 ]
 then
-    loc_prnt "Not all packages found (%s out of %s)." nolog $count $pkg_count
+    loc_prnt "Not all packages found (%s out of %s)." log $count $pkg_count
     echo
     return 1 #we have some packages, but not all of them
 else
@@ -879,7 +835,7 @@ fi
 # find out if it's a unique locale name (partials give problems e.g es_AR vs. es_ES)
 # e.g. this line will return 1 for "es_ES", but about 9 for "es", so "es" isn't valid (you can't
 # figure out which of the 9 spanish locales you want)
-typeset -i loc_count=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i " $locale" | wc -l`
+typeset -i loc_count=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i " $locale" | wc -l` # MP the grep should not be -i for "ar would match bot h ar_EG and es_AR and possibly others, es_SV and sv_SE
 
 if [ $loc_count -ne 1 ]
 then
@@ -897,6 +853,7 @@ get_region_name $locale
 
 if [ "$SEL_STR" = "Locale" ] # a locale name was entered not a region name
 then
+    # MP is this if really necessary??? the grep -awk seems to work for all locales
     if [ "$locale" = "ar_eg" ] 
     then
 	SEL_REGION="naf"
@@ -1112,7 +1069,7 @@ if [ $MESSAGES -eq 1 ] # if we only want messages, or we don't want messages
 then
     if [ $rcount -gt 0 ] # locale was installed without msgs
     then # we only need the langcd
-	forlist="langcd1 langcd2"
+	forlist="${langcdImages[*]}"       #   "langcd1 langcd2"
 	loc_prnt "Region %s's message packages will be installed." log "$SEL_REGION"
     else # we want everything but the langcd
 	forlist="${solarisImages[*]}"     #  "solaris1 solaris2 solaris3 solaris4 solaris5"
@@ -1125,7 +1082,7 @@ else
 	echo
 	return 
     else # we need all of the disk images
-	forlist="${solarisImages[*]} langcd1 langcd2"             #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2"
+	forlist="${solarisImages[*]} ${langcdImages[*]}"   #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2"
 	loc_prnt "Region %s will be installed." log "$SEL_REGION"
     fi
 fi
@@ -1376,10 +1333,10 @@ fi
 
 if [ $MESSAGES -eq 1 ] # we only want messages
 then # we only need the langcd
-    forlist="langcd1"
+    forlist="${langcdImages[*]}"              #  "langcd1 langcd2"
 else
     #forlist="1of2 2of2 langcd"
-    forlist="${solarisImages[*]} langcd1"      #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd"
+    forlist="${solarisImages[*]} ${langcdImages[*]}"      #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd"
 fi
 #loc_prnt "Image list is %s" $forlist
 
@@ -1702,55 +1659,43 @@ check_region $SEL_REGION "check"
 # check for core cluster pkgs first
 if [ "$ALTROOT" = "y" ]
 then
-    check_locale $SEL_REGION "alt" "c_solaris"
+    checkPath="alt"
 else
-    check_locale $SEL_REGION "mach" "c_solaris"
+    checkPath="mach"
 fi
+
+check_locale $SEL_REGION "$checkPath" "c_solaris"
 core=`expr $core + $?`
+expected=`expr ${#solarisImages[*]} '*' 2`  # check_locale succeeded on all CDs, all packages from all CDs are installed
 
 if [ $core -eq 2 ]
 then
     # we have something on the system, so check for the rest of the pkgs
     for disk in ${solarisImages[*]}       #  solaris1 solaris2 solaris3 solaris4 solaris5
     do
-	if [ "$ALTROOT" = "y" ]
-	then
-	    check_locale $SEL_REGION "alt" "$disk"
-	else
-	    check_locale $SEL_REGION "mach" "$disk"
-	fi
+	check_locale $SEL_REGION "$checkPath" "$disk"
 	result=`expr $result + $?`
     done
-
-    if [ $result -ge 5 ] # we have a solaris1, solaris 2, solaris3, solaris4, solaris5
+    
+    print "DEBUG:: expected:$expected, result:$result\n"
+    if [ "$result" -eq "$expected" ] # we have a solaris1, solaris 2, solaris3, solaris4, solaris5
     then
-	if [ "$ALTROOT" = "y" ]
-	then
-	    check_locale $SEL_REGION "alt" langcd1
-	else
-	    check_locale $SEL_REGION "mach" langcd1
-	fi
-	langcd=`expr $result + $?`
-
-	if [[ $SEL_REGION = "ceu" || "$SEL_REGION" = "seu" || "$SEL_REGION" = "weu" || $SEL_REGION = "nam" ]]
-	then
-	    if [ "$ALTROOT" = "y" ]
-	    then
-		check_locale $SEL_REGION "alt" langcd2
-	    else
-		check_locale $SEL_REGION "mach" langcd2
-	    fi
-	langcd=`expr $result + $?`
-	fi
+        for disk in ${langcdImages[*]}
+	do
+	    check_locale $SEL_REGION "$checkPath" "$disk"
+	    langcd=`expr $langcd + $?`
+	done
     fi
 fi
 
-if [[ $result -eq 5 && $core -eq 2 && langcd -ge 2 ]] # if we have a messages as well
+print "DEBUG $SEL_REGION langcd: $langcd, solaris:$result, core:$core\n"
+
+if [[ $result -eq $expected && $core -eq 2 && langcd -ge 2 ]] # if we have a messages as well
 then
     loc_prnt "The %s region (%s) is installed on this system" nolog "$SEL_STR" "$SEL_REGION"
     echo
     return 1    
-elif [[ $result -eq 10 && $core -eq 2 ]] # no messages but a solaris1, solaris2, solaris3, solaris4 and solaris5
+elif [[ $result -eq $expected && $core -eq 2 ]] # no messages but a solaris1, solaris2, solaris3, solaris4 and solaris5
 then
     loc_prnt "The %s region (%s) is installed on this system without messages" nolog "$SEL_STR" "$SEL_REGION"
     echo
@@ -1973,7 +1918,7 @@ echo "Operation=$CMD" >> $LOGFILE
 
 loc_prnt "Log file is %s" nolog $LOGFILE
 
-PKGTMP=/var/run/pkg.${CMD}
+PKGTMP=/var/run/pkg.${CMD}   # MP is this variable PKGTMP used elsewhere too???
 }
 
 ###########################################################################
@@ -2080,33 +2025,36 @@ echo "------------------------------------------------------"
 loc_prnt "CD installation/net installed CD image option selected"
 echo "------------------------------------------------------"
 
-set -A sources ${solarisImages[*]} langcd1 langcd2        #  solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2 
+set -A sources ${solarisImages[*]} ${langcdImages[*]}        #  solaris1 solaris2 solaris3 solaris4 solaris5 langcd1 langcd2 
 
 # run the retrievecd.pl program for each of the installation sources
 
-for index in 0 1 2 3 4 5 6
+#for index in 0 1 2 3 4 5 6
+#for((index=0; index<${#sources[*]}; index++))
+index=0
+while [ index -lt ${#sources[*]} ]
 do
 
-echo ""
-echo "-------------------------------------"
-loc_prnt "Looking for install image %s" nolog ${sources[index]}
-echo "-------------------------------------"
+  echo ""
+  echo "-------------------------------------"
+  loc_prnt "Looking for install image %s" nolog ${sources[index]}
+  echo "-------------------------------------"
 
-echo ""
-loc_prnt "Please enter path for install image %s: " nolog ${sources[index]}
-read cdpath
+  echo ""
+  loc_prnt "Please enter path for install image %s: " nolog ${sources[index]}
+  read cdpath
 
-while [ ! -d ${cdpath} ]
-do
+  while [ ! -d ${cdpath} ]
+  do
 	echo ""
 	loc_prnt "%s not found: Please insert image %s and enter path: " nolog $cdpath ${sources[index]};
 	read cdpath
-done
+  done
 
-cdfound=0
+  cdfound=0
 
-while [ "$cdfound" -eq 0 ] 
-do
+  while [ "$cdfound" -eq 0 ] 
+  do
 	CDLABEL="SPARC"
  	if [[ "$ARCH" = "i386" ]]
         then
@@ -2160,19 +2108,18 @@ do
 #	then
 #                is_correct_cd "langcd" "2"
 #	fi
-done
+  done
 
 # Program continues if the correct CD path has been found
+  echo ""
+  loc_prnt "Install image %s found ... searching" nolog ${sources[index]};
 
-	echo ""
-	loc_prnt "Install image %s found ... searching" nolog ${sources[index]};
+# Run the retrieve cd data perl program to gather l10n package info
+  /usr/bin/perl /usr/sadm/lib/localeadm/retrievecd.pl ${sources[index]} $CONFIGFILE $cdpath
+  echo ""
+  loc_prnt "Finished searching install cd %s" nolog ${sources[index]}
 
-	# Run the retrieve cd data perl program to gather l10n package info
-        /usr/bin/perl /usr/sadm/lib/localeadm/retrievecd.pl ${sources[index]} $CONFIGFILE $cdpath
-
-echo ""
-loc_prnt "Finished searching install cd %s" nolog ${sources[index]}
-
+  index=`expr $index + 1`
 done
 
 echo ""
