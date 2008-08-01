@@ -222,3 +222,17 @@ d none openwin/lib/locale/sr_CS.UTF-8/imsscript 0755 root bin
 s none openwin/lib/locale/sr_CS.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
 
 # ----------- END OF New locales added by Yuriy Kuznetsov on 13.10.2005 ------------
+
+d none openwin/share/locale/uk_UA.UTF-8 0755 root bin
+d none openwin/lib/locale/uk_UA.UTF-8 0755 root bin
+s none openwin/lib/locale/uk_UA.UTF-8/X11=../en_US.UTF-8/X11
+d none openwin/lib/locale/uk_UA.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/uk_UA.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/uk_UA.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
+
+d none openwin/share/locale/kk_KZ.UTF-8 0755 root bin
+d none openwin/lib/locale/kk_KZ.UTF-8 0755 root bin
+s none openwin/lib/locale/kk_KZ.UTF-8/X11=../en_US.UTF-8/X11
+d none openwin/lib/locale/kk_KZ.UTF-8/LC_MESSAGES 0755 root bin
+d none openwin/lib/locale/kk_KZ.UTF-8/imsscript 0755 root bin
+s none openwin/lib/locale/kk_KZ.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
