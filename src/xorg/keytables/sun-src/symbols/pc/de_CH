@@ -23,7 +23,6 @@
 // CDDL HEADER END
 //
 
-
 partial default alphanumeric_keys 
 xkb_symbols "basic" {
 
@@ -44,19 +43,18 @@ xkb_symbols "basic" {
     key <AE05> {	[	  5,	percent		],
                         [  asciitilde                   ]       };
     key <AE06> {	[	  6,	ampersand	],
-			[         6,    ampersand	]	};
+			[   notsign			]	};
     key <AE07> {	[	  7,	slash		],
-			[ 	 7,    slash		]	};
+			[ brokenbar			]	};
     key <AE08> {	[	  8,	parenleft	],
-			[      	8,    parenleft 	]	};
+			[      cent			]	};
     key <AE09> {	[	  9,	parenright	]	};
     key <AE10> {	[	  0,	equal		],
-  			[         acute		        ]	};
+  			[     acute		        ]	};
     key <AE11> {	[ apostrophe,	question	],
 			[ dead_acute			]	};
     key <AE12> {	[ dead_circumflex, dead_grave	],
 			[ dead_tilde			]	};
-
     key <AD03> {	[	  e,	E		],
 			[  EuroSign			]	};
     key <AD06> {	[	  z,	Z		]	};
@@ -64,7 +62,6 @@ xkb_symbols "basic" {
 			[ bracketleft			]	};
     key <AD12> {	[ dead_diaeresis, exclam	],
 			[ bracketright			]	};
-
     key <AC10> {	[ odiaeresis,	eacute		]	};
     key <AC11> {	[ adiaeresis,	agrave		],
 			[  braceleft			]	};
