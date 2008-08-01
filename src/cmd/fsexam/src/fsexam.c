@@ -103,24 +103,26 @@ static FSEXAM_setting * fsexam_init (gint argc, gchar **argv, gboolean cli_mode)
 #define OPT_STRING "+abd:E:e:Ff:g:HklL:npPRrSstwV?"
 static struct option long_options[] =
 {
-    {"auto-detect",             no_argument,    NULL,   'a'},
-    {"batch",                   no_argument,    NULL,   'b'},
-    {"force-convert",           no_argument,    NULL,   'F'},
-    {"hidden",                  no_argument,    NULL,   'H'},
-    {"no-check-symlink-content",no_argument,    NULL,   'k'},
-    {"list-encoding",           no_argument,    NULL,   'l'},
-    {"dry-run",                 no_argument,    NULL,   'n'},
-    {"append-encoding-list",    no_argument,    NULL,   'p'},
-    {"prepend-encoding-list",   no_argument,    NULL,   'P'},
-    {"recursive",               no_argument,    NULL,   'R'},
-    {"remove",                  no_argument,    NULL,   'r'},
-    {"save-encoding-list",      no_argument,    NULL,   'S'},
-    {"restore",                 no_argument,    NULL,   's'},
-    {"conv-content",            no_argument,    NULL,   't'},
-    {"follow",                  no_argument,    NULL,   'w'},
-    {"version",                 no_argument,    NULL,   'V'},
-    {"help",                    no_argument,    NULL,   '?'},
-    {NULL,                      0,              NULL,   0},
+    {"auto-detect",             no_argument,            NULL,   'a'},
+    {"batch",                   no_argument,            NULL,   'b'},
+    {"force-convert",           no_argument,            NULL,   'F'},
+    {"hidden",                  no_argument,            NULL,   'H'},
+    {"no-check-symlink-content",no_argument,            NULL,   'k'},
+    {"list-encoding",           no_argument,            NULL,   'l'},
+    {"dry-run",                 no_argument,            NULL,   'n'},
+    {"append-encoding-list",    no_argument,            NULL,   'p'},
+    {"prepend-encoding-list",   no_argument,            NULL,   'P'},
+    {"recursive",               no_argument,            NULL,   'R'},
+    {"remove",                  no_argument,            NULL,   'r'},
+    {"save-encoding-list",      no_argument,            NULL,   'S'},
+    {"restore",                 no_argument,            NULL,   's'},
+    {"conv-content",            no_argument,            NULL,   't'},
+    {"follow",                  no_argument,            NULL,   'w'},
+    {"version",                 no_argument,            NULL,   'V'},
+    {"help",                    no_argument,            NULL,   '?'},
+    {"dry-run-result-file",     required_argument,      NULL,   'd'},
+    {"set-history-length",      required_argument,      NULL,   'g'},
+    {NULL,                      0,                      NULL,    0},
 };
 
 
@@ -684,8 +686,10 @@ show_usage ()
     printf (_("    -e encoding-list       Specify additional encoding list\n"));
     printf (_("    -F, --force-convert    Forceful conversion mode\n"));
     printf (_("    -f 'expression'        Specify file filter criteria\n"));
+    if (cli_mode)
+        printf (_("    -g history-length      Set the history length.\n"));
     printf (_("    -H, --hidden           Turn on hidden file handling\n"));
-    printf (_("    -b, --auto-conversion  Interactive mode\n"));
+    printf (_("    -b, --batch            Non-interactive mode\n"));
     printf (_("    -l, list-encoding      List all supported encoding\n"));
     printf (_("    -k, --no-check-symlink-content\n"));
     printf (_("                           Don't check the consistency between\n"
