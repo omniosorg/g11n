@@ -1101,11 +1101,17 @@ then
     echo >> $LOGFILE
 fi
 
-for cd in ${forlist} # e.g. for cd in solaris_1 solaris_2 solaris_3 solaris_4 solaris_5 (no messages)
+for cd in ${forlist} "dvd" # e.g. for cd in solaris_1 solaris_2 solaris_3 solaris_4 solaris_5 (no messages)
+                           # the dvd is in config file only for the rare occasion that config file was generated from DVD image and thus the script didn't know where to place the package
+                           # this way, when installing from dvd and all other packages had been already installed the "dvd" packages will be installed from the same path
 do
     # check do we have the image
     get_install_dir ${DEVICE} $SEL_REGION $cd # returns either 0 (good dir) or the position in the array of the bad dir
     position=$?
+    if [[ "$position" -eq 0 && "$cd" = "dvd" ]]
+    then
+      continue 
+    fi    
     while [ $position -ne 0 ] # we have a bad dir so we need to dump it out of the array (bugid 5067857)	
     do	
 	bad_dir=${INIT_DIR}
@@ -1141,29 +1147,6 @@ do
 	position=$?
     done # end "while $position...."
 
-#    case $cd in
-#	solaris1) 
-#	    ADD_DIR=${SOLARIS1_IMG}
-#	    ;;
-#	solaris2) 
-#	    ADD_DIR=${SOLARIS2_IMG}
-#	    ;;
-#	solaris3) 
-#	    ADD_DIR=${SOLARIS3_IMG}
-#	    ;;
-#	solaris4)
-#            ADD_DIR=${SOLARIS4_IMG}
-#            ;;
-#	solaris5)
-#            ADD_DIR=${SOLARIS5_IMG}
-#            ;;
-#	langcd1) 
-#	    ADD_DIR=${LANGCD_IMG1}
-#	    ;;
-#	langcd2) 
-#	    ADD_DIR=${LANGCD_IMG2}
-#	    ;;
-#    esac
 
     # check the disk here!!!!
 
@@ -1942,7 +1925,8 @@ else
     then
 	DISPLAY="${HOST}:0.0"	
     fi
-    LOCKPID=`ps -f| awk '/localead/ && !/awk/ {print $2}'|head -n 1`
+#    LOCKPID=`ps -f| awk '/localead/ && !/awk/ {print $2}'|head -n 1`
+    LOCKPID=$$
     ln -s $DISPLAY /var/run/localeadm.lock.$LOCKPID
 fi
 }
@@ -1953,7 +1937,8 @@ fi
 
 rem_lock() {
 
-    LOCKPID=`ps -f| awk '/localead/ && !/awk/ {print $2}'|head -n 1`
+#    LOCKPID=`ps -f| awk '/localead/ && !/awk/ {print $2}'|head -n 1`
+    LOCKPID=$$
     if [ -L /var/run/localeadm.lock.$LOCKPID ]
     then
 	rm /var/run/localeadm.lock.$LOCKPID
@@ -2062,53 +2047,30 @@ do
  		CDLABEL="X86";
  	fi;
 
-	if [ "${sources[index]}" == "solaris1" ] 
-	then
-		# Path should have a s0 directory above it if it is solaris1
-
-		testpath="$cdpath/s0"
-		if [ ! -d ${testpath} ] 
-		then
-			testpath="$cdpath/Solaris*"
-			if [ ! -d ${testpath} ]
-			then
-				echo ""
-				loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-				read cdpath
-			else
-				cdfound=1
-				cdpath="$cdpath/Solaris_*/Product"
-			fi
-		else 
-			cdfound=1
-			cdpath="$cdpath/s0/Solaris_*/Product"
-		fi	
-        else
+#	if [ "${sources[index]}" == "solaris1" ] 
+#	then
+#		# Path should have a s0 directory above it if it is solaris1
+#
+#		testpath="$cdpath/s0"
+#		if [ ! -d ${testpath} ] 
+#		then
+#			testpath="$cdpath/Solaris*"
+#			if [ ! -d ${testpath} ]
+#			then
+#				echo ""
+#				loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
+#				read cdpath
+#			else
+#				cdfound=1
+#				cdpath="$cdpath/Solaris_*/Product"
+#			fi
+#		else 
+#			cdfound=1
+#			cdpath="$cdpath/s0/Solaris_*/Product"
+#		fi	
+#        else
              is_correct_cd ${sources[index]}
-        fi
-#	elif [ "${sources[index]}" == "solaris2" ] 
-#	then
-#		is_correct_cd "solaris" "2"	
-#
-#	elif [ "${sources[index]}" == "solaris3" ] 
-#	then
-#                is_correct_cd "solaris" "3"	
-#
-#	elif [ "${sources[index]}" == "solaris4" ] 
-#	then
-#                is_correct_cd "solaris" "4"
-#	
-#	elif [ "${sources[index]}" == "solaris5" ] 
-#	then
-#                is_correct_cd "solaris" "5"
-#
-#	elif [ "${sources[index]}" == "langcd1" ] 
-#	then
-#                is_correct_cd "langcd" "1"
-#	elif [ "${sources[index]}" == "langcd2" ] 
-#	then
-#                is_correct_cd "langcd" "2"
-#	fi
+#        fi
   done
 
 # Program continues if the correct CD path has been found
@@ -2222,7 +2184,7 @@ do
 		fi
 done
 
-# Program continues if the correct CD path has been found
+# Program continues if the correct DVD path has been found
 
 echo ""
 loc_prnt "Install image %s found ... searching" nolog $cdpath
@@ -2230,8 +2192,9 @@ loc_prnt "Install image %s found ... searching" nolog $cdpath
 cdpath="$cdpath/Solaris*/Product"
 
 # run the retrievecombined.pl program to retrieve data from combined image
+# run the retrievecd.pl program with param "dvd", this way the script will try to keep the information about where packages are on individual CDs, only in the case it can't figure out the location from $CONFIGFILE, it will claim it is on DVD
 
-/usr/bin/perl /usr/sadm/lib/localeadm/retrievecombined.pl $CONFIGFILE $cdpath
+/usr/bin/perl /usr/sadm/lib/localeadm/retrievecd.pl "dvd" $CONFIGFILE $cdpath
 
 echo ""
 loc_prnt "Finished retrieving locale data"
