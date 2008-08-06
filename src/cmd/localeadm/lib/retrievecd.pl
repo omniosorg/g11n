@@ -1,4 +1,28 @@
 #!/usr/bin/perl
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").  
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
 
 use strict;
 use warnings;
@@ -42,10 +66,15 @@ while (<LOCALES>) {
 	my @locales= split(/[\s,]/, $3);
 	for (@locales) {
            chomp;
-# create value for each locale-geozone item e.g. $region{en}{aua}==1 and also $region{en}{weu}==1
+# create value for each locale-geozone item e.g. $region{en_NZ}{aua}++ and also $region{en_GB}{weu}++
+           $region{$_}{$zone}++;
+           #get just the language code and assign it too geozone too e.g. region{"es"}{sam}++
+           $_ =~ s/^([a-z][a-z]).*/$1/;           
            $region{$_}{$zone}++;
         }
 }
+
+
 
 #create the Temp File to write region data into to.
 open (TEMPFILE, ">> $versionname.tmp") or die ("Couldn't open $versionname.tmp");
@@ -98,6 +127,34 @@ while (my $pkgPath=readdir(DIR)) {
 	close(PKGINFO);
 }
 closedir(DIR);
+
+
+# if regenerating config file from DVD try to keep as much information as possible
+# therefore: open the original config file and for those packages that were there keep the CDinfo, new packages are added with DVD location
+# thus when installing from dvd this information is ignored anyway and it will stay valid for CDs
+if ($cdname =~ /dvd/) {
+  open(ORIGINAL, $versionname) or print "Couldn't file original config file $versionname, creating new one valid only for DVDimage\n";
+
+  my %originalDistr;
+  while (<ORIGINAL>) {
+      next if ($_ !~ /(SUNW[^\s]*)\s+[^\s]*\s+([^\s]*)/);
+# get rid of the "c_" for "c_solaris" here
+      my $img = $2;
+      my $pkg = $1;
+      $img =~ s/c_//;
+      $originalDistr{$pkg}=$img;   
+  }
+  close(ORIGINAL);
+
+  for my $key (keys %Regionarray) {
+    my $package=$key;
+    $package =~ s/(SUNW[^\s]*)\s+.*/$1/;
+    if (defined $originalDistr{$package}) {
+#       print $originalDistr{$package} . " $package :: $key \n";
+       $Regionarray{$key}=$originalDistr{$package};
+    }
+  }
+}
 
 # Open the core packages file, containing the list of core solaris l10n packages, and
 # substitute any cd value with our cd value if packages and regions match
