@@ -28,7 +28,7 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <sys/types.h>
-#include <unicode_viscii.h>	/* Unicode to GBK mapping table */
+#include <unicode_tcvn.h>	/* Unicode to tcvn mapping table */
 #include <vi_combine.h>
 #include "common_defs.h"
 
@@ -109,7 +109,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
     while (*inbytesleft > 0 && *outbytesleft > 0) {
         unsigned long uni = 0;
         
-        tcvn_2_uni(*inbuf, &uni);
+        tcvn_2_uni((unsigned char*)*inbuf, &uni);
         if (st->last != 0) {
             if (ISCOMB_UNI(uni)) {
                 /*
