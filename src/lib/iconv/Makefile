@@ -27,7 +27,7 @@
 
 include $(SRC)/Makefile.master
 
-SUBDIRS		=	common euro hi_IN ja ko th_TH zh utf-8
+SUBDIRS		=	common euro hi_IN ja ko th_TH zh utf-8 vi
  
 install		:=	TARGET = install
 all		:=	TARGET = all

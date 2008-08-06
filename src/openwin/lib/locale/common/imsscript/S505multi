@@ -27,9 +27,28 @@
 #
 # Start iiimx for each desktop.
 
-if [ -x /usr/bin/iiimx ]; then
+start_iiim() {
+    if [ -x /usr/bin/iiimx ]; then
+        /usr/bin/iiimx -iiimd
+        unset DTSTARTIMS
+    fi
+}
+
+start_scim() {
+    if [ -x /usr/bin/scim ]; then
+        XMODIFIERS=@im=SCIM
+        export XMODIFIERS
+        /usr/bin/scim -d
+        unset DTSTARTIMS
+    fi
+}
+
+if [ "x" = "x$GTK_IM_MODULE" ]; then
     GTK_IM_MODULE=iiim
     export GTK_IM_MODULE
-    /usr/bin/iiimx -iiimd
-    unset DTSTARTIMS
+    start_iiim
+elif [ "iiim" = $GTK_IM_MODULE ] || [ "xim" = $GTK_IM_MODULE ]; then
+    start_iiim
+elif [ "scim" = $GTK_IM_MODULE ]; then
+    start_scim
 fi

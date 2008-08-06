@@ -28,7 +28,7 @@ xkb_symbols "basic" {
     // of 'Z' and 'Y' keys, which are in the qwerty style (ie. swapped).
     // 2001 by Kamil Toman <ktoman@email.cz>
 
-    include "us(basic)"
+    include "cz(basic)"
 
     key <AB01> {	[	z,              Z ],
 			[	degree] 	};

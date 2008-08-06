@@ -143,6 +143,7 @@ f none lib/localedef/src/locales/is_IS.UTF-8.src.bz2 0644 root bin
 f none lib/localedef/src/locales/it_IT.ISO8859-1.src.bz2 0644 root bin
 f none lib/localedef/src/locales/it_IT.ISO8859-15.src.bz2 0644 root bin
 f none lib/localedef/src/locales/it_IT.UTF-8.src.bz2 0644 root bin
+f none lib/localedef/src/locales/kk_KZ.UTF-8.src.bz2 0644 root bin
 f none lib/localedef/src/locales/lt_LT.ISO8859-13.src.bz2 0644 root bin
 f none lib/localedef/src/locales/lt_LT.UTF-8.src.bz2 0644 root bin
 f none lib/localedef/src/locales/lv_LV.ISO8859-13.src.bz2 0644 root bin
@@ -188,5 +189,6 @@ f none lib/localedef/src/locales/sv_SE.ISO8859-15.src.bz2 0644 root bin
 f none lib/localedef/src/locales/sv_SE.UTF-8.src.bz2 0644 root bin
 f none lib/localedef/src/locales/tr_TR.ISO8859-9.src.bz2 0644 root bin
 f none lib/localedef/src/locales/tr_TR.UTF-8.src.bz2 0644 root bin
+f none lib/localedef/src/locales/uk_UA.UTF-8.src.bz2 0644 root bin
 
 d none lib/localedef/src/extensions 0755 root bin

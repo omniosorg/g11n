@@ -324,6 +324,10 @@ d none usr/lib/locale/it_IT.ISO8859-15/sparcv9 0755 root bin
 s none usr/lib/locale/it_IT.ISO8859-15/sparcv9/it_IT.ISO8859-15.so.3=../../it_IT.ISO8859-1/sparcv9/it_IT.ISO8859-1.so.3
 d none usr/lib/locale/it_IT.UTF-8/sparcv9 0755 root bin
 s none usr/lib/locale/it_IT.UTF-8/sparcv9/it_IT.UTF-8.so.3=../../it_IT.ISO8859-1/sparcv9/it_IT.ISO8859-1.so.3
+d none usr/lib/locale/kk_KZ/sparcv9 0755 root bin
+s none usr/lib/locale/kk_KZ/sparcv9/kk_KZ.so.3=../../kk_KZ.UTF-8/sparcv9/kk_KZ.UTF-8.so.3
+d none usr/lib/locale/kk_KZ.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/kk_KZ.UTF-8/sparcv9/kk_KZ.UTF-8.so.3=../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
 d none usr/lib/locale/lt/sparcv9 0755 root bin
 s none usr/lib/locale/lt/sparcv9/lt.so.3=../../lt_LT.ISO8859-13/sparcv9/lt_LT.ISO8859-13.so.3
 d none usr/lib/locale/lt_LT.ISO8859-13/sparcv9 0755 root bin
