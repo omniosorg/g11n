@@ -135,6 +135,15 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
                 }
                 st->last = 0;
                 
+            } else {
+                if (st->little_endian) {
+                    *(*outbuf)++ = (unsigned char)(st->last & 0xff);
+                    *(*outbuf)++ = (unsigned char)((st->last>>8)&0xff);
+                } else {
+                    *(*outbuf)++ = (unsigned char)((st->last>>8)&0xff);
+                    *(*outbuf)++ = (unsigned char)(st->last & 0xff);
+                }
+                (*outbytesleft) -= 2;
             } 
             st->last = 0;
         } else {

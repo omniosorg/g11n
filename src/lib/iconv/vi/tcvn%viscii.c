@@ -121,6 +121,15 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
                     return ((size_t)-1);
                 }
                 st->last = 0;
+            } else {
+                tcvn_2_viscii(st->last, &chout);
+                if (**inbuf != 0x0 && chout == 0x0) {
+                    unconv++;
+                    chout = NON_ID_CHAR;
+                }
+                
+                *(*outbuf)++ = chout;
+                (*outbytesleft) -= 1;
             }
             st->last = 0;
         } else {

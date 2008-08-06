@@ -73,7 +73,7 @@ static int tcvn_2_uni(const unsigned char *in, unsigned long *out )
     unsigned char c = *in;
     
     if (c < 0x18)
-        *out = tcvn2uni_1 [c];
+        *out = tcvn2uni_1[c];
     else if (c < 0x80)
         *out = c;
     else
