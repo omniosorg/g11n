@@ -137,7 +137,7 @@ print CONFIGFILE "#  ru_RU.ANSI1251, ru_RU.ISO8859-5, ru_RU.KOI8-R, sh_BA, sh_BA
 print CONFIGFILE "#  sl_SI, sl_SI.ISO8859-2, sq_AL, sq_AL.ISO8859-2, sr_SP, sr_YU, sr_YU.ISO8859-5,\n";
 print CONFIGFILE "#  tr_TR, tr_TR.ISO8859-9, ru_RU.UTF-8, tr_TR.UTF-8 )\n";
 print CONFIGFILE "#\n\n";
-print CONFIGFILE "locname E_Europe eeu bg_BG et_EE hr_HR lt_LT lv_LV mk_MK ro_RO ru_RU sh_BA sl_SI sq_AL sr_CS sr_SP sr_YU tr_TR\n\n";
+print CONFIGFILE "locname E_Europe eeu bg_BG et_EE hr_HR lt_LT lv_LV mk_MK ro_RO ru_RU sh_BA sl_SI sq_AL sr_CS sr_SP sr_YU tr_TR kk_KZ uk_UA\n\n";
 
 # Search each line of @localedata, if it contains an entry containing the eeu region
 # print to config file

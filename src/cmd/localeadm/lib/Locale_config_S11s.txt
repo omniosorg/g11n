@@ -267,7 +267,7 @@ SUNWfirefoxl10n-fr-FR       ceu     langcd2
 #  tr_TR, tr_TR.ISO8859-9, ru_RU.UTF-8, tr_TR.UTF-8 )
 #
 
-locname E_Europe eeu bg_BG et_EE hr_HR lt_LT lv_LV mk_MK ro_RO ru_RU sh_BA sl_SI sq_AL sr_CS sr_SP sr_YU tr_TR
+locname E_Europe eeu bg_BG et_EE hr_HR lt_LT lv_LV mk_MK ro_RO ru_RU sh_BA sl_SI sq_AL sr_CS sr_SP sr_YU tr_TR kk_KZ uk_UA
 
 SUNW5ttf	eeu	solaris1
 SUNWcttf	eeu	solaris1

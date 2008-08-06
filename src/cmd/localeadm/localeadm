@@ -287,7 +287,7 @@ cprint_ceu() {
 
 cprint_eeu() {
     echo "$1 (eeu)" 
-    echo "[ bg_BG.ISO8859-5, et_EE.ISO8859-15, et_EE.UTF-8, hr_HR.ISO8859-2, hr_HR.UTF-8, lt_LT.ISO8859-13, lt_LT.UTF-8, lv_LV.ISO8859-13, lv_LV.UTF-8, mk_MK.ISO8859-5, ro_RO.ISO8859-2, ru_RU.ISO8859-5, ru_RU.ANSI1251, ru_RU.KOI8-R, ru_RU.UTF-8, sh_BA.ISO8859-2, sl_SI.ISO8859-2, sl_SI.UTF-8, sq_AL.ISO8859-2, sr_YU.ISO8859-5, tr_TR.ISO8859-9 ]"
+    echo "[ bg_BG.ISO8859-5, et_EE.ISO8859-15, et_EE.UTF-8, hr_HR.ISO8859-2, hr_HR.UTF-8, lt_LT.ISO8859-13, lt_LT.UTF-8, lv_LV.ISO8859-13, lv_LV.UTF-8, mk_MK.ISO8859-5, ro_RO.ISO8859-2, ru_RU.ISO8859-5, ru_RU.ANSI1251, ru_RU.KOI8-R, ru_RU.UTF-8, sh_BA.ISO8859-2, sl_SI.ISO8859-2, sl_SI.UTF-8, sq_AL.ISO8859-2, sr_YU.ISO8859-5, tr_TR.ISO8859-9, kk_KZ.UTF-8, uk_UA.UTF-8 ]"
     echo
 }
 
