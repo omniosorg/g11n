@@ -30,6 +30,7 @@
 start_iiim() {
     if [ -x /usr/bin/iiimx ]; then
         /usr/bin/iiimx -iiimd
+        unset DTSTARTIMS
     fi
 }
 
@@ -38,6 +39,7 @@ start_scim() {
         XMODIFIERS=@im=SCIM
         export XMODIFIERS
         /usr/bin/scim -d
+        unset DTSTARTIMS
     fi
 }
 
