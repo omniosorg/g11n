@@ -109,9 +109,10 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         unsigned short  temp1 =0, temp2 = 0;
 
 
-        if(0x00 == (*op & 0x80)){
+        if(0x00 == (*op & 0x80)) {
             /* 1 byte UTF-8 Charater.*/
              uni = (unsigned short)*op;
+             utf8_len = 1;
         } else if ( ((*inbytesleft - 2) > 0) &&
                 0xc0 == (*op & 0xe0) &&
                 0x80 == (*(op + 1) & 0xc0) ) {
