@@ -46,7 +46,7 @@ typedef struct _combine_map {
    unsigned short   composed[5];
 } Combine_map;
 
-#define ISCOMB_UNI(uni) (uni >= 0x0300 && uni <= 0x0323)
+#define ISCOMB_UNI(uni) ((uni)>=0x0300 && (uni)<=0x0323)
 
 /* Composition tables for each of the relevant combining characters. */
 Combine_map vi_comb_data[VOWEL_NUM] = {
@@ -101,10 +101,10 @@ typedef struct _combine_map_tcvn {
    unsigned char   composed[5];
 } Combine_map_tcvn;
 
-#define ISCOMB_TCVN(ch) (ch>=0xb0 && ch<=0xb4)
+#define ISCOMB_TCVN(ch) ((ch)>=0xb0 && (ch)<=0xb4)
 
 /* Composition tables for each of the relevant combining characters. */
-Combine_map tcvn_comb_data[VOWEL_NUM] = {
+Combine_map_tcvn tcvn_comb_data[VOWEL_NUM] = {
     {0x41, { 0x80,  0x83,  0x82,  0x81,  0x84 }},
     {0x45, { 0x87,  0x8a,  0x89,  0x88,  0x8b }},
     {0x49, { 0x8d,  0x90,  0x8f,  0x8e,  0x8e }},

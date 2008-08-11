@@ -35,8 +35,6 @@
 typedef struct _icv_state {
     char	keepc[4];	/* maximum # byte of UCS code */
     int	_errno;		/* internal errno */
-    boolean little_endian;
-    boolean bom_written;
 } _iconv_st;
 
 
@@ -55,12 +53,6 @@ _icv_open()
     }
 
     st->_errno = 0;
-    st->little_endian = false;
-    st->bom_written = false;
-#if defined(UCS_2LE)
-    st->little_endian = true;
-    st->bom_written = true;
-#endif
     return ((void *) st);
 }
 

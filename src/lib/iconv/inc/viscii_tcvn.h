@@ -115,27 +115,16 @@ static const unsigned char tcvn2viscii_2[128] = {
 
 };
 
-static int tcvn_2_viscii (unsigned long in,  unsigned char *out)
+static int tcvn_2_viscii (unsigned char in,  unsigned char *out)
 {
-    unsigned char c = 0;
+    if (in < 0x20)
+        *out = (unsigned long) tcvn2viscii_1[in];
+    else if (in < 0x80)
+        *out = (unsigned long) in; 
+    else
+        *out = (unsigned long) tcvn2viscii_2[in-0x80];
 
-    if (in < 0x0080 && (in >= 0x0020 || (0xBDEFFF9B & (1 << in)) ) ) {
-        /* Bit mask from right to left, 0 means no code point:
-         * 1011 1101 1110 1111 1111 1111 1001 1011
-         */
-        *out = in;
-        return 1;
-    } else if (in >= 0x00c0 && in < 0x01b8)
-        c = tcvn2viscii_1[in-0x00c0];
-    else if (in >= 0x1ea0 && in < 0x1f00)
-        c = tcvn2viscii_2[in-0x1ea0];
-    
-    if (c != 0) {
-        *out = c;
-        return 1;
-    }
-
-    return 0;
+    return 1;
 }
 
 #endif

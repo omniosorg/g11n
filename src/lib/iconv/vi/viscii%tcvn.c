@@ -36,8 +36,6 @@
 
 typedef struct _icv_state {
     int     _errno;     /* internal errno */
-    boolean little_endian;
-    boolean bom_written;
 } _iconv_st;
 
 
@@ -95,7 +93,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
     st->_errno = 0;     /* reset internal errno */
     errno = 0;          /* reset external errno */
 
-    /* convert viscii encoding to UCS-2 */
+    /* convert viscii encoding to tcvn. */
     while (*inbytesleft > 0 && *outbytesleft > 0) {
         unsigned char ch = 0;
         

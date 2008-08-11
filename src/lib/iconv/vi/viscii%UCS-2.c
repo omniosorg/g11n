@@ -33,10 +33,7 @@
 
 
 typedef struct _icv_state {
-    char    keepc[4];   /* maximum # byte of UCS code */
     int     _errno;     /* internal errno */
-    boolean little_endian;
-    boolean bom_written;
 } _iconv_st;
 
 
@@ -53,12 +50,6 @@ _icv_open()
         return ((void *) -1);
     }
     st->_errno = 0;
-    st->little_endian = false;
-    st->bom_written = false;
-#if defined(UCS_2LE)
-    st->little_endian = true;
-    st->bom_written = true;
-#endif
     return ((void *) st);
 }
 
@@ -83,7 +74,7 @@ size_t
 _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 				char **outbuf, size_t *outbytesleft)
 {
-    unsigned char   *op = *inbuf;
+    unsigned char   *op = (unsigned char*)*inbuf;
 
 #ifdef DEBUG
     fprintf(stderr, "==========     iconv(): viscii -->UCS-2   ==========\n");
@@ -102,30 +93,29 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
     errno = 0;          /* reset external errno */
 
     /* convert viscii encoding to UCS-2 */
-    while (*inbytesleft > 0 && *outbytesleft > 0) {
+    while (*inbytesleft > 0 && *outbytesleft > 1) {
         unsigned long uni = 0;
         
         viscii_2_uni((unsigned char*)*inbuf, &uni);
-        if (st->little_endian) {
-            *(*outbuf)++ = (unsigned char)(uni&0xff);
-            *(*outbuf)++ = (unsigned char)((uni>>8)&0xff);
-        } else {
-            *(*outbuf)++ = (unsigned char)((uni>>8)&0xff);
-            *(*outbuf)++ = (unsigned char)((uni)&0xff);
-        }
+#if defined(UCS_2LE)
+        *(*outbuf)++ = (unsigned char)(uni&0xff);
+        *(*outbuf)++ = (unsigned char)((uni>>8)&0xff);
+#else            
+        *(*outbuf)++ = (unsigned char)((uni>>8)&0xff);
+        *(*outbuf)++ = (unsigned char)((uni)&0xff);
+#endif
         (*outbytesleft) -= 2;
         (*inbuf)++;
         (*inbytesleft)--;
 
     }   
 
-    if ( *inbytesleft > 0 && *outbytesleft <= 0 ) {
+    if ( *inbytesleft > 0 && *outbytesleft <= 1 ) {
          errno = E2BIG; 
          return ((size_t)-1);
     }    
  
     return ((size_t)(*inbytesleft));
 	 
-
 }
 

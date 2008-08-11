@@ -30,13 +30,11 @@
 #include <sys/types.h>
 #include <unicode_viscii.h> /* Unicode to VISCII  mapping table */
 #include "common_defs.h"
+
 #define NON_ID_CHAR '?'     /* non-identified character */
 
 typedef struct _icv_state {
-    char    keepc[4];   /* maximum # byte of UCS code */
     int     _errno;     /* internal errno */
-    boolean little_endian;
-    boolean bom_written;
 } _iconv_st;
 
 
@@ -54,12 +52,6 @@ _icv_open()
     }
 
     st->_errno = 0;
-    st->little_endian = false;
-    st->bom_written = false;
-#if defined(UCS_2LE)
-    st->little_endian = true;
-    st->bom_written = true;
-#endif
     return ((void *) st);
 }
 
@@ -120,13 +112,13 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         (*inbuf)++;
         (*inbytesleft) -= 1;
 
-        if (st->little_endian) {
-            uni |= (unsigned long)c1;
-            uni |= (unsigned long)c2 << 8;
-        }else {
-            uni |= (unsigned long)c1 << 8;
-            uni |= (unsigned long)c2;
-        }
+#if defined(UCS_2LE)
+        uni |= (unsigned long)c1;
+        uni |= (unsigned long)c2 << 8;
+#else
+        uni |= (unsigned long)c1 << 8;
+        uni |= (unsigned long)c2;
+#endif
         if ( *inbytesleft > 0 && *outbytesleft <= 0 ) {
              errno = E2BIG; 
              return ((size_t)-1);

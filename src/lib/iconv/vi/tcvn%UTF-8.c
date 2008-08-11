@@ -36,8 +36,6 @@
 typedef struct _icv_state {
     int	_errno;		/* internal errno */
     unsigned short last; 
-    boolean  little_endian;
-    boolean  bom_written;
 } _iconv_st;
 
 
@@ -57,12 +55,6 @@ _icv_open()
     }
 
     st->_errno = 0;
-    st->little_endian = false;
-    st->bom_written = false;
-#if defined(UCS_2LE)
-    st->little_endian = true;
-    st->bom_written = true;
-#endif
     return ((void *) st);
 }
 
@@ -204,6 +196,31 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         return ((size_t)-1);
     }    
  
+    if (st->last !=0 ) {
+        if (st->last < 0x80) {
+            *(*outbuf)++ = (char)st->last;
+            (*outbytesleft) -= 1;
+        } else if (st->last >= 0x0080 && st->last <= 0x07ff) {
+            if (*outbytesleft - 2 < 0 ) {
+                errno = E2BIG;
+                return((size_t)-1);
+            }
+            *(*outbuf)++ = (char)((st->last >> 6) & 0x1f) | 0xc0;
+            *(*outbuf)++ = (char)(st->last & 0x3f) | 0x80;
+            (*outbytesleft) -= 2;
+        } else if (st->last >= 0x0800 && st->last <= 0xffff) {
+            if (*outbytesleft -3 < 0) {
+                errno = E2BIG;
+                return((size_t)-1);
+            }
+            *(*outbuf)++ = (char)((st->last >> 12) & 0xf) | 0xe0;
+            *(*outbuf)++ = (char)((st->last >>6) & 0x3f) | 0x80;
+            *(*outbuf)++ = (char)(st->last & 0x3f) | 0x80;
+            (*outbytesleft) -= 3;
+        }
+        st->last = 0;
+    }
+
     return ((size_t)(*inbytesleft));
 
 }

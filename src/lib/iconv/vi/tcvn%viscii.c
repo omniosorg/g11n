@@ -38,12 +38,10 @@
 typedef struct _icv_state {
     int	_errno;		/* internal errno */
     unsigned short last; 
-    boolean  little_endian;
-    boolean  bom_written;
 } _iconv_st;
 
 
-static int binsearch(unsigned long x, Combine_map v[], int n);
+static int binsearch(unsigned short x, Combine_map_tcvn v[], int n);
 
 /*
  * Open; called from iconv_open()
@@ -87,6 +85,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
     unsigned char   *op = NULL;
     int     unconv = 0;
     int             idx = -1;
+    unsigned char   chout = 0;
 #ifdef DEBUG
     fprintf(stderr, "==========     iconv(): TCVN5712 -->UCS-2   ==========\n");
 #endif
@@ -106,7 +105,6 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
     /* Convert tcvn encoding to UCS-2 */
     while (*inbytesleft > 0 && *outbytesleft > 0) {
         unsigned char ch = 0;
-        unsigned char chout = 0;
         
         if (st->last != 0) {
             if (ISCOMB_TCVN(ch)) {
@@ -165,12 +163,22 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         return ((size_t)-1);
     }    
  
+    if (st->last != 0) {
+        tcvn_2_viscii(st->last, &chout);
+        if (**inbuf != 0x0 && chout == 0x0) {
+            unconv++;
+            chout = NON_ID_CHAR;
+        }
+        st->last = 0;
+        *(*outbuf)++ = chout;
+        (*outbytesleft) -= 1;
+    } 
     return ((size_t)unconv);
 
 }
 
 /* binsearch: find x in v[0] <= v[1] <= ... <= v[n-1] */
-static int binsearch(unsigned long x, Combine_map v[], int n)
+static int binsearch(unsigned short x, Combine_map_tcvn v[], int n)
 {
     int low = 0; 
     int mid = 0;
@@ -179,9 +187,9 @@ static int binsearch(unsigned long x, Combine_map v[], int n)
     low = 0;
     while (low <= high) {
         mid = (low + high) / 2;
-        if (x < v[mid].base)
+        if (x < (unsigned short)v[mid].base)
             high = mid - 1;
-        else if (x > v[mid].base)
+        else if (x > (unsigned short)v[mid].base)
             low = mid + 1;
         else    
             /* found match */

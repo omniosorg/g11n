@@ -34,8 +34,6 @@
 
 typedef struct _icv_state {
     int     _errno;    /* internal errno */
-    boolean little_endian;
-    boolean bom_written;
 } _iconv_st;
 
 
@@ -53,12 +51,6 @@ _icv_open()
     }
 
     st->_errno = 0;
-    st->little_endian = false;
-    st->bom_written = false;
-#if defined(UCS_2LE)
-    st->little_endian = true;
-    st->bom_written = true;
-#endif
     return ((void *) st);
 }
 
@@ -106,24 +98,33 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
     while (*inbytesleft > 0 && *outbytesleft > 0) {
         unsigned long uni = 0;
         unsigned char ch = 0;
-        unsigned short  temp1 =0, temp2 = 0;
-
+        unsigned long temp1 = 0, 
+                      temp2 = 0, 
+                      temp3 = 0;
 
         if(0x00 == (*op & 0x80)) {
             /* 1 byte UTF-8 Charater.*/
              uni = (unsigned short)*op;
              utf8_len = 1;
-        } else if ( ((*inbytesleft - 2) > 0) &&
-                0xc0 == (*op & 0xe0) &&
+             goto conving;
+        }  
+        
+        if ((*inbytesleft - 2) < 0) 
+            goto errexit;
+        if ( 0xc0 == (*op & 0xe0) &&
                 0x80 == (*(op + 1) & 0xc0) ) {
             /* 2 bytes UTF-8 Charater.*/ 
-             temp1 = (unsigned short)(*op & 0x1f);
-             temp1 <<= 6;
-             temp1 |= (unsigned short)(*(op + 1) & 0x3f);
-             uni = temp1;
-             utf8_len = 2;
-        } else if( ((*inbytesleft -3 ) > 0) &&
-                0xe0 == (*op & 0xf0) &&
+            temp1 = (unsigned short)(*op & 0x1f);
+            temp1 <<= 6;
+            temp1 |= (unsigned short)(*(op + 1) & 0x3f);
+            uni = temp1;
+            utf8_len = 2;
+            goto conving;
+        }
+
+        if ((*inbytesleft - 3) < 0)
+           goto errexit; 
+        if ( 0xe0 == (*op & 0xf0) &&
                 0x80 == (*(op + 1) & 0xc0) &&
                 0x80 == (*(op + 2) & 0xc0) ) {
             /* 3bytes UTF-8 Charater.*/
@@ -134,13 +135,33 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
             temp1 = temp1 | temp2 | (unsigned short)(*(op+2) & 0x3F);
             uni = temp1;
             utf8_len = 3;
-        } else {
-            /* unrecognize byte. */
-           st->_errno = errno = EILSEQ;
-           errno = EILSEQ;
-           return ((size_t)-1);
-        }
+            goto conving;
+        } 
 
+        if ((*inbytesleft - 4) < 0)
+            goto errexit; 
+        if ( 0xf0 == (*op & 0xf8) &&
+                0x80 == (*(op + 1) & 0xc0) &&
+                0x80 == (*(op + 2) & 0xc0) ) {
+            /* 4bytes UTF-8 Charater.*/
+            temp1 = *op &0x07;
+            temp1 <<= 18;
+            temp2 = (*(op+1) & 0x3F);
+            temp2 <<= 12;
+            temp3 = (*(op+1) & 0x3F);
+            temp3 <<= 6;
+            temp1 = temp1 | temp2 | temp3 |(unsigned long)(*(op+2) & 0x3F);
+            uni = temp1;
+            utf8_len = 4;
+            goto conving;
+        } 
+
+        /* unrecognize byte. */
+        st->_errno = errno = EILSEQ;
+        errno = EILSEQ;
+        return ((size_t)-1);
+
+conving:            
         if (uni_2_tcvn(uni, &ch) == 1) {
             **outbuf = ch;
         } else {
@@ -155,5 +176,10 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
     }
 
     return ((size_t)no_id_char_num);
+
+errexit:
+    st->_errno = errno = EINVAL;
+    errno = EINVAL;
+    return ((size_t)-1);    
 }
 

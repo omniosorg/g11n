@@ -42,11 +42,9 @@ typedef struct _icv_state {
     char    keepc[6];	/* maximum # byte of UTF8 code */
     short   ustate;
     int	_errno;		/* internal errno */
-    boolean little_endian;
-    boolean bom_written;
 } _iconv_st;
 
-enum _USTATE	{ U0, U1, U2, U3, U4 };
+enum _USTATE	{ U0, U1, U2, U3, U4, U5, U6, U7 };
 
 
 /*
@@ -64,12 +62,6 @@ _icv_open()
 
     st->ustate = U0;
     st->_errno = 0;
-    st->little_endian = false;
-    st->bom_written = false;
-#if defined(UCS_2LE)
-    st->little_endian = true;
-    st->bom_written = true;
-#endif
     return ((void *) st);
 }
 
@@ -165,10 +157,13 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
                     st->ustate = U2;
                     st->keepc[0] = **inbuf;
                 } else {
-                    /* more than 3  bytes of UTF-8 sequences */
+                    /* four bytes of UTF-8 sequences */
                     if ( number_of_bytes_in_utf8_char[((uchar_t)**inbuf)] == ICV_TYPE_ILLEGAL_CHAR )
                         st->_errno = errno = EILSEQ;
-                    st->_errno = errno = EILSEQ;
+                    else {
+                        st->ustate = U5;
+                        st->keepc[0] = **inbuf;
+                    }
                 }
             }
             break;
@@ -234,6 +229,44 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
             (*outbytesleft)--;
             st->ustate = U0;
             break;
+        case U5:
+            first_byte = st->keepc[0];
+	           
+            /* if the first byte is 0xf0, it is illegal sequence if
+             * the second one is between 0x80 and 0x8f
+             * for Four-Byte UTF: U+10000..U+10FFFF
+             * */
+            if (((uchar_t)**inbuf) < valid_min_2nd_byte[first_byte] ||
+                    ((uchar_t)**inbuf) > valid_max_2nd_byte[first_byte] )
+                st->_errno = errno = EILSEQ;
+            else {	
+                st->ustate = U6;
+                st->keepc[1] = **inbuf;
+            }
+            break;
+        case U6:
+            if ((**inbuf & 0xc0) == MSB)  {
+                /* 0x80..0xbf */
+                st->ustate = U7;
+                st->keepc[2] = **inbuf;
+            } else
+                st->_errno = errno = EILSEQ;
+            break;
+        case U7:
+            if ((**inbuf & 0xc0) == MSB)  {
+                /* 0x80..0xbf */
+                /* replace with double NON_ID_CHARs */
+                if ( *outbytesleft < 1 ) 
+                    st->_errno = errno = E2BIG;
+                else {
+                    **outbuf = NON_ID_CHAR;
+                    (*outbytesleft) -= 1;
+                    uconv_num++;
+                    st->ustate = U0;
+                }	
+            } else
+                st->_errno = errno = EILSEQ;
+            break;
         default:			
             /* should never come here */
             st->_errno = errno = EILSEQ;
@@ -276,6 +309,15 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         case U4:
             num_reversed_bytes = utf8_len - 1;
             break;
+		 case U5:
+		   num_reversed_bytes = 1;
+		   break;
+		 case U6:
+		   num_reversed_bytes = 2;
+		   break;
+		 case U7:
+		   num_reversed_bytes = 3;
+		   break;
         }
 
         /*

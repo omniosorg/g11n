@@ -146,9 +146,9 @@ static int uni_2_tcvn (unsigned long in,  unsigned char *out)
 {
     unsigned char c = 0;
 
-    if (in < 0x0080 && (in >= 0x0020 || (0x00fe0076 & (1 << in)) == 0)) {
-        /* Bit mask, bit 0 means there have valid unicode value.
-         * 0x00fe0076 = 0000 0000 1111 1110 0000 0000 0111 0110
+    if (in < 0x0080 && (in >= 0x0020 || (0xFF01FF89 & (1 << in)) )) {
+        /* Bit mask, bit 1 means there have valid unicode value.
+         * 0xFF01FF89 = 1111 1111 0000 0001 1111 1111 1000 1001
          */
         *out = in;
         return 1;
@@ -164,7 +164,7 @@ static int uni_2_tcvn (unsigned long in,  unsigned char *out)
         return 1;
     }
 
-    return EILSEQ;
+    return 0;
 }
 
 #endif

@@ -35,11 +35,16 @@
 
 typedef struct _icv_state {
     int	_errno;		/* internal errno */
-    unsigned short last; 
-    boolean  little_endian;
-    boolean  bom_written;
+    unsigned long last; 
 } _iconv_st;
 
+#if defined(UCS_2LE) 
+#define SET_UCS(UNI)         *(*outbuf)++ = (unsigned char)((UNI)&0xff); \
+                             *(*outbuf)++ = (unsigned char)(((UNI)>>8)&0xff); 
+#else        
+#define SET_UCS(UNI)        *(*outbuf)++ = (unsigned char)(((UNI)>>8)&0xff); \
+                            *(*outbuf)++ = (unsigned char)((UNI)&0xff); 
+#endif
 
 static int binsearch(unsigned long x, Combine_map v[], int n);
 
@@ -57,12 +62,7 @@ _icv_open()
     }
 
     st->_errno = 0;
-    st->little_endian = false;
-    st->bom_written = false;
-#if defined(UCS_2LE)
-    st->little_endian = true;
-    st->bom_written = true;
-#endif
+    st->last = 0;
     return ((void *) st);
 }
 
@@ -106,7 +106,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
     errno = 0;          /* Reset external errno */
 
     /* Convert tcvn encoding to UCS-2 */
-    while (*inbytesleft > 0 && *outbytesleft > 0) {
+    while (*inbytesleft > 0 && *outbytesleft > 1) {
         unsigned long uni = 0;
         
         tcvn_2_uni((unsigned char*)*inbuf, &uni);
@@ -136,13 +136,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
                 st->last = 0;
                 
             } else {
-                if (st->little_endian) {
-                    *(*outbuf)++ = (unsigned char)(st->last & 0xff);
-                    *(*outbuf)++ = (unsigned char)((st->last>>8)&0xff);
-                } else {
-                    *(*outbuf)++ = (unsigned char)((st->last>>8)&0xff);
-                    *(*outbuf)++ = (unsigned char)(st->last & 0xff);
-                }
+                SET_UCS(st->last);
                 (*outbytesleft) -= 2;
             } 
             st->last = 0;
@@ -159,28 +153,25 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
                 continue;
             }
         }
-
-        if (st->little_endian) {
-            *(*outbuf)++ = (unsigned char)(uni&0xff);
-            *(*outbuf)++ = (unsigned char)((uni>>8)&0xff);
-        } else {
-            *(*outbuf)++ = (unsigned char)((uni>>8)&0xff);
-            *(*outbuf)++ = (unsigned char)((uni)&0xff);
-        }
+        SET_UCS(uni);
         (*outbytesleft) -= 2;
 	(*inbuf)++;
         (*inbytesleft)--;
 
     }   
 
-    if ( *inbytesleft > 0 && *outbytesleft <= 0 ) {
+    if ( *inbytesleft > 0 && *outbytesleft <= 1 ) {
         errno = E2BIG;
         st->last = 0; 
         return ((size_t)-1);
     }    
- 
-    return ((size_t)(*inbytesleft));
+    if (st->last!=0 ) {
+        SET_UCS(st->last);
+        st->last = 0;
+        (*outbytesleft) -= 2;
+    }  
 
+    return ((size_t)(*inbytesleft));
 }
 
 /* binsearch: find x in v[0] <= v[1] <= ... <= v[n-1] */
@@ -192,7 +183,7 @@ static int binsearch(unsigned long x, Combine_map v[], int n)
 
     low = 0;
     while (low <= high) {
-        mid = (low + high) / 2;
+        mid = ((high - low)>>1) + low;
         if (x < v[mid].base)
             high = mid - 1;
         else if (x > v[mid].base)
