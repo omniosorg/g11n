@@ -107,7 +107,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         unsigned char ch = 0;
         
         if (st->last != 0) {
-            if (ISCOMB_TCVN(ch)) {
+            if (ISCOMB_TCVN(**inbuf)) {
                 /*
                  * Composed characters with combine character
                  */
@@ -131,6 +131,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
             }
             st->last = 0;
         } else {
+            ch = **inbuf;
             if (ch >= 0x41 && ch <= 0xad
                 && ((tcvn_comp_bases_mask0[(ch-0x0040) >> 5] >> (ch & 0x1f)) & 1)) {
                 /* 
@@ -144,7 +145,8 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
             }
         }
 
-        tcvn_2_viscii(ch, &chout);
+
+        tcvn_2_viscii(**inbuf, &chout);
         if (**inbuf != 0x0 && chout == 0x0) {
             unconv++;
             chout = NON_ID_CHAR;
