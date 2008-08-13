@@ -1355,3 +1355,13 @@ SUNWhbrg        taiwan  langcd1
 SUNWhzfsg       taiwan  langcd1
 SUNWthunderbirdl10n-zh-TW       taiwan  langcd1
 SUNWfirefoxl10n-zh-TW       taiwan  langcd1
+
+
+#
+#                   Solaris 11, South East Asian Locale               
+#
+#               ( id_ID.UTF-8, ms_MY.UTF-8, vi_VN.UTF-8 )
+
+locname SE_Asia sea id_ID ms_MY vi_VN 
+
+

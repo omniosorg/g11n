@@ -51,7 +51,7 @@ open (CONFIGFILE, "> $versionname.bak") or die ("Couldn't open $versionname.bak"
 
 # Next generate the Config file in the exact same format as the original hardcoded version
 
-open (ORIGINAL, "versionname") or die ("Couldn't open $versionname");
+open (ORIGINAL, "$versionname") or die ("Couldn't open $versionname");
 while (<ORIGINAL>) {
   if ($_ =~ /Config file created/) {
     my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst)=localtime(time);
@@ -62,7 +62,8 @@ while (<ORIGINAL>) {
     print CONFIGFILE; 
   }
   elsif ($_ =~ /locname/) {
-    print CONFIGFILE;  
+    print CONFIGFILE "\n$_\n";  
+    chomp;
     my $region = $_;
     $region =~ s/locname\s[^\s]*\s([^\s]*)\s.*/$1/;
 # Search each line of @localedata, if it contains an entry containing the aua region

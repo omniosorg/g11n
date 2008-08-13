@@ -35,8 +35,15 @@ gettext=/usr/bin/gettext
 
 
 
-
-set -A solarisImages solaris1 solaris2 solaris3 solaris4 solaris5
+#find out Solaris version to set number of CDs
+typeset solarisVersion=`uname -r | sed -e "s/5.//"`
+#print "Solaris version: $solarisVersion\n"
+if [ $solarisVersion = "10" ]
+then
+  set -A solarisImages solaris1 solaris2 solaris3 solaris4 solaris5
+else 
+  set -A solarisImages solaris1 solaris2 solaris3 solaris4 solaris5 solaris6
+fi
 # still have some references to solaris1 image, but that is where the check for CD/DVD is performed
 
 set -A langcdImages langcd1 langcd2
@@ -180,7 +187,7 @@ print_ceu() {
 
 print_eeu() {
     echo "$1 (eeu)"
-    loc_prnt "[ Albania, Bosnia, Bulgaria, Estonia, Croatia, Lithuania, Latvia, Macedonia, Romania, Russia, Serbia, Slovenia, Turkey ]" nolog
+    loc_prnt "[ Albania, Bosnia, Bulgaria, Estonia, Croatia, Kazakhstan, Lithuania, Latvia, Macedonia, Romania, Russia, Serbia, Slovenia, Turkey, Ukraine ]" nolog
     echo
 }
 
@@ -224,6 +231,12 @@ print_seu() {
 print_weu() {
     echo "$1 (weu)"
     loc_prnt "[France, Holland, Belgium (French), Belgium (Flemish), Ireland, England, Luxembourg (French), Luxembourg (German) ]" nolog
+    echo
+}
+
+print_sea() {
+    echo "$1 (sea)"
+    loc_prnt "[ Indonesia, Malaysia, Vietnam ]" nolog
     echo
 }
 
@@ -335,6 +348,12 @@ cprint_weu() {
     echo
 }
 
+cprint_sea() {
+    echo "$1 (sea)" 
+    echo "[id_ID.UTF-8, ms_MY.UTF-8, vi_VN.UTF-8] "
+    echo
+}
+
 cprint_taiwan() {
     echo "$1 (taiwan)"
     echo "[ zh_TW, zh_TW.EUC, zh_TW.BIG5, zh_TW.UTF-8 ]" 
@@ -417,6 +436,9 @@ case $1 in
  weu)
     SEL_STR=`$gettext --domain=localeadm "Western Europe"`    
     ;;
+ sea)
+    SEL_STR=`$gettext --domain=localeadm "South East Asia"`    
+    ;;
  taiwan)
     SEL_STR=`$gettext --domain=localeadm "Traditional Chinese"`
      ;;
@@ -488,7 +510,12 @@ then
     rm $LOCALES_LIST
 fi
 
-if [[ "$TEST" != "y" || "$3" != "all" ]]
+#if [[ "$TEST" != "y" || "$3" != "all" ]]
+if [ "$3" = "all" ]
+then
+    loc_prnt "The following regions are available to install from $DEVICE" > $LOCALES_LIST
+    echo >> $LOCALES_LIST
+elif [ "TEST" = "n" ]
 then
     loc_prnt "The following regions are installed on %s on %s" nolog ${HOST} "${date}" > $LOCALES_LIST
     echo >> $LOCALES_LIST
@@ -497,8 +524,15 @@ then
 fi
 
 # go through all the regions and check are they on the machine. 
-for region in aua cam ceu eeu mea naf nam neu sam seu weu ja korean china hongkong taiwan th_th hi_in
+for region in aua cam ceu eeu mea naf nam neu sam seu weu sea ja korean china hongkong taiwan th_th hi_in
 do
+   # check if there are any packages at all for this region -- this can be important for e.g. new regions
+    regionPackages=`$grep $region $CONFIGFILE | $grep -v "locname" | wc -l`
+    if [ "$regionPackages" -eq 0 ]
+    then
+       continue 
+    fi
+
     result=0 # first, reset all vars to 0
     core=0
     langcd=0
@@ -564,8 +598,10 @@ do
 	fi # end "if result >= 5"
     fi # end if "test mode"
 
-        print "DEBUG core: $core, result: $result, langcd: $langcd \n"
-    if [[ $result -eq $expectedResult && $core -eq 2 && langcd -eq $expectedLangcd ]] # if we have all pkgs incl messages
+#        print "DEBUG core: $core, result: $result, langcd: $langcd \n"
+ # consider locale installed if "allmost All" packages are installed, missing all items from one CD or soem items from 2 CDs
+    almostAll=`expr $expectedResult - 2`
+    if [[ $result -ge $almostAll && $core -eq 2 && langcd -eq $expectedLangcd ]] # if we have all pkgs incl messages
     then
 	case $1 in
 	locale)
@@ -585,7 +621,7 @@ do
 	    echo >> $LOCALES_LIST
 	    ;;
 	esac
-    elif [[ $result -eq $expectedResult && $core -eq 2 ]] # no messages but all solaris_*
+    elif [[ $result -ge $almostAll && $core -eq 2 ]] # no messages but all solaris_*
     then
 	### need to translate "(no messages)" - KC
 	nomsg_str=`$gettext --domain=localeadm "(no messages)"`
@@ -611,30 +647,29 @@ do
     # MP this is tricky, this can also mean that core packages are shared - e.g. hongkong and taiwan
     # therefore after removing taiwan those are left on the system and it shows "taiwan incomplete"
     # as a result honkong does not try to remove those packages either, taiwan uses them....
-    # CR 6638265 - just comment the section below
-#    elif [[ $core -eq 2 ]] # a core install, but nothing else (or missing pkgs)
-#    then
-#	### need to translate "(incomplete)" - KC
-#	incomp_str=`$gettext --domain=localeadm "(incomplete)"`
-#
-#	case $1 in
-#	locale)
-#	    print_$region "${SEL_STR} ${incomp_str}" >> $LOCALES_LIST
-#	    ;;
-#	code)
-#	    cprint_$region "${SEL_STR} ${incomp_str}" >> $LOCALES_LIST
-#	    ;;
-#	short)
-#	    echo >> $LOCALES_LIST
-#	    echo "$SEL_STR ${incomp_str} ($region)" | $tee -a $LOCALES_LIST
-#	    echo >> $LOCALES_LIST
-#	    ;;
-#	q)
-#	    echo >> $LOCALES_LIST
-#	    echo "$SEL_STR ${incomp_str} ($region)" >> $LOCALES_LIST
-#	    echo >> $LOCALES_LIST
-#	    ;;
-#	esac
+    elif [[ $core -eq 2 ]] # a core install, but nothing else (or missing pkgs)
+    then
+	### need to translate "(incomplete)" - KC
+	incomp_str=`$gettext --domain=localeadm "(incomplete)"`
+
+	case $1 in
+	locale)
+	    print_$region "${SEL_STR} ${incomp_str}" >> $LOCALES_LIST
+	    ;;
+	code)
+	    cprint_$region "${SEL_STR} ${incomp_str}" >> $LOCALES_LIST
+	    ;;
+	short)
+	    echo >> $LOCALES_LIST
+	    echo "$SEL_STR ${incomp_str} ($region)" | $tee -a $LOCALES_LIST
+	    echo >> $LOCALES_LIST
+	    ;;
+	q)
+	    echo >> $LOCALES_LIST
+	    echo "$SEL_STR ${incomp_str} ($region)" >> $LOCALES_LIST
+	    echo >> $LOCALES_LIST
+	    ;;
+	esac
     fi
 
 done # end "for i in aua....."
@@ -647,7 +682,7 @@ cat $LOCALES_LIST
 if [ "$1" != "q" ] # check for silent running - no echoes
 then	
     loc_prnt "Done." nolog
-    if [ "$TEST" != "y" ]
+    if [[ "$TEST" != "y" && $3 != "all" ]]
     then
 	loc_prnt "A copy of this report can be found in %s" nolog $LOCALES_LIST
     fi
@@ -1062,7 +1097,7 @@ echo
 ### changing this to change the check from "$region" to "($region)" as "ja" matches some
 ### strings in the l10n'ed swedish locales_list file. - KC
 
-rcount=`$grep -c "($SEL_REGION)" $LOCALES_LIST`
+rcount=`$grep "($SEL_REGION)" $LOCALES_LIST | $grep -v "incomplete" | wc -l`
 
 # start with solaris_* [1-5 in order], then langcd.
 
@@ -1192,7 +1227,7 @@ do
 	    ### changing this so that it doesn't bomb out on the first pkg that fails.... - KC
 	    if [ $? -ne 0 ] # if pkgadd didn't work properly
 	    then
-		num_fails='expr $num_fails+1'
+		num_fails=`expr $num_fails + 1`
 
 		cat /var/run/pkg.add >> /var/run/pkgadd.fail
 		echo >> /var/run/pkgadd.fail
@@ -1261,7 +1296,7 @@ fi
 # now we need to add the locale to the locales_list
 if [ "$2" != "y" ]
 then
-    add_loc_added $SEL_REGION
+#    add_loc_added $SEL_REGION
     print_system q
     print_warning "added" nolog
 fi
@@ -1295,13 +1330,13 @@ then
     query_locale $SEL_REGION
     rcount=$?
 else
-    rcount=`$grep -c $SEL_REGION $LOCALES_LIST`
+    rcount=`$grep $SEL_REGION $LOCALES_LIST | $grep -v "incomplete" | wc -l`
 fi    
 
 
 if [ $rcount -eq 0 ] 
 then 
-    loc_prnt "Region %s is not installed on this machine. Exiting" nolog "$SEL_REGION"
+    loc_prnt "Region %s is not fully installed on this machine. Exiting" nolog "$SEL_REGION"
     return
 fi
 
@@ -1350,22 +1385,18 @@ do
 		loc_prnt "More than one region uses this package. Checking installed regions...." log
 		for region in `awk '$1 ~ /'$package'/ {print $2}' $CONFIGFILE`
 		do
-		    rcount=`$grep -c $region $LOCALES_LIST`
-		    if [ $rcount -ge 1 ] 
-		    then 
-			if [ "$region" != "$SEL_REGION" ]
-			then
-			    loc_prnt "Checking if region %s is installed....." logvb $region
-			    reg_count=`$grep -c $region $LOCALES_LIST`
-			    if [ $reg_count -gt 0 ]
-			    then 
+	            if [ "$region" != "$SEL_REGION" ]
+		    then
+		         loc_prnt "Checking if region %s is installed....." logvb $region
+		          rcount=`$grep $region $LOCALES_LIST | $grep -v "incomplete" | wc -l`  #is region installed? i.e. in written in locales.list
+		          if [ $rcount -ge 1 ] 
+		          then 
 				loc_prnt "Package %s is needed by region %s. Skipping." log $package $region
 				echo
 				install_flag=1
 				break
-			    fi   #end "if $reg_count..."
-			fi       #end "if $region..."
-		    fi           #end "if $rcount.." 
+		        fi       #end "if $rcount.." 
+	            fi           #end "if $region..."
 		done             #end "for region...."
 	    fi                   #end "if $count...."
 
@@ -1404,7 +1435,7 @@ do
 		    echo >> /var/run/pkgrm.fail
 		    echo "-------------------" >> /var/run/pkgrm.fail
 
-		    num_fails='expr $num_fails+1'
+		    num_fails=`expr $num_fails + 1`
 
 		    if [ $num_fails -gt 5 ] # 5 fails in one locale add is a pretty serious problem!
 		    ### could change this to a higher or lower number....  KC
@@ -1444,9 +1475,17 @@ fi
 # need to clear the locale out of the locales.list
 if [ "$2" != "y" ]
 then
-    rem_loc_added $SEL_REGION
+#    rem_loc_added $SEL_REGION
     print_system q
-    print_warning "removed" log
+    
+    # check if the locale was really removed ( may not be because other regions might need the same packages... e.g region "naf")
+    rcount=`$grep $SEL_REGION $LOCALES_LIST | $grep -v "incomplete" | wc -l`
+    if [ $rcount -eq "0" ]
+    then
+      print_warning "removed" log
+    else
+      print_warning "removal-failed" log
+    fi
 fi
 }
 
@@ -1455,42 +1494,42 @@ fi
 ###########################################################################
 #
 # $1 = region to add to /var/sadm/system/data/locales_installed file
-
-add_loc_added() {
-
-add_region=$1
-
-# get the name of the region from the config file
-region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $add_region | $awk '{print $1}'`
-
-if [ "$region_name" != "Asia" ] #Asian does not get entered for a normal install
-then
-
-#echo "DEBUG: region name is $region_name"
-# find out is it in there already 
-if [ `$grep -c $region_name $LOC_ADD_FILE ` -eq 0 ]
-then 
- echo "s/GEOS=/GEOS=${region_name},/g" > /var/run/sedscript
-fi
-
-fi
-
-for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $add_region | $awk '{ for (j=3; j<=NF; j++) print $j }'`
-do
-    if [ `$grep -c $i $LOC_ADD_FILE ` -eq 0 ]
-    then
-	locs="${i},${locs}"
-    fi
-done
-
-echo "s/LOCALES=/LOCALES=${locs}/g" >> /var/run/sedscript
-
-sed -f /var/run/sedscript $LOC_ADD_FILE > /var/run/locrm
-
-mv /var/run/locrm $LOC_ADD_FILE
-rm /var/run/sedscript
-}
-
+#
+#add_loc_added() {
+#
+#add_region=$1
+#
+## get the name of the region from the config file
+#region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $add_region | $awk '{print $1}'`
+#
+#if [ "$region_name" != "Asia" ] #Asian does not get entered for a normal install
+#then
+#
+##echo "DEBUG: region name is $region_name"
+## find out is it in there already 
+#if [ `$grep -c $region_name $LOC_ADD_FILE ` -eq 0 ]
+#then 
+# echo "s/GEOS=/GEOS=${region_name},/g" > /var/run/sedscript
+#fi
+#
+#fi
+#
+#for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $add_region | $awk '{ for (j=3; j<=NF; j++) print $j }'`
+#do
+#    if [ `$grep -c $i $LOC_ADD_FILE ` -eq 0 ]
+#    then
+#	locs="${i},${locs}"
+#    fi
+#done
+#
+#echo "s/LOCALES=/LOCALES=${locs}/g" >> /var/run/sedscript
+#
+#sed -f /var/run/sedscript $LOC_ADD_FILE > /var/run/locrm
+#
+#mv /var/run/locrm $LOC_ADD_FILE
+#rm /var/run/sedscript
+#}
+#
 
 ###########################################################################
 ################  remove from locales_added function   ####################
@@ -1498,59 +1537,59 @@ rm /var/run/sedscript
 #
 # $1 = region to remove from /var/sadm/system/data/locales_added file
 
-rem_loc_added() {
-
-rem_region=$1
-
-# have to get rid of 'locname' out of final search string here 
-# 'cos north america region (nam) keeps picking it up! 
-region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $rem_region | $awk '{print $1}'`
-
-#echo "region name is $region_name"
-
-if [ "$region_name" = "Asia" ] # there are multiple geos which call themselves asia
-then
-    for geo in `$grep locname $CONFIGFILE | grep "Asia" | awk '{print $3}'`
-    do
-	typeset -i acount=0 lcount=0
-	#echo "DEBUG: looking for $geo"
-	for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }'`
-	do
-	    if [ `$grep -c $i $LOC_ADD_FILE` -ne 0 ]
-	    then
-		acount=`expr acount+1`
-	    fi
-	done 
-	lcount=`$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }' | wc -l`
-	if [ $acount -eq $lcount ] #if all teh locales are mentioned
-	then
-	    geo_count=`expr $geo_count+1` #up the asian geo count by 1
-	fi
-    done
-fi
-
-# find out is it in there already 
-if [[ `$grep -c $region_name $LOC_ADD_FILE` -ne 0  && $geo_count -le 1 ]]
-then 
-    echo "s/$region_name,//g" > /var/run/sedscript
-    echo "s/,$region_name//g" >> /var/run/sedscript # if it's at the end of the string
-    echo "s/$region_name//g" >> /var/run/sedscript # if only one region was installed with the inital install
-fi
-
-for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $rem_region | $awk '{ for (j=3; j<=NF; j++) print $j }'`
-do
-    echo "s/${i},//g" >> /var/run/sedscript
-    echo "s/${i}$//g" >> /var/run/sedscript # if locale is at the end of the string
-done
-
-echo
-sed -f /var/run/sedscript $LOC_ADD_FILE > /var/run/locrm
-rm /var/run/sedscript
-mv /var/run/locrm $LOC_ADD_FILE
-
-
-}
-
+#rem_loc_added() {
+#
+#rem_region=$1
+#
+## have to get rid of 'locname' out of final search string here 
+## 'cos north america region (nam) keeps picking it up! 
+#region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $rem_region | $awk '{print $1}'`
+#
+##echo "region name is $region_name"
+#
+#if [ "$region_name" = "Asia" ] # there are multiple geos which call themselves asia
+#then
+#    for geo in `$grep locname $CONFIGFILE | grep "Asia" | awk '{print $3}'`
+#    do
+#	typeset -i acount=0 lcount=0
+#	#echo "DEBUG: looking for $geo"
+#	for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }'`
+#	do
+#	    if [ `$grep -c $i $LOC_ADD_FILE` -ne 0 ]
+#	    then
+#		acount=`expr acount + 1`
+#	    fi
+#	done 
+#	lcount=`$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }' | wc -l`
+#	if [ $acount -eq $lcount ] #if all teh locales are mentioned
+#	then
+#	    geo_count=`expr $geo_count + 1` #up the asian geo count by 1
+#	fi
+#    done
+#fi
+#
+## find out is it in there already 
+#if [[ `$grep -c $region_name $LOC_ADD_FILE` -ne 0  && $geo_count -le 1 ]]
+#then 
+#    echo "s/$region_name,//g" > /var/run/sedscript
+#    echo "s/,$region_name//g" >> /var/run/sedscript # if it's at the end of the string
+#    echo "s/$region_name//g" >> /var/run/sedscript # if only one region was installed with the inital install
+#fi
+#
+#for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $rem_region | $awk '{ for (j=3; j<=NF; j++) print $j }'`
+#do
+#    echo "s/${i},//g" >> /var/run/sedscript
+#    echo "s/${i}$//g" >> /var/run/sedscript # if locale is at the end of the string
+#done
+#
+#echo
+#sed -f /var/run/sedscript $LOC_ADD_FILE > /var/run/locrm
+#rm /var/run/sedscript
+#mv /var/run/locrm $LOC_ADD_FILE
+#
+#
+#}
+#
 
 ###########################################################################
 ######################  print warning function   ##########################
@@ -1567,6 +1606,10 @@ then
 dtlogin daemon (WARNING: this will terminate any active dtlogin sessions)" nolog
     echo
     loc_prnt "Please log out and login again to use the new locale(s) at your desktop. If you are not intending to use the new locale(s) with the GUI desktop, you can start using the new locale(s) immediately by setting the LC_* environment variables." nolog
+    echo
+elif [ "$1" = "removal-failed" ]
+then
+    loc_prnt "System failed to uninstal specified region. The reason is probably that other regions are dependent on the same packages, try removing other regions that use the same packages first." nolog
     echo
 else
     loc_prnt "One or more locales have been removed. To update the list of locales available at the login screen's \"Options->Language\" menu, please restart the dtlogin daemon (WARNING: this will terminate any active dtlogin sessions)" nolog
@@ -1749,7 +1792,7 @@ do
 	INST_DIR=${devices[arr]}
    else
 	loc_prnt "Warning! The directory specified does not exist \n (%s) \n" nolog $INIT_DIR
-	typeset -i retval=`expr $arr+1`
+	typeset -i retval=`expr $arr + 1`
 	return $retval
     fi
 
@@ -1760,7 +1803,7 @@ do
     if [ $pkgcount -eq 0 ]
     then
 	loc_prnt "Warning! No Solaris packages exist in %s" nolog $INST_DIR
-	typeset -i retval=`expr $arr+1`
+	typeset -i retval=`expr $arr + 1`
     else
 	# make sure that all pkgs have the same architecture - bugid 5052631
 	if [ -f /var/run/arch.txt ] # make sure this file is clear before we start!
@@ -1781,7 +1824,7 @@ do
 
 	if [ `wc -l /var/run/arch_final.txt | awk '{print $1}'` -gt 1 ]
 	then
-	    typeset -i retval=`expr $arr+1`
+	    typeset -i retval=`expr $arr + 1`
 	    echo
 	    loc_prnt "The packages in %s do not appear to be all of the same architecture." nolog $INST_DIR
  	    loc_prnt "Please check these packages and re-run localeadm."
@@ -1803,7 +1846,7 @@ do
 
 	if [ "$pkg_arch" != $ARCH -a break -eq 0 ] # if the pkgs aren't the same arch as the system
  	then
-	    typeset -i retval=`expr $arr+1`
+	    typeset -i retval=`expr $arr + 1`
 	    echo
 	    loc_prnt "The packages in \n%s \nappear to be the incorrect architecture for your system." nolog $INST_DIR
 	    loc_prnt "(packages are %s, your system is %s)" nolog $pkg_arch $ARCH
@@ -1829,7 +1872,7 @@ do
 	    else
 	      loc_prnt "No $image image has been found in \n%s " nolog $INST_DIR
 	      echo
-	      typeset -i retval=`expr $arr+1`
+	      typeset -i retval=`expr $arr + 1`
 	    fi
 	fi	    
     fi
@@ -1960,6 +2003,13 @@ fi
 selection=0
 choice=0
 repeat=0
+
+if [ ! -f $CONFIGFILE ]
+then
+	loc_prnt "No old config file $CONFIGFILE found, please make sure the config file exists before continuing. You can either rename the $CONFIGFILE.old if it exists or you need to reinstall the localeadm package"
+	return
+fi
+
 
 # loop while selection is invalid
 
@@ -2341,7 +2391,7 @@ trap 'rm -f /var/run/localeadm.lock.$SELFPID 2>&1 > /dev/null' 0 1 2 3 10 11 15 
 
 
 
-LOC_ADD_FILE=/var/sadm/system/data/locales_installed
+#LOC_ADD_FILE=/var/sadm/system/data/locales_installed
 
 if [ -w /usr/sadm/lib/localeadm/ ]
 then
@@ -2505,7 +2555,7 @@ case $CMD in
 	    check_region $LOC "install"
 
 	    # do a quick check to make sure we're not trying to add a locale that's already there
-	    rcount=`$grep -c $SEL_REGION $LOCALES_LIST`
+	    rcount=`$grep $SEL_REGION $LOCALES_LIST | $grep -v "incomplete" | wc -l`
 	    msg_count=`$grep  $SEL_REGION $LOCALES_LIST | $grep -q "no messages"`
 	    if [[ $rcount -gt 0 && $msg_count -ne 0 ]] 
 	    then
