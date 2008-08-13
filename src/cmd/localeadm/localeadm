@@ -600,8 +600,7 @@ do
 
 #        print "DEBUG core: $core, result: $result, langcd: $langcd \n"
  # consider locale installed if "allmost All" packages are installed, missing all items from one CD or soem items from 2 CDs
-    almostAll=`expr $expectedResult - 2`
-    if [[ $result -ge $almostAll && $core -eq 2 && langcd -eq $expectedLangcd ]] # if we have all pkgs incl messages
+    if [[ $result -ge $expectedResult && $core -eq 2 && langcd -eq $expectedLangcd ]] # if we have all pkgs incl messages
     then
 	case $1 in
 	locale)
@@ -621,7 +620,7 @@ do
 	    echo >> $LOCALES_LIST
 	    ;;
 	esac
-    elif [[ $result -ge $almostAll && $core -eq 2 ]] # no messages but all solaris_*
+    elif [[ $result -ge $expectedResult && $core -eq 2 ]] # no messages but all solaris_*
     then
 	### need to translate "(no messages)" - KC
 	nomsg_str=`$gettext --domain=localeadm "(no messages)"`
