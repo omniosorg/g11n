@@ -1297,7 +1297,7 @@ fi
 # now we need to add the locale to the locales_list
 if [ "$2" != "y" ]
 then
-#    add_loc_added $SEL_REGION
+    add_loc_added $SEL_REGION
     print_system q
     print_warning "added" nolog
 fi
@@ -1476,7 +1476,7 @@ fi
 # need to clear the locale out of the locales.list
 if [ "$2" != "y" ]
 then
-#    rem_loc_added $SEL_REGION
+    rem_loc_added $SEL_REGION
     print_system q
     
     # check if the locale was really removed ( may not be because other regions might need the same packages... e.g region "naf")
@@ -1495,42 +1495,42 @@ fi
 ###########################################################################
 #
 # $1 = region to add to /var/sadm/system/data/locales_installed file
-#
-#add_loc_added() {
-#
-#add_region=$1
-#
-## get the name of the region from the config file
-#region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $add_region | $awk '{print $1}'`
-#
-#if [ "$region_name" != "Asia" ] #Asian does not get entered for a normal install
-#then
-#
-##echo "DEBUG: region name is $region_name"
-## find out is it in there already 
-#if [ `$grep -c $region_name $LOC_ADD_FILE ` -eq 0 ]
-#then 
-# echo "s/GEOS=/GEOS=${region_name},/g" > /var/run/sedscript
-#fi
-#
-#fi
-#
-#for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $add_region | $awk '{ for (j=3; j<=NF; j++) print $j }'`
-#do
-#    if [ `$grep -c $i $LOC_ADD_FILE ` -eq 0 ]
-#    then
-#	locs="${i},${locs}"
-#    fi
-#done
-#
-#echo "s/LOCALES=/LOCALES=${locs}/g" >> /var/run/sedscript
-#
-#sed -f /var/run/sedscript $LOC_ADD_FILE > /var/run/locrm
-#
-#mv /var/run/locrm $LOC_ADD_FILE
-#rm /var/run/sedscript
-#}
-#
+
+add_loc_added() {
+
+add_region=$1
+
+# get the name of the region from the config file
+region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $add_region | $awk '{print $1}'`
+
+if [ "$region_name" != "Asia" ] #Asian does not get entered for a normal install
+then
+
+#echo "DEBUG: region name is $region_name"
+# find out is it in there already 
+if [ `$grep -c $region_name $LOC_ADD_FILE ` -eq 0 ]
+then 
+ echo "s/GEOS=/GEOS=${region_name},/g" > /var/run/sedscript
+fi
+
+fi
+
+for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $add_region | $awk '{ for (j=3; j<=NF; j++) print $j }'`
+do
+    if [ `$grep -c $i $LOC_ADD_FILE ` -eq 0 ]
+    then
+	locs="${i},${locs}"
+    fi
+done
+
+echo "s/LOCALES=/LOCALES=${locs}/g" >> /var/run/sedscript
+
+sed -f /var/run/sedscript $LOC_ADD_FILE > /var/run/locrm
+
+mv /var/run/locrm $LOC_ADD_FILE
+rm /var/run/sedscript
+}
+
 
 ###########################################################################
 ################  remove from locales_added function   ####################
@@ -1538,59 +1538,59 @@ fi
 #
 # $1 = region to remove from /var/sadm/system/data/locales_added file
 
-#rem_loc_added() {
-#
-#rem_region=$1
-#
-## have to get rid of 'locname' out of final search string here 
-## 'cos north america region (nam) keeps picking it up! 
-#region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $rem_region | $awk '{print $1}'`
-#
-##echo "region name is $region_name"
-#
-#if [ "$region_name" = "Asia" ] # there are multiple geos which call themselves asia
-#then
-#    for geo in `$grep locname $CONFIGFILE | grep "Asia" | awk '{print $3}'`
-#    do
-#	typeset -i acount=0 lcount=0
-#	#echo "DEBUG: looking for $geo"
-#	for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }'`
-#	do
-#	    if [ `$grep -c $i $LOC_ADD_FILE` -ne 0 ]
-#	    then
-#		acount=`expr acount + 1`
-#	    fi
-#	done 
-#	lcount=`$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }' | wc -l`
-#	if [ $acount -eq $lcount ] #if all teh locales are mentioned
-#	then
-#	    geo_count=`expr $geo_count + 1` #up the asian geo count by 1
-#	fi
-#    done
-#fi
-#
-## find out is it in there already 
-#if [[ `$grep -c $region_name $LOC_ADD_FILE` -ne 0  && $geo_count -le 1 ]]
-#then 
-#    echo "s/$region_name,//g" > /var/run/sedscript
-#    echo "s/,$region_name//g" >> /var/run/sedscript # if it's at the end of the string
-#    echo "s/$region_name//g" >> /var/run/sedscript # if only one region was installed with the inital install
-#fi
-#
-#for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $rem_region | $awk '{ for (j=3; j<=NF; j++) print $j }'`
-#do
-#    echo "s/${i},//g" >> /var/run/sedscript
-#    echo "s/${i}$//g" >> /var/run/sedscript # if locale is at the end of the string
-#done
-#
-#echo
-#sed -f /var/run/sedscript $LOC_ADD_FILE > /var/run/locrm
-#rm /var/run/sedscript
-#mv /var/run/locrm $LOC_ADD_FILE
-#
-#
-#}
-#
+rem_loc_added() {
+
+rem_region=$1
+
+# have to get rid of 'locname' out of final search string here 
+# 'cos north america region (nam) keeps picking it up! 
+region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $rem_region | $awk '{print $1}'`
+
+#echo "region name is $region_name"
+
+if [ "$region_name" = "Asia" ] # there are multiple geos which call themselves asia
+then
+    for geo in `$grep locname $CONFIGFILE | grep "Asia" | awk '{print $3}'`
+    do
+	typeset -i acount=0 lcount=0
+	#echo "DEBUG: looking for $geo"
+	for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }'`
+	do
+	    if [ `$grep -c $i $LOC_ADD_FILE` -ne 0 ]
+	    then
+		acount=`expr acount + 1`
+	    fi
+	done 
+	lcount=`$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }' | wc -l`
+	if [ $acount -eq $lcount ] #if all teh locales are mentioned
+	then
+	    geo_count=`expr $geo_count + 1` #up the asian geo count by 1
+	fi
+    done
+fi
+
+# find out is it in there already 
+if [[ `$grep -c $region_name $LOC_ADD_FILE` -ne 0  && $geo_count -le 1 ]]
+then 
+    echo "s/$region_name,//g" > /var/run/sedscript
+    echo "s/,$region_name//g" >> /var/run/sedscript # if it's at the end of the string
+    echo "s/$region_name//g" >> /var/run/sedscript # if only one region was installed with the inital install
+fi
+
+for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $rem_region | $awk '{ for (j=3; j<=NF; j++) print $j }'`
+do
+    echo "s/${i},//g" >> /var/run/sedscript
+    echo "s/${i}$//g" >> /var/run/sedscript # if locale is at the end of the string
+done
+
+echo
+sed -f /var/run/sedscript $LOC_ADD_FILE > /var/run/locrm
+rm /var/run/sedscript
+mv /var/run/locrm $LOC_ADD_FILE
+
+
+}
+
 
 ###########################################################################
 ######################  print warning function   ##########################
