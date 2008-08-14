@@ -26,8 +26,14 @@ d none usr/lib 0755 root bin
 d none usr/lib/iconv 0755 root bin
 # from SUNWciu8
 f none usr/lib/iconv/GBK%UCS-2LE.so 0755 root bin
+f none usr/lib/iconv/GBK%UCS-2BE.so 0755 root bin
+f none usr/lib/iconv/GBK%UCS-4LE.so 0755 root bin
+f none usr/lib/iconv/GBK%UCS-4BE.so 0755 root bin
 f none usr/lib/iconv/HZ-GB-2312%UTF-8.so 0755 root bin
 f none usr/lib/iconv/UCS-2LE%GBK.so 0755 root bin
+f none usr/lib/iconv/UCS-2BE%GBK.so 0755 root bin
+f none usr/lib/iconv/UCS-4LE%GBK.so 0755 root bin
+f none usr/lib/iconv/UCS-4BE%GBK.so 0755 root bin
 f none usr/lib/iconv/UCS-2LE%gb2312.so 0755 root bin
 f none usr/lib/iconv/UTF-8%HZ-GB-2312.so 0755 root bin
 f none usr/lib/iconv/UTF-8%zh_CN-cp935.so 0755 root bin
@@ -42,9 +48,15 @@ f none usr/lib/iconv/zh_CN.euc%UTF-8.so 0755 root bin
 f none usr/lib/iconv/zh_CN.iso2022-7%UTF-8.so 0755 root bin
 f none usr/lib/iconv/zh_CN.iso2022-CN%UTF-8.so 0755 root bin
 s none usr/lib/iconv/GB18030%UCS-2LE.so=./GBK%UCS-2LE.so
+s none usr/lib/iconv/GB18030%UCS-2BE.so=./GBK%UCS-2BE.so
+s none usr/lib/iconv/GB18030%UCS-4LE.so=./GBK%UCS-4LE.so
+s none usr/lib/iconv/GB18030%UCS-4BE.so=./GBK%UCS-4BE.so
 #TOUIU8#s none usr/lib/iconv/GB18030%UTF-8.so=./zh_CN.gbk%UTF-8.so
 #TOUIU8#s none usr/lib/iconv/GBK%UTF-8.so=./zh_CN.gbk%UTF-8.so
 s none usr/lib/iconv/UCS-2LE%GB18030.so=./UCS-2LE%GBK.so
+s none usr/lib/iconv/UCS-2BE%GB18030.so=./UCS-2BE%GBK.so
+s none usr/lib/iconv/UCS-4LE%GB18030.so=./UCS-4LE%GBK.so
+s none usr/lib/iconv/UCS-4BE%GB18030.so=./UCS-4BE%GBK.so
 #TOUIU8#s none usr/lib/iconv/UTF-8%GB18030.so=./UTF-8%zh_CN.gbk.so
 #TOUIU8#s none usr/lib/iconv/UTF-8%GBK.so=./UTF-8%zh_CN.gbk.so
 s none usr/lib/iconv/UTF-8%gb2312.so=./UTF-8%zh_CN.euc.so
