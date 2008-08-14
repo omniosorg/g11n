@@ -86,6 +86,18 @@ GBK%UCS-2LE.o: zh_CN.gbk%UTF-8.c
 	$(CC) $(CFLAGS) -DUCS_2LE -c -o $@ $?
 	$(CC) $(CFLAGS_64) -DUCS_2LE -c -o $(MACH64)/$@ $?
 
+GBK%UCS-2BE.o: zh_CN.gbk%UTF-8.c
+	$(CC) $(CFLAGS) -DUCS_2BE -c -o $@ $?
+	$(CC) $(CFLAGS_64) -DUCS_2BE -c -o $(MACH64)/$@ $?
+
+GBK%UCS-4LE.o: zh_CN.gbk%UTF-8.c
+	$(CC) $(CFLAGS) -DUCS_4LE -c -o $@ $?
+	$(CC) $(CFLAGS_64) -DUCS_4LE -c -o $(MACH64)/$@ $?
+
+GBK%UCS-4BE.o: zh_CN.gbk%UTF-8.c
+	$(CC) $(CFLAGS) -DUCS_4BE -c -o $@ $?
+	$(CC) $(CFLAGS_64) -DUCS_4BE -c -o $(MACH64)/$@ $?
+
 UCS-2LE%gb2312.o: UTF-8%zh_CN.euc.c
 	$(CC) $(CFLAGS) -DUCS_2LE -c -o $@ $?
 	$(CC) $(CFLAGS_64) -DUCS_2LE -c -o $(MACH64)/$@ $?
@@ -93,6 +105,18 @@ UCS-2LE%gb2312.o: UTF-8%zh_CN.euc.c
 UCS-2LE%GBK.o: UTF-8%zh_CN.gbk.c
 	$(CC) $(CFLAGS) -DUCS_2LE -c -o $@ $?
 	$(CC) $(CFLAGS_64) -DUCS_2LE -c -o $(MACH64)/$@ $?
+
+UCS-2BE%GBK.o: UTF-8%zh_CN.gbk.c
+	$(CC) $(CFLAGS) -DUCS_2BE -c -o $@ $?
+	$(CC) $(CFLAGS_64) -DUCS_2BE -c -o $(MACH64)/$@ $?
+
+UCS-4LE%GBK.o: UTF-8%zh_CN.gbk.c
+	$(CC) $(CFLAGS) -DUCS_4LE -c -o $@ $?
+	$(CC) $(CFLAGS_64) -DUCS_4LE -c -o $(MACH64)/$@ $?
+
+UCS-4BE%GBK.o: UTF-8%zh_CN.gbk.c
+	$(CC) $(CFLAGS) -DUCS_4BE -c -o $@ $?
+	$(CC) $(CFLAGS_64) -DUCS_4BE -c -o $(MACH64)/$@ $?
 
 cns11643%UCS-2LE.o: zh_TW-euc%UTF-8.c
 	$(CC) $(CFLAGS) -DUCS_2LE -c -o $@ $?
@@ -213,11 +237,12 @@ PROGS += zh_CN.gbk%HZ-GB-2312.so        zh_CN.gbk%UTF-8.so
 PROGS += zh_TW-cp937%UTF-8.so           UTF-8%zh_TW-cp937.so
 PROGS += zh_CN-cp935%UTF-8.so           UTF-8%zh_CN-cp935.so                
 PROGS += gb2312%UCS-2LE.so              UCS-2LE%gb2312.so 
-PROGS += GBK%UCS-2LE.so                 UCS-2LE%GBK.so
 PROGS += cns11643%UCS-2LE.so BIG5%UCS-2LE.so Big5-HKSCS%UCS-2LE.so
 PROGS += UCS-2LE%cns11643.so UCS-2LE%BIG5.so UCS-2LE%Big5-HKSCS.so
 PROGS += UTF-8%zh_TW-euc.so UTF-8%zh_TW-big5.so UTF-8%zh_HK.hkscs.so
 PROGS += zh_TW-iso2022-CN-EXT%zh_TW-euc.so zh_TW-iso2022-CN-EXT%zh_TW-big5.so
+PROGS += GBK%UCS-2LE.so GBK%UCS-2BE.so GBK%UCS-4LE.so GBK%UCS-4BE.so
+PROGS += UCS-2LE%GBK.so UCS-2BE%GBK.so UCS-4LE%GBK.so UCS-4BE%GBK.so
 
 install: all $(TARGETDIRS)
 	for i in $(PROGS); do \

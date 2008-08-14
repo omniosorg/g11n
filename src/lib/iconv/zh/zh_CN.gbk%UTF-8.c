@@ -46,17 +46,28 @@
 #define UTF8_NON_ID_CHAR2 0xBF
 #define UTF8_NON_ID_CHAR3 0xBD
 
+#if defined UCS_2LE
+    #define output_char unichr_to_ucs_2le
+#elif defined UCS_2BE
+    #define output_char unichr_to_ucs_2be
+#elif defined UCS_4LE
+    #define output_char unichr_to_ucs_4le
+#elif defined UCS_4BE
+    #define output_char unichr_to_ucs_4be
+#else
+    #define output_char unichr_to_utf8
+#endif
+
 typedef struct _icv_state {
 	char	keepc[GBK_LEN_MAX];	/* maximum # byte of GBK2K code */
 	short	cstate;		/* state machine id */
 	int	_errno;		/* internal errno */
-        boolean little_endian;
         boolean bom_written;
 } _iconv_st;
 
 enum _CSTATE	{ C0, C1, C2, C3 };
 
-
+static unsigned long gbk_to_unicode (_iconv_st *);
 
 /*
  * Open; called from iconv_open()
@@ -73,11 +84,10 @@ _icv_open()
 
 	st->cstate = C0;
 	st->_errno = 0;
-	st->little_endian = false;
-	st->bom_written = false;
-#if defined(UCS_2LE)
-	st->little_endian = true;
+#if defined(UCS_2LE) || defined(UCS_2BE) || defined(UCS_4LE) || defined(UCS_4BE)
 	st->bom_written = true;
+#else
+        st->bom_written = false;
 #endif
 	return ((void *) st);
 }
@@ -162,34 +172,13 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 					st->cstate = C1;
 				}
 			} else {	/* real ASCII */
-			        /*
-				 * Code conversion for UCS-2LE to support Samba
-				 */
-			        if (st->little_endian) {
-				    if (!st->bom_written) {
-				      if (*outbytesleft < 4)
-					errno = E2BIG;
-				      else {
-					*(*outbuf)++ = (uchar_t)0xff;
-					*(*outbuf)++ = (uchar_t)0xfe;
-					*outbytesleft -= 2;
-
-					st->bom_written = true;
-				      }
-				    }
-
-				    if (*outbytesleft < 2)
-				      errno = E2BIG;
-				    else {
-				      *(*outbuf)++ = **inbuf;
-				      *(*outbuf)++ = (uchar_t)0x0;
-				      *outbytesleft -= 2;
-				    }
-				} else {
-				  **outbuf = **inbuf;
-				  (*outbuf)++;
-				  (*outbytesleft)--;
-				}
+                                int uconv_num_internal = 0;
+                                n = output_char (st, **inbuf, *outbuf, 
+                                                 *outbytesleft, &uconv_num_internal);
+				if (n > 0) {
+					(*outbuf) += n;
+					(*outbytesleft) -= n;
+                                }
 			}
 			break;
 		case C1:		/* GBK2 characters: 2nd byte */
@@ -198,8 +187,9 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 			   
 				st->keepc[1] = (**inbuf);
 				st->keepc[2] = st->keepc[3] = 0;
-				n = gbk_to_utf8(st, *outbuf,
-						*outbytesleft, &uconv_num_internal);
+
+				n = output_char (st, gbk_to_unicode (st), *outbuf,
+						 *outbytesleft, &uconv_num_internal);
 				if (n > 0) {
 					(*outbuf) += n;
 					(*outbytesleft) -= n;
@@ -233,7 +223,9 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 			        int uconv_num_internal = 0;
 			   
 				st->keepc[3] = **inbuf;
-				n = gbk_to_utf8(st, *outbuf, *outbytesleft, &uconv_num_internal);
+
+				n = output_char (st, gbk_to_unicode (st), *outbuf, 
+                                                 *outbytesleft, &uconv_num_internal);
 
 				if ( n > 0 ) {
 					(*outbuf) += n;
@@ -289,7 +281,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
  * Return: = 0 - valid GBK2 2nd byte
  *         = 1 - invalid GBK2 2nd byte
  */
-int gbk_2nd_byte(inbuf)
+static int gbk_2nd_byte(inbuf)
 char inbuf;
 {
 	unsigned int	buf = (unsigned int) (inbuf & ONEBYTE);
@@ -301,32 +293,21 @@ char inbuf;
 	return(1);
 }
 
-
-/*
- * GBK code --> ISO/IEC 10646-2000 (Unicode)
- * Unicode --> UTF8 (FSS-UTF)
- *             (File System Safe Universal Character Set Transformation Format)
- * Return: > 0 - converted with enough space in output buffer
- *         = 0 - no space in outbuf
- */
-int gbk_to_utf8(st, buf, buflen, uconv_num)
+static unsigned long gbk_to_unicode (st)
 _iconv_st *st;
-char	*buf;
-size_t	buflen;
-int	*uconv_num;
 {
-	unsigned long	gbk_val;	/* GBK value */
-	int		unidx;		/* Unicode index */
-	unsigned long	uni_val;	/* Unicode */
+	unsigned long	gbk_val;	        /* GBK value */
+	int		unidx;		        /* Unicode index */
+	unsigned long	uni_val = 0xffffffff;	/* Unicode */
 	int		isgbk4 = 1;
 	char            *keepc = st->keepc;
 
 	if ( keepc[2] == 0 && keepc[3] == 0 ) 
 		isgbk4 = 0;
 
-	if ( ! isgbk4 ) 
+	if ( ! isgbk4 ) { 
 		gbk_val = ((keepc[0]&ONEBYTE) << 8) + (keepc[1]&ONEBYTE);
-	else {
+        } else {
 		int  i;
 
 		gbk_val = keepc[0] & ONEBYTE;
@@ -342,82 +323,18 @@ int	*uconv_num;
 		if ( unidx >= 0 ) uni_val = gbk_unicode_tab[unidx].value;
 	}
 
-	/*
-	 * Code conversion for UCS-2LE to support Samba
-	 */
-	if (st->little_endian) {
-	  int size = 0;
-
-	  if (unidx < 0 || uni_val > 0x00ffff) {
-	    uni_val = ICV_CHAR_UCS2_REPLACEMENT;
-	    *uconv_num = 1;
-	  }
-
-	  if (!st->bom_written) {
-	    if (buflen < 4)
-	      return 0;
-
-	    *(buf + size++) = (uchar_t)0xff;
-	    *(buf + size++) = (uchar_t)0xfe;
-	    st->bom_written = true;
-	  }
-
-	  if (buflen < 2)
-	    return 0;
-
-	  *(buf + size++) = (uchar_t)(uni_val & 0xff);
-	  *(buf + size++) = (uchar_t)((uni_val >> 8) & 0xff);
-
-	  return size;
-	}
-
-	if (unidx >= 0) {	/* do Unicode to UTF8 conversion */
-		if (uni_val >= 0x0080 && uni_val <= 0x07ff) {
-			if (buflen < 2) {
-				errno = E2BIG;
-				return(0);
-			}
-			*buf = (char)((uni_val >> 6) & 0x1f) | 0xc0;
-			*(buf+1) = (char)(uni_val & 0x3f) | 0x80;
-			return(2);
-		}
-		if (uni_val >= 0x0800 && uni_val <= 0xffff) {
-			if (buflen < 3) {
-				errno = E2BIG;
-				return(0);
-			}
-			*buf = (char)((uni_val >> 12) & 0xf) | 0xe0;
-			*(buf+1) = (char)((uni_val >>6) & 0x3f) | 0x80;
-			*(buf+2) = (char)(uni_val & 0x3f) | 0x80;
-			return(3);
-		}
-	}
-
-	/* can't find a match in GBK --> UTF8 table or illegal UTF8 code */
-	if (buflen < 3) {
-		errno = E2BIG;
-		return(0);
-	}
-	*buf = (char)UTF8_NON_ID_CHAR1;
-	*(buf+1) = (char)UTF8_NON_ID_CHAR2;
-	*(buf+2) = (char)UTF8_NON_ID_CHAR3;
-  
-        /* non-identical conversions */
-        *uconv_num = 1;
-   
-	return(3);
+        return uni_val;
 }
 
-
 /* binsearch: find x in v[0] <= v[1] <= ... <= v[n-1] */
-int binsearch(unsigned long x, table_t v[], int n)
+static int binsearch(unsigned long x, table_t v[], int n)
 {
 	int low, high, mid;
 
 	low = 0;
 	high = n - 1;
 	while (low <= high) {
-		mid = (low + high) / 2;
+		mid = (high - low) / 2 + low;
 		if (x < v[mid].key)
 			high = mid - 1;
 		else if (x > v[mid].key)
@@ -427,3 +344,9 @@ int binsearch(unsigned long x, table_t v[], int n)
 	}
 	return (-1);	/* no match */
 }
+
+#include "uni_common.c"
+
+/*
+vi:ts=8:ai:expandtab 
+*/

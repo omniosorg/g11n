@@ -30,6 +30,7 @@
 #include <sys/types.h>
 #include <unicode_gb18030.h>	/* Unicode to GBK mapping table */
 #include "common_defs.h"
+#include "ucs4.h"
 
 #define	MSB	0x80	/* most significant bit */
 #define ONEBYTE	0xff	/* right most byte */
@@ -44,13 +45,11 @@ typedef struct _icv_state {
 	char	keepc[6];	/* maximum # byte of UTF8 code */
 	short	ustate;
 	int	_errno;		/* internal errno */
-        boolean little_endian;
-        boolean bom_written;
 } _iconv_st;
 
 enum _USTATE	{ U0, U1, U2, U3, U4, U5, U6, U7 };
 
-int get_gbk_by_unicode(char c1, char c2, int* unidx, unsigned long* gbkcode);
+int get_gbk_by_unicode(unsigned long, int*, unsigned long*);
 
 
 /*
@@ -68,12 +67,6 @@ _icv_open()
 
 	st->ustate = U0;
 	st->_errno = 0;
-	st->little_endian = false;
-	st->bom_written = false;
-#if defined(UCS_2LE)
-	st->little_endian = true;
-	st->bom_written = true;
-#endif
 	return ((void *) st);
 }
 
@@ -90,7 +83,87 @@ _icv_close(_iconv_st *st)
 		free(st);
 }
 
+#if defined(UCS_2LE) || defined (UCS_2BE) || defined (UCS_4LE) || defined (UCS_4BE)
+size_t
+_icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
+				char **outbuf, size_t *outbytesleft)
+{
+	unsigned char   c1, c2, c3, c4;
+	int		n, unidx;
+        unsigned long   unichr;
+	unsigned long	gbkcode;
+        int		uconv_num = 0;
 
+  	if (st == NULL) {
+		errno = EBADF;
+		return ((size_t) -1);
+	}
+
+	if (inbuf == NULL || *inbuf == NULL) { /* Reset request. */
+		st->ustate = U0;
+		st->_errno = 0;
+		return ((size_t) 0); 
+	}
+
+	st->_errno = 0;		/* reset internal errno */
+	errno = 0;		/* reset external errno */
+
+	while (*inbytesleft > ICV_FETCH_UCS_SIZE-1 && *outbytesleft > 0) {
+
+                int     size = 0;    
+	   	int	uconv_num_internal = 0;
+
+                c1 = *(*inbuf + size++);
+                c2 = *(*inbuf + size++);
+#if defined(UCS_4LE) || defined (UCS_4BE)
+                c3 = *(*inbuf + size++);
+                c4 = *(*inbuf + size++);
+#endif
+
+#if defined(UCS_2LE)
+                unichr = (unsigned long) (c1 | (c2<<8));
+#elif defined(UCS_2BE)
+                unichr = (unsigned long) ((c1<<8) | c2);
+#elif defined(UCS_4LE)
+                unichr = (unsigned long) (c1 | (c2<<8) | (c3)<<16 | (c4<<24));
+#else
+                unichr = (unsigned long) ((c1<<24) | (c2<<16) | (c3<<8) | c4);
+#endif
+
+                if (unichr < MSB) { /* ASCII */
+                        **outbuf = (char) unichr; 
+		        (*outbuf)++;
+			(*outbytesleft)--;
+                } else {
+                	n = get_gbk_by_unicode(unichr, &unidx, &gbkcode);
+                	if ( n == -1 ) { /* invalid unicode codepoint */
+                	        st->_errno = errno = EILSEQ;
+                	        return ((size_t)-1);
+                	}
+                
+                	n = unicode_to_gbk(unidx, gbkcode, *outbuf, *outbytesleft, &uconv_num_internal);
+                	if (n > 0) {
+                		(*outbuf) += n;
+                		(*outbytesleft) -= n;
+                
+                	   	uconv_num += uconv_num_internal;
+                        } else {
+                                return ((size_t)-1);
+                        }
+                }
+
+                (*inbuf) += size;
+                (*inbytesleft) -= size;
+        }
+
+        if ( *inbytesleft >0 ) {
+                errno =  *outbytesleft? EINVAL: E2BIG;
+                return ((size_t)-1);
+        }
+
+        return uconv_num;
+}
+#else
 /*
  * Actual conversion; called from iconv()
  */
@@ -121,6 +194,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 {
 	char		c1, c2;
 	int		n, unidx;
+        unsigned long   unichr;
 	unsigned long	gbkcode;
         int		uconv_num = 0;
    	int		utf8_len;	
@@ -150,14 +224,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 	   
 		switch (st->ustate) {
 		case U0:		/* assuming ASCII in the beginning */
-		        /*
-			 * Code conversion for UCS-2LE to support Samba
-			 */
-		        if (st->little_endian) {
-			  st->ustate = U1;
-			  st->keepc[0] = **inbuf;
-			}
-			else if ((**inbuf & MSB) == 0) {	/* ASCII */
+			if ((**inbuf & MSB) == 0) {	/* ASCII */
 				**outbuf = **inbuf;
 				(*outbuf)++;
 				(*outbytesleft)--;
@@ -185,30 +252,12 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 			}
 			break;
 		case U1:		/* 2 byte unicode */
-			if ((**inbuf & 0xc0) == MSB || st->little_endian) {
+			if ((**inbuf & 0xc0) == MSB) {
 			   	utf8_len = 2;
 				st->keepc[1] = **inbuf;
 
-			        /*
-				 * Code conversion for UCS-2LE to support Samba
-				 */
-			        if (st->little_endian) {
-				  c1 = st->keepc[1];
-				  c2 = st->keepc[0];
-
-				  /*
-				   * It's ASCII
-				   */
-				  if (c1 == 0 && (c2 & MSB) == 0) {
-				    *(*outbuf)++ = c2;
-				    (*outbytesleft)--;
-				    st->ustate = U0;
-				    break;
-				  }
-				} else {
-				  c1 = (st->keepc[0]&0x1c)>>2;
-				  c2 = ((st->keepc[0]&0x03)<<6) | ((st->keepc[1])&0x3f);
-				}
+				c1 = (st->keepc[0]&0x1c)>>2;
+				c2 = ((st->keepc[0]&0x03)<<6) | ((st->keepc[1])&0x3f);
 
 				st->ustate = U4;
 #ifdef DEBUG
@@ -253,7 +302,8 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 			}
 			break;
 		case U4:
-			n = get_gbk_by_unicode(c1, c2, &unidx, &gbkcode);
+	                unichr = (unsigned long) ((c1 & ONEBYTE) << 8) + (c2 & ONEBYTE);
+			n = get_gbk_by_unicode(unichr, &unidx, &gbkcode);
 		        if ( n == -1 ) { /* unicode is either 0xFFFE or 0xFFFF */
 			     st->_errno = errno = EILSEQ;
 			     break;
@@ -264,7 +314,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 				break;
 			}
 */
-			n = utf8_to_gbk(unidx, gbkcode, *outbuf, *outbytesleft, &uconv_num_internal);
+			n = unicode_to_gbk(unidx, gbkcode, *outbuf, *outbytesleft, &uconv_num_internal);
 			if (n > 0) {
 				(*outbuf) += n;
 				(*outbytesleft) -= n;
@@ -384,6 +434,7 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
 
 	return uconv_num;
 }
+#endif /* UCS_2LE || UCS_2BE || UCS_4LE || UCS_4BE */
 
 
 /*
@@ -395,14 +446,9 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
  * Since binary search of the UTF8 to GBK table is necessary, might as well
  * return index and GBK code matching to the unicode.
  */
-int get_gbk_by_unicode(char c1, char c2, int* unidx, unsigned long* gbkcode)
+int get_gbk_by_unicode(unsigned long unicode, int* unidx, unsigned long* gbkcode)
 {
-	unsigned long	unicode;
-
-	unicode = (unsigned long) ((c1 & ONEBYTE) << 8) + (c2 & ONEBYTE);
-   
-        /* 0xfffe and 0xffff should not be allowed */
-        if ( unicode == 0xFFFE || unicode == 0xFFFF ) return -1;
+        if ( unicode > UCS4_MAXVAL || ext_ucs4_lsw(unicode) > UCS4_PPRC_MAXVAL ) return -1;
    
 	*unidx = binsearch(unicode, unicode_gbk_tab, UNICODEMAX);
 	if ((*unidx) >= 0)
@@ -410,7 +456,7 @@ int get_gbk_by_unicode(char c1, char c2, int* unidx, unsigned long* gbkcode)
 	else
 		return(1);	/* match from unicode to GBK not found */
 #ifdef DEBUG
-    fprintf(stderr, "Unicode=%04x, idx=%5d, Big-5=%x ", unicode, *unidx, *big5code);
+    fprintf(stderr, "Unicode=%04x, idx=%5d, Big-5=%x ", unicode, *unidx, *gbkcode);
 #endif
 
 	return(0);
@@ -424,7 +470,7 @@ int get_gbk_by_unicode(char c1, char c2, int* unidx, unsigned long* gbkcode)
  * Return: > 0 - converted with enough space in output buffer
  *         = 0 - no space in outbuf
  */
-int utf8_to_gbk(int unidx, unsigned long gbkcode, char* buf, size_t buflen, int *uconv_num)
+int unicode_to_gbk(int unidx, unsigned long gbkcode, char* buf, size_t buflen, int *uconv_num)
 {
 	unsigned long	val;		/* GBK value */
 	char		c[GBK_LEN_MAX];
@@ -469,14 +515,14 @@ int utf8_to_gbk(int unidx, unsigned long gbkcode, char* buf, size_t buflen, int 
 
 
 /* binsearch: find x in v[0] <= v[1] <= ... <= v[n-1] */
-int binsearch(unsigned long x, table_t v[], int n)
+static int binsearch(unsigned long x, table_t v[], int n)
 {
 	int low, high, mid;
 
 	low = 0;
 	high = n - 1;
 	while (low <= high) {
-		mid = (low + high) / 2;
+		mid = (high - low) / 2 + low;
 		if (x < v[mid].key)
 			high = mid - 1;
 		else if (x > v[mid].key)
@@ -486,3 +532,7 @@ int binsearch(unsigned long x, table_t v[], int n)
 	}
 	return (-1);	/* no match */
 }
+
+/*
+vi:ts=8:ai:expandtab 
+*/

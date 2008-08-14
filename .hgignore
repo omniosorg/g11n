@@ -1,0 +1,4 @@
+syntax: glob
+tags
+*.o
+*.so
