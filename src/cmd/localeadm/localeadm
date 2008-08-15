@@ -2389,7 +2389,7 @@ trap 'rm -f /var/run/localeadm.lock.$SELFPID 2>&1 > /dev/null' 0 1 2 3 10 11 15 
 
 
 
-#LOC_ADD_FILE=/var/sadm/system/data/locales_installed
+LOC_ADD_FILE=/var/sadm/system/data/locales_installed
 
 if [ -w /usr/sadm/lib/localeadm/ ]
 then
