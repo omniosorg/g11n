@@ -39,6 +39,7 @@ locname Ausi aua en_AU en_NZ
 SUNWauadt	aua	solaris1
 SUNWauaos	aua	c_solaris2
 SUNWauaow	aua	c_solaris1
+SUNWlang-common	aua	solaris1
 SUNWi1cs	aua	solaris1
 SUNWplow	aua	solaris1
 SUNWplow1	aua	solaris1
@@ -57,7 +58,7 @@ SUNWcamdt	cam	solaris1
 SUNWcamos	cam	c_solaris2
 SUNWcamow	cam	c_solaris1
 SUNWcttf	cam	solaris1
-SUNWeuluf	cam	solaris1
+SUNWlang-common	cam	solaris1
 SUNWgttf	cam	solaris2
 SUNWi1cs	cam	solaris1
 SUNWinttf	cam	solaris2
@@ -138,7 +139,7 @@ SUNWceuos	ceu	c_solaris2
 SUNWceuow	ceu	c_solaris1
 SUNWcttf	ceu	solaris1
 SUNWdeiso1	ceu	solaris1
-SUNWeuluf	ceu	solaris1
+SUNWlang-common	ceu	solaris1
 SUNWgttf	ceu	solaris2
 SUNWi15cs	ceu	solaris1
 SUNWi1cs	ceu	solaris1
@@ -274,7 +275,7 @@ SUNWcttf	eeu	solaris1
 SUNWeeudt	eeu	solaris1
 SUNWeeuos	eeu	c_solaris2
 SUNWeeuow	eeu	c_solaris1
-SUNWeuluf	eeu	solaris1
+SUNWlang-common	eeu	solaris1
 SUNWgttf	eeu	solaris2
 SUNWi13cs	eeu	solaris2
 SUNWi15cs	eeu	solaris1
@@ -304,7 +305,7 @@ locname Asia hi_in  hi_IN.UTF-8
 
 SUNW5ttf	hi_in	solaris1
 SUNWcttf	hi_in	solaris1
-SUNWeuluf	hi_in	c_solaris1
+SUNWlang-common	hi_in	c_solaris1
 SUNWgttf	hi_in	solaris2
 SUNWindt	hi_in	solaris1
 SUNWinfnt	hi_in	solaris1
@@ -327,7 +328,7 @@ JSatsvu		ja	solaris2
 SUNW5ttf	ja	solaris1
 SUNWale		ja	c_solaris1
 SUNWcttf	ja	solaris1
-SUNWeuluf	ja	c_solaris1
+SUNWlang-common	ja	c_solaris1
 SUNWgttf	ja	solaris2
 SUNWinttf	ja	solaris2
 SUNWjedt	ja	solaris1
@@ -442,7 +443,7 @@ locname Asia korean ko ko_KR ko.UTF-8
 SUNW5ttf	korean	solaris1
 SUNWale		korean	c_solaris1
 SUNWcttf	korean	solaris1
-SUNWeuluf	korean	c_solaris1
+SUNWlang-common	korean	c_solaris1
 SUNWgttf	korean	solaris2
 SUNWinttf	korean	solaris2
 SUNWjxcft	korean	solaris1
@@ -524,7 +525,7 @@ locname M_East mea he_IL he ar_SA
 
 SUNW5ttf	mea	solaris1
 SUNWcttf	mea	solaris1
-SUNWeuluf	mea	solaris1
+SUNWlang-common	mea	solaris1
 SUNWgttf	mea	solaris2
 SUNWinttf	mea	solaris2
 SUNWjxcft	mea	solaris1
@@ -546,7 +547,7 @@ locname N_Africa naf ar_EG ar
 
 SUNW5ttf	naf	solaris1
 SUNWcttf	naf	solaris1
-SUNWeuluf	naf	solaris1
+SUNWlang-common	naf	solaris1
 SUNWgttf	naf	solaris2
 SUNWinttf	naf	solaris2
 SUNWjxcft	naf	solaris1
@@ -579,7 +580,7 @@ SUNWeudiv	nam	solaris2
 SUNWeudlg	nam	solaris1
 SUNWeudmg	nam	solaris1
 SUNWeuezt	nam	solaris1
-SUNWeuluf	nam	solaris1
+SUNWlang-common	nam	solaris1
 SUNWgttf	nam	solaris2
 SUNWhttf	nam	solaris1
 SUNWi15cs	nam	solaris1
@@ -713,7 +714,7 @@ locname N_Europe neu da_DK fi_FI is_IS nn_NO no_NO nb_NO sv_SE sv
 
 SUNW5ttf	neu	solaris1
 SUNWcttf	neu	solaris1
-SUNWeuluf	neu	solaris1
+SUNWlang-common	neu	solaris1
 SUNWgttf	neu	solaris2
 SUNWi15cs	neu	solaris1
 SUNWi1cs	neu	solaris1
@@ -843,7 +844,7 @@ SUNWesws2       sam     langcd1
 SUNWeswsv       sam     langcd1
 SUNWesxwsvr     sam     langcd1
 SUNWetltk       sam     langcd1
-SUNWeuluf       sam     solaris1
+SUNWlang-common       sam     solaris1
 SUNWewacx       sam     langcd1
 SUNWewdev       sam     langcd1
 SUNWexplt       sam     langcd1
@@ -879,7 +880,7 @@ locname S_Europe seu ca_ES el_CY el_GR en_MT es_ES it_IT mt_MT pt_PT it es
 SUNW5ttf	seu	solaris1
 SUNWcttf	seu	solaris1
 SUNWesiso1	seu	solaris1
-SUNWeuluf	seu	solaris1
+SUNWlang-common	seu	solaris1
 SUNWgttf	seu	solaris2
 SUNWi15cs	seu	solaris1
 SUNWi1cs	seu	solaris1
@@ -1002,7 +1003,7 @@ locname Asia th_th th_TH th_TH.UTF-8
 
 SUNW5ttf	th_th	solaris1
 SUNWcttf	th_th	solaris1
-SUNWeuluf	th_th	c_solaris1
+SUNWlang-common	th_th	c_solaris1
 SUNWgttf	th_th	solaris2
 SUNWinttf	th_th	solaris2
 SUNWjxcft	th_th	solaris1
@@ -1034,7 +1035,7 @@ locname W_Europe weu de_LU en_GB en_IE fr_BE fr_FR nl_BE nl_NL fr de
 SUNW5ttf	weu	solaris1
 SUNWcttf	weu	solaris1
 SUNWfriso1	weu	solaris1
-SUNWeuluf	weu	solaris1
+SUNWlang-common	weu	solaris1
 SUNWgttf	weu	solaris2
 SUNWi15cs	weu	solaris1
 SUNWi1cs	weu	solaris1
@@ -1123,7 +1124,7 @@ SUNWcleu	china	c_solaris1
 SUNWcttf	china	solaris1
 SUNWcufnt	china	solaris1
 SUNWcxplt	china	solaris1
-SUNWeuluf	china	c_solaris1
+SUNWlang-common	china	c_solaris1
 SUNWgttf	china	solaris2
 SUNWgxfnt	china	solaris2
 SUNWhkfnt	china	solaris2
@@ -1224,7 +1225,7 @@ locname Asia hongkong zh_hk zh_HK.BIG5HK zh_HK.UTF-8
 SUNW5ttf	hongkong	solaris1
 SUNWale		hongkong	c_solaris1
 SUNWcttf	hongkong	solaris1
-SUNWeuluf	hongkong	c_solaris1
+SUNWlang-common	hongkong	c_solaris1
 SUNWgttf	hongkong	solaris2
 SUNWgxfnt	hongkong	solaris2
 SUNWhdt		hongkong	solaris1
@@ -1306,7 +1307,7 @@ locname Asia taiwan zh_tw zh_TW.BIG5 zh_TW zh_TW.UTF-8
 SUNW5ttf	taiwan	solaris1
 SUNWale		taiwan	c_solaris1
 SUNWcttf	taiwan	solaris1
-SUNWeuluf	taiwan	c_solaris1
+SUNWlang-common	taiwan	c_solaris1
 SUNWgttf	taiwan	solaris2
 SUNWgxfnt	taiwan	solaris2
 SUNWhdt		taiwan	solaris1
