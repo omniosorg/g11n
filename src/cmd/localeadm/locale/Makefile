@@ -24,31 +24,18 @@
 #ident	"@(#)Makefile	1.0	06/03/07	SMI"
 #
 
-include $(SRC)/Makefile.master
-
-LOCALE:sh = basename `pwd`
-
-FILES = localeadm 
-
-TARGETDIR = $(FILEROOT)/usr/sbin
-
-TARGETDIRS = $(TARGETDIR)
-
-SUBDIRS =  lib locale
+SUBDIRS = C
 
 all:=		TARGET= all
 install :=	TARGET= install
 clean :=	TARGET= clean
-objclean := TARGET = objclean
 clobber :=	TARGET= clobber
 
-all: $(TARGETDIRS)
 
-include $(SRC)/src/Makefile.targ
+all install clean: $(SUBDIRS)
 
-install: all $(FILES.obj) $(SUBDIRS)
-
-clean: objclean $(SUBDIRS)
-	$(RM) -r $(TARGETDIR)
+$(SUBDIRS): FRC
+	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
 
 FRC:
+

@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,37 +18,28 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
+
+# Copyright (c) 2008, by Sun Microsystems, Inc.
+# All rights reserved.
+
 
 include $(SRC)/Makefile.master
 
 LOCALE:sh = basename `pwd`
 
-FILES = localeadm 
+FILES = localeadm.po
 
-TARGETDIR = $(FILEROOT)/usr/sbin
+TARGETDIR = $(FILEROOT)/usr/lib/locale/$(LOCALE)/LC_MESSAGES
 
-TARGETDIRS = $(TARGETDIR)
+all: $(TARGETDIR)
 
-SUBDIRS =  lib locale
+install: all $(FILES:%=$(TARGETDIR)/%)
 
-all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-objclean := TARGET = objclean
-clobber :=	TARGET= clobber
+$(TARGETDIR):
+	$(INSDIR) $@
 
-all: $(TARGETDIRS)
+$(TARGETDIR)/%: %
+	$(INS) $(@D) $(@F)
 
-include $(SRC)/src/Makefile.targ
-
-install: all $(FILES.obj) $(SUBDIRS)
-
-clean: objclean $(SUBDIRS)
-	$(RM) -r $(TARGETDIR)
-
-FRC:
+clean:
+	$(RM) -r $(TARGETDIRS)
