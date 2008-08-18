@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,24 +18,34 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 
-SUBDIRS = C ja_JP.eucJP ja_JP.PCK ja_JP.UTF-8 ar he
-
-all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
+# Copyright (c) 2008, by Sun Microsystems, Inc.
+# All rights reserved.
 
 
-all install clean: $(SUBDIRS)
+include $(SRC)/Makefile.master
 
-$(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
+LOCALE:sh = basename `pwd`
 
-FRC:
+FILES1 = mp.conf
+FILES2 = mp.msg
 
+TARGETDIR1 = $(FILEROOT)/usr/lib/lp/locale/$(LOCALE)/mp
+TARGETDIR2 = $(FILEROOT)/usr/lib/locale/$(LOCALE)/LC_MESSAGES
+TARGETDIRS = $(TARGETDIR1) $(TARGETDIR2)
+
+all: $(TARGETDIRS)
+
+install: all $(FILES1:%=$(TARGETDIR1)/%) $(FILES2:%=$(TARGETDIR2)/%)
+
+$(TARGETDIRS):
+	$(INSDIR) $@
+
+$(TARGETDIR1)/%: %
+	$(INS) $(@D) $(@F)
+
+$(TARGETDIR2)/%: %
+	$(INS) $(@D) $(@F)
+
+clean:
+	$(RM) -r $(TARGETDIRS)

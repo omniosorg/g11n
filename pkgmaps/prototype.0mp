@@ -18,24 +18,17 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 
-SUBDIRS = C ja_JP.eucJP ja_JP.PCK ja_JP.UTF-8 ar he
-
-all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
-
-
-all install clean: $(SUBDIRS)
-
-$(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
-
-FRC:
-
+d none lib 0755 root bin
+d none lib/lp 0755 root lp
+d none lib/lp/locale 0755 root lp
+d none lib/lp/locale/C 0755 root lp
+d none lib/lp/locale/C/mp 0755 root lp
+f none lib/lp/locale/C/mp/mp.conf 0664 root lp
+d none lib/locale 0755 root bin
+d none lib/locale/C 0755 root bin
+d none lib/locale/C/LC_MESSAGES  0755 root bin
+f none lib/locale/C/LC_MESSAGES/mp.msg 0444 bin bin
