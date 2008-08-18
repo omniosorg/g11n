@@ -18,7 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
@@ -35,42 +35,5 @@ d none usr/openwin/lib/X11/fonts/TrueType 0755 root bin
 d none usr/openwin/lib/X11/fonts/TrueType/ttmap 0755 root bin
 f none usr/openwin/lib/X11/fonts/TrueType/ttmap/ansi-1251.ttmap 0644 root bin
 
-d none usr/openwin/lib/locale 0755 root bin
-d none usr/openwin/lib/locale/ru.ansi-1251 0755 root bin
-d none usr/openwin/lib/locale/ru.ansi-1251/X11 0755 root bin
-d none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts 0755 root bin
-d none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType 0755 root bin
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/ArialBold.ttf=../../../../euro_fonts/X11/fonts/TrueType/ArialBold.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/ArialBoldItalic.ttf=../../../../euro_fonts/X11/fonts/TrueType/ArialBoldItalic.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/ArialItalic.ttf=../../../../euro_fonts/X11/fonts/TrueType/ArialItalic.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/ArialRegular.ttf=../../../../euro_fonts/X11/fonts/TrueType/ArialRegular.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/CourierBold.ttf=../../../../euro_fonts/X11/fonts/TrueType/CourierBold.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/CourierBoldItalic.ttf=../../../../euro_fonts/X11/fonts/TrueType/CourierBoldItalic.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/CourierItalic.ttf=../../../../euro_fonts/X11/fonts/TrueType/CourierItalic.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/CourierRegular.ttf=../../../../euro_fonts/X11/fonts/TrueType/CourierRegular.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/TimesBold.ttf=../../../../euro_fonts/X11/fonts/TrueType/TimesBold.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/TimesBoldItalic.ttf=../../../../euro_fonts/X11/fonts/TrueType/TimesBoldItalic.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/TimesItalic.ttf=../../../../euro_fonts/X11/fonts/TrueType/TimesItalic.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/TimesRegular.ttf=../../../../euro_fonts/X11/fonts/TrueType/TimesRegular.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaBrightDemiBold.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaBrightDemiBold.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaBrightDemiItalic.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaBrightDemiItalic.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaBrightItalic.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaBrightItalic.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaBrightRegular.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaBrightRegular.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaSansDemiBold.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaSansDemiBold.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaSansDemiOblique.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaSansDemiOblique.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaSansOblique.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaSansOblique.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaSansRegular.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaSansRegular.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaTypewriterBold.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaTypewriterBold.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaTypewriterBoldOblique.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaTypewriterBoldOblique.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaTypewriterOblique.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaTypewriterOblique.ttf
-s none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/LucidaTypewriterRegular.ttf=../../../../euro_fonts/X11/fonts/TrueType/LucidaTypewriterRegular.ttf
-
-f none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/fonts.alias 0644 root bin
-f none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/fonts.dir 0644 root bin
-f none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/fonts.scale 0644 root bin
-f none usr/openwin/lib/locale/ru.ansi-1251/X11/fonts/TrueType/fonts.upr 0644 root bin
-d none usr/bin 0755 root bin
-f none usr/bin/lp_1251 0755 root bin
-#e Xupdate usr/openwin/lib/X11/XatmEncodingMap
 e fontenc usr/openwin/lib/X11/fonts/encodings/encodings.dir=usr/openwin/lib/X11/fonts/encodings/encodings.dir.SUNW1251f 0644 root bin
 e fontenc usr/openwin/lib/X11/fonts/TrueType/ttmap/ttmaps.dir=usr/openwin/lib/X11/fonts/TrueType/ttmap/ttmaps.dir.SUNW1251f 0644 root bin

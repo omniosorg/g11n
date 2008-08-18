@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,6 +18,34 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
+
+# Copyright (c) 2008, by Sun Microsystems, Inc.
+# All rights reserved.
+
+
+include $(SRC)/Makefile.master
+
+LOCALE:sh = basename `pwd`
+
+FILES1 = mp_1251
+FILES2 = lp_1251
+
+TARGETDIR1 = $(FILEROOT)/usr/openwin/bin
+TARGETDIR2 = $(FILEROOT)/usr/bin
+TARGETDIRS = $(TARGETDIR1) $(TARGETDIR2)
+
+all: $(TARGETDIRS)
+
+install: all $(FILES1:%=$(TARGETDIR1)/%) $(FILES2:%=$(TARGETDIR2)/%)
+
+$(TARGETDIRS):
+	$(INSDIR) $@
+
+$(TARGETDIR1)/%: %
+	$(INS) $(@D) $(@F)
+
+$(TARGETDIR2)/%: %
+	$(INS) $(@D) $(@F)
+
+clean:
+	$(RM) -r $(TARGETDIRS)
