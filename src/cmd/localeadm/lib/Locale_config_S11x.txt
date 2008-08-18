@@ -35,7 +35,7 @@ locname Ausi aua en_AU en_NZ
 SUNWauadt	aua	solaris1
 SUNWauaos	aua	c_solaris2
 SUNWauaow	aua	c_solaris1
-SUNWlang-common	aua	solaris1
+SUNWlang-common	aua	c_solaris1
 SUNWi1cs	aua	solaris1
 SUNWplow	aua	solaris1
 SUNWplow1	aua	solaris1
@@ -54,7 +54,7 @@ SUNWcamdt	cam	solaris1
 SUNWcamos	cam	c_solaris2
 SUNWcamow	cam	c_solaris1
 SUNWcttf	cam	solaris1
-SUNWlang-common	cam	solaris1
+SUNWlang-common	cam	c_solaris1
 SUNWgttf	cam	solaris2
 SUNWi1cs	cam	solaris1
 SUNWinttf	cam	solaris2
@@ -132,7 +132,7 @@ SUNWceuos	ceu	c_solaris2
 SUNWceuow	ceu	c_solaris1
 SUNWcttf	ceu	solaris1
 SUNWdeiso1	ceu	solaris1
-SUNWlang-common	ceu	solaris1
+SUNWlang-common	ceu	c_solaris1
 SUNWgnome-l10nmessages-cs	ceu	solaris3
 SUNWgnome-l10nmessages-hu	ceu	solaris3
 SUNWgttf	ceu	solaris2
@@ -263,7 +263,7 @@ SUNWcttf	eeu	solaris1
 SUNWeeudt	eeu	solaris1
 SUNWeeuos	eeu	c_solaris2
 SUNWeeuow	eeu	c_solaris1
-SUNWlang-common	eeu	solaris1
+SUNWlang-common	eeu	c_solaris1
 SUNWgttf	eeu	solaris2
 SUNWi13cs	eeu	solaris2
 SUNWi15cs	eeu	solaris1
@@ -508,7 +508,7 @@ locname M_East mea he_IL he ar_SA
 
 SUNW5ttf	mea	solaris1
 SUNWcttf	mea	solaris1
-SUNWlang-common	mea	solaris1
+SUNWlang-common	mea	c_solaris1
 SUNWgttf	mea	solaris2
 SUNWinttf	mea	solaris2
 SUNWjxcft	mea	solaris1
@@ -530,7 +530,7 @@ locname N_Africa naf ar_EG ar
 
 SUNW5ttf	naf	solaris1
 SUNWcttf	naf	solaris1
-SUNWlang-common	naf	solaris1
+SUNWlang-common	naf	c_solaris1
 SUNWgttf	naf	solaris2
 SUNWinttf	naf	solaris2
 SUNWjxcft	naf	solaris1
@@ -564,7 +564,7 @@ SUNWeudiv	nam	solaris2
 SUNWeudlg	nam	solaris1
 SUNWeudmg	nam	solaris1
 SUNWeuezt	nam	solaris1
-SUNWlang-common	nam	solaris1
+SUNWlang-common	nam	c_solaris1
 SUNWfriso1	nam	solaris1
 SUNWgttf	nam	solaris2
 SUNWhttf	nam	solaris1
@@ -697,7 +697,7 @@ locname N_Europe neu da_DK fi_FI is_IS nn_NO no_NO nb_NO sv_SE sv
 
 SUNW5ttf	neu	solaris1
 SUNWcttf	neu	solaris1
-SUNWlang-common	neu	solaris1
+SUNWlang-common	neu	c_solaris1
 SUNWgttf	neu	solaris2
 SUNWi15cs	neu	solaris1
 SUNWi1cs	neu	solaris1
@@ -826,7 +826,7 @@ SUNWesws2       sam     langcd1
 SUNWeswsv       sam     langcd1
 SUNWesxwsvr     sam     langcd1
 SUNWetltk       sam     langcd1
-SUNWlang-common       sam     solaris1
+SUNWlang-common	sam	c_solaris1
 SUNWewacx       sam     langcd1
 SUNWewdev       sam     langcd1
 SUNWexplt       sam     langcd1
@@ -862,7 +862,7 @@ locname S_Europe seu ca_ES el_CY el_GR en_MT es_ES it_IT mt_MT pt_PT it es
 SUNW5ttf	seu	solaris1
 SUNWcttf	seu	solaris1
 SUNWesiso1	seu	solaris1
-SUNWlang-common	seu	solaris1
+SUNWlang-common	seu	c_solaris1
 SUNWgttf	seu	solaris2
 SUNWi15cs	seu	solaris1
 SUNWi1cs	seu	solaris1
@@ -1016,7 +1016,7 @@ locname W_Europe weu de_LU en_GB en_IE fr_BE fr_FR nl_BE nl_NL de fr
 SUNW5ttf	weu	solaris1
 SUNWcttf	weu	solaris1
 SUNWfriso1	weu	solaris1
-SUNWlang-common	weu	solaris1
+SUNWlang-common	weu	c_solaris1
 SUNWgttf	weu	solaris2
 SUNWi15cs	weu	solaris1
 SUNWi1cs	weu	solaris1

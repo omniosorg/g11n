@@ -51,6 +51,7 @@ SUNWlang-es	nam	c_solaris1
 SUNWlang-common	nam	c_solaris1
 SUNWnamow	nam	c_solaris1
 SUNWlang-sv	neu	c_solaris1
+SUNWlang-common	neu	c_solaris1
 SUNWneuow	neu	c_solaris1
 SUNWlang-es	sam	c_solaris1
 SUNWlang-ptBR	sam	c_solaris1
@@ -58,6 +59,7 @@ SUNWlang-common	sam	c_solaris1
 SUNWsamow	sam	c_solaris1
 SUNWlang-es	seu	c_solaris1
 SUNWlang-it	seu	c_solaris1
+SUNWlang-common	seu	c_solaris1
 SUNWseuow	seu	c_solaris1
 SUNWlang-common	th_th	c_solaris1
 SUNWtleu	th_th	c_solaris2
