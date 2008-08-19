@@ -102,12 +102,12 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         unsigned char ch = 0;
 
         c1 = **inbuf;
-        (*inbuf)++;
-        (*inbytesleft) -= 1;
-        if (*inbytesleft == 0) {
-            errno = EILSEQ;
+        if (*inbytesleft <= 1 ) {
+            errno = EINVAL;
             return ((size_t)-1);
         }
+        (*inbuf)++;
+        (*inbytesleft) -= 1;
         c2 = **inbuf;
         (*inbuf)++;
         (*inbytesleft) -= 1;
