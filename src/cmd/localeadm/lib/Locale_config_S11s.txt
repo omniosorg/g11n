@@ -1386,7 +1386,7 @@ SUNWfirefoxl10n-zh-TW       taiwan  langcd1
 #
 #               ( id_ID.UTF-8, ms_MY.UTF-8, vi_VN.UTF-8 )
 
-locname SE_Asia sea id_ID ms_MY vi_VN 
+locname Asia sea id_ID ms_MY vi_VN 
 
 
 
