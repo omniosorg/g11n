@@ -107,13 +107,13 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         unsigned char ch = 0;
         
         if (st->last != 0) {
-            if (ISCOMB_TCVN(**inbuf)) {
+            if (ISCOMB_TCVN((unsigned char)**inbuf)) {
                 /*
                  * Composed characters with combine character
                  */
                 idx =  binsearch(st->last, tcvn_comb_data, VOWEL_NUM);
                 if (idx >= 0) {
-                    ch = vi_comb_data[idx].composed[ch-0xb0];
+                    ch = tcvn_comb_data[idx].composed[(unsigned char)**inbuf - 0xb0];
                 } else {
                     errno = EBADF;
                     return ((size_t)-1);
@@ -121,19 +121,20 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
                 st->last = 0;
             } else {
                 tcvn_2_viscii(st->last, &chout);
-                if (**inbuf != 0x0 && chout == 0x0) {
+                if (st->last != 0x0 && chout == 0x0) {
                     unconv++;
                     chout = NON_ID_CHAR;
                 }
                 
                 *(*outbuf)++ = chout;
                 (*outbytesleft) -= 1;
+                ch = (unsigned char)**inbuf;
             }
             st->last = 0;
         } else {
-            ch = **inbuf;
+            ch = (unsigned char)**inbuf;
             if (ch >= 0x41 && ch <= 0xad
-                && ((tcvn_comp_bases_mask0[(ch-0x0040) >> 5] >> (ch & 0x1f)) & 1)) {
+                && ((tcvn_comp_bases_mask0[(ch-0x40) >> 5] >> (ch & 0x1f)) & 1)) {
                 /* 
                  * uni is vowel, it's a possible match with combine character. 
                  * Buffer it. 
@@ -146,8 +147,8 @@ _icv_iconv(_iconv_st *st, char **inbuf, size_t *inbytesleft,
         }
 
 
-        tcvn_2_viscii(**inbuf, &chout);
-        if (**inbuf != 0x0 && chout == 0x0) {
+        tcvn_2_viscii(ch, &chout);
+        if (ch != 0x0 && chout == 0x0) {
             unconv++;
             chout = NON_ID_CHAR;
         }
