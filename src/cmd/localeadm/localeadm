@@ -510,7 +510,7 @@ if [ "$3" = "all" ]
 then
     loc_prnt "The following regions are available to install from $DEVICE" > $LOCALES_LIST
     echo >> $LOCALES_LIST
-elif [ "TEST" = "n" ]
+elif [ "$TEST" = "n" ]
 then
     loc_prnt "The following regions are installed on %s on %s" nolog ${HOST} "${date}" > $LOCALES_LIST
     echo >> $LOCALES_LIST
