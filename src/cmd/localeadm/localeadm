@@ -1268,17 +1268,21 @@ done  # end 'for cd in ${forlist}'
 
 arr_index=0
 # now we have to sort out starting all the IM daemons needed by UTF-8 & asian locales
+startDaemons=""
 if [ $daemons -eq 1 ]
 then
-    loc_prnt "The following seem to be daemons that will need to be started (e.g. input method daemons) for some of these locales to work:" log
-    loc_prnt 
+#    loc_prnt "The following seem to be daemons that will need to be started (e.g. input method daemons) for some of these locales to work:" log
+    startDaemons="The following seem to be daemons that will need to be started (e.g. input method daemons) for some of these locales to work: \n"
+#    loc_prnt 
    # echo "Daemon pkgs are ${daemon_pkgs[*]}"
     for cmd in ${daemon_cmds[*]}
     do
-	loc_prnt "$cmd" log
+#	loc_prnt "$cmd" log
+	startDaemons="$startDaemons $cmd \n"
     done
     echo
-    loc_prnt "You will need to either start these manually or reset dtlogin for the locales to function properly" log 
+#    loc_prnt "You will need to either start these manually or reset dtlogin for the locales to function properly" log 
+     startDaemons="$startDaemons You will need to either start these manually or reset dtlogin for the locales to function properly\n"
 fi
 
 # now check were there any packages that failed
@@ -1545,15 +1549,16 @@ region_name=`$grep locname $CONFIGFILE | sed -e 's/locname//g' | $grep -i $rem_r
 
 if [ "$region_name" = "Asia" ] # there are multiple geos which call themselves asia
 then
+    typeset -i geo_count=0
     for geo in `$grep locname $CONFIGFILE | grep "Asia" | awk '{print $3}'`
     do
-	typeset -i acount=0 lcount=0
+	typeset -i acount=0 lcount=0 
 	#echo "DEBUG: looking for $geo"
 	for i in `$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }'`
 	do
 	    if [ `$grep -c $i $LOC_ADD_FILE` -ne 0 ]
 	    then
-		acount=`expr acount + 1`
+		acount=`expr $acount + 1`
 	    fi
 	done 
 	lcount=`$grep locname $CONFIGFILE | sed -e 's/locname//g'| $grep $geo | $awk '{ for (j=3; j<=NF; j++) print $j }' | wc -l`
@@ -1603,6 +1608,7 @@ dtlogin daemon (WARNING: this will terminate any active dtlogin sessions)" nolog
     echo
     loc_prnt "Please log out and login again to use the new locale(s) at your desktop. If you are not intending to use the new locale(s) with the GUI desktop, you can start using the new locale(s) immediately by setting the LC_* environment variables." nolog
     echo
+    print $startDaemons
 elif [ "$1" = "removal-failed" ]
 then
     loc_prnt "System failed to uninstal specified region. The reason is probably that other regions are dependent on the same packages, try removing other regions that use the same packages first." nolog
