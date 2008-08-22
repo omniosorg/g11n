@@ -142,6 +142,30 @@ print_help() {
 }
 
 ###########################################################################
+########  restart fc-cache - refresh fonts cache to be sure that  #########
+########  we avoid desktop login problems/crash (e.g. 6495514)    #########
+###########################################################################
+
+restart_fccache() {
+  typeset sol_version=`uname -r | awk -F. '{print $2}'`
+  typeset status=1
+
+  if [ $sol_version -gt 9 ]; then
+      svcadm restart svc:/application/font/fc-cache:default
+      status=$?
+  else
+      /usr/bin/fc-cache
+      status=$?
+  fi
+
+  if [ $status != 0 ]; then
+      echo
+      loc_prnt "WARNING: There was an error when refreshing fc-cache. Login to GUI desktop may not work as expected."
+  fi
+  return $status
+}
+
+###########################################################################
 #############  print the locales available for install  ###################
 ###########################################################################
 #
@@ -1298,6 +1322,7 @@ if [ "$2" != "y" ]
 then
     add_loc_added $SEL_REGION
     print_system q
+    restart_fccache
     print_warning "added" nolog
 fi
 }
@@ -1477,6 +1502,7 @@ if [ "$2" != "y" ]
 then
     rem_loc_added $SEL_REGION
     print_system q
+    restart_fccache
     
     # check if the locale was really removed ( may not be because other regions might need the same packages... e.g region "naf")
     rcount=`$grep $SEL_REGION $LOCALES_LIST | $grep -v "incomplete" | wc -l`
