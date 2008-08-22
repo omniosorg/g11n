@@ -160,7 +160,7 @@ restart_fccache() {
 
   if [ $status != 0 ]; then
       echo
-      loc_prnt "WARNING: There was an error when refreshing fc-cache. Login to GUI desktop may not work as expected."
+      loc_prnt "WARNING: There was an error when refreshing fc-cache. Login to GUI desktop may not work as expected." nolog
   fi
   return $status
 }
@@ -2331,7 +2331,7 @@ fi
 prompt_user() {
 
 if [ ! -f $CONFIGFILE".old" ]   # Checking if config file has been freshly created
-then echo loc_prnt "You do not appear to have created a fresh config file since you began using this application." 
+then loc_prnt "You do not appear to have created a fresh config file since you began using this application." 
     loc_prnt "If you have a set of Solaris install images available to you, it is recommended that you do so before proceeding."
 
     echo
