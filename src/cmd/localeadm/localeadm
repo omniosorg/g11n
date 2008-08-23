@@ -619,7 +619,8 @@ do
 
 #        print "DEBUG core: $core, result: $result, langcd: $langcd \n"
  # consider locale installed if "allmost All" packages are installed, missing all items from one CD or soem items from 2 CDs
-    if [[ $result -ge $expectedResult && $core -eq 2 && langcd -eq $expectedLangcd ]] # if we have all pkgs incl messages
+#    if [[ $result -ge $expectedResult && $core -eq 2 && langcd -eq $expectedLangcd ]] # if we have all pkgs incl messages
+    if [[ $result -ge $expectedResult && $core -eq 2 ]] 
     then
 	case $1 in
 	locale)
@@ -639,29 +640,29 @@ do
 	    echo >> $LOCALES_LIST
 	    ;;
 	esac
-    elif [[ $result -ge $expectedResult && $core -eq 2 ]] # no messages but all solaris_*
-    then
-	### need to translate "(no messages)" - KC
-	nomsg_str=`$gettext --domain=localeadm "(no messages)"`
-
-	case $1 in
-	locale)
-	    print_$region "${SEL_STR} ${nomsg_str}" >> $LOCALES_LIST
-	    ;;
-	code)
-	    cprint_$region "${SEL_STR} ${nomsg_str}" >> $LOCALES_LIST
-	    ;;
-	short)
-	    echo >> $LOCALES_LIST
-	    echo "$SEL_STR ${nomsg_str} ($region)" | $tee -a $LOCALES_LIST
-	    echo >> $LOCALES_LIST
-	    ;;
-	q)
-	    echo >> $LOCALES_LIST
-	    echo "$SEL_STR ${nomsg_str} ($region)" >> $LOCALES_LIST
-	    echo >> $LOCALES_LIST
-	    ;;
-	esac
+#    elif [[ $result -ge $expectedResult && $core -eq 2 ]] # no messages but all solaris_*
+#    then
+#	### need to translate "(no messages)" - KC
+#	nomsg_str=`$gettext --domain=localeadm "(no messages)"`
+#
+#	case $1 in
+#	locale)
+#	    print_$region "${SEL_STR} ${nomsg_str}" >> $LOCALES_LIST
+#	    ;;
+#	code)
+#	    cprint_$region "${SEL_STR} ${nomsg_str}" >> $LOCALES_LIST
+#	    ;;
+#	short)
+#	    echo >> $LOCALES_LIST
+#	    echo "$SEL_STR ${nomsg_str} ($region)" | $tee -a $LOCALES_LIST
+#	    echo >> $LOCALES_LIST
+#	    ;;
+#	q)
+#	    echo >> $LOCALES_LIST
+#	    echo "$SEL_STR ${nomsg_str} ($region)" >> $LOCALES_LIST
+#	    echo >> $LOCALES_LIST
+#	    ;;
+#	esac
     # MP this is tricky, this can also mean that core packages are shared - e.g. hongkong and taiwan
     # therefore after removing taiwan those are left on the system and it shows "taiwan incomplete"
     # as a result honkong does not try to remove those packages either, taiwan uses them....
@@ -1754,16 +1755,17 @@ fi
 
 #print "DEBUG $SEL_REGION langcd: $langcd, solaris:$result, core:$core\n"
 
-if [[ $result -eq $expected && $core -eq 2 && langcd -ge 2 ]] # if we have a messages as well
+#if [[ $result -eq $expected && $core -eq 2 && langcd -ge 2 ]] # if we have a messages as well
+if [[ $result -eq $expected && $core -eq 2]] 
 then
     loc_prnt "The %s region (%s) is installed on this system" nolog "$SEL_STR" "$SEL_REGION"
     echo
     return 1    
-elif [[ $result -eq $expected && $core -eq 2 ]] # no messages but a solaris1, solaris2, solaris3, solaris4 and solaris5
-then
-    loc_prnt "The %s region (%s) is installed on this system without messages" nolog "$SEL_STR" "$SEL_REGION"
-    echo
-    return 1
+#elif [[ $result -eq $expected && $core -eq 2 ]] # no messages but a solaris1, solaris2, solaris3, solaris4 and solaris5
+#then
+#    loc_prnt "The %s region (%s) is installed on this system without messages" nolog "$SEL_STR" "$SEL_REGION"
+#    echo
+#    return 1
 elif [ core -eq 2 ]
 then
     loc_prnt "The %s region (%s) is installed on this system, but some packages may be missing." nolog "$SEL_STR" "$SEL_REGION"
