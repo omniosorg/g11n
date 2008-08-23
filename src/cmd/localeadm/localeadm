@@ -1723,6 +1723,13 @@ check_locale $SEL_REGION "$checkPath" "c_solaris"
 core=`expr $core + $?`
 expected=`expr ${#solarisImages[*]} '*' 2`  # check_locale succeeded on all CDs, all packages from all CDs are installed
 
+# check if there are any packages at all for this region -- this can be important for e.g. new regions
+regionPackages=`$grep $SEL_REGION $CONFIGFILE | $grep -v "locname" | wc -l`
+if [ "$regionPackages" -eq 0 ]
+then
+   core=0 
+fi
+
 if [ $core -eq 2 ]
 then
     # we have something on the system, so check for the rest of the pkgs
@@ -1732,7 +1739,7 @@ then
 	result=`expr $result + $?`
     done
     
-    print "DEBUG:: expected:$expected, result:$result\n"
+#    print "DEBUG:: expected:$expected, result:$result\n"
     if [ "$result" -eq "$expected" ] # we have a solaris1, solaris 2, solaris3, solaris4, solaris5
     then
         for disk in ${langcdImages[*]}
@@ -1743,7 +1750,7 @@ then
     fi
 fi
 
-print "DEBUG $SEL_REGION langcd: $langcd, solaris:$result, core:$core\n"
+#print "DEBUG $SEL_REGION langcd: $langcd, solaris:$result, core:$core\n"
 
 if [[ $result -eq $expected && $core -eq 2 && langcd -ge 2 ]] # if we have a messages as well
 then
