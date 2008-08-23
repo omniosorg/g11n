@@ -779,6 +779,7 @@ typeset -i count=0 pkg_count=0 num=2
 typeset check_disk=$3
 typeset disk=$4
  
+
 if [ "$VERBOSE" = "y" ]
 then
     loc_prnt "Checking for %s region (%s) (verbose mode)" logvb "$SEL_STR" "$region" 
@@ -1163,7 +1164,8 @@ do
     # check do we have the image
     get_install_dir ${DEVICE} $SEL_REGION $cd # returns either 0 (good dir) or the position in the array of the bad dir
     position=$?
-    if [[ "$position" -eq 0 && "$cd" = "dvd" ]]
+#    if [[ "$position" -eq 0 && "$cd" = "dvd" ]]
+    if [[ "$position" -ne 0 && "$cd" = "dvd" ]]
     then
       continue 
     fi    
@@ -1855,30 +1857,28 @@ do
 		echo $tmp_arch >> /var/run/arch.txt
 	    fi
 	done
-	sort -u /var/run/arch.txt > /var/run/arch_final.txt
+        if [ -f /var/run/arch.txt ]
+        then
+	  sort -u /var/run/arch.txt > /var/run/arch_final.txt
 
-	if [ `wc -l /var/run/arch_final.txt | awk '{print $1}'` -gt 1 ]
-	then
+	  if [ `wc -l /var/run/arch_final.txt | awk '{print $1}'` -gt 1 ]
+          then
 	    typeset -i retval=`expr $arr + 1`
 	    echo
 	    loc_prnt "The packages in %s do not appear to be all of the same architecture." nolog $INST_DIR
  	    loc_prnt "Please check these packages and re-run localeadm."
 	    echo
 	    break=1
-	else
+	  else
 	    pkg_arch=`more /var/run/arch_final.txt`
-	fi
-	
+          fi
 	# clean up all the temp files
-	if [ -f /var/run/arch_final.txt ]
-	then
+	  if [ -f /var/run/arch_final.txt ]
+	  then
 	    rm /var/run/arch_final.txt
-	fi
-	if [ -f /var/run/arch.txt ]
-	then
+	  fi
 	    rm /var/run/arch.txt
-	fi
-
+        fi
 	if [ "$pkg_arch" != $ARCH -a break -eq 0 ] # if the pkgs aren't the same arch as the system
  	then
 	    typeset -i retval=`expr $arr + 1`
