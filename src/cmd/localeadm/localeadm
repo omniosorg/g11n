@@ -1383,7 +1383,8 @@ then # we only need the langcd
     forlist="${langcdImages[*]}"              #  "langcd1 langcd2"
 else
     #forlist="1of2 2of2 langcd"
-    forlist="${solarisImages[*]} ${langcdImages[*]}"      #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd"
+    forlist="${solarisImages[*]} ${langcdImages[*]} dvd"      #   "solaris1 solaris2 solaris3 solaris4 solaris5 langcd"
+                                                            #packages are marked as "dvd" in config file if DVD was used to generate the config file, these need to be removed as well
 fi
 #loc_prnt "Image list is %s" $forlist
 
@@ -1756,7 +1757,7 @@ fi
 #print "DEBUG $SEL_REGION langcd: $langcd, solaris:$result, core:$core\n"
 
 #if [[ $result -eq $expected && $core -eq 2 && langcd -ge 2 ]] # if we have a messages as well
-if [[ $result -eq $expected && $core -eq 2]] 
+if [[ $result -eq $expected && $core -eq 2 ]] 
 then
     loc_prnt "The %s region (%s) is installed on this system" nolog "$SEL_STR" "$SEL_REGION"
     echo
