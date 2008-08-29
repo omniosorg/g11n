@@ -576,24 +576,24 @@ do
 	else
 	    if [ "$3" = "all" ]
 	    then
-               checkImage="disk"     # checking an install dir
+               checkImage="dir"     # checking an install dir
+               path=${DEVICES[0]}
 	    else
                 checkImage="mach"    # checking locales installed on / on the machine
 	    fi
 	fi
-	check_locale $region "$checkImage" "c_solaris" # checking locales installed on / on the machine
+	check_locale $region "$checkImage" "c_solaris" "$path" # checking locales installed on / on the machine
 	core=`expr $core + $?` # get the result 
-
 	if [ $core -eq 2 ] # if we have at least a core install (missing core pkgs are as good as no locale installed)
 	then
 	    for disk in  ${solarisImages[*]}   # check each image in turn
 	    do
 		if [ "$1" = "q" ] # quiet mode
 		then
-	 	    check_locale $region "$checkImage" "$disk" 2>&1 > /dev/null
+	 	    check_locale $region "$checkImage" "$disk" "$path" 2>&1 > /dev/null
 		    result=`expr $result + $?`
 		else
-	            check_locale $region "$checkImage" "$disk" 
+	            check_locale $region "$checkImage" "$disk" "$path" 
 		    result=`expr $result + $?`
 		fi
 	    done
@@ -604,14 +604,14 @@ do
 	then
 	    if [ "$1" = "q" ]
 		then
-		    check_locale $region "$checkImage" "langcd1" 2>&1 > /dev/null
+		    check_locale $region "$checkImage" "langcd1" "$path" 2>&1 > /dev/null
 		    langcd=`expr $langcd + $?`
-		    check_locale $region "$checkImage" langcd2 2>&1 > /dev/null
+		    check_locale $region "$checkImage" "langcd2" "$path" 2>&1 > /dev/null
 		    langcd=`expr $langcd + $?`
 		else # end "if quiet mode"
-		    check_locale $region "$checkImage" "langcd1"
+		    check_locale $region "$checkImage" "langcd1" "$path"
 		    langcd=`expr $langcd + $?`
-		    check_locale $region "$checkImage" langcd2
+		    check_locale $region "$checkImage" "langcd2" "$path"
 	            langcd=`expr $langcd + $?`
 		fi
 	fi # end "if result >= 5"
@@ -780,7 +780,6 @@ typeset -i count=0 pkg_count=0 num=2
 typeset check_disk=$3
 typeset disk=$4
  
-
 if [ "$VERBOSE" = "y" ]
 then
     loc_prnt "Checking for %s region (%s) (verbose mode)" logvb "$SEL_STR" "$region" 
@@ -811,22 +810,39 @@ fi
 
 for pkg in `$awk '$2 ~ /'$region'/ && $3 ~ /'$check_disk'/ {print $1}' $CONFIGFILE`
 do
+    missing=1
     if [ "$2" = "mach" ] # if we're checking a machine for installed locales
     then
 	pkginfo -q $pkg
+        missing=$?
     elif [ "$2" = "alt" ]
     then
 	pkginfo -R $ALT_ROOT_DIR -q $pkg # read for a pkg installed on $ALT_DIR
+        missing=$?
     elif [ "$2" = "dir" ] # if we're checking a dir for the pkgs for a locale
     then
+        system=`uname -r | sed -e "s/5.//"`
 	if [ -f $disk/.order ] # if we have a solaris_1 or DVD we don't need to check individual pkgs
 	then
 	    $grep -q $pkg $disk/.order
+            missing=$?
+        elif [[ -d "$disk/Solaris_$system/Product/" ]]
+        then
+           if [[ -d "$disk/Solaris_$system/Product/$pkg" ]]
+           then
+             missing=0
+           fi
 	else #we have to do it the slow way
-	    find $disk -type d -name $pkg -prune > /dev/null # all we want is the return value
+#            print "DEBUG :: ? $? find $disk -type d -name $pkg -prune > /dev/null \n" 
+#	    find $disk -type d -name $pkg -prune > /dev/null # all we want is the return value
+	    foundItems=`find $disk/ -type d -name $pkg -prune | wc -l` # return value is always 0 unless there's an error
+            if [[ "$foundItems" -ge 1 ]]
+            then
+              missing=0
+            fi
 	fi
     fi
-    if [ $? -eq 0 ] # if the pkgs is found, up the pkg count
+    if [[ $missing -eq 0 ]] # if the pkgs is found, up the pkg count
     then
 	count=`expr $count + 1`
 	if [ "$VERBOSE" = "y" ]
