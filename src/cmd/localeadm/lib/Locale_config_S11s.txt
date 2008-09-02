@@ -340,6 +340,7 @@ SUNWlang-et	eeu	solaris1
 SUNWlang-et-extra	eeu	solaris1
 SUNWlang-hr	eeu	solaris1
 SUNWlang-hr-extra	eeu	solaris1
+SUNWlang-kk	eeu	solaris1
 SUNWlang-lt	eeu	solaris1
 SUNWlang-lt-extra	eeu	solaris1
 SUNWlang-lv	eeu	solaris1
@@ -360,6 +361,7 @@ SUNWlang-sr	eeu	solaris1
 SUNWlang-sr-extra	eeu	solaris1
 SUNWlang-tr	eeu	solaris1
 SUNWlang-tr-extra	eeu	solaris1
+SUNWlang-uk	eeu	solaris1
 SUNWlocaledefsrc	eeu	solaris5
 SUNWmyspell-dictionary-extra	eeu	langcd1
 SUNWmyspell-dictionary-ru	eeu	langcd1
@@ -392,6 +394,7 @@ SUNWkttf	hi_in	solaris1
 SUNWkxfnt	hi_in	solaris1
 SUNWlang-common	hi_in	c_solaris1
 SUNWlang-hi	hi_in	solaris1
+SUNWscim-tables-india	hi_in	langcd2
 #                         Solaris 11, Japanese Locale
 #
 #         ( ja, ja_JP.eucJP, ja_JP.EUC, ja_JP.PCK, ja_JP.UTF-8)
@@ -446,7 +449,6 @@ SUNWjfpr	ja	c_solaris1
 SUNWjfpre	ja	langcd1
 SUNWjfpu	ja	c_solaris1
 SUNWjfpue	ja	langcd1
-SUNWjfxmn	ja	langcd1
 SUNWjiqu	ja	langcd1
 SUNWjiquc	ja	langcd1
 SUNWjjaf	ja	langcd1
@@ -487,8 +489,6 @@ SUNWjxcft	ja	solaris1
 SUNWjxfnt	ja	langcd1
 SUNWjxoft	ja	langcd1
 SUNWjxplt	ja	solaris1
-SUNWjxpmn	ja	langcd1
-SUNWjxumn	ja	langcd1
 SUNWjxwsvr	ja	langcd1
 SUNWjzfsg	ja	langcd1
 SUNWkttf	ja	solaris1
@@ -503,6 +503,8 @@ SUNWlibanthy-root	ja	solaris1
 SUNWpostgr-82-l10n-ja	ja	langcd1
 SUNWpostgr-l10n-ja	ja	langcd1
 SUNWrealplayer-l10n-ja	ja	langcd1
+SUNWscim-anthy	ja	langcd1
+SUNWscim-tables-japanese	ja	langcd1
 SUNWstarsuite-ja	ja	langcd1
 SUNWstarsuite-ja-fonts	ja	langcd1
 SUNWstarsuite-ja-help	ja	langcd1
@@ -529,7 +531,6 @@ SUNWgnome-l10nmessages-ko	korean	langcd2
 SUNWgttf	korean	solaris2
 SUNWiconv-extra	korean	solaris1
 SUNWiiimf-ko-hangul	korean	solaris3
-SUNWiiimf-ko-kole	korean	solaris3
 SUNWinttf	korean	solaris2
 SUNWjxcft	korean	solaris1
 SUNWkacx	korean	langcd2
@@ -599,6 +600,8 @@ SUNWlang-ko-extra	korean	solaris1
 SUNWlibhangul	korean	solaris1
 SUNWlibhangul-devel	korean	solaris5
 SUNWrealplayer-l10n-ko	korean	langcd2
+SUNWscim-hangul	korean	langcd2
+SUNWscim-tables-korean	korean	langcd2
 SUNWstarsuite-ko	korean	langcd2
 SUNWstarsuite-ko-fonts	korean	langcd2
 SUNWstarsuite-ko-help	korean	langcd2
@@ -1202,7 +1205,10 @@ SUNWkxfnt	th_th	solaris1
 SUNWlang-common	th_th	c_solaris1
 SUNWlang-th	th_th	solaris1
 SUNWlang-th-extra	th_th	solaris1
+SUNWlibthai	th_th	langcd2
+SUNWlibthai-devel	th_th	langcd2
 SUNWodtts	th_th	solaris3
+SUNWscim-thai	th_th	langcd2
 SUNWtdbas	th_th	solaris1
 SUNWtddst	th_th	solaris1
 SUNWtddte	th_th	solaris1
@@ -1468,6 +1474,9 @@ SUNWlang-common-extra	china	solaris1
 SUNWlang-zhCN	china	solaris1
 SUNWlang-zhCN-extra	china	solaris1
 SUNWrealplayer-l10n-zhCN	china	langcd2
+SUNWscim-pinyin	china	langcd2
+SUNWscim-sunpinyin	china	langcd2
+SUNWscim-tables-chinese	china	langcd2
 SUNWstardict	china	langcd2
 SUNWstardict-root	china	langcd2
 SUNWstardict-sundicts	china	langcd2
@@ -1639,6 +1648,9 @@ SUNWlang-zhHK	hongkong	solaris1
 SUNWlang-zhHK-extra	hongkong	solaris1
 SUNWrealplayer-l10n-zhCN	hongkong	langcd2
 SUNWrealplayer-l10n-zhHK	hongkong	langcd2
+SUNWscim-pinyin	hongkong	langcd2
+SUNWscim-sunpinyin	hongkong	langcd2
+SUNWscim-tables-chinese	hongkong	langcd2
 SUNWstardict	hongkong	langcd2
 SUNWstardict-root	hongkong	langcd2
 SUNWstardict-sundicts	hongkong	langcd2
@@ -1823,6 +1835,10 @@ SUNWlibchewing	taiwan	solaris1
 SUNWlibchewing-devel	taiwan	solaris5
 SUNWrealplayer-l10n-zhCN	taiwan	langcd2
 SUNWrealplayer-l10n-zhTW	taiwan	langcd2
+SUNWscim-chewing	taiwan	langcd2
+SUNWscim-pinyin	taiwan	langcd2
+SUNWscim-sunpinyin	taiwan	langcd2
+SUNWscim-tables-chinese	taiwan	langcd2
 SUNWstardict	taiwan	langcd2
 SUNWstardict-root	taiwan	langcd2
 SUNWstardict-sundicts	taiwan	langcd2
