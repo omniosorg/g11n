@@ -52,7 +52,7 @@ SUNWplow1	aua	solaris1
 #  es_NI, es_NI.ISO8859-1, es_PA, es_PA.ISO8859-1, es_SV, es_SV.ISO8859-1 )
 #
 
-locname C_America cam es_CR es_GT es_PA es_SV es
+locname C_America cam es_CR es_GT es_NI es_PA es_SV es
 
 SUNW5ttf	cam	solaris1
 SUNWcamdt	cam	solaris1
