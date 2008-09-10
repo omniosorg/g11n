@@ -1554,22 +1554,12 @@ s none usr/lib/locale/vi_VN.UTF-8/vi_VN.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8
 f none usr/lib/locale/vi_VN.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/vi_VN.UTF-8/locale_map=usr/lib/locale/vi_VN.UTF-8/locale_map.miniroot 0644 root bin
 
-d none usr/lib/locale/vi_VN 0755 root bin
-s none usr/lib/locale/vi_VN/vi_VN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
-s none usr/lib/locale/vi_VN/locale_description=../vi_VN.UTF-8/locale_description
-f none usr/lib/locale/vi_VN/geo_map 0644 root bin
-
 # ms_MY.UTF-8
 d none usr/lib/locale/ms_MY.UTF-8 0755 root bin
 d none usr/lib/locale/ms_MY.UTF-8/LC_MESSAGES 0755 root bin
 s none usr/lib/locale/ms_MY.UTF-8/ms_MY.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 f none usr/lib/locale/ms_MY.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/ms_MY.UTF-8/locale_map=usr/lib/locale/ms_MY.UTF-8/locale_map.miniroot 0644 root bin
-
-d none usr/lib/locale/ms_MY 0755 root bin
-s none usr/lib/locale/ms_MY/ms_MY.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
-s none usr/lib/locale/ms_MY/locale_description=../ms_MY.UTF-8/locale_description
-f none usr/lib/locale/ms_MY/geo_map 0644 root bin
 
 # id_ID.UTF-8
 d none usr/lib/locale/id_ID.UTF-8 0755 root bin
@@ -1578,7 +1568,3 @@ s none usr/lib/locale/id_ID.UTF-8/id_ID.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8
 f none usr/lib/locale/id_ID.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/id_ID.UTF-8/locale_map=usr/lib/locale/id_ID.UTF-8/locale_map.miniroot 0644 root bin
 
-d none usr/lib/locale/id_ID 0755 root bin
-s none usr/lib/locale/di_ID/id_ID.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
-s none usr/lib/locale/id_ID/locale_description=../id_ID.UTF-8/locale_description
-f none usr/lib/locale/id_ID/geo_map 0644 root bin
