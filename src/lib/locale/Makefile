@@ -50,7 +50,7 @@ pt_PT.ISO8859-15 pt_PT.UTF-8 ro_RO ro_RO.ISO8859-2 ro_RO.UTF-8 ru_RU ru_RU.ANSI1
 sh_BA.ISO8859-2@bosnia sh_BA.UTF-8 sk_SK sk_SK.ISO8859-2 sk_SK.UTF-8 sl_SI sl_SI.ISO8859-2 sl_SI.UTF-8 sq_AL sq_AL.ISO8859-2 \
 sq_AL.UTF-8 sr_CS sr_CS.UTF-8 sr_YU sr_YU.ISO8859-5 sv sv_SE sv_SE.ISO8859-1 sv_SE.ISO8859-15 sv_SE.UTF-8 sv_SE.UTF-8@euro ta_IN.UTF-8 te_IN.UTF-8 th_TH \
 th_TH.UTF-8 tr_TR tr_TR.ISO8859-9 tr_TR.UTF-8 zh zh_CN.GB18030 zh_CN.GBK zh_CN.UTF-8 zh_HK.BIG5HK zh_HK.UTF-8 zh_TW zh_TW.BIG5 \
-zh_TW.UTF-8 uk_UA uk_UA.UTF-8 kk_KZ kk_KZ.UTF-8 ms_MY.UTF-8 id_ID.UTF-8 vi_VN.UTF-8
+zh_TW.UTF-8 uk_UA uk_UA.UTF-8 kk_KZ kk_KZ.UTF-8 ms_MY.UTF-8 ms_MY id_ID.UTF-8 id_ID vi_VN.UTF-8 vi_VN
 
 
 all:=		TARGET= all
