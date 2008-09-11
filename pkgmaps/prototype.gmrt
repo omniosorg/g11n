@@ -875,7 +875,7 @@ f none usr/lib/locale/de/locale_description 0644 root bin
 f none usr/lib/locale/is_IS.ISO8859-1/locale_description 0644 root bin
 f none usr/lib/locale/is_IS.ISO8859-1/locale_map=usr/lib/locale/is_IS.ISO8859-1/locale_map.miniroot 0644 root bin
 f none usr/lib/locale/da_DK.ISO8859-1/locale_description 0644 root bin
-f none usr/lib/locale/da_DK.ISO8859-1/locale_map 0644 root bin
+f none usr/lib/locale/da_DK.ISO8859-1/locale_map=usr/lib/locale/da_DK.ISO8859-1/locale_map.miniroot 0644 root bin
 s none usr/lib/locale/da/locale_map=usr/lib/locale/da_DK.ISO8859-1/locale_map
 f none usr/lib/locale/da_DK.ISO8859-15/locale_description 0644 root bin
 f none usr/lib/locale/da_DK.ISO8859-15/locale_map=usr/lib/locale/da_DK.ISO8859-15/locale_map.miniroot 0644 root bin
