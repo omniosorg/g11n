@@ -1,6 +1,1 @@
-LC_COLLATE=cs_CZ.UTF-8@euro
-LC_CTYPE=cs_CZ.UTF-8@euro
-LC_MESSAGES=C
-LC_MONETARY=cs_CZ.UTF-8@euro
-LC_NUMERIC=cs_CZ.UTF-8@euro
-LC_TIME=cs_CZ.UTF-8@euro
+LANG=cs_CZ.UTF-8@euro
