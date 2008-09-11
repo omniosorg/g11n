@@ -1,8 +1,8 @@
 i pkginfo
 i depend
 i i.preserve
-i i.manifest
-i r.manifest
+#i i.manifest
+#i r.manifest
 i copyright
 d none etc 0755 root sys
 d none etc/wnn 0755 root sys
