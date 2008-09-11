@@ -515,9 +515,13 @@ then
     rm $LOCALES_LIST
 fi
 
-if [ "$1" != "q" ] # check for silent running - no echoes
+if [[ "$1" != "q" && "$TEST" != "y" ]] # check for silent running - no echoes
 then
     loc_prnt "Checking for installed packages. This could take a while." nolog
+    echo
+elif [[ "$TEST" = "y" ]]
+then
+    loc_prnt "The following regions are supported by localeadm:" nolog
     echo
 fi
 
