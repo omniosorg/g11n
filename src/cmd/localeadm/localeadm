@@ -734,28 +734,44 @@ fi
 is_correct_cd() {
         cdName=`echo "$1" | sed -e "s/[0-9]*$//"`
 	cdNum=`echo "$1" | sed -e "s/^[a-z]*//"`
-        if [ $cdNum -eq 1 ]
+        if [[ "$cdNum" -eq 1 || "$cdName" = "dvd" ]]
 	then
 		cdNum=""    #the first CD does not have number in .volume.inf
 	fi
 	# $cdpath is set elsewhere
 	#.volume.inf indicates what cd the image is. 		
-        if [ "$cdName" = "solaris" ]
+        cdcheck=""
+        if [ -d "$cdpath" ]
         then
-		cdcheck=`grep "SOL_[0-9]*_.*"$CDLABEL"_*"$cdNum $cdpath/.volume.inf`
-	elif [ "$cdName" = "langcd" ]
-	then
-		cdcheck=`grep "SOL_[0-9]*.*LANG_"$CDLABEL"_*"$cdNum $cdpath/.volume.inf`
-	fi
+          if [[ "$cdName" = "solaris" || $cdName = "dvd" ]]
+          then
+		cdcheck=`grep "SOL_[0-9]*_.*"$CDLABEL"_*"$cdNum"\"" $cdpath/.volume.inf`
+          elif [ "$cdName" = "langcd" ]
+          then
+		cdcheck=`grep "SOL_[0-9]*.*LANG_"$CDLABEL"_*"$cdNum"\"" $cdpath/.volume.inf`
+          fi
+        fi
 	
 	#if it is not a zero length string, then this is the right cd
 	if [ ! -z "$cdcheck" ]
 	then
 		cdfound=1
 	else 
-		echo ""
-		loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-		read cdpath
+              reason=""
+              if [ -f $cdpath/.volume.inf ]
+              then
+                arch=`grep "SOL_[0-9]*.*"$cdNum $cdpath/.volume.inf | sed -e "s/.*_\([^_]*\)\"/\1/"`
+                if [[ "$arch" = "SPARC" || "$arch" = "X86" ]]
+                then
+                   if [[  "$arch" != "$CDLABEL" ]]
+                   then
+                      reason=" (wrong architecture)"
+                   fi
+                fi
+              fi
+	      echo ""
+	      loc_prnt "%s not found$reason, please insert image %s and enter path: " nolog $1 $1
+	      read cdpath
 	fi	
 }
 
@@ -2098,6 +2114,15 @@ do
         repeat=1
 done
 
+CDLABEL="SPARC"
+if [[ "$ARCH" = "i386" ]]
+then
+    CDLABEL="X86";
+fi;
+if [ ! -f $CONFIGFILE".old" ]
+then
+        cp $CONFIGFILE $CONFIGFILE".old"
+fi
 # If user has selected the cd installation option
 
 if [[ $choice -eq 1 ]] 
@@ -2105,10 +2130,6 @@ then
 
 # if Locale_config_S[release].txt.old doesn't exist, move Locale_config_S[release].txt to Locale_config_S[release].txt.old
 
-if [ ! -f $CONFIGFILE".old" ]
-then
-        cp $CONFIGFILE $CONFIGFILE".old"
-fi
 
 echo ""
 echo "------------------------------------------------------"
@@ -2145,36 +2166,7 @@ do
 
   while [ "$cdfound" -eq 0 ] 
   do
-	CDLABEL="SPARC"
- 	if [[ "$ARCH" = "i386" ]]
-        then
- 		CDLABEL="X86";
- 	fi;
-
-#	if [ "${sources[index]}" == "solaris1" ] 
-#	then
-#		# Path should have a s0 directory above it if it is solaris1
-#
-#		testpath="$cdpath/s0"
-#		if [ ! -d ${testpath} ] 
-#		then
-#			testpath="$cdpath/Solaris*"
-#			if [ ! -d ${testpath} ]
-#			then
-#				echo ""
-#				loc_prnt "%s not found, please insert image %s and enter path: " nolog ${sources[index]} ${sources[index]};
-#				read cdpath
-#			else
-#				cdfound=1
-#				cdpath="$cdpath/Solaris_*/Product"
-#			fi
-#		else 
-#			cdfound=1
-#			cdpath="$cdpath/s0/Solaris_*/Product"
-#		fi	
-#        else
-             is_correct_cd ${sources[index]}
-#        fi
+      is_correct_cd ${sources[index]}
   done
 
 # Program continues if the correct CD path has been found
@@ -2243,11 +2235,6 @@ then
 
 # if Locale_config_S[release].txt.old doesn't exist, move Locale_config_S[release].txt to Locale_config_S[release].txt.old
 
-if [ ! -f $CONFIGFILE".old" ]
-then
-        cp $CONFIGFILE $CONFIGFILE".old"
-fi
-
 echo ""
 echo "------------------------------------------------------------------"
 loc_prnt "DVD installation/net installed combined image option selected"
@@ -2259,11 +2246,14 @@ read cdpath
 
 # Repeat input prompt to user while the path is not valid
 
-while [ ! -d ${cdpath} ]
+#while [ ! -d ${cdpath} ]
+cdfound=0
+while [ "$cdfound" -eq 0 ]
 do
-	echo ""
-	loc_prnt "%s not found: Please insert image and enter path: " nolog $cdpath;
-	read cdpath
+   is_correct_cd "dvd"
+#	echo ""
+#	loc_prnt "%s not found: Please insert image and enter path: " nolog $cdpath;
+#	read cdpath
 done
 
 # Flag variable to detect if the path points to the installation image
