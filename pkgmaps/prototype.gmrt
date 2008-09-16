@@ -1547,27 +1547,40 @@ s none usr/lib/locale/kk_KZ/kk_KZ.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/kk_KZ/locale_description=../kk_KZ.UTF-8/locale_description
 f none usr/lib/locale/kk_KZ/geo_map 0644 root bin
 
+# vi_VN
+d none usr/lib/locale/vi_VN 0755 root bin
+s none usr/lib/locale/vi_VN/locale_description=../vi_VN.UTF-8/locale_description
+f none usr/lib/locale/vi_VN/geo_map 0644 root bin 
+
 # vi_VN.UTF-8
 d none usr/lib/locale/vi_VN.UTF-8 0755 root bin
 d none usr/lib/locale/vi_VN.UTF-8/LC_MESSAGES 0755 root bin
 s none usr/lib/locale/vi_VN.UTF-8/vi_VN.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 f none usr/lib/locale/vi_VN.UTF-8/locale_description 0644 root bin
-f none usr/lib/locale/vi_VN.UTF-8/geo_map 0644 root bin
 f none usr/lib/locale/vi_VN.UTF-8/locale_map=usr/lib/locale/vi_VN.UTF-8/locale_map.miniroot 0644 root bin
+
+# ms_MY
+d none usr/lib/locale/ms_MY 0755 root bin
+s none usr/lib/locale/ms_MY/locale_description=../ms_MY.UTF-8/locale_description
+f none usr/lib/locale/ms_MY/geo_map 0644 root bin 
 
 # ms_MY.UTF-8
 d none usr/lib/locale/ms_MY.UTF-8 0755 root bin
 d none usr/lib/locale/ms_MY.UTF-8/LC_MESSAGES 0755 root bin
 s none usr/lib/locale/ms_MY.UTF-8/ms_MY.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 f none usr/lib/locale/ms_MY.UTF-8/locale_description 0644 root bin
-f none usr/lib/locale/ms_MY.UTF-8/geo_map 0644 root bin
 f none usr/lib/locale/ms_MY.UTF-8/locale_map=usr/lib/locale/ms_MY.UTF-8/locale_map.miniroot 0644 root bin
+
+# id_ID
+d none usr/lib/locale/id_ID 0755 root bin
+s none usr/lib/locale/id_ID/locale_description=../id_ID.UTF-8/locale_description
+f none usr/lib/locale/id_ID/geo_map 0644 root bin 
 
 # id_ID.UTF-8
 d none usr/lib/locale/id_ID.UTF-8 0755 root bin
 d none usr/lib/locale/id_ID.UTF-8/LC_MESSAGES 0755 root bin
 s none usr/lib/locale/id_ID.UTF-8/id_ID.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 f none usr/lib/locale/id_ID.UTF-8/locale_description 0644 root bin
-f none usr/lib/locale/id_ID.UTF-8/geo_map 0644 root bin
 f none usr/lib/locale/id_ID.UTF-8/locale_map=usr/lib/locale/id_ID.UTF-8/locale_map.miniroot 0644 root bin
+
 
