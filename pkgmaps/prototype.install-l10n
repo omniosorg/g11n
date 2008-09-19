@@ -27,6 +27,10 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 #
+d none usr/lib/locale/ar_SA.UTF-8 0755 root bin
+d none usr/lib/locale/ar_SA.UTF-8/LC_MESSAGES 0755 root bin
+f none usr/lib/locale/ar_SA.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo 0755 root bin
+#
 d none usr/lib/locale/cs_CZ.UTF-8 0755 root bin
 d none usr/lib/locale/cs_CZ.UTF-8/LC_MESSAGES 0755 root bin
 f none usr/lib/locale/cs_CZ.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo 0755 root bin
@@ -48,6 +52,10 @@ d none usr/lib/locale/fr.UTF-8/LC_MESSAGES 0755 root bin
 f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo=usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo 0755 root bin
 d none usr/lib/locale/fr_FR.UTF-8 0755 root bin
 s none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES=../fr.UTF-8/LC_MESSAGES
+#
+d none usr/lib/locale/id_ID.UTF-8 0755 root bin
+d none usr/lib/locale/id_ID.UTF-8/LC_MESSAGES 0755 root bin
+f none usr/lib/locale/id_ID.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo 0755 root bin
 #
 d none usr/lib/locale/it.UTF-8 0755 root bin
 d none usr/lib/locale/it.UTF-8/LC_MESSAGES 0755 root bin
@@ -101,6 +109,11 @@ s none usr/lib/locale/zh_HK.UTF-8/LC_MESSAGES=../zh_TW.UTF-8/LC_MESSAGES
 d none usr/share 0755 root sys
 d none usr/share/locale 0755 root other
 #
+d none usr/share/locale/ar 0755 root other
+s none usr/share/locale/ar_SA.UTF-8=ar
+d none usr/share/locale/ar/LC_MESSAGES 0755 root other
+f none usr/share/locale/ar/LC_MESSAGES/gui-install.mo 0644 root other
+#
 d none usr/share/locale/cs 0755 root other
 s none usr/share/locale/cs_CZ.UTF-8=cs
 d none usr/share/locale/cs/LC_MESSAGES 0755 root other
@@ -120,6 +133,11 @@ d none usr/share/locale/fr 0755 root other
 s none usr/share/locale/fr_FR.UTF-8=fr
 d none usr/share/locale/fr/LC_MESSAGES 0755 root other
 f none usr/share/locale/fr/LC_MESSAGES/gui-install.mo 0644 root other
+#
+d none usr/share/locale/id 0755 root other
+s none usr/share/locale/id_ID.UTF-8=id
+d none usr/share/locale/id/LC_MESSAGES 0755 root other
+f none usr/share/locale/id/LC_MESSAGES/gui-install.mo 0644 root other
 #
 d none usr/share/locale/it 0755 root other
 s none usr/share/locale/it_IT.UTF-8=it
@@ -184,6 +202,22 @@ d none usr/share/gui-install 0755 root sys
 # 
 d none usr/share/gui-install/help 0755 root sys
 #
+d none usr/share/gui-install/help/ar 0755 root sys
+s none usr/share/gui-install/help/ar_SA.UTF-8=ar
+f none usr/share/gui-install/help/ar/FINISH_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ar/INSTALL_DISK_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ar/INSTALL_FAILURE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ar/INSTALL_LANGUAGE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ar/INSTALL_PROGRESS_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ar/INSTALL_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ar/INSTALL_TIMEZONE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ar/INSTALL_USERS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/ar/UPGRADE_DISK_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/ar/UPGRADE_FAILURE_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/ar/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/ar/UPGRADE_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ar/WELCOME_PANEL.txt 0644 root sys
+#
 d none usr/share/gui-install/help/cs 0755 root sys
 s none usr/share/gui-install/help/cs_CZ.UTF-8=cs
 f none usr/share/gui-install/help/cs/FINISH_PANEL.txt 0644 root sys
@@ -247,6 +281,23 @@ f none usr/share/gui-install/help/fr/INSTALL_USERS_PANEL.txt 0644 root sys
 #f none usr/share/gui-install/help/fr/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
 #f none usr/share/gui-install/help/fr/UPGRADE_REVIEW_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/fr/WELCOME_PANEL.txt 0644 root sys
+#
+d none usr/share/gui-install/help/id 0755 root sys
+s none usr/share/gui-install/help/id_ID.UTF-8=id
+f none usr/share/gui-install/help/id/FINISH_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/id/INSTALL_DISK_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/id/INSTALL_FAILURE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/id/INSTALL_LANGUAGE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/id/INSTALL_PROGRESS_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/id/INSTALL_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/id/INSTALL_TIMEZONE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/id/INSTALL_USERS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/id/UPGRADE_DISK_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/id/UPGRADE_FAILURE_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/id/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/id/UPGRADE_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/id/WELCOME_PANEL.txt 0644 root sys
+#
 #
 d none usr/share/gui-install/help/it 0755 root sys
 s none usr/share/gui-install/help/it_IT.UTF-8=it
