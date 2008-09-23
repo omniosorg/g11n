@@ -266,6 +266,8 @@ d none openwin/lib/X11/xkb/symbols/sony 0755 root bin
 f none openwin/lib/X11/xkb/symbols/sony/us 0444 root bin
 
 d none openwin/lib/X11/xkb/symbols/sun 0755 root bin
+f none openwin/lib/X11/xkb/symbols/sun/am 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/az 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/ca 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/cs 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/cz 0444 root bin
@@ -275,10 +277,12 @@ f none openwin/lib/X11/xkb/symbols/sun/es 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/fi 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/fr 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/gb 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/ge 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/gr 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/hu 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/it 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/jp 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/kg 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/ko 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/kz 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/lt 0444 root bin
@@ -290,10 +294,12 @@ f none openwin/lib/X11/xkb/symbols/sun/pt 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/ru 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/se 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/sw 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/tj 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/tr 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/tuv 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/tw 0444 root bin
 f none openwin/lib/X11/xkb/symbols/sun/us 0444 root bin
+f none openwin/lib/X11/xkb/symbols/sun/uz 0444 root bin
 
 d none openwin/lib/X11/xkb/symbols/xfree68 0755 root bin
 f none openwin/lib/X11/xkb/symbols/xfree68/amiga 0444 root bin

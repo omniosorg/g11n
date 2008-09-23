@@ -1,6 +1,6 @@
 // $XdotOrg: $
 //
-// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+// Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -86,7 +86,49 @@ xkb_symbols "type4" {
     key <AB10> { [ minus, underscore    ]                       };
     key <COMP> { [ SunAltGraph          ]                       };
     key <ALGR> { [ SunCompose           ]                       };
-
-
-
 };
+
+
+xkb_symbols "type6" {
+    include "sun/us(type6)"
+
+    key <TLDE> {	[ dead_circumflex,	degree		]	};
+
+
+    key <AE02> {        [               2,        quotedbl      ],
+			[	twosuperior			]	};
+    key <AE03> {	[		3,	section		],
+			[	threesuperior			]	};
+    key <AE04> {	[		4,	dollar		]	};
+    key <AE07> {	[	  	7,	slash		],
+			[ 	braceleft			]	};
+    key <AE08> {	[	  	8,	parenleft	],
+			[ 	bracketleft			]	};
+    key <AE09> {	[	  	9,	parenright	],
+			[ 	bracketright			]	};
+    key <AE10> {	[	  	0,	equal		],
+			[ 	braceright			]	};
+    key <AE11> {	[	   ssharp,	question	],
+			[ 	backslash			]	};
+    key <AE12> {	[     SunFA_Acute,	SunFA_Grave	]	};
+    key <AD01> {	[		q,	Q		],
+			[	at				]	};
+    key <AD03> {        [               e,               E      ],
+                        [        EuroSign			]       };
+    key <AD11> {	[      udiaeresis,	Udiaeresis	]	};
+    key <AD12> {	[      	     plus,	asterisk	],
+			[ 			dead_tilde	]	};
+    key <AC10> {	[ 	odiaeresis,	Odiaeresis	]	};
+    key <AC11> {	[ 	adiaeresis,	Adiaeresis	]	};
+
+    key <AB07> {	[		m,	M		],
+			[		mu			]	};
+    key <AB08> {        [           comma,       semicolon      ]       };
+    key <AB09> {        [          period,           colon      ]       };
+    key <AB10> {        [           minus,      underscore      ]       };
+    key <BKSL> {	[      numbersign,      apostrophe	],
+			[	grave				]	};
+    key <LSGT> {	[            less,       greater  	],
+			[	bar				]	};
+};
+

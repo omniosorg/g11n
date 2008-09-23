@@ -1,6 +1,6 @@
 // $XdotOrg: $
 //
-// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+// Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -80,12 +80,10 @@ xkb_symbols "type4" {
    key <ALGR> { [ SunCompose		]			};
 
 
-
-
 };
 
 xkb_symbols "type5" {
-   include "dk"
+   include "sun/dk(type4)"
 
     key <AE05> { [ 5, percent		], [asciitilde			]};
     key <AE06> { [ 6, ampersand		], [asciicircum			]};
@@ -96,3 +94,46 @@ xkb_symbols "type5" {
     key <BKSL> { [ quoteright, asterisk	], [ quoteleft			]};
   
 };
+
+
+xkb_symbols "type6" {
+    include "sun/us(type6)"
+
+    key <TLDE> {	[         onehalf,         section      ]	};
+    key <AE02> {	[               2,        quotedbl  	],
+			[	       at			]	};
+    key <AE03> {	[              	3,	numbersign	],
+			[	 sterling			]	};
+    key <AE04> {	[               4,        currency     	],
+			[	   dollar,			]	};
+    key <AE05> {	[               5,         percent     	],
+			[        asciitilde			]	};
+    key <AE06> {	[               6,       ampersand     	],
+			[      asciicircum			]	};
+    key <AE07> {	[               7,           slash     	],
+			[       braceleft			]	};
+    key <AE08> {	[               8,       parenleft     	],
+			[     bracketleft			]	};
+    key <AE09> {	[               9,      parenright     	],
+			[    bracketright			]	};
+    key <AE10> {	[               0,           equal     	],
+                        [      braceright			]	};
+    key <AE11> {	[            plus,        question      ]	};
+    key <AE12> {   	[     SunFA_Acute,      SunFA_Grave     ],
+                 	[             bar		        ]	};
+    key <AD03> {        [               e,               E      ],
+                        [        EuroSign		        ]	};
+    key <AD11> {	[	    aring,           Aring 	]	};
+    key <AD12> {   	[ SunFA_Diaeresis, SunFA_Circumflex     ],
+                 	[      SunFA_Tilde,			]	};
+    key <BKSL> {	[      apostrophe,      asterisk	],
+			[	grave				]	};
+    key	<AC10> {	[	       ae,	        AE	]	};
+    key <AC11> {	[	   oslash,        Ooblique 	]	};
+    key <AB08> {        [	    comma,	semicolon	]       };
+    key <AB09> {        [	    period,	colon		]       };
+    key <AB10> {        [	     minus,	underscore      ]       };
+    key <LSGT> {	[	      less,	greater  	],
+			[	 backslash			]	};
+};
+

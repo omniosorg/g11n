@@ -1,6 +1,6 @@
 // $XdotOrg: $
 //
-// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+// Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -49,7 +49,7 @@
 // CDDL HEADER END
 //
 
-partial
+
 xkb_symbols "type4" {
     key <BKSL> { [ bracketleft, braceleft ], [ guillemotleft    ] };
     key <BRCR> { [ bracketright, braceright ], [ guillemotright ] };
@@ -80,9 +80,9 @@ xkb_symbols "type4" {
     key <AB10> { [ minus, underscore    ]                       };
 };
  
-partial
+
 xkb_symbols "type5" {
-    include "es"
+    include "sun/es(type4)"
  
     key <AE03> { [ 3, periodcentered    ], [ numbersign                 ] };
     key <AE04> { [ 4, dollar            ], [ asciicircum                ] };
@@ -98,15 +98,47 @@ xkb_symbols "type5" {
     key <AC11> { [ SunFA_Acute, SunFA_Diaeresis ], [ braceleft          ] };
 };
  
-partial
+
 xkb_symbols "type6" {
-    include "es(Sundeadkeys)"
- 
-    key <AE04> { [ 4, dollar            ], [ asciicircum                ] };
-    key <AE05> { [ 5, percent           ], [ asciitilde                 ] };
-    key <AE07> { [ 7, slash             ], [ braceleft                  ]};
-    key <AE08> { [ 8, parenleft         ], [ bracketleft                ]};
-    key <AE09> { [ 9, parenright        ], [ bracketright               ]};
-    key <AE10> { [ 0, equal             ], [ braceright                 ]};
-    key <AE11> { [ quoteright, question ], [ quoteleft                  ] };
+     include "sun/us(type6)"
+
+
+    key <TLDE> {        [       masculine,     ordfeminine      ],
+                        [       backslash			]       };
+    key <LSGT> {        [            less,         greater      ],
+                        [             bar,       brokenbar      ]       };
+    key <AE01> {        [               1,      exclam          ],
+                        [             bar			]       };
+    key <AE02> {        [               2,        quotedbl      ],
+                        [              at			]       };
+    key <AE03> {        [               3,  periodcentered      ],
+                        [      numbersign			]       };
+    key <AE04> {        [               4,          dollar      ],
+                        [      dead_tilde			]       };
+    key <AE05> { 	[ 		5,	   percent	], 
+			[ 	    tilde			]	};
+    key <AE06> {        [               6,       ampersand      ],
+                        [         notsign			]       };
+    key <AE07> {        [               7,           slash      ]       };
+    key <AE08> {        [               8,       parenleft      ]       };
+    key <AE09> {        [               9,      parenright      ]       }; 
+    key <AE10> {        [               0,           equal      ]       };
+    key <AE11> {        [      apostrophe,        question      ],
+			[	    grave			]       };
+    key <AE12> {        [      exclamdown,    questiondown      ]       };
+    key <AD03> {        [               e,               E      ],
+                        [        EuroSign			]       };
+    key <AD11> {        [     SunFA_Grave,    SunFA_Circum      ],
+                        [     bracketleft			]       };
+    key <AD12> {        [            plus,        asterisk      ],
+                        [    bracketright			]       };
+    key <AC10> {        [          ntilde,          Ntilde      ]       };
+    key <AC11> {        [     SunFA_Acute, SunFA_Diaeresis      ],
+                        [       braceleft			]       };
+    key <BKSL> {        [        ccedilla,        Ccedilla      ],
+                        [      braceright			]       };
+    key <AB08> {        [           comma,       semicolon      ]       };
+    key <AB09> {        [          period,           colon      ]       };
+    key <AB10> {        [           minus,      underscore      ]       };
 };
+

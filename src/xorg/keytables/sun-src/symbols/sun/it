@@ -1,6 +1,6 @@
 // $XdotOrg: $
 //
-// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+// Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -93,10 +93,38 @@ xkb_symbols "type5" {
     key <BKSL> { [ ugrave, section      ], [ asciitilde                 ] };
 };
  
-partial
+
 xkb_symbols "type6" {
-    include "sun/it(type5)"
+    include "sun/us(type6)"
+
+    key <LSGT> {	[	     less,	   greater	]	};
+    key <TLDE> { 	[       backslash,             bar      ]       };
+    key <AE02> {	[               2,        quotedbl     	]	};
+    key <AE03> {	[               3,        sterling     	]	};
+    key <AE06> {	[               6,       ampersand     	]	};
+    key <AE07> {	[               7,           slash     	]	};
+    key <AE08> {	[               8,       parenleft     	],	
+                        [       braceleft			]       };
+    key <AE09> {	[               9,      parenright     	],	
+                        [      braceright			]       };
+    key <AE10> {	[               0,           equal     	]	};
+    key <AE11> {	[      apostrophe,        question      ],	
+			[	    grave			]	};
+    key <AE12> {	[          igrave,     asciicircum	]	};
+    key <AD03> {        [               e,               E      ],
+                        [        EuroSign			]       };
+    key <AD11> {	[	   egrave,          eacute     	],	
+			[     bracketleft,  dead_abovering	]	};
+    key <AD12> {	[            plus,        asterisk     	],	
+			[    bracketright			]      	};
+    key <BKSL> {	[          ugrave,         section	],
+			[	asciitilde			]	};
+    key	<AC10> {	[	   ograve,        ccedilla  	],	
+			[              at			]	};
+    key <AC11> {	[ 	   agrave, 	degree		],
+			[	numbersign			]	};
+    key <AB08> {        [           comma,       semicolon      ]       };
+    key <AB09> {        [          period,           colon      ]       };
+    key <AB10> {        [           minus,      underscore      ]       };
 };
 
- 
- 

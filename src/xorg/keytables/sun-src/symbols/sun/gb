@@ -1,6 +1,6 @@
 // $XdotOrg: $
 //
-// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+// Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -61,15 +61,31 @@ xkb_symbols "type4" {
 
 };
 
-partial
+
 xkb_symbols "type5" {
     include "gb(Sundeadkeys)"
 
-    key <TLDE> { [ quoteleft, notsign	], [ brokenbar	]	};
-    key <AD03> { [ e, E			], [ EuroSign	]	};
+    key <TLDE> { 	[	quoteleft,	notsign		],
+			[	brokenbar			]	};
+    key <AD03> {	[		e,	E		],
+			[	EuroSign			]	};
 };
 
-partial
+    // Describes the differences between a very simple en_US
+    // keyboard and a very simple British keyboard
+
 xkb_symbols "type6" {
-  include "sun/gb(type5)"
+    include "sun/us(type6)"
+
+    key <TLDE> { 	[	quoteleft,	notsign		],
+			[	brokenbar			]	};
+
+    key <AE02> {        [               2,        quotedbl      ]	};
+    key <AE03> {	[		3,	sterling	]	};
+    key <AE04> {	[		4,	dollar		],
+			[	EuroSign			]	};
+    key <BKSL> {	[      numbersign,      asciitilde	]	};
+    key <AC11> {	[      apostrophe,              at 	]	};
+    key <LSGT> {	[       backslash,	       bar  	]	};
 };
+
