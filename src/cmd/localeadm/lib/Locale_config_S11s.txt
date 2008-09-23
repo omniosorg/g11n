@@ -1864,3 +1864,19 @@ SUNWudct	taiwan	solaris1
 
 locname Asia sea id_ID ms_MY vi_VN 
 
+SUNW5ttf	sea	solaris1
+SUNWcttf	sea	solaris1
+SUNWgttf	sea	solaris2
+SUNWinttf	sea	solaris2
+SUNWkttf	sea	solaris1
+SUNWjxcft	sea	solaris1
+SUNWkxfnt	sea	solaris1
+SUNWiconv-extra	sea	solaris1
+SUNWgnome-l10ndocument-extra	sea	langcd1
+SUNWgnome-l10nmessages-extra	sea	langcd1
+SUNWlang-common-extra	sea	solaris1
+SUNWlang-common	sea	c_solaris1
+SUNWlang-id	sea	solaris1
+SUNWlang-ms	sea	c_solaris1
+SUNWlang-vi	sea	solaris1
+

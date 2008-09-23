@@ -57,6 +57,8 @@ SUNWlang-es	sam	c_solaris1
 SUNWlang-ptBR	sam	c_solaris1
 SUNWlang-common	sam	c_solaris1
 SUNWsamow	sam	c_solaris1
+SUNWlang-ms	sea	c_solaris1
+SUNWlang-common	sea	c_solaris1
 SUNWlang-es	seu	c_solaris1
 SUNWlang-it	seu	c_solaris1
 SUNWlang-common	seu	c_solaris1
