@@ -1454,7 +1454,7 @@ mon     "<J><a><n><u><a><r><y>";/
 
 date_fmt    "%A, %B %e, %Y %l:%M:%S %p %Z"
 
-d_fmt    "%m<SOLIDUS>%e<SOLIDUS>%y"
+d_fmt    "%m<SOLIDUS>%d<SOLIDUS>%y"
 
 t_fmt    "%l:%M:%S %p"
 

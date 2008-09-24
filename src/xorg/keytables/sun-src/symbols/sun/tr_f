@@ -1,6 +1,32 @@
-// Converted keytable file to xkb/symbols/ file
-// with mk_xkb by root@linux.chanae.stben.be Tue Sep 30 01:29:39 MET DST 1997
-
+// $XdotOrg: $
+//
+// Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, and/or sell copies of the Software, and to permit persons
+// to whom the Software is furnished to do so, provided that the above
+// copyright notice(s) and this permission notice appear in all copies of
+// the Software and that both the above copyright notice(s) and this
+// permission notice appear in supporting documentation.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+// OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+// HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL
+// INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+// FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+// NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
+// WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+// 
+// Except as contained in this notice, the name of a copyright holder
+// shall not be used in advertising or otherwise to promote the sale, use
+// or other dealings in this Software without prior written authorization
+// of the copyright holder.
+//
 //
 // CDDL HEADER START
 //
@@ -21,7 +47,6 @@
 //
 // CDDL HEADER END
 //
-
 //  turkish "F" keyboard, copyed from LyX turkish keyboard description
 //  right Ctrl key switches to an almost US keyboard (number row is mangled
 //  us keyboard mode, this to allow simple access by AltGr while in turkish
@@ -44,11 +69,13 @@ xkb_symbols "basic" {
     name[Group1]= "Turkish \"F\" (traditional)";
     #name[Group2]= "US/ASCII";
 
+    key <TLDE> {	[ plus,		asterisk	],
+			[     notsign			]	}
     key <AE01> {	[	  1,	exclam 		],
 			[ onesuperior			]	};	
     key <AE02> {	[         2,	quotedbl	],
 			[ twosuperior			]	};
-    key <AE03> {	[         3,	asciicircum	],
+    key <AE03> {	[         3,	SunFA_Circum	],
 			[ numbersign			]	};
     key <AE04> {	[         4,	dollar     	],
 			[ onequarter			]	};
@@ -68,6 +95,7 @@ xkb_symbols "basic" {
 			[ backslash 		   	]	};
     key <AE12> {	[     minus,	underscore	],
 			[     bar,    brokenbar		]	};
+
     key <AD01> {	[         f,	F        	],
 			[         at,	at        	]	};
     key <AD02> {	[         g,    G		],
@@ -91,11 +119,11 @@ xkb_symbols "basic" {
     key <AD11> {	[         q,	Q        	],
 			[ diaeresis, dead_diaeresis	]	};
     key <AD12> {	[         w,	W        	],
-			[ asciitilde, dead_tilde	]	};
+			[ dead_tilde,  asciitilde	]	};
     key <AC01> {	[         u,	U        	],
 			[         ae,	AE        	]	};
     key <AC02> {	[         i,	Iabovedot	],
-			[  ssharp 		       	]	};
+			[    ssharp 		       	]	};
     key <AC03> {	[         e,	E        	],
 			[         d,	D        	]	};
     key <AC04> {	[         a,	A        	],
@@ -110,13 +138,12 @@ xkb_symbols "basic" {
 			[         k,	K        	]	};
     key <AC09> {	[         l,    L		]	};
     key <AC10> {	[         y,	Y        	],
-			[ quoteright, dead_acute    	]	};
+			[ SunFA_Acute, quoteright   	]	};
     key <AC11> {	[  scedilla,	Scedilla	],
 			[ numbersign		 	]	};
-    key <TLDE> {	[ plus,		plusminus	],
-			[     notsign			]	};
+
     key <BKSL> {	[         x,	X        	],
-			[ quoteleft,   dead_grave      	]	};
+			[ SunFA_Grave, quoteleft      	]	};
     key <AB01> {	[         j,	J        	],
 			[ guillemotleft	        	]	};
     key <AB02> {	[ odiaeresis,	Odiaeresis	],
@@ -135,7 +162,8 @@ xkb_symbols "basic" {
 			[     multiply		     	]	};
     key <AB09> {	[    period,	colon    	],
 			[    division 		 	]	};
-    key <AB10> {	[     comma,	semicolon	]	};
+    key <AB10> {	[     comma,	semicolon	],
+			[ soft_hyphen			]	};
     key <LSGT> {	[      less,	greater  	],
 			[      bar, 	brokenbar	]	};
 
@@ -149,21 +177,71 @@ xkb_symbols "basic" {
 };
 
 
-partial alphanumeric_keys
-xkb_symbols "Sundeadkeys" {
+xkb_symbols "type6" {
+  include "sun/us(type6)"
+  include "sun/tr_f(basic)"
+	//a few keys are different than in the basic layout
 
-    // For naming consistency
+    key <TLDE> {	[ plus,		asterisk	],
+			[     plusminus			]	};
+    key <AE12> {	[     minus,	underscore	],
+			[     	brokenbar		]	};
+    key <AD01> {	[         f,	F        	],
+			[         at	        	]	};
+    key <AD02> {	[         g,    G		]	};
 
-    include "tr_f(basic)"
+    key <AD03> {	[    gbreve,	Gbreve		]	};
+    key <AD04> {	[  idotless,	I		],      
+			[ paragraph		      	]	};
+    key <AD05> {	[         o,	O        	]	};
+    key <AD06> {	[         d,	D        	],
+			[         yen	        	]	};
+    key <AD07> {	[         r,	R        	]	};
+    key <AD08> {	[         n,	N        	]	};
+    key <AD09> {	[         h,	H        	],
+			[    degree 		       	]	};
+    key <AD10> {	[         p,    P	 	],
+			[  sterling			]	};
+    key <AD11> {	[         q,	Q        	],
+			[ diaeresis			]	};
+    key <AD12> {	[         w,	W        	],
+			[ dead_tilde			]	};
+    key <AC01> {	[         u,	U        	],
+			[         ae,	AE        	]	};
+    key <AC02> {	[         i,	Iabovedot	],
+			[    ssharp 		       	]	};
+    key <AC03> {	[         e,	E        	]	};
+    key <AC04> {	[         a,	A        	]	};
+    key <AC05> {	[  udiaeresis,	Udiaeresis	]	};	
+    key <AC06> {	[         t,	T        	]	};
+    key <AC07> {	[         k,	K        	]	};
+    key <AC08> {	[         m,	M        	]	};
+    key <AC09> {	[         l,    L		]	};
+    key <AC10> {	[         y,	Y        	],
+			[ SunFA_Acute		   	]	};
+    key <AC11> {	[  scedilla,	Scedilla	],
+			[ numbersign		 	]	};
 
-};
-
-partial alphanumeric_keys
-xkb_symbols "sundeadkeys" {
-
-    // For naming consistency
-
-    include "tr_f(Sundeadkeys)"
+    key <BKSL> {	[         x,	X        	],
+			[ SunFA_Grave		      	]	};
+    key <AB01> {	[         j,	J        	],
+			[ less	        	]	};
+    key <AB02> {	[ odiaeresis,	Odiaeresis	],
+			[ greater               	]	};
+    key <AB03> {	[         v,	V        	],
+			[         cent 		       	]	};
+    key <AB04> {	[         c,	C        	]	};
+    key <AB05> {	[  ccedilla,	Ccedilla 	]	};
+    key <AB06> {	[         z,	Z        	]	};
+    key <AB07> {	[         s,	S        	],
+			[         mu 		       	]	};
+    key <AB08> {	[         b,	B        	],
+			[     multiply		     	]	};
+    key <AB09> {	[    period,	colon    	],
+			[    division 		 	]	};
+    key <AB10> {	[     comma,	semicolon	]	};
+    key <LSGT> {	[      less,	greater  	],	
+			[      bar			]	}; //the same as in Turkish Q layout
 
 };
 

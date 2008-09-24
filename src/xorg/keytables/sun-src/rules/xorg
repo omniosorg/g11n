@@ -64,8 +64,12 @@
 ! $sun_type6 = sun_type6 sun_type6_euro sun_type6_jp sun_type6_unix sun_type6_usb sun_type6_euro_usb sun_type6_jp_usb sun_type6_unix_usb
 ! $sun_type7 = sun_type7_jp_usb
 // Sun Type 6 keyboards with custom/non-standard layouts
-! $sun_t6_custom = am az es gb ge it kg ko \
-                   jp pt ru tj tw uz
+! $sun_t6_custom = am ar az be br cz de de_CH \
+                   dk es fi fr fr_CH gb ge it \
+                   jp kg ko kz nl no pl_dev pt \
+                   ru se sk tj tr tr_f tw ua \
+                   uz
+
 ! $sun_jp = sun_type4_jp sun_type5_jp sun_type6_jp sun_type6_jp_usb sun_type7_jp_usb
 
 ! $pcmodels = pc101 pc102 pc104 pc105
