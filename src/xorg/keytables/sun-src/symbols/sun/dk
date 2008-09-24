@@ -105,7 +105,7 @@ xkb_symbols "type6" {
     key <AE03> {	[              	3,	numbersign	],
 			[	 sterling			]	};
     key <AE04> {	[               4,        currency     	],
-			[	   dollar,			]	};
+			[	   dollar			]	};
     key <AE05> {	[               5,         percent     	],
 			[        asciitilde			]	};
     key <AE06> {	[               6,       ampersand     	],
