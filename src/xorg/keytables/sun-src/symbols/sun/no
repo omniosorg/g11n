@@ -107,7 +107,7 @@ xkb_symbols "type6" {
     key <AE03> {	[              	3,	numbersign	],
 			[	 sterling			]	};
     key <AE04> {	[               4,        currency     	],
-			[	   dollar,			]	};
+			[	   dollar			]	};
     key <AE05> {	[               5,         percent     	],
 			[        asciitilde			]	};
     key <AE06> {	[               6,       ampersand     	],
@@ -126,8 +126,8 @@ xkb_symbols "type6" {
     key <AD03> {        [               e,               E      ],
                         [        EuroSign		        ]	};
     key <AD11> {	[	    aring,           Aring 	]	};
-    key <AD12> {   	[ SunFA_Diaeresis, SunFA_Circumflex     ],
-                 	[      SunFA_Tilde,			]	};
+    key <AD12> {   	[ SunFA_Diaeresis,    SunFA_Circum      ],
+                 	[      SunFA_Tilde			]	};
     key	<AC10> {	[	   oslash,        Oslash 	]	}; 
     key	<AC11> {	[	       ae,	        AE	]	};
     key <AB08> {        [	    comma,	semicolon	]       };

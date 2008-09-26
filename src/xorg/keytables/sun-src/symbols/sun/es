@@ -114,9 +114,9 @@ xkb_symbols "type6" {
     key <AE03> {        [               3,  periodcentered      ],
                         [      numbersign			]       };
     key <AE04> {        [               4,          dollar      ],
-                        [      dead_tilde			]       };
+                        [     asciicircum			]       };
     key <AE05> { 	[ 		5,	   percent	], 
-			[ 	    tilde			]	};
+			[      asciitilde			]	};
     key <AE06> {        [               6,       ampersand      ],
                         [         notsign			]       };
     key <AE07> {        [               7,           slash      ]       };

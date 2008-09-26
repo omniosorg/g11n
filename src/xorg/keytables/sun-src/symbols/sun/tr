@@ -83,12 +83,12 @@ xkb_symbols "basic" {
     key <AD08> {	[  idotless,    I		]	};
     key <AD11> {	[    gbreve,    Gbreve		]	};
     key <AD12> {	[ udiaeresis,	Udiaeresis	],
-			[ dead_tilde			]	};
+			[ asciitilde			]	};
     key <AC10> {	[   scedilla,   Scedilla	],	
-			[ SunFA_Acute			]	};
+			[     acute			]	};
     key <AC11> {	[         i,    Iabovedot	]	};
     key <BKSL> {	[     comma,	semicolon	],
-			[ SunFA_Grave			]	};
+			[ quoteleft			]	};
     key <AB08> {	[ odiaeresis,	Odiaeresis	],
 			[      less			]	};
     key <AB09> {	[  ccedilla,	Ccedilla 	],

@@ -272,8 +272,8 @@ xkb_symbols "type6" {
     key <AD03> {  	[               e,               E     	],
                   	[        EuroSign		 	]	};
     key <AD11> {	[	    aring,           Aring 	]	};
-    key <AD12> {  	[  SunFA_Diaeresis, SunFA_Circumflex     	],
-                 	[      SunFA_tilde 		    	]	};
+    key <AD12> {  	[  SunFA_Diaeresis,    asciicircum     	],
+                 	[      asciitilde 		    	]	};
     key <AC10> {	[      odiaeresis,      Odiaeresis	]	};
     key <AC11> {	[      adiaeresis,      Adiaeresis	]	};
     key <BKSL> {	[      apostrophe,        asterisk	],

@@ -117,7 +117,7 @@ xkb_symbols "type6" {
 			[ SunFA_Cedilla			]	};
     key <AD03> {	[         e,	E        	],
 			[    EuroSign		   	]	};
-    key <AD11> {	[ SunFA_Diaeresis, SunFA_Circumflex ]	};
+    key <AD11> {	[ SunFA_Diaeresis, SunFA_Circum ]	};
     key <AD12> {	[  asterisk,	bar      	],
                         [  asciitilde 			]	};
     key <AC02> {	[         s,	S        	],
@@ -140,7 +140,7 @@ xkb_symbols "type6" {
 			[	mu			]	};
     key <AB08> {        [     comma,	semicolon	]       };
     key <AB09> {        [    period,	colon		]       };
-    key <AB10> {        [     minus,	equals          ]       };
+    key <AB10> {        [     minus,	equal           ]       };
 
 };
 

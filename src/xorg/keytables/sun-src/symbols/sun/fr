@@ -59,7 +59,7 @@ xkb_symbols "basic" {
     key <TLDE> {        [     twosuperior                       ]       };
     key <AE01> {        [       ampersand,               1      ]	};
     key <AE02> {        [          eacute,               2      ],
-                        [      dead_tilde			]       };
+                        [      asciitilde			]       };
     key <AE03> {        [        quotedbl,               3      ],
                         [      numbersign		        ]       };
     key <AE04> {        [      apostrophe,               4      ],
@@ -69,7 +69,7 @@ xkb_symbols "basic" {
     key <AE06> {        [           minus,               6      ],
                         [             bar			]       };
     key <AE07> {        [          egrave,               7      ],
-                        [      dead_grave			]       };
+                        [           grave			]       };
     key <AE08> {        [      underscore,               8      ],
                         [       backslash			]       };
     key <AE09> {        [        ccedilla,               9      ],
@@ -90,7 +90,7 @@ xkb_symbols "basic" {
     key <AC01> {        [               q,               Q      ]	};
     key <AC10> {        [               m,               M      ]	};
     key <AC11> {        [          ugrave,         percent      ]       };
-    key <LSGT> {        [            less,         greater      ]       };
+    key <LSGT> {        [            less,         greater      ]	};
     key <AB01> {        [               w,               W      ]	};
     key <AB07> {        [           comma,        question      ]	};
     key <AB08> {        [       semicolon,          period      ]       };
@@ -99,11 +99,6 @@ xkb_symbols "basic" {
     key <BKSL> {        [        asterisk,              mu      ]       };
     // End alphanumeric section
 
-    // begin modifier mappings
-    modifier_map Shift  { Shift_L };
-    modifier_map Lock   { Caps_Lock };
-    modifier_map Control{ Control_L };
-    modifier_map Mod3   { Mode_switch };
 };
 
 

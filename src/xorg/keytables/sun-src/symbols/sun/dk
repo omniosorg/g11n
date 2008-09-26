@@ -124,7 +124,7 @@ xkb_symbols "type6" {
     key <AD03> {        [               e,               E      ],
                         [        EuroSign		        ]	};
     key <AD11> {	[	    aring,           Aring 	]	};
-    key <AD12> {   	[ SunFA_Diaeresis, SunFA_Circumflex     ],
+    key <AD12> {   	[ SunFA_Diaeresis,    SunFA_Circum      ],
                  	[      SunFA_Tilde			]	};
     key <BKSL> {	[      apostrophe,      asterisk	],
 			[	grave				]	};

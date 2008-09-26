@@ -70,7 +70,7 @@ xkb_symbols "basic" {
 			[      SunFA_Circum			]	};
     key <AE04>  {	[          ccaron,         4		],
 			[	dead_breve			]	};
-    key <AE05>  {	[	   tcaron,         5		]
+    key <AE05>  {	[	   tcaron,         5		],
 			[      dead_abovering		        ]	};
     key <AE06>  {	[	   zcaron,         6		],
 			[      dead_ogonek		        ]	};

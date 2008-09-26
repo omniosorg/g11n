@@ -54,18 +54,18 @@ partial
 xkb_symbols "type6" {
     include "sun/us(type6)"
 
-    key <AE02> {        [               2,              at	],
-                        [         quotedbl			]       };
-    key <AE03> {        [               3,      numbersign      ],
-                        [               3,      numerosign      ]       };
-    key	<AE04> {	[		4,	dollar		],
-			[		4,	percent		]	};
-    key	<AE05> {	[		5,	     percent	],
-			[		5,	   colon	]	};
-    key	<AE07> {	[		7,	 ampersand	],
-			[		7,	    period	]	};
-    key	<AE08> {	[		8,	 asterisk	],
-			[		8,	  semicolon	]	};
+    key <AE02> {        [               2,	quotedbl        	],
+                        [              at			]       };
+    key <AE03> {        [               3,	numerosign      ],
+                        [               3,	numbersign      ]       };
+    key	<AE04> {	[		4,	percent		],
+			[		4,	dollar		]	};
+    key	<AE05> {	[		5,	colon    	],
+			[		5,	percent		]	};
+    key	<AE07> {	[		7,	period		],
+			[		7,	ampersand	]	};
+    key	<AE08> {	[		8,	semicolon 	],
+			[		8,	asterisk  	]	};
 
     key	<AD01> {	[ Cyrillic_shorti, Cyrillic_SHORTI	],
 			[		q,		 Q	]	};
@@ -131,10 +131,10 @@ xkb_symbols "type6" {
 			[	    comma,	      less	]	};
     key	<AB09> {	[     Cyrillic_yu,     Cyrillic_YU	],
 			[	   period,	   greater	]	};
-    key	<BKSL> {	[	backslash,	       bar	],
-			[	slash,           question	]	};
-    key	<AB10> {	[	    slash,	  question	],
-			[	  ediaeresis,	Ediaeresis	]	};
+    key	<BKSL> {	[	    slash,	  question	],
+			[       backslash,             bar	]	};
+    key	<AB10> {	[      ediaeresis,      Ediaeresis 	],
+			[	    slash,        question	]	};
     key	<LSGT> {	[	backslash,	       bar	]	};
 };
 
