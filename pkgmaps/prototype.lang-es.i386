@@ -43,13 +43,6 @@ s none usr/lib/locale/es_CR.UTF-8/amd64/methods_es_CR.UTF-8.so.3=../../common/am
 d none usr/lib/locale/es_EC.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_EC.UTF-8/amd64/es_EC.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/es_EC.UTF-8/amd64/methods_es_EC.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
-d none usr/lib/locale/es_ES.UTF-8/amd64 0755 root bin
-f none usr/lib/locale/es_ES.UTF-8/amd64/es_ES.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_ES.UTF-8/amd64/methods_es_ES.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
-d none usr/lib/locale/es_ES.UTF-8/LC_CTYPE/amd64 0755 root bin
-s none usr/lib/locale/es_ES.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
-d none usr/lib/locale/es_ES.UTF-8/LO_LTYPE/amd64 0755 root bin
-s none usr/lib/locale/es_ES.UTF-8/LO_LTYPE/amd64/es_ES.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
 d none usr/lib/locale/es_GT.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_GT.UTF-8/amd64/es_GT.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/es_GT.UTF-8/amd64/methods_es_GT.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
@@ -71,8 +64,6 @@ s none usr/lib/locale/es_PY.UTF-8/amd64/methods_es_PY.UTF-8.so.3=../../common/am
 d none usr/lib/locale/es_SV.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_SV.UTF-8/amd64/es_SV.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/es_SV.UTF-8/amd64/methods_es_SV.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
-d none usr/lib/locale/es.UTF-8/amd64 0755 root bin
-s none usr/lib/locale/es.UTF-8/amd64/es.UTF-8.so.3=../../es_ES.UTF-8/amd64/es_ES.UTF-8.so.3
 d none usr/lib/locale/es_UY.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_UY.UTF-8/amd64/es_UY.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/es_UY.UTF-8/amd64/methods_es_UY.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
