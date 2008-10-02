@@ -25,12 +25,12 @@
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
-d none usr/lib/locale/de_AT.UTF-8/amd64 0755 root bin
-f none usr/lib/locale/de_AT.UTF-8/amd64/de_AT.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/de_AT.UTF-8/amd64/methods_de_AT.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
-d none usr/lib/locale/de_CH.UTF-8/amd64 0755 root bin
-f none usr/lib/locale/de_CH.UTF-8/amd64/de_CH.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/de_CH.UTF-8/amd64/methods_de_CH.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
-d none usr/lib/locale/de_LU.UTF-8/amd64 0755 root bin
-f none usr/lib/locale/de_LU.UTF-8/amd64/de_LU.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/de_LU.UTF-8/amd64/methods_de_LU.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+d none usr/lib/locale/de_DE.UTF-8/amd64 0755 root bin
+f none usr/lib/locale/de_DE.UTF-8/amd64/de_DE.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/de_DE.UTF-8/amd64/methods_de_DE.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+d none usr/lib/locale/de_DE.UTF-8/LC_CTYPE/amd64 0755 root bin
+s none usr/lib/locale/de_DE.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so wdresolve.so
+d none usr/lib/locale/de_DE.UTF-8/LO_LTYPE/amd64 0755 root bin
+s none usr/lib/locale/de_DE.UTF-8/LO_LTYPE/amd64/de_DE.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
+d none usr/lib/locale/de.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/de.UTF-8/amd64/de.UTF-8.so.3=../../de_DE.UTF-8/amd64/de_DE.UTF-8.so.3
