@@ -51,6 +51,9 @@
  */
 #pragma ident   "@(#)pcf.c	1.3 00/02/02 SMI"
 #include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <string.h>
 #include <X11/Xmd.h>
 #include <assert.h>
 #include <errno.h>
@@ -109,6 +112,7 @@ static NameEqual (char *, char *,int );
 static Hash(char *, int);
 static ResizeHashTable();
 static void put_PSbitmap(ucs4_t , pcf_bm_t *, pcf_charmet_t *, pcf_SCcharmet_t *);
+static int gzcatfile(char *);
 void init_putPS(void);
 unsigned long * Xrealloc(unsigned long   *, int);
 unsigned long * Xalloc(int);
@@ -1110,6 +1114,31 @@ BufFilePushCompressed (f)
 			  BufCompressedClose);
 }
 
+static 
+int gzcatfile(char *name) {
+    int    fd[2];
+
+    if (pipe (fd) < 0)
+        return -1;
+
+    switch (fork ())
+    {
+        case -1:
+            return -1;
+        case 0:
+            close (fd[0]);
+            close (1);
+            if (dup (fd[1]) != 1)
+                return -1;
+            close (fd[1]);
+            execlp ("gzcat", "gzcat", name, 0);
+            return -1;
+        default:
+            close (fd[1]);
+            break;
+    }
+    return fd[0];
+}
 
 static FontFilePtr
 FontFileOpen (char *name) {
@@ -1117,7 +1146,19 @@ FontFileOpen (char *name) {
     int		len;
     BufFilePtr	raw, cooked;
 
-    fd = open (name, 0);
+    len = strlen (name);
+
+    /*
+     * A little hack for .gz file support.
+     * We gzcat the file and will treat the
+     * resultant fd as a regular file's.
+     */
+
+    if (len > 3 && !strcmp (name + len - 3, ".gz"))
+        fd = gzcatfile (name);
+    else
+        fd = open (name, 0);
+
     if (fd < 0)
 	return 0;
     raw = BufFileOpenRead (fd);
@@ -1126,7 +1167,6 @@ FontFileOpen (char *name) {
 	close (fd);
 	return 0;
     }
-    len = strlen (name);
     if (len > 2 && !strcmp (name + len - 2, ".Z")) {
 	cooked = BufFilePushCompressed (raw);
 	if (!cooked) {

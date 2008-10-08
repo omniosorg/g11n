@@ -60,8 +60,8 @@
 #define XU_MOTION_CHAR          1
 #define XU_PSBM_CACHED          2
 #define XU_PSBM_NOTCACHED       3
-#define NOBITMAPREPL		0x0126	/* specific to splmt24.pcf.Z -sun-supplement-medium-r-normal--24-240-75-75-p-240-unicode-fontspecific */
-#define FALLBACK_FONT	"splmt24.pcf.Z"
+#define NOBITMAPREPL		0xfffd	/* specific to cu12.pcf.gz "-mutt-clearlyu-medium-r-normal--17-120-100-100-p-123-iso10646-1" */
+#define FALLBACK_FONT	"cu12.pcf"
 #define PPI             (72)            /* Postscript Points Per Inch */
 #define DEF_XRES        PPI     /* default X resolution (72 dpi) */
 #define DEF_YRES        PPI     /* default Y resolution (72 dpi) */
