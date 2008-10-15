@@ -213,6 +213,7 @@ s none usr/share/locale/zh_HK/LC_MESSAGES/gui-install.mo=../../zh_TW/LC_MESSAGES
 #
 d none usr/share 0755 root sys
 d none usr/share/gui-install 0755 root sys
+f none usr/share/gui-install/langs_localized 0644 root sys
 #
 
 #
