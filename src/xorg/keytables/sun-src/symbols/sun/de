@@ -117,12 +117,14 @@ xkb_symbols "type6" {
 			[	at				]	};
     key <AD03> {        [               e,               E      ],
                         [        EuroSign			]       };
+    key <AD06> {        [               z,               Z      ]	};
     key <AD11> {	[      udiaeresis,	Udiaeresis	]	};
     key <AD12> {	[      	     plus,	asterisk	],
 			[       asciitilde			]	};
     key <AC10> {	[ 	odiaeresis,	Odiaeresis	]	};
     key <AC11> {	[ 	adiaeresis,	Adiaeresis	]	};
 
+    key <AB01> {        [               y,               Y      ]       };
     key <AB07> {	[		m,	M		],
 			[		mu			]	};
     key <AB08> {        [           comma,       semicolon      ]       };
