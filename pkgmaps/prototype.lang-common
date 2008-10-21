@@ -37,3 +37,7 @@ d none usr/share/lib 0755 root sys
 d none usr/share/lib/pub 0755 root bin
 f none usr/share/lib/pub/UTF-8 0644 root bin
 s none usr/share/lib/pub/utf-8=./UTF-8
+d none usr/lib 0755 root bin
+d none usr/lib/localedef 0755 root bin
+d none usr/lib/localedef/extensions 0755 root bin
+f none usr/lib/localedef/extensions/UTF-8.x 0444 root bin
