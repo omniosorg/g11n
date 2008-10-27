@@ -72,7 +72,6 @@ UCS-2BE%viscii.o: UCS-2%viscii.c
 
 
 
-
 include ../Makefile.asian
 
 PROGS  = tcvn%UCS-2LE.so		tcvn%UCS-2BE.so
