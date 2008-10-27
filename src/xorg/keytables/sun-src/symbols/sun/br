@@ -103,7 +103,7 @@ include "us(basic)"
     key <KPPT> {        [  KP_Decimal                           ]       };
     key <KPDL> {        [  KP_Delete,   comma                   ]       };
 
-
+};
 
 xkb_symbols "type6" {
   include "sun/us(type6)"

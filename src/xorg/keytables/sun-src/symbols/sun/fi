@@ -91,7 +91,7 @@ xkb_symbols "type6" {
     key <AC10> {	[ 	odiaeresis,	Odiaeresis	]	};
     key <AC11> {	[ 	adiaeresis,	Adiaeresis	]	};
     key <BKSL> {	[      apostrophe,      asterisk	],
-			[	grave				]	};
+			[	quoteleft			]	};
     key <AB08> {        [	     comma,	semicolon	]       };
     key <AB09> {        [	    period,	colon		]       };
     key <AB10> {        [	     minus,	underscore      ]       };
