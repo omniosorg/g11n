@@ -917,7 +917,16 @@ typeset -l locale
 locale=${1%%.*} # strip off the ".iso8859" etc, just want aa_BB (e.g. de_DE.ISO8859-1, we just want "de_DE")
 
 
-if [ "$locale" = "ar" ] # arabic is always a special case
+# Arabic is a special case. There exist 3 locales: 
+#   ar (Egypt ISO-6), ar_EG.UTF-8, ar_SA.UTF-8.
+# However arabic packages (SUNW_LOCs) are split into two sets only:
+#   Egypt (ar, ar_EG) and Saudi Arabia (ar_SA)
+# In other words, there is no package which include ar SUNW_LOCs but not ar_EG.
+# So, we change ar to ar_eg. Another reason for this is that it is not 
+# possible distinguish ar and ar_XX locnames at config file, and also localeadm 
+# probably not able to handle those SUNW_LOCs. See also following sed + grep
+# command.
+if [ "$locale" = "ar" ]
 then
     locale="ar_eg"
 fi
