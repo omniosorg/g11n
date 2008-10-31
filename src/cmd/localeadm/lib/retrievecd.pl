@@ -91,14 +91,14 @@ chdir("$path") or die ("Cannot change dir to $path ! \n $!");
 
 opendir(DIR, $path);
 while (my $pkgPath=readdir(DIR)) {
-        next if ($pkgPath !~ /SUNW/);
+        next if (! -e "$pkgPath/pkginfo");   # check for existence of "pkginfo", this will skip directories that are not packages
 	open (PKGINFO, "$pkgPath/pkginfo") or die("Couldn't open $path/$pkgPath/pkginfo information about image \n$!");
 
 	my $package;
 	while (<PKGINFO>) {
 		chomp;
 	       # Retrieve the full package name from the PKG= entry in file
-		if (/PKG=SUNW/) {
+		if (/PKG=/) {
 			$package = substr($_, 4);
 		}
 
@@ -132,7 +132,9 @@ if ($cdname =~ /dvd/) {
 
   my %originalDistr;
   while (<ORIGINAL>) {
-      next if ($_ !~ /(SUNW[^\s]*)\s+[^\s]*\s+([^\s]*)/);
+      $_ =~ s/#.*//;                 # remove all comments
+      next if ($_ =~ /locname/);     # skip "locname" lines
+      next if ($_ !~ /([^\s]*)\s+[^\s]*\s+([^\s]*)/);  # get the package name and cd
 # get rid of the "c_" for "c_solaris" here
       my $img = $2;
       my $pkg = $1;
@@ -143,7 +145,7 @@ if ($cdname =~ /dvd/) {
 
   for my $key (keys %Regionarray) {
     my $package=$key;
-    $package =~ s/(SUNW[^\s]*)\s+.*/$1/;
+    $package =~ s/([^\s]*)\s+.*/$1/;
     if (defined $originalDistr{$package}) {
 #       print $originalDistr{$package} . " $package :: $key \n";
        $Regionarray{$key}=$originalDistr{$package};
