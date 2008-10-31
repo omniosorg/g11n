@@ -1881,7 +1881,7 @@ do
 
     # are there any packages in the specified path?
 
-    typeset -i pkgcount=`ls $INST_DIR | $grep -c SUNW`
+    typeset -i pkgcount=`ls $INST_DIR/*/pkginfo | wc -l`
 
     if [ $pkgcount -eq 0 ]
     then
