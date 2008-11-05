@@ -91,7 +91,7 @@ chdir("$path") or die ("Cannot change dir to $path ! \n $!");
 
 opendir(DIR, $path);
 while (my $pkgPath=readdir(DIR)) {
-        next if ($pkgPath =~ /\/IPLT/);   # IPLT* pkgs are not installed as default
+        next if ($pkgPath =~ /IPLT/);   # IPLT* pkgs are not installed as default
         next if (! -e "$pkgPath/pkginfo");   # check for existence of "pkginfo", this will skip directories that are not packages
 	open (PKGINFO, "$pkgPath/pkginfo") or die("Couldn't open $path/$pkgPath/pkginfo information about image \n$!");
 
