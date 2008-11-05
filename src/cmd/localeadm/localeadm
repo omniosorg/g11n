@@ -736,10 +736,13 @@ fi
 is_correct_cd() {
         cdName=`echo "$1" | sed -e "s/[0-9]*$//"`
 	cdNum=`echo "$1" | sed -e "s/^[a-z]*//"`
-        if [[ "$cdNum" -eq 1 || "$cdName" = "dvd" ]]
-	then
+        if [[ "$cdName" != "langcd" ]]
+        then
+          if [[ "$cdNum" -eq 1 || "$cdName" = "dvd" ]]
+          then
 		cdNum=""    #the first CD does not have number in .volume.inf
-	fi
+	  fi
+        fi
 	# $cdpath is set elsewhere
 	#.volume.inf indicates what cd the image is. 		
         cdcheck=""
@@ -1881,7 +1884,7 @@ do
 
     # are there any packages in the specified path?
 
-    typeset -i pkgcount=`ls $INST_DIR/*/pkginfo | wc -l`
+    typeset -i pkgcount=`ls $INST_DIR/*/pkginfo | grep -v '\/IPLT' | wc -l`  # IPLT* pkgs should not be counted, they are not installed by localeadm 
 
     if [ $pkgcount -eq 0 ]
     then

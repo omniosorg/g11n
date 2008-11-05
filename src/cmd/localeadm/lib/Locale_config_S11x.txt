@@ -45,6 +45,8 @@ SUNWlang-en-extra	aua	solaris1
 SUNWlocaledefsrc	aua	solaris5
 SUNWplow	aua	solaris1
 SUNWplow1	aua	solaris1
+SUNWttf-hanyang-ko	aua	langcd2
+SUNWttf-hanyang-ko-core	aua	solaris1
 #
 #                   Solaris 11, Central America partial locales 
 #
@@ -113,6 +115,7 @@ SUNWlang-common	cam	c_solaris1
 SUNWlang-common-extra	cam	solaris1
 SUNWlang-es	cam	c_solaris1
 SUNWlang-es-extra	cam	solaris1
+SUNWlocalecreator-l10n-es	cam	langcd1
 SUNWlocaledefsrc	cam	solaris5
 SUNWmyspell-dictionary-es	cam	langcd1
 SUNWodtts	cam	solaris3
@@ -123,6 +126,8 @@ SUNWstaroffice-es-help	cam	langcd1
 SUNWstaroffice-es-res	cam	langcd1
 SUNWtgnome-l10n-ui-es	cam	langcd1
 SUNWthunderbirdl10n-es-ES	cam	langcd1
+SUNWttf-hanyang-ko	cam	langcd2
+SUNWttf-hanyang-ko-core	cam	solaris1
 #
 #                Solaris 11, Central Europe partial locales
 #
@@ -261,6 +266,7 @@ SUNWlang-cs	ceu	solaris1
 SUNWlang-cs-extra	ceu	solaris1
 SUNWlang-de	ceu	c_solaris1
 SUNWlang-de-extra	ceu	solaris1
+SUNWlang-deDE	ceu	solaris1
 SUNWlang-fr	ceu	c_solaris1
 SUNWlang-fr-extra	ceu	solaris1
 SUNWlang-hu	ceu	solaris1
@@ -269,6 +275,8 @@ SUNWlang-pl	ceu	solaris1
 SUNWlang-pl-extra	ceu	solaris1
 SUNWlang-sk	ceu	solaris1
 SUNWlang-sk-extra	ceu	solaris1
+SUNWlocalecreator-l10n-de	ceu	langcd1
+SUNWlocalecreator-l10n-fr	ceu	langcd1
 SUNWlocaledefsrc	ceu	solaris5
 SUNWmyspell-dictionary-cs	ceu	langcd1
 SUNWmyspell-dictionary-de	ceu	langcd1
@@ -294,6 +302,8 @@ SUNWthunderbirdl10n-de-DE	ceu	langcd1
 SUNWthunderbirdl10n-extra	ceu	langcd1
 SUNWthunderbirdl10n-fr-FR	ceu	langcd1
 SUNWthunderbirdl10n-pl-PL	ceu	langcd1
+SUNWttf-hanyang-ko	ceu	langcd2
+SUNWttf-hanyang-ko-core	ceu	solaris1
 #
 #               Solaris 11, Eastern Europe partial locales
 #
@@ -369,6 +379,8 @@ SUNWruxwsvr	eeu	langcd1
 SUNWtgnome-l10n-ui-ru	eeu	langcd1
 SUNWthunderbirdl10n-extra	eeu	langcd1
 SUNWthunderbirdl10n-ru-RU	eeu	langcd1
+SUNWttf-hanyang-ko	eeu	langcd2
+SUNWttf-hanyang-ko-core	eeu	solaris1
 #
 #               Solaris 11, Hindi (Unicode) Locale           
 #
@@ -384,7 +396,6 @@ SUNWiconv-extra	hi_in	solaris1
 SUNWiiimf-in-indicle	hi_in	solaris3
 SUNWindt	hi_in	solaris1
 SUNWinfnt	hi_in	solaris1
-SUNWinleu	hi_in	c_solaris2
 SUNWinplt	hi_in	solaris1
 SUNWinttf	hi_in	solaris2
 SUNWjxcft	hi_in	solaris1
@@ -393,12 +404,17 @@ SUNWkxfnt	hi_in	solaris1
 SUNWlang-common	hi_in	c_solaris1
 SUNWlang-hi	hi_in	solaris1
 SUNWscim-tables-india	hi_in	langcd2
+SUNWttf-hanyang-ko	hi_in	langcd2
+SUNWttf-hanyang-ko-core	hi_in	solaris1
+SUNWttf-indic-fonts-core	hi_in	langcd2
 #                         Solaris 11, Japanese Locale
 #
 #         ( ja, ja_JP.eucJP, ja_JP.EUC, ja_JP.PCK, ja_JP.UTF-8)
 
 locname Asia ja ja ja_JP.PCK ja_JP.UTF-8
 
+JSatsvr	ja	solaris2
+JSatsvu	ja	solaris2
 SUNW5ttf	ja	solaris1
 SUNWale	ja	c_solaris1
 SUNWaled	ja	solaris5
@@ -440,7 +456,6 @@ SUNWjeezt	ja	langcd1
 SUNWjeman	ja	langcd1
 SUNWjepmm	ja	langcd1
 SUNWjepmw	ja	langcd1
-SUNWjeudc	ja	langcd1
 SUNWjfdl	ja	langcd1
 SUNWjfpr	ja	c_solaris1
 SUNWjfpre	ja	langcd1
@@ -496,6 +511,8 @@ SUNWlang-ja-extra	ja	solaris1
 SUNWlibanthy	ja	solaris1
 SUNWlibanthy-devel	ja	solaris5
 SUNWlibanthy-root	ja	solaris1
+SUNWlocalecreator-l10n-ja	ja	langcd1
+SUNWman-l10n-ja	ja	langcd1
 SUNWpostgr-82-l10n-ja	ja	langcd1
 SUNWpostgr-l10n-ja	ja	langcd1
 SUNWrealplayer-l10n-ja	ja	langcd1
@@ -507,8 +524,9 @@ SUNWstarsuite-ja-help	ja	langcd1
 SUNWstarsuite-ja-res	ja	langcd1
 SUNWtgnome-l10n-ui-ja	ja	langcd1
 SUNWthunderbirdl10n-ja-JP	ja	langcd1
+SUNWttf-hanyang-ko	ja	langcd2
+SUNWttf-hanyang-ko-core	ja	solaris1
 SUNWttf-ipafont	ja	langcd1
-SUNWudct	ja	solaris1
 #
 #                           Solaris 11, Korean Locale
 #
@@ -555,7 +573,6 @@ SUNWkepmw	korean	langcd2
 SUNWkfdl	korean	langcd2
 SUNWkladm	korean	langcd2
 SUNWkleu	korean	c_solaris1
-SUNWkleue	korean	langcd2
 SUNWklvma	korean	langcd2
 SUNWklvmg	korean	langcd2
 SUNWkmcon	korean	langcd2
@@ -574,7 +591,6 @@ SUNWktltk	korean	langcd2
 SUNWktsu	korean	langcd2
 SUNWkttf	korean	solaris1
 SUNWkttfe	korean	langcd2
-SUNWkudc	korean	langcd2
 SUNWkupdatemgru	korean	langcd2
 SUNWkuxft	korean	langcd2
 SUNWkwbc	korean	langcd2
@@ -594,6 +610,7 @@ SUNWlang-ko	korean	solaris1
 SUNWlang-ko-extra	korean	solaris1
 SUNWlibhangul	korean	solaris1
 SUNWlibhangul-devel	korean	solaris5
+SUNWlocalecreator-l10n-ko	korean	langcd2
 SUNWrealplayer-l10n-ko	korean	langcd2
 SUNWscim-hangul	korean	langcd2
 SUNWscim-tables-korean	korean	langcd2
@@ -603,7 +620,8 @@ SUNWstarsuite-ko-help	korean	langcd2
 SUNWstarsuite-ko-res	korean	langcd2
 SUNWtgnome-l10n-ui-ko	korean	langcd2
 SUNWthunderbirdl10n-ko-KR	korean	langcd2
-SUNWudct	korean	solaris1
+SUNWttf-hanyang-ko	korean	langcd2
+SUNWttf-hanyang-ko-core	korean	solaris1
 #
 #                      Solaris 11, Middle East partial locales 
 #
@@ -637,6 +655,8 @@ SUNWnafow	mea	solaris1
 SUNWplow	mea	solaris1
 SUNWthunderbirdl10n-extra	mea	langcd1
 SUNWttf-arabeyes	mea	langcd1
+SUNWttf-hanyang-ko	mea	langcd2
+SUNWttf-hanyang-ko-core	mea	solaris1
 #
 #                      Solaris 11, Northern Africa partial locales 
 #
@@ -664,6 +684,8 @@ SUNWnafdt	naf	solaris1
 SUNWnafow	naf	c_solaris1
 SUNWplow	naf	solaris1
 SUNWttf-arabeyes	naf	langcd1
+SUNWttf-hanyang-ko	naf	langcd2
+SUNWttf-hanyang-ko-core	naf	solaris1
 #
 #                 Solaris 11, Northern America partial locales 
 #
@@ -796,10 +818,13 @@ SUNWlang-common	nam	c_solaris1
 SUNWlang-common-extra	nam	solaris1
 SUNWlang-en	nam	c_solaris1
 SUNWlang-en-extra	nam	solaris1
+SUNWlang-enUS	nam	solaris1
 SUNWlang-es	nam	c_solaris1
 SUNWlang-es-extra	nam	solaris1
 SUNWlang-fr	nam	c_solaris1
 SUNWlang-fr-extra	nam	solaris1
+SUNWlocalecreator-l10n-es	nam	langcd1
+SUNWlocalecreator-l10n-fr	nam	langcd1
 SUNWlocaledefsrc	nam	solaris5
 SUNWmyspell-dictionary-es	nam	langcd1
 SUNWmyspell-dictionary-fr	nam	langcd1
@@ -820,6 +845,8 @@ SUNWtgnome-l10n-ui-es	nam	langcd1
 SUNWtgnome-l10n-ui-fr	nam	langcd1
 SUNWthunderbirdl10n-es-ES	nam	langcd1
 SUNWthunderbirdl10n-fr-FR	nam	langcd1
+SUNWttf-hanyang-ko	nam	langcd2
+SUNWttf-hanyang-ko-core	nam	solaris1
 #
 #                 Solaris 11, Northern Europe partial locales
 #
@@ -860,9 +887,7 @@ SUNWlang-fi-extra	neu	solaris1
 SUNWlang-is	neu	solaris1
 SUNWlang-is-extra	neu	solaris1
 SUNWlang-nb	neu	solaris1
-SUNWlang-nb-extra	neu	solaris1
 SUNWlang-nn	neu	solaris1
-SUNWlang-nn-extra	neu	solaris1
 SUNWlang-no-extra	neu	solaris1
 SUNWlang-sv	neu	c_solaris1
 SUNWlang-sv-extra	neu	solaris1
@@ -922,6 +947,8 @@ SUNWszfsg	neu	langcd1
 SUNWtgnome-l10n-ui-sv	neu	langcd1
 SUNWthunderbirdl10n-extra	neu	langcd1
 SUNWthunderbirdl10n-sv-SE	neu	langcd1
+SUNWttf-hanyang-ko	neu	langcd2
+SUNWttf-hanyang-ko-core	neu	solaris1
 #
 #                  Solaris 11, Southern America partial locales
 #
@@ -998,6 +1025,7 @@ SUNWlang-es	sam	c_solaris1
 SUNWlang-es-extra	sam	solaris1
 SUNWlang-ptBR	sam	c_solaris1
 SUNWlang-ptBR-extra	sam	solaris1
+SUNWlocalecreator-l10n-es	sam	langcd1
 SUNWlocaledefsrc	sam	solaris5
 SUNWmyspell-dictionary-es	sam	langcd1
 SUNWmyspell-dictionary-ptBR	sam	langcd1
@@ -1021,6 +1049,8 @@ SUNWtgnome-l10n-ui-es	sam	langcd1
 SUNWtgnome-l10n-ui-ptBR	sam	langcd1
 SUNWthunderbirdl10n-es-ES	sam	langcd1
 SUNWthunderbirdl10n-pt-BR	sam	langcd1
+SUNWttf-hanyang-ko	sam	langcd2
+SUNWttf-hanyang-ko-core	sam	solaris1
 #
 #               Solaris 11, Southern Europe partial locales 
 #
@@ -1150,14 +1180,15 @@ SUNWlang-el	seu	solaris1
 SUNWlang-el-extra	seu	solaris1
 SUNWlang-en	seu	solaris1
 SUNWlang-en-extra	seu	solaris1
-SUNWlang-es	seu	c_solaris1
 SUNWlang-es-extra	seu	solaris1
+SUNWlang-esES	seu	solaris1
 SUNWlang-it	seu	c_solaris1
 SUNWlang-it-extra	seu	solaris1
 SUNWlang-mt	seu	solaris1
-SUNWlang-mt-extra	seu	solaris1
 SUNWlang-pt	seu	solaris1
 SUNWlang-pt-extra	seu	solaris1
+SUNWlocalecreator-l10n-es	seu	langcd1
+SUNWlocalecreator-l10n-it	seu	langcd1
 SUNWlocaledefsrc	seu	solaris5
 SUNWmyspell-dictionary-es	seu	langcd1
 SUNWmyspell-dictionary-extra	seu	langcd1
@@ -1180,6 +1211,8 @@ SUNWtgnome-l10n-ui-it	seu	langcd1
 SUNWthunderbirdl10n-es-ES	seu	langcd1
 SUNWthunderbirdl10n-extra	seu	langcd1
 SUNWthunderbirdl10n-it-IT	seu	langcd1
+SUNWttf-hanyang-ko	seu	langcd2
+SUNWttf-hanyang-ko-core	seu	solaris1
 #
 #                       Solaris 11, Thai Locale
 #
@@ -1209,6 +1242,8 @@ SUNWtddte	th_th	solaris1
 SUNWtdft	th_th	solaris1
 SUNWtdwm	th_th	solaris1
 SUNWtleu	th_th	c_solaris2
+SUNWttf-hanyang-ko	th_th	langcd2
+SUNWttf-hanyang-ko-core	th_th	solaris1
 SUNWttf-thai-scalable	th_th	langcd2
 SUNWtxplt	th_th	solaris1
 #            Solaris 11, Western Europe partial locales
@@ -1340,8 +1375,11 @@ SUNWlang-en	weu	c_solaris1
 SUNWlang-en-extra	weu	solaris1
 SUNWlang-fr	weu	c_solaris1
 SUNWlang-fr-extra	weu	solaris1
+SUNWlang-frFR	weu	solaris1
 SUNWlang-nl	weu	solaris1
 SUNWlang-nl-extra	weu	solaris1
+SUNWlocalecreator-l10n-de	weu	langcd1
+SUNWlocalecreator-l10n-fr	weu	langcd1
 SUNWlocaledefsrc	weu	solaris5
 SUNWmyspell-dictionary-de	weu	langcd1
 SUNWmyspell-dictionary-extra	weu	langcd1
@@ -1362,6 +1400,8 @@ SUNWtgnome-l10n-ui-fr	weu	langcd1
 SUNWthunderbirdl10n-de-DE	weu	langcd1
 SUNWthunderbirdl10n-extra	weu	langcd1
 SUNWthunderbirdl10n-fr-FR	weu	langcd1
+SUNWttf-hanyang-ko	weu	langcd2
+SUNWttf-hanyang-ko-core	weu	solaris1
 SUNWweudt	weu	solaris1
 SUNWweuow	weu	c_solaris1
 #
@@ -1404,7 +1444,6 @@ SUNWcjmail	china	solaris5
 SUNWcladm	china	langcd2
 SUNWcleu	china	c_solaris1
 SUNWcleu2	china	solaris2
-SUNWcleue	china	langcd2
 SUNWclvma	china	langcd2
 SUNWclvmg	china	langcd2
 SUNWcmcon	china	langcd2
@@ -1421,7 +1460,6 @@ SUNWcsmc	china	langcd2
 SUNWctltk	china	langcd2
 SUNWcttf	china	solaris1
 SUNWcttfe	china	langcd2
-SUNWcudc	china	langcd2
 SUNWcufnt	china	solaris1
 SUNWcupdatemgru	china	langcd2
 SUNWcwbc	china	langcd2
@@ -1459,6 +1497,7 @@ SUNWlang-common	china	c_solaris1
 SUNWlang-common-extra	china	solaris1
 SUNWlang-zhCN	china	solaris1
 SUNWlang-zhCN-extra	china	solaris1
+SUNWlocalecreator-l10n-zhCN	china	langcd2
 SUNWrealplayer-l10n-zhCN	china	langcd2
 SUNWscim-pinyin	china	langcd2
 SUNWscim-sunpinyin	china	langcd2
@@ -1474,7 +1513,8 @@ SUNWtgnome-l10n-ui-zhCN	china	langcd2
 SUNWthunderbirdl10n-zh-CN	china	langcd2
 SUNWttf-arphic-ukai	china	solaris2
 SUNWttf-arphic-uming	china	solaris2
-SUNWudct	china	solaris1
+SUNWttf-hanyang-ko	china	langcd2
+SUNWttf-hanyang-ko-core	china	solaris1
 #
 #            Solaris 11, Traditional Chinese (Hong Kong) Locale
 #
@@ -1517,7 +1557,6 @@ SUNWcjmail	hongkong	solaris5
 SUNWcladm	hongkong	langcd2
 SUNWcleu	hongkong	solaris1
 SUNWcleu2	hongkong	solaris2
-SUNWcleue	hongkong	langcd2
 SUNWclvma	hongkong	langcd2
 SUNWclvmg	hongkong	langcd2
 SUNWcmcon	hongkong	langcd2
@@ -1534,7 +1573,6 @@ SUNWcsmc	hongkong	langcd2
 SUNWctltk	hongkong	langcd2
 SUNWcttf	hongkong	solaris1
 SUNWcttfe	hongkong	langcd2
-SUNWcudc	hongkong	langcd2
 SUNWcufnt	hongkong	solaris1
 SUNWcupdatemgru	hongkong	langcd2
 SUNWcwbc	hongkong	langcd2
@@ -1581,10 +1619,9 @@ SUNWhepmw	hongkong	langcd2
 SUNWhfdl	hongkong	langcd2
 SUNWhkdcl	hongkong	langcd2
 SUNWhkdt	hongkong	solaris1
-SUNWhkeue	hongkong	langcd2
 SUNWhkezt	hongkong	langcd2
 SUNWhkfnt	hongkong	solaris2
-SUNWhkleu	hongkong	c_solaris2
+SUNWhkleu	hongkong	c_solaris1
 SUNWhklvmg	hongkong	langcd2
 SUNWhkmga	hongkong	langcd2
 SUNWhkplt	hongkong	solaris1
@@ -1604,7 +1641,6 @@ SUNWhscgu	hongkong	langcd2
 SUNWhsfw	hongkong	langcd2
 SUNWhttf	hongkong	solaris1
 SUNWhttfe	hongkong	langcd2
-SUNWhudc	hongkong	langcd2
 SUNWhupdatemgru	hongkong	langcd2
 SUNWhwbc	hongkong	langcd2
 SUNWhwdev	hongkong	langcd2
@@ -1630,6 +1666,8 @@ SUNWlang-zhCN	hongkong	solaris1
 SUNWlang-zhCN-extra	hongkong	solaris1
 SUNWlang-zhHK	hongkong	solaris1
 SUNWlang-zhHK-extra	hongkong	solaris1
+SUNWlocalecreator-l10n-zhCN	hongkong	langcd2
+SUNWlocalecreator-l10n-zhTW	hongkong	langcd2
 SUNWrealplayer-l10n-zhCN	hongkong	langcd2
 SUNWrealplayer-l10n-zhHK	hongkong	langcd2
 SUNWscim-pinyin	hongkong	langcd2
@@ -1652,7 +1690,8 @@ SUNWthunderbirdl10n-zh-CN	hongkong	langcd2
 SUNWthunderbirdl10n-zh-TW	hongkong	langcd2
 SUNWttf-arphic-ukai	hongkong	solaris2
 SUNWttf-arphic-uming	hongkong	solaris2
-SUNWudct	hongkong	solaris1
+SUNWttf-hanyang-ko	hongkong	langcd2
+SUNWttf-hanyang-ko-core	hongkong	solaris1
 #
 #                   Solaris 11, Traditional Chinese Locale               
 #
@@ -1694,7 +1733,6 @@ SUNWcjmail	taiwan	solaris5
 SUNWcladm	taiwan	langcd2
 SUNWcleu	taiwan	solaris1
 SUNWcleu2	taiwan	solaris2
-SUNWcleue	taiwan	langcd2
 SUNWclvma	taiwan	langcd2
 SUNWclvmg	taiwan	langcd2
 SUNWcmcon	taiwan	langcd2
@@ -1711,7 +1749,6 @@ SUNWcsmc	taiwan	langcd2
 SUNWctltk	taiwan	langcd2
 SUNWcttf	taiwan	solaris1
 SUNWcttfe	taiwan	langcd2
-SUNWcudc	taiwan	langcd2
 SUNWcufnt	taiwan	solaris1
 SUNWcupdatemgru	taiwan	langcd2
 SUNWcwbc	taiwan	langcd2
@@ -1761,8 +1798,6 @@ SUNWhkfnt	taiwan	solaris2
 SUNWhkttf	taiwan	solaris1
 SUNWhladm	taiwan	langcd2
 SUNWhleu	taiwan	c_solaris1
-SUNWhleu2	taiwan	solaris2
-SUNWhleue	taiwan	langcd2
 SUNWhlvma	taiwan	langcd2
 SUNWhlvmg	taiwan	langcd2
 SUNWhmcon	taiwan	langcd2
@@ -1779,7 +1814,6 @@ SUNWhsmc	taiwan	langcd2
 SUNWhtltk	taiwan	langcd2
 SUNWhttf	taiwan	solaris1
 SUNWhttfe	taiwan	langcd2
-SUNWhudc	taiwan	langcd2
 SUNWhufnt	taiwan	solaris1
 SUNWhupdatemgru	taiwan	langcd2
 SUNWhwbc	taiwan	langcd2
@@ -1813,6 +1847,8 @@ SUNWlang-zhTW	taiwan	solaris1
 SUNWlang-zhTW-extra	taiwan	solaris1
 SUNWlibchewing	taiwan	solaris1
 SUNWlibchewing-devel	taiwan	solaris5
+SUNWlocalecreator-l10n-zhCN	taiwan	langcd2
+SUNWlocalecreator-l10n-zhTW	taiwan	langcd2
 SUNWrealplayer-l10n-zhCN	taiwan	langcd2
 SUNWrealplayer-l10n-zhTW	taiwan	langcd2
 SUNWscim-chewing	taiwan	langcd2
@@ -1836,7 +1872,8 @@ SUNWthunderbirdl10n-zh-CN	taiwan	langcd2
 SUNWthunderbirdl10n-zh-TW	taiwan	langcd2
 SUNWttf-arphic-ukai	taiwan	solaris2
 SUNWttf-arphic-uming	taiwan	solaris2
-SUNWudct	taiwan	solaris1
+SUNWttf-hanyang-ko	taiwan	langcd2
+SUNWttf-hanyang-ko-core	taiwan	solaris1
 #
 #                   Solaris 11, South East Asian Locale               
 #
@@ -1846,17 +1883,18 @@ locname Asia sea id_ID ms_MY vi_VN
 
 SUNW5ttf	sea	solaris1
 SUNWcttf	sea	solaris1
-SUNWgttf	sea	solaris2
-SUNWinttf	sea	solaris2
-SUNWkttf	sea	solaris1
-SUNWjxcft	sea	solaris1
-SUNWkxfnt	sea	solaris1
-SUNWiconv-extra	sea	solaris1
 SUNWgnome-l10ndocument-extra	sea	langcd1
 SUNWgnome-l10nmessages-extra	sea	langcd1
-SUNWlang-common-extra	sea	solaris1
+SUNWgttf	sea	solaris2
+SUNWiconv-extra	sea	solaris1
+SUNWinttf	sea	solaris2
+SUNWjxcft	sea	solaris1
+SUNWkttf	sea	solaris1
+SUNWkxfnt	sea	solaris1
 SUNWlang-common	sea	c_solaris1
+SUNWlang-common-extra	sea	solaris1
 SUNWlang-id	sea	solaris1
 SUNWlang-ms	sea	c_solaris1
 SUNWlang-vi	sea	solaris1
-
+SUNWttf-hanyang-ko	sea	langcd2
+SUNWttf-hanyang-ko-core	sea	solaris1
