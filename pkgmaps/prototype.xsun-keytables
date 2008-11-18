@@ -326,6 +326,7 @@ e keytable openwin/share/etc/keytables/keytable.map 0644 root bin
 
 f none openwin/share/etc/keytables/Arabic6.kt 0444 root bin
 f none openwin/share/etc/keytables/Belgian6.kt 0444 root bin
+f none openwin/share/etc/keytables/Canada_Bi6.kt 0444 root bin
 f none openwin/share/etc/keytables/Canada6.kt 0444 root bin
 f none openwin/share/etc/keytables/Canada_Fr6.kt 0444 root bin
 f none openwin/share/etc/keytables/Czech6.kt 0444 root bin
@@ -369,4 +370,5 @@ f none openwin/share/etc/keytables/Malta_UK6.kt 0444 root bin
 f none openwin/share/etc/keytables/Albania6.kt 0444 root bin
 f none openwin/share/etc/keytables/Portugal_Br6.kt 0444 root bin
 f none openwin/share/etc/keytables/Romania6.kt 0444 root bin
+f none openwin/share/etc/keytables/Brazil6.kt 0444 root bin
 

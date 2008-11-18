@@ -53,7 +53,8 @@ partial default alphanumeric_keys
 xkb_symbols "basic" {
 include "us(basic)"
 
-    key <TLDE> {        [      apostrophe,        quotedbl      ]       };
+    key <TLDE> {        [      apostrophe,        quotedbl      ], 
+			[	  notsign			]	};
     key <AE01> {        [               1,          exclam      ],
                         [     onesuperior,      exclamdown      ]       };
     key <AE02> {        [               2,              at      ],
@@ -82,20 +83,30 @@ include "us(basic)"
                         [        EuroSign                       ]       };
     key <AD04> {        [               r,               R      ],
                         [      registered                       ]       };
-    key <AD11> {        [      SunFA_Acute,      SunFA_Grave      ],
+    key <AD11> {        [      SunFA_Acute,    SunFA_Grave      ],
                         [           acute,           grave      ]       };
     key <AD12> {        [     bracketleft,       braceleft      ],
                         [     ordfeminine                       ]       };
-    key <AC10> {        [        ccedilla,        Ccedilla      ]       };
-    key <AC11> {        [      dead_tilde, SunFA_Circum      ],
+    key <AC10> {        [        ccedilla,        Ccedilla      ], 
+			[      exclamdown			]	};
+    key <AC11> {        [      dead_tilde,    SunFA_Circum      ],
                         [      asciitilde,     asciicircum      ]       };
     key <AC12> {        [    bracketright,      braceright      ],
                         [       masculine                       ]       };
+    key <AB01> {        [               z,               Z      ],
+                        [   guillemotleft 		        ]       };
+    key <AB02> {        [               x,               X      ],
+                        [  guillemotright                       ]       };
     key <AB03> {        [               c,               C      ],
                         [       copyright                       ]       };
     key <AB07> {        [               m,               M      ],
                         [              mu                       ]       };
-    key <BKSL> {        [       backslash,             bar      ]       };
+    key <BKSL> {        [     bracketleft,       braceleft      ], 
+			[       masculine			]	};
+    key <AB08> {        [           comma,            less      ],
+                        [        question                       ]       };
+    key <AB09> {        [          period,         greater      ],
+                        [    questiondown                       ]       };
     key <AB10> {        [       semicolon,           colon      ]       };
     key <AB11> {        [           slash,        question      ],
                         [          degree,    questiondown      ]       };
@@ -110,6 +121,7 @@ xkb_symbols "type6" {
   include "sun/br(basic)"
     key <BKSL> {        [    bracketright,      braceright      ],
                         [       masculine                       ]       };
-    key <LSGT> {        [   	    slash,      bar	        ]	};
+    key <LSGT> {        [   	    slash,      bar	        ],
+			[          degree                       ]       };
 };
 

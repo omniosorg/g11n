@@ -37,31 +37,32 @@ xkb_symbols "basic" {
 
     name[Group1]= "Czech";
 
-    key <TLDE>	{ [ semicolon, dead_abovering 	]	};
-    key <AE01>	{ [      plus,          1 	],  
-		  [ asciitilde 			]	};
-    key <AE02>	{ [    ecaron,          2 	],  
-		  [ dead_caron 			]	};
-    key <AE03>	{ [    scaron,          3 	],  
-		  [ dead_circumflex 		] 	};
-    key <AE04>	{ [    ccaron,          4 	],  
-		  [ dead_breve 			]	};
-    key <AE05>	{ [    rcaron,          5 	],  
-		  [ dead_abovering 		] 	};
-    key <AE06>	{ [    zcaron,          6 	],  
-		  [ dead_ogonek 		]	};
-    key <AE07>	{ [    yacute,          7 	],  
-		  [ grave 			]	};
-    key <AE08>	{ [    aacute,          8 	],  
-		  [ dead_abovedot		]	};
-    key <AE09>	{ [    iacute,          9 	],  
-		  [ dead_acute 			]	};
-    key <AE10>	{ [    eacute,          0 	],  
-		  [ dead_doubleacute 		] 	};
-    key <AE11>	{ [     equal,    percent 	],  
-		  [ dead_diaeresis 		]	};
-    key <AE12>	{ [ dead_acute, dead_caron 	], 
-		  [ dead_cedilla 		]	};
+    key <TLDE>  { [ semicolon, dead_abovering   ],
+                  [ quoteleft,     asciitilde   ]       };
+    key <AE01>  { [      plus,          1       ],
+                  [    exclam,     asciitilde   ]       };
+    key <AE02>  { [    ecaron,          2       ],
+                  [        at,     dead_caron   ]       };
+    key <AE03>  { [    scaron,          3       ],
+                  [ numbersign,  SunFA_Circum   ]       };
+    key <AE04>  { [    ccaron,          4       ],
+                  [    dollar,     dead_breve   ]       };
+    key <AE05>  { [    rcaron,          5       ],
+                  [   percent, dead_abovering   ]       };
+    key <AE06>  { [    zcaron,          6       ],
+                  [ asciicircum,  dead_ogonek   ]       };
+    key <AE07>  { [    yacute,          7       ],
+                  [ ampersand,          grave   ]       };
+    key <AE08>  { [    aacute,          8       ],
+                  [  asterisk,  dead_abovedot   ]       };
+    key <AE09>  { [    iacute,          9       ],
+                  [ parenleft,    SunFA_Acute   ]       };
+    key <AE10>  { [    eacute,          0       ],
+                  [ parenright, dead_doubleacute]       };
+    key <AE11>  { [     equal,    percent       ],
+                  [ dead_diaeresis, backslash   ]       };
+    key <AE12>  { [ SunFA_Acute, dead_caron     ],
+                  [ dead_cedilla, minus         ]       };
 
     key <AD01>	{ [         q,          Q 	], 
 		  [  backslash 			]	};
@@ -102,10 +103,10 @@ xkb_symbols "basic" {
 		  [   dollar 			]	};
     key <AC11>	{ [   section,     exclam 	], 
 		  [       ssharp 		]	};
-    key <BKSL>	{ [ dead_diaeresis, apostrophe 	], 
-		  [ currency 			]	};
-    key <LSGT>	{ [ ampersand,        asterisk 	], 
-		  [    less 			]	};
+    key <BKSL>  { [ dead_diaeresis, apostrophe  ],
+                  [  backslash,            bar  ]       };
+    key <LSGT>  { [  backslash,       asterisk  ],
+                  [      slash,      brokenbar  ]       };
     key <AB01>	{ [         y,          Y 	], 
 		  [     greater 		]	};
     key <AB02>	{ [         x,          X 	], 
@@ -135,3 +136,4 @@ partial alphanumeric_keys
 xkb_symbols "sundeadkeys" {
 include "cz(Sundeadkeys)"
 };
+

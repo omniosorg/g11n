@@ -28,12 +28,12 @@ xkb_symbols "basic" {
     // of 'Z' and 'Y' keys, which are in the qwerty style (ie. swapped).
     // 2001 by Kamil Toman <ktoman@email.cz>
     
-include "sk(Sundeadkeys)" 
+include "sk(basic)" 
 
-    key <AB01> { [    z,              Z,
-    			degree,         NoSymbol ] };
-    key <AD06> { [    y,              Y,
-			NoSymbol,       NoSymbol ] };                           
+    key <AB01> { [    z,              Z        	],
+    	         [    degree		        ]   };
+    key <AD06> { [    y,              Y         ],
+	         [    NoSymbol	                ]   };                           
 };
 
 partial alphanumeric_keys
@@ -45,3 +45,4 @@ partial alphanumeric_keys
 xkb_symbols "sundeadkeys" {
         include "sk_qwerty(Sundeadkeys)"
 }; 
+

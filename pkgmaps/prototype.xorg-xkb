@@ -208,6 +208,7 @@ f none X11/lib/X11/xkb/symbols/br 0444 root bin
 f none X11/lib/X11/xkb/symbols/bs 0444 root bin
 f none X11/lib/X11/xkb/symbols/by 0444 root bin
 f none X11/lib/X11/xkb/symbols/ca 0444 root bin
+f none X11/lib/X11/xkb/symbols/ca_bi 0444 root bin
 f none X11/lib/X11/xkb/symbols/ca_enhanced 0444 root bin
 f none X11/lib/X11/xkb/symbols/capslock 0444 root bin
 f none X11/lib/X11/xkb/symbols/compose 0444 root bin
@@ -353,6 +354,7 @@ f none X11/lib/X11/xkb/symbols/pc/br 0444 root bin
 f none X11/lib/X11/xkb/symbols/pc/bt 0444 root bin
 f none X11/lib/X11/xkb/symbols/pc/by 0444 root bin
 f none X11/lib/X11/xkb/symbols/pc/ca 0444 root bin
+f none X11/lib/X11/xkb/symbols/pc/ca_bi 0444 root bin
 f none X11/lib/X11/xkb/symbols/pc/ca_enhanced 0444 root bin
 f none X11/lib/X11/xkb/symbols/pc/ch 0444 root bin
 f none X11/lib/X11/xkb/symbols/pc/cz 0444 root bin
@@ -435,6 +437,7 @@ f none X11/lib/X11/xkb/symbols/sun/az 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun/be 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun/br 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun/ca 0444 root bin
+f none X11/lib/X11/xkb/symbols/sun/ca_bi 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun/cs 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun/cz 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun/de 0444 root bin

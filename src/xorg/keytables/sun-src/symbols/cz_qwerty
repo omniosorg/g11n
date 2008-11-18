@@ -37,11 +37,11 @@ xkb_symbols "basic" {
 
 partial alphanumeric_keys
 xkb_symbols "Sundeadkeys" {
-        include "cz(basic)"
+        include "cz_qwerty(basic)"
 };
 
 partial alphanumeric_keys
 xkb_symbols "sundeadkeys" {
-        include "cz(Sundeadkeys)"
+        include "cz_qwerty(Sundeadkeys)"
 };
 

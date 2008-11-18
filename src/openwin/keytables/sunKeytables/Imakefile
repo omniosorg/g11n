@@ -1,8 +1,7 @@
 XCOMM
-XCOMM Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+XCOMM Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 XCOMM Use is subject to license terms.
 XCOMM
-XCOMM ident "@(#)Imakefile 35.24     06/11/24 SMI"
 XCOMM
 
 XCOMM
@@ -70,8 +69,9 @@ USB_KEYBOARDS = Arabic6.kt Belgian6.kt Canada6.kt Denmark6.kt Estonia6.kt \
 	TurkeyQ6.kt UK6.kt US6.kt Japan7.kt Slovenia6.kt Slovakia6.kt \
 	SerbiaandMontenegro6.kt Iceland6.kt Croatia6.kt Bulgaria6.kt \
 	Belarus6.kt Malta_US6.kt Malta_UK6.kt Albania6.kt Czech6.kt \
-	Greece6.kt Hungary6.kt Latvia6.kt Lithuania6.kt Poland6.kt \ 
-	Macedonia6.kt Canada_Fr6.kt Portugal_Br6.kt Romania6.kt 
+	Greece6.kt Hungary6.kt Latvia6.kt Lithuania6.kt Poland6.kt \
+	Macedonia6.kt Canada_Fr6.kt Portugal_Br6.kt Romania6.kt \
+	Canada_Bi6.kt Brazil6.kt
 
 
 

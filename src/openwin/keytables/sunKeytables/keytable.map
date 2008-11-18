@@ -20,16 +20,16 @@
 #
 
 # /* @(#)keytable.map	35.15 07/20/00 SunSoft */
-#ident	"@(#)keytable.map	1.7 91/07/12 KEYTABLES SMI"
+# ident "%Z%%M% %I%     %E%     SMI"
 #
-# Copyright (c) 1990,1999, Sun Microsystems, Inc.  RESTRICTED RIGHTS LEGEND:
+# Copyright (c) 2008 Sun Microsystems, Inc.  RESTRICTED RIGHTS LEGEND:
 # Use, duplication, or disclosure by the Government is subject to
 # restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in
 # Technical Data and Computer Software clause at DFARS 52.227-7013 and
 # in similar clauses in the FAR and NASA FAR Supplement.
 #
 #
-#       Copyright (C) 1990,1999 Sun Microsystems, Inc.
+#       Copyright (C) 2008 Sun Microsystems, Inc.
 #
 # Keytable map (Type and Layout mapped to keytable_file)
 ########################################################################
@@ -170,6 +170,7 @@ Type    Layout  Filename
 # Type 6 Keyboards (USB Keyboards)
 #
 6	0	US6.kt
+6	3	Canada_Bi6.kt
 6	4	Canada_Fr6.kt
 6       5       Czech6.kt
 6       6       Denmark6.kt
@@ -198,19 +199,20 @@ Type    Layout  Filename
 6	31	TurkeyQ6.kt
 6	35	TurkeyF6.kt
 # Additional keyboards
-6       256      Slovenia6.kt
+6       256     Slovenia6.kt
 6       24      Slovakia6.kt
-6       257       SerbiaandMontenegro6.kt
-6       258      Iceland6.kt
-6       259      Croatia6.kt
-6       260      Bulgaria6.kt
-6       261      Belarus6.kt
-6       262      Malta_US6.kt
-6       263      Malta_UK6.kt
-6       264      Albania6.kt
+6       257     SerbiaandMontenegro6.kt
+6       258     Iceland6.kt
+6       259     Croatia6.kt
+6       260     Bulgaria6.kt
+6       261     Belarus6.kt
+6       262     Malta_US6.kt
+6       263     Malta_UK6.kt
+6       264     Albania6.kt
 6       271     Japan6.kt
 6       265     Lithuania6.kt
 6	266     Latvia6.kt
 6	267	Macedonia6.kt
 6	268 	Portugal_Br6.kt
 6	269	Romania6.kt
+6	272	Brazil6.kt

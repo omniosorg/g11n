@@ -28,7 +28,7 @@
 #
 #       Copyright (c) 2008 Sun Microsystems, Inc.
 #
-# Keytable for a Sun Type-6 (USB) Italian keyboard (Italy6.kt) 
+# Keytable for a Sun Type-6 (USB) Canadian-Bilingual (Canada_Bi6.kt) 
 ######################################################################
 # Important Note:
 #
@@ -192,19 +192,19 @@ MAXSCANCODE 247
 120	NN	XK_L1	XK_L1	SunXK_Stop
 121	NN	XK_L2	XK_L2	SunXK_Again
 
-53	RN	XK_backslash	XK_bar
-30	RN	XK_1	XK_exclam
-31	RN	XK_2	XK_quotedbl
-32	RN	XK_3	XK_sterling	XK_numbersign
-33	RN	XK_4	XK_dollar
-34	RN	XK_5	XK_percent
-35	RN	XK_6	XK_ampersand
-36	RN	XK_7	XK_slash	XK_bracketleft	
-37	RN	XK_8	XK_parenleft	XK_braceleft
-38	RN	XK_9	XK_parenright	XK_braceright
-39	RN	XK_0	XK_equal	XK_bracketright
-45	RN	XK_apostrophe	XK_question	XK_quoteleft
-46	RN	XK_igrave	XK_asciicircum
+53	RN	XK_slash	XK_bar		XK_backslash
+30	RN	XK_1		XK_exclam	XK_plusminus
+31	RN	XK_2		XK_at
+32	RN	XK_3		XK_numbersign	XK_sterling
+33	RN	XK_4		XK_dollar	XK_cent
+34	RN	XK_5		XK_percent	XK_currency
+35	RN	XK_6		XK_question	XK_notsign
+36	RN	XK_7		XK_ampersand	XK_braceleft
+37	RN	XK_8		XK_asterisk	XK_braceright
+38	RN	XK_9		XK_parenleft 	XK_bracketleft
+39	RN	XK_0 		XK_parenright	XK_bracketright
+45	RN	XK_minus	XK_underscore	XK_onehalf
+46	RN	XK_equal	XK_plus		XK_notsign
 42	RN	XK_BackSpace
 
 73	NN	XK_Insert
@@ -225,18 +225,18 @@ MAXSCANCODE 247
 122	NN	XK_L4	XK_L4	SunXK_Undo
 
 43	RN	XK_Tab
-20	RN	XK_q	SK_Q	XK_at
+20	RN	XK_Q
 26	RN	XK_W
-8	RN	XK_e            XK_E            XK_EuroSign
+8       RN      XK_e	XK_E	XK_EuroSign
 21	RN	XK_R
 23	RN	XK_T
 28	RN	XK_Y
 24	RN	XK_U
 12	RN	XK_I
-18	RN	XK_O
-19	RN	XK_P
-47	RN	XK_egrave	XK_eacute	XK_bracketleft
-48	RN	XK_plus		XK_asterisk	XK_bracketright
+18	RN	XK_o	XK_O	XK_section
+19	RN	XK_p	XK_P	XK_paragraph
+47	RN	XK_dead_circumflex	 XK_dead_diaeresis	XK_dead_grave
+48	RN	XK_ccedilla	XK_Ccedilla	XK_asciitilde
 
 76	RN	XK_Delete
 77	NN	XK_End
@@ -265,10 +265,10 @@ MAXSCANCODE 247
 13	RN	XK_J
 14	RN	XK_K
 15	RN	XK_L
-51	RN	XK_ograve	XK_ccedilla	XK_at
-52	RN	XK_agrave	XK_degree	XK_numbersign
-49	RN      XK_ugrave       XK_section      XK_asciitilde
-50	RN	XK_ugrave	XK_section	XK_grave
+51	RN	XK_semicolon	XK_colon	XK_degree
+52      RN      XK_egrave   	XK_Egrave	XK_braceleft
+49      RN      XK_agrave       XK_Agrave	XK_braceright	
+50	RN	XK_agrave   	XK_Agrave	XK_braceright
 40	RN	XK_Return
 
 92	RN	XK_Left	XK_R10	XK_KP_4
@@ -284,18 +284,19 @@ MAXSCANCODE 247
 125	NN	XK_L8	XK_L8	SunXK_Paste
 
 225	NN	XK_Shift_L
-100	RN	XK_less	XK_greater
-29	RN	XK_Z
-27	RN	XK_X
+100	RN	XK_ugrave   	XK_Ugrave	XK_degree	XK_brokenbar
+29	RN	XK_z	XK_Z	XK_guillemotleft
+27	RN	XK_x	XK_X	XK_guillemotright
 6	RN	XK_C
 25	RN	XK_V
 5	RN	XK_B
 17	RN	XK_N
-16	RN	XK_M
-54	RN	XK_comma	XK_semicolon
-55	RN	XK_period	XK_colon
-56	RN	XK_minus	XK_underscore
-229	NN	XK_Shift_R
+16	RN	XK_m	XK_M	XK_mu
+54	RN	XK_comma	XK_apostrophe	XK_less
+55	RN	XK_period	XK_quotedbl	XK_greater
+56	RN	XK_eacute	XK_Eacute	SunXK_FA_Acute
+229	RN	XK_Shift_R
+
 
 82	RN	XK_Up
 

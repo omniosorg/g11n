@@ -1,6 +1,5 @@
-##########################################################################
 #
-# Copyright 2005 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 #
 # Permission is hereby granted, free of charge, to any person obtaining a
 # copy of this software and associated documentation files (the
@@ -27,7 +26,7 @@
 # or other dealings in this Software without prior written authorization
 # of the copyright holder.
 #
-##########################################################################
+
 #
 # CDDL HEADER START
 #
@@ -48,8 +47,7 @@
 #
 # CDDL HEADER END
 #
-#
-# ident "@(#)xkbtable.map	1.7	05/11/08 SMI"
+
 #
 # xkbtable.map
 #
@@ -238,4 +236,6 @@
 6	257	-	sun_type6_euro_usb	sr	# Serbia-And-Montenegro6_usb
 6	256	-	sun_type6_euro_usb	si	# Slovenian6_usb
 6	24	-	sun_type6_euro_usb	sk	# Slovakian6_usb
+6	3	-	sun_type6_usb		ca_bi	# Canada_Bi6_usb
+6	272	-	sun_type6_usb		br	# Brazil6_usb
 

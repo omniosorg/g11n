@@ -157,7 +157,7 @@
 
 ! layout
   us              U.S. English
-  ar             Arabic
+  ar              Arabic
   al              Albania
   am              Armenia
   az              Azerbaijan
@@ -170,6 +170,7 @@
   bg              Bulgaria
   mm              Myanmar
   ca              Canada
+  ca_bi		  Canada_bilingual
   hr              Croatia
   cz              Czechia
   dk              Denmark

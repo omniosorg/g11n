@@ -68,7 +68,7 @@ xkb_symbols "type5" {
     key <AE10> { [ eacute, 0            ], [ braceright         ]       };
  
     key <AD03> { [ e, E                 ]                               };
-    key  <AD06> { [ dcaron, d         ,D            ]                   };
+    key <AD06> { [ dcaron, d         ,D            ]                   };
     key <AD11> { [ uacute, slash        ], [ bracketleft                ] };
     key <AD12> { [ parenright, parenleft], [ bracketright               ] };
      
@@ -83,31 +83,32 @@ xkb_symbols "type5" {
 xkb_symbols "type6" {
   include "sun/us(type6)"
 
-    key <TLDE>	{ [ semicolon, dead_abovering 	]	};
+    key <TLDE>	{ [ semicolon, dead_abovering 	],
+		  [ quoteleft,     asciitilde   ]	};
     key <AE01>	{ [      plus,          1 	],  
-		  [ asciitilde 			]	};
+		  [    exclam,     asciitilde 	]	};
     key <AE02>	{ [    ecaron,          2 	],  
-		  [ dead_caron 			]	};
+		  [        at,     dead_caron 	]	};
     key <AE03>	{ [    scaron,          3 	],  
-		  [ SunFA_Circum 		] 	};
+		  [ numbersign,  SunFA_Circum 	] 	};
     key <AE04>	{ [    ccaron,          4 	],  
-		  [ dead_breve 			]	};
+		  [    dollar,     dead_breve 	]	};
     key <AE05>	{ [    rcaron,          5 	],  
-		  [ dead_abovering 		] 	};
+		  [   percent, dead_abovering 	] 	};
     key <AE06>	{ [    zcaron,          6 	],  
-		  [ dead_ogonek 		]	};
+		  [ asciicircum,  dead_ogonek 	]	};
     key <AE07>	{ [    yacute,          7 	],  
-		  [ grave 			]	};
+		  [ ampersand,          grave 	]	};
     key <AE08>	{ [    aacute,          8 	],  
-		  [ dead_abovedot		]	};
+		  [  asterisk,  dead_abovedot	]	};
     key <AE09>	{ [    iacute,          9 	],  
-		  [ SunFA_Acute 			]	};
+		  [ parenleft,    SunFA_Acute 	]	};
     key <AE10>	{ [    eacute,          0 	],  
-		  [ dead_doubleacute 		] 	};
+		  [ parenright, dead_doubleacute] 	};
     key <AE11>	{ [     equal,    percent 	],  
-		  [ dead_diaeresis 		]	};
+		  [ dead_diaeresis, backslash 	]	};
     key <AE12>	{ [ SunFA_Acute, dead_caron 	], 
-		  [ dead_cedilla 		]	};
+		  [ dead_cedilla, minus 	]	};
     key <AD01>	{ [         q,          Q 	], 
 		  [  backslash 			]	};
     key <AD02>	{ [         w,          W 	], 
@@ -131,28 +132,28 @@ xkb_symbols "type6" {
 		  [      lstroke 		]	};
     key <AC09>	{ [         l,          L 	], 
 		  [      Lstroke 		]	};              
-    key <AC10>	{ [     uring,   quotedbl 	], 
-		  [   dollar 			]	};
-    key <AC11>	{ [   section,     exclam 	], 
-		  [       ssharp 		]	};
+    key <AC10>	{ [      uring,       quotedbl 	], 
+		  [     dollar 			]	};
+    key <AC11>	{ [    section,         exclam 	], 
+		  [     ssharp,       currency	]	};
     key <BKSL>	{ [ dead_diaeresis, apostrophe 	], 
-		  [ currency 			]	};
-    key <LSGT>	{ [ ampersand,        asterisk 	], 
-		  [    less 			]	};
-    key <AB01>	{ [         y,          Y 	], 
-		  [     greater 		]	};
-    key <AB02>	{ [         x,          X 	], 
-		  [  numbersign 		]	};
-    key <AB04>	{ [         v,          V 	], 
-		  [      at 			]	};
-    key <AB05>	{ [         b,          B 	],
-		  [ braceleft 			]	};
-    key <AB06>	{ [         n,          N 	],
-		  [ braceright 			]	};
-    key <AB08>	{ [     comma,   question 	],
-		  [ 	less			]	};
-    key <AB09>	{ [    period,      colon 	],
-		  [	greater			]	};
-    key <AB10>	{ [     minus, underscore 	]	};
+		  [  backslash,            bar	]	};
+    key <LSGT>	{ [  backslash,       asterisk 	], 
+		  [      slash,	     brokenbar	]	};
+    key <AB01>	{ [          y,          Y 	], 
+		  [       less	 		]	};
+    key <AB02>	{ [          x,          X 	], 
+		  [    greater,     numbersign 	]	};
+    key <AB04>	{ [          v,          V 	], 
+		  [         at 			]	};
+    key <AB05>	{ [          b,          B 	],
+		  [  braceleft 			]	};
+    key <AB06>	{ [          n,          N 	],
+		  [ braceright	 		]	};
+    key <AB08>	{ [      comma,       question 	],
+		  [ 	  less			]	};
+    key <AB09>	{ [     period,          colon 	],
+		  [    greater			]	};
+    key <AB10>	{ [      minus,     underscore 	]	};
 };
 

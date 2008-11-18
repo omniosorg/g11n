@@ -20,10 +20,10 @@
 #
 
 #
-# Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-# ident "@(#)xkbtable.map 1.5     07/03/27 SMI"
+# ident "%Z%%M% %I%     %E%     SMI"
 #
 ########################################################################
 # xkbtable.map
@@ -172,6 +172,7 @@
 6	*	sun/all(US6_usb)		type6_usb	us
 6       1       sun/all(Arabic6_usb)            type6_euro_usb  ar
 6       2       sun/all(Belgian6_usb)           type6_euro_usb  be
+6	3	sun/all(Canada_Bi6_usb		type6_usb	ca_bi
 6	6	sun/all(Denmark6_usb)		type6_euro_usb	dk
 6	7	sun/all(Finnish6_usb)		type6_euro_usb	fi
 6	8	sun/all(France6_usb)		type6_euro_usb	fr
@@ -208,3 +209,4 @@
 6       265     sun/all(Lithuania6_usb)		type6_euro_usb	lt	
 6	266     sun/all(Latvia6_usb)		type6_euro_usb	lv
 6	5     	sun/all(Czech6_usb)		type6_euro_usb	cz
+6	272	sun/all(Brazil6_usb)		type6_usb	br
