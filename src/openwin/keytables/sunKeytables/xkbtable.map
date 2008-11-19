@@ -171,7 +171,7 @@
 6	*	sun/all(US6_usb)		type6_usb	us
 6       1       sun/all(Arabic6_usb)            type6_euro_usb  ar
 6       2       sun/all(Belgian6_usb)           type6_euro_usb  be
-6	3	sun/all(Canada_Bi6_usb		type6_usb	ca_bi
+6	3	sun/all(Canada_Bi6_usb)		type6_usb	ca_bi
 6	6	sun/all(Denmark6_usb)		type6_euro_usb	dk
 6	7	sun/all(Finnish6_usb)		type6_euro_usb	fi
 6	8	sun/all(France6_usb)		type6_euro_usb	fr
