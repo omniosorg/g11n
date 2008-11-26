@@ -43,10 +43,6 @@ start_scim() {
     fi
 }
 
-if [ -f $HOME/.profile ]; then
-    . $HOME/.profile
-fi
-
 if [ "x" = "x$GTK_IM_MODULE" ]; then
     GTK_IM_MODULE=iiim
     export GTK_IM_MODULE
