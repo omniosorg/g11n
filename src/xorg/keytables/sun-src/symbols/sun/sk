@@ -84,6 +84,7 @@ xkb_symbols "basic" {
 			[             bar	                ]	};
     key <AD03>  {	[	        e,         E		],
 			[        EuroSign 			]	};
+    key <AD06>  {       [               z,         Z            ]       };
     key <AD11>  {	[	   uacute,               slash	],
 			[        division		        ]	};
     key <AD12>  {	[      adiaeresis,           parenleft	],
@@ -111,7 +112,7 @@ xkb_symbols "basic" {
     key <LSGT>  { 	[       backslash,                 bar  ], 
                         [           slash,           brokenbar  ]       };
     key <AB01>  {       [               y,        Y             ],
-			[            less, 	                ]	};
+			[            less  	                ]	};
     key <AB02>  {	[	        x,        X		],
 			[         greater,          numbersign  ]	};
     key <AB03>  {	[		c,        C		],

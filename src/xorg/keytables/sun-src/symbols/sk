@@ -56,6 +56,7 @@ xkb_symbols "basic" {
                         [             bar                       ]       };
     key <AD03>  {       [               e,         E            ],
                         [        EuroSign                       ]       };
+    key <AD06>  {	[	        z,	   Z		]	};
     key <AD11>  {       [          uacute,               slash  ],
                         [        division                       ]       };
     key <AD12>  {       [      adiaeresis,           parenleft  ],
@@ -83,7 +84,7 @@ xkb_symbols "basic" {
     key <LSGT>  {       [       backslash,                 bar  ], 
                         [           slash,           brokenbar  ]       };
     key <AB01>  {       [               y,        Y             ],
-                        [            less,                      ]       };
+                        [            less                       ]       };
     key <AB02>  {       [               x,        X             ],
                         [         greater,          numbersign  ]       };
     key <AB03>  {       [               c,        C             ],
@@ -101,19 +102,6 @@ xkb_symbols "basic" {
     key <AB10>  {       [           minus,          underscore  ],
                         [        asterisk                       ]       };
 
-    include "level3(ralt_switch)"
-
-    modifier_map Shift  { Shift_L };
-    // End alphanumeric section, begin "Keypad"
-    key <KPDL> {        [  KP_Delete,   KP_Separator    ]       };
-    // End "Keypad" section
-
-    // begin modifier mappings
-
-    modifier_map Shift  { Shift_L };
-    modifier_map Lock   { Caps_Lock };
-    modifier_map Control{ Control_L };
-    modifier_map Mod3   { Mode_switch };
 };
 
 partial alphanumeric_keys
