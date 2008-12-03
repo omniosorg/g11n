@@ -580,6 +580,12 @@ do
 	    then
                checkImage="dir"     # checking an install dir
                path=${DEVICES[0]}
+            # check if the dir exists!!!
+               if [ ! -d $path ]; then
+                  loc_prnt "Warning! The directory specified does not exist \n (%s) \n" nolog $path
+                  typeset -i retval=1
+                  return $retval
+               fi
 	    else
                 checkImage="mach"    # checking locales installed on / on the machine
 	    fi
@@ -999,7 +1005,7 @@ then
     typeset -i yes=0 no=0
 
     # Checks user input with yesexpr in LC_MESSAGES of current locale
-    echo "$ans" | $grep -E `locale yesexpr` > /dev/null
+    echo "$ans" | $grep -E "`locale yesexpr`" > /dev/null
 #    locale -ck LC_MESSAGES | grep yesexpr | awk -F'[' '{print $2}' | awk -F']' '{print $1}' | $grep ${ans} > /dev/null
     ret_val=$?
     if [ ${ret_val} -eq 0 ]; then	# If it is yes, continue on
@@ -1008,7 +1014,7 @@ then
     fi
 
     # Checks user input with noexpr in LC_MESSAGES of current locale
-    echo "$ans" | $grep -E `locale noexpr` > /dev/null
+    echo "$ans" | $grep -E "`locale noexpr`" > /dev/null
 #    locale -ck LC_MESSAGES | grep noexpr | awk -F'[' '{print $2}' | awk -F']' '{print $1}' | $grep -e ${ans} > /dev/null
     ret_val=$?
     if [ ${ret_val} -eq 0 ]; then	# If it is no, exits localeadm
@@ -2376,7 +2382,7 @@ then loc_prnt "You do not appear to have created a fresh config file since you b
     typeset -i yes=0 no=0
 
     # Checks user input with yesexpr in LC_MESSAGES of current locale
-    echo "$ans" | $grep -E `locale yesexpr` > /dev/null
+    echo "$ans" | $grep -E "`locale yesexpr`" > /dev/null
 #    locale -ck LC_MESSAGES | grep yesexpr | awk -F'[' '{print $2}' | awk -F']' '{print $1}' | $grep ${ans} > /dev/null
     ret_val=$?
     if [ ${ret_val} -eq 0 ]; then       # If it is yes, continue on
@@ -2386,7 +2392,7 @@ then loc_prnt "You do not appear to have created a fresh config file since you b
     fi
 
     # Checks user input with noexpr in LC_MESSAGES of current locale
-    echo "$ans" | $grep -E `locale noexpr` > /dev/null
+    echo "$ans" | $grep -E "`locale noexpr`" > /dev/null
 #    locale -ck LC_MESSAGES | grep noexpr | awk -F'[' '{print $2}' | awk -F']' '{print $1}' | $grep -e ${ans} > /dev/null
     ret_val=$?
     if [ ${ret_val} -eq 0 ]; then       # If it is no, copies to a .old file so the user is not prompted the next time l'admin is run
