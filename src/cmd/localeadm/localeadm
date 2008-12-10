@@ -752,7 +752,7 @@ is_correct_cd() {
 	# $cdpath is set elsewhere
 	#.volume.inf indicates what cd the image is. 		
         cdcheck=""
-        if [ -d "$cdpath" ]
+        if [ -f $cdpath/.volume.inf ]
         then
           if [[ "$cdName" = "solaris" || $cdName = "dvd" ]]
           then
