@@ -24,7 +24,6 @@
 #
 # ident	"@(#)Makefile.master	1.0	06/03/07 SMI"
 #
-POUND_SIGN:sh=				echo \\043
 
 MACH :sh= echo ${MACH-`uname -p`}
 MACH64:sh = isainfo -k
@@ -64,10 +63,6 @@ ROOT = $(SRC)/proto/$(MACH)
 PKGROOT = $(ROOT)/pkgroot
 FILEROOT = $(ROOT)/fileroot
 
-# set __SSNEXT= in the enviroment to build with the 'next' release of
-# the Sun Studio compiler. This will cause command line options specific
-# to the 'next' version of the Sun Studio compiler to be used.
-__SSNEXT=	$(POUND_SIGN)
 
 # BUILD_TOOLS is the root of all tools including compilers.
 # ONBLD_TOOLS is the root of all the tools that are part of SUNWonbld.
@@ -211,16 +206,28 @@ CCUNBOUND	= $($(MACH)_CCUNBOUND)
 #
 # compiler '-xarch' flag. This is here to centralize it and make it
 # overridable for testing.
-sparc_XARCH=		-xarch=v8
-sparcv9_XARCH=		-xarch=v9
+#sparc_XARCH=		-xarch=v8
+#sparcv9_XARCH=		-xarch=v9
+#i386_XARCH=
+#amd64_XARCH=		-xarch=amd64 -Ui386 -U__i386
+
+#replace with ss12 specific flags
+sparc_XARCH=		-xarch=sparc -m32
+sparcv9_XARCH=		-xarch=sparc -m64
 i386_XARCH=
-amd64_XARCH=		-xarch=amd64 -Ui386 -U__i386
+amd64_XARCH=		-xarch=sse2 -m64 -Ui386 -U__i386
 
 # assembler '-xarch' flag.  Different from compiler '-xarch' flag.
-sparc_AS_XARCH=		-xarch=v8
-sparcv9_AS_XARCH=	-xarch=v9
+#sparc_AS_XARCH=		-xarch=v8
+#sparcv9_AS_XARCH=	-xarch=v9
+#i386_AS_XARCH=
+#amd64_AS_XARCH=		-xarch=amd64 -P -Ui386 -U__i386
+
+#replace with ss12 specific flags
+sparc_AS_XARCH=         -xarch=sparc -m32
+sparcv9_AS_XARCH=       -xarch=sparc -64
 i386_AS_XARCH=
-amd64_AS_XARCH=		-xarch=amd64 -P -Ui386 -U__i386
+amd64_AS_XARCH=         -xarch=sse2 -m64 -P -Ui386 -U__i386
 
 #
 # These flags define what we need to be 'standalone' i.e. -not- part
@@ -232,7 +239,7 @@ amd64_AS_XARCH=		-xarch=amd64 -P -Ui386 -U__i386
 sparc_STAND_FLAGS=	-_gcc=-ffreestanding
 sparcv9_STAND_FLAGS=	-_gcc=-ffreestanding
 i386_STAND_FLAGS=	-_gcc=-ffreestanding
-amd64_STAND_FLAGS=	-xmodel=kernel
+amd64_STAND_FLAGS=	-Wu,-xmodel=kernel
 
 SAVEARGS=		-Wu,-save_args
 amd64_STAND_FLAGS	+= $(SAVEARGS)
@@ -280,7 +287,7 @@ amd64_ASFLAGS=	$(amd64_AS_XARCH)
 #
 sparc_COPTFLAG=		-xO3
 sparcv9_COPTFLAG=	-xO3
-i386_COPTFLAG=		-xO3
+i386_COPTFLAG=		-O
 amd64_COPTFLAG=		-xO3
 
 COPTFLAG= $($(MACH)_COPTFLAG)
