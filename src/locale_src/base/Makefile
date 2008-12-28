@@ -52,12 +52,27 @@ sq_AL.ISO8859-2 sr_YU.ISO8859-5 sv_SE.ISO8859-1 sv_SE.ISO8859-15 tr_TR.ISO8859-9
 
 LOCALES_OTHER = ja ja_JP.PCK ja_JP.eucJP ko ko@dict ru_RU.ANSI1251 ru_RU.KOI8-R th_TH zh zh_CN.GB18030 zh.GBK zh_HK.BIG5HK zh_TW zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical zh_CN.GB18030@stroke zh.GBK@pinyin zh.GBK@radical zh.GBK@stroke zh_HK.BIG5HK@pinyin zh_HK.BIG5HK@radical zh_HK.BIG5HK@stroke zh_HK.BIG5HK@zhuyin zh@pinyin zh@radical zh@stroke zh_TW.BIG5@pinyin zh_TW.BIG5@radical zh_TW.BIG5@stroke zh_TW.BIG5@zhuyin zh_TW@pinyin zh_TW@radical zh_TW@stroke zh_TW@zhuyin
 
-METHOD_VERSION = 3
+COMMON_CFLAGS	= $(CCVERBOSE) -K pic -D PIC -G -I. -z defs -z text -z ignore -D_REENTRANT
 
-CFLAGS = -Xa -K PIC -G -xO3
-CFLAGS_sparcv9 = $(CFLAGS) -xarch=v9 -dalign
+# escape ',' for localedef
+sparc_CCUNBOUND		= -Wd\,-xsafe=unboundsym
+sparc_SPACEFLAG		= -xspace -W0\,-Lt -W2\,-Rcond_elim
+sparcv9_SPACEFLAG	= -xspace -W0\,-Lt -W2\,-Rcond_elim
+CCREGSYM		= -Wc\,-Qiselect-regsym=0
 
-LOPT_ORIGIN = "-R\\\$$ORIGIN"
+CERRWARN	=
+CFLAGS          += $(COMMON_CFLAGS) $(XREGSFLAG)
+CFLAGS64        += $(COMMON_CFLAGS) $(XREGSFLAG64)
+
+LDF_OPT		= 
+LDF_OPT64	= -m lp64
+LOCALEDEF	= $(SRC)/tools/localedef.sh
+
+LOPT_ORIGIN	= "-R\\\$$ORIGIN"
+
+_CHARMAPS	= $(SRC)/src/locale_src/charmap
+_METHODSRC	= $(SRC)/src/locale_src/base/include
+
 
 LOCALE = $(LOCALES_OTHER) $(LOCALES_UTF8) $(LOCALES_ISO)
 
@@ -85,161 +100,162 @@ $(LOCALE): $(LOCALE:%=%.so.$(METHOD_VERSION))
 # 
 
 %.UTF-8.so.$(METHOD_VERSION): %.UTF-8.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" $(LOPT_ORIGIN)
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) $(LOPT_ORIGIN)
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN):" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 # need to compile the CLDR locales separately as they use a different charmap to the other UTF-8s.
 # some hacky code here to create a $locale.UTF-8_c.so.* file to satisy dependency checking.
 %.UTF-8_c.so.$(METHOD_VERSION): %.UTF-8.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/utf-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" $(LOPT_ORIGIN)
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i $< $(<:%.localedef.build=%)
 	$(RM) $@
 	$(LN) -s $(@:%.UTF-8_c.so.$(METHOD_VERSION)=%.UTF-8.so.$(METHOD_VERSION)) $@
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/utf-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) $(LOPT_ORIGIN)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L $(LOPT_ORIGIN) -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 #
 # rules for non-UTF-8 locales
 #
 
 %.ISO8859-1.so.$(METHOD_VERSION): %.ISO8859-1.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-1.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-1.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-1.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-1.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ISO8859-2.so.$(METHOD_VERSION): %.ISO8859-2.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-2.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-2.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-2.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-2.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ISO8859-5.so.$(METHOD_VERSION): %.ISO8859-5.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-5.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-5.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-5.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-5.charmap -i ../$< $(<:%.localedef.build=%)
 
 # ISO8859-6 locale
 ar.so.$(METHOD_VERSION): ar.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-6.charmap ar.localedef.build $(SRC)/src/locale_src/base/include/single_byte.x ar "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-6.charmap ../ar.localedef.build $(SRC)/src/locale_src/base/include/single_byte.x ar $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/single_byte.x -f $(_CHARMAPS)/iso-8859-6.charmap -i ar.localedef.build ar
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/single_byte.x -f $(_CHARMAPS)/iso-8859-6.charmap -i ../ar.localedef.build ar
 
 %.ISO8859-7.so.$(METHOD_VERSION): %.ISO8859-7.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-7.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-7.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-7.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-7.charmap -i ../$< $(<:%.localedef.build=%)
 
 # ISO8859-8 locale
 he.so.$(METHOD_VERSION): he.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-8.charmap he.localedef.build $(SRC)/src/locale_src/base/include/single_byte.x he "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-8.charmap ../he.localedef.build $(SRC)/src/locale_src/base/include/single_byte.x he $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/single_byte.x -f $(_CHARMAPS)/iso-8859-8.charmap -i he.localedef.build he
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/single_byte.x -f $(_CHARMAPS)/iso-8859-8.charmap -i ../he.localedef.build he
 
 %.ISO8859-9.so.$(METHOD_VERSION): %.ISO8859-9.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-9.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-9.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-9.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-9.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ISO8859-13.so.$(METHOD_VERSION): %.ISO8859-13.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-13.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-13.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-13.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-13.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ISO8859-15.so.$(METHOD_VERSION): %.ISO8859-15.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-15.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-15.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-15.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-15.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.KOI8-R.so.$(METHOD_VERSION): %.KOI8-R.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/koi8-r.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/koi8-r.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/koi8-r.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/koi8-r.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ANSI1251.so.$(METHOD_VERSION): %.ANSI1251.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/ansi-1251.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/ansi-1251.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/ansi-1251.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/ansi-1251.charmap -i ../$< $(<:%.localedef.build=%)
 
 #
 # japanese, asian locales
 #
 
+
 ja.so.$(METHOD_VERSION): ja.localedef
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/eucJP.charmap ja.localedef $(SRC)/src/locale_src/base/include/ja.x ja "" "-R/usr/lib/locale/ja_JP.eucJP"
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/eucJP.charmap ../ja.localedef $(SRC)/src/locale_src/base/include/ja.x ja $(MACH64) "-R/usr/lib/locale/ja_JP.eucJP/$(MACH64)"
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "-R/usr/lib/locale/ja_JP.eucJP" -x $(_METHODSRC)/ja.x -f $(_CHARMAPS)/eucJP.charmap -i ja.localedef ja
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "-R/usr/lib/locale/ja_JP.eucJP/$(MACH64)" -x $(_METHODSRC)/ja.x -f $(_CHARMAPS)/eucJP.charmap -i ../ja.localedef ja
 
 %.PCK.so.$(METHOD_VERSION): %.PCK.localedef
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/PCK.charmap $< $(SRC)/src/locale_src/base/include/PCK.x $(<:%.localedef=%) "" "-R/usr/lib/locale/ja_JP.PCK"
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/PCK.charmap ../$< $(SRC)/src/locale_src/base/include/PCK.x $(<:%.localedef=%) $(MACH64) "-R/usr/lib/locale/ja_JP.PCK/$(MACH64)"
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "-R/usr/lib/locale/ja_JP.PCK" -x $(_METHODSRC)/PCK.x -f $(_CHARMAPS)/PCK.charmap -i $< $(<:%.localedef=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "-R/usr/lib/locale/ja_JP.PCK/$(MACH64)" -x $(_METHODSRC)/PCK.x -f $(_CHARMAPS)/PCK.charmap -i ../$< $(<:%.localedef=%)
 
 %.eucJP.so.$(METHOD_VERSION): %.eucJP.localedef
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/eucJP.charmap $< $(SRC)/src/locale_src/base/include/eucJP.x $(<:%.localedef=%) "" "-R/usr/lib/locale/ja_JP.eucJP"
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/eucJP.charmap ../$< $(SRC)/src/locale_src/base/include/eucJP.x $(<:%.localedef=%) $(MACH64) "-R/usr/lib/locale/ja_JP.eucJP/$(MACH64)"
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "-R/usr/lib/locale/ja_JP.eucJP" -x $(_METHODSRC)/eucJP.x -f $(_CHARMAPS)/eucJP.charmap -i $< $(<:%.localedef=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "-R/usr/lib/locale/ja_JP.eucJP/$(MACH64)" -x $(_METHODSRC)/eucJP.x -f $(_CHARMAPS)/eucJP.charmap -i ../$< $(<:%.localedef=%)
 
 %.UTF-8@pinyin.so.$(METHOD_VERSION): %.UTF-8@pinyin.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.UTF-8@radical.so.$(METHOD_VERSION): %.UTF-8@radical.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.UTF-8@stroke.so.$(METHOD_VERSION): %.UTF-8@stroke.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.UTF-8@zhuyin.so.$(METHOD_VERSION): %.UTF-8@zhuyin.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 zh_CN.GB18030%.so.$(METHOD_VERSION): zh_CN.GB18030%.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/GB18030.charmap $< $(SRC)/src/locale_src/base/include/GB18030.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/GB18030.charmap ../$< $(SRC)/src/locale_src/base/include/GB18030.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/GB18030.x -f $(_CHARMAPS)/GB18030.charmap -i $< $(<:%.localedef.build=%);
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/GB18030.x -f $(_CHARMAPS)/GB18030.charmap -i ../$< $(<:%.localedef.build=%);
 
 zh.GBK%.so.$(METHOD_VERSION): zh.GBK%.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/GBK.charmap $< $(SRC)/src/locale_src/base/include/GBK.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/GBK.charmap ../$< $(SRC)/src/locale_src/base/include/GBK.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/GBK.x -f $(_CHARMAPS)/GBK.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/GBK.x -f $(_CHARMAPS)/GBK.charmap -i ../$< $(<:%.localedef.build=%)
 
 zh_HK.BIG5HK%.so.$(METHOD_VERSION): zh_HK.BIG5HK%.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/BIG5HK.charmap $< $(SRC)/src/locale_src/base/include/BIG5HK.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/BIG5HK.charmap ../$< $(SRC)/src/locale_src/base/include/BIG5HK.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/BIG5HK.x -f $(_CHARMAPS)/BIG5HK.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/BIG5HK.x -f $(_CHARMAPS)/BIG5HK.charmap -i ../$< $(<:%.localedef.build=%)
 
 zh_TW.BIG5%.so.$(METHOD_VERSION): zh_TW.BIG5%.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/BIG5.charmap $< $(SRC)/src/locale_src/base/include/BIG5.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/BIG5.charmap ../$< $(SRC)/src/locale_src/base/include/BIG5.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/BIG5.x -f $(_CHARMAPS)/BIG5.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/BIG5.x -f $(_CHARMAPS)/BIG5.charmap -i ../$< $(<:%.localedef.build=%)
 
 zh_TW%.so.$(METHOD_VERSION): zh_TW%.localedef
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/zh_TW.charmap $< $(SRC)/src/locale_src/base/include/zh_TW.EUC.x $(<:%.localedef=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/zh_TW.charmap ../$< $(SRC)/src/locale_src/base/include/zh_TW.EUC.x $(<:%.localedef=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/zh_TW.EUC.x -f $(_CHARMAPS)/zh_TW.charmap -i $< $(<:%.localedef=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/zh_TW.EUC.x -f $(_CHARMAPS)/zh_TW.charmap -i ../$< $(<:%.localedef=%)
 
 zh%.so.$(METHOD_VERSION): zh%.localedef
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/zh.charmap $< $(SRC)/src/locale_src/base/include/zh.EUC.x $(<:%.localedef=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/zh.charmap ../$< $(SRC)/src/locale_src/base/include/zh.EUC.x $(<:%.localedef=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/zh.EUC.x -f $(_CHARMAPS)/zh.charmap -i $< $(<:%.localedef=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/zh.EUC.x -f $(_CHARMAPS)/zh.charmap -i ../$< $(<:%.localedef=%)
 
 ko.so.$(METHOD_VERSION): ko.localedef
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/EUC.charmap ko.localedef $(SRC)/src/locale_src/base/include/ko.EUC.x ko "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/EUC.charmap ../ko.localedef $(SRC)/src/locale_src/base/include/ko.EUC.x ko $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ko.EUC.x -f $(_CHARMAPS)/EUC.charmap -i ko.localedef ko
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ko.EUC.x -f $(_CHARMAPS)/EUC.charmap -i ../ko.localedef ko
 
 th_TH.so.$(METHOD_VERSION): th_TH.localedef
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/TIS620.charmap th_TH.localedef $(SRC)/src/locale_src/base/include/ISO8859.x th_TH "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/TIS620.charmap ../th_TH.localedef $(SRC)/src/locale_src/base/include/ISO8859.x th_TH $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/TIS620.charmap -i th_TH.localedef th_TH
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/TIS620.charmap -i ../th_TH.localedef th_TH
 
 #
 # special rules for variant locales (locale@variant.codeset)
 #
 %.UTF-8@euro_c.so.$(METHOD_VERSION): %.UTF-8@euro.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/utf-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i $< $(<:%.localedef.build=%)
 	$(RM) $@
 	$(CP)  $(@:%.UTF-8@euro_c.so.$(METHOD_VERSION)=%.UTF-8.so.$(METHOD_VERSION)) $@ 
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/utf-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) ""
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i ../$< $(<:%.localedef.build=%)
 	$(CP)  $(MACH64)/$(@:%.UTF-8@euro_c.so.$(METHOD_VERSION)=%.UTF-8.so.$(METHOD_VERSION)) $(MACH64)/$@ 
 
 %.UTF-8@dict.so.$(METHOD_VERSION): %.UTF-8@dict.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ISO8859-1@bokmal.so.$(METHOD_VERSION): %.ISO8859-1@bokmal.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-1.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-1.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-1.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-1.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ISO8859-1@nynorsk.so.$(METHOD_VERSION): %.ISO8859-1@nynorsk.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-1.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-1.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-1.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-1.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ISO8859-2@bosnia.so.$(METHOD_VERSION): %.ISO8859-2@bosnia.localedef.build	
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-2.charmap $< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/iso-8859-2.charmap ../$< $(SRC)/src/locale_src/base/include/ISO8859.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-2.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-2.charmap -i ../$< $(<:%.localedef.build=%)
 
 # this won't build if I have the name as the proper locale name: %.@dict as it clashes with ko_KR.UTF-8@dict
 %dict.so.$(METHOD_VERSION): %dict.localedef
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/EUC.charmap  $<  $(SRC)/src/locale_src/base/include/ko.EUC.x $(<:%.localedef=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/EUC.charmap ../$< $(SRC)/src/locale_src/base/include/ko.EUC.x $(<:%.localedef=%) $(MACH64) ""
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ko.EUC.x -f $(_CHARMAPS)/EUC.charmap -i $< $(<:%.localedef=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ko.EUC.x -f $(_CHARMAPS)/EUC.charmap -i ../$< $(<:%.localedef=%)
 
 $(MACH64):
 	$(INSDIR) $(MACH64)
