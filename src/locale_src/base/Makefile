@@ -57,13 +57,13 @@ METHOD_VERSION = 3
 CFLAGS = -Xa -K PIC -G -xO3
 CFLAGS_sparcv9 = $(CFLAGS) -xarch=v9 -dalign
 
+LOPT_ORIGIN = "-R\\\$$ORIGIN"
+
 LOCALE = $(LOCALES_OTHER) $(LOCALES_UTF8) $(LOCALES_ISO)
 
 LOCALE.so = $(LOCALE:%=%.so.$(METHOD_VERSION))
 
 LOCALE.cldr = $(LOCALES_CLDR:%=%_c.so.$(METHOD_VERSION))
-
-LOCALE.localedef = $(LOCALE.so%.so$(METHOD_VERSION).=%.localedef) 
 
 LOCALE_src = $(LOCALE:%=%.src.bz2) $(LOCALES_CLDR:%=%.src.bz2)
 
@@ -85,16 +85,16 @@ $(LOCALE): $(LOCALE:%=%.so.$(METHOD_VERSION))
 # 
 
 %.UTF-8.so.$(METHOD_VERSION): %.UTF-8.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" ""
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) ""
+	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" $(LOPT_ORIGIN)
+	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/UTF-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) $(LOPT_ORIGIN)
 
 # need to compile the CLDR locales separately as they use a different charmap to the other UTF-8s.
 # some hacky code here to create a $locale.UTF-8_c.so.* file to satisy dependency checking.
 %.UTF-8_c.so.$(METHOD_VERSION): %.UTF-8.localedef.build
-	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/utf-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" ""
+	$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/utf-8.charmap $< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) "" $(LOPT_ORIGIN)
 	$(RM) $@
 	$(LN) -s $(@:%.UTF-8_c.so.$(METHOD_VERSION)=%.UTF-8.so.$(METHOD_VERSION)) $@
-	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/utf-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) ""
+	cd $(MACH64);$(SRC)/tools/Run.sh $(SRC)/src/locale_src/charmap/utf-8.charmap ../$< $(SRC)/src/locale_src/base/include/UTF-8.x $(<:%.localedef.build=%) $(MACH64) $(LOPT_ORIGIN)
 
 #
 # rules for non-UTF-8 locales

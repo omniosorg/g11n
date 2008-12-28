@@ -45,15 +45,11 @@ sparc_COPTFLAG="-xO3 -xregs=no%appl"
 i386_COPTFLAG="-xO3"
 
 COPTFLAG=`eval echo \\$${MACH}_COPTFLAG`
-CFLAGS="$COPTFLAG -K PIC -G -Xa "
+CFLAGS="$COPTFLAG -K pic -D PIC -G -Xa -z text -z ignore -D_REENTRANT"
 
 if [ "X$COPT" != "X" ] ; then
 	LDF_OPT="-m lp64 "
-	if [ "`isainfo -k`" = "sparcv9" ]; then
-		CFLAGS="$CFLAGS -xarch=v9"
-	else
-		CFLAGS="$CFLAGS -xarch=amd64"
-	fi
+	CFLAGS="$CFLAGS -m64"
 fi
 
 if [ "X$LOPT" != "X" ] ; then
