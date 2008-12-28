@@ -91,13 +91,13 @@ f none usr/lib/locale/zh_CN.GB18030@stroke/amd64/zh_CN.GB18030@stroke.so.3 0555 
 
 s none usr/lib/locale/zh_CN.UTF-8@pinyin/64=./amd64
 d none usr/lib/locale/zh_CN.UTF-8@pinyin/amd64 0755 root bin
-s none usr/lib/locale/zh_CN.UTF-8@pinyin/amd64/methods_zh_CN.UTF-8@pinyin.so.3=../../zh.UTF-8/amd64/methods_zh.UTF-8.so.3
+s none usr/lib/locale/zh_CN.UTF-8@pinyin/amd64/methods_unicode.so.3=../../zh.UTF-8/amd64/methods_unicode.so.3
 f none usr/lib/locale/zh_CN.UTF-8@pinyin/amd64/zh_CN.UTF-8@pinyin.so.3=usr/lib/locale/zh.UTF-8@pinyin/amd64/zh.UTF-8@pinyin.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.UTF-8@radical/64=./amd64
 d none usr/lib/locale/zh_CN.UTF-8@radical/amd64 0755 root bin
-s none usr/lib/locale/zh_CN.UTF-8@radical/amd64/methods_zh_CN.UTF-8@radical.so.3=../../zh.UTF-8/amd64/methods_zh.UTF-8.so.3
+s none usr/lib/locale/zh_CN.UTF-8@radical/amd64/methods_unicode.so.3=../../zh.UTF-8/amd64/methods_unicode.so.3
 f none usr/lib/locale/zh_CN.UTF-8@radical/amd64/zh_CN.UTF-8@radical.so.3=usr/lib/locale/zh.UTF-8@radical/amd64/zh.UTF-8@radical.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.UTF-8@stroke/64=./amd64
 d none usr/lib/locale/zh_CN.UTF-8@stroke/amd64 0755 root bin
-s none usr/lib/locale/zh_CN.UTF-8@stroke/amd64/methods_zh_CN.UTF-8@stroke.so.3=../../zh.UTF-8/amd64/methods_zh.UTF-8.so.3
+s none usr/lib/locale/zh_CN.UTF-8@stroke/amd64/methods_unicode.so.3=../../zh.UTF-8/amd64/methods_unicode.so.3
 f none usr/lib/locale/zh_CN.UTF-8@stroke/amd64/zh_CN.UTF-8@stroke.so.3=usr/lib/locale/zh.UTF-8@stroke/amd64/zh.UTF-8@stroke.so.3 0555 root bin

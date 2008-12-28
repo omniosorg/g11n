@@ -40,7 +40,7 @@ f none usr/lib/locale/de_DE.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/de_DE.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/de_DE.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/de_DE.UTF-8/LO_LTYPE/de_DE.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/de_DE.UTF-8/methods_de_DE.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/de_DE.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/de.UTF-8 0755 root bin
 s none usr/lib/locale/de.UTF-8/de.UTF-8.so.3=../de_DE.UTF-8/de_DE.UTF-8.so.3
 d none usr/lib/locale/de.UTF-8/LC_MESSAGES 0755 root bin

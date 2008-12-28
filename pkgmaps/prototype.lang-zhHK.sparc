@@ -23,7 +23,7 @@
 #
 s none usr/lib/locale/zh_HK.UTF-8/64=./sparcv9
 d none usr/lib/locale/zh_HK.UTF-8/sparcv9 0755 root bin
-s none usr/lib/locale/zh_HK.UTF-8/sparcv9/methods_zh_HK.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/zh_HK.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 f none usr/lib/locale/zh_HK.UTF-8/sparcv9/zh_HK.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/zh_HK.UTF-8/LC_CTYPE/64=./sparcv9
 d none usr/lib/locale/zh_HK.UTF-8/LC_CTYPE/sparcv9 0755 root bin

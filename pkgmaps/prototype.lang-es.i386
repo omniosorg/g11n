@@ -27,46 +27,46 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/es_AR.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_AR.UTF-8/amd64/es_AR.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_AR.UTF-8/amd64/methods_es_AR.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_AR.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_BO.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_BO.UTF-8/amd64/es_BO.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_BO.UTF-8/amd64/methods_es_BO.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_BO.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_CL.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_CL.UTF-8/amd64/es_CL.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_CL.UTF-8/amd64/methods_es_CL.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_CL.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_CO.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_CO.UTF-8/amd64/es_CO.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_CO.UTF-8/amd64/methods_es_CO.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_CO.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_CR.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_CR.UTF-8/amd64/es_CR.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_CR.UTF-8/amd64/methods_es_CR.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_CR.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_EC.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_EC.UTF-8/amd64/es_EC.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_EC.UTF-8/amd64/methods_es_EC.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_EC.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_GT.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_GT.UTF-8/amd64/es_GT.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_GT.UTF-8/amd64/methods_es_GT.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_GT.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_MX.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_MX.UTF-8/amd64/es_MX.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_MX.UTF-8/amd64/methods_es_MX.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_MX.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_NI.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_NI.UTF-8/amd64/es_NI.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_NI.UTF-8/amd64/methods_es_NI.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_NI.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_PA.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_PA.UTF-8/amd64/es_PA.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_PA.UTF-8/amd64/methods_es_PA.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_PA.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_PE.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_PE.UTF-8/amd64/es_PE.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_PE.UTF-8/amd64/methods_es_PE.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_PE.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_PY.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_PY.UTF-8/amd64/es_PY.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_PY.UTF-8/amd64/methods_es_PY.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_PY.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_SV.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_SV.UTF-8/amd64/es_SV.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_SV.UTF-8/amd64/methods_es_SV.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_SV.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_UY.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_UY.UTF-8/amd64/es_UY.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_UY.UTF-8/amd64/methods_es_UY.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_UY.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/es_VE.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_VE.UTF-8/amd64/es_VE.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_VE.UTF-8/amd64/methods_es_VE.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/es_VE.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3

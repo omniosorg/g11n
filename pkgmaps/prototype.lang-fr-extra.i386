@@ -37,7 +37,7 @@ d none usr/lib/locale/fr_BE.ISO8859-1/amd64 0755 root bin
 f none usr/lib/locale/fr_BE.ISO8859-1/amd64/fr_BE.ISO8859-1.so.3 0555 root bin
 d none usr/lib/locale/fr_BE.UTF-8@euro/amd64 0755 root bin
 s none usr/lib/locale/fr_BE.UTF-8@euro/amd64/fr_BE.UTF-8@euro.so.3=../../fr_BE.UTF-8/amd64/fr_BE.UTF-8.so.3
-s none usr/lib/locale/fr_BE.UTF-8@euro/amd64/methods_fr_BE.UTF-8@euro.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/fr_BE.UTF-8@euro/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/fr_CA/amd64 0755 root bin
 s none usr/lib/locale/fr_CA/amd64/fr_CA.so.3=../../fr_CA.ISO8859-1/amd64/fr_CA.ISO8859-1.so.3
 d none usr/lib/locale/fr_CA.ISO8859-1/amd64 0755 root bin
@@ -52,7 +52,7 @@ d none usr/lib/locale/fr_FR.ISO8859-1/amd64 0755 root bin
 f none usr/lib/locale/fr_FR.ISO8859-1/amd64/fr_FR.ISO8859-1.so.3 0555 root bin
 d none usr/lib/locale/fr_FR.UTF-8@euro/amd64 0755 root bin
 s none usr/lib/locale/fr_FR.UTF-8@euro/amd64/fr_FR.UTF-8@euro.so.3=../../fr_FR.UTF-8/amd64/fr_FR.UTF-8.so.3
-s none usr/lib/locale/fr_FR.UTF-8@euro/amd64/methods_fr_FR.UTF-8@euro.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/fr_FR.UTF-8@euro/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/fr_CH/amd64 0755 root bin
 s none usr/lib/locale/fr_CH/amd64/fr_CH.so.3=../../fr_CH.ISO8859-1/amd64/fr_CH.ISO8859-1.so.3
 d none usr/lib/locale/fr_CH.ISO8859-1/amd64 0755 root bin

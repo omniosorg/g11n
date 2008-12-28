@@ -24,7 +24,7 @@
 s none usr/lib/locale/hi_IN.UTF-8/64=./amd64
 d none usr/lib/locale/hi_IN.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/hi_IN.UTF-8/amd64/hi_IN.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/hi_IN.UTF-8/amd64/methods_hi_IN.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/hi_IN.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 s none usr/lib/locale/hi_IN.UTF-8/LC_CTYPE/64=./amd64
 d none usr/lib/locale/hi_IN.UTF-8/LC_CTYPE/amd64 0755 root bin
 s none usr/lib/locale/hi_IN.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so
@@ -35,7 +35,7 @@ s none usr/lib/locale/hi_IN.UTF-8/LO_LTYPE/amd64/hi_IN.UTF-8.layout.so.1=../../.
 s none usr/lib/locale/ta_IN.UTF-8/64=./amd64
 d none usr/lib/locale/ta_IN.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/ta_IN.UTF-8/amd64/ta_IN.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/ta_IN.UTF-8/amd64/methods_ta_IN.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/ta_IN.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 s none usr/lib/locale/ta_IN.UTF-8/LC_CTYPE/64=./amd64
 d none usr/lib/locale/ta_IN.UTF-8/LC_CTYPE/amd64 0755 root bin
 s none usr/lib/locale/ta_IN.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so
@@ -46,7 +46,7 @@ s none usr/lib/locale/ta_IN.UTF-8/LO_LTYPE/amd64/ta_IN.UTF-8.layout.so.1=../../.
 s none usr/lib/locale/te_IN.UTF-8/64=./amd64
 d none usr/lib/locale/te_IN.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/te_IN.UTF-8/amd64/te_IN.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/te_IN.UTF-8/amd64/methods_te_IN.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/te_IN.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 s none usr/lib/locale/te_IN.UTF-8/LC_CTYPE/64=./amd64
 d none usr/lib/locale/te_IN.UTF-8/LC_CTYPE/amd64 0755 root bin
 s none usr/lib/locale/te_IN.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so

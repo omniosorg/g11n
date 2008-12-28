@@ -30,11 +30,11 @@ s none usr/lib/locale/ko.UTF-8/LO_LTYPE/sparcv9/ko.UTF-8.layout.so.1=../../../co
 s none usr/lib/locale/ko.UTF-8/64=./sparcv9
 d none usr/lib/locale/ko.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/ko.UTF-8/sparcv9/ko.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/ko.UTF-8/sparcv9/methods_ko.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/ko.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/64=./sparcv9
 s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/sparcv9/ko_KR.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 s none usr/lib/locale/ko_KR.UTF-8/64=./sparcv9
 d none usr/lib/locale/ko_KR.UTF-8/sparcv9 0755 root bin
 s none usr/lib/locale/ko_KR.UTF-8/sparcv9/ko_KR.UTF-8.so.3=../../ko.UTF-8/sparcv9/ko.UTF-8.so.3
-s none usr/lib/locale/ko_KR.UTF-8/sparcv9/methods_ko_KR.UTF-8.so.3=../../ko.UTF-8/sparcv9/methods_ko.UTF-8.so.3
+s none usr/lib/locale/ko_KR.UTF-8/sparcv9/methods_unicode.so.3=../../ko.UTF-8/sparcv9/methods_unicode.so.3

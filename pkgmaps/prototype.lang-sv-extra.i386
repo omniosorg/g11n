@@ -38,5 +38,5 @@ s none usr/lib/locale/sv_SE.ISO8859-15@euro/amd64/sv_SE.ISO8859-15@euro.so.3=../
 d none usr/lib/locale/sv_SE.ISO8859-1/amd64 0755 root bin
 f none usr/lib/locale/sv_SE.ISO8859-1/amd64/sv_SE.ISO8859-1.so.3 0555 root bin
 d none usr/lib/locale/sv_SE.UTF-8@euro/amd64 0755 root bin
-s none usr/lib/locale/sv_SE.UTF-8@euro/amd64/methods_sv_SE.UTF-8@euro.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/sv_SE.UTF-8@euro/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 s none usr/lib/locale/sv_SE.UTF-8@euro/amd64/sv_SE.UTF-8@euro.so.3=../../sv_SE.UTF-8/amd64/sv_SE.UTF-8.so.3

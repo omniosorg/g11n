@@ -76,7 +76,7 @@ s none usr/lib/locale/ko_KR.UTF-8@dict/LC_MESSAGES=../ko.UTF-8/LC_MESSAGES
 s none usr/lib/locale/ko_KR.UTF-8@dict/LC_TIME=../ko.UTF-8/LC_TIME
 s none usr/lib/locale/ko_KR.UTF-8@dict/LO_LTYPE=../ko.UTF-8/LO_LTYPE
 f none usr/lib/locale/ko_KR.UTF-8@dict/ko_KR.UTF-8@dict.so.3=usr/lib/locale/ko.UTF-8@dict/ko.UTF-8@dict.so.3 0555 root bin
-s none usr/lib/locale/ko_KR.UTF-8@dict/methods_ko_KR.UTF-8@dict.so.3=../ko.UTF-8/methods_ko.UTF-8.so.3
+s none usr/lib/locale/ko_KR.UTF-8@dict/methods_unicode.so.3=../ko.UTF-8/methods_unicode.so.3
 
 d none usr/lib/mle 0755 root bin
 d none usr/lib/mle/ko 0755 root bin

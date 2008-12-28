@@ -40,7 +40,7 @@ f none usr/lib/locale/es_AR.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_AR.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_AR.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_AR.UTF-8/LO_LTYPE/es_AR.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_AR.UTF-8/methods_es_AR.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_AR.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_BO.UTF-8 0755 root bin
 f none usr/lib/locale/es_BO.UTF-8/es_BO.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_BO.UTF-8/LC_COLLATE 0755 root bin
@@ -56,7 +56,7 @@ f none usr/lib/locale/es_BO.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_BO.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_BO.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_BO.UTF-8/LO_LTYPE/es_BO.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_BO.UTF-8/methods_es_BO.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_BO.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_CL.UTF-8 0755 root bin
 f none usr/lib/locale/es_CL.UTF-8/es_CL.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_CL.UTF-8/LC_COLLATE 0755 root bin
@@ -72,7 +72,7 @@ f none usr/lib/locale/es_CL.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_CL.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_CL.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_CL.UTF-8/LO_LTYPE/es_CL.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_CL.UTF-8/methods_es_CL.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_CL.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_CO.UTF-8 0755 root bin
 f none usr/lib/locale/es_CO.UTF-8/es_CO.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_CO.UTF-8/LC_COLLATE 0755 root bin
@@ -88,7 +88,7 @@ f none usr/lib/locale/es_CO.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_CO.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_CO.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_CO.UTF-8/LO_LTYPE/es_CO.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_CO.UTF-8/methods_es_CO.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_CO.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_CR.UTF-8 0755 root bin
 f none usr/lib/locale/es_CR.UTF-8/es_CR.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_CR.UTF-8/LC_COLLATE 0755 root bin
@@ -104,7 +104,7 @@ f none usr/lib/locale/es_CR.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_CR.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_CR.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_CR.UTF-8/LO_LTYPE/es_CR.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_CR.UTF-8/methods_es_CR.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_CR.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_EC.UTF-8 0755 root bin
 f none usr/lib/locale/es_EC.UTF-8/es_EC.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_EC.UTF-8/LC_COLLATE 0755 root bin
@@ -120,7 +120,7 @@ f none usr/lib/locale/es_EC.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_EC.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_EC.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_EC.UTF-8/LO_LTYPE/es_EC.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_EC.UTF-8/methods_es_EC.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_EC.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_GT.UTF-8 0755 root bin
 f none usr/lib/locale/es_GT.UTF-8/es_GT.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_GT.UTF-8/LC_COLLATE 0755 root bin
@@ -136,7 +136,7 @@ f none usr/lib/locale/es_GT.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_GT.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_GT.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_GT.UTF-8/LO_LTYPE/es_GT.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_GT.UTF-8/methods_es_GT.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_GT.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_MX.UTF-8 0755 root bin
 f none usr/lib/locale/es_MX.UTF-8/es_MX.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_MX.UTF-8/LC_COLLATE 0755 root bin
@@ -152,7 +152,7 @@ f none usr/lib/locale/es_MX.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_MX.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_MX.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_MX.UTF-8/LO_LTYPE/es_MX.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_MX.UTF-8/methods_es_MX.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_MX.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_NI.UTF-8 0755 root bin
 f none usr/lib/locale/es_NI.UTF-8/es_NI.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_NI.UTF-8/LC_COLLATE 0755 root bin
@@ -168,7 +168,7 @@ f none usr/lib/locale/es_NI.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_NI.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_NI.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_NI.UTF-8/LO_LTYPE/es_NI.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_NI.UTF-8/methods_es_NI.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_NI.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_PA.UTF-8 0755 root bin
 f none usr/lib/locale/es_PA.UTF-8/es_PA.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_PA.UTF-8/LC_COLLATE 0755 root bin
@@ -184,7 +184,7 @@ f none usr/lib/locale/es_PA.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_PA.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_PA.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_PA.UTF-8/LO_LTYPE/es_PA.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_PA.UTF-8/methods_es_PA.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_PA.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_PE.UTF-8 0755 root bin
 f none usr/lib/locale/es_PE.UTF-8/es_PE.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_PE.UTF-8/LC_COLLATE 0755 root bin
@@ -200,7 +200,7 @@ f none usr/lib/locale/es_PE.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_PE.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_PE.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_PE.UTF-8/LO_LTYPE/es_PE.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_PE.UTF-8/methods_es_PE.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_PE.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_PY.UTF-8 0755 root bin
 f none usr/lib/locale/es_PY.UTF-8/es_PY.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_PY.UTF-8/LC_COLLATE 0755 root bin
@@ -216,7 +216,7 @@ f none usr/lib/locale/es_PY.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_PY.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_PY.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_PY.UTF-8/LO_LTYPE/es_PY.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_PY.UTF-8/methods_es_PY.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_PY.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_SV.UTF-8 0755 root bin
 f none usr/lib/locale/es_SV.UTF-8/es_SV.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_SV.UTF-8/LC_COLLATE 0755 root bin
@@ -232,7 +232,7 @@ f none usr/lib/locale/es_SV.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_SV.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_SV.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_SV.UTF-8/LO_LTYPE/es_SV.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_SV.UTF-8/methods_es_SV.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_SV.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_UY.UTF-8 0755 root bin
 f none usr/lib/locale/es_UY.UTF-8/es_UY.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_UY.UTF-8/LC_COLLATE 0755 root bin
@@ -248,7 +248,7 @@ f none usr/lib/locale/es_UY.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_UY.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_UY.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_UY.UTF-8/LO_LTYPE/es_UY.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_UY.UTF-8/methods_es_UY.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_UY.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 d none usr/lib/locale/es_VE.UTF-8 0755 root bin
 f none usr/lib/locale/es_VE.UTF-8/es_VE.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/es_VE.UTF-8/LC_COLLATE 0755 root bin
@@ -264,4 +264,4 @@ f none usr/lib/locale/es_VE.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/es_VE.UTF-8/locale_map 0644 root bin
 d none usr/lib/locale/es_VE.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/es_VE.UTF-8/LO_LTYPE/es_VE.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-s none usr/lib/locale/es_VE.UTF-8/methods_es_VE.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_VE.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3

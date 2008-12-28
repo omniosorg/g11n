@@ -26,7 +26,7 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/th_TH.UTF-8 0755 root bin
 f none usr/lib/locale/th_TH.UTF-8/th_TH.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/th_TH.UTF-8/methods_th_TH.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/th_TH.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 f none usr/lib/locale/th_TH.UTF-8/locale_map 0755 root bin
 f none usr/lib/locale/th_TH.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/th_TH.UTF-8/geo_map 0755 root bin

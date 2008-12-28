@@ -26,5 +26,5 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/uk_UA.UTF-8/amd64 0755 root bin
-s none usr/lib/locale/uk_UA.UTF-8/amd64/methods_uk_UA.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/uk_UA.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 f none usr/lib/locale/uk_UA.UTF-8/amd64/uk_UA.UTF-8.so.3 0555 root bin

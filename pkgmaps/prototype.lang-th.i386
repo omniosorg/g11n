@@ -24,7 +24,7 @@
 s none usr/lib/locale/th_TH.UTF-8/64=./amd64
 d none usr/lib/locale/th_TH.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/th_TH.UTF-8/amd64/th_TH.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/th_TH.UTF-8/amd64/methods_th_TH.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/th_TH.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 s none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/64=./amd64
 d none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/amd64 0755 root bin
 s none usr/lib/locale/th_TH.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so

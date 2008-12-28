@@ -37,6 +37,6 @@ d none usr/lib/locale/it_IT/sparcv9 0755 root bin
 s none usr/lib/locale/it_IT/sparcv9/it_IT.so.3=../../it_IT.ISO8859-1/sparcv9/it_IT.ISO8859-1.so.3
 d none usr/lib/locale/it_IT.UTF-8@euro/sparcv9 0755 root bin
 s none usr/lib/locale/it_IT.UTF-8@euro/sparcv9/it_IT.UTF-8@euro.so.3=../../it_IT.UTF-8/sparcv9/it_IT.UTF-8.so.3
-s none usr/lib/locale/it_IT.UTF-8@euro/sparcv9/methods_it_IT.UTF-8@euro.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/it_IT.UTF-8@euro/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/it/sparcv9 0755 root bin
 s none usr/lib/locale/it/sparcv9/it.so.3=../../it_IT.ISO8859-1/sparcv9/it_IT.ISO8859-1.so.3

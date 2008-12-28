@@ -27,7 +27,7 @@ d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/it_IT.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/it_IT.UTF-8/amd64/it_IT.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/it_IT.UTF-8/amd64/methods_it_IT.UTF-8.so.3=../../common/amd64/methods_unicode.so.3 
+s none usr/lib/locale/it_IT.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3 
 d none usr/lib/locale/it_IT.UTF-8/LC_CTYPE/amd64 0755 root bin
 s none usr/lib/locale/it_IT.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/it_IT.UTF-8/LO_LTYPE/amd64 0755 root bin

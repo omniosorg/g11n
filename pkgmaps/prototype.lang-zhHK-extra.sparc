@@ -37,9 +37,9 @@ s none usr/lib/locale/zh_HK.BIG5HK@stroke/sparcv9/methods_zh_HK.BIG5HK@stroke.so
 s none usr/lib/locale/zh_HK.UTF-8@radical/64=./sparcv9
 d none usr/lib/locale/zh_HK.UTF-8@radical/sparcv9 0755 root bin
 f none usr/lib/locale/zh_HK.UTF-8@radical/sparcv9/zh_HK.UTF-8@radical.so.3 0555 root bin
-s none usr/lib/locale/zh_HK.UTF-8@radical/sparcv9/methods_zh_HK.UTF-8@radical.so.3=../../zh_HK.UTF-8/sparcv9/methods_zh_HK.UTF-8.so.3
+s none usr/lib/locale/zh_HK.UTF-8@radical/sparcv9/methods_unicode.so.3=../../zh_HK.UTF-8/sparcv9/methods_unicode.so.3
 s none usr/lib/locale/zh_HK.UTF-8@stroke/64=./sparcv9
 d none usr/lib/locale/zh_HK.UTF-8@stroke/sparcv9 0755 root bin
 f none usr/lib/locale/zh_HK.UTF-8@stroke/sparcv9/zh_HK.UTF-8@stroke.so.3 0555 root bin
-s none usr/lib/locale/zh_HK.UTF-8@stroke/sparcv9/methods_zh_HK.UTF-8@stroke.so.3=../../zh_HK.UTF-8/sparcv9/methods_zh_HK.UTF-8.so.3
+s none usr/lib/locale/zh_HK.UTF-8@stroke/sparcv9/methods_unicode.so.3=../../zh_HK.UTF-8/sparcv9/methods_unicode.so.3
 

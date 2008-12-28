@@ -26,7 +26,7 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/vi_VN.UTF-8/amd64 0755 root bin
-s none usr/lib/locale/vi_VN.UTF-8/amd64/methods_vi_VN.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/vi_VN.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 f none usr/lib/locale/vi_VN.UTF-8/amd64/vi_VN.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/vi_VN.UTF-8/LC_CTYPE/amd64 0755 root bin
 s none usr/lib/locale/vi_VN.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/amd64/wdresolve_unicode.so

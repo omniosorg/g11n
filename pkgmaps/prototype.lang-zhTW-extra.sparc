@@ -80,19 +80,19 @@ f none usr/lib/locale/zh_TW.BIG5@zhuyin/sparcv9/zh_TW.BIG5@zhuyin.so.3 0555 root
 
 s none usr/lib/locale/zh_TW.UTF-8@pinyin/64=./sparcv9
 d none usr/lib/locale/zh_TW.UTF-8@pinyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.UTF-8@pinyin/sparcv9/methods_zh_TW.UTF-8@pinyin.so.3=../../zh_TW.UTF-8/sparcv9/methods_zh_TW.UTF-8.so.3
+s none usr/lib/locale/zh_TW.UTF-8@pinyin/sparcv9/methods_unicode.so.3=../../zh_TW.UTF-8/sparcv9/methods_unicode.so.3
 f none usr/lib/locale/zh_TW.UTF-8@pinyin/sparcv9/zh_TW.UTF-8@pinyin.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.UTF-8@radical/64=./sparcv9
 d none usr/lib/locale/zh_TW.UTF-8@radical/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.UTF-8@radical/sparcv9/methods_zh_TW.UTF-8@radical.so.3=../../zh_TW.UTF-8/sparcv9/methods_zh_TW.UTF-8.so.3
+s none usr/lib/locale/zh_TW.UTF-8@radical/sparcv9/methods_unicode.so.3=../../zh_TW.UTF-8/sparcv9/methods_unicode.so.3
 f none usr/lib/locale/zh_TW.UTF-8@radical/sparcv9/zh_TW.UTF-8@radical.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.UTF-8@stroke/64=./sparcv9
 d none usr/lib/locale/zh_TW.UTF-8@stroke/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.UTF-8@stroke/sparcv9/methods_zh_TW.UTF-8@stroke.so.3=../../zh_TW.UTF-8/sparcv9/methods_zh_TW.UTF-8.so.3
+s none usr/lib/locale/zh_TW.UTF-8@stroke/sparcv9/methods_unicode.so.3=../../zh_TW.UTF-8/sparcv9/methods_unicode.so.3
 f none usr/lib/locale/zh_TW.UTF-8@stroke/sparcv9/zh_TW.UTF-8@stroke.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.UTF-8@zhuyin/64=./sparcv9
 d none usr/lib/locale/zh_TW.UTF-8@zhuyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.UTF-8@zhuyin/sparcv9/methods_zh_TW.UTF-8@zhuyin.so.3=../../zh_TW.UTF-8/sparcv9/methods_zh_TW.UTF-8.so.3
+s none usr/lib/locale/zh_TW.UTF-8@zhuyin/sparcv9/methods_unicode.so.3=../../zh_TW.UTF-8/sparcv9/methods_unicode.so.3
 f none usr/lib/locale/zh_TW.UTF-8@zhuyin/sparcv9/zh_TW.UTF-8@zhuyin.so.3 0555 root bin
 
 d none usr/lib/sparcv9 0755 root bin

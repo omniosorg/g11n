@@ -31,102 +31,102 @@ d none usr/lib/locale/es_AR.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_AR.UTF-8/LO_LTYPE/sparcv9/es_AR.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_AR.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_AR.UTF-8/sparcv9/es_AR.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_AR.UTF-8/sparcv9/methods_es_AR.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_AR.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_BO.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_BO.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_BO.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_BO.UTF-8/LO_LTYPE/sparcv9/es_BO.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_BO.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_BO.UTF-8/sparcv9/es_BO.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_BO.UTF-8/sparcv9/methods_es_BO.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_BO.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_CL.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_CL.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_CL.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_CL.UTF-8/LO_LTYPE/sparcv9/es_CL.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_CL.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_CL.UTF-8/sparcv9/es_CL.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_CL.UTF-8/sparcv9/methods_es_CL.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_CL.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_CO.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_CO.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_CO.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_CO.UTF-8/LO_LTYPE/sparcv9/es_CO.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_CO.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_CO.UTF-8/sparcv9/es_CO.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_CO.UTF-8/sparcv9/methods_es_CO.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_CO.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_CR.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_CR.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_CR.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_CR.UTF-8/LO_LTYPE/sparcv9/es_CR.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_CR.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_CR.UTF-8/sparcv9/es_CR.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_CR.UTF-8/sparcv9/methods_es_CR.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_CR.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_EC.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_EC.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_EC.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_EC.UTF-8/LO_LTYPE/sparcv9/es_EC.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_EC.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_EC.UTF-8/sparcv9/es_EC.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_EC.UTF-8/sparcv9/methods_es_EC.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_EC.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_GT.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_GT.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_GT.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_GT.UTF-8/LO_LTYPE/sparcv9/es_GT.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_GT.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_GT.UTF-8/sparcv9/es_GT.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_GT.UTF-8/sparcv9/methods_es_GT.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_GT.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_MX.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_MX.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_MX.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_MX.UTF-8/LO_LTYPE/sparcv9/es_MX.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_MX.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_MX.UTF-8/sparcv9/es_MX.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_MX.UTF-8/sparcv9/methods_es_MX.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_MX.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_NI.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_NI.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_NI.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_NI.UTF-8/LO_LTYPE/sparcv9/es_NI.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_NI.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_NI.UTF-8/sparcv9/es_NI.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_NI.UTF-8/sparcv9/methods_es_NI.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_NI.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_PA.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_PA.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_PA.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_PA.UTF-8/LO_LTYPE/sparcv9/es_PA.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_PA.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_PA.UTF-8/sparcv9/es_PA.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_PA.UTF-8/sparcv9/methods_es_PA.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_PA.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_PE.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_PE.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_PE.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_PE.UTF-8/LO_LTYPE/sparcv9/es_PE.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_PE.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_PE.UTF-8/sparcv9/es_PE.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_PE.UTF-8/sparcv9/methods_es_PE.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_PE.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_PY.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_PY.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_PY.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_PY.UTF-8/LO_LTYPE/sparcv9/es_PY.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_PY.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_PY.UTF-8/sparcv9/es_PY.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_PY.UTF-8/sparcv9/methods_es_PY.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_PY.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_SV.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_SV.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_SV.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_SV.UTF-8/LO_LTYPE/sparcv9/es_SV.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_SV.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_SV.UTF-8/sparcv9/es_SV.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_SV.UTF-8/sparcv9/methods_es_SV.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_SV.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_UY.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_UY.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_UY.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_UY.UTF-8/LO_LTYPE/sparcv9/es_UY.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_UY.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_UY.UTF-8/sparcv9/es_UY.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_UY.UTF-8/sparcv9/methods_es_UY.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_UY.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/es_VE.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_VE.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/es_VE.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/es_VE.UTF-8/LO_LTYPE/sparcv9/es_VE.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/es_VE.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/es_VE.UTF-8/sparcv9/es_VE.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/es_VE.UTF-8/sparcv9/methods_es_VE.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/es_VE.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3

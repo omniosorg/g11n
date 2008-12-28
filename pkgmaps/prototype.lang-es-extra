@@ -149,7 +149,7 @@ s none usr/lib/locale/es_ES/locale_description=../es_ES.ISO8859-1/locale_descrip
 s none usr/lib/locale/es/es.so.3=../es_ES.ISO8859-1/es_ES.ISO8859-1.so.3
 d none usr/lib/locale/es_ES.UTF-8@euro 0755 root bin
 s none usr/lib/locale/es_ES.UTF-8@euro/es_ES.UTF-8@euro.so.3=../es_ES.UTF-8/es_ES.UTF-8.so.3
-s none usr/lib/locale/es_ES.UTF-8@euro/methods_es_ES.UTF-8@euro.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/es_ES.UTF-8@euro/methods_unicode.so.3=../common/methods_unicode.so.3
 f none usr/lib/locale/es/geo_map 0644 root bin
 d none usr/lib/locale/es_GT 0755 root bin
 s none usr/lib/locale/es_GT/es_GT.so.3=../es_GT.ISO8859-1/es_GT.ISO8859-1.so.3

@@ -26,14 +26,14 @@ d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
 d none usr/lib/locale/nl_BE.UTF-8/amd64 0755 root bin
-s none usr/lib/locale/nl_BE.UTF-8/amd64/methods_nl_BE.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/nl_BE.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 f none usr/lib/locale/nl_BE.UTF-8/amd64/nl_BE.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/nl_BE.UTF-8/LC_CTYPE/amd64 0755 root bin
 s none usr/lib/locale/nl_BE.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so
 d none usr/lib/locale/nl_BE.UTF-8/LO_LTYPE/amd64 0755 root bin
 s none usr/lib/locale/nl_BE.UTF-8/LO_LTYPE/amd64/nl_BE.UTF-8.layout.so.1=../../../common/LO_LTYPE/amd64/umle.layout.so.1
 d none usr/lib/locale/nl_NL.UTF-8/amd64 0755 root bin
-s none usr/lib/locale/nl_NL.UTF-8/amd64/methods_nl_NL.UTF-8.so.3=../../common/amd64/methods_unicode.so.3
+s none usr/lib/locale/nl_NL.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 f none usr/lib/locale/nl_NL.UTF-8/amd64/nl_NL.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/nl_NL.UTF-8/LC_CTYPE/amd64 0755 root bin
 s none usr/lib/locale/nl_NL.UTF-8/LC_CTYPE/amd64/wdresolve.so=../../../common/LC_CTYPE/wdresolve_unicode.so

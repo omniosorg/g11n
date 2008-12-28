@@ -31,11 +31,11 @@ d none usr/lib/locale/ar_EG.UTF-8/LO_LTYPE/sparcv9  0755 root bin
 s none usr/lib/locale/ar_EG.UTF-8/LO_LTYPE/sparcv9/ar_EG.UTF-8.layout.so.1=../../../common/LO_LTYPE/umle.layout.so.1
 d none usr/lib/locale/ar_EG.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/ar_EG.UTF-8/sparcv9/ar_EG.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/ar_EG.UTF-8/sparcv9/methods_ar_EG.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/ar_EG.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/ar_SA.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/ar_SA.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
 d none usr/lib/locale/ar_SA.UTF-8/LO_LTYPE/sparcv9  0755 root bin
 s none usr/lib/locale/ar_SA.UTF-8/LO_LTYPE/sparcv9/ar_SA.UTF-8.layout.so.1=../../../common/LO_LTYPE/umle.layout.so.1
 d none usr/lib/locale/ar_SA.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/ar_SA.UTF-8/sparcv9/ar_SA.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/ar_SA.UTF-8/sparcv9/methods_ar_SA.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/ar_SA.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3

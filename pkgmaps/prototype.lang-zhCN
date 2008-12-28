@@ -44,7 +44,7 @@ s none usr/lib/locale/zh.UTF-8/LO_LTYPE/zh.UTF-8.layout.so.1=../../common/LO_LTY
 f none usr/lib/locale/zh.UTF-8/geo_map 0644 root bin
 f none usr/lib/locale/zh.UTF-8/locale_description 0644 root bin
 f none usr/lib/locale/zh.UTF-8/locale_map 0644 root bin
-s none usr/lib/locale/zh.UTF-8/methods_zh.UTF-8.so.3=../common/methods_unicode.so.3
+s none usr/lib/locale/zh.UTF-8/methods_unicode.so.3=../common/methods_unicode.so.3
 f none usr/lib/locale/zh.UTF-8/zh.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/zh_CN.UTF-8 0755 root bin
 s none usr/lib/locale/zh_CN.UTF-8/LC_COLLATE=../zh.UTF-8/LC_COLLATE
@@ -58,5 +58,5 @@ s none usr/lib/locale/zh_CN.UTF-8/LO_LTYPE/zh_CN.UTF-8.layout.so.1=../../common/
 s none usr/lib/locale/zh_CN.UTF-8/geo_map=../zh.UTF-8/geo_map
 s none usr/lib/locale/zh_CN.UTF-8/locale_description=../zh.UTF-8/locale_description
 s none usr/lib/locale/zh_CN.UTF-8/locale_map=../zh.UTF-8/locale_map
-s none usr/lib/locale/zh_CN.UTF-8/methods_zh_CN.UTF-8.so.3=../zh.UTF-8/methods_zh.UTF-8.so.3
+s none usr/lib/locale/zh_CN.UTF-8/methods_unicode.so.3=../zh.UTF-8/methods_unicode.so.3
 s none usr/lib/locale/zh_CN.UTF-8/zh_CN.UTF-8.so.3=../zh.UTF-8/zh.UTF-8.so.3

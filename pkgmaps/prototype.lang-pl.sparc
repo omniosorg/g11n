@@ -30,7 +30,7 @@ s none usr/lib/locale/pl_PL.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/
 d none usr/lib/locale/pl_PL.UTF-8/LO_LTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/pl_PL.UTF-8/LO_LTYPE/sparcv9/pl_PL.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/pl_PL.UTF-8/sparcv9 0755 root bin
-s none usr/lib/locale/pl_PL.UTF-8/sparcv9/methods_pl_PL.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/pl_PL.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 f none usr/lib/locale/pl_PL.UTF-8/sparcv9/pl_PL.UTF-8.so.3 0555 root bin
 d none usr/lib/locale/pl.UTF-8/sparcv9 0755 root bin
 s none usr/lib/locale/pl.UTF-8/sparcv9/pl.UTF-8.so.3=../../pl_PL.UTF-8/sparcv9/pl_PL.UTF-8.so.3

@@ -24,7 +24,7 @@
 s none usr/lib/locale/hi_IN.UTF-8/64=./sparcv9
 d none usr/lib/locale/hi_IN.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/hi_IN.UTF-8/sparcv9/hi_IN.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/hi_IN.UTF-8/sparcv9/methods_hi_IN.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/hi_IN.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 s none usr/lib/locale/hi_IN.UTF-8/LC_CTYPE/64=./sparcv9
 d none usr/lib/locale/hi_IN.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/hi_IN.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
@@ -35,7 +35,7 @@ s none usr/lib/locale/hi_IN.UTF-8/LO_LTYPE/sparcv9/hi_IN.UTF-8.layout.so.1=../..
 s none usr/lib/locale/ta_IN.UTF-8/64=./sparcv9
 d none usr/lib/locale/ta_IN.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/ta_IN.UTF-8/sparcv9/ta_IN.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/ta_IN.UTF-8/sparcv9/methods_ta_IN.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/ta_IN.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 s none usr/lib/locale/ta_IN.UTF-8/LC_CTYPE/64=./sparcv9
 d none usr/lib/locale/ta_IN.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/ta_IN.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
@@ -46,7 +46,7 @@ s none usr/lib/locale/ta_IN.UTF-8/LO_LTYPE/sparcv9/ta_IN.UTF-8.layout.so.1=../..
 s none usr/lib/locale/te_IN.UTF-8/64=./sparcv9
 d none usr/lib/locale/te_IN.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/te_IN.UTF-8/sparcv9/te_IN.UTF-8.so.3 0755 root bin
-s none usr/lib/locale/te_IN.UTF-8/sparcv9/methods_te_IN.UTF-8.so.3=../../common/sparcv9/methods_unicode.so.3
+s none usr/lib/locale/te_IN.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 s none usr/lib/locale/te_IN.UTF-8/LC_CTYPE/64=./sparcv9
 d none usr/lib/locale/te_IN.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 s none usr/lib/locale/te_IN.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
