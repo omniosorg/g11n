@@ -18,11 +18,12 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 d none usr/lib/locale/ja_JP.UTF-8/sparcv9 0755 root bin
 f none usr/lib/locale/ja_JP.UTF-8/sparcv9/ja_JP.UTF-8.so.3 0755 root bin
+s none usr/lib/locale/ja_JP.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
 d none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/sparcv9 0755 root bin
 f none usr/lib/locale/ja_JP.UTF-8/LC_CTYPE/sparcv9/wdresolve.so 0555 root bin
 d none usr/lib/locale/ja_JP.UTF-8/LO_LTYPE/sparcv9 0755 root bin
