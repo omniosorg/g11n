@@ -1,0 +1,15 @@
+diff -ruN cldr_tools.orig/org/unicode/cldr/util/CachingEntityResolver.java cldr_tools/org/unicode/cldr/util/CachingEntityResolver.java
+--- cldr_tools.orig/org/unicode/cldr/util/CachingEntityResolver.java	2009-01-15 14:00:00.046637971 +0100
++++ cldr_tools/org/unicode/cldr/util/CachingEntityResolver.java	2009-01-15 14:23:33.261692759 +0100
+@@ -86,7 +86,10 @@
+             
+             if((gCacheDir==null)||(gCacheDir.length()<=0)) {
+                 gCacheDir = null;
+-            }
++            } else 
++		try {
++			gCacheDir = (new File(gCacheDir)).getAbsolutePath();
++		} catch (Exception ex) {};
+             if((gOverrideDir==null)||(gOverrideDir.length()<=0)) {
+                 gOverrideDir = null;
+             }
