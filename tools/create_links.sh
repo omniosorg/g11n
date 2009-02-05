@@ -29,7 +29,7 @@
 
 ALL_LOCALES="ar en_US.UTF-8 iso_8859_1 iso_8859_13 iso_8859_15 iso_8859_2 iso_8859_5 iso_8859_7 iso_8859_9 common \
  ar_EG.UTF-8 ar_SA.UTF-8 bg_BG bg_BG.ISO8859-5 bg_BG.UTF-8 ca_ES.ISO8859-1 ca ca_ES  ca_ES.ISO8859-15 \
-ca_ES.ISO8859-15@euro ca_ES.UTF-8 cs_CZ cs_CZ.ISO8859-2 cs_CZ.UTF-8 cs_CZ.UTF-8@euro cz da_DK.ISO8859-1 da da.ISO8859-15 da_DK \
+ca_ES.ISO8859-15@euro ca_ES.UTF-8 cs_CZ cs_CZ.ISO8859-2 cs_CZ.UTF-8 cs_CZ.UTF-8@euro cs da_DK.ISO8859-1 da da.ISO8859-15 da_DK \
 da_DK.ISO8859-15 da_DK.ISO8859-15@euro da_DK.UTF-8 de_DE.ISO8859-1 de.UTF-8 de de.ISO8859-15 de_DE.UTF-8 de_AT de_AT.ISO8859-1 \
 de_AT.ISO8859-15 de_AT.ISO8859-15@euro de_AT.UTF-8 de_CH de_CH.ISO8859-1 de_CH.UTF-8 de_DE  de_DE.ISO8859-15 de_DE.ISO8859-15@euro \
 de_DE.UTF-8@euro de_LU.UTF-8 el_GR.ISO8859-7 el el.UTF-8 el_CY.UTF-8 el_GR  el_GR.ISO8859-7@euro el_GR.UTF-8 en.UTF-8 en_AU.ISO8859-1 \

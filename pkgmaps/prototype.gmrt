@@ -374,10 +374,10 @@ d none usr/lib/locale/he_IL.UTF-8/LC_MESSAGES 0755 root bin
 d none usr/lib/locale/cs_CZ.ISO8859-2 0755 root bin
 d none usr/lib/locale/cs_CZ.ISO8859-2/LC_MESSAGES 0755 root bin
 s none usr/lib/locale/cs_CZ.ISO8859-2/cs_CZ.ISO8859-2.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
-d none usr/lib/locale/cz 0755 root bin
-s none usr/lib/locale/cz/cz.so.3=../cs_CZ.ISO8859-2/cs_CZ.ISO8859-2.so.3
+d none usr/lib/locale/cs 0755 root bin
+s none usr/lib/locale/cs/cs.so.3=../cs_CZ.ISO8859-2/cs_CZ.ISO8859-2.so.3
 d none usr/lib/locale/cs_CZ 0755 root bin
-s none usr/lib/locale/cs_CZ/cz_CZ.so.3=../cs_CZ.ISO8859-2/cs_CZ.ISO8859-2.so.3
+s none usr/lib/locale/cs_CZ/cs_CZ.so.3=../cs_CZ.ISO8859-2/cs_CZ.ISO8859-2.so.3
 s none usr/lib/locale/cs_CZ/locale_description=../cs_CZ.ISO8859-2/locale_description
 d none usr/lib/locale/cs_CZ 0755 root bin
 

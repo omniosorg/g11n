@@ -32,7 +32,7 @@ d none openwin/share/locale 0755 root bin
 s none openwin/share/locale/de_DE.ISO8859-15=de_DE.ISO8859-1
 
 d none openwin/lib/locale/cs_CZ.ISO8859-2 0755 root bin
-s none openwin/lib/locale/cz=cs_CZ.ISO8859-2
+s none openwin/lib/locale/cs=cs_CZ.ISO8859-2
 s none openwin/lib/locale/cs_CZ=./cs_CZ.ISO8859-2
 s none openwin/lib/locale/cs_CZ.ISO8859-2/libs=../iso_8859_1/libs
 d none openwin/share/locale/cs_CZ.ISO8859-2 0755 root bin

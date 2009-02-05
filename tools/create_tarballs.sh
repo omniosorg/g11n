@@ -52,7 +52,7 @@ ca_ES)
     PATTERN1="ca"
     PATTERN2="";;
 cs_CZ)
-    PATTERN1="cz"
+    PATTERN1="cs"
     PATTERN2="";;
 de_DE)
     PATTERN1="de"
