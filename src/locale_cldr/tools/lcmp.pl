@@ -28,6 +28,8 @@ use HTML::Entities;
 
 binmode(STDOUT, ":utf8");
 
+my $max_diffs = 10000;
+
 my %lall;
 
 foreach my $loc (sort @ARGV) {
@@ -63,7 +65,11 @@ sub lcmp1 {
 		$v1 = decode($enc, $1) if $v1 =~ /('.*')/;
 		$v2 = decode($enc, $1) if $v2 =~ /('.*')/;
 
-		$ret{$name1} = { desc => $desc1, v1 => $v1, v2 => $v2 } if ($v1 ne $v2);
+		if ($v1 ne $v2) {
+		    $ret{$name1} = { desc => $desc1, v1 => $v1, v2 => $v2 };
+		
+		    last if scalar keys %ret > $max_diffs;
+		}
 	}
 
 	return %ret;
@@ -115,8 +121,10 @@ EOF
 		    print "\t\t\t\t<td class=\"ok\"><a href=\"#$loc-$_\">$n diffs</a></td>\n";
 		} elsif ($n < 5) {
 		    print "\t\t\t\t<td class=\"warn\"><a href=\"#$loc-$_\">$n diffs</a></td>\n";
-		} else {
+		} elsif ($n < $max_diffs) {
 		    print "\t\t\t\t<td class=\"problem\"><a href=\"#$loc-$_\">$n diffs</a></td>\n";
+		} else {
+		    print "\t\t\t\t<td class=\"problem\"><a href=\"#$loc-$_\">$n+ diffs</a></td>\n";
 		}
 		
 
@@ -149,7 +157,7 @@ EOF
 EOF
 	
 		my @d = sort keys %{$lall{$loc}{$lc}};
-		print <<EOF foreach @d[0..($#d<100 ? $#d : 100)];
+		print <<EOF foreach @d[0..($#d<$max_diffs ? $#d : $max_diffs)];
 			<tr>
 				<td title="$lall{$loc}{$lc}{$_}{desc}">$_</td>
 				<td>$lall{$loc}{$lc}{$_}{v1}</td>

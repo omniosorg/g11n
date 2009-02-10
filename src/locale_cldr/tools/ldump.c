@@ -176,7 +176,7 @@ lc_ctype(_LC_ctype_t *p)
 
 
 	for (i = 0; i < cm->len; i++) {
-		printf("U+%04X /* %s */\t", (unsigned int)cm->chars[i].wc, cm->chars[i].name);
+		printf("U+%04X (%s)\t", (unsigned int)cm->chars[i].wc, cm->chars[i].name);
 
 		for (j = 0; j < 12; j++)
 			if (METHOD_NATIVE(p, iswctype)(p, cm->chars[i].wc, wt[j]))
@@ -254,28 +254,28 @@ lc_time(const _LC_time_t *p)
 	LDUMP_STR(day[4], NULL);
 	LDUMP_STR(day[5], NULL);
 	LDUMP_STR(day[6], NULL);
-	LDUMP_STR(abmon[0], NULL);
-	LDUMP_STR(abmon[1], NULL);
-	LDUMP_STR(abmon[2], NULL);
-	LDUMP_STR(abmon[3], NULL);
-	LDUMP_STR(abmon[4], NULL);
-	LDUMP_STR(abmon[5], NULL);
-	LDUMP_STR(abmon[6], NULL);
-	LDUMP_STR(abmon[7], NULL);
-	LDUMP_STR(abmon[8], NULL);
-	LDUMP_STR(abmon[9], NULL);
+	LDUMP_STR(abmon[ 0], NULL);
+	LDUMP_STR(abmon[ 1], NULL);
+	LDUMP_STR(abmon[ 2], NULL);
+	LDUMP_STR(abmon[ 3], NULL);
+	LDUMP_STR(abmon[ 4], NULL);
+	LDUMP_STR(abmon[ 5], NULL);
+	LDUMP_STR(abmon[ 6], NULL);
+	LDUMP_STR(abmon[ 7], NULL);
+	LDUMP_STR(abmon[ 8], NULL);
+	LDUMP_STR(abmon[ 9], NULL);
 	LDUMP_STR(abmon[10], NULL);
 	LDUMP_STR(abmon[11], NULL);
-	LDUMP_STR(mon[0], NULL);
-	LDUMP_STR(mon[1], NULL);
-	LDUMP_STR(mon[2], NULL);
-	LDUMP_STR(mon[3], NULL);
-	LDUMP_STR(mon[4], NULL);
-	LDUMP_STR(mon[5], NULL);
-	LDUMP_STR(mon[6], NULL);
-	LDUMP_STR(mon[7], NULL);
-	LDUMP_STR(mon[8], NULL);
-	LDUMP_STR(mon[9], NULL);
+	LDUMP_STR(mon[ 0], NULL);
+	LDUMP_STR(mon[ 1], NULL);
+	LDUMP_STR(mon[ 2], NULL);
+	LDUMP_STR(mon[ 3], NULL);
+	LDUMP_STR(mon[ 4], NULL);
+	LDUMP_STR(mon[ 5], NULL);
+	LDUMP_STR(mon[ 6], NULL);
+	LDUMP_STR(mon[ 7], NULL);
+	LDUMP_STR(mon[ 8], NULL);
+	LDUMP_STR(mon[ 9], NULL);
 	LDUMP_STR(mon[10], NULL);
 	LDUMP_STR(mon[11], NULL);
 	LDUMP_STR(am_pm[0], NULL);

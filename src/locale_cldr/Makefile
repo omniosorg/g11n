@@ -47,14 +47,16 @@ JAVA_FLAGS	= -Dhttp.proxyHost=webcache.sfbay -Dhttp.proxyPort=8080
 JAVA_FLAGS	+= -Xms128m -Xmx128m
 
 JARS		= jars/icu4j.jar jars/utilities.jar jars/xalan.jar jars/xml-apis.jar jars/cldr.jar
-JAVA_CP		= echo $(JARS) | tr ' ' ':'
 
 LOCALEDEF	= $(SRC)/tools/localedef.sh -P /opt/SUNWspro/bin $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)"
 LOCALEDEF64	= $(SRC)/tools/localedef.sh -P /opt/SUNWspro/bin $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)"
-GENERATE_POSIX	= $(JAVA_ROOT)/bin/java  $(JAVA_FLAGS) -cp $(JAVA_CP:sh) -DCLDR_DTD_CACHE=dtd_cache org.unicode.cldr.posix.GeneratePOSIX -s cldr_core -d posix
+GENERATE_POSIX	= $(JAVA_ROOT)/bin/java  $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) -DCLDR_DTD_CACHE=dtd_cache org.unicode.cldr.posix.GeneratePOSIX -s cldr_core -d posix
+
+JAVA_CP_SH	= echo $(JARS) | tr ' ' ':'
 
 
-all: $(LOCALES:%=locale/.%) diffs.html
+
+all: $(LOCALES:%=locale/%.so.3) $(LOCALES:%=locale64/%.so.3) diffs.html
 
 install: all
 	for l in $(LOCALES); do \
@@ -69,6 +71,7 @@ clean:
 	rm -Rf $(DIRS)
 	rm -Rf cldr.jar icu4j.jar xalan.jar utilities.jar xml-apis.jar
 	rm -Rf cmap.dat ldump diffs.html
+	find extension/ -type l -exec rm -f {} \;
 	rm -Rf .unpack_*
 
 distclean: clean
@@ -76,39 +79,78 @@ distclean: clean
 
 
 
-locale/.%.UTF-8: charmap/UTF-8.cm extension/UTF-8.x posix/%.UTF-8.src locale/.dir locale64/.dir
-	cd locale; $(LOCALEDEF) -x ../extension/UTF-8.x -f ../charmap/UTF-8.cm -i ../posix/$*.UTF-8.src $*.UTF-8
-	cd locale64; $(LOCALEDEF64) -x ../extension/UTF-8.x -f ../charmap/UTF-8.cm -i ../posix/$*.UTF-8.src $*.UTF-8
+CHARMAP_SH	= echo $* | cut -d. -f2
+LOCALE_SH	= echo $* | cut -d. -f1
+
+locale/%.so.3: posix/%.src charmap/%.cm extension/%.x locale/.dir
+	cd locale; $(LOCALEDEF) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $*
 	touch $@
 
-locale/.%.ISO8859-1: charmap/ISO8859-1.cm extension/ISO8859.x posix/%.ISO8859-1.src locale/.dir locale64/.dir
-	cd locale; $(LOCALEDEF) -x ../extension/ISO8859.x -f ../charmap/ISO8859-1.cm -i ../posix/$*.ISO8859-1.src $*.ISO8859-1
-	cd locale64; $(LOCALEDEF64) -x ../extension/ISO8859.x -f ../charmap/ISO8859-1.cm -i ../posix/$*.ISO8859-1.src $*.ISO8859-1
-	touch $@
-
-locale/.%.ISO8859-2: charmap/ISO8859-2.cm extension/ISO8859.x posix/%.ISO8859-2.src locale/.dir locale64/.dir
-	cd locale; $(LOCALEDEF) -x ../extension/ISO8859.x -f ../charmap/ISO8859-2.cm -i ../posix/$*.ISO8859-2.src $*.ISO8859-2
-	cd locale64; $(LOCALEDEF64) -x ../extension/ISO8859.x -f ../charmap/ISO8859-2.cm -i ../posix/$*.ISO8859-2.src $*.ISO8859-2
+locale64/%.so.3: posix/%.src charmap/%.cm extension/%.x locale64/.dir
+	cd locale64; $(LOCALEDEF64) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $*
 	touch $@
 
 
 
-charmap/%.cm: $(JARS) charmap/.dir
-	$(JAVA_ROOT)/bin/java  $(JAVA_FLAGS) -cp $(JAVA_CP:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap -c $*
+# ================================================
+# GENERATE_POSIX exceptions
+# ================================================
 
-
-
-posix/%.UTF-8.src: $(JARS) charmap/UTF-8.cm cldr_core/.src posix/.dir dtd_cache/.dir
+# Solaris does not support Unicode 5.1 yet
+# if you modify the target, change rule 'charset/%.UTF-8.cm: ...' too 
+posix/%.UTF-8.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
 	$(GENERATE_POSIX) -c UTF-8 -m $*@platform=solaris,yesno=short -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF] 
 	mv posix/$*@platform=solaris,yesno=short.UTF-8.src $@
 
-posix/%.ISO8859-1.src: $(JARS) charmap/ISO8859-1.cm cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c ISO8859-1 -m $*@platform=solaris,yesno=short 
-	mv posix/$*@platform=solaris,yesno=short.ISO8859-1.src $@
+# sk_SK.ISO8859-2 should use SKK (Slovak has Euro from 2009-01-01)
+posix/sk_SK.ISO8859-2.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
+	$(GENERATE_POSIX) -c ISO8859-2 -m sk_SK@platform=solaris,yesno=short,currency=SKK 
+	mv posix/sk_SK@platform=solaris,yesno=short,currency=SKK.ISO8859-2.src $@
 
-posix/%.ISO8859-2.src: $(JARS) charmap/ISO8859-2.cm cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c ISO8859-2 -m $*@platform=solaris,yesno=short 
-	mv posix/$*@platform=solaris,yesno=short.ISO8859-2.src $@
+# CLDR bug #2023
+posix/kk_KZ.UTF-8.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
+	$(GENERATE_POSIX) -c UTF-8 -m kk_Cyrl_KZ@platform=solaris,yesno=short -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF] 
+	mv posix/kk_Cyrl_KZ@platform=solaris,yesno=short.UTF-8.src $@
+
+posix/sh_BA.UTF-8.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
+	$(GENERATE_POSIX) -c UTF-8 -m sr_Latn_BA@platform=solaris,yesno=short -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF] 
+	mv posix/sr_Latn_BA@platform=solaris,yesno=short.UTF-8.src $@
+
+posix/sr_CS.UTF-8.src posix/sr_YU.UTF-8.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
+	$(GENERATE_POSIX) -c UTF-8 -m sr_Cyrl_RS@platform=solaris,yesno=short -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF] 
+	mv posix/sr_Cyrl_RS@platform=solaris,yesno=short.UTF-8.src $@
+
+posix/sr_YU.ISO8859-5.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
+	$(GENERATE_POSIX) -c ISO8859-5 -m sr_Cyrl_RS@platform=solaris,yesno=short
+	mv posix/sr_Cyrl_RS@platform=solaris,yesno=short.ISO8859-5.src $@
+
+# ================================================
+# end of GENERATE_POSIX exceptions
+# ================================================
+
+posix/%.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
+	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)@platform=solaris,yesno=short 
+	mv posix/$(LOCALE_SH:sh)@platform=solaris,yesno=short.$(CHARMAP_SH:sh).src $@
+
+
+extension/%.UTF-8.x: extension/UTF-8.x
+	ln -s UTF-8.x $@
+
+extension/%.ISO8859-1.x extension/%.ISO8859-2.x extension/%.ISO8859-5.x extension/%.ISO8859-7.x extension/%.ISO8859-9.x extension/%.ISO8859-13.x extension/%.ISO8859-15.x: extension/ISO8859.x
+	ln -s ISO8859.x $@
+
+extension/%.eucJP.x extension/%.ANSI1251.x extension/%.KOI8-R.x: extension/ISO8859.x
+	ln -s ISO8859.x $@
+
+
+charmap/%.UTF-8.cm: $(JARS) charmap/.dir
+	[ -f charmap/UTF-8.cm ] || $(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap -c UTF-8 -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF]
+	ln -s UTF-8.cm $@
+
+
+charmap/%.cm: $(JARS) charmap/.dir
+	[ -f charmap/$(CHARMAP_SH:sh).cm ] || $(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap -c $(CHARMAP_SH:sh)
+	ln -s $(CHARMAP_SH:sh).cm $@
 
 
 
@@ -185,8 +227,8 @@ diffs.html: ldump tools/lcmp.pl
 ldump: tools/ldump.c cmap.dat
 	$(CC) -I . -o ldump tools/ldump.c
 
-cmap.dat: tools/cmap.pl $(LOCALES:%=locale/.%)
-	tools/cmap.pl charmap/*.cm > $@
+cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3)
+	tools/cmap.pl `find charmap/ -type f -name '*.cm'` > $@
 
 
 
