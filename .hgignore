@@ -2,3 +2,5 @@ syntax: glob
 tags
 *.o
 *.so
+src/locale_cldr/download/*
+src/locale_cldr/dtd_cache/*
