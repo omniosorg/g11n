@@ -22,7 +22,7 @@
 #
 #ident	"@(#)Makefile	1.0	06/03/07	SMI"
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
