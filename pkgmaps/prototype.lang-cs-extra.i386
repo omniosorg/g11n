@@ -31,5 +31,6 @@ d none usr/lib/locale/cs_CZ.ISO8859-2/amd64 0755 root bin
 f none usr/lib/locale/cs_CZ.ISO8859-2/amd64/cs_CZ.ISO8859-2.so.3 0555 root bin
 d none usr/lib/locale/cs_CZ.UTF-8@euro/amd64 0755 root bin
 f none usr/lib/locale/cs_CZ.UTF-8@euro/amd64/cs_CZ.UTF-8@euro.so.3 0555 root bin
+s none usr/lib/locale/cs_CZ.UTF-8@euro/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
 d none usr/lib/locale/cs/amd64 0755 root bin
 s none usr/lib/locale/cs/amd64/cs.so.3=../../cs_CZ.ISO8859-2/amd64/cs_CZ.ISO8859-2.so.3

@@ -20,7 +20,7 @@
 #
 #ident  "@(#)Makefile 1.0 10/03/07 SMI"
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
@@ -101,7 +101,7 @@ $(LOCALE): $(LOCALE:%=%.so.$(METHOD_VERSION))
 
 %.UTF-8.so.$(METHOD_VERSION): %.UTF-8.localedef.build
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN):" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 # need to compile the CLDR locales separately as they use a different charmap to the other UTF-8s.
 # some hacky code here to create a $locale.UTF-8_c.so.* file to satisy dependency checking.
@@ -109,7 +109,7 @@ $(LOCALE): $(LOCALE:%=%.so.$(METHOD_VERSION))
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i $< $(<:%.localedef.build=%)
 	$(RM) $@
 	$(LN) -s $(@:%.UTF-8_c.so.$(METHOD_VERSION)=%.UTF-8.so.$(METHOD_VERSION)) $@
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L $(LOPT_ORIGIN) -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i ../$< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 #
 # rules for non-UTF-8 locales
@@ -179,20 +179,20 @@ ja.so.$(METHOD_VERSION): ja.localedef
 	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "-R/usr/lib/locale/ja_JP.eucJP/$(MACH64)" -x $(_METHODSRC)/eucJP.x -f $(_CHARMAPS)/eucJP.charmap -i ../$< $(<:%.localedef=%)
 
 %.UTF-8@pinyin.so.$(METHOD_VERSION): %.UTF-8@pinyin.localedef.build
-	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.UTF-8@radical.so.$(METHOD_VERSION): %.UTF-8@radical.localedef.build
-	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.UTF-8@stroke.so.$(METHOD_VERSION): %.UTF-8@stroke.localedef.build
-	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.UTF-8@zhuyin.so.$(METHOD_VERSION): %.UTF-8@zhuyin.localedef.build
-	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 zh_CN.GB18030%.so.$(METHOD_VERSION): zh_CN.GB18030%.localedef.build
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/GB18030.x -f $(_CHARMAPS)/GB18030.charmap -i $< $(<:%.localedef.build=%);
@@ -230,15 +230,15 @@ th_TH.so.$(METHOD_VERSION): th_TH.localedef
 # special rules for variant locales (locale@variant.codeset)
 #
 %.UTF-8@euro_c.so.$(METHOD_VERSION): %.UTF-8@euro.localedef.build
-	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i $< $(<:%.localedef.build=%)
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i $< $(<:%.localedef.build=%)
 	$(RM) $@
 	$(CP)  $(@:%.UTF-8@euro_c.so.$(METHOD_VERSION)=%.UTF-8.so.$(METHOD_VERSION)) $@ 
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i ../$< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/utf-8.charmap -i ../$< $(<:%.localedef.build=%)
 	$(CP)  $(MACH64)/$(@:%.UTF-8@euro_c.so.$(METHOD_VERSION)=%.UTF-8.so.$(METHOD_VERSION)) $(MACH64)/$@ 
 
 %.UTF-8@dict.so.$(METHOD_VERSION): %.UTF-8@dict.localedef.build
-	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i $< $(<:%.localedef.build=%)
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/UTF-8.x -f $(_CHARMAPS)/UTF-8.charmap -i ../$< $(<:%.localedef.build=%)
 
 %.ISO8859-1@bokmal.so.$(METHOD_VERSION): %.ISO8859-1@bokmal.localedef.build
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/iso-8859-1.charmap -i $< $(<:%.localedef.build=%)
