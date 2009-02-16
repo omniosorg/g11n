@@ -18,7 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
@@ -480,3 +480,15 @@ d none usr/lib/locale/ms_MY.UTF-8/amd64 0755 root bin
 s none usr/lib/locale/ms_MY.UTF-8/amd64/uk_UA.UTF-8.so.3=../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
 d none usr/lib/locale/id_ID.UTF-8/amd64 0755 root bin
 s none usr/lib/locale/id_ID.UTF-8/amd64/uk_UA.UTF-8.so.3=../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/es_US/amd64 0755 root bin
+s none usr/lib/locale/es_US/amd64/es_US.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/es_US.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/es_US.UTF-8/amd64/es_US.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/be_BY/amd64 0755 root bin
+s none usr/lib/locale/be_BY/amd64/be_BY.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/be_BY.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/be_BY.UTF-8/amd64/be_BY.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ka_GE/amd64 0755 root bin
+s none usr/lib/locale/ka_GE/amd64/ka_GE.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ka_GE.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/ka_GE.UTF-8/amd64/ka_GE.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3

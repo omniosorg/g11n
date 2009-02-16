@@ -18,19 +18,41 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+
+#
+#ident	"@(#)Makefile	1.0	06/03/07	SMI"
+#
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
-d none usr 0755 root sys
-d none usr/lib 0755 root bin
-d none usr/lib/locale 0755 root bin
-d none usr/lib/locale/cs_CZ/amd64 0755 root bin
-s none usr/lib/locale/cs_CZ/amd64/cs_CZ.so.3=../../cs_CZ.ISO8859-2/amd64/cs_CZ.ISO8859-2.so.3
-d none usr/lib/locale/cs_CZ.ISO8859-2/amd64 0755 root bin
-f none usr/lib/locale/cs_CZ.ISO8859-2/amd64/cs_CZ.ISO8859-2.so.3 0555 root bin
-d none usr/lib/locale/cs_CZ.UTF-8@euro/amd64 0755 root bin
-f none usr/lib/locale/cs_CZ.UTF-8@euro/amd64/cs_CZ.UTF-8@euro.so.3 0555 root bin
-s none usr/lib/locale/cs_CZ.UTF-8@euro/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
-d none usr/lib/locale/cs/amd64 0755 root bin
-s none usr/lib/locale/cs/amd64/cs.so.3=../../cs_CZ.ISO8859-2/amd64/cs_CZ.ISO8859-2.so.3
+include $(SRC)/Makefile.master
+
+install		:=	TARGET = install
+all		:=	TARGET = all
+lint		:=	TARGET = lint
+clean		:=	TARGET = clean
+clobber		:=	TARGET = clobber
+
+LOCALE:sh = basename `pwd`
+
+TARGETDIR =	$(FILEROOT)/usr/lib/locale/$(LOCALE)
+
+FILES = geo_map
+
+SUBDIRS = 
+
+TARGETDIRS = $(TARGETDIR)
+
+all: $(TARGETDIRS)
+
+include $(SRC)/src/Makefile.targ
+
+install: all $(FILES.obj) 
+
+clean: objclean
+	$(RM) -r $(TARGETDIR)
+
+FRC:
+
+

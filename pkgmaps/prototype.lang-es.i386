@@ -18,7 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
@@ -70,3 +70,6 @@ s none usr/lib/locale/es_UY.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/
 d none usr/lib/locale/es_VE.UTF-8/amd64 0755 root bin
 f none usr/lib/locale/es_VE.UTF-8/amd64/es_VE.UTF-8.so.3 0555 root bin
 s none usr/lib/locale/es_VE.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
+d none usr/lib/locale/es_US.UTF-8/amd64 0755 root bin
+f none usr/lib/locale/es_US.UTF-8/amd64/es_US.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/es_US.UTF-8/amd64/methods_unicode.so.3=../../common/amd64/methods_unicode.so.3
