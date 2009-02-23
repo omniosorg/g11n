@@ -26,12 +26,12 @@
 # Use is subject to license terms.
 #
 
-FontNameAlias 	iso88591R 	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSansMono.ttf
+FontNameAlias 	iso88591R 	TrueType	/usr/openwin/lib/X11/fonts/TrueType/CourierNew.ttf
 FontNameAlias 	prnCourierR 	Type1	Courier
 FontNameAlias 	prnCourierB 	Type1	Courier-Bold
 FontNameAlias 	prnCourierI 	Type1	Courier-Oblique
 FontNameAlias 	prnCourierBI 	Type1	Courier-BoldOblique
-FontNameAlias 	tt_ctlarabicR   TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSansMono.ttf
+FontNameAlias 	tt_ctlarabicR   TrueType	/usr/openwin/lib/locale/ar/X11/fonts/TrueType/SHAYMT.ttf
 
 #
 # map*group entries have to be specified before mapucs4 and cnvucs4 entries.

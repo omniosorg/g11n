@@ -37,9 +37,9 @@ HEADER_INC	=
 
 MPSRC_FILES  	= 
 MPLD_FILES	= 
-MPCONF_FILES 	= mp.conf
+MPCONF_FILES 	= mp.conf mp.conf.nv
 
-MPLD_DIR_FILES 	= $(ROOT_MP_DIR)/$(MPCONF_FILES)
+MPLD_DIR_FILES 	= $(MPCONF_FILES:%=$(ROOT_MP_DIR)/%)
 
 CFLAGS += -G -Kpic
 
