@@ -63,6 +63,8 @@ export_dynamic=`(./libtool --config; echo eval echo \\$export_dynamic_flag_spec)
 
 PKG_CHECK_MODULES(FSEXAM,
         [gnome-desktop-2.0 >= 2.0 \
+        libgnomeui-2.0 >= 2.0     \
+        libglade-2.0 >= 2.0       \
         gnome-vfs-module-2.0 >= 2.0 \
         eel-2.0 >= 2.2.3])
 
