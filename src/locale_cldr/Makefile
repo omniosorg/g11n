@@ -227,7 +227,7 @@ diffs.html: ldump tools/lcmp.pl
 ldump: tools/ldump.c cmap.dat
 	$(CC) -I . -o ldump tools/ldump.c
 
-cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3)
+cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3) charmap/.dir
 	tools/cmap.pl `find charmap/ -type f -name '*.cm'` > $@
 
 
