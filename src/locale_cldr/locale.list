@@ -1,0 +1,13 @@
+cs_CZ.UTF-8	cs_CZ@platform=solaris,yesno=short
+en_US.UTF-8	en_US@platform=solaris,yesno=short
+en_GB.UTF-8	en_GB@platform=solaris,yesno=short
+
+
+# sk_SK.ISO8859-2 should use SKK (Slovak has Euro from 2009-01-01)
+sk_SK.ISO8859-2	sk_SK@platform=solaris,yesno=short,currency=SKK
+
+# CLDR bug #2023
+kk_KZ.UTF-8	kk_Cyrl_KZ@platform=solaris,yesno=short
+sh_BA.UTF-8	sr_Latn_BA@platform=solaris,yesno=short
+sr_CS.UTF-8	sr_Cyrl_RS@platform=solaris,yesno=short
+sr_YU.ISO8859-5	sr_Cyrl_RS@platform=solaris,yesno=short

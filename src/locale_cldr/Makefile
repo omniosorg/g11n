@@ -24,7 +24,8 @@
 
 include $(SRC)/Makefile.master
 
-LOCALES = 
+LOCALES:sh = grep '^[a-z]' locale.list|cut -f1
+
 
 COMMON_CFLAGS	= $(CCVERBOSE) -K pic -D PIC -G -I. -z defs -z text -z ignore -D_REENTRANT
 
@@ -55,8 +56,7 @@ GENERATE_POSIX	= $(JAVA_ROOT)/bin/java  $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) -DCLD
 JAVA_CP_SH	= echo $(JARS) | tr ' ' ':'
 
 
-
-all: $(LOCALES:%=locale/%.so.3) $(LOCALES:%=locale64/%.so.3) diffs.html
+all: $(LOCALES:%=locale/%.so.3 locale64/%.so.3) diffs.html
 
 install: all
 	for l in $(LOCALES); do \
@@ -80,57 +80,24 @@ distclean: clean
 
 
 CHARMAP_SH	= echo $* | cut -d. -f2
-LOCALE_SH	= echo $* | cut -d. -f1
 
 locale/%.so.3: posix/%.src charmap/%.cm extension/%.x locale/.dir
 	cd locale; $(LOCALEDEF) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $*
-	touch $@
 
 locale64/%.so.3: posix/%.src charmap/%.cm extension/%.x locale64/.dir
 	cd locale64; $(LOCALEDEF64) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $*
-	touch $@
 
 
 
-# ================================================
-# GENERATE_POSIX exceptions
-# ================================================
+LOCALE_SH	= grep "^$*" locale.list| cut -f2
 
-# Solaris does not support Unicode 5.1 yet
-# if you modify the target, change rule 'charset/%.UTF-8.cm: ...' too 
-posix/%.UTF-8.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c UTF-8 -m $*@platform=solaris,yesno=short -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF] 
-	mv posix/$*@platform=solaris,yesno=short.UTF-8.src $@
+# Solaris does not support Unicode 5.1 yet so GENERATE_POSIX needs more params for the UTF-8 locales
+IS_UTF8_SH	= expr "$*" : ".*UTF-8" > /dev/null && echo " -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF]" || true
 
-# sk_SK.ISO8859-2 should use SKK (Slovak has Euro from 2009-01-01)
-posix/sk_SK.ISO8859-2.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c ISO8859-2 -m sk_SK@platform=solaris,yesno=short,currency=SKK 
-	mv posix/sk_SK@platform=solaris,yesno=short,currency=SKK.ISO8859-2.src $@
+posix/%.src: locale.list $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir 
+	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh) $(IS_UTF8_SH:sh)
+	mv posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src $@
 
-# CLDR bug #2023
-posix/kk_KZ.UTF-8.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c UTF-8 -m kk_Cyrl_KZ@platform=solaris,yesno=short -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF] 
-	mv posix/kk_Cyrl_KZ@platform=solaris,yesno=short.UTF-8.src $@
-
-posix/sh_BA.UTF-8.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c UTF-8 -m sr_Latn_BA@platform=solaris,yesno=short -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF] 
-	mv posix/sr_Latn_BA@platform=solaris,yesno=short.UTF-8.src $@
-
-posix/sr_CS.UTF-8.src posix/sr_YU.UTF-8.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c UTF-8 -m sr_Cyrl_RS@platform=solaris,yesno=short -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF] 
-	mv posix/sr_Cyrl_RS@platform=solaris,yesno=short.UTF-8.src $@
-
-posix/sr_YU.ISO8859-5.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c ISO8859-5 -m sr_Cyrl_RS@platform=solaris,yesno=short
-	mv posix/sr_Cyrl_RS@platform=solaris,yesno=short.ISO8859-5.src $@
-
-# ================================================
-# end of GENERATE_POSIX exceptions
-# ================================================
-
-posix/%.src: $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir
-	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)@platform=solaris,yesno=short 
-	mv posix/$(LOCALE_SH:sh)@platform=solaris,yesno=short.$(CHARMAP_SH:sh).src $@
 
 
 extension/%.UTF-8.x: extension/UTF-8.x
@@ -141,11 +108,6 @@ extension/%.ISO8859-1.x extension/%.ISO8859-2.x extension/%.ISO8859-5.x extensio
 
 extension/%.eucJP.x extension/%.ANSI1251.x extension/%.KOI8-R.x: extension/ISO8859.x
 	ln -s ISO8859.x $@
-
-
-charmap/%.UTF-8.cm: $(JARS) charmap/.dir
-	[ -f charmap/UTF-8.cm ] || $(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap -c UTF-8 -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF]
-	ln -s UTF-8.cm $@
 
 
 charmap/%.cm: $(JARS) charmap/.dir
@@ -229,7 +191,6 @@ ldump: tools/ldump.c cmap.dat
 
 cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3) charmap/.dir
 	tools/cmap.pl `find charmap/ -type f -name '*.cm'` > $@
-
 
 
 %/.dir:
