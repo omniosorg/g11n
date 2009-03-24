@@ -1,0 +1,113 @@
+//
+// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, and/or sell copies of the Software, and to permit persons
+// to whom the Software is furnished to do so, provided that the above
+// copyright notice(s) and this permission notice appear in all copies of
+// the Software and that both the above copyright notice(s) and this
+// permission notice appear in supporting documentation.
+// 
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+// OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+// HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL
+// INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+// FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+// NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION
+// WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+// 
+// Except as contained in this notice, the name of a copyright holder
+// shall not be used in advertising or otherwise to promote the sale, use
+// or other dealings in this Software without prior written authorization
+// of the copyright holder.
+//
+
+//
+// CDDL HEADER START
+//
+// The contents of this file are subject to the terms of the
+// Common Development and Distribution License (the "License").
+// You may not use this file except in compliance with the License.
+//
+// You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+// or http://www.opensolaris.org/os/licensing.
+// See the License for the specific language governing permissions
+// and limitations under the License.
+//
+// When distributing Covered Code, include this CDDL HEADER in each
+// file and include the License file at src/OPENSOLARIS.LICENSE.
+// If applicable, add the following below this CDDL HEADER, with the
+// fields enclosed by brackets "[]" replaced with your own identifying
+// information: Portions Copyright [yyyy] [name of copyright owner]
+//
+// CDDL HEADER END
+//
+
+partial default alphanumeric_keys
+xkb_symbols "basic" {
+    include "us(basic)"
+
+    key <TLDE> { [       grave, asciitilde ], [ dead_grave, dead_tilde      ] };
+
+    key <AE01> { [          1,  exclam          ]       };
+    key <AE02> { [          2,  at              ]       };
+    key <AE03> { [          3,  numbersign      ]       };
+    key <AE04> { [          4,  dollar          ]       };
+    key <AE05> { [          5,  percent         ]       };
+    key <AE06> { [          6,  asciicircum ], [ dead_circumflex,  dead_circumflex ] };
+    key <AE07> { [          7,  ampersand       ]       };
+    key <AE08> { [          8,  asterisk        ]       };
+    key <AE09> { [          9,  parenleft ], [ dead_grave] };
+    key <AE10> { [          0,  parenright      ]       };
+    key <AE11> { [ bracketleft, braceleft       ]       };
+    key <AE12> { [ bracketright, braceright ], [ dead_tilde] };
+
+    key <AD01> { [  apostrophe, quotedbl ], [ dead_acute, dead_diaeresis    ] };
+    key <AD02> { [      comma,  less ], [ dead_cedilla, dead_caron        ] };
+    key <AD03> { [      period, greater ], [ dead_abovedot, periodcentered  ] };
+    key <AD04> { [          p,  P               ]       };
+    key <AD05> { [          y,  Y               ]       };
+    key <AD06> { [          f,  F               ]       };
+    key <AD07> { [          g,  G               ]       };
+    key <AD08> { [          c,  C               ]       };
+    key <AD09> { [          r,  R               ]       };
+    key <AD10> { [          l,  L               ]       };
+    key <AD11> { [      slash,  question        ]       };
+    key <AD12> { [      equal,  plus            ]       };
+
+    key <AC01> { [          a,  A               ]       };
+    key <AC02> { [          o,  O               ]       };
+    key <AC03> { [          e,  E               ]       };
+    key <AC04> { [          u,  U               ]       };
+    key <AC05> { [          i,  I               ]       };
+    key <AC06> { [          d,  D               ]       };
+    key <AC07> { [          h,  H               ]       };
+    key <AC08> { [          t,  T               ]       };
+    key <AC09> { [          n,  N               ]       };
+    key <AC10> { [          s,  S               ]       };
+    key <AC11> { [      minus,  underscore      ]       };
+    key <AB01> { [   semicolon, colon ], [ dead_ogonek, dead_doubleacute ] };
+    key <AB02> { [          q,  Q               ]       };
+    key <AB03> { [          j,  J               ]       };
+    key <AB04> { [          k,  K               ]       };
+    key <AB05> { [          x,  X               ]       };
+    key <AB06> { [          b,  B               ]       };
+    key <AB07> { [          m,  M               ]       };
+    key <AB08> { [          w,  W               ]       };
+    key <AB09> { [          v,  V               ]       };
+    key <AB10> { [          z,  Z               ]       };
+
+    key <BKSL> { [  backslash,  bar             ]       };
+};
+
+xkb_symbols "type6" {
+  include "sun_vndr/us(type6)"
+  include "sun_vndr/dvorak(basic)"
+
+};
+

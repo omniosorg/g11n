@@ -26,7 +26,7 @@
 //from The Open Group.
 //
 // ---------------------------------------------------------------------------
-// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -54,25 +54,6 @@
 // of the copyright holder.
 //
 // ---------------------------------------------------------------------------
-//
-// CDDL HEADER START
-//
-// The contents of this file are subject to the terms of the
-// Common Development and Distribution License (the "License").
-// You may not use this file except in compliance with the License.
-//
-// You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
-// or http://www.opensolaris.org/os/licensing.
-// See the License for the specific language governing permissions
-// and limitations under the License.
-//
-// When distributing Covered Code, include this CDDL HEADER in each
-// file and include the License file at src/OPENSOLARIS.LICENSE.
-// If applicable, add the following below this CDDL HEADER, with the
-// fields enclosed by brackets "[]" replaced with your own identifying
-// information: Portions Copyright [yyyy] [name of copyright owner]
-//
-// CDDL HEADER END
 //
 // $XFree86: xc/programs/xkbcomp/keycodes/sun,v 3.6 2003/08/09 14:30:48 pascal Exp $
 //
@@ -573,8 +554,37 @@ xkb_keycodes "type6_euro" {
     include "sun(type5_euro)"
 };
 
+// Even though this is labeled as _usb, I verified these keycodes as accurate
+// on my type5 serial and type6 serial keyboards as well on linux-2.6 boxes.
+// I'm not sure where the "type5" keycodes above are coming from...
 xkb_keycodes "type6_usb" {
     include "xfree86"
+
+//    <STOP> = 232;
+//    <AGAI> = 133;
+//    <PROP> = 134;
+//    <UNDO> = 135;
+//    <FRNT> = 140;
+//    <COPY> = 248;
+//    <OPEN> = 191;
+//    <PAST> = 192;
+//    <FIND> = 122;
+//    <CUT>  = 188;
+
+ //   <HELP> = 245;
+
+    // The blank has keycode 239 on my type6 serial kb, but 134 on
+    // my type6 usb keyboard (same as <PROP>)
+//    <BLNK> = 239;
+
+    // AltGr + PrScr actually sends a different keycode
+//    <SYRQ> = 92;
+
+//    <MUTE> = 160;
+//    <VOL-> = 174;
+//    <VOL+> = 176;
+//    <POWR> = 222;
+
     indicator 4 = "Compose";
 };
 

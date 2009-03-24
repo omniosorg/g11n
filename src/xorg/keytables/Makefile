@@ -23,12 +23,13 @@ include $(SRC)/Makefile.master
 
 TARGETDIR = $(FILEROOT)/X11/lib/X11/xkb
 
-XKB_DIRFILES = compat.dir geometry.dir keycodes.dir keymap.dir symbols.dir types.dir
+XKB_DIRFILES = compat.dir geometry.dir keycodes.dir keymap.dir semantics.dir symbols.dir types.dir
 SUBDIRS = compat compiled geometry keycodes keymap rules semantics symbols types
 
-XKBDATA_SOURCE = xkbdata-1.0.1.tar.gz
-XKBDATA_SITE = http://ftp.x.org/pub/individual/data
-XKBDATA_DIR = xkbdata-1.0.1
+XKBDATA_SOURCE = xkeyboard-config-1.4.tar.gz
+# XKBDATA_SITE = http://ftp.x.org/pub/individual/data
+XKBDATA_SITE = http://xlibs.freedesktop.org/xkbdesc
+XKBDATA_DIR = xkeyboard-config-1.4
 
 
 all:=           TARGET= all

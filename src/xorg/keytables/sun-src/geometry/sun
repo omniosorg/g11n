@@ -26,7 +26,7 @@
 //from The Open Group.
 //
 // ---------------------------------------------------------------------------
-// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
+// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -3060,6 +3060,26 @@ xkb_geometry "type6tuv" {
 xkb_geometry "type6unix" {
     include "sun(t6unix)"
     description= "Sun Type6 Unix keyboard";
+};
+
+default xkb_geometry "type7" {
+    include "sun(t6)"
+    description= "Sun Type7 keyboard (US, Korea, Taiwan)";
+};
+
+xkb_geometry "type7jp" {
+    include "sun(t6jp)"
+    description= "Sun Type7 Japanese keyboard";
+};
+
+xkb_geometry "type7tuv" {
+    include "sun(t6tuv)"
+    description= "Sun Type7 TUV keyboard";
+};
+
+xkb_geometry "type7unix" {
+    include "sun(t6unix)"
+    description= "Sun Type7 Unix keyboard";
 };
 
 xkb_geometry "x86" {
