@@ -1,0 +1,119 @@
+diff -ruN cldr_tools.orig/org/unicode/cldr/posix/POSIX_LCCtype.java cldr_tools/org/unicode/cldr/posix/POSIX_LCCtype.java
+--- cldr_tools.orig/org/unicode/cldr/posix/POSIX_LCCtype.java	2009-03-24 09:14:22.004388030 +0100
++++ cldr_tools/org/unicode/cldr/posix/POSIX_LCCtype.java	2009-03-24 12:29:39.719885539 +0100
+@@ -10,6 +10,11 @@
+ package org.unicode.cldr.posix;
+ 
+ import java.io.PrintWriter;
++import java.io.Reader;
++import java.io.FileReader;
++import java.io.BufferedReader;
++import java.io.IOException;
++import java.io.FileNotFoundException;
+ 
+ import org.w3c.dom.Document;
+ import org.w3c.dom.Node;
+@@ -23,8 +28,20 @@
+ public class POSIX_LCCtype {
+ 
+    UnicodeSet chars;
++   Reader copy;
+ 
+-   public POSIX_LCCtype ( Document doc, UnicodeSet chars ) {
++   public POSIX_LCCtype ( Document doc, UnicodeSet chars, POSIXVariant variant ) {
++
++      if (variant.copy_ctype != null) {
++	 try {
++	    this.copy = new FileReader(variant.copy_ctype);
++	    this.chars = null;
++
++	    return;
++	 } catch (FileNotFoundException ex) {
++              System.out.println("WARNING: file not found : " + variant.copy_ctype);
++	 }
++      }
+ 
+       String SearchLocation = "//ldml/characters/exemplarCharacters";
+       Node n = LDMLUtilities.getNode(doc,SearchLocation);
+@@ -48,6 +65,7 @@
+       }
+ 
+       this.chars = chars;
++      this.copy = null;
+ 
+    }
+ 
+@@ -59,6 +77,15 @@
+       out.println("*************");
+       out.println();
+ 
++      if (copy != null) {
++	 String line;
++	 BufferedReader br = new BufferedReader(copy);
++	 
++	 try {
++	    while  ((line = br.readLine()) != null) { if (line.indexOf("#") != 0) out.println(line); }
++	 } catch (IOException ex) { System.out.println("WARNING: io exception:"+ex.getMessage()); }
++      } else {  
++
+       String[][] types = { 
+                 { "upper", "[:Uppercase:]" },
+ 		{ "lower", "[:Lowercase:]" }, 
+@@ -124,7 +151,7 @@
+             if (item != last) out.print(";/");
+             out.println("");
+         }
+-
++      }
+       out.println();
+       out.println("END LC_CTYPE");
+       out.println();
+Binary files cldr_tools.orig/org/unicode/cldr/posix/.POSIX_LCCtype.java.swp and cldr_tools/org/unicode/cldr/posix/.POSIX_LCCtype.java.swp differ
+diff -ruN cldr_tools.orig/org/unicode/cldr/posix/POSIXLocale.java cldr_tools/org/unicode/cldr/posix/POSIXLocale.java
+--- cldr_tools.orig/org/unicode/cldr/posix/POSIXLocale.java	2009-03-24 09:14:22.002814624 +0100
++++ cldr_tools/org/unicode/cldr/posix/POSIXLocale.java	2009-03-24 11:25:25.262279460 +0100
+@@ -151,7 +151,7 @@
+          }
+        }
+       
+-      lc_ctype = new POSIX_LCCtype ( doc, repertoire );
++      lc_ctype = new POSIX_LCCtype ( doc, repertoire, variant );
+       lc_numeric = new POSIX_LCNumeric( doc );
+       lc_monetary = new POSIX_LCMonetary( doc , supp , variant );
+       lc_time = new POSIX_LCTime( doc , variant);
+Binary files cldr_tools.orig/org/unicode/cldr/posix/.POSIXLocale.java.swp and cldr_tools/org/unicode/cldr/posix/.POSIXLocale.java.swp differ
+diff -ruN cldr_tools.orig/org/unicode/cldr/posix/POSIXVariant.java cldr_tools/org/unicode/cldr/posix/POSIXVariant.java
+--- cldr_tools.orig/org/unicode/cldr/posix/POSIXVariant.java	2009-03-24 09:14:22.007788316 +0100
++++ cldr_tools/org/unicode/cldr/posix/POSIXVariant.java	2009-03-24 11:28:12.619666356 +0100
+@@ -13,6 +13,7 @@
+    public String currency;
+    public String platform;
+    public String yesno;
++   public String copy_ctype;
+    
+    // valid values for the "platform" type
+    public static final String SOLARIS     = "solaris";
+@@ -25,6 +26,7 @@
+       this.currency = "default";
+       this.platform = "common";
+       this.yesno = "long";
++      this.copy_ctype = null;
+       boolean more_values = true ;
+       String buf = new String(variant_string);
+       String rest;
+@@ -57,6 +59,8 @@
+                this.platform= field_value;
+             if ( field.equals("yesno"))
+                this.yesno = field_value;
++            if ( field.equals("copy_ctype"))
++               this.copy_ctype = field_value;
+          }
+          buf = rest;
+       }
+@@ -68,5 +72,6 @@
+       this.currency = "default";
+       this.platform = "common";
+       this.yesno = "long";
++      this.copy_ctype = null;
+    }   
+ }
