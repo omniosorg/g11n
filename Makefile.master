@@ -134,6 +134,8 @@ XKBCOMP_XSUN=	/usr/openwin/lib/X11/xkb/xkbcomp
 # SUNWxorg-server
 XKBCOMP_XORG=	/usr/X11/lib/X11/xkb/xkbcomp
 
+# locale_cldr
+GNU_PATCH=	/usr/bin/gpatch
 
 
 # MACH must be set in the shell environment per uname -p on the build host
