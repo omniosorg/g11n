@@ -23,12 +23,8 @@
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 
-#FIXME: removed openwin/lib/locale from the build targets, since we're using Xorg's Xi18n locale database files.
-#SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables uts cmd
-SUBDIRS = lib kernel locale_src/base locale_src/charmap locale_src/extensions openwin/lib/locale  openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables xorg/fonts uts cmd
+SUBDIRS = arabeyes
 
 all:=		TARGET= all
 install :=	TARGET= install
@@ -40,6 +36,8 @@ all install clean: $(SUBDIRS)
 
 $(SUBDIRS): FRC
 	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
+
+tarball:
 
 FRC:
 

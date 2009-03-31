@@ -23,23 +23,39 @@
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
 
-#FIXME: removed openwin/lib/locale from the build targets, since we're using Xorg's Xi18n locale database files.
-#SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables uts cmd
-SUBDIRS = lib kernel locale_src/base locale_src/charmap locale_src/extensions openwin/lib/locale  openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables xorg/fonts uts cmd
+include $(SRC)/Makefile.master
+
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/arabeyes
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-arabeyes
+
+FONT_TAR	= ae_fonts_2.0.tar.bz2
+FONT_DOC_TAR	= ae_fonts_doc_2.0.tar.bz2
 
 all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
+install:=	TARGET= install
+clean:=		TARGET= clean
+clobber:=	TARGET= clobber
+lint:=		TARGET= lint
 
+.KEEP_STATE:
 
-all install clean: $(SUBDIRS)
+all: $(FONT_TAR)
 
-$(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
+$(ROOT_FONT_DIR):
+	$(INSDIR) "$@"
+
+$(ROOT_DOC_DIR):
+	$(INSDIR) "$@"
+
+font_install: $(ROOT_FONT_DIR) $(ROOT_DOC_DIR)
+	bzip2 -d -c $(FONT_TAR) | (cd $(ROOT_FONT_DIR) ; tar xpf -)
+	bzip2 -d -c $(FONT_DOC_TAR) | (cd $(ROOT_DOC_DIR) ; tar xpf -)
+
+install: all font_install
+
+clean:
+
+clobber: clean
 
 FRC:
-
