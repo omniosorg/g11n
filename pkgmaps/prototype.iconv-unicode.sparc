@@ -303,6 +303,7 @@ s none usr/lib/iconv/sparcv9/ms932%UCS-4BE.so=./ms932%UTF-32BE.so
 s none usr/lib/iconv/sparcv9/ms932%UCS-4LE.so=./ms932%UTF-32LE.so
 # from SUNWkiu8
 f none usr/lib/iconv/sparcv9/UCS-2LE%ko_KR-cp949.so 0755 root bin
+f none usr/lib/iconv/sparcv9/UCS-2BE%ko_KR-cp949.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-UTF-8%ko_KR-cp933.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-UTF-8%ko_KR-cp949.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-UTF-8%ko_KR-euc.so 0755 root bin
@@ -311,18 +312,21 @@ f none usr/lib/iconv/sparcv9/ko_KR-UTF-8%ko_KR-johap.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-UTF-8%ko_KR-johap92.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-cp933%ko_KR-UTF-8.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-cp949%UCS-2LE.so 0755 root bin
+f none usr/lib/iconv/sparcv9/ko_KR-cp949%UCS-2BE.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-cp949%ko_KR-UTF-8.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-euc%ko_KR-UTF-8.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-iso2022-7%ko_KR-UTF-8.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-johap%ko_KR-UTF-8.so 0755 root bin
 f none usr/lib/iconv/sparcv9/ko_KR-johap92%ko_KR-UTF-8.so 0755 root bin
 s none usr/lib/iconv/sparcv9/5601%UCS-2LE.so=./ko_KR-cp949%UCS-2LE.so
+s none usr/lib/iconv/sparcv9/5601%UCS-2BE.so=./ko_KR-cp949%UCS-2BE.so
 s none usr/lib/iconv/sparcv9/5601%UTF-8.so=./ko_KR-euc%ko_KR-UTF-8.so
 s none usr/lib/iconv/sparcv9/EUC-KR%UTF-8.so=./ko_KR-euc%ko_KR-UTF-8.so
 s none usr/lib/iconv/sparcv9/ISO-2022-KR%UTF-8.so=./ko_KR-iso2022-7%ko_KR-UTF-8.so
 s none usr/lib/iconv/sparcv9/KSC5601%UTF-8.so=./ko_KR-euc%ko_KR-UTF-8.so
 s none usr/lib/iconv/sparcv9/KSX1001%UTF-8.so=./ko_KR-euc%ko_KR-UTF-8.so
 s none usr/lib/iconv/sparcv9/UCS-2LE%5601.so=./UCS-2LE%ko_KR-cp949.so
+s none usr/lib/iconv/sparcv9/UCS-2BE%5601.so=./UCS-2BE%ko_KR-cp949.so
 s none usr/lib/iconv/sparcv9/UTF-8%5601.so=./ko_KR-UTF-8%ko_KR-euc.so
 s none usr/lib/iconv/sparcv9/UTF-8%EUC-KR.so=./ko_KR-UTF-8%ko_KR-euc.so
 s none usr/lib/iconv/sparcv9/UTF-8%ISO-2022-KR.so=./ko_KR-UTF-8%ko_KR-iso2022-7.so
