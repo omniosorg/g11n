@@ -37,13 +37,14 @@
 typedef struct {
   int         _magic;
   boolean     _need_byte_swap;
+#if !defined(UCS_2LE) && !defined(UCS_2BE)
   boolean     _bom_written;
+#endif    /* !defined(UCS_2LE) && !defined(UCS_2BE) */
   boolean     _is_little_endian;
 
 } _icv_state_t;
 
 
-static boolean is_running_in_little_endian ();
 extern hcode_type _unified_hangul_to_UCS2LE (hcode_type);
 
 void *
@@ -51,14 +52,21 @@ _icv_open()
 {
   _icv_state_t *h = (_icv_state_t *) malloc (sizeof (_icv_state_t));
   if (!h){
-    return 0;
+    errno = ENOMEM;
+    return((void *)-1); 
   }
   
   h->_magic = MAGIC_NUMBER;
-  h->_is_little_endian = is_running_in_little_endian ();
-  
+#if defined(UCS_2BE)
+  h->_is_little_endian = false;
+  h->_need_byte_swap =false;
+#elif defined(UCS_2LE) 
+  h->_is_little_endian = true;
+  h->_need_byte_swap = true;
+#endif 
+#if !defined(UCS_2LE) && !defined(UCS_2BE) 
   h->_bom_written = true;
-  h->_need_byte_swap =true;
+#endif    /* !defined(UCS_2LE) && !defined(UCS_2BE) */
 
   return (void *)h;
 }
@@ -162,14 +170,14 @@ _icv_iconv (_icv_state_t *cd, char** inbuf, size_t* inbufleft,
 		  ret_val = (size_t)-1;
 		  break;
 		}
-
+#if !defined(UCS_2LE) && !defined(UCS_2BE)
 	      if (!cd->_bom_written){
 		*ob++ = (uchar_t)0xff;
 		*ob++ = (uchar_t)0xfe;
 
 		cd->_bom_written = true;
 	      }
-
+#endif    /* !defined(UCS_2LE) && !defined(UCS_2BE) */
 	      if (cd->_need_byte_swap)
 		{
 		  *ob++ = ucs2_code.byte.byte4;
@@ -193,14 +201,7 @@ _icv_iconv (_icv_state_t *cd, char** inbuf, size_t* inbufleft,
 	}
       else  /* CS0 */
 	{
-	  /*
-	  if (ob >= obtail)
-	    {
-	      errno = E2BIG;
-	      ret_val = (size_t)-1;
-	      break;
-	    }
-	  */
+#if !defined(UCS_2LE) && !defined(UCS_2BE) 
 	  if (!cd->_bom_written)
 	    {
 	    if ((obtail - ob) < 3)
@@ -214,6 +215,7 @@ _icv_iconv (_icv_state_t *cd, char** inbuf, size_t* inbufleft,
 	    cd->_bom_written = true;
 	    }
 	  else
+#endif    /* !defined(UCS_2LE) && !defined(UCS_2BE) */ 
 	    {
 	      if ((obtail - ob) < 1)
 	      {
@@ -244,16 +246,3 @@ _icv_iconv (_icv_state_t *cd, char** inbuf, size_t* inbufleft,
   return(ret_val);
 }
 
-static boolean
-is_running_in_little_endian ()
-{
-  union {
-    int one;
-    char byte[sizeof (int)];
-  }u;
-  u.one = 1;
-  if (u.byte[0] == 1) /* little-endian */
-    return true;
-  else                /* big-ending     */
-    return false;
-}

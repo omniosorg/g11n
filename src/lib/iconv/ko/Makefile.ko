@@ -53,9 +53,11 @@ UH2U	= ko_KR-cp949%ko_KR-UTF-8.so
 
 UCS2LE2UH = UCS-2LE%ko_KR-cp949.so
 UH2UCS2LE = ko_KR-cp949%UCS-2LE.so
+UCS2BE2UH = UCS-2BE%ko_KR-cp949.so
+UH2UCS2BE = ko_KR-cp949%UCS-2BE.so
 
 PROGS	= $(E2I) $(I2E) $(E2J92) $(J922E) $(E2J) $(J2E) $(E2NB) $(NB2E) \
-	  $(U2UH) $(UH2U) $(UH2UCS2LE) $(UCS2LE2UH)
+	  $(U2UH) $(UH2U) $(UH2UCS2LE) $(UCS2LE2UH) $(UH2UCS2BE) $(UCS2BE2UH)
 
 LDFLAGS = -G -z defs -lc $(CFLAG_OPT)
 LDFLAGS_64 = -G -z defs -lc $(CFLAG_OPT_64)
@@ -121,9 +123,18 @@ $(UH2UCS2LE) : unihan_to_UCS-2LE_sub.o unihan_to_UCS-2LE_main.o common_utf.o
 	$(CC) $(LDFLAGS) -o $@ unihan_to_UCS-2LE_sub.o unihan_to_UCS-2LE_main.o common_utf.o
 	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ unihan_to_UCS-2LE_sub.o unihan_to_UCS-2LE_main.o common_utf.o
 
-$(UCS2LE2UH) : ucs_to_unihan.o utf_to_uhang_sub.o common_utf.o
-	$(CC) $(LDFLAGS) -o $@ ucs_to_unihan.o utf_to_uhang_sub.o common_utf.o
-	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ ucs_to_unihan.o utf_to_uhang_sub.o common_utf.o
+$(UCS2LE2UH) : ucs_LE_to_unihan.o utf_to_uhang_sub.o common_utf.o
+	$(CC) $(LDFLAGS) -o $@ ucs_LE_to_unihan.o utf_to_uhang_sub.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ ucs_LE_to_unihan.o utf_to_uhang_sub.o common_utf.o
+
+$(UH2UCS2BE) : unihan_to_UCS-2LE_sub.o unihan_to_UCS-2BE_main.o common_utf.o
+	$(CC) $(LDFLAGS) -o $@ unihan_to_UCS-2LE_sub.o unihan_to_UCS-2BE_main.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ unihan_to_UCS-2LE_sub.o unihan_to_UCS-2BE_main.o common_utf.o
+
+$(UCS2BE2UH) : ucs_BE_to_unihan.o utf_to_uhang_sub.o common_utf.o
+	$(CC) $(LDFLAGS) -o $@ ucs_BE_to_unihan.o utf_to_uhang_sub.o common_utf.o
+	cd $(MACH64); $(CC) $(LDFLAGS_64) -o $@ ucs_BE_to_unihan.o utf_to_uhang_sub.o common_utf.o
+
 
 #
 # objs
@@ -132,7 +143,14 @@ common_utf8.o: $(COMMON)common_utf8.c
 	$(CC) $(CFLAGS) -c $(COMMON)common_utf8.c
 	$(CC) $(CFLAGS_64) -c $(COMMON)common_utf8.c -o $(MACH64)/$@
 
-ucs_to_unihan.o : ucs_to_unihan.c
-	$(CC) $(CFLAGS) -DUCS_2LE -c ucs_to_unihan.c
+ucs_LE_to_unihan.o : ucs_to_unihan.c
+	$(CC) $(CFLAGS) -DUCS_2LE -c ucs_to_unihan.c -o $@
 	$(CC) $(CFLAGS_64) -DUCS_2LE -c ucs_to_unihan.c -o $(MACH64)/$@
 
+ucs_BE_to_unihan.o : ucs_to_unihan.c
+	$(CC) $(CFLAGS) -DUCS_2BE -c ucs_to_unihan.c -o $@
+	$(CC) $(CFLAGS_64) -DUCS_2BE -c ucs_to_unihan.c -o $(MACH64)/$@
+
+unihan_to_UCS-2BE_main.o : unihan_to_UCS-2LE_main.c
+	$(CC) $(CFLAGS) -DUCS_2BE -c  unihan_to_UCS-2LE_main.c -o $@
+	$(CC) $(CFLAGS_64) -DUCS_2BE -c unihan_to_UCS-2LE_main.c -o $(MACH64)/$@
