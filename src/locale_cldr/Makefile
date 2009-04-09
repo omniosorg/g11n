@@ -45,7 +45,7 @@ LDF_OPT64	= -m lp64
 LOPT_ORIGIN	= "-R\\\$$ORIGIN"
 
 JAVA_FLAGS	= -Dhttp.proxyHost=webcache.sfbay -Dhttp.proxyPort=8080
-JAVA_FLAGS	+= -Xms128m -Xmx128m
+JAVA_FLAGS	+= -Xmx256m
 
 JARS		= jars/icu4j.jar jars/utilities.jar jars/xalan.jar jars/xml-apis.jar jars/cldr.jar
 
@@ -91,12 +91,10 @@ locale64/%.so.3: posix/%.src charmap/%.cm extension/%.x locale64/.dir
 
 LOCALE_SH	= grep "^$*" locale.list| cut -f2
 
-# Solaris does not support Unicode 5.1 yet so GENERATE_POSIX needs more params for the UTF-8 locales
-IS_UTF8_SH	= expr "$*" : ".*UTF-8" > /dev/null && echo " -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF]" || true
 
 posix/%.src: locale.list $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir 
-	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh) $(IS_UTF8_SH:sh)
-	mv posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src $@
+	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)
+	$(MV) "posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src" "$@"
 
 
 
@@ -109,15 +107,20 @@ extension/%.ISO8859-1.x extension/%.ISO8859-2.x extension/%.ISO8859-5.x extensio
 extension/%.eucJP.x extension/%.ANSI1251.x extension/%.KOI8-R.x: extension/ISO8859.x
 	ln -s ISO8859.x $@
 
+# Solaris does not support Unicode 5.1 yet so GENERATE_POSIX needs more params for the UTF-8 locales
+#IS_UTF8_SH	= expr "$*" : ".*UTF-8" > /dev/null && echo " -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF]" || true
+IS_UTF8_SH	= expr "$*" : ".*UTF-8" > /dev/null && echo " -u '[[\\\\u0000-\\\\U0010FFFF]-[[:Phoenician:][:Kharoshthi:][:Cuneiform:][\\\\U0001D200-\\\\U0001D24F]]]'" || true
 
+
+.NO_PARALLEL: charmap/%.cm
 charmap/%.cm: $(JARS) charmap/.dir
-	[ -f charmap/$(CHARMAP_SH:sh).cm ] || $(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap -c $(CHARMAP_SH:sh)
+	[ -f charmap/$(CHARMAP_SH:sh).cm ] || $(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap -c $(CHARMAP_SH:sh) $(IS_UTF8_SH:sh)
 	ln -s $(CHARMAP_SH:sh).cm $@
 
 
 
 jars/cldr.jar: jars/icu4j.jar jars/utilities.jar jars/xalan.jar jars/xml-apis.jar cldr_tools/.src
-	cd cldr_tools; ICU4J_JAR=../jars/icu4j.jar UTILITIES_JAR=../jars/utilities.jar CLDR_JAR=../jars/xalan.jar XML_APIS_JAR=../xml-apis.jar ant jar
+	cd cldr_tools; ICU4J_JAR=../jars/icu4j.jar UTILITIES_JAR=../jars/utilities.jar CLDR_JAR=../jars/xalan.jar XML_APIS_JAR=../jars/xml-apis.jar ant jar
 	cp cldr_tools/cldr.jar $@
 
 jars/utilities.jar: cldr_tools/.src  jars/.dir
@@ -129,8 +132,11 @@ jars/xalan.jar: xalan/.unpack jars/.dir
 jars/xml-apis.jar: xalan/.unpack jars/.dir
 	cp xalan/xalan-j_2_7_1/xml-apis.jar $@
 
-jars/icu4j.jar: download/icu4j-4_0.jar jars/.dir
-	cp download/icu4j-4_0.jar $@
+jars/icu4j.jar: cldr_tools/.src jars/.dir
+	cp cldr_tools/icu4j-3_8_1.jar $@
+
+#jars/icu4j.jar: download/icu4j-4_0.jar jars/.dir
+#	cp download/icu4j-4_0.jar $@
 
 
 
@@ -149,33 +155,33 @@ xalan/.unpack: download/xalan-j_2_7_1-bin.zip xalan/.dir
 cldr_tools/.src: cldr_tools/.unpack
 	@[ ! "$$(ls -A patches/cldr_tools $(@D))" ] || for a in patches/$(@D)/*.patch; do \
 		echo "applying $$a"; \
-		(cd $(@D); patch -p1) < $$a; \
+		(cd $(@D); $(GNU_PATCH) -p1) < $$a; \
 	done
 	touch $@
 
 cldr_core/.src: cldr_core/.unpack
 	@[ ! "$$(ls -A patches/$(@D))" ] || for a in patches/$(@D)/*.patch; do \
 		echo "applying $$a"; \
-		(cd $(@D); patch -p1) < $$a; \
+		(cd $(@D); $(GNU_PATCH) -p1) < $$a; \
 	done
 	touch $@
 
 
 
 download/icu4j-4_0.jar: download/.dir
-	wget -q -O $@ http://download.icu-project.org/files/icu4j/4.0/icu4j-4_0.jar
+	$(WGET) -q -O $@ http://download.icu-project.org/files/icu4j/4.0/icu4j-4_0.jar
 	touch $@
 
 download/cldr_tools.zip: download/.dir
-	wget -q -O $@ http://unicode.org/Public/cldr/1.6.1/tools.zip
+	$(WGET) -q -O $@ http://unicode.org/Public/cldr/1.6.1/tools.zip
 	touch $@
 
 download/cldr_core.zip: download/.dir
-	wget -q -O $@ http://unicode.org/Public/cldr/1.6.1/core.zip
+	$(WGET) -q -O $@ http://unicode.org/Public/cldr/1.6.1/core.zip
 	touch $@
 
 download/xalan-j_2_7_1-bin.zip: download/.dir
-	wget -q -O $@ http://www.mirrorgeek.com/apache.org/xml/xalan-j/xalan-j_2_7_1-bin.zip
+	$(WGET) -q -O $@ http://www.mirrorgeek.com/apache.org/xml/xalan-j/xalan-j_2_7_1-bin.zip
 	touch $@
 
 
@@ -187,7 +193,8 @@ diffs.html: ldump tools/lcmp.pl
 
 # tools
 ldump: tools/ldump.c cmap.dat
-	$(CC) -I . -o ldump tools/ldump.c
+	# $(CC) -I . -o ldump tools/ldump.c - Sunstudio cc is not able to compile such big files
+	gcc -I . -o ldump tools/ldump.c
 
 cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3) charmap/.dir
 	tools/cmap.pl `find charmap/ -type f -name '*.cm'` > $@
