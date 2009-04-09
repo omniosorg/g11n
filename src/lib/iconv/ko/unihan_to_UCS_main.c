@@ -37,11 +37,6 @@
 typedef struct {
   int         _magic;
   boolean     _need_byte_swap;
-#if !defined(UCS_2LE) && !defined(UCS_2BE)
-  boolean     _bom_written;
-#endif    /* !defined(UCS_2LE) && !defined(UCS_2BE) */
-  boolean     _is_little_endian;
-
 } _icv_state_t;
 
 
@@ -58,15 +53,10 @@ _icv_open()
   
   h->_magic = MAGIC_NUMBER;
 #if defined(UCS_2BE)
-  h->_is_little_endian = false;
   h->_need_byte_swap =false;
 #elif defined(UCS_2LE) 
-  h->_is_little_endian = true;
   h->_need_byte_swap = true;
 #endif 
-#if !defined(UCS_2LE) && !defined(UCS_2BE) 
-  h->_bom_written = true;
-#endif    /* !defined(UCS_2LE) && !defined(UCS_2BE) */
 
   return (void *)h;
 }
