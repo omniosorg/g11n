@@ -72,7 +72,7 @@ DIRS = charmap cldr_tools cldr_core locale locale64 posix xalan jars
 clean:
 	rm -Rf $(DIRS)
 	rm -Rf cldr.jar icu4j.jar xalan.jar utilities.jar xml-apis.jar
-	rm -Rf cmap.dat ldump diffs.html
+	rm -Rf cmap.dat ldump diffs.html *.ctype
 	find extension/ -type l -exec rm -f {} \;
 	rm -Rf .unpack_*
 
@@ -93,8 +93,10 @@ locale64/%.so.3: posix/%.src charmap/%.cm extension/%.x locale64/.dir
 
 
 LOCALE_SH	= cat "locale_variant/$*"| grep -v '^\#' | grep -v '^[ \t]*$$' |head -n 1
+CTYPE_SH	= echo "$(LOCALE_SH:sh)" | perl -e '$$_ = <STDIN>; print $$1 if /.*copy_ctype=([^,]*).*/'
 
 posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir locale_variant/%
+	[ -z "$(CTYPE_SH:sh)" ] || $(MAKE) $(CTYPE_SH:sh)
 	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)
 	$(MV) "posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src" "$@"
 
@@ -116,15 +118,26 @@ extension/%.x:
 	$(MAKE) extension/$(WITHOUT_AT_SH:sh).x
 	ln -s $(WITHOUT_AT_SH:sh).x $@
 
+
+
 # Solaris does not support Unicode 5.1 yet so GENERATE_POSIX needs more params for the UTF-8 locales
-#IS_UTF8_SH	= expr "$*" : ".*UTF-8" > /dev/null && echo " -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF]" || true
-IS_UTF8_SH	= expr "$*" : ".*UTF-8" > /dev/null && echo " -u '[[\\\\u0000-\\\\U0010FFFF]-[[:Phoenician:][:Kharoshthi:][:Cuneiform:][\\\\U0001D200-\\\\U0001D24F]]]'" || true
+charmap/src/UTF-8.cm: $(JARS) charmap/src/.dir
+	$(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap/src -c UTF-8 -u '[[\u0000-\U0010FFFF]-[[:Phoenician:][:Kharoshthi:][:Cuneiform:][\U0001D200-\U0001D24F]]]'
+
+charmap/src/%.cm: $(JARS) charmap/src/.dir
+	$(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap/src -c $(CHARMAP_SH:sh)
+
+charmap/%.cm: charmap/.dir
+	$(MAKE) charmap/src/$(CHARMAP_SH:sh).cm
+	ln -s src/$(CHARMAP_SH:sh).cm $@
 
 
-.NO_PARALLEL: $(LOCALES:%=charmap/%.cm)
-charmap/%.cm: $(JARS) charmap/.dir
-	[ -f charmap/$(CHARMAP_SH:sh).cm ] || $(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap -c $(CHARMAP_SH:sh) $(IS_UTF8_SH:sh)
-	ln -s $(CHARMAP_SH:sh).cm $@
+
+UTF-8.ctype: misc/ctype.unicode
+	cp $^ $@
+
+%.ctype: charmap/src/%.cm misc/ctype.unicode
+	tools/ctype.pl charmap/src/$*.cm misc/ctype.unicode > $@
 
 
 

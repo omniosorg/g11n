@@ -1,1 +1,1 @@
-hu_HU@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
+hu_HU@platform=solaris,yesno=short,copy_ctype=UTF-8.ctype
