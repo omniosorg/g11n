@@ -67,13 +67,12 @@ install: all
 		cp locale64/$$l.so.3 $(FILEROOT)/usr/lib/locale/$$l/$(MACH64); \
 	done
 
-DIRS = charmap cldr_tools cldr_core locale locale64 posix xalan jars
+DIRS = charmap cldr_tools cldr_core locale locale64 posix xalan jars extension
 
 clean:
 	rm -Rf $(DIRS)
 	rm -Rf cldr.jar icu4j.jar xalan.jar utilities.jar xml-apis.jar
 	rm -Rf cmap.dat ldump diffs.html *.ctype
-	find extension/ -type l -exec rm -f {} \;
 	rm -Rf .unpack_*
 
 distclean: clean
@@ -102,16 +101,17 @@ posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir locale_variant/%
 
 
 
-extension/%.UTF-8.x: extension/UTF-8.x
-	ln -s UTF-8.x $@
+extension/%.UTF-8.x: misc/UTF-8.x extension/.dir
+	ln -s ../misc/UTF-8.x $@
 
-extension/%.ISO8859-1.x extension/%.ISO8859-2.x extension/%.ISO8859-5.x extension/%.ISO8859-7.x extension/%.ISO8859-9.x extension/%.ISO8859-13.x extension/%.ISO8859-15.x: extension/ISO8859.x
-	ln -s ISO8859.x $@
+extension/%.ISO8859-1.x extension/%.ISO8859-2.x extension/%.ISO8859-5.x extension/%.ISO8859-7.x extension/%.ISO8859-9.x extension/%.ISO8859-13.x extension/%.ISO8859-15.x: misc/ISO8859.x extension/.dir 
+	ln -s ../misc/ISO8859.x $@
 
-extension/%.eucJP.x extension/%.ANSI1251.x extension/%.KOI8-R.x: extension/ISO8859.x
-	ln -s ISO8859.x $@
+extension/%.eucJP.x extension/%.ANSI1251.x extension/%.KOI8-R.x: misc/ISO8859.x extension/.dir
+	ln -s ../misc/ISO8859.x $@
 
 # workaround of make(1S) known bug: "Filenames with the characters =, :, or @, do not work"
+#  (because the bug we can not write 'extension/%.UTF-8@euro: .... ')
 VARIANT_SH	= echo $* | cut -d@ -f2
 WITHOUT_AT_SH	= echo $* | cut -d@ -f1
 extension/%.x:
