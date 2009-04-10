@@ -24,7 +24,7 @@
 
 include $(SRC)/Makefile.master
 
-LOCALES:sh = grep '^[a-z]' locale.list|cut -f1
+LOCALES:sh = cd locale_variant; ls
 
 
 COMMON_CFLAGS	= $(CCVERBOSE) -K pic -D PIC -G -I. -z defs -z text -z ignore -D_REENTRANT
@@ -91,10 +91,9 @@ locale64/%.so.3: posix/%.src charmap/%.cm extension/%.x locale64/.dir
 
 
 
-LOCALE_SH	= grep "^$*" locale.list| cut -f2
+LOCALE_SH	= cat "locale_variant/$*"| grep -v '^\#' | grep -v '^[ \t]*$$' |head -n 1
 
-
-posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir # locale.list
+posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir locale_variant/%
 	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)
 	$(MV) "posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src" "$@"
 
