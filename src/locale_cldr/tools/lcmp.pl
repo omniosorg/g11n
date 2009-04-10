@@ -34,7 +34,7 @@ my %lall;
 foreach my $loc (sort @ARGV) {
 	next unless -f "/usr/lib/locale/$loc/$loc.so.3";
 
-	$lall{$loc}{$_} = { lcmp1($loc,$_) } foreach ('lc_charmap', 'lc_collate', 'lc_monetary', 'lc_numeric', 'lc_messages', 'lc_time', 'lc_ctype');
+	$lall{$loc}{$_} = { lcmp1($loc,$_) } foreach ('lc_charmap', 'lc_monetary', 'lc_numeric', 'lc_messages', 'lc_time', 'lc_ctype');
 }
 
 sub lcmp1 {
