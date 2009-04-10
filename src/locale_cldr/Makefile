@@ -81,7 +81,7 @@ distclean: clean
 
 
 
-CHARMAP_SH	= echo $* | cut -d. -f2
+CHARMAP_SH	= echo $* | cut -d. -f2| cut -d@ -f1
 
 locale/%.so.3: posix/%.src charmap/%.cm extension/%.x locale/.dir
 	cd locale; $(LOCALEDEF) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $*
@@ -107,6 +107,13 @@ extension/%.ISO8859-1.x extension/%.ISO8859-2.x extension/%.ISO8859-5.x extensio
 
 extension/%.eucJP.x extension/%.ANSI1251.x extension/%.KOI8-R.x: extension/ISO8859.x
 	ln -s ISO8859.x $@
+
+# workaround of make(1S) known bug: "Filenames with the characters =, :, or @, do not work"
+VARIANT_SH	= echo $* | cut -d@ -f2
+WITHOUT_AT_SH	= echo $* | cut -d@ -f1
+extension/%.x:
+	$(MAKE) extension/$(WITHOUT_AT_SH:sh).x
+	ln -s $(WITHOUT_AT_SH:sh).x $@
 
 # Solaris does not support Unicode 5.1 yet so GENERATE_POSIX needs more params for the UTF-8 locales
 #IS_UTF8_SH	= expr "$*" : ".*UTF-8" > /dev/null && echo " -u [\\\\u0000-\\\\uFFFF] -x [\\\\u0000-\\\\uFFFF]" || true

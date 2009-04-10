@@ -1,0 +1,2 @@
+# iso8859-1 locale should use old currency instead of Euro
+nl_NL@platform=solaris,yesno=short,currency=NLG
