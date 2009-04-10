@@ -1,0 +1,16 @@
+diff -ruN cldr_core.orig/main/de.xml cldr_core/main/de.xml
+--- cldr_core.orig/main/de.xml	2009-03-27 14:37:54.488302447 +0100
++++ cldr_core/main/de.xml	2009-03-27 14:53:41.964386210 +0100
+@@ -1460,6 +1460,12 @@
+ 							<pattern>{1} {0}</pattern>
+ 						</dateTimeFormat>
+ 					</dateTimeFormatLength>
++					<dateTimeFormatLength type="full">
++						<dateTimeFormat>
++							<pattern>{1}, {0}</pattern>
++						</dateTimeFormat>
++					</dateTimeFormatLength>
++
+ 					<availableFormats>
+ 						<dateFormatItem id="Ed">E d.</dateFormatItem>
+ 						<dateFormatItem id="Ed" alt="proposed-x1001" draft="unconfirmed">E d</dateFormatItem>

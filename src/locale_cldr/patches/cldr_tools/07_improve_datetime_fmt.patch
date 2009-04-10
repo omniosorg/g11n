@@ -1,0 +1,35 @@
+Binary files cldr_tools.orig/classes/org/unicode/cldr/posix/POSIX_LCTime.class and cldr_tools/classes/org/unicode/cldr/posix/POSIX_LCTime.class differ
+Binary files cldr_tools.orig/cldr.jar and cldr_tools/cldr.jar differ
+diff -ruN cldr_tools.orig/org/unicode/cldr/posix/POSIX_LCTime.java cldr_tools/org/unicode/cldr/posix/POSIX_LCTime.java
+--- cldr_tools.orig/org/unicode/cldr/posix/POSIX_LCTime.java	2009-03-27 14:38:05.735777027 +0100
++++ cldr_tools/org/unicode/cldr/posix/POSIX_LCTime.java	2009-03-27 14:51:28.317680012 +0100
+@@ -130,8 +130,13 @@
+          d_fmt = d_fmt.replaceAll("\"", "/\""); //excaping of " in strings
+ 
+       // d_t_fmt - 
+-         SearchLocation = "//ldml/dates/calendars/calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength/dateTimeFormat/pattern";
++         SearchLocation = "//ldml/dates/calendars/calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength[@type='long']/dateTimeFormat/pattern";
+          n = LDMLUtilities.getNode(doc, SearchLocation);
++         if ( n == null) 
++	 {
++	    SearchLocation = "//ldml/dates/calendars/calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength/dateTimeFormat/pattern";
++	    n = LDMLUtilities.getNode(doc, SearchLocation);
++	 }
+          d_t_fmt = LDMLUtilities.getNodeValue(n);
+ 
+          SearchLocation = "//ldml/dates/calendars/calendar[@type='gregorian']/timeFormats/timeFormatLength[@type='long']/timeFormat/pattern";
+@@ -161,8 +166,13 @@
+          if ( variant.platform.equals(POSIXVariant.SOLARIS))
+          {
+              // date_fmt
+-             SearchLocation = "//ldml/dates/calendars/calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength/dateTimeFormat/pattern";
++             SearchLocation = "//ldml/dates/calendars/calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength[@type='full']/dateTimeFormat/pattern";
+              n = LDMLUtilities.getNode(doc, SearchLocation);
++	     if ( n == null) 
++	     {
++		SearchLocation = "//ldml/dates/calendars/calendar[@type='gregorian']/dateTimeFormats/dateTimeFormatLength/dateTimeFormat/pattern";
++		n = LDMLUtilities.getNode(doc, SearchLocation);
++	     }
+              date_fmt = LDMLUtilities.getNodeValue(n);
+              
+              SearchLocation = "//ldml/dates/calendars/calendar[@type='gregorian']/timeFormats/timeFormatLength[@type='full']/timeFormat/pattern";
