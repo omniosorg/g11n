@@ -239,6 +239,7 @@ f none usr/share/gui-install/langs_localized 0644 root sys
 d none usr/share/gui-install/help 0755 root sys
 #
 d none usr/share/gui-install/help/ar 0755 root sys
+s none usr/share/gui-install/help/ar_EG.UTF-8=ar
 s none usr/share/gui-install/help/ar_SA.UTF-8=ar
 f none usr/share/gui-install/help/ar/FINISH_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/ar/INSTALL_DISK_PANEL.txt 0644 root sys
@@ -271,7 +272,11 @@ f none usr/share/gui-install/help/cs/INSTALL_USERS_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/cs/WELCOME_PANEL.txt 0644 root sys
 #
 d none usr/share/gui-install/help/de 0755 root sys
+s none usr/share/gui-install/help/de_AT.UTF-8=de
+s none usr/share/gui-install/help/de_CH.UTF-8=de
 s none usr/share/gui-install/help/de_DE.UTF-8=de
+s none usr/share/gui-install/help/de_LU.UTF-8=de
+s none usr/share/gui-install/help/de.UTF-8=de
 f none usr/share/gui-install/help/de/FINISH_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/de/INSTALL_DISK_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/de/INSTALL_FAILURE_PANEL.txt 0644 root sys
@@ -287,7 +292,24 @@ f none usr/share/gui-install/help/de/INSTALL_USERS_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/de/WELCOME_PANEL.txt 0644 root sys
 #
 d none usr/share/gui-install/help/es 0755 root sys
+s none usr/share/gui-install/help/es_AR.UTF-8=es
+s none usr/share/gui-install/help/es_BO.UTF-8=es
+s none usr/share/gui-install/help/es_CL.UTF-8=es
+s none usr/share/gui-install/help/es_CO.UTF-8=es
+s none usr/share/gui-install/help/es_CR.UTF-8=es
+s none usr/share/gui-install/help/es_EC.UTF-8=es
 s none usr/share/gui-install/help/es_ES.UTF-8=es
+s none usr/share/gui-install/help/es_GT.UTF-8=es
+s none usr/share/gui-install/help/es_MX.UTF-8=es
+s none usr/share/gui-install/help/es_NI.UTF-8=es
+s none usr/share/gui-install/help/es_PA.UTF-8=es
+s none usr/share/gui-install/help/es_PE.UTF-8=es
+s none usr/share/gui-install/help/es_PY.UTF-8=es
+s none usr/share/gui-install/help/es_SV.UTF-8=es
+s none usr/share/gui-install/help/es_US.UTF-8=es
+s none usr/share/gui-install/help/es_UY.UTF-8=es
+s none usr/share/gui-install/help/es_VE.UTF-8=es
+s none usr/share/gui-install/help/es.UTF-8=es
 f none usr/share/gui-install/help/es/FINISH_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/es/INSTALL_DISK_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/es/INSTALL_FAILURE_PANEL.txt 0644 root sys
@@ -303,7 +325,12 @@ f none usr/share/gui-install/help/es/INSTALL_USERS_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/es/WELCOME_PANEL.txt 0644 root sys
 #
 d none usr/share/gui-install/help/fr 0755 root sys
+s none usr/share/gui-install/help/fr_BE.UTF-8=fr
+s none usr/share/gui-install/help/fr_CA.UTF-8=fr
+s none usr/share/gui-install/help/fr_CH.UTF-8=fr
 s none usr/share/gui-install/help/fr_FR.UTF-8=fr
+s none usr/share/gui-install/help/fr_LU.UTF-8=fr
+s none usr/share/gui-install/help/fr.UTF-8=fr
 f none usr/share/gui-install/help/fr/FINISH_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/fr/INSTALL_DISK_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/fr/INSTALL_FAILURE_PANEL.txt 0644 root sys
@@ -434,6 +461,7 @@ f none usr/share/gui-install/help/pt_BR/WELCOME_PANEL.txt 0644 root sys
 d none usr/share/gui-install/help/ru 0755 root sys
 s none usr/share/gui-install/help/ru_RU=ru
 s none usr/share/gui-install/help/ru_RU.UTF-8=ru
+s none usr/share/gui-install/help/ru.UTF-8=ru
 f none usr/share/gui-install/help/ru/FINISH_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/ru/INSTALL_DISK_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/ru/INSTALL_FAILURE_PANEL.txt 0644 root sys
@@ -467,6 +495,7 @@ f none usr/share/gui-install/help/sk/WELCOME_PANEL.txt 0644 root sys
 #
 d none usr/share/gui-install/help/sv 0755 root sys
 s none usr/share/gui-install/help/sv_SE.UTF-8=sv
+s none usr/share/gui-install/help/sv.UTF-8=sv
 f none usr/share/gui-install/help/sv/FINISH_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/sv/INSTALL_DISK_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/sv/INSTALL_FAILURE_PANEL.txt 0644 root sys
