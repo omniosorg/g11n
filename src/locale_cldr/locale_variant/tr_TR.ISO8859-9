@@ -1,1 +1,1 @@
-tr_TR@platform=solaris,yesno=short
+tr_TR@platform=solaris,yesno=short,copy_ctype=ISO8859-9.ctype

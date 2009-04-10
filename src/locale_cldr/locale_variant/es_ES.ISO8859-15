@@ -1,1 +1,1 @@
-es_ES@platform=solaris,yesno=short
+es_ES@platform=solaris,yesno=short,copy_ctype=ISO8859-15.ctype

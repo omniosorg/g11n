@@ -1,1 +1,1 @@
-ru_RU@platform=solaris,yesno=short
+ru_RU@platform=solaris,yesno=short,copy_ctype=KOI8-R.ctype

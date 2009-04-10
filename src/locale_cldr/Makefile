@@ -49,8 +49,8 @@ JAVA_FLAGS	+= -Xmx256m
 
 JARS		= jars/icu4j.jar jars/utilities.jar jars/xalan.jar jars/xml-apis.jar jars/cldr.jar
 
-LOCALEDEF	= localedef -c -P /opt/SUNWspro/bin $(LDF_OPT) -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)"
-LOCALEDEF64	= localedef -c -P /opt/SUNWspro/bin $(LDF_OPT64) -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)"
+LOCALEDEF	= localedef -P /opt/SUNWspro/bin $(LDF_OPT) -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)"
+LOCALEDEF64	= localedef -P /opt/SUNWspro/bin $(LDF_OPT64) -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)"
 GENERATE_POSIX	= $(JAVA_ROOT)/bin/java  $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) -DCLDR_DTD_CACHE=dtd_cache org.unicode.cldr.posix.GeneratePOSIX -s cldr_core -d posix
 
 JAVA_CP_SH	= echo $(JARS) | tr ' ' ':'
@@ -84,10 +84,10 @@ CHARMAP_SH	= echo $* | cut -d. -f2| cut -d@ -f1
 
 # "... || [ $$? -eq 1 ]" - we ignore localedef warnings
 locale/%.so.3: posix/%.src charmap/%.cm extension/%.x locale/.dir 
-	cd locale; $(LOCALEDEF) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $* || [ $$? -eq 1 ]
+	cd locale; $(LOCALEDEF) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $*
 
 locale64/%.so.3: posix/%.src charmap/%.cm extension/%.x locale64/.dir
-	cd locale64; $(LOCALEDEF64) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $* || [ $$? -eq 1 ]
+	cd locale64; $(LOCALEDEF64) -x ../extension/$*.x -f ../charmap/$*.cm -i ../posix/$*.src $*
 
 
 
