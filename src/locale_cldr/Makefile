@@ -56,7 +56,9 @@ GENERATE_POSIX	= $(JAVA_ROOT)/bin/java  $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) -DCLD
 JAVA_CP_SH	= echo $(JARS) | tr ' ' ':'
 
 
-all: $(LOCALES:%=locale/%.so.3 locale64/%.so.3) diffs.html
+all: $(LOCALES:%=locale/%.so.3 locale64/%.so.3)
+
+doc: diffs.html
 
 install: all
 	for l in $(LOCALES); do \
@@ -92,7 +94,7 @@ locale64/%.so.3: posix/%.src charmap/%.cm extension/%.x locale64/.dir
 LOCALE_SH	= grep "^$*" locale.list| cut -f2
 
 
-posix/%.src: locale.list $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir 
+posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir # locale.list
 	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)
 	$(MV) "posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src" "$@"
 
@@ -112,7 +114,7 @@ extension/%.eucJP.x extension/%.ANSI1251.x extension/%.KOI8-R.x: extension/ISO88
 IS_UTF8_SH	= expr "$*" : ".*UTF-8" > /dev/null && echo " -u '[[\\\\u0000-\\\\U0010FFFF]-[[:Phoenician:][:Kharoshthi:][:Cuneiform:][\\\\U0001D200-\\\\U0001D24F]]]'" || true
 
 
-.NO_PARALLEL: charmap/%.cm
+.NO_PARALLEL: $(LOCALES:%=charmap/%.cm)
 charmap/%.cm: $(JARS) charmap/.dir
 	[ -f charmap/$(CHARMAP_SH:sh).cm ] || $(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap -c $(CHARMAP_SH:sh) $(IS_UTF8_SH:sh)
 	ln -s $(CHARMAP_SH:sh).cm $@
@@ -153,14 +155,14 @@ xalan/.unpack: download/xalan-j_2_7_1-bin.zip xalan/.dir
 	touch $@
 
 cldr_tools/.src: cldr_tools/.unpack
-	@[ ! "$$(ls -A patches/cldr_tools $(@D))" ] || for a in patches/$(@D)/*.patch; do \
+	@[ ! -d patches/$(@D) -o ! "$$(ls -A patches/$(@D))" ] || for a in patches/$(@D)/*.patch; do \
 		echo "applying $$a"; \
 		(cd $(@D); $(GNU_PATCH) -p1) < $$a; \
 	done
 	touch $@
 
 cldr_core/.src: cldr_core/.unpack
-	@[ ! "$$(ls -A patches/$(@D))" ] || for a in patches/$(@D)/*.patch; do \
+	@[ ! -d patches/$(@D) -o ! "$$(ls -A patches/$(@D))" ] || for a in patches/$(@D)/*.patch; do \
 		echo "applying $$a"; \
 		(cd $(@D); $(GNU_PATCH) -p1) < $$a; \
 	done

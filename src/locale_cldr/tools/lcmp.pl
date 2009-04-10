@@ -24,7 +24,6 @@ use strict;
 use warnings;
 
 use Encode;
-use HTML::Entities;
 
 binmode(STDOUT, ":utf8");
 

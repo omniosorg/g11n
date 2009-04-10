@@ -40,7 +40,6 @@ fr_CH.UTF-8	fr_CH@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
 fr_FR.UTF-8	fr_FR@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
 fr_LU.UTF-8	fr_LU@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
 he_IL.UTF-8	he_IL@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
-hi_IN.UTF-8	hi_IN@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
 hr_HR.UTF-8	hr_HR@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
 hu_HU.UTF-8	hu_HU@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
 id_ID.UTF-8	id_ID@platform=solaris,yesno=short,copy_ctype=CTYPE.UTF-8
