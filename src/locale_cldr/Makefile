@@ -24,7 +24,7 @@
 
 include $(SRC)/Makefile.master
 
-LOCALES:sh = cd locale_variant; ls
+LOCALES:sh = cd spec; ls
 
 
 COMMON_CFLAGS	= $(CCVERBOSE) -K pic -D PIC -G -I. -z defs -z text -z ignore -D_REENTRANT
@@ -91,10 +91,10 @@ locale64/%.so.3: posix/%.src charmap/%.cm extension/%.x locale64/.dir
 
 
 
-LOCALE_SH	= cat "locale_variant/$*"| grep -v '^\#' | grep -v '^[ \t]*$$' |head -n 1
+LOCALE_SH	= cat "spec/$*"| grep -v '^\#' | grep -v '^[ \t]*$$' |head -n 1
 CTYPE_SH	= echo "$(LOCALE_SH:sh)" | perl -e '$$_ = <STDIN>; print $$1 if /.*copy_ctype=([^,]*).*/'
 
-posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir locale_variant/%
+posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir spec/%
 	[ -z "$(CTYPE_SH:sh)" ] || $(MAKE) $(CTYPE_SH:sh)
 	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)
 	$(MV) "posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src" "$@"
