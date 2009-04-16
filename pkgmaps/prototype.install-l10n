@@ -98,7 +98,7 @@ d none usr/lib/locale/fr.UTF-8/LC_MESSAGES 0755 root bin
 f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo=usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_INSTALL_LIBORCHESTRATOR.mo 0755 root bin
 f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_INSTALL_INSTALLADM.mo=usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_INSTALL_INSTALLADM.mo 0755 root bin
 d none usr/lib/locale/fr_BE.UTF-8 0755 root bin
-s none usr/lib/locale/fr_BE.UTF-8/LC_MESSAGES=../fr.UTF-8/LC_MESSAGES
+s none usr/lib/locale/fr_BE.UTF-8/LC_MESSAGES=../fr_FR.UTF-8/LC_MESSAGES
 d none usr/lib/locale/fr_CA.UTF-8 0755 root bin
 s none usr/lib/locale/fr_CA.UTF-8/LC_MESSAGES=../fr.UTF-8/LC_MESSAGES
 d none usr/lib/locale/fr_CH.UTF-8 0755 root bin
@@ -505,6 +505,22 @@ f none usr/share/gui-install/help/ja/INSTALL_USERS_PANEL.txt 0644 root sys
 #f none usr/share/gui-install/help/ja/UPGRADE_REVIEW_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/ja/WELCOME_PANEL.txt 0644 root sys
 #
+d none usr/share/gui-install/help/ka 0755 root sys
+s none usr/share/gui-install/help/ka_GE.UTF-8=ka
+f none usr/share/gui-install/help/ka/FINISH_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ka/INSTALL_DISK_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ka/INSTALL_FAILURE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ka/INSTALL_LANGUAGE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ka/INSTALL_PROGRESS_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ka/INSTALL_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ka/INSTALL_TIMEZONE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ka/INSTALL_USERS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/ka/UPGRADE_DISK_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/ka/UPGRADE_FAILURE_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/ka/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/ka/UPGRADE_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/ka/WELCOME_PANEL.txt 0644 root sys
+#
 d none usr/share/gui-install/help/ko 0755 root sys
 s none usr/share/gui-install/help/ko_KR.UTF-8=ko
 s none usr/share/gui-install/help/ko.UTF-8=ko
@@ -521,6 +537,41 @@ f none usr/share/gui-install/help/ko/INSTALL_USERS_PANEL.txt 0644 root sys
 #f none usr/share/gui-install/help/ko/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
 #f none usr/share/gui-install/help/ko/UPGRADE_REVIEW_PANEL.txt 0644 root sys
 f none usr/share/gui-install/help/ko/WELCOME_PANEL.txt 0644 root sys
+#
+d none usr/share/gui-install/help/nl 0755 root sys
+s none usr/share/gui-install/help/nl_BE.UTF-8=nl
+s none usr/share/gui-install/help/nl_NL.UTF-8=nl
+s none usr/share/gui-install/help/nl.UTF-8=nl
+f none usr/share/gui-install/help/nl/FINISH_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/nl/INSTALL_DISK_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/nl/INSTALL_FAILURE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/nl/INSTALL_LANGUAGE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/nl/INSTALL_PROGRESS_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/nl/INSTALL_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/nl/INSTALL_TIMEZONE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/nl/INSTALL_USERS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/nl/UPGRADE_DISK_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/nl/UPGRADE_FAILURE_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/nl/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/nl/UPGRADE_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/nl/WELCOME_PANEL.txt 0644 root sys
+#
+d none usr/share/gui-install/help/pl 0755 root sys
+s none usr/share/gui-install/help/pl_PL.UTF-8=pl
+s none usr/share/gui-install/help/pl.UTF-8=pl
+f none usr/share/gui-install/help/pl/FINISH_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/pl/INSTALL_DISK_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/pl/INSTALL_FAILURE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/pl/INSTALL_LANGUAGE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/pl/INSTALL_PROGRESS_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/pl/INSTALL_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/pl/INSTALL_TIMEZONE_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/pl/INSTALL_USERS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/pl/UPGRADE_DISK_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/pl/UPGRADE_FAILURE_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/pl/UPGRADE_PROGRESS_PANEL.txt 0644 root sys
+#f none usr/share/gui-install/help/pl/UPGRADE_REVIEW_PANEL.txt 0644 root sys
+f none usr/share/gui-install/help/pl/WELCOME_PANEL.txt 0644 root sys
 #
 d none usr/share/gui-install/help/pt_BR 0755 root sys
 s none usr/share/gui-install/help/pt_BR.UTF-8=pt_BR
