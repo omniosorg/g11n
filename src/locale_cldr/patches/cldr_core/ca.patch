@@ -1,0 +1,14 @@
+diff -ruN cldr_core.orig/main/ca.xml cldr_core/main/ca.xml
+--- cldr_core.orig/main/ca.xml	2009-04-30 13:49:31.264268263 +0200
++++ cldr_core/main/ca.xml	2009-04-30 13:50:41.109684276 +0200
+@@ -1704,8 +1704,8 @@
+ 	</units>
+ 	<posix>
+ 		<messages>
+-			<yesstr draft="contributed">sí:s</yesstr>
+-			<nostr draft="contributed">no:n</nostr>
++			<yesstr>sí:s</yesstr>
++			<nostr>no:n</nostr>
+ 		</messages>
+ 	</posix>
+ 	<references>

@@ -1,0 +1,14 @@
+diff -ruN cldr_core.orig/main/lv.xml cldr_core/main/lv.xml
+--- cldr_core.orig/main/lv.xml	2009-04-30 14:13:35.129272624 +0200
++++ cldr_core/main/lv.xml	2009-04-30 14:13:56.604787607 +0200
+@@ -2524,8 +2524,8 @@
+ 	</units>
+ 	<posix>
+ 		<messages>
+-			<yesstr draft="contributed">jā:ja:j</yesstr>
+-			<nostr draft="contributed">nē:ne:n</nostr>
++			<yesstr>jā:ja:j</yesstr>
++			<nostr>nē:ne:n</nostr>
+ 		</messages>
+ 	</posix>
+ 	<references>

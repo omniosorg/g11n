@@ -1,0 +1,13 @@
+diff -ruN cldr_core.orig/supplemental/supplementalData.xml cldr_core/supplemental/supplementalData.xml
+--- cldr_core.orig/supplemental/supplementalData.xml	2009-04-30 14:13:35.294927490 +0200
++++ cldr_core/supplemental/supplementalData.xml	2009-04-30 14:30:59.769182018 +0200
+@@ -892,7 +892,8 @@
+             <currency iso4217="NOK" from="1905-06-07"/>
+         </region>
+         <region iso3166="SK">
+-            <currency iso4217="SKK" from="1992-12-31"/>
++            <currency iso4217="EUR" from="2009-01-01"/>
++            <currency iso4217="SKK" from="1992-12-31" to="2008-12-31"/>
+             <currency iso4217="CSK" from="1953-06-01" to="1992-12-31"/>
+         </region>
+         <region iso3166="SL">

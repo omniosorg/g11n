@@ -1,0 +1,14 @@
+diff -ruN cldr_core.orig/main/sl.xml cldr_core/main/sl.xml
+--- cldr_core.orig/main/sl.xml	2009-04-30 14:32:23.968908488 +0200
++++ cldr_core/main/sl.xml	2009-04-30 14:34:01.895793609 +0200
+@@ -620,8 +620,8 @@
+ 						</quarterWidth>
+ 					</quarterContext>
+ 				</quarters>
+-				<am draft="provisional">dop.</am>
+-				<pm draft="provisional">pop.</pm>
++				<am>dop.</am>
++				<pm>pop.</pm>
+ 				<eras>
+ 					<eraNames>
+ 						<era type="0" draft="provisional">pred našim štetjem</era>
