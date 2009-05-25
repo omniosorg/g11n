@@ -58,7 +58,7 @@ JAVA_CP_SH	= echo $(JARS) | tr ' ' ':'
 
 all: $(LOCALES:%=locale/%.so.3 locale64/%.so.3)
 
-doc: diffs.html
+doc: diffs.html $(LOCALES:%=collation_test/%.diff)
 
 install: all
 	for l in $(LOCALES); do \
@@ -72,7 +72,7 @@ DIRS = charmap cldr_tools cldr_core locale locale64 posix xalan jars extension
 clean:
 	rm -Rf $(DIRS)
 	rm -Rf cldr.jar icu4j.jar xalan.jar utilities.jar xml-apis.jar
-	rm -Rf cmap.dat ldump diffs.html *.ctype
+	rm -Rf cmap.dat ldump diffs.html *.ctype cmprint mysort
 	rm -Rf .unpack_*
 
 distclean: clean
@@ -98,7 +98,6 @@ posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir spec/%
 	[ -z "$(CTYPE_SH:sh)" ] || $(MAKE) $(CTYPE_SH:sh)
 	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)
 	$(MV) "posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src" "$@"
-
 
 
 extension/%.UTF-8.x: misc/UTF-8.x extension/.dir
@@ -210,11 +209,36 @@ download/xalan-j_2_7_1-bin.zip: download/.dir
 diffs.html: ldump tools/lcmp.pl
 	LD_LIBRARY_PATH=/usr/lib/locale/common tools/lcmp.pl $(LOCALES) >$@
 
+collation_test/%.diff: collation_test/%.orig collation_test/%.new
+	-diff -uN collation_test/$*.orig collation_test/$*.new > $@
+
+collation_test/%.orig: cmprint mysort collation_test/.dir
+	./cmprint $(CHARMAP_SH:sh) | (LC_ALL=$* ./mysort /) | iconv -f $(CHARMAP_SH:sh) -t utf-8 > $@
+
+collation_test/%.new: cmprint mysort collation_test/.%.locale collation_test/.dir
+	./cmprint $(CHARMAP_SH:sh) | (LC_ALL=$* ./mysort `pwd`/collation_test/) | iconv -f $(CHARMAP_SH:sh) -t utf-8 > $@
+
+collation_test/.%.locale: collation_test/.%.locale32 collation_test/.%.locale64
+	touch $@
+
+collation_test/.%.locale32: locale/%.so.3 collation_test/usr/lib/locale/%/.dir 
+	ln -s ../../../../../locale/$*.so.3 collation_test/usr/lib/locale/$*/
+	touch $@
+
+collation_test/.%.locale64: locale64/%.so.3 collation_test/usr/lib/locale/$(MACH64)/%/.dir
+	ln -s ../../../../../../locale64/$*.so.3 collation_test/usr/lib/locale/$(MACH64)/$*/
+	touch $@
 
 
 # tools
 ldump: tools/ldump.c cmap.dat
 	$(CC) -I . -o ldump tools/ldump.c
+
+cmprint: tools/cmprint.c cmap.dat
+	$(CC) -I . -o cmprint tools/cmprint.c
+
+mysort: tools/mysort.c
+	$(CC) -o mysort tools/mysort.c
 
 cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3) charmap/.dir
 	tools/cmap.pl `find charmap/src/ -type f -name '*.cm'` > $@
