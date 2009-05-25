@@ -1,2 +1,2 @@
 # iso8859-1 locale should use old currency instead of Euro
-de_DE@platform=solaris,yesno=short,currency=DEM,copy_ctype=ISO8859-1.ctype
+de_DE@platform=solaris,yesno=solaris,currency=DEM,copy_ctype=ISO8859-1.ctype

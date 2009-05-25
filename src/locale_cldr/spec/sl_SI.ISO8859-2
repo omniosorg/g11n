@@ -1,2 +1,2 @@
 # iso8859-1 locale should use old currency instead of Euro
-sl_SI@platform=solaris,yesno=short,currency=SIT,copy_ctype=ISO8859-2.ctype
+sl_SI@platform=solaris,yesno=solaris,currency=SIT,copy_ctype=ISO8859-2.ctype

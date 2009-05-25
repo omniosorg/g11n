@@ -1,1 +1,1 @@
-lv_LV@platform=solaris,yesno=short,copy_ctype=ISO8859-13.ctype
+lv_LV@platform=solaris,yesno=solaris,copy_ctype=ISO8859-13.ctype

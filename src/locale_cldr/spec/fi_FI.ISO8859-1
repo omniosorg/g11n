@@ -1,2 +1,2 @@
 # iso8859-1 locale should use old currency instead of Euro
-fi_FI@platform=solaris,yesno=short,currency=FIM,copy_ctype=ISO8859-1.ctype
+fi_FI@platform=solaris,yesno=solaris,currency=FIM,copy_ctype=ISO8859-1.ctype

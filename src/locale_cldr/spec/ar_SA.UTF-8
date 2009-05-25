@@ -1,1 +1,1 @@
-ar_SA@platform=solaris,yesno=short,copy_ctype=UTF-8.ctype
+ar_SA@platform=solaris,yesno=solaris,copy_ctype=UTF-8.ctype

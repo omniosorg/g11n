@@ -1,2 +1,2 @@
 # iso locale should use SKK (Slovak has Euro from 2009-01-01)
-sk_SK@platform=solaris,yesno=short,currency=SKK,copy_ctype=ISO8859-2.ctype
+sk_SK@platform=solaris,yesno=solaris,currency=SKK,copy_ctype=ISO8859-2.ctype
