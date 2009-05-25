@@ -49,8 +49,8 @@ JAVA_FLAGS	+= -Xmx256m
 
 JARS		= jars/icu4j.jar jars/utilities.jar jars/xalan.jar jars/xml-apis.jar jars/cldr.jar
 
-LOCALEDEF	= localedef -P /opt/SUNWspro/bin $(LDF_OPT) -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)"
-LOCALEDEF64	= localedef -P /opt/SUNWspro/bin $(LDF_OPT64) -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)"
+LOCALEDEF	= localedef -v -P /opt/SUNWspro/bin $(LDF_OPT) -W cc,"$(CFLAGS)" -L "$(LOPT_ORIGIN)"
+LOCALEDEF64	= localedef  -P /opt/SUNWspro/bin $(LDF_OPT64) -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)"
 GENERATE_POSIX	= $(JAVA_ROOT)/bin/java  $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) -DCLDR_DTD_CACHE=dtd_cache org.unicode.cldr.posix.GeneratePOSIX -s cldr_core -d posix
 
 JAVA_CP_SH	= echo $(JARS) | tr ' ' ':'
@@ -102,13 +102,13 @@ posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir spec/%
 
 
 extension/%.UTF-8.x: misc/UTF-8.x extension/.dir
-	ln -s ../misc/UTF-8.x $@
+	cp misc/UTF-8.x $@
 
 extension/%.ISO8859-1.x extension/%.ISO8859-2.x extension/%.ISO8859-5.x extension/%.ISO8859-7.x extension/%.ISO8859-9.x extension/%.ISO8859-13.x extension/%.ISO8859-15.x: misc/ISO8859.x extension/.dir 
-	ln -s ../misc/ISO8859.x $@
+	cp misc/ISO8859.x $@
 
 extension/%.eucJP.x extension/%.ANSI1251.x extension/%.KOI8-R.x: misc/ISO8859.x extension/.dir
-	ln -s ../misc/ISO8859.x $@
+	cp misc/ISO8859.x $@
 
 # workaround of make(1S) known bug: "Filenames with the characters =, :, or @, do not work"
 #  (because the bug we can not write 'extension/%.UTF-8@euro: .... ')
@@ -116,8 +116,7 @@ VARIANT_SH	= echo $* | cut -d@ -f2
 WITHOUT_AT_SH	= echo $* | cut -d@ -f1
 extension/%.x:
 	$(MAKE) extension/$(WITHOUT_AT_SH:sh).x
-	ln -s $(WITHOUT_AT_SH:sh).x $@
-
+	cp extension/$(WITHOUT_AT_SH:sh).x $@
 
 
 # Solaris does not support Unicode 5.1 yet so GENERATE_POSIX needs more params for the UTF-8 locales
@@ -129,7 +128,7 @@ charmap/src/%.cm: $(JARS) charmap/src/.dir
 
 charmap/%.cm: charmap/.dir
 	$(MAKE) charmap/src/$(CHARMAP_SH:sh).cm
-	ln -s src/$(CHARMAP_SH:sh).cm $@
+	cp charmap/src/$(CHARMAP_SH:sh).cm $@
 
 
 
@@ -215,12 +214,12 @@ diffs.html: ldump tools/lcmp.pl
 
 # tools
 ldump: tools/ldump.c cmap.dat
-	# $(CC) -I . -o ldump tools/ldump.c - Sunstudio cc is not able to compile such big files
-	gcc -I . -o ldump tools/ldump.c
+	$(CC) -I . -o ldump tools/ldump.c
 
 cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3) charmap/.dir
-	tools/cmap.pl `find charmap/ -type f -name '*.cm'` > $@
+	tools/cmap.pl `find charmap/src/ -type f -name '*.cm'` > $@
 
 
 %/.dir:
 	rm -Rf $*; mkdir -p $*
+	touch $@

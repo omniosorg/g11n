@@ -28,30 +28,34 @@ include $(SRC)/Makefile.master
 
 LOCALES_UTF8 = hi_IN.UTF-8 ja_JP.UTF-8 zh.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.UTF-8 zh_TW.UTF-8 ta_IN.UTF-8 te_IN.UTF-8 en_US.UTF-8 zh.UTF-8@pinyin zh.UTF-8@radical zh.UTF-8@stroke zh_HK.UTF-8@pinyin zh_HK.UTF-8@stroke zh_HK.UTF-8@radical zh_HK.UTF-8@zhuyin zh_TW.UTF-8@pinyin zh_TW.UTF-8@stroke zh_TW.UTF-8@radical zh_TW.UTF-8@zhuyin
 
-LOCALES_CLDR = en_IE.UTF-8 en_GB.UTF-8 de_LU.UTF-8 de_AT.UTF-8 fr_LU.UTF-8 nl_BE.UTF-8 nl_NL.UTF-8 cs_CZ.UTF-8 sl_SI.UTF-8 \
-sk_SK.UTF-8  hr_HR.UTF-8 hu_HU.UTF-8 pt_PT.UTF-8 el_GR.UTF-8 el_CY.UTF-8 ca_ES.UTF-8 en_MT.UTF-8 mt_MT.UTF-8 et_EE.UTF-8 lt_LT.UTF-8 \
-lv_LV.UTF-8 nn_NO.UTF-8 nb_NO.UTF-8 da_DK.UTF-8 fr_CA.UTF-8 en_CA.UTF-8 es_MX.UTF-8 en_AU.UTF-8 en_NZ.UTF-8 es_CR.UTF-8 es_GT.UTF-8 es_US.UTF-8 \
-es_NI.UTF-8 es_PA.UTF-8 es_SV.UTF-8 de_CH.UTF-8 fr_CH.UTF-8 bg_BG.UTF-8 mk_MK.UTF-8 sh_BA.UTF-8 ro_RO.UTF-8 sq_AL.UTF-8 sr_CS.UTF-8 \
-is_IS.UTF-8 es_AR.UTF-8 es_BO.UTF-8 es_CL.UTF-8 es_CO.UTF-8 es_EC.UTF-8 es_PE.UTF-8 es_PY.UTF-8 es_UY.UTF-8 es_VE.UTF-8 \
-cs_CZ.UTF-8@euro fr_FR.UTF-8  ar_EG.UTF-8 ar_SA.UTF-8 de_DE.UTF-8 es_ES.UTF-8 fi_FI.UTF-8 fr_BE.UTF-8 he_IL.UTF-8 it_IT.UTF-8  \
-pl_PL.UTF-8 pt_BR.UTF-8 ru_RU.UTF-8 sv_SE.UTF-8 tr_TR.UTF-8 uk_UA.UTF-8 kk_KZ.UTF-8 ms_MY.UTF-8 id_ID.UTF-8  vi_VN.UTF-8 \
-ka_GE.UTF-8 be_BY.UTF-8 es_US.UTF-8
+LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk
 
-LOCALES_ISO = en_AU.ISO8859-1 en_CA.ISO8859-1 en_GB.ISO8859-1 en_GB.ISO8859-15 en_IE.ISO8859-1 en_IE.ISO8859-15 en_NZ.ISO8859-1 \
-en_US.ISO8859-1 en_US.ISO8859-15 es_AR.ISO8859-1 es_BO.ISO8859-1 es_CL.ISO8859-1 es_CO.ISO8859-1 es_CR.ISO8859-1 es_EC.ISO8859-1 \
-es_GT.ISO8859-1 es_MX.ISO8859-1 es_NI.ISO8859-1 es_PA.ISO8859-1 es_PE.ISO8859-1 es_PY.ISO8859-1 es_SV.ISO8859-1 es_UY.ISO8859-1 \
-es_VE.ISO8859-1 fr_BE.ISO8859-1 fr_BE.ISO8859-15 fr_CA.ISO8859-1 fr_FR.ISO8859-1 fr_FR.ISO8859-15 nl_BE.ISO8859-1 nl_BE.ISO8859-15 \
-nl_NL.ISO8859-1 nl_NL.ISO8859-15 pt_BR.ISO8859-1 \
-ar bg_BG.ISO8859-5 ca_ES.ISO8859-1  ca_ES.ISO8859-15 cs_CZ.ISO8859-2 da_DK.ISO8859-1 da_DK.ISO8859-15 de_AT.ISO8859-1 \
-de_AT.ISO8859-15 de_CH.ISO8859-1 de_DE.ISO8859-1 de_DE.ISO8859-15 el_GR.ISO8859-7 es_ES.ISO8859-1 es_ES.ISO8859-15 et_EE.ISO8859-15 \
-fi_FI.ISO8859-1 fi_FI.ISO8859-15 fr_CH.ISO8859-1 he \
-hr_HR.ISO8859-2 hu_HU.ISO8859-2 is_IS.ISO8859-1 it_IT.ISO8859-1 it_IT.ISO8859-15 lt_LT.ISO8859-13 lv_LV.ISO8859-13 mk_MK.ISO8859-5 \
- no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk pl_PL.ISO8859-2 \
- pt_PT.ISO8859-1 pt_PT.ISO8859-15 ro_RO.ISO8859-2 ru_RU.ISO8859-5 sh_BA.ISO8859-2@bosnia sk_SK.ISO8859-2 sl_SI.ISO8859-2 \
-sq_AL.ISO8859-2 sr_YU.ISO8859-5 sv_SE.ISO8859-1 sv_SE.ISO8859-15 tr_TR.ISO8859-9
+# moved to src/locale_cldr:
+#LOCALES_CLDR = en_IE.UTF-8 en_GB.UTF-8 de_LU.UTF-8 de_AT.UTF-8 fr_LU.UTF-8 nl_BE.UTF-8 nl_NL.UTF-8 cs_CZ.UTF-8 sl_SI.UTF-8 \
+#sk_SK.UTF-8  hr_HR.UTF-8 hu_HU.UTF-8 pt_PT.UTF-8 el_GR.UTF-8 el_CY.UTF-8 ca_ES.UTF-8 en_MT.UTF-8 mt_MT.UTF-8 et_EE.UTF-8 lt_LT.UTF-8 \
+#lv_LV.UTF-8 nn_NO.UTF-8 nb_NO.UTF-8 da_DK.UTF-8 fr_CA.UTF-8 en_CA.UTF-8 es_MX.UTF-8 en_AU.UTF-8 en_NZ.UTF-8 es_CR.UTF-8 es_GT.UTF-8 es_US.UTF-8 \
+#es_NI.UTF-8 es_PA.UTF-8 es_SV.UTF-8 de_CH.UTF-8 fr_CH.UTF-8 bg_BG.UTF-8 mk_MK.UTF-8 sh_BA.UTF-8 ro_RO.UTF-8 sq_AL.UTF-8 sr_CS.UTF-8 \
+#is_IS.UTF-8 es_AR.UTF-8 es_BO.UTF-8 es_CL.UTF-8 es_CO.UTF-8 es_EC.UTF-8 es_PE.UTF-8 es_PY.UTF-8 es_UY.UTF-8 es_VE.UTF-8 \
+#cs_CZ.UTF-8@euro fr_FR.UTF-8  ar_EG.UTF-8 ar_SA.UTF-8 de_DE.UTF-8 es_ES.UTF-8 fi_FI.UTF-8 fr_BE.UTF-8 he_IL.UTF-8 it_IT.UTF-8  \
+#pl_PL.UTF-8 pt_BR.UTF-8 ru_RU.UTF-8 sv_SE.UTF-8 tr_TR.UTF-8 uk_UA.UTF-8 kk_KZ.UTF-8 ms_MY.UTF-8 id_ID.UTF-8  vi_VN.UTF-8 \
+#ka_GE.UTF-8 be_BY.UTF-8 es_US.UTF-8
+
+# moved to src/locale_cldr:
+#LOCALES_ISO = en_AU.ISO8859-1 en_CA.ISO8859-1 en_GB.ISO8859-1 en_GB.ISO8859-15 en_IE.ISO8859-1 en_IE.ISO8859-15 en_NZ.ISO8859-1 \
+#en_US.ISO8859-1 en_US.ISO8859-15 es_AR.ISO8859-1 es_BO.ISO8859-1 es_CL.ISO8859-1 es_CO.ISO8859-1 es_CR.ISO8859-1 es_EC.ISO8859-1 \
+#es_GT.ISO8859-1 es_MX.ISO8859-1 es_NI.ISO8859-1 es_PA.ISO8859-1 es_PE.ISO8859-1 es_PY.ISO8859-1 es_SV.ISO8859-1 es_UY.ISO8859-1 \
+#es_VE.ISO8859-1 fr_BE.ISO8859-1 fr_BE.ISO8859-15 fr_CA.ISO8859-1 fr_FR.ISO8859-1 fr_FR.ISO8859-15 nl_BE.ISO8859-1 nl_BE.ISO8859-15 \
+#nl_NL.ISO8859-1 nl_NL.ISO8859-15 pt_BR.ISO8859-1 \
+#ar bg_BG.ISO8859-5 ca_ES.ISO8859-1  ca_ES.ISO8859-15 cs_CZ.ISO8859-2 da_DK.ISO8859-1 da_DK.ISO8859-15 de_AT.ISO8859-1 \
+#de_AT.ISO8859-15 de_CH.ISO8859-1 de_DE.ISO8859-1 de_DE.ISO8859-15 el_GR.ISO8859-7 es_ES.ISO8859-1 es_ES.ISO8859-15 et_EE.ISO8859-15 \
+#fi_FI.ISO8859-1 fi_FI.ISO8859-15 fr_CH.ISO8859-1 he \
+#hr_HR.ISO8859-2 hu_HU.ISO8859-2 is_IS.ISO8859-1 it_IT.ISO8859-1 it_IT.ISO8859-15 lt_LT.ISO8859-13 lv_LV.ISO8859-13 mk_MK.ISO8859-5 \
+# no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk pl_PL.ISO8859-2 \
+# pt_PT.ISO8859-1 pt_PT.ISO8859-15 ro_RO.ISO8859-2 ru_RU.ISO8859-5 sh_BA.ISO8859-2@bosnia sk_SK.ISO8859-2 sl_SI.ISO8859-2 \
+#sq_AL.ISO8859-2 sr_YU.ISO8859-5 sv_SE.ISO8859-1 sv_SE.ISO8859-15 tr_TR.ISO8859-9
 
 
-LOCALES_OTHER = ja ja_JP.PCK ja_JP.eucJP ko ko@dict ru_RU.ANSI1251 ru_RU.KOI8-R th_TH zh zh_CN.GB18030 zh.GBK zh_HK.BIG5HK zh_TW zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical zh_CN.GB18030@stroke zh.GBK@pinyin zh.GBK@radical zh.GBK@stroke zh_HK.BIG5HK@pinyin zh_HK.BIG5HK@radical zh_HK.BIG5HK@stroke zh_HK.BIG5HK@zhuyin zh@pinyin zh@radical zh@stroke zh_TW.BIG5@pinyin zh_TW.BIG5@radical zh_TW.BIG5@stroke zh_TW.BIG5@zhuyin zh_TW@pinyin zh_TW@radical zh_TW@stroke zh_TW@zhuyin
+LOCALES_OTHER = ja ja_JP.PCK ja_JP.eucJP ko ko@dict ru_RU.ANSI1251 th_TH zh zh_CN.GB18030 zh.GBK zh_HK.BIG5HK zh_TW zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical zh_CN.GB18030@stroke zh.GBK@pinyin zh.GBK@radical zh.GBK@stroke zh_HK.BIG5HK@pinyin zh_HK.BIG5HK@radical zh_HK.BIG5HK@stroke zh_HK.BIG5HK@zhuyin zh@pinyin zh@radical zh@stroke zh_TW.BIG5@pinyin zh_TW.BIG5@radical zh_TW.BIG5@stroke zh_TW.BIG5@zhuyin zh_TW@pinyin zh_TW@radical zh_TW@stroke zh_TW@zhuyin
 
 COMMON_CFLAGS	= $(CCVERBOSE) -K pic -D PIC -G -I. -z defs -z text -z ignore -D_REENTRANT
 
