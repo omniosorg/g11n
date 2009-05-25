@@ -98,7 +98,7 @@ get_lp(const char *path)
         _LC_locale_t *(*fn)(void);
 
 	if ((handle = dlopen(path, RTLD_LAZY)) == NULL)
-		die("dlopen(%s)", path);
+		die2("dlopen(%s): %s", path, dlerror());
 
 	if ((fn = (_LC_locale_t *(*)(void))dlsym(handle, "instantiate")) == NULL)
 		die2("%s: not locale object");

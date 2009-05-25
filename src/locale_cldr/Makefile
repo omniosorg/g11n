@@ -209,7 +209,7 @@ download/xalan-j_2_7_1-bin.zip: download/.dir
 
 
 diffs.html: ldump tools/lcmp.pl
-	tools/lcmp.pl $(LOCALES) >$@
+	LD_LIBRARY_PATH=/usr/lib/locale/common tools/lcmp.pl $(LOCALES) >$@
 
 
 
@@ -224,4 +224,3 @@ cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3) charmap/.dir
 
 %/.dir:
 	rm -Rf $*; mkdir -p $*
-	touch $@
