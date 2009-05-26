@@ -85,6 +85,8 @@ xkb_symbols "basic" {
     key <AD03>  {	[	        e,         E		],
 			[        EuroSign 			]	};
     key <AD06>  {       [               z,         Z            ]       };
+    key <AD10>  {       [               p,         P            ],
+                        [      apostrophe   			]	};
     key <AD11>  {	[	   uacute,               slash	],
 			[        division		        ]	};
     key <AD12>  {	[      adiaeresis,           parenleft	],

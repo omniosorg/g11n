@@ -106,7 +106,8 @@ xkb_symbols "defaults_common" {
     key <MUTE> { [  SunAudioMute,	SunVideoDegauss		]	};
     key <VOL-> { [  SunAudioLowerVolume,SunVideoLowerBrightness ]	};
     key <VOL+> { [  SunAudioRaiseVolume,SunVideoRaiseBrightness	]	};
-    key <POWR> { [  SunPowerSwitch,	SunPowerSwitchShift	]	};
+//    key <POWR> { [  SunPowerSwitch,	SunPowerSwitchShift	]	};
+    key <POWR> { [  XF86Sleep,		XF86Hibernate		]	};
 
     key <LALT> { [ Alt_L                ]                       };
 //    key <RALT> { [ Mode_switch          ]                       };
