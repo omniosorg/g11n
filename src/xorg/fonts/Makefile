@@ -24,7 +24,7 @@
 # Use is subject to license terms.
 #
 
-SUBDIRS = arabeyes
+SUBDIRS = arabeyes arphic
 
 all:=		TARGET= all
 install :=	TARGET= install
