@@ -24,7 +24,7 @@
 # Use is subject to license terms.
 #
 
-SUBDIRS = arabeyes arphic wqy-zenhei
+SUBDIRS = arabeyes arphic wqy-zenhei unfonts-core unfonts-extra
 
 all:=		TARGET= all
 install :=	TARGET= install
