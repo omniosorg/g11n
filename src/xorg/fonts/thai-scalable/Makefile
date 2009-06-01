@@ -24,21 +24,42 @@
 # Use is subject to license terms.
 #
 
-SUBDIRS = arabeyes arphic wqy-zenhei unfonts-core unfonts-extra \
-		  thai-scalable indic-fonts-core
+include $(SRC)/Makefile.master
+
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/thai-scalable
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/thai-scalable
+
+FONT_TAR	= thai-scalable.tar.bz2
+FONT_DOC_TAR	= thai-scalable-doc.tar.bz2
+FONT_SCALE	= fonts.scale.thai-scalable 
+FONT_DIR	= fonts.dir.thai-scalable
+
+SUBDIRS         = 
 
 all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
+install:=	TARGET= install
+clean:=		TARGET= clean
+clobber:=	TARGET= clobber
+lint:=		TARGET= lint
 
+.KEEP_STATE:
 
-all install clean: $(SUBDIRS)
+all: $(FONT_TAR)
+
+font_install:
+	mkdir -p $(ROOT_FONT_DIR) $(ROOT_DOC_DIR)
+	bzip2 -d -c $(FONT_TAR) | (cd $(ROOT_FONT_DIR) ; tar xpf -)
+	bzip2 -d -c $(FONT_DOC_TAR) | (cd $(ROOT_DOC_DIR) ; tar xpf -)
+	cp $(FONT_DIR) $(ROOT_FONT_DIR)/fonts.dir
+	cp $(FONT_SCALE) $(ROOT_FONT_DIR)/fonts.scale
+
+install: all $(SUBDIRS) font_install
+
+clean:
+
+clobber: clean
 
 $(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
-
-tarball:
+	-@cd $@; pwd; $(MAKE) $(TARGET)
 
 FRC:
-

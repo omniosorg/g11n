@@ -1,0 +1,92 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none X11 0755 root bin
+d none X11/lib 0755 root bin
+d none X11/lib/X11 0755 root bin
+d none X11/lib/X11/fonts 0755 root bin
+d none X11/lib/X11/fonts/TrueType 0755 root bin
+d none X11/lib/X11/fonts/TrueType/thai-scalable 0755 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/fonts.dir 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/fonts.scale 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Garuda.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Garuda-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Garuda-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Garuda-BoldOblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Kinnari.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Kinnari-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Kinnari-Italic.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Kinnari-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Kinnari-BoldOblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Kinnari-BoldItalic.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Loma.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Loma-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Loma-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Loma-BoldOblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Norasi.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Norasi-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Norasi-Italic.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Norasi-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Norasi-BoldOblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Norasi-BoldItalic.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Purisa.ttf 0644 root bin
+
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Sawasdee.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/SawasdeeOblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/SawasdeeBold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/SawasdeeBoldOblique.ttf 0644 root bin
+
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgMono.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgMono-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgMono-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgMono-BoldOblique.ttf 0644 root bin
+
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgTypewriter.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgTypewriter-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgTypewriter-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgTypewriter-BoldOblique.ttf 0644 root bin
+
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgTypist.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgTypist-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgTypist-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/TlwgTypist-BoldOblique.ttf 0644 root bin
+
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Umpush.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Umpush-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Umpush-Light.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Umpush-LightOblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Umpush-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Umpush-BoldOblique.ttf 0644 root bin
+
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Waree.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Waree-Oblique.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Waree-Bold.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/thai-scalable/Waree-BoldOblique.ttf 0644 root bin
+
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/thai-scalable 0755 root bin
+f none share/doc/thai-scalable/COPYING 0644 root bin
+f none share/doc/thai-scalable/GPL 0644 root bin
