@@ -24,7 +24,7 @@
 # Use is subject to license terms.
 #
 
-SUBDIRS = arabeyes arphic
+SUBDIRS = arabeyes arphic wqy-zenhei
 
 all:=		TARGET= all
 install :=	TARGET= install
