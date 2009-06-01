@@ -25,7 +25,7 @@
 #
 
 SUBDIRS = arabeyes arphic wqy-zenhei unfonts-core unfonts-extra \
-		  thai-scalable indic-fonts-core
+		  thai-scalable indic-fonts-core ipafont
 
 all:=		TARGET= all
 install :=	TARGET= install
