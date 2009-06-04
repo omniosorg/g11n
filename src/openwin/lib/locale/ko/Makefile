@@ -38,7 +38,6 @@ TARGETDIR = $(FILEROOT)/usr/openwin/lib/locale/$(LOCALE)
 
 TARGETDIRS = $(TARGETDIR)
 
-SUBDIRS = X11/fonts/TrueType
 
 all:=		TARGET= all
 install :=	TARGET= install
@@ -50,9 +49,9 @@ all: $(TARGETDIRS)
 
 include $(SRC)/src/Makefile.targ
 
-install: all $(FILES.obj) $(SUBDIRS)
+install: all $(FILES.obj) 
 
-clean: objclean $(SUBDIRS)
+clean: objclean
 	$(RM) -r $(TARGETDIR)
 
 FRC:
