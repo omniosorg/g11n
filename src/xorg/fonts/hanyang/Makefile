@@ -28,7 +28,7 @@
 
 include $(SRC)/Makefile.master
 
-TARGETFONTDIR =$(FILEROOT)/usr/X11/lib/X11/fonts/TrueType/hanyang
+TARGETFONTDIR =$(FILEROOT)/X11/lib/X11/fonts/TrueType/hanyang
 
 
 FILES = h2drrm.ttf \
