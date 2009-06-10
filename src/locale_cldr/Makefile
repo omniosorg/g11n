@@ -60,6 +60,8 @@ all: $(LOCALES:%=locale/%.so.3 locale64/%.so.3)
 
 doc: diffs.html $(LOCALES:%=collation_test/%.diff)
 
+posix: $(LOCALES:%=posix/%.src)
+
 install: all
 	for l in $(LOCALES); do \
 		$(INSDIR) $(FILEROOT)/usr/lib/locale/$$l/$(MACH64); \
@@ -95,7 +97,7 @@ LOCALE_SH	= cat "spec/$*"| grep -v '^\#' | grep -v '^[ \t]*$$' |head -n 1
 CTYPE_SH	= echo "$(LOCALE_SH:sh)" | perl -e '$$_ = <STDIN>; print $$1 if /.*copy_ctype=([^,]*).*/'
 
 posix/%.src:  $(JARS) cldr_core/.src posix/.dir dtd_cache/.dir spec/%
-	[ -z "$(CTYPE_SH:sh)" ] || $(MAKE) $(CTYPE_SH:sh)
+	[ -z "$(CTYPE_SH:sh)" -o -f "$(CTYPE_SH:sh)" ] || $(MAKE) $(CTYPE_SH:sh)
 	$(GENERATE_POSIX) -c $(CHARMAP_SH:sh) -m $(LOCALE_SH:sh)
 	$(MV) "posix/$(LOCALE_SH:sh).$(CHARMAP_SH:sh).src" "$@"
 
@@ -152,11 +154,11 @@ jars/xalan.jar: xalan/.unpack jars/.dir
 jars/xml-apis.jar: xalan/.unpack jars/.dir
 	cp xalan/xalan-j_2_7_1/xml-apis.jar $@
 
-jars/icu4j.jar: cldr_tools/.src jars/.dir
-	cp cldr_tools/icu4j-3_8_1.jar $@
+#jars/icu4j.jar: cldr_tools/.src jars/.dir
+#	cp cldr_tools/icu4j-3_8_1.jar $@
 
-#jars/icu4j.jar: download/icu4j-4_0.jar jars/.dir
-#	cp download/icu4j-4_0.jar $@
+jars/icu4j.jar: download/icu4j-4_0.jar jars/.dir
+	cp download/icu4j-4_0.jar $@
 
 
 
