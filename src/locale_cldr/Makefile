@@ -154,11 +154,8 @@ jars/xalan.jar: xalan/.unpack jars/.dir
 jars/xml-apis.jar: xalan/.unpack jars/.dir
 	cp xalan/xalan-j_2_7_1/xml-apis.jar $@
 
-#jars/icu4j.jar: cldr_tools/.src jars/.dir
-#	cp cldr_tools/icu4j-3_8_1.jar $@
-
-jars/icu4j.jar: download/icu4j-4_0.jar jars/.dir
-	cp download/icu4j-4_0.jar $@
+jars/icu4j.jar: download/icu4j-4_2.jar jars/.dir
+	cp download/icu4j-4_2.jar $@
 
 
 
@@ -190,8 +187,8 @@ cldr_core/.src: cldr_core/.unpack
 
 
 
-download/icu4j-4_0.jar: download/.dir
-	$(WGET) -q -O $@ http://download.icu-project.org/files/icu4j/4.0/icu4j-4_0.jar
+download/icu4j-4_2.jar: download/.dir
+	$(WGET) -q -O $@ http://download.icu-project.org/files/icu4j/4.2/icu4j-4_2.jar
 	touch $@
 
 download/cldr_tools.zip: download/.dir
