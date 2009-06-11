@@ -94,7 +94,8 @@ main(int argc, char* argv[])
 			break;
 
 	for (i = 0; i < cm->len; i++)
-		printf("%s\t0x%02X\t%s\n", cm->chars[i].native, (unsigned int)cm->chars[i].wc, cm->chars[i].name);
+		if ((unsigned int)cm->chars[i].wc)
+			printf("%s\t0x%02X\t%s\n", cm->chars[i].native, (unsigned int)cm->chars[i].wc, cm->chars[i].name);
 
 	return 0;
 }

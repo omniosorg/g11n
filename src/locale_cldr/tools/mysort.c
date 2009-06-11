@@ -37,7 +37,30 @@
 static int
 cmp(const void *p1, const void *p2)
 {
-	return strcoll(*(char*const*)p1, *(char*const*)p2);
+	char *a = * (char * const *) p1;
+	char *b = * (char * const *) p2;
+
+#ifdef FIRST_COLUMN_ONLY
+	char *aa = strstr(a, "\t0");
+	char *bb = strstr(b, "\t0");
+
+	
+	if (aa && bb) {
+		int ret;
+	
+		*aa = '\0';
+		*bb = '\0';
+		
+		ret = strcoll(a,b);
+
+		*aa = '\t';
+		*bb = '\t';
+
+		return ret;
+	}
+#endif
+
+	return strcoll(a,b);
 }
 
 

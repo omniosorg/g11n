@@ -69,7 +69,7 @@ install: all
 		cp locale64/$$l.so.3 $(FILEROOT)/usr/lib/locale/$$l/$(MACH64); \
 	done
 
-DIRS = charmap cldr_tools cldr_core locale locale64 posix xalan jars extension
+DIRS = charmap cldr_tools cldr_core locale locale64 posix xalan jars extension collation_test
 
 clean:
 	rm -Rf $(DIRS)
@@ -122,7 +122,7 @@ extension/%.x:
 
 # Solaris does not support Unicode 5.1 yet so GENERATE_POSIX needs more params for the UTF-8 locales
 charmap/src/UTF-8.cm: $(JARS) charmap/src/.dir
-	$(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap/src -c UTF-8 -u '[[\u0000-\U0010FFFF]-[[:Phoenician:][:Kharoshthi:][:Cuneiform:][\U0001D200-\U0001D24F]]]'
+	$(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap/src -c UTF-8 -u '[[\u0000-\U0010FFFF]-[[:Phoenician:][:Kharoshthi:][:Cuneiform:][\U0001D200-\U0001D24F][:Lycian:][:Carian:][:Lydian:][\U0001F000-\U0001F02F][\U0001F030-\U0001F09F]]]'
 
 charmap/src/%.cm: $(JARS) charmap/src/.dir
 	$(JAVA_ROOT)/bin/java $(JAVA_FLAGS) -cp $(JAVA_CP_SH:sh) org.unicode.cldr.posix.GenerateCharmap -d charmap/src -c $(CHARMAP_SH:sh)
@@ -209,13 +209,13 @@ diffs.html: ldump tools/lcmp.pl
 	LD_LIBRARY_PATH=/usr/lib/locale/common tools/lcmp.pl $(LOCALES) >$@
 
 collation_test/%.diff: collation_test/%.orig collation_test/%.new
-	-diff -uN collation_test/$*.orig collation_test/$*.new > $@
+	-diff collation_test/$*.orig collation_test/$*.new > $@
 
 collation_test/%.orig: cmprint mysort collation_test/.dir
 	./cmprint $(CHARMAP_SH:sh) | (LC_ALL=$* ./mysort /) | iconv -f $(CHARMAP_SH:sh) -t utf-8 > $@
 
 collation_test/%.new: cmprint mysort collation_test/.%.locale collation_test/.dir
-	./cmprint $(CHARMAP_SH:sh) | (LC_ALL=$* ./mysort `pwd`/collation_test/) | iconv -f $(CHARMAP_SH:sh) -t utf-8 > $@
+	./cmprint $(CHARMAP_SH:sh) | (LC_ALL=$* LD_LIBRARY_PATH=/usr/lib/locale/common ./mysort `pwd`/collation_test/) | iconv -f $(CHARMAP_SH:sh) -t utf-8 > $@
 
 collation_test/.%.locale: collation_test/.%.locale32 collation_test/.%.locale64
 	touch $@
@@ -224,10 +224,9 @@ collation_test/.%.locale32: locale/%.so.3 collation_test/usr/lib/locale/%/.dir
 	ln -s ../../../../../locale/$*.so.3 collation_test/usr/lib/locale/$*/
 	touch $@
 
-collation_test/.%.locale64: locale64/%.so.3 collation_test/usr/lib/locale/$(MACH64)/%/.dir
-	ln -s ../../../../../../locale64/$*.so.3 collation_test/usr/lib/locale/$(MACH64)/$*/
+collation_test/.%.locale64: locale64/%.so.3 collation_test/usr/lib/locale/%/$(MACH64)/.dir
+	ln -s ../../../../../../locale64/$*.so.3 collation_test/usr/lib/locale/$*/$(MACH64)/
 	touch $@
-
 
 # tools
 ldump: tools/ldump.c cmap.dat
@@ -237,7 +236,7 @@ cmprint: tools/cmprint.c cmap.dat
 	$(CC) -I . -o cmprint tools/cmprint.c
 
 mysort: tools/mysort.c
-	$(CC) -o mysort tools/mysort.c
+	$(CC) -DFIRST_COLUMN_ONLY -xO2 -o mysort tools/mysort.c
 
 cmap.dat: tools/cmap.pl $(LOCALES:%=locale/%.so.3) charmap/.dir
 	tools/cmap.pl `find charmap/src/ -type f -name '*.cm'` > $@
