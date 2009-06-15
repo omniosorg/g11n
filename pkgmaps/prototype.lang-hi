@@ -77,7 +77,3 @@ d none usr/lib/locale/te_IN.UTF-8/LC_NUMERIC 0755 root bin
 d none usr/lib/locale/te_IN.UTF-8/LC_TIME 0755 root bin
 d none usr/lib/locale/te_IN.UTF-8/LO_LTYPE 0755 root bin
 s none usr/lib/locale/te_IN.UTF-8/LO_LTYPE/te_IN.UTF-8.layout.so.1=../../common/LO_LTYPE/umle.layout.so.1
-
-d none usr/lib/lp 0755 root lp
-d none usr/lib/lp/locale 0755 root lp
-s none usr/lib/lp/locale/hi_IN.UTF-8=./en_US.UTF-8
