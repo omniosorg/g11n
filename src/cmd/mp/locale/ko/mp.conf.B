@@ -18,43 +18,30 @@
 #
 # CDDL HEADER END
 #
+#
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
+#ident	"@(#)mp.conf	1.26	09/06/06 SMI"
+#
+# Korean(EUC) font preferred version.
 #
 
-SUBDIRS = \
-	C \
-	ar \
-	he \
-	ja_JP.PCK \
-	ja_JP.UTF-8 \
-	ja_JP.eucJP \
-	ru_RU.ANSI1251 \
-        ko \
-        ko.UTF-8 \
-        th_TH \
-        zh \
-        zh.GBK \
-        zh.UTF-8 \
-        zh_CN.GB18030 \
-        zh_HK.BIG5HK \
-        zh_HK.UTF-8 \
-        zh_TW \
-        zh_TW.BIG5 \
-        zh_TW.UTF-8
+FontNameAlias	iso88591R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
+FontGroup	iso88591	TrueType	iso88591R 
 
-all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
+FontNameAlias	johap92R_WC	PCF	/usr/openwin/lib/locale/ko/X11/fonts/75dpi/gothic20.pcf.Z
+FontGroup	johap92_WC	PCF	johap92R_WC
 
 
-all install clean: $(SUBDIRS)
+#
+#
+#
+MapCode2Font	0x0000 0x00FF	iso88591
+MapCode2Font	0x30000020 0x3000ffff	johap92_WC
 
-$(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
-
-FRC:
-
+#
+#
+#
+CnvCode2Font iso88591R _xu2unicode /usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so
+CnvCode2Font johap92R_WC _xwc2euc /usr/lib/lp/locale/en_US.UTF-8/mp/xwceuc.so

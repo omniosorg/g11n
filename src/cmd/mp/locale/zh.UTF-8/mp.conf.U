@@ -1,0 +1,539 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+#
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+#ident	"@(#)mp.conf	1.26	09/06/06 SMI"
+#
+# Simplified Chinese font preferred version.
+#
+# mapfont entries have to be specified before MapCode2Font and cnvucs2 entries.
+#
+FontNameAlias	iso88591R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
+FontGroup	iso88591	TrueType	iso88591R
+
+FontNameAlias	iso88592R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
+FontGroup	iso88592	TrueType	iso88592R
+
+FontNameAlias	iso88594R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
+FontGroup	iso88594	TrueType	iso88594R
+
+FontNameAlias	iso88595R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
+FontGroup	iso88595	TrueType	iso88595R
+
+FontNameAlias	iso88597R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
+FontGroup	iso88597	TrueType	iso88597R
+
+FontNameAlias	iso88599R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
+FontGroup	iso88599	TrueType	iso88599R
+
+FontNameAlias	jisx0201R	TrueType	/usr/X11/lib/X11/fonts/TrueType/ipafont/ipam.ttf
+FontGroup	jisx0201	TrueType	jisx0201R
+
+FontNameAlias	jisx0208R	TrueType	/usr/X11/lib/X11/fonts/TrueType/ipafont/ipam.ttf
+FontGroup	jisx0208	TrueType	jisx0208R
+
+FontNameAlias	johap92R	PCF	/usr/openwin/lib/locale/ko.UTF-8/X11/fonts/75dpi/rgothic24.pcf.Z
+FontGroup	johap92	PCF johap92R
+
+FontNameAlias	big5R	PCF	/usr/openwin/lib/locale/zh_TW.BIG5/X11/fonts/75dpi/Ming-Light-big5-24.pcf.Z
+FontGroup	big5	PCF big5R
+
+FontNameAlias	gbkR	TrueType	/usr/X11/lib/X11/fonts/TrueType/arphic/uming.ttf
+FontGroup	gbk	TrueType gbkR
+
+FontNameAlias	gbkU	PCF	$UDC_BASE/fonts/UDC/Bitmaps/UDC20.pcf
+FontGroup	gbku	PCF gbkU
+
+FontNameAlias	fallbackR	PCF	/usr/openwin/lib/locale/en_US.UTF-8/X11/fonts/misc/splmt24.pcf.Z
+FontGroup	fallback	PCF fallbackR
+
+FontNameAlias	tt_ctlarabicR	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSans.ttf
+FontGroup	tt_ctlarabic	TrueType	tt_ctlarabicR
+
+FontNameAlias	tt_ctlhebrewR	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSans.ttf
+FontGroup	tt_ctlhebrew	TrueType	tt_ctlhebrewR
+
+FontNameAlias	tt_ctlthaiR	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSans.ttf
+FontGroup	tt_ctlthai	TrueType	tt_ctlthaiR
+
+FontNameAlias	tt_thaiR	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSans.ttf
+FontGroup	tt_thai	TrueType	tt_thaiR
+
+FontNameAlias	tt_ctlhindiR	TrueType	/usr/X11/lib/X11/fonts/TrueType/indic-fonts-core/lohit_hi.ttf
+FontGroup	tt_ctlhindi	TrueType	tt_ctlhindiR
+
+FontNameAlias	tt_hindiR	TrueType	/usr/X11/lib/X11/fonts/TrueType/indic-fonts-core/lohit_hi.ttf
+FontGroup	tt_hindi	TrueType	tt_hindiR
+
+#
+
+#
+#
+#
+MapCode2Font	0x00000000 0x000000A3	iso88591
+MapCode2Font	0x000000A4 -	gbk
+MapCode2Font	0x000000A5 0x000000A6	iso88591
+MapCode2Font	0x000000A7 0x000000A8	gbk
+MapCode2Font	0x000000A9 0x000000AF	iso88591
+MapCode2Font	0x000000B0 0x000000B1	gbk
+MapCode2Font	0x000000B2 0x000000D6	iso88591
+MapCode2Font	0x000000D7 -	gbk
+MapCode2Font	0x000000D8 0x000000DF	iso88591
+MapCode2Font	0x000000E0 0x000000E1	gbk
+MapCode2Font	0x000000E2 0x000000E7	iso88591
+MapCode2Font	0x000000E8 0x000000EA	gbk
+MapCode2Font	0x000000EB -	iso88591
+MapCode2Font	0x000000EC 0x000000ED	gbk
+MapCode2Font	0x000000EF 0x000000F1	iso88591
+MapCode2Font	0x000000F2 0x000000F3	gbk
+MapCode2Font	0x000000F4 0x000000F6	iso88591
+MapCode2Font	0x000000F7 -	gbk
+MapCode2Font	0x000000F8 -	iso88591
+MapCode2Font	0x000000F9 0x000000FA	gbk
+MapCode2Font	0x000000FB -	iso88591
+MapCode2Font	0x000000FC -	gbk
+MapCode2Font	0x000000FD 0x000000FF	iso88591
+
+MapCode2Font	0x00000100 -	iso88594
+MapCode2Font	0x00000101 -	gbk
+MapCode2Font	0x00000102 0x00000107	iso88592
+MapCode2Font 0x00000108 0x0000010B	fallback
+MapCode2Font	0x0000010C 0x00000111	iso88592
+MapCode2Font 0x00000112 -	fallback
+MapCode2Font	0x00000113 -	gbk
+MapCode2Font 0x00000114 0x00000117	fallback
+MapCode2Font	0x00000118 0x0000011A	iso88592
+MapCode2Font	0x0000011B -	gbk
+MapCode2Font 0x0000011C 0x0000011D	fallback
+MapCode2Font	0x0000011E 0x0000011F	iso88599
+MapCode2Font 0x00000120 0x00000125	fallback
+MapCode2Font	0x00000126 0x00000127	johap92
+MapCode2Font 0x00000128 0x0000012A	fallback
+MapCode2Font	0x0000012B -	gbk
+MapCode2Font 0x0000012C 0x0000012F	fallback
+MapCode2Font	0x00000130 0x00000131	iso88599
+MapCode2Font	0x00000132 0x00000133	johap92
+MapCode2Font 0x00000134 0x00000137	fallback
+MapCode2Font	0x00000138 -	johap92
+MapCode2Font	0x00000139 0x0000013A	iso88592
+MapCode2Font 0x0000013B 0x0000013C	fallback
+MapCode2Font	0x0000013D 0x0000013E	iso88592
+MapCode2Font	0x0000013F 0x00000140	johap92
+MapCode2Font	0x00000141 0x00000144	iso88592
+MapCode2Font 0x00000145 0x00000146	fallback
+MapCode2Font	0x00000147 0x00000148	iso88592
+MapCode2Font	0x00000149 0x0000014B	johap92
+MapCode2Font	0x0000014C -	iso88594
+MapCode2Font	0x0000014D -	gbk
+MapCode2Font 0x0000014E 0x0000014F	fallback
+MapCode2Font	0x00000150 0x00000151	iso88592
+MapCode2Font	0x00000152 0x00000153	johap92
+MapCode2Font	0x00000154 0x00000155	iso88592
+MapCode2Font 0x00000156 0x00000157	fallback
+MapCode2Font	0x00000158 0x0000015B	iso88592
+MapCode2Font 0x0000015C 0x0000015D	fallback
+MapCode2Font	0x0000015E 0x00000165	iso88592
+MapCode2Font	0x00000166 0x00000167	johap92
+MapCode2Font 0x00000168 0x0000016A	fallback
+MapCode2Font	0x0000016B -	gbk
+MapCode2Font 0x0000016C 0x0000016D	fallback
+MapCode2Font	0x0000016E 0x00000171	iso88592
+MapCode2Font 0x00000172 0x00000178	fallback
+MapCode2Font	0x00000179 0x0000017E	iso88592
+MapCode2Font 0x0000017F 0x000001CD	fallback
+MapCode2Font	0x000001CE -	gbk
+MapCode2Font 0x000001CF -	fallback
+MapCode2Font	0x000001D0 -	gbk
+MapCode2Font 0x000001D1 -	fallback
+MapCode2Font	0x000001D2 -	gbk
+MapCode2Font 0x000001D3 -	fallback
+MapCode2Font	0x000001D4 -	gbk
+MapCode2Font 0x000001D5 -	fallback
+MapCode2Font	0x000001D6 -	gbk
+MapCode2Font 0x000001D7 -	fallback
+MapCode2Font	0x000001D8 -	gbk
+MapCode2Font 0x000001D9 -	fallback
+MapCode2Font	0x000001DA -	gbk
+MapCode2Font 0x000001DB -	fallback
+MapCode2Font	0x000001DC -	gbk
+MapCode2Font 0x000001DD 0x000002BB	fallback
+MapCode2Font	0x000002BC 0x000002BD	iso88597
+MapCode2Font 0x000002BE 0x000002C6	fallback
+MapCode2Font	0x000002C7 -	gbk
+MapCode2Font 0x000002C8 -	fallback
+MapCode2Font	0x000002C9 0x000002CB	gbk
+MapCode2Font 0x000002CC 0x000002D7	fallback
+MapCode2Font	0x000002D8 0x000002D9	iso88592
+MapCode2Font	0x000002DA -	johap92
+MapCode2Font	0x000002DB -	iso88592
+MapCode2Font	0x000002DC -	johap92
+MapCode2Font	0x000002DD -	iso88592
+MapCode2Font 0x000002DE 0x00000383	fallback
+MapCode2Font	0x00000384 0x00000386	iso88597
+MapCode2Font 0x00000387 -	fallback
+MapCode2Font	0x00000388 0x0000038A	iso88597
+MapCode2Font 0x0000038B -	fallback
+MapCode2Font	0x0000038C -	iso88597
+MapCode2Font 0x0000038D -	fallback
+MapCode2Font	0x0000038E 0x00000390	iso88597
+MapCode2Font	0x00000391 0x000003A1	gbk
+MapCode2Font 0x000003A2 -	fallback
+MapCode2Font	0x000003A3 0x000003A9	gbk
+MapCode2Font	0x000003AA 0x000003B0	iso88597
+MapCode2Font	0x000003B1 0x000003C1	gbk
+MapCode2Font	0x000003C2 -	iso88597
+MapCode2Font	0x000003C3 0x000003C9	gbk
+MapCode2Font	0x000003CA 0x000003CE	iso88597
+MapCode2Font 0x000003CF 0x00000400	fallback
+MapCode2Font	0x00000401 -	gbk
+MapCode2Font	0x00000402 0x0000040C	iso88595
+MapCode2Font 0x0000040D -	fallback
+MapCode2Font	0x0000040E 0x0000040F	iso88595
+MapCode2Font	0x00000410 0x0000044F	gbk
+MapCode2Font 0x00000450 -	fallback
+MapCode2Font	0x00000451 -	gbk
+MapCode2Font	0x00000452 0x0000045C	iso88595
+MapCode2Font 0x0000045D -	fallback
+MapCode2Font	0x0000045E 0x0000045F	iso88595
+MapCode2Font	0x00000460	0x0000058F	fallback
+#MapCode2Font	0x00000590	0x000005F5	tt_hebrew
+MapCode2Font	0x000005F6	0x000005FF	fallback
+#MapCode2Font	0x00000600	0x000006F9	tt_arabic
+MapCode2Font	0x000006FA	0x000008FF	fallback
+MapCode2Font	0x00000900	0x00000D6F	tt_hindi
+MapCode2Font	0x00000D70	0x00000DFF	fallback
+MapCode2Font	0x00000E00	0x00000E5B	tt_thai
+MapCode2Font	0x00000E5C	0x0000200F	fallback
+MapCode2Font	0x00002010 -	jisx0208
+MapCode2Font 0x00002011 0x00002012	fallback
+MapCode2Font	0x00002013 0x00002016	gbk
+MapCode2Font 0x00002017 -	fallback
+MapCode2Font	0x00002018 0x00002019	gbk
+MapCode2Font 0x0000201A 0x0000201B	fallback
+MapCode2Font	0x0000201C 0x0000201D	gbk
+MapCode2Font 0x0000201E 0x0000201F	fallback
+MapCode2Font	0x00002020 0x00002021	jisx0208
+MapCode2Font	0x00002022 -	big5
+MapCode2Font 0x00002023 0x00002024	fallback
+MapCode2Font	0x00002025 0x00002026	gbk
+MapCode2Font 0x00002027 0x0000202F	fallback
+MapCode2Font	0x00002030 -	gbk
+MapCode2Font 0x00002031 -	fallback
+MapCode2Font	0x00002032 0x00002033	gbk
+MapCode2Font 0x00002034 -	fallback
+MapCode2Font	0x00002035 -	gbk
+MapCode2Font 0x00002036 0x0000203A	fallback
+MapCode2Font	0x0000203B -	gbk
+MapCode2Font 0x0000203C 0x0000203D	fallback
+MapCode2Font	0x0000203E -	big5
+MapCode2Font 0x0000203F 0x00002073	fallback
+MapCode2Font	0x00002074 -	johap92
+MapCode2Font 0x00002075 0x0000207E	fallback
+MapCode2Font	0x0000207F -	johap92
+MapCode2Font 0x00002080 -	fallback
+MapCode2Font	0x00002081 0x00002084	johap92
+MapCode2Font 0x00002085 0x00002102	fallback
+MapCode2Font	0x00002103 -	gbk
+MapCode2Font 0x00002104 -	fallback
+MapCode2Font	0x00002105 -	gbk
+MapCode2Font 0x00002106 0x00002108	fallback
+MapCode2Font	0x00002109 -	gbk
+MapCode2Font 0x0000210A 0x00002112	fallback
+MapCode2Font	0x00002113 -	johap92
+MapCode2Font 0x00002114 0x00002115	fallback
+MapCode2Font	0x00002116 -	gbk
+MapCode2Font 0x00002117 0x00002120	fallback
+MapCode2Font	0x00002121 -	jisx0208
+MapCode2Font	0x00002122 -	johap92
+MapCode2Font 0x00002123 0x00002125	fallback
+MapCode2Font	0x00002126 -	johap92
+MapCode2Font 0x00002127 0x0000212A	fallback
+MapCode2Font	0x0000212B -	jisx0208
+MapCode2Font 0x0000212C 0x00002152	fallback
+MapCode2Font	0x00002153 0x00002154	johap92
+MapCode2Font 0x00002155 0x0000215A	fallback
+MapCode2Font	0x0000215B 0x0000215E	johap92
+MapCode2Font 0x0000215F -	fallback
+MapCode2Font	0x00002160 0x0000216B	gbk
+MapCode2Font 0x0000216C 0x0000216F	fallback
+MapCode2Font	0x00002170 0x00002179	johap92
+MapCode2Font 0x0000217A 0x0000218F	fallback
+MapCode2Font	0x00002190 0x00002193	gbk
+MapCode2Font	0x00002194 0x00002195	johap92
+MapCode2Font	0x00002196 0x00002199	gbk
+MapCode2Font 0x0000219A 0x000021D1	fallback
+MapCode2Font	0x000021D2 -	jisx0208
+MapCode2Font 0x000021D3 -	fallback
+MapCode2Font	0x000021D4 -	jisx0208
+MapCode2Font 0x000021D5 0x000021FF	fallback
+MapCode2Font	0x00002200 -	jisx0208
+MapCode2Font 0x00002201 -	fallback
+MapCode2Font	0x00002202 0x00002203	jisx0208
+MapCode2Font 0x00002204 0x00002206	fallback
+MapCode2Font	0x00002207 -	jisx0208
+MapCode2Font	0x00002208 -	gbk
+MapCode2Font 0x00002209 0x0000220A	fallback
+MapCode2Font	0x0000220B -	jisx0208
+MapCode2Font 0x0000220C 0x0000220E	fallback
+MapCode2Font	0x0000220F -	gbk
+MapCode2Font 0x00002210 -	fallback
+MapCode2Font	0x00002211 -	gbk
+MapCode2Font	0x00002212 -	jisx0208
+MapCode2Font 0x00002213 0x00002219	fallback
+MapCode2Font	0x0000221A -	gbk
+MapCode2Font 0x0000221B 0x0000221C	fallback
+MapCode2Font	0x0000221D 0x00002220	gbk
+MapCode2Font 0x00002221 0x00002222	fallback
+MapCode2Font	0x00002223 -	gbk
+MapCode2Font 0x00002224 -	fallback
+MapCode2Font	0x00002225 -	gbk
+MapCode2Font 0x00002226 -	fallback
+MapCode2Font	0x00002227 0x0000222B	gbk
+MapCode2Font	0x0000222C -	jisx0208
+MapCode2Font 0x0000222D -	fallback
+MapCode2Font	0x0000222E -	gbk
+MapCode2Font 0x0000222F 0x00002233	fallback
+MapCode2Font	0x00002234 0x00002237	gbk
+MapCode2Font 0x00002238 0x0000223B	fallback
+MapCode2Font	0x0000223C -	big5
+MapCode2Font	0x0000223D -	gbk
+MapCode2Font 0x0000223E 0x00002247	fallback
+MapCode2Font	0x00002248 -	gbk
+MapCode2Font 0x00002249 0x0000224B	fallback
+MapCode2Font	0x0000224C -	gbk
+MapCode2Font 0x0000224D 0x00002251	fallback
+MapCode2Font	0x00002252 -	gbk
+MapCode2Font 0x00002253 0x0000225F	fallback
+MapCode2Font	0x00002260 0x00002261	gbk
+MapCode2Font 0x00002262 0x00002263	fallback
+MapCode2Font	0x00002264 0x00002267	gbk
+MapCode2Font 0x00002268 0x00002269	fallback
+MapCode2Font	0x0000226A 0x0000226B	jisx0208
+MapCode2Font 0x0000226C 0x0000226D	fallback
+MapCode2Font	0x0000226E 0x0000226F	gbk
+MapCode2Font 0x00002270 0x00002281	fallback
+MapCode2Font	0x00002282 0x00002283	jisx0208
+MapCode2Font 0x00002284 0x00002285	fallback
+MapCode2Font	0x00002286 0x00002287	jisx0208
+MapCode2Font 0x00002288 0x00002298	fallback
+MapCode2Font	0x00002299 -	gbk
+MapCode2Font 0x0000229A 0x000022A4	fallback
+MapCode2Font	0x000022A5 -	gbk
+MapCode2Font 0x000022A6 0x000022BE	fallback
+MapCode2Font	0x000022BF -	gbk
+MapCode2Font 0x000022C0 0x00002311	fallback
+MapCode2Font	0x00002312 -	gbk
+MapCode2Font 0x00002313 0x0000245F	fallback
+MapCode2Font	0x00002460 0x00002469	gbk
+MapCode2Font	0x0000246A 0x00002473	jisx0208
+MapCode2Font	0x00002474 0x0000249B	gbk
+MapCode2Font	0x0000249C 0x000024B5	johap92
+MapCode2Font 0x000024B6 0x000024CF	fallback
+MapCode2Font	0x000024D0 0x000024E9	johap92
+MapCode2Font 0x000024EA 0x000024FF	fallback
+MapCode2Font	0x00002500 0x0000254B	gbk
+MapCode2Font 0x0000254C 0x0000254F	fallback
+MapCode2Font	0x00002550 0x00002573	gbk
+MapCode2Font 0x00002574 0x00002580	fallback
+MapCode2Font	0x00002581 0x0000258F	gbk
+MapCode2Font 0x00002590 0x00002591	fallback
+MapCode2Font	0x00002592 -	johap92
+MapCode2Font 0x00002593 0x00002595	gbk
+MapCode2Font 0x00002596 0x0000259F	fallback
+MapCode2Font	0x000025A0 0x000025A1	gbk
+MapCode2Font 0x000025A2 -	fallback
+MapCode2Font	0x000025A3 0x000025A9	johap92
+MapCode2Font 0x000025AA 0x000025B1	fallback
+MapCode2Font	0x000025B2 0x000025B3	gbk
+MapCode2Font 0x000025B4 0x000025B5	fallback
+MapCode2Font	0x000025B6 0x000025B7	johap92
+MapCode2Font 0x000025B8 0x000025BB	fallback
+MapCode2Font	0x000025BC 0x000025BD	gbk
+MapCode2Font 0x000025BE 0x000025BF	fallback
+MapCode2Font	0x000025C0 0x000025C1	johap92
+MapCode2Font 0x000025C2 0x000025C5	fallback
+MapCode2Font	0x000025C6 0x000025C7	gbk
+MapCode2Font	0x000025C8 0x000025C9	johap92
+MapCode2Font 0x000025CA -	fallback
+MapCode2Font	0x000025CB -	gbk
+MapCode2Font 0x000025CC 0x000025CD	fallback
+MapCode2Font	0x000025CE 0x000025CF	gbk
+MapCode2Font	0x000025D0 0x000025D1	johap92
+MapCode2Font 0x000025D2 0x000025E1	fallback
+MapCode2Font	0x000025E2 0x000025E5	gbk
+MapCode2Font 0x000025E6 0x000025EE	fallback
+MapCode2Font	0x000025EF -	jisx0208
+MapCode2Font 0x000025F0 0x00002604	fallback
+MapCode2Font	0x00002605 0x00002606	gbk
+MapCode2Font 0x00002607 0x00002608	fallback
+MapCode2Font	0x00002609 -	gbk
+MapCode2Font 0x0000260A 0x0000260D	fallback
+MapCode2Font	0x0000260E 0x0000260F	johap92
+MapCode2Font 0x00002610 0x0000261B	fallback
+MapCode2Font	0x0000261C -	johap92
+MapCode2Font 0x0000261D -	fallback
+MapCode2Font	0x0000261E -	johap92
+MapCode2Font 0x0000261F 0x0000263F	fallback
+MapCode2Font	0x00002640 0x00002642	gbk
+MapCode2Font 0x00002643 0x0000265F	fallback
+MapCode2Font	0x00002660 0x00002661	johap92
+MapCode2Font 0x00002662 -	fallback
+MapCode2Font	0x00002663 0x00002665	johap92
+MapCode2Font 0x00002666 -	fallback
+MapCode2Font	0x00002667 0x00002669	johap92
+MapCode2Font	0x0000266A -	jisx0208
+MapCode2Font 0x0000266B -	fallback
+MapCode2Font	0x0000266C -	johap92
+MapCode2Font	0x0000266D -	jisx0208
+MapCode2Font 0x0000266E -	fallback
+MapCode2Font	0x0000266F -	jisx0208
+MapCode2Font 0x00002670 0x00002FFF	fallback
+MapCode2Font	0x00003000 0x00003003	gbk
+MapCode2Font 0x00003004 -	fallback
+MapCode2Font	0x00003005 -	gbk
+MapCode2Font	0x00003006 0x00003007	jisx0208
+MapCode2Font	0x00003008 0x00003017	gbk
+MapCode2Font 0x00003018 0x0000301B	fallback
+MapCode2Font	0x0000301C -	jisx0208
+MapCode2Font	0x0000301D 0x0000301E	gbk
+MapCode2Font	0x0000301F -	jisx0208
+MapCode2Font 0x00003020 -	fallback
+MapCode2Font	0x00003021 0x00003029	gbk
+MapCode2Font 0x0000302A 0x00003040	fallback
+MapCode2Font	0x00003041 0x00003093	gbk
+MapCode2Font 0x00003094 0x0000309A	fallback
+MapCode2Font	0x0000309B 0x0000309E	jisx0208
+MapCode2Font 0x0000309F 0x000030A0	fallback
+MapCode2Font	0x000030A1 0x000030F6	gbk
+MapCode2Font 0x000030F7 0x000030FA	fallback
+MapCode2Font	0x000030FB -	gbk
+MapCode2Font	0x000030FC 0x000030FE	jisx0208
+MapCode2Font 0x000030FF 0x00003104	fallback
+MapCode2Font	0x00003105 0x00003129	gbk
+MapCode2Font 0x0000312A 0x00003130	fallback
+MapCode2Font	0x00003131 0x0000318E	johap92
+MapCode2Font 0x0000318F 0x000031FF	fallback
+MapCode2Font	0x00003200 0x0000321C	johap92
+MapCode2Font 0x0000321D 0x0000321F	fallback
+MapCode2Font	0x00003220 0x00003229	gbk
+MapCode2Font 0x0000322A 0x00003230	fallback
+MapCode2Font	0x00003231 0x00003232	jisx0208
+MapCode2Font 0x00003233 0x00003238	fallback
+MapCode2Font	0x00003239 -	jisx0208
+MapCode2Font 0x0000323A 0x0000325F	fallback
+MapCode2Font	0x00003260 0x0000327B	johap92
+MapCode2Font 0x0000327C 0x0000327E	fallback
+MapCode2Font	0x0000327F -	johap92
+MapCode2Font 0x00003280 0x000032A2	fallback
+MapCode2Font	0x000032A3 -	gbk
+MapCode2Font	0x000032A4 0x000032A8	jisx0208
+MapCode2Font 0x000032A9 0x00003302	fallback
+MapCode2Font	0x00003303 -	jisx0208
+MapCode2Font 0x00003304 0x0000330C	fallback
+MapCode2Font	0x0000330D -	jisx0208
+MapCode2Font 0x0000330E 0x00003313	fallback
+MapCode2Font	0x00003314 -	jisx0208
+MapCode2Font 0x00003315 0x00003317	fallback
+MapCode2Font	0x00003318 -	jisx0208
+MapCode2Font 0x00003319 0x00003321	fallback
+MapCode2Font	0x00003322 0x00003323	jisx0208
+MapCode2Font 0x00003324 0x00003325	fallback
+MapCode2Font	0x00003326 0x00003327	jisx0208
+MapCode2Font 0x00003328 0x0000332A	fallback
+MapCode2Font	0x0000332B -	jisx0208
+MapCode2Font 0x0000332C 0x00003335	fallback
+MapCode2Font	0x00003336 -	jisx0208
+MapCode2Font 0x00003337 0x0000333A	fallback
+MapCode2Font	0x0000333B -	jisx0208
+MapCode2Font 0x0000333C 0x00003348	fallback
+MapCode2Font	0x00003349 0x0000334A	jisx0208
+MapCode2Font 0x0000334B 0x0000334C	fallback
+MapCode2Font	0x0000334D -	jisx0208
+MapCode2Font 0x0000334E 0x00003350	fallback
+MapCode2Font	0x00003351 -	jisx0208
+MapCode2Font 0x00003352 0x00003356	fallback
+MapCode2Font	0x00003357 -	jisx0208
+MapCode2Font 0x00003358 0x0000337A	fallback
+MapCode2Font	0x0000337B 0x0000337E	jisx0208
+MapCode2Font 0x0000337F -	fallback
+MapCode2Font	0x00003380 0x00003384	johap92
+MapCode2Font 0x00003385 0x00003387	fallback
+MapCode2Font	0x00003388 0x0000338D	johap92
+MapCode2Font	0x0000338E 0x0000338F	gbk
+MapCode2Font	0x00003390 0x0000339B	johap92
+MapCode2Font	0x0000339C 0x0000339E	gbk
+MapCode2Font	0x0000339F 0x000033A0	johap92
+MapCode2Font	0x000033A1 -	gbk
+MapCode2Font	0x000033A2 0x000033C3	johap92
+MapCode2Font	0x000033C4 -	gbk
+MapCode2Font	0x000033C5 0x000033CA	johap92
+MapCode2Font 0x000033CB 0x000033CC	fallback
+MapCode2Font	0x000033CD -	jisx0208
+MapCode2Font	0x000033CE -	gbk
+MapCode2Font	0x000033CF 0x000033D0	johap92
+MapCode2Font	0x000033D1 0x000033D2	gbk
+MapCode2Font	0x000033D3 -	johap92
+MapCode2Font 0x000033D4 -	fallback
+MapCode2Font	0x000033D5 -	gbk
+MapCode2Font	0x000033D6 -	johap92
+MapCode2Font 0x000033D7 -	fallback
+MapCode2Font	0x000033D8 -	johap92
+MapCode2Font 0x000033D9 0x000033DA	fallback
+MapCode2Font	0x000033DB 0x000033DD	johap92
+MapCode2Font 0x000033DE 0x00004DFF	fallback
+MapCode2Font	0x00004E00 0x00009FA5	gbk
+MapCode2Font 0x00009FA6 0x0000ABFF	fallback
+MapCode2Font	0x0000AC00 0x0000D7A3	johap92
+MapCode2Font 0x0000D7A4 0x0000DFFF	fallback
+MapCode2Font 0x0000E000 0x0000E765	gbku
+MapCode2Font 0x0000E767 0x0000FFE6	fallback
+MapCode2Font	0x0000FFE7	0x0010FFFF	fallback
+MapCode2Font	0xE4000020	0xE40000FE	tt_ctlthai
+MapCode2Font	0xE5000020	0xE500007E	tt_ctlhebrew
+MapCode2Font	0xE50000A0	0xE50000BE	tt_ctlhebrew
+MapCode2Font	0xE50000DF	-	tt_ctlhebrew
+MapCode2Font	0xE50000E0	0xE50000FA	tt_ctlhebrew
+MapCode2Font	0xE60000AD	0xE60000FF	tt_ctlarabic
+MapCode2Font	0xE6000600	0xE60006FF	tt_ctlarabic
+MapCode2Font	0xE600FB50	0xE600FFFE	tt_ctlarabic
+MapCode2Font	0xE7000900	0xE7000D6F	tt_ctlhindi
+MapCode2Font	0xE700F31F	0xE700F84D	tt_ctlhindi
+
+#
+#
+#
+CnvCode2Font iso88591R _xu2unicode /usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so
+CnvCode2Font iso88592R _xu2unicode /usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so
+CnvCode2Font iso88594R _xu2unicode /usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so
+CnvCode2Font iso88595R _xu2unicode /usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so
+CnvCode2Font iso88597R _xu2unicode /usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so
+CnvCode2Font iso88599R _xu2unicode /usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so
+CnvCode2Font big5R _xu2big5 /usr/lib/lp/locale/en_US.UTF-8/mp/xubig5.so
+CnvCode2Font gbkR _xu2gb18030 /usr/lib/lp/locale/en_US.UTF-8/mp/xugb18030.so
+CnvCode2Font gbkU _xu2fallback_gbk /usr/lib/lp/locale/zh.UTF-8/mp/xufallback_gbk.so
+CnvCode2Font jisx0201R _xu2jis0201 /usr/lib/lp/locale/en_US.UTF-8/mp/xujisx0201.so
+CnvCode2Font jisx0208R _xu2jis0208 /usr/lib/lp/locale/en_US.UTF-8/mp/xujisx0208.so
+CnvCode2Font johap92R _xu2johap92 /usr/lib/lp/locale/en_US.UTF-8/mp/xujohap92.so
+CnvCode2Font fallbackR _xu2fallback /usr/lib/lp/locale/en_US.UTF-8/mp/xufallback.so
+CnvCode2Font tt_ctlhindiR _ctlhindi_ucs4 /usr/lib/lp/locale/en_US.UTF-8/mp/ctlhindi.so
+CnvCode2Font tt_hindiR _xu2unicode /usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so
