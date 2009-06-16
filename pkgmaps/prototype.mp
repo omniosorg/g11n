@@ -18,7 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 d none lib 0755 root bin
@@ -81,3 +81,70 @@ s none bin/franklinp=mailp
 s none bin/newsp=./mailp
 s none bin/timemanp=./mailp
 s none bin/timesysp=./mailp
+
+s none lib/lp/locale/ar_EG.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/ar_SA.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/bg_BG.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/cs_CZ.UTF-8@euro=./en_US.UTF-8
+s none lib/lp/locale/de_AT.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/de_DE.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/de_DE.UTF-8@euro=./en_US.UTF-8
+s none lib/lp/locale/de_CH.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/de_LU.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/de.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/en_AU.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/en_CA.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/en_GB.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/en_IE.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/en_NZ.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/en.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_AR.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_BO.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_CL.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_CO.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_CR.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_EC.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_ES.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_ES.UTF-8@euro=./en_US.UTF-8
+s none lib/lp/locale/es_GT.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_NI.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_PA.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_PE.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_PY.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_SV.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_UY.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es_VE.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/es.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/fi_FI.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/fr_BE.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/fr_BE.UTF-8@euro=./en_US.UTF-8
+s none lib/lp/locale/fr_CA.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/fr_FR.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/fr_FR.UTF-8@euro=./en_US.UTF-8
+s none lib/lp/locale/fr_CH.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/fr_LU.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/fr.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/he_IL.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/hi_IN.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/is_IS.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/it_IT.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/it_IT.UTF-8@euro=./en_US.UTF-8
+s none lib/lp/locale/it.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/mk_MK.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/nl_BE.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/nl_NL.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/pl_PL.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/pl.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/pt_BR.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/ro_RO.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/ru_RU.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/ru.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/sh_BA.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/sq_AL.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/sr_CS.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/sv_SE.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/sv_SE.UTF-8@euro=./en_US.UTF-8
+s none lib/lp/locale/sv.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/th_TH.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/tr_TR.UTF-8=./en_US.UTF-8
+s none lib/lp/locale/uk_UA.UTF-8=./en_US.UTF-8
