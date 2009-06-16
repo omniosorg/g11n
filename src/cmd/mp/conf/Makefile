@@ -37,7 +37,7 @@ LOCALE=		en_US.UTF-8
 
 TARGETDIR =	$(FILEROOT)/usr/lib/lp/locale/$(LOCALE)/mp
 
-FILES =  	mp.conf mp.conf.nv
+FILES =  	mp.conf
 
 SUBDIRS = 
 

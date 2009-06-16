@@ -37,7 +37,7 @@ HEADER_INC	=
 
 MPSRC_FILES  	= 
 MPLD_FILES	= 
-MPCONF_FILES 	= mp.conf mp.conf.nv
+MPCONF_FILES 	= mp.conf
 
 MPLD_DIR_FILES 	= $(MPCONF_FILES:%=$(ROOT_MP_DIR)/%)
 
