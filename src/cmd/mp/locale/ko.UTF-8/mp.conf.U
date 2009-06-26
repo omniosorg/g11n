@@ -51,7 +51,7 @@ FontGroup	jisx0201	TrueType	jisx0201R
 FontNameAlias	jisx0208R	TrueType	/usr/X11/lib/X11/fonts/TrueType/ipafont/ipam.ttf
 FontGroup	jisx0208	TrueType	jisx0208R
 
-FontNameAlias	johap92R	TrueType	/usr/X11/lib/X11/fonts/TrueType/hangyang/h2gtrm.ttf
+FontNameAlias	johap92R	TrueType	/usr/X11/lib/X11/fonts/TrueType/hanyang/h2gtrm.ttf
 FontGroup	johap92	TrueType johap92R
 
 FontNameAlias	kscU	PCF	$UDC_BASE/fonts/UDC/Bitmaps/UDC20.pcf

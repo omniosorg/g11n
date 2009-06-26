@@ -61,7 +61,7 @@ FontNameAlias	iso88599I	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Itali
 FontNameAlias	iso88599BI	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-BoldItalic.ttf
 FontNameAlias	jisx0201R	TrueType	/usr/X11/lib/X11/fonts/TrueType/ipafont/ipam.ttf
 FontNameAlias	jisx0208R	TrueType	/usr/X11/lib/X11/fonts/TrueType/ipafont/ipam.ttf
-FontNameAlias	johap92R	TrueType	/usr/X11/lib/X11/fonts/TrueType/hangyang/h2gtrm.ttf
+FontNameAlias	johap92R	TrueType	/usr/X11/lib/X11/fonts/TrueType/hanyang/h2gtrm.ttf
 FontNameAlias	gb2312R	PCF	/usr/openwin/lib/locale/zh/X11/fonts/75dpi/song20.pcf.Z
 FontNameAlias	big5R	PCF	/usr/openwin/lib/locale/zh_TW.BIG5/X11/fonts/75dpi/Ming-Light-big5-20.pcf.Z
 #FontNameAlias	tt_big5R	TrueType	/usr/X11/lib/X11/fonts/TrueType/arphic/uming.ttf

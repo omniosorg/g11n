@@ -30,7 +30,7 @@
 FontNameAlias	iso88591R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
 FontGroup	iso88591	TrueType	iso88591R 
 
-FontNameAlias	johap92R_WC	TrueType	/usr/X11/lib/X11/fonts/TrueType/hangyang/h2gtrm.ttf
+FontNameAlias	johap92R_WC	TrueType	/usr/X11/lib/X11/fonts/TrueType/hanyang/h2gtrm.ttf
 FontGroup	johap92_WC	TrueType	johap92R_WC
 
 FontNameAlias	johap92R_UDC	PCF	$UDC_BASE/fonts/UDC/Bitmaps/UDC20.pcf
