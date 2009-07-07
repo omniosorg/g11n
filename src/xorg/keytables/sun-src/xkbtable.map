@@ -239,4 +239,6 @@
 6	3	-	sun_type6_usb		ca_bi	# Canada_Bi6_usb
 6	272	-	sun_type6_usb		br	# Brazil6_usb
 6	273	-	sun_type6_usb		dvorak	# Dvorak6_usb
+6	274	-	sun_type6_euro_usb	ee	# Estonia6_usb
+6	275	-	sun_type6_euro_usb	ro	# Romania6_usb
 

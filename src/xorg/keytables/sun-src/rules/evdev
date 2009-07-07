@@ -109,15 +109,15 @@
 
 // Sun Type 6 keyboards with custom/non-standard layouts
 ! $sun_t6_custom = am ar az be br ca_bi cz de de_CH \
-                   dk dvorak es fi fr fr_CH gb ge gr \
+                   dk dvorak ee es fi fr fr_CH gb ge gr \
                    it jp kg ko kz nl no lt lv pl_dev \
-                   pt ru se sk tj tr tr_f tw \
+                   pt ro ru se sk tj tr tr_f tw \
                    ua uz
 // Sun Type 7 Keyboards with custom/non-standard layouts
 ! $sun_t7_custom = am ar az be br ca_bi cz de de_CH \
-                   dk dvorak es fi fr fr_CH gb ge gr \
+                   dk dvorak ee es fi fr fr_CH gb ge gr \
                    it jp kg ko kz nl no lt lv pl_dev \
-                   pt ru se sk tj tr tr_f tw \
+                   pt ro ru se sk tj tr tr_f tw \
                    ua uz
 
 ! model		=	keycodes
