@@ -345,6 +345,8 @@ f none X11/lib/X11/xkb/symbols/sun_vndr/cz 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/de 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/de_CH 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/dk 0444 root bin
+f none X11/lib/X11/xkb/symbols/sun_vndr/dvorak 0444 root bin
+f none X11/lib/X11/xkb/symbols/sun_vndr/ee 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/es 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/fi 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/fr 0444 root bin
@@ -366,6 +368,7 @@ f none X11/lib/X11/xkb/symbols/sun_vndr/no 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/pl 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/pl_dev 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/pt 0444 root bin
+f none X11/lib/X11/xkb/symbols/sun_vndr/ro 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/ru 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/se 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/sk 0444 root bin
