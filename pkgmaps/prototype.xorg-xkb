@@ -355,6 +355,7 @@ f none X11/lib/X11/xkb/symbols/sun_vndr/gb 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/ge 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/gr 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/hu 0444 root bin
+f none X11/lib/X11/xkb/symbols/sun_vndr/il 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/is 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/it 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/jp 0444 root bin

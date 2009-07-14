@@ -241,4 +241,5 @@
 6	273	-	sun_type6_usb		dvorak	# Dvorak6_usb
 6	274	-	sun_type6_euro_usb	ee	# Estonia6_usb
 6	275	-	sun_type6_euro_usb	ro	# Romania6_usb
+6       11      -       sun_type6_usb           il      # Israel6_usb
 
