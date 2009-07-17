@@ -27,6 +27,8 @@
 SUBDIRS = \
 	arabeyes \
 	arphic \
+	gentium \
+	gentium-basic \
 	hanyang \
 	indic-fonts-core \
 	ipafont \
