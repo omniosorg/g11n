@@ -32,6 +32,7 @@ SUBDIRS = \
 	hanyang \
 	indic-fonts-core \
 	ipafont \
+	kacst \
 	thai-scalable \
 	unfonts-core \
 	unfonts-extra \
