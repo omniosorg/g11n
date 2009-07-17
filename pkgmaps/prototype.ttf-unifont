@@ -24,30 +24,18 @@
 # Use is subject to license terms.
 #
 
-SUBDIRS = \
-	arabeyes \
-	arphic \
-	hanyang \
-	indic-fonts-core \
-	ipafont \
-	thai-scalable \
-	unfonts-core \
-	unfonts-extra \
-	unifont \
-	wqy-zenhei
+d none X11 0755 root bin
+d none X11/lib 0755 root bin
+d none X11/lib/X11 0755 root bin
+d none X11/lib/X11/fonts 0755 root bin
+d none X11/lib/X11/fonts/TrueType 0755 root bin
+d none X11/lib/X11/fonts/TrueType/unifont 0755 root bin
+f none X11/lib/X11/fonts/TrueType/unifont/unifont.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/unifont/unifont.pcf.gz 0444 root bin
+f none X11/lib/X11/fonts/TrueType/unifont/fonts.dir 0444 root bin
+f none X11/lib/X11/fonts/TrueType/unifont/fonts.scale 0444 root bin
 
-all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
-
-
-all install clean: $(SUBDIRS)
-
-$(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
-
-tarball:
-
-FRC:
-
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/ttf-unifont 0755 root bin
+f none share/doc/ttf-unifont/unifont-intro.txt.bz2 0444 root bin
