@@ -18,49 +18,32 @@
 #
 # CDDL HEADER END
 #
-
 #
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
-include $(SRC)/Makefile.master
+# the location of downloaded files
+# rsync source can be provided in $(DOWNLOADS)
+SOURCE_ARCHIVES = $(SRC)/downloads
 
-PROJECT		= gentium-basic
-VER 		= $(PROJECT)-1.1
-TARBALL		= $(VER).tar.bz2
+SOURCE_ARCHIVE = $(SOURCE_ARCHIVES)/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/gentium
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-gentium/basic
-
-FONTS =	GenBasB.ttf \
-	GenBasBI.ttf \
-	GenBasI.ttf \
-	GenBasR.ttf \
-	GenBkBasB.ttf \
-	GenBkBasBI.ttf \
-	GenBkBasI.ttf \
-	GenBkBasR.ttf
-
-DOCS = 	FONTLOG
-
-all: $(VER)/.unpacked
-
-$(VER)/.unpacked: $(TARBALL)
-	-$(RM) -r $(VER)
-	$(UNPACKARCHIVE) $(TARBALL) $(VER)
+$(SOURCE_ARCHIVES)/.archives:
+	-mkdir $(SOURCE_ARCHIVES)
 	touch $@
 
-$(VER)/%: $(VER)/%.txt
-	$(CP) $< $@
+$(SOURCE_ARCHIVE): $(SOURCE_ARCHIVES)/.archives
+	( if [ -f "$(DOWNLOADS)/$(TARBALL)" ]; then \
+		$(RSYNC) -raz $(DOWNLOADS)/$(TARBALL) $(SOURCE_ARCHIVES)/ ; \
+	  else \
+		cd $(SOURCE_ARCHIVES) && $(WGET) -nc $(SOURCE_URL) ; \
+	  fi \
+	)
+	touch $@
 
-install: $(VER)/.installed
+$(VER)/.unpacked: $(SOURCE_ARCHIVE)
+	-$(RM) -r $(VER)
+	$(UNPACKARCHIVE) $(SOURCE_ARCHIVE) $(VER)
+	touch $@
 
-clean:
-	$(RM) -r $(VER)
-
-clobber: clean
-
-FRC:
-
-include ../Makefile.fonts

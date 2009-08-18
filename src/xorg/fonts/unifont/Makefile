@@ -30,8 +30,8 @@ PROJECT		= unifont
 VER 		= $(PROJECT)-5.1.20080914
 TARBALL		= $(VER).tar.bz2
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/unifont
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-unifont
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)
 
 FONTS = unifont.pcf.gz \
 	unifont.ttf \
@@ -40,37 +40,14 @@ FONTS = unifont.pcf.gz \
 
 DOCS =	unifont-intro.txt
 
-all:=		TARGET= all
-install:=	TARGET= install
-clean:=		TARGET= clean
-clobber:=	TARGET= clobber
-lint:=		TARGET= lint
+all: $(VER)/.unpacked
 
-.KEEP_STATE:
+$(VER)/.unpacked: $(TARBALL)
+	-$(RM) -r $(VER)
+	$(UNPACKARCHIVE) $(TARBALL) $(VER)
+	touch $@
 
-all: $(TARBALL) $(VER)
-
-$(VER):
-	$(BZIP2) -dc $(TARBALL) | $(TAR) xpf -
-
-$(ROOT_FONT_DIR):
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
-	( cd $(VER); \
-	for f in $(FONTS); do \
-		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
-	done; )
-
-$(ROOT_DOC_DIR):
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
-	( cd $(VER); \
-	for f in $(DOCS); do \
-		$(BZIP2) $$f; \
-		$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
-	done; )
-
-font_install: $(ROOT_FONT_DIR) $(ROOT_DOC_DIR)
-
-install: all font_install
+install: $(VER)/.installed
 
 clean:
 	$(RM) -r $(VER)
@@ -78,3 +55,5 @@ clean:
 clobber: clean
 
 FRC:
+
+include ../Makefile.fonts

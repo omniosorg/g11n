@@ -27,11 +27,12 @@
 include $(SRC)/Makefile.master
 
 PROJECT		= kacst
-VER 		= $(PROJECT)-2.0
-TARBALL		= $(VER).tar.bz2
+VER 		= KacstArabicFonts-2.0
+TARBALL		= kacst_fonts_2.0.tar.bz2
+SOURCE_URL	= http://downloads.sourceforge.net/project/arabeyes/kacst_fonts/2.0/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/kacst
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-kacst
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)
 
 FONTS =	KacstArt.ttf \
 	KacstBook.ttf \
@@ -54,37 +55,12 @@ FONTS =	KacstArt.ttf \
 DOCS =	Copyright \
 	README
 
-all:=		TARGET= all
-install:=	TARGET= install
-clean:=		TARGET= clean
-clobber:=	TARGET= clobber
-lint:=		TARGET= lint
+all: $(VER)/.unpacked $(VER)/KacstPen.ttf
 
-.KEEP_STATE:
+$(VER)/KacstPen.ttf: $(VER)/.unpacked
+	$(CP) $(VER)/kacstPen.ttf $@
 
-all: $(TARBALL) $(VER)
-
-$(VER):
-	$(BZIP2) -dc $(TARBALL) | $(TAR) xpf -
-
-$(ROOT_FONT_DIR):
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
-	( cd $(VER); \
-	for f in $(FONTS); do \
-		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
-	done; )
-
-$(ROOT_DOC_DIR):
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
-	( cd $(VER); \
-	for f in $(DOCS); do \
-		$(BZIP2) $$f; \
-		$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
-	done; )
-
-font_install: $(ROOT_FONT_DIR) $(ROOT_DOC_DIR)
-
-install: all font_install
+install: $(VER)/.installed
 
 clean:
 	$(RM) -r $(VER)
@@ -92,3 +68,6 @@ clean:
 clobber: clean
 
 FRC:
+
+include ../Makefile.fonts
+include $(SRC)/Makefile.targ

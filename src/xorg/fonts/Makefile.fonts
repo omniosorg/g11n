@@ -24,43 +24,24 @@
 # Use is subject to license terms.
 #
 
-include $(SRC)/Makefile.master
-
-PROJECT		= gentium-basic
-VER 		= $(PROJECT)-1.1
-TARBALL		= $(VER).tar.bz2
-
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/gentium
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-gentium/basic
-
-FONTS =	GenBasB.ttf \
-	GenBasBI.ttf \
-	GenBasI.ttf \
-	GenBasR.ttf \
-	GenBkBasB.ttf \
-	GenBkBasBI.ttf \
-	GenBkBasI.ttf \
-	GenBkBasR.ttf
-
-DOCS = 	FONTLOG
-
-all: $(VER)/.unpacked
-
-$(VER)/.unpacked: $(TARBALL)
-	-$(RM) -r $(VER)
-	$(UNPACKARCHIVE) $(TARBALL) $(VER)
+$(VER)/.fonts_installed: $(VER)/.unpacked
+	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
+	( cd $(VER); \
+	for f in $(FONTS); do \
+		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
+	done; )
 	touch $@
 
-$(VER)/%: $(VER)/%.txt
-	$(CP) $< $@
+$(VER)/%.bz2: $(VER)/%
+	$(BZIP2) -c $< > $@
 
-install: $(VER)/.installed
+$(VER)/.docs_installed: $(VER)/.unpacked $(DOCS:%=$(VER)/%.bz2)
+	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
+	( cd $(VER); \
+	for f in $(DOCS); do \
+		$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
+	done; )
+	touch $@
 
-clean:
-	$(RM) -r $(VER)
+$(VER)/.installed: $(VER)/.docs_installed $(VER)/.fonts_installed 
 
-clobber: clean
-
-FRC:
-
-include ../Makefile.fonts

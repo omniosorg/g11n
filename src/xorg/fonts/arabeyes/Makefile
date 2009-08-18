@@ -26,36 +26,69 @@
 
 include $(SRC)/Makefile.master
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/arabeyes
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-arabeyes
+PROJECT		= arabeyes
+VER 		= ae_fonts_2.0
+TARBALL		= $(VER).tar.bz2
+SOURCE_URL	= http://downloads.sourceforge.net/project/arabeyes/Fonts/ae_fonts/$(TARBALL)
 
-FONT_TAR	= ae_fonts_2.0.tar.bz2
-FONT_DOC_TAR	= ae_fonts_doc_2.0.tar.bz2
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)
 
-all:=		TARGET= all
-install:=	TARGET= install
-clean:=		TARGET= clean
-clobber:=	TARGET= clobber
-lint:=		TARGET= lint
+FONTS =	AAHS/ae_Cortoba.ttf \
+	AAHS/ae_Nagham.ttf \
+	AAHS/ae_Ostorah.ttf \
+	AGA/ae_Dimnah.ttf \
+	AGA/ae_Furat.ttf \
+	AGA/ae_Granada.ttf \
+	AGA/ae_Kayrawan.ttf \
+	AGA/ae_Mashq-Bold.ttf \
+	AGA/ae_Mashq.ttf \
+	AGA/ae_Nada.ttf \
+	AGA/ae_Petra.ttf \
+	AGA/ae_Rasheeq-Bold.ttf \
+	AGA/ae_Sindbad.ttf \
+	FS/ae_Arab.ttf \
+	FS/ae_Graph.ttf \
+	FS/ae_Japan.ttf \
+	FS/ae_Jet.ttf \
+	FS/ae_Metal.ttf \
+	FS/ae_Nice.ttf \
+	FS/ae_Salem.ttf \
+	FS/ae_Shado.ttf \
+	Kasr/ae_AlArabiya.ttf \
+	Kasr/ae_AlBattar.ttf \
+	Kasr/ae_AlHor.ttf \
+	Kasr/ae_AlManzomah.ttf \
+	Kasr/ae_AlMateen-Bold.ttf \
+	Kasr/ae_AlMohanad.ttf \
+	Kasr/ae_AlMothnna-Bold.ttf \
+	MCS/ae_Electron.ttf \
+	MCS/ae_Haramain.ttf \
+	MCS/ae_Hor.ttf \
+	MCS/ae_Tholoth.ttf \
+	Shmookh/ae_AlYarmook.ttf \
+	Shmookh/ae_Hani.ttf \
+	Shmookh/ae_Khalid.ttf \
+	Shmookh/ae_Ouhod-Bold.ttf \
+	Shmookh/ae_Rehan.ttf \
+	Shmookh/ae_Sharjah.ttf \
+	Shmookh/ae_Tarablus.ttf \
+	../fonts.dir \
+	../fonts.scale
 
-.KEEP_STATE:
+DOCS =	ChangeLog \
+	README
 
-all: $(FONT_TAR)
+all: $(VER)/.unpacked
 
-$(ROOT_FONT_DIR):
-	$(INSDIR) "$@"
-
-$(ROOT_DOC_DIR):
-	$(INSDIR) "$@"
-
-font_install: $(ROOT_FONT_DIR) $(ROOT_DOC_DIR)
-	bzip2 -d -c $(FONT_TAR) | (cd $(ROOT_FONT_DIR) ; tar xpf -)
-	bzip2 -d -c $(FONT_DOC_TAR) | (cd $(ROOT_DOC_DIR) ; tar xpf -)
-
-install: all font_install
+install: $(VER)/.installed
 
 clean:
+	$(RM) -r $(VER)
 
 clobber: clean
 
 FRC:
+
+include ../Makefile.fonts
+include $(SRC)/Makefile.targ

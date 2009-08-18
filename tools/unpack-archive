@@ -1,3 +1,4 @@
+#!/bin/sh
 #
 # CDDL HEADER START
 #
@@ -19,48 +20,46 @@
 # CDDL HEADER END
 #
 
-#
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
-include $(SRC)/Makefile.master
+#
+# Common script to unpack various source archives
+#
+FIND=${FIND:-/bin/find}
+XARGS=${XARGS:-/bin/xargs}
+CHMOD=${CHMOD:-/bin/chmod}
 
-PROJECT		= gentium-basic
-VER 		= $(PROJECT)-1.1
-TARBALL		= $(VER).tar.bz2
+case "${1}" in
+	*.bz2)
+		COMMAND=${BZIP:-/usr/bin/bzip2}
+		COMMAND="${COMMAND} ${DECOMP_OPTS:--dc} ${1}"
+		;;
+	*.gz)
+		COMMAND=${GZIP:-/usr/bin/gzip}
+		COMMAND="${COMMAND} ${DECOMP_OPTS:--dc} ${1}"
+		;;
+	*.Z)
+		COMMAND=${ZCAT:-/usr/bin/zcat}
+		COMMAND="${COMMAND} ${1}"
+		;;
+	*.zip)
+		COMMAND=${UNZIP:-/usr/bin/unzip}
+		COMMAND="${COMMAND} ${DECOMP_OPTS:--qo} ${1}"
+		;;
+esac
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/gentium
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-gentium/basic
+case "${1}" in
+	*.tar.*)
+		COMMAND="${COMMAND} | ${TAR:-/usr/bin/tar}"
+		COMMAND="${COMMAND} ${TAR_OPTS:-oxpf} -"
+		;;
+esac
 
-FONTS =	GenBasB.ttf \
-	GenBasBI.ttf \
-	GenBasI.ttf \
-	GenBasR.ttf \
-	GenBkBasB.ttf \
-	GenBkBasBI.ttf \
-	GenBkBasI.ttf \
-	GenBkBasR.ttf
+/bin/sh -c "${COMMAND}"
 
-DOCS = 	FONTLOG
-
-all: $(VER)/.unpacked
-
-$(VER)/.unpacked: $(TARBALL)
-	-$(RM) -r $(VER)
-	$(UNPACKARCHIVE) $(TARBALL) $(VER)
-	touch $@
-
-$(VER)/%: $(VER)/%.txt
-	$(CP) $< $@
-
-install: $(VER)/.installed
-
-clean:
-	$(RM) -r $(VER)
-
-clobber: clean
-
-FRC:
-
-include ../Makefile.fonts
+if [ $# -eq 2 -a -d "${2}" ] ; then
+	${FIND} ${2} -type d | ${XARGS} ${CHMOD} 0755
+	${FIND} ${2} -type f | ${XARGS} ${CHMOD} a+r
+fi
