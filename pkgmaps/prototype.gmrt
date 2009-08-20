@@ -1621,3 +1621,56 @@ d none usr/lib/locale/ka_GE 0755 root bin
 s none usr/lib/locale/ka_GE/ka_GE.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/ka_GE/locale_description=../ka_GE.UTF-8/locale_description
 f none usr/lib/locale/ka_GE/geo_map 0644 root bin
+
+# af_ZA.UTF-8
+d none usr/lib/locale/af_ZA.UTF-8 0755 root bin
+d none usr/lib/locale/af_ZA.UTF-8/LC_MESSAGES 0755 root bin
+s none usr/lib/locale/af_ZA.UTF-8/af_ZA.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+f none usr/lib/locale/af_ZA.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/af_ZA.UTF-8/locale_map=usr/lib/locale/af_ZA.UTF-8/locale_map.miniroot 0644 root bin
+
+# af_ZA
+d none usr/lib/locale/af_ZA 0755 root bin
+s none usr/lib/locale/af_ZA/af_ZA.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+s none usr/lib/locale/af_ZA/locale_description=../af_ZA.UTF-8/locale_description
+f none usr/lib/locale/af_ZA/geo_map 0644 root bin
+
+# az_AZ.UTF-8
+d none usr/lib/locale/az_AZ.UTF-8 0755 root bin
+d none usr/lib/locale/az_AZ.UTF-8/LC_MESSAGES 0755 root bin
+s none usr/lib/locale/az_AZ.UTF-8/az_AZ.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+f none usr/lib/locale/az_AZ.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/az_AZ.UTF-8/locale_map=usr/lib/locale/az_AZ.UTF-8/locale_map.miniroot 0644 root bin
+
+# az_AZ
+d none usr/lib/locale/az_AZ 0755 root bin
+s none usr/lib/locale/az_AZ/az_AZ.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+s none usr/lib/locale/az_AZ/locale_description=../az_AZ.UTF-8/locale_description
+f none usr/lib/locale/az_AZ/geo_map 0644 root bin
+
+# it_CH.UTF-8
+d none usr/lib/locale/it_CH.UTF-8 0755 root bin
+d none usr/lib/locale/it_CH.UTF-8/LC_MESSAGES 0755 root bin
+s none usr/lib/locale/it_CH.UTF-8/it_CH.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+f none usr/lib/locale/it_CH.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/it_CH.UTF-8/locale_map=usr/lib/locale/it_CH.UTF-8/locale_map.miniroot 0644 root bin
+
+# it_CH
+d none usr/lib/locale/it_CH 0755 root bin
+s none usr/lib/locale/it_CH/it_CH.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+s none usr/lib/locale/it_CH/locale_description=../it_CH.UTF-8/locale_description
+f none usr/lib/locale/it_CH/geo_map 0644 root bin
+
+# ky_KG.UTF-8
+d none usr/lib/locale/ky_KG.UTF-8 0755 root bin
+d none usr/lib/locale/ky_KG.UTF-8/LC_MESSAGES 0755 root bin
+s none usr/lib/locale/ky_KG.UTF-8/ky_KG.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+f none usr/lib/locale/ky_KG.UTF-8/locale_description 0644 root bin
+f none usr/lib/locale/ky_KG.UTF-8/locale_map=usr/lib/locale/ky_KG.UTF-8/locale_map.miniroot 0644 root bin
+
+# ky_KG
+d none usr/lib/locale/ky_KG 0755 root bin
+s none usr/lib/locale/ky_KG/ky_KG.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
+s none usr/lib/locale/ky_KG/locale_description=../ky_KG.UTF-8/locale_description
+f none usr/lib/locale/ky_KG/geo_map 0644 root bin
+

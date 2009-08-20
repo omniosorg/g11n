@@ -492,3 +492,20 @@ d none usr/lib/locale/ka_GE/amd64 0755 root bin
 s none usr/lib/locale/ka_GE/amd64/ka_GE.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
 d none usr/lib/locale/ka_GE.UTF-8/amd64 0755 root bin
 s none usr/lib/locale/ka_GE.UTF-8/amd64/ka_GE.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/af_ZA/amd64 0755 root bin
+s none usr/lib/locale/af_ZA/amd64/af_ZA.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/af_ZA.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/af_ZA.UTF-8/amd64/af_ZA.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/az_AZ/amd64 0755 root bin
+s none usr/lib/locale/az_AZ/amd64/az_AZ.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/az_AZ.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/az_AZ.UTF-8/amd64/az_AZ.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/it_CH/amd64 0755 root bin
+s none usr/lib/locale/it_CH/amd64/it_CH.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/it_CH.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/it_CH.UTF-8/amd64/it_CH.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ky_KG/amd64 0755 root bin
+s none usr/lib/locale/ky_KG/amd64/ky_KG.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ky_KG.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/ky_KG.UTF-8/amd64/ky_KG.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+

@@ -492,3 +492,19 @@ d none usr/lib/locale/ka_GE/sparcv9 0755 root bin
 s none usr/lib/locale/ka_GE/sparcv9/ka_GE.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
 d none usr/lib/locale/ka_GE.UTF-8/sparcv9 0755 root bin
 s none usr/lib/locale/ka_GE.UTF-8/sparcv9/ka_GE.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/af_ZA/sparcv9 0755 root bin
+s none usr/lib/locale/af_ZA/sparcv9/af_ZA.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/af_ZA.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/af_ZA.UTF-8/sparcv9/af_ZA.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/az_AZ/sparcv9 0755 root bin
+s none usr/lib/locale/az_AZ/sparcv9/az_AZ.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/az_AZ.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/az_AZ.UTF-8/sparcv9/az_AZ.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/it_CH/sparcv9 0755 root bin
+s none usr/lib/locale/it_CH/sparcv9/it_CH.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/it_CH.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/it_CH.UTF-8/sparcv9/it_CH.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ky_KG/sparcv9 0755 root bin
+s none usr/lib/locale/ky_KG/sparcv9/ky_KG.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ky_KG.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/ky_KG.UTF-8/sparcv9/ky_KG.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
