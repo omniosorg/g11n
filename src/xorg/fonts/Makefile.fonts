@@ -45,3 +45,8 @@ $(VER)/.docs_installed: $(VER)/.unpacked $(DOCS:%=$(VER)/%.bz2)
 
 $(VER)/.installed: $(VER)/.docs_installed $(VER)/.fonts_installed 
 
+clean:
+	$(RM) -r $(VER)
+
+clobber: clean
+

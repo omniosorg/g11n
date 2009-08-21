@@ -29,15 +29,15 @@ d none X11/lib/X11 0755 root bin
 d none X11/lib/X11/fonts 0755 root bin
 d none X11/lib/X11/fonts/TrueType 0755 root bin
 d none X11/lib/X11/fonts/TrueType/ipafont 0755 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/fonts.dir 0644 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/fonts.scale 0644 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/ipag.ttf 0644 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/ipagp.ttf 0644 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/ipam.ttf 0644 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/ipamp.ttf 0644 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/ipagui.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/ipafont/fonts.dir 0444 root bin
+f none X11/lib/X11/fonts/TrueType/ipafont/fonts.scale 0444 root bin
+f none X11/lib/X11/fonts/TrueType/ipafont/ipag.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/ipafont/ipagp.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/ipafont/ipam.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/ipafont/ipamp.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/ipafont/ipagui.ttf 0444 root bin
 
 d none share 0755 root sys
 d none share/doc 0755 root other
 d none share/doc/ipafont 0755 root bin
-f none share/doc/ipafont/Readme00203.txt 0644 root bin
+f none share/doc/ipafont/Readme00203.txt 0444 root bin

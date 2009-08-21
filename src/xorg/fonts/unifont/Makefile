@@ -49,11 +49,5 @@ $(VER)/.unpacked: $(TARBALL)
 
 install: $(VER)/.installed
 
-clean:
-	$(RM) -r $(VER)
-
-clobber: clean
-
-FRC:
 
 include ../Makefile.fonts

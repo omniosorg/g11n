@@ -29,12 +29,12 @@ d none X11/lib/X11 0755 root bin
 d none X11/lib/X11/fonts 0755 root bin
 d none X11/lib/X11/fonts/TrueType 0755 root bin
 d none X11/lib/X11/fonts/TrueType/wqy 0755 root bin
-f none X11/lib/X11/fonts/TrueType/wqy/wqy-zenhei.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/wqy/wqy-zenhei.ttf 0444 root bin
 d none share 0755 root sys
 d none share/doc 0755 root other
 d none share/doc/wqy-zenhei 0755 root bin
-f none share/doc/wqy-zenhei/AUTHORS 0644 root bin
-f none share/doc/wqy-zenhei/ChangeLog 0644 root bin
-f none share/doc/wqy-zenhei/COPYING 0644 root bin
-f none share/doc/wqy-zenhei/README 0644 root bin
+f none share/doc/wqy-zenhei/AUTHORS 0444 root bin
+f none share/doc/wqy-zenhei/ChangeLog 0444 root bin
+f none share/doc/wqy-zenhei/COPYING 0444 root bin
+f none share/doc/wqy-zenhei/README 0444 root bin
 

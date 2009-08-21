@@ -83,12 +83,6 @@ all: $(VER)/.unpacked
 
 install: $(VER)/.installed
 
-clean:
-	$(RM) -r $(VER)
-
-clobber: clean
-
-FRC:
 
 include ../Makefile.fonts
 include $(SRC)/Makefile.targ

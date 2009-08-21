@@ -29,22 +29,23 @@ d none X11/lib/X11 0755 root bin
 d none X11/lib/X11/fonts 0755 root bin
 d none X11/lib/X11/fonts/TrueType 0755 root bin
 d none X11/lib/X11/fonts/TrueType/arphic 0755 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/fonts.dir 0644 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/fonts.scale 0644 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/fonts.alias 0644 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/uming.ttf 0644 root bin
+f none X11/lib/X11/fonts/TrueType/arphic/fonts.dir 0444 root bin
+f none X11/lib/X11/fonts/TrueType/arphic/fonts.scale 0444 root bin
+f none X11/lib/X11/fonts/TrueType/arphic/fonts.alias 0444 root bin
+f none X11/lib/X11/fonts/TrueType/arphic/uming.ttf 0444 root bin
+
 d none share 0755 root sys
 d none share/doc 0755 root other
 d none share/doc/arphic 0755 root bin
 d none share/doc/arphic/license 0755 root bin
 d none share/doc/arphic/license/big5 0755 root bin
-f none share/doc/arphic/license/big5/ARPHICPL.TXT 0644 root bin
+f none share/doc/arphic/license/big5/ARPHICPL.TXT 0444 root bin
 d none share/doc/arphic/license/english 0755 root bin
-f none share/doc/arphic/license/english/ARPHICPL.TXT 0644 root bin
+f none share/doc/arphic/license/english/ARPHICPL.TXT 0444 root bin
 d none share/doc/arphic/license/gb 0755 root bin
-f none share/doc/arphic/license/gb/ARPHICPL.TXT 0644 root bin
+f none share/doc/arphic/license/gb/ARPHICPL.TXT 0444 root bin
 d none share/doc/arphic/license/zh_CN.utf-8 0755 root bin
-f none share/doc/arphic/license/zh_CN.utf-8/ARPHICPL.txt 0644 root bin
+f none share/doc/arphic/license/zh_CN.utf-8/ARPHICPL.txt 0444 root bin
 d none share/doc/arphic/license/zh_TW.utf-8 0755 root bin
-f none share/doc/arphic/license/zh_TW.utf-8/ARPHICPL.txt 0644 root bin
+f none share/doc/arphic/license/zh_TW.utf-8/ARPHICPL.txt 0444 root bin
 

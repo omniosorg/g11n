@@ -26,40 +26,33 @@
 
 include $(SRC)/Makefile.master
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/unfonts
+PROJECT		= unfonts
+VER 		= un-fonts
+TARBALL		= un-fonts-extra-1.0.2-080608.tar.gz
+SOURCE_URL	= http://kldp.net/frs/download.php/4696/$(TARBALL)
+
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/unfonts-extra
 
-FONT_TAR	= unfonts-extra.tar.bz2
-FONT_DOC_TAR	= unfonts-extra-doc.tar.bz2
-FONT_SCALE	= #fonts.scale.indic-fonts-core 
-FONT_DIR	= #fonts.dir.indic-fonts-core
+FONTS =	UnBom.ttf \
+	UnJamoBatang.ttf \
+	UnJamoDotum.ttf \
+	UnJamoNovel.ttf \
+	UnJamoSora.ttf \
+	UnPenheulim.ttf \
+	UnPen.ttf \
+	UnPilgia.ttf \
+	UnShinmun.ttf \
+	UnTaza.ttf \
+	UnVada.ttf \
+	UnYetgul.ttf
 
-SUBDIRS         = 
+DOCS =	README
 
-all:=		TARGET= all
-install:=	TARGET= install
-clean:=		TARGET= clean
-clobber:=	TARGET= clobber
-lint:=		TARGET= lint
+all: $(VER)/.unpacked
 
-.KEEP_STATE:
+install: $(VER)/.installed
 
-all: $(FONT_TAR)
 
-font_install:
-	mkdir -p $(ROOT_FONT_DIR) $(ROOT_DOC_DIR)
-	bzip2 -d -c $(FONT_TAR) | (cd $(ROOT_FONT_DIR) ; tar xpf -)
-	bzip2 -d -c $(FONT_DOC_TAR) | (cd $(ROOT_DOC_DIR) ; tar xpf -)
-	#cp $(FONT_DIR) $(ROOT_FONT_DIR)/fonts.dir
-	#cp $(FONT_SCALE) $(ROOT_FONT_DIR)/fonts.scale
-
-install: all $(SUBDIRS) font_install
-
-clean:
-
-clobber: clean
-
-$(SUBDIRS): FRC
-	-@cd $@; pwd; $(MAKE) $(TARGET)
-
-FRC:
+include ../Makefile.fonts
+include $(SRC)/Makefile.targ
