@@ -1,0 +1,41 @@
+--- cldr_core/main.orig/ml.xml	2009-07-16 22:03:50.088157100 +0200
++++ cldr_core/main/ml.xml	2009-07-16 22:21:07.468780550 +0200
+@@ -1101,7 +1101,7 @@
+ 							<month type="7">ജൂലൈ</month>
+ 							<month type="8">ഓഗസ്റ്റ്</month>
+ 							<month type="8" alt="proposed-x1001" draft="unconfirmed">ആഗസ്ത്</month>
+-							<month type="9">സെപ്റ്റംബര്‍</month>
++							<month type="9">സെപ്റ്റം</month>
+ 							<month type="9" alt="proposed-x1001" draft="unconfirmed">സെപ്തംബര്‍</month>
+ 							<month type="10">ഒക്ടോബര്‍</month>
+ 							<month type="11">നവംബര്‍</month>
+@@ -1214,9 +1214,9 @@
+ 						</quarterWidth>
+ 					</quarterContext>
+ 				</quarters>
+-				<am draft="contributed">രാവിലെ</am>
++				<am>രാവിലെ</am>
+ 				<am alt="proposed-x1001" draft="unconfirmed">AM</am>
+-				<pm draft="contributed">വൈകുന്നേരം</pm>
++				<pm>വൈകു</pm>
+ 				<pm alt="proposed-x1001" draft="unconfirmed">PM</pm>
+ 				<eras>
+ 					<eraNames>
+@@ -1243,7 +1243,7 @@
+ 					</dateFormatLength>
+ 					<dateFormatLength type="long">
+ 						<dateFormat>
+-							<pattern>yyyy, MMMM d</pattern>
++							<pattern>EEEE MMMM dd yyyy</pattern>
+ 						</dateFormat>
+ 					</dateFormatLength>
+ 					<dateFormatLength type="medium">
+@@ -1265,7 +1265,7 @@
+ 					</timeFormatLength>
+ 					<timeFormatLength type="long">
+ 						<timeFormat>
+-							<pattern>h:mm:ss a z</pattern>
++							<pattern>hh:mm:ss a z</pattern>
+ 						</timeFormat>
+ 					</timeFormatLength>
+ 					<timeFormatLength type="medium">

@@ -1,0 +1,46 @@
+--- cldr_core/main.orig/bn.xml	2009-07-16 16:20:02.485081300 +0200
++++ cldr_core/main/bn.xml	2009-07-16 16:20:42.630293600 +0200
+@@ -1174,12 +1174,12 @@
+ 				<dateFormats>
+ 					<dateFormatLength type="full">
+ 						<dateFormat>
+-							<pattern draft="contributed">EEEE, d MMMM, yyyy</pattern>
++							<pattern>EEEE, yyyy MMMM dd</pattern>
+ 						</dateFormat>
+ 					</dateFormatLength>
+ 					<dateFormatLength type="long">
+ 						<dateFormat>
+-							<pattern draft="contributed">d MMMM, yyyy</pattern>
++							<pattern>EEEE MMMM dd yyyy</pattern>
+ 						</dateFormat>
+ 					</dateFormatLength>
+ 					<dateFormatLength type="medium">
+@@ -1189,24 +1189,24 @@
+ 					</dateFormatLength>
+ 					<dateFormatLength type="short">
+ 						<dateFormat>
+-							<pattern draft="contributed">d/M/yy</pattern>
++							<pattern>dd-M-yyyy</pattern>
+ 						</dateFormat>
+ 					</dateFormatLength>
+ 				</dateFormats>
+ 				<timeFormats>
+ 					<timeFormatLength type="full">
+ 						<timeFormat>
+-							<pattern draft="contributed">h:mm:ss a v</pattern>
++							<pattern>kk:mm:ss z</pattern>
+ 						</timeFormat>
+ 					</timeFormatLength>
+ 					<timeFormatLength type="long">
+ 						<timeFormat>
+-							<pattern draft="contributed">h:mm:ss a z</pattern>
++							<pattern>hh:mm:ss a z</pattern>
+ 						</timeFormat>
+ 					</timeFormatLength>
+ 					<timeFormatLength type="medium">
+ 						<timeFormat>
+-							<pattern draft="contributed">h:mm:ss a</pattern>
++							<pattern>h:mm:ss a</pattern>
+ 						</timeFormat>
+ 					</timeFormatLength>
+ 					<timeFormatLength type="short">

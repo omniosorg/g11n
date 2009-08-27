@@ -1,0 +1,29 @@
+--- cldr_core/main.orig/kn.xml	2009-07-16 21:59:23.004182700 +0200
++++ cldr_core/main/kn.xml	2009-07-16 22:03:05.742010050 +0200
+@@ -368,7 +368,7 @@
+ 					</dateFormatLength>
+ 					<dateFormatLength type="long">
+ 						<dateFormat>
+-							<pattern draft="unconfirmed">d MMMM yyyy</pattern>
++							<pattern>EEEE MMMM dd yyyy</pattern>
+ 						</dateFormat>
+ 					</dateFormatLength>
+ 					<dateFormatLength type="medium">
+@@ -378,7 +378,7 @@
+ 					</dateFormatLength>
+ 					<dateFormatLength type="short">
+ 						<dateFormat>
+-							<pattern draft="unconfirmed">d-M-yy</pattern>
++							<pattern>dd-M-yyyy</pattern>
+ 						</dateFormat>
+ 					</dateFormatLength>
+ 				</dateFormats>
+@@ -390,7 +390,7 @@
+ 					</timeFormatLength>
+ 					<timeFormatLength type="long">
+ 						<timeFormat>
+-							<pattern draft="unconfirmed">hh:mm:ss a z</pattern>
++							<pattern>hh:mm:ss a z</pattern>
+ 						</timeFormat>
+ 					</timeFormatLength>
+ 					<timeFormatLength type="medium">
