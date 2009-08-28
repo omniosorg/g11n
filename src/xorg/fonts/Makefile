@@ -33,6 +33,7 @@ SUBDIRS = \
 	indic-fonts-core \
 	ipafont \
 	kacst \
+	mgopen \
 	thai-scalable \
 	unfonts-core \
 	unfonts-extra \

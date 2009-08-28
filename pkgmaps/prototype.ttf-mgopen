@@ -1,0 +1,52 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
+#
+
+d none X11 0755 root bin
+d none X11/lib 0755 root bin
+d none X11/lib/X11 0755 root bin
+d none X11/lib/X11/fonts 0755 root bin
+d none X11/lib/X11/fonts/TrueType 0755 root bin
+d none X11/lib/X11/fonts/TrueType/mgopen 0755 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenCanonicaBold.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenCanonicaBoldItalic.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenCanonicaItalic.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenCanonicaRegular.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenCosmeticaBold.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenCosmeticaBoldOblique.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenCosmeticaOblique.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenCosmeticaRegular.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenModataBold.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenModataBoldOblique.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenModataOblique.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenModataRegular.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenModernaBold.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenModernaBoldOblique.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenModernaOblique.ttf 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/MgOpenModernaRegular.ttf 0444 root bin
+
+f none X11/lib/X11/fonts/TrueType/mgopen/fonts.dir 0444 root bin
+f none X11/lib/X11/fonts/TrueType/mgopen/fonts.scale 0444 root bin
+
