@@ -38,7 +38,7 @@ LOCALE:sh = basename `pwd`
 
 TARGETDIR =	$(FILEROOT)/usr/lib/locale/$(LOCALE)
 
-FILES = locale_description locale_map locale_map.miniroot pt_BR.UTF-8.x
+FILES = locale_map.miniroot pt_BR.UTF-8.x
 
 SUBDIRS = 
 

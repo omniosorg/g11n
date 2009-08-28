@@ -1,2 +1,0 @@
-# iso8859-1 locale should use old currency instead of Euro
-nl_BE@platform=solaris,yesno=solaris,currency=BEF,copy_ctype=ISO8859-1.ctype
