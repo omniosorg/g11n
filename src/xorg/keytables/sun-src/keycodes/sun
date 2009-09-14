@@ -585,6 +585,10 @@ xkb_keycodes "type6_usb" {
 //    <VOL+> = 176;
 //    <POWR> = 222;
 
+//      <I150> = 150;       
+      <I160> = 160;
+      <I235> = 235;
+
     indicator 4 = "Compose";
 };
 

@@ -106,28 +106,26 @@ xkb_symbols "defaults_common" {
     key <MUTE> { [  SunAudioMute,	SunVideoDegauss		]	};
     key <VOL-> { [  SunAudioLowerVolume,SunVideoLowerBrightness ]	};
     key <VOL+> { [  SunAudioRaiseVolume,SunVideoRaiseBrightness	]	};
-//    key <POWR> { [  SunPowerSwitch,	SunPowerSwitchShift	]	};
     key <POWR> { [  XF86Sleep,		XF86Hibernate		]	};
 
-    key <LALT> { [ Alt_L                ]                       };
-//    key <RALT> { [ Mode_switch          ]                       };
-//    key <ALGR> { [ Mode_switch          ]                       };
-    key <LMTA> { [ Meta_L               ]                       };
-    key <RMTA> { [ Meta_R               ]                       };
-    key <COMP> { [ Multi_key            ]                       };
+//    key <LALT> { [ Alt_L                ]                       };
+//    key <LMTA> { [ Meta_L               ]                       };
+//    key <RMTA> { [ Meta_R               ]                       };
+//    key <COMP> { [ Multi_key            ]                       };
 };
 
 partial default
 xkb_symbols "defaults" {
     include "sun_vndr/solaris(defaults_common)"
-    key <RALT> { [ Mode_switch          ]                       };
-    key <ALGR> { [ Mode_switch          ]                       };
+//    key <RALT> { [ Mode_switch          ]                       };
+//    key <ALGR> { [ Mode_switch          ]                       };
+
     // begin modifier mappings
-    modifier_map Shift          { Shift_R, Shift_L };
-    modifier_map Mod1           { Alt_L };
-    modifier_map Mod2           { Num_Lock };
-    modifier_map Mod3           { Alt_R, Mode_switch };
-    modifier_map Mod4           { Meta_L, Meta_R };
+//    modifier_map Shift          { Shift_R, Shift_L };
+//    modifier_map Mod1           { Alt_L };
+//    modifier_map Mod2           { Num_Lock };
+//    modifier_map Mod3           { Alt_R, Mode_switch };
+//    modifier_map Mod4           { Meta_L, Meta_R };
 };
 
 partial default

@@ -1,4 +1,3 @@
-// $XdotOrg: $
 //
 // Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 //
@@ -50,71 +49,41 @@
 //
 
 
-default partial alphanumeric_keys
-xkb_symbols "basic" {
-
-    // Describes the differences between a very simple US/ASCII
-    // keyboard and a very simple Turkish "Q" (computer modern) keybaord
-
-    // Alphanumeric section
-    name[Group1]= "Turkish \"Q\" (computer modern)";
-    key <LSGT> {	[      less,	greater  	],
-			[       bar			]	};
-    key <TLDE> {        [  quotedbl,    eacute          ]       };
-    key <AE02> {	[         2,	apostrophe	]	};
-    key <AE03> {	[         3,	asciicircum	],
-			[ numbersign			]	};
-    key <AE04> {	[         4,	plus     	],
-			[    dollar			]	};
-    key <AE06> {	[         6,	ampersand	]	};
-    key <AE07> {	[         7,	slash    	],
-			[ braceleft			]	};
-    key <AE08> {	[         8,	parenleft	],
-			[ bracketleft			]	};
-    key <AE09> {	[         9,	parenright	],
-			[ bracketright			]	};
-    key <AE10> {	[         0,	equal    	],
-			[ braceright			]	};
-    key <AE11> {	[  asterisk,	question 	],
-			[ backslash			]	};
-    key <AE12> {	[     minus,	underscore	]	};
-    key <AD01> {        [         q,    Q               ],
-			[ at				]	};
-    key <AD08> {	[  idotless,    I		]	};
-    key <AD11> {	[    gbreve,    Gbreve		]	};
-    key <AD12> {	[ udiaeresis,	Udiaeresis	],
-			[ asciitilde			]	};
-    key <AC10> {	[   scedilla,   Scedilla	],	
-			[     acute			]	};
-    key <AC11> {	[         i,    Iabovedot	]	};
-    key <BKSL> {	[     comma,	semicolon	],
-			[ quoteleft			]	};
-    key <AB08> {	[ odiaeresis,	Odiaeresis	],
-			[      less			]	};
-    key <AB09> {	[  ccedilla,	Ccedilla 	],
-			[   greater			]	};
-    key <AB10> {	[    period,	colon    	]	};
-
-
-    // End alphanumeric section
-
-    // begin modifier mappings
-    modifier_map Shift  { Shift_L };
-    modifier_map Lock   { Caps_Lock };
-    modifier_map Control{ Control_L };
-    modifier_map Mod3   { Mode_switch };
-};
-
-
+partial alphanumeric_keys
 xkb_symbols "type6" {
-  include "sun_vndr/us(type6)"
-  include "sun_vndr/tr(basic)"
-	//a few keys are different than in the basic layout
-    key <AD03> {        [               e,       E      ],
-                        [        EuroSign		]       };
-    key <AD11> {	[    gbreve,    Gbreve		],
-			[	diaeresis 		]	};
-    key <AB08> {	[ odiaeresis,	Odiaeresis	]	};
-    key <AB09> {	[  ccedilla,	Ccedilla 	]	};
+
+    include "sun_vndr/us(type6)"
+
+    name[Group1]="Turkey - (Q) Sun type 6";
+
+    key <TLDE>  { [  quotedbl,     eacute                ] };
+    key <AE01>	{ [         1,     exclam                ] };
+    key <AE02>	{ [         2, apostrophe                ] };
+    key <AE03>	{ [        3, asciicircum,    numbersign ] };
+    key <AE04>	{ [         4,       plus,        dollar ] };
+    key <AE06>	{ [         6,  ampersand                ] };
+    key <AE07>	{ [         7,      slash,     braceleft ] };
+    key <AE08>	{ [         8,  parenleft,   bracketleft ] };
+    key <AE09>	{ [         9, parenright,  bracketright ] };
+    key <AE10>	{ [         0,      equal,    braceright ] };
+    key <AE11>	{ [  asterisk,   question,     backslash ] };
+    key <AE12>	{ [     minus, underscore                ] };
+
+    key <AD01>  { [         q,          Q,           at ] };
+    key <AD03>	{ [         e,          E,     EuroSign ] };
+    key <AD08>	{ [  idotless,          I               ] };
+    key <AD11>	{ [    gbreve,     Gbreve               ] };
+    key <AD12>	{ [udiaeresis, Udiaeresis,   asciitilde ] };
+
+    key <AC10>	{ [  scedilla,   Scedilla,        acute ] };
+    key <AC11>	{ [         i,  Iabovedot               ] }; 
+    key <BKSL>	{ [     comma,  semicolon,        grave ] };
+
+    key <LSGT>	{ [      less,    greater,          bar ] };
+    key <AB08>	{ [odiaeresis, Odiaeresis               ] };
+    key <AB09>	{ [  ccedilla,   Ccedilla               ] };
+    key <AB10>	{ [    period,      colon               ] };
+
+    include "level3(ralt_switch)"
 };
 

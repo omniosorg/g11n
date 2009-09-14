@@ -27,6 +27,7 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
+//
 
 //
 // CDDL HEADER START
@@ -49,48 +50,44 @@
 // CDDL HEADER END
 //
 
+// Korean layout for a Type 4 Sun keyboard
+xkb_symbols "type4" {
+    include "sun_vndr/us(type4basic)"
 
+    key <BKSL> { [ backslash, bar,  brokenbar	]		};
+
+    key <LNFD> { [ Hangul		]			};
+    key <RALT> { [ Linefeed		]			};
+    key <COMP> { [ Hangul_Hanja		]			};
+
+    include "level3(ralt_switch)"
+
+};
+
+// Korean layout for a Type 5 Sun keyboard
+xkb_symbols "type5" {
+//    include "sun_vndr/us(type5basic)"
+
+    // A few keys are different
+    key <ALGR> { [ Hangul		]				  };
+    key <COMP> { [ Hangul_Hanja		]				  };
+    key <BKSL> { [ backslash, bar,  brokenbar			] };
+
+    include "level3(ralt_switch)"
+
+};
+
+// Korean layout for a Type 6 Sun keyboard
+partial
 xkb_symbols "type6" {
-  include "sun_vndr/us(type6)"
+//    include "sun_vndr/us(type5basic)"
 
-    key <TLDE> { [ section, degree	]	};
-    key <AE01> { [ 1, plus		],
-		 [ bar			]	};
-    key <AE02> { [ 2, quotedbl		],
-		 [ at			]	};
-    key <AE03> { [ 3, asterisk		],
-		 [ numbersign		]	};
-    key <AE04> { [ 4, ccedilla		],
-		 [ asciicircum		]	};
-    key <AE05> { [ 5, percent		],
-		 [ asciitilde		]	};
-    key <AE06> { [ 6, ampersand		]	};
-    key <AE07> { [ 7, slash		]	};
-    key <AE08> { [ 8, parenleft		]	};
-    key <AE09> { [ 9, parenright	]	};
-    key <AE10> { [ 0, equal		],
-		 [ quoteleft		]	};
-    Key <AE11> { [ quoteright, question ],
-		 [ SunFA_Acute		]	};
-    key <AE12> { [ SunFA_Circum, SunFA_Grave ],
-		 [ SunFA_Tilde		]	};
-    key <AD03> { [ e, E			], 
-		 [ EuroSign		]	};
-    key <AD06> { [ z, Z			]	};
-    key <AD11> { [ udiaeresis, egrave	],
-		 [ bracketleft		]	};
-    key <AD12> { [ SunFA_Diaeresis, exclam ],
-		 [ bracketright		]	};
-    key <AC10> { [ odiaeresis, eacute	]	};
-    key <AC11> { [ adiaeresis, agrave	],
-		 [ braceleft		]	};
-    key <BKSL> { [ dollar, sterling	],
-		 [ braceright		]	};
-    key <LSGT> { [ less, greater	],
-		 [ backslash		]	};
-    key <AB01> { [ y, Y			]	};
-    key <AB08> { [ comma, semicolon	]	};
-    key <AB09> { [ period, colon	]	};
-    key <AB10> { [ minus, underscore	]	};
+    // A few keys are different
+    key <ALGR> { [ Hangul		]				  };
+    key <COMP> { [ Hangul_Hanja		]				  };
+    key <BKSL> { [ backslash, bar,  brokenbar			] };
+
+   include "level3(ralt_switch)"
+
 };
 

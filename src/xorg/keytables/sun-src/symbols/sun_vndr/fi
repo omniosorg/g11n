@@ -1,4 +1,3 @@
-// $XdotOrg: $
 //
 // Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 //
@@ -49,53 +48,38 @@
 // CDDL HEADER END
 //
 
-xkb_symbols "basic" {
-    include "fi"
-    // A few keys are different
-    key <AE11> {        [            plus,        question      ],
-                        [       backslash                       ]       };
-    key <AD12> {        [       diaeresis,     asciicircum      ],
-                        [      asciitilde                       ]       };
-    key <BKSL> {        [      apostrophe,        asterisk      ],
-                        [       quoteleft                       ]       };
-};
-
-
+partial default alphanumeric_keys
 xkb_symbols "type6" {
-     include "sun_vndr/us(type6)"
 
-    key <TLDE> {        [         section,         onehalf      ]	};
-    key <AE02> {        [               2,        quotedbl      ],
-                        [              at		        ]	};
-    key <AE03> {        [               3,      numbersign      ],
-                        [        sterling		        ]	};
-    key <AE04> {        [               4,        currency      ],
-                        [          dollar		        ]	};
-    key <AE06> {        [               6,       ampersand      ]	};
-    key <AE07> {        [               7,           slash      ],
-                        [       braceleft			]	};
-    key <AE08> {        [               8,       parenleft      ],
-                        [     bracketleft			]	};
-    key <AE09> {        [               9,      parenright      ],
-                        [    bracketright			]	};
-    key <AE10> {        [               0,           equal      ],
-                        [      braceright			]	};
-    key <AE11> {        [            plus,        question      ],
-                        [       backslash			]	};
-    key <AE12> {        [      SunFA_Acute,      SunFA_Grave    ]	};
-    key <AD03> {        [               e,               E      ],
-                        [        EuroSign			]       };
-    key <AD11> {	[	    aring,	Aring		]	};
-    key <AD12> {        [  SunFA_Diaeresis,     asciicircum     ],
-                        [      asciitilde    			]	};
-    key <AC10> {	[ 	odiaeresis,	Odiaeresis	]	};
-    key <AC11> {	[ 	adiaeresis,	Adiaeresis	]	};
-    key <BKSL> {	[      apostrophe,      asterisk	],
-			[	quoteleft			]	};
-    key <AB08> {        [	     comma,	semicolon	]       };
-    key <AB09> {        [	    period,	colon		]       };
-    key <AB10> {        [	     minus,	underscore      ]       };
-    key <LSGT> {	[	      less,	greater  	],
-			[	       bar			]	};
+    include "sun_vndr/us(type6)"
+ 
+    name[Group1]="Finland - Sun type 6";
+
+    key <TLDE> { [  section,         onehalf                                  ] };
+    key <AE01> { [  1,               exclam                                   ] };
+    key <AE02> { [  2,               quotedbl,         at                     ] };
+    key <AE03> { [  3,               numbersign,       sterling               ] };
+    key <AE04> { [  4,               currency,         dollar                 ] };
+    key <AE05> { [  5,               percent                                  ] };
+    key <AE06> { [  6,               ampersand                                ] };
+    key <AE07> { [  7,               slash,            braceleft              ] };
+    key <AE08> { [  8,               parenleft,        bracketleft            ] };
+    key <AE09> { [  9,               parenright,       bracketright           ] };
+    key <AE10> { [  0,               equal,            braceright             ] };
+    key <AE11> { [  plus,            question,         backslash              ] };
+    key <AE12> { [  dead_acute,      dead_grave                               ] };
+    key <AD03> { [  e,               E,                EuroSign               ] };
+    key <AD11> { [  aring,           Aring                                    ] };
+    key <AD12> { [  dead_diaeresis,  asciicircum,      asciitilde             ] };
+    key <AC10> { [  odiaeresis,      Odiaeresis                               ] };
+    key <AC11> { [  adiaeresis,      Adiaeresis                               ] };
+    key <BKSL> { [  apostrophe,      asterisk,         quoteleft              ] };
+    key <LSGT> { [  less,            greater,          bar                    ] };
+    key <AB08> { [  comma,           semicolon                                ] };
+    key <AB09> { [  period,          colon                                    ] };
+    key <AB10> { [  minus,           underscore                               ] };
+
+    include "level3(ralt_switch)"
+
 };
 

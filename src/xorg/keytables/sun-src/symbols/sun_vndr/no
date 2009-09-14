@@ -1,4 +1,3 @@
-// $XdotOrg: $
 //
 // Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 //
@@ -49,90 +48,95 @@
 // CDDL HEADER END
 //
 
+partial alphanumeric_keys
 xkb_symbols "type4" {
-    include "sun_vndr/us(type4basic)"
-    // A few keys are different
 
-    key <BKSL> { [ bar, section		]			};
-    key <BRCR> { [ asciitilde, asciicircum]			};
-    key <AE02> { [ 2, quotedbl		], [at		]	};
-    key <AE03> { [ 3, numbersign	], [sterling	]	};
-    key <AE04> { [ 4, currency		], [dollar	]	};
-    key <AE06> { [ 6, ampersand		]			};
-    key <AE07> { [ 7, slash		], [braceleft	]	};
-    key <AE08> { [ 8, parenleft		], [bracketleft	]	};
-    key <AE09> { [ 9, parenright	], [bracketright]	};
-    key <AE10> { [ 0, equal		], [braceright	]	};
-    key <AE11> { [ plus, question	]			};
-    key <AE12> { [ backslash, SunFA_Grave], [SunFA_Acute]	};
-    key <AD03> { [ e, E			], [EuroSign	]	};
-    key <AD11> { [ Aring		]			};
-    key <AD12> { [ SunFA_Diaeresis, SunFA_Circum],[SunFA_Tilde] };
-    key <LCTL> { [ Caps_Lock		]			};
-    key <AC10> { [ Ooblique		]			};
-    key <AC11> { [ AE			]			};
-    key <TLDE> { [ quoteright, asterisk ], [quoteleft	]	};
-    key <LSGT> { [ less, greater	]			};
-    key <AB08> { [ comma, semicolon	]			};
-    key <AB09> { [ period, colon	]			};
-    key <AB10> { [ minus, underscore	]			};
-    key <CAPS> { [ Control_L		]			};
+     include "sun_vndr/us(type4basic)"
 
+     name[Group1]="Norway - Sun type 4";
+
+    key <BKSL> { [ bar, section         ]                       };
+    key <BRCR> { [ asciitilde, asciicircum]                     };
+    key <AE02> { [ 2, quotedbl, at          ]       };
+    key <AE03> { [ 3, numbersign, sterling    ]       };
+    key <AE04> { [ 4, currency, dollar      ]       };
+    key <AE06> { [ 6, ampersand         ]                       };
+    key <AE07> { [ 7, slash, braceleft   ]       };
+    key <AE08> { [ 8, parenleft, bracketleft ]       };
+    key <AE09> { [ 9, parenright, bracketright]       };
+    key <AE10> { [ 0, equal, braceright  ]       };
+    key <AE11> { [ plus, question       ]                       };
+    key <AE12> { [ backslash, dead_grave,  dead_acute ]       };
+    key <AD03> { [ e, E, EuroSign    ]       };
+    key <AD11> { [ aring, Aring                ]                       };
+    key <AD12> { [ dead_diaeresis, dead_circumflex,  dead_tilde ] };
+    key <LCTL> { [ Caps_Lock            ]                       };
+    key <AC10> { [ Ooblique             ]                       };
+    key <AC11> { [ ae, AE                   ]                       };
+    key <TLDE> { [ quoteright, asterisk, quoteleft   ]       };
+    key <LSGT> { [ less, greater        ]                       };
+    key <AB08> { [ comma, semicolon     ]                       };
+    key <AB09> { [ period, colon        ]                       };
+    key <AB10> { [ minus, underscore    ]                       };
+    key <CAPS> { [ Control_L            ]                       };
+
+    include "level3(ralt_switch)"
 };
 
+
+partial alphanumeric_keys
 xkb_symbols "type5" {
-    include "no"
+    
+    include "sun_vndr/us(type5)"
 
-    key <AE05> { [ 5, percent		], [asciitilde			]};
-    key <AE06> { [ 6, ampersand		], [asciicircum			]};
-    key <AE07> { [ 7, slash		], [ braceleft			]};
-    key <AE08> { [ 8, parenleft		], [ bracketright		]};
-    key <AE09> { [ 9, parenright	], [ bracketright		]};
-    key <AE10> { [ 0, equal		], [ braceright			]};
+    name[Group1]="Norway - Sun type 5";
 
-    key <BKSL> { [ quoteright, asterisk	], [ quoteleft			]};
-    key <LSGT> { [ less, greater	]				};
+    key <AE05> { [ 5, percent, asciitilde                  ]};
+    key <AE06> { [ 6, ampersand, asciicircum                 ]};
+    key <AE07> { [ 7, slash,  braceleft                  ]};
+    key <AE08> { [ 8, parenleft,  bracketright               ]};
+    key <AE09> { [ 9, parenright,  bracketright               ]};
+    key <AE10> { [ 0, equal,  braceright                 ]};
+
+    key <BKSL> { [ quoteright, asterisk,  quoteleft                  ]};
+    key <LSGT> { [ less, greater        ]                               };
+
+   include "level3(ralt_switch)"
+
 };
 
 
+partial alphanumeric_keys
 xkb_symbols "type6" {
+
     include "sun_vndr/us(type6)"
 
-    key <TLDE> {	[             bar,         section      ]	};
-    key <LSGT> {	[	     less,	   greater	]	};
-    key <BKSL> {	[      apostrophe,      asterisk	],
-			[	grave				]	};
-    key <AE02> {	[               2,        quotedbl  	],
-			[	       at			]	};
-    key <AE03> {	[              	3,	numbersign	],
-			[	 sterling			]	};
-    key <AE04> {	[               4,        currency     	],
-			[	   dollar			]	};
-    key <AE05> {	[               5,         percent     	],
-			[        asciitilde			]	};
-    key <AE06> {	[               6,       ampersand     	],
-			[      asciicircum			]	};
-    key <AE07> {	[               7,           slash     	],
-			[       braceleft			]	};
-    key <AE08> {	[               8,       parenleft     	],
-			[     bracketleft			]	};
-    key <AE09> {	[               9,      parenright     	],
-			[    bracketright			]	};
-    key <AE10> {	[               0,           equal     	],
-                        [      braceright			]	};
-    key <AE11> {	[            plus,        question      ]	};
-    key <AE12> {   	[       backslash,      SunFA_Grave     ],
-                 	[      SunFA_Acute          	        ]	};
-    key <AD03> {        [               e,               E      ],
-                        [        EuroSign		        ]	};
-    key <AD11> {	[	    aring,           Aring 	]	};
-    key <AD12> {   	[ SunFA_Diaeresis,    SunFA_Circum      ],
-                 	[      SunFA_Tilde			]	};
-    key	<AC10> {	[	   oslash,        Oslash 	]	}; 
-    key	<AC11> {	[	       ae,	        AE	]	};
-    key <AB08> {        [	    comma,	semicolon	]       };
-    key <AB09> {        [	    period,	colon		]       };
-    key <AB10> {        [	     minus,	underscore      ]       };
+    name[Group1]="Norway - Sun type 6";
+
+    key <TLDE> { [             bar,         section                ] };
+    key <LSGT> { [            less,         greater                ] };
+    key <BKSL> { [      apostrophe,        asterisk,  grave        ] };
+    key <AE02> { [               2,        quotedbl,  at           ] };
+    key <AE03> { [               3,      numbersign,  sterling     ] };
+    key <AE04> { [               4,        currency,  dollar       ] };
+    key <AE05> { [               5,         percent,  asciitilde   ] };
+    key <AE06> { [               6,       ampersand,  asciicircum  ] };
+    key <AE07> { [               7,           slash,  braceleft    ] };
+    key <AE08> { [               8,       parenleft,  bracketleft  ] };
+    key <AE09> { [               9,      parenright,  bracketright ] };
+    key <AE10> { [               0,           equal,  braceright   ] };
+    key <AE11> { [            plus,        question                ] };
+    key <AE12> { [       backslash,      dead_grave,  dead_acute   ] };
+    key <AD03> { [               e,               E,  EuroSign     ] };
+    key <AD11> { [           aring,           Aring                ] };
+    key <AD12> { [  dead_diaeresis, dead_circumflex,  dead_tilde   ] };
+    key <AC10> { [          oslash,          Oslash                ] }; 
+    key <AC11> { [              ae,              AE                ] };
+    key <AB08> { [           comma,       semicolon                ] };
+    key <AB09> { [          period,           colon                ] };
+    key <AB10> { [           minus,      underscore                ] };
+
+    include "level3(ralt_switch)"
 
 };
 

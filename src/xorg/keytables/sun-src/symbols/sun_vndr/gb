@@ -1,4 +1,3 @@
-// $XdotOrg: $
 //
 // Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 //
@@ -49,43 +48,55 @@
 // CDDL HEADER END
 //
 
-xkb_symbols "type4" {
-    include "sun_vndr/us(type4basic)"
-    // A few keys are different
-    key <AE01> { [ 1, exclam		], [brokenbar	]	};
-    key <AE03> { [ 3, sterling		], [numbersign	]	};
-    key <AE04> { [ 4, dollar		], [EuroSign	]	};
-    key <AE11> { [ minus, underscore	], [notsign	]	};
-    key <AD03> { [ e, E			], [EuroSign	]	};
-
-
-};
-
-
-xkb_symbols "type5" {
-    include "gb(Sundeadkeys)"
-
-    key <TLDE> { 	[	quoteleft,	notsign		],
-			[	brokenbar			]	};
-    key <AD03> {	[		e,	E		],
-			[	EuroSign			]	};
-};
-
-    // Describes the differences between a very simple en_US
-    // keyboard and a very simple British keyboard
-
+partial default alphanumeric_keys
 xkb_symbols "type6" {
+
     include "sun_vndr/us(type6)"
+ 
+    name[Group1]="United Kingdom - Sun type 6";
 
-    key <TLDE> { 	[	quoteleft,	notsign		],
-			[	brokenbar			]	};
+    key <TLDE> { [  quoteleft,    notsign,  brokenbar ] };
 
-    key <AE02> {        [               2,        quotedbl      ]	};
-    key <AE03> {	[		3,	sterling	]	};
-    key <AE04> {	[		4,	dollar		],
-			[	EuroSign			]	};
-    key <BKSL> {	[      numbersign,      asciitilde	]	};
-    key <AC11> {	[      apostrophe,              at 	]	};
-    key <LSGT> {	[       backslash,	       bar  	]	};
+    key <AE02> { [          2,   quotedbl             ] };
+    key <AE03> { [          3,   sterling             ] };
+    key <AE04> { [          4,     dollar,   EuroSign ] };
+    key <BKSL> { [ numbersign, asciitilde             ] };
+    key <AC11> { [ apostrophe,         at             ] };
+    key <LSGT> { [  backslash,        bar             ] };
+
+    include "level3(ralt_switch)"
+};
+
+
+partial default alphanumeric_keys
+xkb_symbols "type5" {
+
+    include "sun_vndr/us(type5)"
+
+    name[Group1]="United Kingdom - Sun type 5";
+
+    key <TLDE> {        [       quoteleft,      notsign,    brokenbar         ] };
+    key <AD03> {        [               e,      E,          EuroSign          ] };
+
+    include "level3(ralt_switch)"
+
+};
+
+
+partial default alphanumeric_keys
+xkb_symbols "type4" {
+
+    include "sun_vndr/us(type4basic)"
+
+    name[Group1]="United Kingdom - Sun type 4";
+
+    key <AE01> { [      1,     exclam,   brokenbar ] };
+    key <AE03> { [      3,   sterling,  numbersign ] };
+    key <AE04> { [      4,     dollar,    EuroSign ] };
+    key <AE11> { [  minus, underscore,     notsign ] };
+    key <AD03> { [      e,          E,    EuroSign ] };
+
+    include "level3(ralt_switch)"
+
 };
 
