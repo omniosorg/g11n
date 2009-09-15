@@ -26,35 +26,25 @@
 
 include $(SRC)/Makefile.master
 
-PROJECT		= gentium-basic
-VER 		= $(PROJECT)-1.1
-TARBALL		= $(VER).tar.bz2
+PROJECT		= ttf-sil-yi
+VER 		= $(PROJECT)-1.200
+TARBALL		= $(PROJECT)_1.200.orig.tar.gz
+SOURCE_URL	= http://ftp.debian.org/debian/pool/main/t/$(PROJECT)/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/gentium
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-gentium/basic
+FONTS = silyi.ttf
 
-FONTS =	GenBasB.ttf \
-	GenBasBI.ttf \
-	GenBasI.ttf \
-	GenBasR.ttf \
-	GenBkBasB.ttf \
-	GenBkBasBI.ttf \
-	GenBkBasI.ttf \
-	GenBkBasR.ttf
+ID =	SilYi
 
-DOCS = 	FONTLOG
+DOCS =	
+
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/sil
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-sil
 
 all: $(VER)/.unpacked
+	touch $(VER)/.docs_installed
 
-$(VER)/.unpacked: $(TARBALL)
-	-$(RM) -r $(VER)
-	$(UNPACKARCHIVE) $(TARBALL) $(VER)
-	touch $@
+install: all $(VER)/.installed
 
-$(VER)/%: $(VER)/%.txt
-	$(CP) $< $@
+include ../../Makefile.fonts
+include $(SRC)/Makefile.targ
 
-install: $(VER)/.installed
-
-
-include ../Makefile.fonts

@@ -26,35 +26,32 @@
 
 include $(SRC)/Makefile.master
 
-PROJECT		= gentium-basic
-VER 		= $(PROJECT)-1.1
-TARBALL		= $(VER).tar.bz2
+PROJECT		= LateefRegOT
+VER 		= $(PROJECT)_1.001
+TARBALL		= $(VER).zip
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/gentium
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-gentium/basic
+FONTS = LateefRegOT.ttf
 
-FONTS =	GenBasB.ttf \
-	GenBasBI.ttf \
-	GenBasI.ttf \
-	GenBasR.ttf \
-	GenBkBasB.ttf \
-	GenBkBasBI.ttf \
-	GenBkBasI.ttf \
-	GenBkBasR.ttf
+ID =	Lateef
 
-DOCS = 	FONTLOG
+DOCS =	FONTLOG.$(ID).txt
+
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/sil
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-sil
 
 all: $(VER)/.unpacked
 
+$(VER)/%.$(ID).txt: $(VER)/%.txt
+	cp $< $@
+
+install: all $(VER)/.installed
+
+include ../../Makefile.fonts
+
 $(VER)/.unpacked: $(TARBALL)
 	-$(RM) -r $(VER)
-	$(UNPACKARCHIVE) $(TARBALL) $(VER)
+	-mkdir $(VER)
+	$(UNPACKARCHIVE) $(TARBALL) .
+	$(MV) *ttf *txt $(VER)/
 	touch $@
 
-$(VER)/%: $(VER)/%.txt
-	$(CP) $< $@
-
-install: $(VER)/.installed
-
-
-include ../Makefile.fonts

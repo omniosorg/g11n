@@ -26,40 +26,61 @@
 
 include $(SRC)/Makefile.master
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/thai-scalable
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/thai-scalable
+SUBDIRS = \
+	abyssinica \
+	andika \
+	charis \
+	dai-banna \
+	doulos \
+	ezra \
+	galatia \
+	lateef \
+	scheherazade \
+	sophia-nubian \
+	yi
 
-FONT_TAR	= thai-scalable.tar.bz2
-FONT_DOC_TAR	= thai-scalable-doc.tar.bz2
-FONT_SCALE	= fonts.scale.thai-scalable 
-FONT_DIR	= fonts.dir.thai-scalable
+FILES = fonts.dir \
+	fonts.scale
 
-SUBDIRS         = 
+DOCS =	OFL.txt \
+	OFL-FAQ.txt
+
+ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/sil
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-sil
 
 all:=		TARGET= all
-install:=	TARGET= install
-clean:=		TARGET= clean
-clobber:=	TARGET= clobber
-lint:=		TARGET= lint
+install :=	TARGET= install
+clean :=	TARGET= clean
+clobber :=	TARGET= clobber
 
-.KEEP_STATE:
+all: $(SUBDIRS)
 
-all: $(FONT_TAR)
+install: $(SUBDIRS) .files_installed
 
-font_install:
-	mkdir -p $(ROOT_FONT_DIR) $(ROOT_DOC_DIR)
-	bzip2 -d -c $(FONT_TAR) | (cd $(ROOT_FONT_DIR) ; tar xpf -)
-	bzip2 -d -c $(FONT_DOC_TAR) | (cd $(ROOT_DOC_DIR) ; tar xpf -)
-	cp $(FONT_DIR) $(ROOT_FONT_DIR)/fonts.dir
-	cp $(FONT_SCALE) $(ROOT_FONT_DIR)/fonts.scale
+clean: $(SUBDIRS)
+	$(RM) .*installed
 
-install: all $(SUBDIRS) font_install
+.files_installed: .docs_installed
+	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
+	( for f in $(FILES); do \
+		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
+	done; )
+	touch $@
 
-clean:
+%.bz2: %
+	$(BZIP2) -c $< > $@
 
-clobber: clean
+.docs_installed: $(DOCS:%=%.bz2)
+	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
+	( for f in $(DOCS); do \
+		$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
+	done; )
+	touch $@
 
 $(SUBDIRS): FRC
-	-@cd $@; pwd; $(MAKE) $(TARGET)
+	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
+
+tarball:
 
 FRC:
+

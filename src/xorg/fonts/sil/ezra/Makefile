@@ -26,35 +26,18 @@
 
 include $(SRC)/Makefile.master
 
-PROJECT		= gentium-basic
-VER 		= $(PROJECT)-1.1
-TARBALL		= $(VER).tar.bz2
+PROJECT		= ttf-sil-ezra
+VER 		= $(PROJECT)-2.51
+TARBALL		= $(PROJECT)_2.51.orig.tar.gz
+SOURCE_URL	= http://ftp.debian.org/debian/pool/main/t/$(PROJECT)/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/gentium
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-gentium/basic
+FONTS =	SILEOT.ttf \
+	SILEOTSR.ttf
 
-FONTS =	GenBasB.ttf \
-	GenBasBI.ttf \
-	GenBasI.ttf \
-	GenBasR.ttf \
-	GenBkBasB.ttf \
-	GenBkBasBI.ttf \
-	GenBkBasI.ttf \
-	GenBkBasR.ttf
+ID =	Ezra
 
-DOCS = 	FONTLOG
+DOCS =	README.$(ID).txt \
+	FONTLOG.$(ID).txt
 
-all: $(VER)/.unpacked
+include ../Makefile.common
 
-$(VER)/.unpacked: $(TARBALL)
-	-$(RM) -r $(VER)
-	$(UNPACKARCHIVE) $(TARBALL) $(VER)
-	touch $@
-
-$(VER)/%: $(VER)/%.txt
-	$(CP) $< $@
-
-install: $(VER)/.installed
-
-
-include ../Makefile.fonts

@@ -26,35 +26,16 @@
 
 include $(SRC)/Makefile.master
 
-PROJECT		= gentium-basic
-VER 		= $(PROJECT)-1.1
-TARBALL		= $(VER).tar.bz2
+PROJECT		= ttf-sil-scheherazade
+VER 		= $(PROJECT)-1.001
+TARBALL		= $(PROJECT)_1.001.orig.tar.gz
+SOURCE_URL	= http://ftp.debian.org/debian/pool/main/t/$(PROJECT)/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/gentium
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-gentium/basic
+FONTS = ScheherazadeRegOT.ttf
 
-FONTS =	GenBasB.ttf \
-	GenBasBI.ttf \
-	GenBasI.ttf \
-	GenBasR.ttf \
-	GenBkBasB.ttf \
-	GenBkBasBI.ttf \
-	GenBkBasI.ttf \
-	GenBkBasR.ttf
+ID =	Scheherazade
 
-DOCS = 	FONTLOG
+DOCS =	FONTLOG.$(ID).txt
 
-all: $(VER)/.unpacked
+include ../Makefile.common
 
-$(VER)/.unpacked: $(TARBALL)
-	-$(RM) -r $(VER)
-	$(UNPACKARCHIVE) $(TARBALL) $(VER)
-	touch $@
-
-$(VER)/%: $(VER)/%.txt
-	$(CP) $< $@
-
-install: $(VER)/.installed
-
-
-include ../Makefile.fonts
