@@ -362,6 +362,7 @@ f none X11/lib/X11/xkb/symbols/sun_vndr/tr 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/tuv 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/tw 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/us 0444 root bin
+f none X11/lib/X11/xkb/symbols/sun_vndr/us_old 0444 root bin
 f none X11/lib/X11/xkb/symbols/sun_vndr/usb 0444 root bin
 
 d none X11/lib/X11/xkb/symbols/xfree68_vndr 0755 root bin

@@ -140,7 +140,7 @@
 
 // Sun Type 6 keyboards with custom/non-standard layouts
 ! $sun_t6_custom = ara be ch de dk es fi fr \
-                   gb it jp ko nl no pt ru \
+                   gb it kr nl no pt ru \
                    se tr tw \
 
 
@@ -364,9 +364,9 @@
   $sun_type5    $sun_t6_custom		=       pc+sun_vndr/us(type5)+%l%(v)
   $sun_hobo     $sun_t6_custom 		=       pc+sun_vndr/us(type5hobo)+%l%(v)
   $sun_type6    us      		=       pc+sun_vndr/us(type6)
-  $sun_type6    jp      		=       sun_vndr/us(type6)+sun_vndr/jp(type6)
-  $sun_type7    jp      		=       sun_vndr/us(type6)+sun_vndr/jp(type7)
-  jp106         jp      		=       sun_vndr/us(type6)+sun_vndr/jp(type7)
+  $sun_type6    jp      		=       sun_vndr/us_old(type6)+sun_vndr/jp(type6)
+  $sun_type7    jp      		=       sun_vndr/us_old(type6)+sun_vndr/jp(type7)
+  jp106         jp      		=       sun_vndr/us_old(type6)+sun_vndr/jp(type7)
   $sun_type6    $sun_t6_custom		=       pc+sun_vndr/us(type6)+%l%(v)
   $sun_type7    us      		=       pc+sun_vndr/us(type6)
   $sun_type7    $sun_t6_custom 		=       pc+sun_vndr/us(type6)+%l%(v)
@@ -527,6 +527,12 @@
   *		yu		unicode		=	pc+srp(latinunicode)
   *		yu		yz		=	pc+srp(latinyz)
   *		yu		unicodeyz		=	pc+srp(latinunicodeyz)
+
+! model         layout  =       symbols
+ $sun_type7     jp      =       +sun_vndr/solaris(defaults_type7jp)
+  jp106         jp      =       +sun_vndr/solaris(defaults_type7jp)
+ $sun           *       =       +sun_vndr/solaris(defaults)
+
 
 ! layout[2]	=	symbols
   ar		=	+ara%(v[2]):2
@@ -969,17 +975,12 @@
   $maclaptop    =       +inet(apple)+level3(enter_switch)
   $macs	        =       +inet(apple)
 
-! model         layout  =       symbols
- $sun_type7     jp      =       +sun_vndr/solaris(defaults_type7jp)
-  jp106         jp      =       +sun_vndr/solaris(defaults_type7jp)
- $sun           *       =       +sun_vndr/solaris(defaults)
-
 ! model		layout		=	compat
  $sun_jp        jp              =       complete+japan(kana_lock)
   jp106         jp              =       complete+japan(kana_lock)
   pc98		nec_vndr/jp	=	pc98(basic)
   *		jp		=	complete+japan
-  olpc         *               =       olpc
+  olpc		*               =       olpc
   *		*		=	complete
 
 ! model		layout[1]	=	compat
