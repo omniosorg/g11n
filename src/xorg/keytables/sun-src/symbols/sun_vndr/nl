@@ -52,8 +52,6 @@
 partial default alphanumeric_keys
 xkb_symbols "type4" {
 
-    include "sun_vndr/us(type4basic)"
-
     name[Group1]="Netherlands - Sun type 4";
 
     key <BKSL> { [ at, section, notsign ]           };
@@ -89,14 +87,11 @@ xkb_symbols "type4" {
 //    key <COMP> { [ SunCompose         ]                       };
     key <ALGR> { [ Caps_Lock            ]                       }; 
 
-    include "level3(ralt_switch)"
 };
 
 
 default partial alphanumeric_keys
 xkb_symbols "type6" {
-
-    include "sun_vndr/us(type6)"
 
     name[Group1]="Netherlands - Sun type 6";
 
@@ -141,6 +136,5 @@ xkb_symbols "type6" {
     key <AB09>  { [    period,      colon ] };
     key <AB10>  { [     minus,      equal ] };
 
-    include "level3(ralt_switch)"
 };
 

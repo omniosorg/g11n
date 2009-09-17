@@ -52,15 +52,12 @@
 // Taiwanese layout for a Type 4 Sun keyboard
 
 xkb_symbols "type4" {
-    include "sun_vndr/us(type4basic)"
 
     key <BKSL> { [ backslash, bar,  brokenbar	]		};
 
 //    key <LNFD> { [ Hangul		]			};
 //    key <RALT> { [ Linefeed		]			};
     key <COMP> { [ Henkan_Mode		]			};
-
-    include "level3(ralt_switch)"
 
 };
 
@@ -71,8 +68,6 @@ xkb_symbols "type5" {
     key <ALGR> { [ Henkan_Mode		]			};
     key <BKSL> { [ backslash, bar,  brokenbar	]		};
 
-    include "level3(ralt_switch)"
-
 };
 
 // Taiwanese layout for a Type 6 Sun keyboard
@@ -82,6 +77,5 @@ xkb_symbols "type6" {
     key <ALGR> { [ Henkan_Mode		]			};
     key <BKSL> { [ backslash, bar,  brokenbar	]		};
 
-    include "level3(ralt_switch)"
 };
 

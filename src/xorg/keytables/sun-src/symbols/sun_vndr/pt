@@ -51,8 +51,6 @@
 partial alphanumeric_keys
 xkb_symbols "type4" {
 
-     include "sun_vndr/us(type4basic)"
-
      name[Group1]="Portugal - Sun type 4";
 
     key <BKSL> { [ bracketleft, braceleft, guillemotleft]     };
@@ -80,15 +78,12 @@ xkb_symbols "type4" {
     key <AB10> { [ minus, underscore    ]                       };
     key <CAPS> { [ Control_L            ]                       };
 
-    include "level3(ralt_switch)"
 };
 
 
 partial alphanumeric_keys
 xkb_symbols "type5" {
     
-    include "sun_vndr/us(type5)"
-
     name[Group1]="Portugal - Sun type 5";
 
     key <TLDE> { [ backslash, bar       ]                               };
@@ -102,15 +97,11 @@ xkb_symbols "type5" {
 
     key <AD11> { [ plus, asterisk, dead_diaeresis         ]};
 
-    include "level3(ralt_switch)"
-
 };
 
 
 partial alphanumeric_keys
 xkb_symbols "type6" {
-
-    include "sun_vndr/us(type6)"
 
     name[Group1]="Portugal - Sun type 6";
 
@@ -136,8 +127,6 @@ xkb_symbols "type6" {
     key <AB08> { [           comma,        semicolon                  ] };
     key <AB09> { [          period,            colon                  ] };
     key <AB10> { [           minus,       underscore                  ] };
-
-    include "level3(ralt_switch)"
 
 };
 

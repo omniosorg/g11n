@@ -51,8 +51,6 @@
 partial alphanumeric_keys
 xkb_symbols "type4" {
     
-    include "sun_vndr/us(type4basic)"
-    
     name[Group1]="Spain - Sun type 4";
 
     key <BKSL> { [ bracketleft, braceleft,  guillemotleft    ] };
@@ -83,14 +81,12 @@ xkb_symbols "type4" {
     key <AB09> { [ period, colon        ]                       };
     key <AB10> { [ minus, underscore    ]                       };
     
-    include "level3(ralt_switch)"
 };
  
 
 partial default alphanumeric_keys
 xkb_symbols "type5" {
     include "sun_vndr/es(type4)"
-    include "sun_vndr/us(type5basic)"
 
     name[Group1]="Spain - Sun type 5";
  
@@ -105,14 +101,11 @@ xkb_symbols "type5" {
     key <AD11> { [ dead_grave, dead_circumflex,  bracketleft ] };
     key <AD12> { [ dead_acute, dead_diaeresis, braceleft      ] };
  
-   include "level3(ralt_switch)"
- 
 };
 
 
 partial default alphanumeric_keys
 xkb_symbols "type6" {
-    include "sun_vndr/us(type6)"
 
     name[Group1]="Spain - Sun type 6";
 
@@ -140,7 +133,5 @@ xkb_symbols "type6" {
     key <AB09> { [          period,           colon                ] };
     key <AB10> { [           minus,      underscore                ] };
    
-   include "level3(ralt_switch)"
-
 };
 

@@ -180,6 +180,7 @@ partial alphanumeric_keys
 xkb_symbols "type6" {
 
     include "sun_vndr/it(type6)"
+    include "level3(ralt_switch)"
 
 };
 
@@ -187,6 +188,7 @@ partial alphanumeric_keys
 xkb_symbols "type5" {
 
     include "sun_vndr/it(type5)"
+    include "level3(ralt_switch)"
 
 };
 
@@ -194,6 +196,7 @@ partial alphanumeric_keys
 xkb_symbols "type4" {
 
     include "sun_vndr/it(type4)"
+    include "level3(ralt_switch)"
 
 };
 

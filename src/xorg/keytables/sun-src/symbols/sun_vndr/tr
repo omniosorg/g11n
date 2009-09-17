@@ -52,8 +52,6 @@
 partial alphanumeric_keys
 xkb_symbols "type6" {
 
-    include "sun_vndr/us(type6)"
-
     name[Group1]="Turkey - (Q) Sun type 6";
 
     key <TLDE>  { [  quotedbl,     eacute                ] };
@@ -84,6 +82,4 @@ xkb_symbols "type6" {
     key <AB09>	{ [  ccedilla,   Ccedilla               ] };
     key <AB10>	{ [    period,      colon               ] };
 
-    include "level3(ralt_switch)"
 };
-
