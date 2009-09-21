@@ -27,6 +27,7 @@
 SUBDIRS = \
 	arabeyes \
 	arphic \
+	bpg-georgian \
 	gentium \
 	gentium-basic \
 	hanyang \
