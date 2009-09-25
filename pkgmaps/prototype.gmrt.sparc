@@ -541,3 +541,29 @@ d none usr/lib/locale/ky_KG/sparcv9 0755 root bin
 s none usr/lib/locale/ky_KG/sparcv9/ky_KG.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
 d none usr/lib/locale/ky_KG.UTF-8/sparcv9 0755 root bin
 s none usr/lib/locale/ky_KG.UTF-8/sparcv9/ky_KG.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+
+d none usr/lib/locale/hy_AM/sparcv9 0755 root bin
+s none usr/lib/locale/hy_AM/sparcv9/hy_AM.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/hy_AM.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/hy_AM.UTF-8/sparcv9/hy_AM.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ku_TR/sparcv9 0755 root bin
+s none usr/lib/locale/ku_TR/sparcv9/ku_TR.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ku_TR.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/ku_TR.UTF-8/sparcv9/ku_TR.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sa_IN/sparcv9 0755 root bin
+s none usr/lib/locale/sa_IN/sparcv9/sa_IN.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sa_IN.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/sa_IN.UTF-8/sparcv9/sa_IN.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ks_IN/sparcv9 0755 root bin
+s none usr/lib/locale/ks_IN/sparcv9/ks_IN.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ks_IN.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/ks_IN.UTF-8/sparcv9/ks_IN.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sr_ME/sparcv9 0755 root bin
+s none usr/lib/locale/sr_ME/sparcv9/sr_ME.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sr_ME.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/sr_ME.UTF-8/sparcv9/sr_ME.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sr_RS/sparcv9 0755 root bin
+s none usr/lib/locale/sr_RS/sparcv9/sr_RS.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sr_RS.UTF-8/sparcv9 0755 root bin
+s none usr/lib/locale/sr_RS.UTF-8/sparcv9/sr_RS.UTF-8.so.3=../../en_IE.ISO8859-1/sparcv9/en_IE.ISO8859-1.so.3
+

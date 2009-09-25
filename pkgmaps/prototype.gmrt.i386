@@ -542,3 +542,28 @@ s none usr/lib/locale/ky_KG/amd64/ky_KG.so.3=../../en_IE.ISO8859-1/amd64/en_IE.I
 d none usr/lib/locale/ky_KG.UTF-8/amd64 0755 root bin
 s none usr/lib/locale/ky_KG.UTF-8/amd64/ky_KG.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
 
+d none usr/lib/locale/hy_AM/amd64 0755 root bin
+s none usr/lib/locale/hy_AM/amd64/hy_AM.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/hy_AM.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/hy_AM.UTF-8/amd64/hy_AM.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ku_TR/amd64 0755 root bin
+s none usr/lib/locale/ku_TR/amd64/ku_TR.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ku_TR.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/ku_TR.UTF-8/amd64/ku_TR.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sa_IN/amd64 0755 root bin
+s none usr/lib/locale/sa_IN/amd64/sa_IN.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sa_IN.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/sa_IN.UTF-8/amd64/sa_IN.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ks_IN/amd64 0755 root bin
+s none usr/lib/locale/ks_IN/amd64/ks_IN.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/ks_IN.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/ks_IN.UTF-8/amd64/ks_IN.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sr_ME/amd64 0755 root bin
+s none usr/lib/locale/sr_ME/amd64/sr_ME.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sr_ME.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/sr_ME.UTF-8/amd64/sr_ME.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sr_RS/amd64 0755 root bin
+s none usr/lib/locale/sr_RS/amd64/sr_RS.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+d none usr/lib/locale/sr_RS.UTF-8/amd64 0755 root bin
+s none usr/lib/locale/sr_RS.UTF-8/amd64/sr_RS.UTF-8.so.3=../../en_IE.ISO8859-1/amd64/en_IE.ISO8859-1.so.3
+

@@ -52,7 +52,8 @@ sq_AL.UTF-8 sr_CS sr_CS.UTF-8 sr_YU sr_YU.ISO8859-5 sv sv_SE sv_SE.ISO8859-1 sv_
 th_TH.UTF-8 tr_TR tr_TR.ISO8859-9 tr_TR.UTF-8 zh zh_CN.GB18030 zh_CN.GBK zh_CN.UTF-8 zh_HK.BIG5HK zh_HK.UTF-8 zh_TW zh_TW.BIG5 \
 zh_TW.UTF-8 uk_UA uk_UA.UTF-8 kk_KZ kk_KZ.UTF-8 ms_MY.UTF-8 id_ID.UTF-8 vi_VN.UTF-8 ms_MY id_ID vi_VN \
 ka_GE ka_GE.UTF-8 be_BY be_BY.UTF-8 es_US es_US.UTF-8 af_ZA af_ZA.UTF-8 az_AZ az_AZ.UTF-8 it_CH it_CH.UTF-8 ky_KG ky_KG.UTF-8 \
-as_IN as_IN.UTF-8 bn_IN bn_IN.UTF-8 gu_IN gu_IN.UTF-8 kn_IN kn_IN.UTF-8 ml_IN ml_IN.UTF-8 mr_IN mr_IN.UTF-8 or_IN or_IN.UTF-8 pa_IN pa_IN.UTF-8
+as_IN as_IN.UTF-8 bn_IN bn_IN.UTF-8 gu_IN gu_IN.UTF-8 kn_IN kn_IN.UTF-8 ml_IN ml_IN.UTF-8 mr_IN mr_IN.UTF-8 or_IN or_IN.UTF-8 pa_IN pa_IN.UTF-8 \
+hy_AM hy_AM.UTF-8 ku_TR ku_TR.UTF-8 sa_IN sa_IN.UTF-8 ks_IN ks_IN.UTF-8 sr_ME sr_ME.UTF-8 sr_RS sr_RS.UTF-8
 
 
 all:=		TARGET= all

@@ -206,5 +206,11 @@ f none usr/lib/localedef/src/locales/ml_IN.UTF-8.src.bz2 0644 root bin
 f none usr/lib/localedef/src/locales/mr_IN.UTF-8.src.bz2 0644 root bin
 f none usr/lib/localedef/src/locales/or_IN.UTF-8.src.bz2 0644 root bin
 f none usr/lib/localedef/src/locales/pa_IN.UTF-8.src.bz2 0644 root bin
+f none usr/lib/localedef/src/locales/hy_AM.UTF-8.src.bz2 0644 root bin
+f none usr/lib/localedef/src/locales/ku_TR.UTF-8.src.bz2 0644 root bin
+f none usr/lib/localedef/src/locales/sa_IN.UTF-8.src.bz2 0644 root bin
+f none usr/lib/localedef/src/locales/ks_IN.UTF-8.src.bz2 0644 root bin
+f none usr/lib/localedef/src/locales/sr_ME.UTF-8.src.bz2 0644 root bin
+f none usr/lib/localedef/src/locales/sr_RS.UTF-8.src.bz2 0644 root bin
 
 d none usr/lib/localedef/src/extensions 0755 root bin
