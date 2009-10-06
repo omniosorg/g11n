@@ -104,14 +104,9 @@ xkb_symbols "sunbasic" {
     key <LFSH> { [ Shift_L              ]                       };
     key <LCTL> { [ Control_L            ]                       };
 
-    key <LWIN> { [ Super_L              ]                       };
-    modifier_map Mod4   { <LWIN> };
-
     key <RTSH> { [ Shift_R              ]                       };
     key <RCTL> { [ Control_R            ]                       };
 
-    key <RWIN> { [ Super_R              ]                       };
-    modifier_map Mod4   { <RWIN> };
 
     // begin modifier mappings
     modifier_map Shift  { Shift_L, Shift_R };
@@ -125,16 +120,10 @@ xkb_symbols "sunbasic" {
     modifier_map Mod5   { <LVL3>, <MDSW> };
 
     key <ALT>  { [ NoSymbol, Alt_L       ]                     };
-    include "altwin(meta_alt)"
+    include "altwin(meta_win)"
 
     key <META> { [ NoSymbol, Meta_L      ]                     };
     modifier_map Mod1   { <META> };
-
-    key <SUPR> { [ NoSymbol, Super_L     ]                     };
-    modifier_map Mod4   { <SUPR> };
-
-    key <HYPR> { [ NoSymbol, Hyper_L     ]                     };
-    modifier_map Mod4   { <HYPR> };
 
 //    key <LALT> { [ Alt_L		]			};
 //    key <ALGR> { [ Mode_switch	]			};
