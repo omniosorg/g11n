@@ -130,11 +130,8 @@ UNPACKARCHIVE=	$(SRC)/tools/unpack-archive
 # SUNWwgetu
 WGET=		/usr/sfw/bin/wget
 
-# SUNWxsun-server
-XKBCOMP_XSUN=	/usr/openwin/lib/X11/xkb/xkbcomp
-
 # SUNWxorg-server
-XKBCOMP_XORG=	/usr/X11/lib/X11/xkb/xkbcomp
+XKBCOMP=	/usr/X11/lib/X11/xkb/xkbcomp
 
 # locale_cldr
 GNU_PATCH=	/usr/bin/gpatch

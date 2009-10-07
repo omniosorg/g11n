@@ -64,7 +64,7 @@ $(VER)/.copied:		$(VER)/.unpacked
 			touch $@
 
 $(VER)/%.dir:		$(VER)/.copied
-			(cd $(@:%.dir=%); $(XKBCOMP_XORG) -lfhlpR -o ../../$@ '*')
+			(cd $(@:%.dir=%); $(XKBCOMP) -lfhlpR -o ../../$@ '*')
 
 all:			$(DIRFILES)
 
