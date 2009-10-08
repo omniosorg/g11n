@@ -42,7 +42,7 @@ es_VE.UTF-8 et_EE et_EE.ISO8859-15 et_EE.UTF-8 fi_FI fi_FI.ISO8859-1 fi_FI.ISO88
 fr_BE.ISO8859-15 fr_BE.UTF-8 fr_BE.UTF-8@euro fr_CA fr_CA.ISO8859-1 fr_CA.UTF-8 fr_CH fr_CH.ISO8859-1 fr_CH.UTF-8 fr_FR fr_FR.ISO8859-1 \
 fr_FR.ISO8859-15 fr_FR.UTF-8 fr_FR.UTF-8@euro fr_LU fr_LU.UTF-8 he he_IL he_IL.UTF-8 hi_IN.UTF-8 hr_HR hr_HR.ISO8859-2 hr_HR.UTF-8 \
 hu_HU hu_HU.ISO8859-2 hu_HU.UTF-8 is_IS is_IS.ISO8859-1 is_IS.UTF-8 it it_IT it_IT.ISO8859-1 it_IT.ISO8859-15 it_IT.UTF-8 \
-it_IT.UTF-8@euro iso_8859_1 iso_8859_13 iso_8859_15 iso_8859_2 iso_8859_5 iso_8859_7 iso_8859_9 ja ja_JP.PCK ja_JP.eucJP ja_JP.UTF-8 ko ko.UTF-8 lt_LT \
+it_IT.UTF-8@euro iso_8859_1 iso_8859_13 iso_8859_15 iso_8859_2 iso_8859_5 iso_8859_7 iso_8859_8 iso_8859_9 ja ja_JP.PCK ja_JP.eucJP ja_JP.UTF-8 ko ko.UTF-8 lt_LT \
 lt_LT.ISO8859-13 lt_LT.UTF-8 lv_LV lv_LV.ISO8859-13 lv_LV.UTF-8 mk_MK mk_MK.ISO8859-5 mk_MK.UTF-8 mt_MT mt_MT.UTF-8 nb_NO nb_NO.UTF-8 \
 nl_BE nl_BE.ISO8859-1 nl_BE.ISO8859-15 nl_BE.UTF-8 nl_NL nl_NL.ISO8859-1 nl_NL.ISO8859-15 nl_NL.UTF-8 nn_NO nn_NO.UTF-8 no_NO \
 no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk pl_PL pl_PL.ISO8859-2 pl_PL.UTF-8 pt_BR pt_BR.ISO8859-1 pt_BR.UTF-8 pt_PT pt_PT.ISO8859-1 \
