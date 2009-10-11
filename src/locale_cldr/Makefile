@@ -18,13 +18,14 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 
 
 include $(SRC)/Makefile.master
 
-LOCALES:sh = cd spec; ls
+#LOCALES:sh = cd spec; ls
+LOCALES = 
 
 
 COMMON_CFLAGS	= $(CCVERBOSE) -K pic -D PIC -G -I. -z defs -z text -z ignore -D_REENTRANT
