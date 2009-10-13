@@ -60,7 +60,7 @@ all: $(VER)/.unpacked $(VER)/KacstPen.ttf
 $(VER)/KacstPen.ttf: $(VER)/.unpacked
 	$(CP) $(VER)/kacstPen.ttf $@
 
-install: $(VER)/.installed
+install: $(VER)/KacstPen.ttf $(VER)/.installed
 
 
 include ../Makefile.fonts
