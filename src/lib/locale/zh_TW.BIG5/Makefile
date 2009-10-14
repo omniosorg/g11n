@@ -32,6 +32,8 @@ dummy: all
 
 include ../common/Makefile.asian
 
+CLEANFILES += ldterm.dat ldterm-data
+
 INSTALL_FLAG    = -u bin -g bin
 
 install: all $(TARGETDIRS) $(FILES.obj)

@@ -38,6 +38,8 @@ FILES = locale_description locale_map geo_map
 
 include ../common/Makefile.asian
 
+CLEANFILES += ldterm.dat ldterm-data
+
 INSTALL_FLAG	= -u bin -g bin
 
 install: all $(TARGETDIRS) $(FILES.obj)
@@ -53,4 +55,3 @@ ldterm.dat: ldterm-data.c
 	$(CC) -DGBK -o ldterm-data ldterm-data.c
 	/usr/bin/chmod +x ./ldterm-data
 	./ldterm-data
-

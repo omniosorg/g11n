@@ -52,6 +52,7 @@ ROOTMODULE	= $(USR_STRMOD_DIR)/$(MODULE)
 include $(UTSBASE)/i86/Makefile.i86
 
 CLOBBERFILES	+= $(MODULE)
+CLEANFILES	+= $(MODULE)
 
 #
 # lint pass one enforcement

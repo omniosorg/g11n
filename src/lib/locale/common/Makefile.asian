@@ -82,12 +82,8 @@ wdresolve.o: $(RESOLVE_SRC)
 
 lint: FRC
 
-clobber clean: objclean
-	$(RM) $(CLEANFILES)
-	$(RM) -r $(MACH64)
-
-objclean:
-	$(RM) -r  $(FILES.obj)
+clobber clean:
+	$(RM) -r $(MACH64) $(FILES.obj) $(CLEANFILES)
 
 FRC:
 

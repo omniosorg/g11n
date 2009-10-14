@@ -70,6 +70,7 @@ $(LOCALES): FRC
 	cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
 
 clean: $(LOCALES)
+	$(RM) $(FILES)
 
 FRC:
 

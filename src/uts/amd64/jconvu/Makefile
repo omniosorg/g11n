@@ -53,6 +53,7 @@ USE_SOS9=yes
 include $(UTSBASE)/amd64/Makefile.amd64
 
 CLOBBERFILES	+= $(MODULE)
+CLEANFILES	+= $(MODULE)
 
 #
 #	Default build targets.
