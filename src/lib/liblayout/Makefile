@@ -59,8 +59,8 @@ include $(SRC)/src/Makefile.targ
 
 CFLAGS		=  -xildoff -xc99=%none  -KPIC -D_REENTRANT -I. 
 
-CFLAGS_sparcv9	= -xO3 -xarch=v9 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym $(CFLAGS)
-CFLAGS_amd64	= -xarch=generic64 -Ui386 -U__i386 -W0,-y-a $(CFLAGS)
+CFLAGS_sparcv9	= -xO3 -m64 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym $(CFLAGS)
+CFLAGS_amd64	= -m64 -Ui386 -U__i386 -W0,-y-a $(CFLAGS)
 
 LDFLAGS	= -G -z defs -z text -h liblayout.so.1 -M mapfile -ldl -lc
 

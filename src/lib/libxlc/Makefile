@@ -53,8 +53,8 @@ all: $(TARGETDIRS) $(LIB_SO) $(SUBDIRS)
 include $(SRC)/src/Makefile.targ
 
 CFLAGS		= -O -Xa -Kpic -DXTHREADS  -D_REENTRANT -DXUSE_MTSAFE_API -DUSE_ICONV -DSUNSOFT -DMALLOC_0_RETURNS_NULL
-CFLAGS_sparcv9	= -xO3 -xarch=v9 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym $(CFLAGS)
-CFLAGS_amd64	= -xarch=generic64 -Ui386 -U__i386 -W0,-y-a  $(CFLAGS)
+CFLAGS_sparcv9	= -xO3 -m64 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym $(CFLAGS)
+CFLAGS_amd64	= -m64 -Ui386 -U__i386 -W0,-y-a  $(CFLAGS)
 LDFLAGS		= -G -z text -z defs -h $(LIB_SO) -L/usr/openwin/bin -L/usr/bin -lX11 -lc
 
 install: $(LIB_SO) $(TARGETDIR)/$(MACH64) $(SUBDIRS)

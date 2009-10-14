@@ -63,8 +63,8 @@ all: $(TARGETDIRS) $(MACH64) $(LIBLCL_SO) $(SUBDIRS)
 include $(SRC)/src/Makefile.targ
 
 CFLAGS		=  -xO3 -xildoff -xc99=%none -KPIC -D_REENTRANT -I. -DPU=1 -DNOT_X_ENV -DPARSE -DLCL_LIB 
-CFLAGS_sparcv9	= -xO3 -xarch=v9 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym $(CFLAGS)
-CFLAGS_amd64	= -xarch=generic64 -Ui386 -U__i386 -W0,-y-a  $(CFLAGS)
+CFLAGS_sparcv9	= -xO3 -m64 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym $(CFLAGS)
+CFLAGS_amd64	= -m64 -Ui386 -U__i386 -W0,-y-a  $(CFLAGS)
 
 LDFLAGS	= -G -z defs -z text -h $(LIBLCL_SO) -M mapfile -ldl -lc
 

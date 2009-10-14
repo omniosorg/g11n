@@ -41,11 +41,11 @@ CFLAGS= -G -z text -H -KPIC -DNeedFunctionPrototypes -I.
 LDFLAGS= -Bdynamic -z defs -z text -G -lc -lCrun -norunpath 
 
 CFLAGS_sparc=-xregs=no%appl
-CFLAGS_sparcv9=-xregs=no%appl -xarch=v9 -dalign
-CFLAGS_amd64=-xarch=generic64 -Ui386 -U__i386 -Qoption ccfe -y-a
+CFLAGS_sparcv9=-xregs=no%appl -m64 -dalign
+CFLAGS_amd64=-m64 -Ui386 -U__i386 -Qoption ccfe -y-a
 
-LDFLAGS_sparcv9=-xarch=v9
-LDFLAGS_amd64=-xarch=amd64 -norunpath
+LDFLAGS_sparcv9=-m64
+LDFLAGS_amd64=-m64 -norunpath
 
 OBJS=$(CCSRCS:%.c=%.o)
 OBJS64=$(CCSRCS:%.c=$(MACH64)/%.o)

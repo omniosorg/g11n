@@ -54,11 +54,11 @@ include $(SRC)/src/Makefile.targ
 
 CFLAGS		= -KPIC -O -Dsun -DSVR4 -DXTHREADS -D_REENTRANT -DXUSE_MTSAFE_API -DXUSE_NETDB_R_API -DMALLOC_0_RETURNS_NULL -DSUNSOFT -I/usr/openwin/share/include/X11
 LDFLAGS		= -Bdynamic -G -ztext -z defs -h xomEuro.so.2 -L/usr/openwin/lib -lX11 -lc -xc99=%none -Xa
-CFLAGS_sparcv9	= $(CFLAGS) -xarch=v9 -dalign
-LDFLAGS_sparcv9	= $(LDFLAGS) -xarch=v9
+CFLAGS_sparcv9	= $(CFLAGS) -m64 -dalign
+LDFLAGS_sparcv9	= $(LDFLAGS) -m64
 
-CFLAGS_amd64	= $(CFLAGS) -xarch=amd64 -dalign
-LDFLAGS_amd64	= $(LDFLAGS) -xarch=amd64
+CFLAGS_amd64	= $(CFLAGS) -m64 -dalign
+LDFLAGS_amd64	= $(LDFLAGS) -m64
 
 install: all $(FILES.obj) $(SUBDIRS)
 	$(INSDIR) $(TARGETDIR)/$(MACH64)

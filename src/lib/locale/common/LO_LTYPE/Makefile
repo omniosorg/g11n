@@ -55,9 +55,9 @@ include $(SRC)/src/Makefile.targ
 
 CFLAGS		=  -O -xildoff -xc99=%none  -K PIC -G -I. -D_REENTRANT -DUTF8_TEST -xCC
 
-CFLAGS_sparcv9	=  -xO3 -xarch=v9 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym $(CFLAGS)
-#CFLAGS_amd64	= -xarch=generic64 -Ui386 -U__i386 -W0,-y-a -xildoff -xc99=%none -K PIC -G -I. -D_REENTRANT
-CFLAGS_amd64	= -xarch=generic64 -Ui386 -U__i386 -W0,-y-a $(CFLAGS)
+CFLAGS_sparcv9	=  -xO3 -m64 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym $(CFLAGS)
+#CFLAGS_amd64	= -m64 -Ui386 -U__i386 -W0,-y-a -xildoff -xc99=%none -K PIC -G -I. -D_REENTRANT
+CFLAGS_amd64	= -m64 -Ui386 -U__i386 -W0,-y-a $(CFLAGS)
 
 install: $(FILES.obj) $(SUBDIRS) all
 	$(INSDIR) $(TARGETDIR)/$(MACH64)

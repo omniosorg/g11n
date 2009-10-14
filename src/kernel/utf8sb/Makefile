@@ -40,8 +40,8 @@ SUBDIRS =
 TARGETDIRS =	$(TARGETDIR) $(TARGETDIR)/$(MACH64)
 
 CFLAGS		= -O -xildoff -xc99=%none -D_KERNEL -D_SYSCALL32
-CFLAGS_sparcv9	= -xO3 -xarch=v9 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym -D_SYSCALL32_IMPL -D_ELF64 $(CFLAGS)
-CFLAGS_amd64	= -xarch=generic64 -Ui386 -U__i386 -W0,-y-a -D_SYSCALL32_IMPL -D_ELF64 $(CFLAGS)
+CFLAGS_sparcv9	= -xO3 -m64 -dalign -xregs=no%appl -xspace -W0,-Lt -Wd,-xsafe=unboundsym -D_SYSCALL32_IMPL -D_ELF64 $(CFLAGS)
+CFLAGS_amd64	= -m64 -Ui386 -U__i386 -W0,-y-a -D_SYSCALL32_IMPL -D_ELF64 $(CFLAGS)
 LDFLAGS		= -r -dn
 
 u8lat1.o := CFLAGS += -DISO_8859_1                                                                                                                                                                                     
@@ -56,7 +56,7 @@ include $(SRC)/src/Makefile.targ
 install: $(FILES.obj) $(SUBDIRS)
 
 clean: $(SUBDIRS)
-	$(RM) -r *.so* *.o $(MACH64)
+	$(RM) -r *.so* *.o $(MACH64) $(MODULES)
 
 $(MODULES:%=%.o): $(MACH64) $(SOURCES)
 	$(CC) -c -o $@ $(CFLAGS) u8sb.c

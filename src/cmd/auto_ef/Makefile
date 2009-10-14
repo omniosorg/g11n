@@ -64,8 +64,8 @@ INCDIR =	$(FILEROOT)/usr/include
 
 CFLAGS =	-O  -K pic -xspace -Xa  -xildoff -errtags=yes -errwarn=%all -erroff=E_EMPTY_TRANSLATION_UNIT -erroff=E_STATEMENT_NOT_REACHED -xc99=%none -W0,-xc99=pragma  -g -xc99=%none -W0,-xc99=pragma -W0,-noglobal -DTEXT_DOMAIN=\"SUNW_JFP_LIB\" -D_TS_ERRNO -I. -DPIC -D_REENTRANT
 
-CFLAGS_amd64 =	$(CFLAGS) -xO3 -xarch=amd64 -Ui386 -U__i386  -erroff=E_INTEGRAL_CONST_EXP_EXPECTED -erroff=E_C90_NON_INTEGRAL_ARRAY_SIZE 
-CFLAGS_sparcv9 = $(CFLAGS) -xarch=v9 -dalign -Dsparc
+CFLAGS_amd64 =	$(CFLAGS) -xO3 -m64 -Ui386 -U__i386  -erroff=E_INTEGRAL_CONST_EXP_EXPECTED -erroff=E_C90_NON_INTEGRAL_ARRAY_SIZE 
+CFLAGS_sparcv9 = $(CFLAGS) -m64 -dalign -Dsparc
 
 LDFLAGS =	-G -hlibauto_ef.so.1 -ztext -zdefs -zcombreloc -M spec/mapfile -lc -lelf -lm
 

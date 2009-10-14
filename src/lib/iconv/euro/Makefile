@@ -29,9 +29,9 @@ include $(SRC)/Makefile.master
 
 CFLAGS =  -Xa -KPIC -G -xO3 -dy -I. $(XREGSFLAG) -D_REENTRANT
 
-CFLAGS_sparcv9 = $(CFLAGS) -xarch=v9 -dalign -xprefetch
+CFLAGS_sparcv9 = $(CFLAGS) -m64 -dalign -xprefetch
 
-CFLAGS_amd64 = $(CFLAGS) -xarch=generic64 -Ui386 -U__i386 -dalign -xprefetch -W0,-y-xmodel=kernel
+CFLAGS_amd64 = $(CFLAGS) -m64 -Ui386 -U__i386 -dalign -xprefetch -W0,-y-xmodel=kernel
 
 ICONV_DIR = $(FILEROOT)/usr/lib/iconv
 
