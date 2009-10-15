@@ -36,7 +36,7 @@ HEADERS=$(CCSRCS:%.c=%.H) LOexception.H CTLfunctions.H LOdefs.H $(LOCALE)_data.h
 
 ALL_SRC=$(CCSRCS) $(HEADERS) layout.h layout_int.h$(LOCALE)_data.h
 
-CFLAGS= -G -z text -H -KPIC -DNeedFunctionPrototypes -I.
+CFLAGS= -G -z text -KPIC -DNeedFunctionPrototypes -I.
 
 LDFLAGS= -Bdynamic -z defs -z text -G -lc -lCrun -norunpath 
 
