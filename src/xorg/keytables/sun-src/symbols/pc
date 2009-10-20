@@ -56,8 +56,8 @@ xkb_symbols "pc105" {
     key <ALT>  {	[ NoSymbol, Alt_L	]	};
     include "altwin(meta_alt)"
 
-    key <META> {	[ NoSymbol, Meta_L	]	};
-    modifier_map Mod1   { <META> };
+//    key <META> {	[ NoSymbol, Meta_L	]	};
+//    modifier_map Mod1   { <META> };
 
     key <SUPR> {	[ NoSymbol, Super_L	]	};
     modifier_map Mod4   { <SUPR> };
@@ -65,10 +65,11 @@ xkb_symbols "pc105" {
     key <HYPR> {	[ NoSymbol, Hyper_L	]	};
     modifier_map Mod4   { <HYPR> };
 
-    key <OUTP> { [ XF86Display ] };
-    key <KITG> { [ XF86KbdLightOnOff ] };
-    key <KIDN> { [ XF86KbdBrightnessDown ] };
-    key <KIUP> { [ XF86KbdBrightnessUp ] };
+// The following create some duplicate keycodes 
+//    key <OUTP> { [ XF86Display ] };
+//    key <KITG> { [ XF86KbdLightOnOff ] };
+//    key <KIDN> { [ XF86KbdBrightnessDown ] };
+//    key <KIUP> { [ XF86KbdBrightnessUp ] };
 };
 
 partial hidden alphanumeric_keys

@@ -120,10 +120,11 @@ xkb_symbols "sunbasic" {
     modifier_map Mod5   { <LVL3>, <MDSW> };
 
     key <ALT>  { [ NoSymbol, Alt_L       ]                     };
-    include "altwin(meta_win)"
-
-    key <META> { [ NoSymbol, Meta_L      ]                     };
-    modifier_map Mod1   { <META> };
+    key <LALT> {        [       Alt_L,  Alt_L           ]       };
+    key <LWIN> {        [       Meta_L                  ]       };
+    key <RWIN> {        [       Meta_R                  ]       };
+    modifier_map Mod1   { Alt_L };
+    modifier_map Mod4   { Meta_L, Meta_R };
 
 //    key <LALT> { [ Alt_L		]			};
 //    key <ALGR> { [ Mode_switch	]			};
