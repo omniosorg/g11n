@@ -5,7 +5,7 @@
 # Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
-# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
 # or http://www.opensolaris.org/os/licensing.
 # See the License for the specific language governing permissions
 # and limitations under the License.
@@ -32,7 +32,7 @@ TARBALL		= $(VER).tar.gz
 SOURCE_URL	= http://xlibs.freedesktop.org/xkbdesc/$(TARBALL)
 
 
-TARGETDIR	= $(FILEROOT)/X11/lib/X11/xkb
+TARGETDIR	= $(FILEROOT)/share/X11/xkb
 
 XKB_DIRFILES	= compat.dir \
 		  geometry.dir \

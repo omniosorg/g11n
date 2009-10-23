@@ -94,7 +94,7 @@
 4	12	-	sun_type4_euro		fr_CH	# Switzer_Fr4
 4	13	-	sun_type4_euro		de_CH	# Switzer_Ge4
 4	14	-	sun_type4_euro		gb	# UK4
-4	16	-	sun_type4		ko	# Korea4
+4	16	-	sun_type4		kr	# Korea4
 4	17	-	sun_type4		tw	# Taiwan4
 4	32	-	sun_type4_jp		jp	# Japan4
 #
@@ -123,7 +123,7 @@
 4	44	-	sun_type5_euro		fr_CH	# Switzer_Fr5
 4	45	-	sun_type5_euro		de_CH	# Switzer_Ge5
 4	46	-	sun_type5_euro		gb	# UK5
-4	47	-	sun_type5		ko	# Korea5
+4	47	-	sun_type5		kr	# Korea5
 4	48	-	sun_type5		tw	# Taiwan5
 4	49	-	sun_type5_jp		jp	# Japan5
 4	50	-	sun_type5_euro		fr_CA	# Canada_Fr5
@@ -156,7 +156,7 @@
 4	91	-	sun_type5_euro_hobo	fr_CH	# Switzer_Fr5_Hobo
 4	92	-	sun_type5_euro_hobo	de_CH	# Switzer_Ge5_Hobo
 4	93	-	sun_type5_euro_hobo	gb	# UK5_Hobo
-4	94	-	sun_type5_hobo		ko	# Korea5_Hobo
+4	94	-	sun_type5_hobo		kr	# Korea5_Hobo
 4	95	-	sun_type5_hobo		tw	# Taiwan5_Hobo
 4	96	-	sun_type5_jp_hobo	jp	# Japan5_Hobo
 4	97	-	sun_type5_euro_hobo	fr_CA	# Canada_Fr5_Hobo
@@ -178,7 +178,7 @@
 101	44	-	pc105			fr_CH	# Switzer_Fr_x86
 101	45	-	pc105			de_CH	# Switzer_Ge_x86
 101	46	-	pc105			gb	# UK_x86
-101	47	-	pc105			ko	# Korea_x86
+101	47	-	pc105			kr	# Korea_x86
 101	48	-	pc105			tw	# Taiwan_x86
 101	49	-	jp106			jp	# Japan_x86
 101	50	-	pc105			fr_CA	# Canada_Fr2_x86
@@ -201,7 +201,7 @@
 6	9	-	sun_type6_euro_usb	de	# Germany6_usb
 6	14	-	sun_type6_euro_usb	it	# Italy6_usb
 6	15	-	sun_type7_jp_usb	jp	# Japan7_usb
-6	16	-	sun_type6_usb		ko	# Korea6_usb
+6	16	-	sun_type6_usb		kr	# Korea6_usb
 6	18	-	sun_type6_euro_usb	nl	# Netherland6_usb
 6	19	-	sun_type6_euro_usb	no	# Norway6_usb
 6	22	-	sun_type6_euro_usb	pt	# Portugal6_usb
