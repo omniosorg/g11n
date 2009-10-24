@@ -32,7 +32,7 @@ TARBALL		= $(VER).tar.gz
 SOURCE_URL	= http://xlibs.freedesktop.org/xkbdesc/$(TARBALL)
 
 
-TARGETDIR	= $(FILEROOT)/share/X11/xkb
+TARGETDIR	= $(FILEROOT)/usr/share/X11/xkb
 
 XKB_DIRFILES	= compat.dir \
 		  geometry.dir \
