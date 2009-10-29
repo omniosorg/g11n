@@ -38,19 +38,19 @@ LOCALE:sh = basename `pwd`
 
 TARGETDIR =	$(FILEROOT)/usr/lib/locale/$(LOCALE)
 
-FILES = locale_map locale_description geo_map locale_map.miniroot
+FILES = 
 
-SUBDIRS = LO_LTYPE
+SUBDIRS = LC_CTYPE
 
 TARGETDIRS = $(TARGETDIR)
 
-all: $(TARGETDIRS) $(SUBDIRS)
+all: $(TARGETDIRS)
 
 include $(SRC)/src/Makefile.targ
 
-install: $(TARGETDIRS) $(FILES.obj) $(SUBDIRS)
+install: all $(FILES.obj) $(SUBDIRS)
 
-clean: objclean $(SUBDIRS)
+clean: objclean
 	$(RM) -r $(TARGETDIR)
 
 FRC:
