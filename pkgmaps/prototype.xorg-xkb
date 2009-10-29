@@ -22,7 +22,7 @@
 # Use is subject to license terms.
 #
 
-d none share 0755 root bin
+d none share 0755 root sys
 d none share/X11 0755 root bin
 
 d none share/X11/xkb 0755 root bin
