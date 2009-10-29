@@ -29,7 +29,7 @@ include $(SRC)/Makefile.master
 LOCALES_UTF8 = hi_IN.UTF-8 ja_JP.UTF-8 zh.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.UTF-8 zh_TW.UTF-8 ta_IN.UTF-8 te_IN.UTF-8 en_US.UTF-8 zh.UTF-8@pinyin zh.UTF-8@radical zh.UTF-8@stroke zh_HK.UTF-8@pinyin zh_HK.UTF-8@stroke zh_HK.UTF-8@radical zh_HK.UTF-8@zhuyin zh_TW.UTF-8@pinyin zh_TW.UTF-8@stroke zh_TW.UTF-8@radical zh_TW.UTF-8@zhuyin
 
 # not migrated yet because different reasons
-LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk ar sh_BA.ISO8859-2@bosnia 
+LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk sh_BA.ISO8859-2@bosnia 
 
 # moved to src/locale_cldr:
 #LOCALES_CLDR = en_IE.UTF-8 en_GB.UTF-8 de_LU.UTF-8 de_AT.UTF-8 fr_LU.UTF-8 nl_BE.UTF-8 nl_NL.UTF-8 cs_CZ.UTF-8 sl_SI.UTF-8 \
@@ -53,7 +53,7 @@ LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk ar sh_BA.ISO8859-2@
 #hr_HR.ISO8859-2 hu_HU.ISO8859-2 is_IS.ISO8859-1 it_IT.ISO8859-1 it_IT.ISO8859-15 lt_LT.ISO8859-13 lv_LV.ISO8859-13 mk_MK.ISO8859-5 \
 # no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk pl_PL.ISO8859-2 \
 # pt_PT.ISO8859-1 pt_PT.ISO8859-15 ro_RO.ISO8859-2 ru_RU.ISO8859-5 sh_BA.ISO8859-2@bosnia sk_SK.ISO8859-2 sl_SI.ISO8859-2 \
-#sq_AL.ISO8859-2 sr_YU.ISO8859-5 sv_SE.ISO8859-1 sv_SE.ISO8859-15 tr_TR.ISO8859-9 he ru_RU.ANSI1251
+#sq_AL.ISO8859-2 sr_YU.ISO8859-5 sv_SE.ISO8859-1 sv_SE.ISO8859-15 tr_TR.ISO8859-9 he ru_RU.ANSI1251 ar
 
 
 LOCALES_OTHER = ja ja_JP.PCK ja_JP.eucJP ko ko@dict th_TH zh zh_CN.GB18030 zh.GBK zh_HK.BIG5HK zh_TW zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical zh_CN.GB18030@stroke zh.GBK@pinyin zh.GBK@radical zh.GBK@stroke zh_HK.BIG5HK@pinyin zh_HK.BIG5HK@radical zh_HK.BIG5HK@stroke zh_HK.BIG5HK@zhuyin zh@pinyin zh@radical zh@stroke zh_TW.BIG5@pinyin zh_TW.BIG5@radical zh_TW.BIG5@stroke zh_TW.BIG5@zhuyin zh_TW@pinyin zh_TW@radical zh_TW@stroke zh_TW@zhuyin
