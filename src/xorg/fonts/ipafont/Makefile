@@ -29,8 +29,8 @@ include $(SRC)/Makefile.master
 ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/ipafont
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ipafont
 
-FONT_TAR	= IPAfont00203.tar.bz2
-FONT_DOC_TAR	= IPAfont00203-doc.tar.bz2
+FONT_TAR	= IPAfont00301.tar.bz2
+FONT_DOC_TAR	= IPAfont00301-doc.tar.bz2
 FONT_SCALE	= fonts.scale.ipafont
 
 SUBDIRS         = 
