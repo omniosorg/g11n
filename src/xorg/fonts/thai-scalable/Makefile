@@ -26,7 +26,7 @@
 
 include $(SRC)/Makefile.master
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/thai-scalable
+ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/thai-scalable
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/thai-scalable
 
 FONT_TAR	= thai-scalable.tar.bz2

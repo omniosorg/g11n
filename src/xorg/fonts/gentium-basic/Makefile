@@ -30,7 +30,7 @@ PROJECT		= gentium-basic
 VER 		= $(PROJECT)-1.1
 TARBALL		= $(VER).tar.bz2
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/gentium
+ROOT_FONT_DIR 	= $(FONTROOT)/gentium
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-gentium/basic
 
 FONTS =	GenBasB.ttf \

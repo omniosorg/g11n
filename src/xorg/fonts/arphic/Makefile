@@ -26,7 +26,7 @@
 
 include $(SRC)/Makefile.master
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/arphic
+ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/arphic
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/arphic
 
 FONT_TAR1 = uming.tar.bz2

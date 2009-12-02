@@ -31,7 +31,7 @@ VER 		= un-fonts
 TARBALL		= un-fonts-core-1.0.2-080608.tar.gz
 SOURCE_URL	= http://kldp.net/frs/download.php/4695/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_FONT_DIR 	= $(FONTROOT)/$(PROJECT)
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/unfonts-core
 
 FONTS =	UnBatang.ttf \

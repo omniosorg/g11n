@@ -26,7 +26,7 @@
 
 include $(SRC)/Makefile.master
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/indic-fonts-core
+ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/indic-fonts-core
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/indic-fonts-core
 
 FONT_TAR	= indic-fonts-core.tar.bz2

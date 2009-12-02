@@ -31,7 +31,7 @@ VER 		= MgOpen
 TARBALL		= $(VER).tar.gz
 SOURCE_URL	= http://www.zvr.gr/typo/mgopen/files/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_FONT_DIR 	= $(FONTROOT)/$(PROJECT)
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)
 
 FONTS =	MgOpenCanonicaBold.ttf \

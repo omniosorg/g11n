@@ -24,32 +24,29 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/bpg-georgian 0755 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Algeti.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Chveulebrivi.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Courier.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Courier_S.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Elite.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Glaho.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Ingiri.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Nino_Medium.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Nino_Medium_Cond.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Sans.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Sans_Medium.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Sans_Modern.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Sans_Regular.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Serif.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/BPG_Serif_Modern.ttf 0444 root bin
-
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/fonts.dir 0444 root bin
-f none X11/lib/X11/fonts/TrueType/bpg-georgian/fonts.scale 0444 root bin
-
 d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/bpg-georgian 0755 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Algeti.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Chveulebrivi.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Courier.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Courier_S.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Elite.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Glaho.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Ingiri.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Nino_Medium.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Nino_Medium_Cond.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Sans.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Sans_Medium.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Sans_Modern.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Sans_Regular.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Serif.ttf 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/BPG_Serif_Modern.ttf 0444 root bin
+
+f none share/fonts/TrueType/bpg-georgian/fonts.dir 0444 root bin
+f none share/fonts/TrueType/bpg-georgian/fonts.scale 0444 root bin
+
 d none share/doc 0755 root other
 d none share/doc/ttf-bpg-georgian 0755 root bin
 d none share/doc/ttf-bpg-georgian/README.txt.bz2 0444 root bin

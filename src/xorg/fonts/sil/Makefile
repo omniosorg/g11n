@@ -45,7 +45,7 @@ FILES = fonts.dir \
 DOCS =	OFL.txt \
 	OFL-FAQ.txt
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/sil
+ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/sil
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-sil
 
 all:=		TARGET= all

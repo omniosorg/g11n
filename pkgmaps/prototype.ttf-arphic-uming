@@ -23,18 +23,15 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/arphic 0755 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/fonts.dir 0444 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/fonts.scale 0444 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/fonts.alias 0444 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/uming.ttf 0444 root bin
-
 d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/arphic 0755 root bin
+f none share/fonts/TrueType/arphic/fonts.dir 0444 root bin
+f none share/fonts/TrueType/arphic/fonts.scale 0444 root bin
+f none share/fonts/TrueType/arphic/fonts.alias 0444 root bin
+f none share/fonts/TrueType/arphic/uming.ttf 0444 root bin
+
 d none share/doc 0755 root other
 d none share/doc/arphic 0755 root bin
 d none share/doc/arphic/license 0755 root bin

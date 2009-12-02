@@ -24,6 +24,8 @@
 # Use is subject to license terms.
 #
 
+FONTROOT	= $(FILEROOT)/usr/share/fonts/TrueType
+
 $(VER)/.fonts_installed: $(VER)/.unpacked
 	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
 	( cd $(VER); \

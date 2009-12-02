@@ -23,14 +23,12 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/wqy 0755 root bin
-f none X11/lib/X11/fonts/TrueType/wqy/wqy-zenhei.ttf 0444 root bin
 d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/wqy 0755 root bin
+f none share/fonts/TrueType/wqy/wqy-zenhei.ttf 0444 root bin
+
 d none share/doc 0755 root other
 d none share/doc/wqy-zenhei 0755 root bin
 f none share/doc/wqy-zenhei/AUTHORS 0444 root bin

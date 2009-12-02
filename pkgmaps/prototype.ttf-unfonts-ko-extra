@@ -23,26 +23,23 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/unfonts 0755 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnBom.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnJamoDotum.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnJamoBatang.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnJamoNovel.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnJamoSora.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnPenheulim.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnPen.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnPilgia.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnShinmun.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnTaza.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnVada.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/unfonts/UnYetgul.ttf 0444 root bin
-
 d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/unfonts 0755 root bin
+f none share/fonts/TrueType/unfonts/UnBom.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnJamoDotum.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnJamoBatang.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnJamoNovel.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnJamoSora.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnPenheulim.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnPen.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnPilgia.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnShinmun.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnTaza.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnVada.ttf 0444 root bin
+f none share/fonts/TrueType/unfonts/UnYetgul.ttf 0444 root bin
+
 d none share/doc 0755 root other
 d none share/doc/unfonts-extra 0755 root bin
 f none share/doc/unfonts-extra/README.bz2 0444 root bin

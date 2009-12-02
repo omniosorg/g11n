@@ -20,34 +20,29 @@
 #
 
 #
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
-# Copyright (c) 2006, by Sun Microsystems, Inc.
-# All rights reserved.
+# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+# Use is subject to license terms.
 #
 
 include $(SRC)/Makefile.master
 
-TARGETFONTDIR =$(FILEROOT)/X11/lib/X11/fonts/TrueType/hanyang
+TARGETFONTDIR	= $(FILEROOT)/usr/share/fonts/TrueType/hanyang
 
-
-FILES = h2drrm.ttf \
-			h2hsrm.ttf \
-			h2gtrm.ttf \
-			h2mjsm.ttf \
-			sundotump.ttf \
-			sundotumf.ttf \
-			fonts.alias \
-			fonts.scale \
-			fonts.dir
+FILES =	h2drrm.ttf \
+	h2hsrm.ttf \
+	h2gtrm.ttf \
+	h2mjsm.ttf \
+	sundotump.ttf \
+	sundotumf.ttf \
+	fonts.alias \
+	fonts.scale \
+	fonts.dir
 
 
 install: all
 	$(INSDIR) -m 775 -u root -g bin $(TARGETFONTDIR)
-	#mkdir $(TARGETFONTDIR)
-	for f in $(FILES); \
-	do \
-		$(INS) $(TARGETFONTDIR) -m 664 -u root -g bin $$f ; \
+	for f in $(FILES); do \
+		$(INS) $(TARGETFONTDIR) -m 444 -u root -g bin $$f ; \
 	done
 
 all: $(FILES)
@@ -56,7 +51,6 @@ lint: FRC
 
 clean: $(SUBDIRS)
 	$(RM) -r $(TARGETFONTDIR)
-
 
 clobber: FRC
 

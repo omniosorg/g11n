@@ -26,7 +26,7 @@
 
 include $(SRC)/Makefile.master
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/wqy
+ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/wqy
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/wqy-zenhei
 ROOT_FONTCONF_DIR = $(FILEROOT)/etc/fonts/conf.avail
 

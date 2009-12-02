@@ -37,7 +37,7 @@ ID =	SilYi
 
 DOCS =	
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/sil
+ROOT_FONT_DIR 	= $(FONTROOT)/sil
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-sil
 
 all: $(VER)/.unpacked

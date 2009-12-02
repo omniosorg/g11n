@@ -31,7 +31,7 @@ VER 		= ae_fonts_2.0
 TARBALL		= $(VER).tar.bz2
 SOURCE_URL	= http://downloads.sourceforge.net/project/arabeyes/Fonts/ae_fonts/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_FONT_DIR 	= $(FONTROOT)/$(PROJECT)
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)
 
 FONTS =	AAHS/ae_Cortoba.ttf \

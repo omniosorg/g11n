@@ -30,7 +30,7 @@ PROJECT		= gentium
 VER 		= $(PROJECT)-1.02
 TARBALL		= $(VER).tar.bz2
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_FONT_DIR 	= $(FONTROOT)/$(PROJECT)
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)
 
 FONTS =	GenAI102.ttf \

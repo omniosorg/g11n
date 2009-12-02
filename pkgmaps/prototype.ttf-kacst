@@ -24,32 +24,29 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/kacst 0755 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstArt.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstBook.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstDecorative.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstDigital.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstFarsi.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstLetter.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstNaskh.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstOffice.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstOne.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstPen.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstPoster.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstQurn.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstScreen.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstTitle.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/KacstTitleL.ttf 0444 root bin
-
-f none X11/lib/X11/fonts/TrueType/kacst/fonts.dir 0444 root bin
-f none X11/lib/X11/fonts/TrueType/kacst/fonts.scale 0444 root bin
-
 d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/kacst 0755 root bin
+f none share/fonts/TrueType/kacst/KacstArt.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstBook.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstDecorative.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstDigital.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstFarsi.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstLetter.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstNaskh.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstOffice.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstOne.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstPen.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstPoster.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstQurn.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstScreen.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstTitle.ttf 0444 root bin
+f none share/fonts/TrueType/kacst/KacstTitleL.ttf 0444 root bin
+
+f none share/fonts/TrueType/kacst/fonts.dir 0444 root bin
+f none share/fonts/TrueType/kacst/fonts.scale 0444 root bin
+
 d none share/doc 0755 root other
 d none share/doc/ttf-kacst 0755 root bin
 f none share/doc/ttf-kacst/Copyright.bz2 0444 root bin

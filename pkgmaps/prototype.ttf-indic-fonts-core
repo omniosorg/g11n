@@ -23,25 +23,22 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/indic-fonts-core 0755 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/lohit_gu.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/lohit_hi.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/lohit_pa.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/lohit_ta.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/Malige-b.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/Malige-n.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/MalOtf.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/MuktiNarrowBold.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/MuktiNarrow.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/utkal.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/indic-fonts-core/vemana.ttf 0444 root bin
-
 d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/indic-fonts-core 0755 root bin
+f none share/fonts/TrueType/indic-fonts-core/lohit_gu.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/lohit_hi.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/lohit_pa.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/lohit_ta.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/Malige-b.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/Malige-n.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/MalOtf.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/MuktiNarrowBold.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/MuktiNarrow.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/utkal.ttf 0444 root bin
+f none share/fonts/TrueType/indic-fonts-core/vemana.ttf 0444 root bin
+
 d none share/doc 0755 root other
 d none share/doc/indic-fonts-core 0755 root bin
 d none share/doc/indic-fonts-core/ttf-Bengali-fonts 0755 root bin

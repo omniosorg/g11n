@@ -23,20 +23,17 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/ipafont 0755 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/fonts.dir 0444 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/fonts.scale 0444 root bin
-f none X11/lib/X11/fonts/TrueType/ipafont/ipag.otf 0444 root bin
-s none X11/lib/X11/fonts/TrueType/ipafont/ipag.ttf=ipag.otf
-f none X11/lib/X11/fonts/TrueType/ipafont/ipagp.otf 0444 root bin
-s none X11/lib/X11/fonts/TrueType/ipafont/ipagp.ttf=ipagp.otf
-
 d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/ipafont 0755 root bin
+f none share/fonts/TrueType/ipafont/fonts.dir 0444 root bin
+f none share/fonts/TrueType/ipafont/fonts.scale 0444 root bin
+f none share/fonts/TrueType/ipafont/ipag.otf 0444 root bin
+s none share/fonts/TrueType/ipafont/ipag.ttf=ipag.otf
+f none share/fonts/TrueType/ipafont/ipagp.otf 0444 root bin
+s none share/fonts/TrueType/ipafont/ipagp.ttf=ipagp.otf
+
 d none share/doc 0755 root other
 d none share/doc/ipafont 0755 root bin
 f none share/doc/ipafont/Readme00301.txt 0444 root bin

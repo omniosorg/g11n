@@ -23,10 +23,8 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/arphic 0755 root bin
-f none X11/lib/X11/fonts/TrueType/arphic/ukai.ttf 0444 root bin
+d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/arphic 0755 root bin
+f none share/fonts/TrueType/arphic/ukai.ttf 0444 root bin

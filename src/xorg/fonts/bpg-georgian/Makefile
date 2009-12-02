@@ -32,7 +32,7 @@ TARBALL		= BPG_Fonts.zip
 WGET_OPT	= -O $(SOURCE_ARCHIVES)/$(TARBALL)
 SOURCE_URL	= http://bpg-fonts.googlegroups.com/web/BPG_GPL%26GNU_Fonts.zip?gda=8QXdOEkAAAAVNtGpDzO2EW3rYrpy6g3Pu6-IwYn2wal95b5URPfx_aRUKIkfWgVA11iZN1A9Xo3Z9hDUC4qB4Xbq3pl19fs-hAioEG5q2hncZWbpWmJ7IQ
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_FONT_DIR 	= $(FONTROOT)/$(PROJECT)
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)
 
 FONTS_RENAME = \

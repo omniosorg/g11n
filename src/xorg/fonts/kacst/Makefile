@@ -31,7 +31,7 @@ VER 		= KacstArabicFonts-2.0
 TARBALL		= kacst_fonts_2.0.tar.bz2
 SOURCE_URL	= http://downloads.sourceforge.net/project/arabeyes/kacst_fonts/2.0/$(TARBALL)
 
-ROOT_FONT_DIR 	= $(FILEROOT)/X11/lib/X11/fonts/TrueType/$(PROJECT)
+ROOT_FONT_DIR 	= $(FONTROOT)/$(PROJECT)
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)
 
 FONTS =	KacstArt.ttf \

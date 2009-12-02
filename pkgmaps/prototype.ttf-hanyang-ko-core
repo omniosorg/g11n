@@ -24,14 +24,12 @@
 # Use is subject to license terms.
 #
 
-d none X11 0755 root bin
-d none X11/lib 0755 root bin
-d none X11/lib/X11 0755 root bin
-d none X11/lib/X11/fonts 0755 root bin
-d none X11/lib/X11/fonts/TrueType 0755 root bin
-d none X11/lib/X11/fonts/TrueType/hanyang 0755 root bin
-s none X11/lib/X11/fonts/TrueType/hangyang=hanyang  
-f none X11/lib/X11/fonts/TrueType/hanyang/h2gtrm.ttf 0444 root bin
-f none X11/lib/X11/fonts/TrueType/hanyang/fonts.dir 0444 root bin
-f none X11/lib/X11/fonts/TrueType/hanyang/fonts.scale 0444 root bin
-f none X11/lib/X11/fonts/TrueType/hanyang/fonts.alias 0444 root bin
+d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/hanyang 0755 root bin
+s none share/fonts/TrueType/hangyang=hanyang  
+f none share/fonts/TrueType/hanyang/h2gtrm.ttf 0444 root bin
+f none share/fonts/TrueType/hanyang/fonts.dir 0444 root bin
+f none share/fonts/TrueType/hanyang/fonts.scale 0444 root bin
+f none share/fonts/TrueType/hanyang/fonts.alias 0444 root bin
