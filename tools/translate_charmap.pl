@@ -86,8 +86,13 @@ while (<F>) {
 
 		my $code = substr($line, $n1+1, $n2-$n1-1);
 		
-		die "'$code' is unkwnown" unless defined $tr{$code};
-		print $tr{$code};
+		if (defined $tr{$code}) {
+			print $tr{$code};
+		} else {
+			warn "'$code' is unknown: '$line'" unless 
+			print $code;
+		}
+
 
 		$i = $n2;
 	}

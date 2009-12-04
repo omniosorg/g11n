@@ -26,7 +26,7 @@
 
 include $(SRC)/Makefile.master
 
-LOCALES_UTF8 = hi_IN.UTF-8 ja_JP.UTF-8 zh.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.UTF-8 zh_TW.UTF-8 ta_IN.UTF-8 te_IN.UTF-8 en_US.UTF-8 zh.UTF-8@pinyin zh.UTF-8@radical zh.UTF-8@stroke zh_HK.UTF-8@pinyin zh_HK.UTF-8@stroke zh_HK.UTF-8@radical zh_HK.UTF-8@zhuyin zh_TW.UTF-8@pinyin zh_TW.UTF-8@stroke zh_TW.UTF-8@radical zh_TW.UTF-8@zhuyin
+LOCALES_UTF8 = ja_JP.UTF-8 zh.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.UTF-8 zh_TW.UTF-8 en_US.UTF-8 zh.UTF-8@pinyin zh.UTF-8@radical zh.UTF-8@stroke zh_HK.UTF-8@pinyin zh_HK.UTF-8@stroke zh_HK.UTF-8@radical zh_HK.UTF-8@zhuyin zh_TW.UTF-8@pinyin zh_TW.UTF-8@stroke zh_TW.UTF-8@radical zh_TW.UTF-8@zhuyin
 
 # not migrated yet because different reasons
 LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk sh_BA.ISO8859-2@bosnia 
@@ -39,7 +39,8 @@ LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk sh_BA.ISO8859-2@bos
 #is_IS.UTF-8 es_AR.UTF-8 es_BO.UTF-8 es_CL.UTF-8 es_CO.UTF-8 es_EC.UTF-8 es_PE.UTF-8 es_PY.UTF-8 es_UY.UTF-8 es_VE.UTF-8 \
 #cs_CZ.UTF-8@euro fr_FR.UTF-8  ar_EG.UTF-8 ar_SA.UTF-8 de_DE.UTF-8 es_ES.UTF-8 fi_FI.UTF-8 fr_BE.UTF-8 he_IL.UTF-8 it_IT.UTF-8  \
 #pl_PL.UTF-8 pt_BR.UTF-8 ru_RU.UTF-8 sv_SE.UTF-8 tr_TR.UTF-8 uk_UA.UTF-8 kk_KZ.UTF-8 ms_MY.UTF-8 id_ID.UTF-8  vi_VN.UTF-8 \
-#ka_GE.UTF-8 be_BY.UTF-8 es_US.UTF-8
+#ka_GE.UTF-8 be_BY.UTF-8 es_US.UTF-8 \
+#hi_IN.UTF-8 ta_IN.UTF-8 te_IN.UTF-8 
 
 # moved to src/locale_cldr:
 #LOCALES_ISO = en_AU.ISO8859-1 en_CA.ISO8859-1 en_GB.ISO8859-1 en_GB.ISO8859-15 en_IE.ISO8859-1 en_IE.ISO8859-15 en_NZ.ISO8859-1 \
