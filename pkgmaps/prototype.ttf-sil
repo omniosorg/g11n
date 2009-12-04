@@ -30,6 +30,10 @@ d none share/fonts/TrueType 0755 root bin
 d none share/fonts/TrueType/sil 0755 root bin
 f none share/fonts/TrueType/sil/Abyssinica_SIL.ttf 0444 root bin
 f none share/fonts/TrueType/sil/AndBasR.ttf 0444 root bin
+f none share/fonts/TrueType/sil/AppSILB.ttf 0444 root bin
+f none share/fonts/TrueType/sil/AppSILBI.ttf 0444 root bin
+f none share/fonts/TrueType/sil/AppSILI.ttf 0444 root bin
+f none share/fonts/TrueType/sil/AppSILR.ttf 0444 root bin
 f none share/fonts/TrueType/sil/CharisSILB.ttf 0444 root bin
 f none share/fonts/TrueType/sil/CharisSILBI.ttf 0444 root bin
 f none share/fonts/TrueType/sil/CharisSILI.ttf 0444 root bin
@@ -64,6 +68,7 @@ f none share/doc/ttf-sil/OFL.txt.bz2 0444 root bin
 f none share/doc/ttf-sil/OFL-FAQ.txt.bz2 0444 root bin
 f none share/doc/ttf-sil/FONTLOG.Abyssinica.txt.bz2 0444 root bin
 f none share/doc/ttf-sil/FONTLOG.Andika.txt.bz2 0444 root bin
+f none share/doc/ttf-sil/FONTLOG.Apparatus.txt.bz2 0444 root bin
 f none share/doc/ttf-sil/FONTLOG.Charis.txt.bz2 0444 root bin
 f none share/doc/ttf-sil/FONTLOG.Dai-Banna.txt.bz2 0444 root bin
 f none share/doc/ttf-sil/FONTLOG.Doulos.txt.bz2 0444 root bin

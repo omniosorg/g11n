@@ -26,62 +26,37 @@
 
 include $(SRC)/Makefile.master
 
-SUBDIRS = \
-	abyssinica \
-	andika \
-	apparatus \
-	charis \
-	dai-banna \
-	doulos \
-	ezra \
-	galatia \
-	lateef \
-	scheherazade \
-	sophia-nubian \
-	yi
+PROJECT		= apparatus
+ORIG_VER	= Apparatus\ SIL
+VER 		= Apparatus_SIL_1.0
+TARBALL		= ApparatusSIL.zip
+SOURCE_URL	= http://scripts.sil.org/cms/scripts/render_download.php?site_id=nrsi\&format=file\&media_id=AppSIL1.0.zip\&filename=ApparatusSIL.zip
+WGET_OPT	= -O $(TARBALL)
 
-FILES = fonts.dir \
-	fonts.scale
-
-DOCS =	OFL.txt \
-	OFL-FAQ.txt
-
-ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/sil
+ROOT_FONT_DIR 	= $(FONTROOT)/sil
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-sil
 
-all:=		TARGET= all
-install :=	TARGET= install
-clean :=	TARGET= clean
-clobber :=	TARGET= clobber
+FONTS =	AppSILB.ttf \
+	AppSILBI.ttf \
+	AppSILI.ttf \
+	AppSILR.ttf
 
-all: $(SUBDIRS)
+ID =	Apparatus
 
-install: $(SUBDIRS) .files_installed
+DOCS =	FONTLOG.$(ID).txt
 
-clean: $(SUBDIRS)
-	$(RM) .*installed
+VERFONTS = $(FONTS:%.ttf=$(VER)/%.ttf)
 
-.files_installed: .docs_installed
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
-	( for f in $(FILES); do \
-		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
-	done; )
-	touch $@
+$(VER)/%.ttf:	$(VER)/%.TTF
+	cp $< $@
 
-%.bz2: %
-	$(BZIP2) -c $< > $@
+$(VER)/%.$(ID).txt:	$(VER)/%.txt
+	cp $< $@
 
-.docs_installed: $(DOCS:%=%.bz2)
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
-	( for f in $(DOCS); do \
-		$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
-	done; )
-	touch $@
+all: $(VER)/.unpacked $(VERFONTS)
 
-$(SUBDIRS): FRC
-	@cd $@; pwd; $(MAKE) $(MFLAGS) $(TARGET)
+install: all $(VER)/.installed
 
-tarball:
-
-FRC:
+include ../../Makefile.fonts
+include $(SRC)/Makefile.targ
 

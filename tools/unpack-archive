@@ -27,9 +27,15 @@
 #
 # Common script to unpack various source archives
 #
+# Arguments:
+#   $1	archive name
+#   $2	directory created from the archive
+#   $3	optional final directory name
+# 
 FIND=${FIND:-/bin/find}
 XARGS=${XARGS:-/bin/xargs}
 CHMOD=${CHMOD:-/bin/chmod}
+MV=${MV:-/usr/bin/mv}
 
 case "${1}" in
 	*.bz2)
@@ -59,7 +65,11 @@ esac
 
 /bin/sh -c "${COMMAND}"
 
-if [ $# -eq 2 -a -d "${2}" ] ; then
-	${FIND} ${2} -type d | ${XARGS} -i ${CHMOD} 0755 "{}"
-	${FIND} ${2} -type f | ${XARGS} -i ${CHMOD} a+r "{}"
+if [ $# -ge 2 -a -d "${2}" ] ; then
+	${FIND} "${2}" -type d | ${XARGS} -i ${CHMOD} 0755 "{}"
+	${FIND} "${2}" -type f | ${XARGS} -i ${CHMOD} a+r "{}"
+fi
+
+if [ $# -eq 3 -a -d "${2}" -a ! -d "${3}" ] ; then
+	${MV} -f "${2}" "${3}"
 fi

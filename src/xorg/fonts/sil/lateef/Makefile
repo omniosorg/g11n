@@ -29,6 +29,8 @@ include $(SRC)/Makefile.master
 PROJECT		= LateefRegOT
 VER 		= $(PROJECT)_1.001
 TARBALL		= $(VER).zip
+SOURCE_URL	= http://scripts.sil.org/cms/scripts/render_download.php?site_id=nrsi\&format=file\&media_id=Lateef_OT_1_001\&filename=LateefRegOT_1.001.zip
+WGET_OPT	= -O $(TARBALL)
 
 FONTS = LateefRegOT.ttf
 
@@ -39,7 +41,7 @@ DOCS =	FONTLOG.$(ID).txt
 ROOT_FONT_DIR 	= $(FONTROOT)/sil
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-sil
 
-all: $(VER)/.unpacked
+all: $(VER)/.unpacked_withdir
 
 $(VER)/%.$(ID).txt: $(VER)/%.txt
 	cp $< $@
@@ -47,11 +49,12 @@ $(VER)/%.$(ID).txt: $(VER)/%.txt
 install: all $(VER)/.installed
 
 include ../../Makefile.fonts
+include $(SRC)/Makefile.targ
 
-$(VER)/.unpacked: $(TARBALL)
+$(VER)/.unpacked_withdir $(VER)/.unpacked: $(SOURCE_ARCHIVE)
 	-$(RM) -r $(VER)
 	-mkdir $(VER)
-	$(UNPACKARCHIVE) $(TARBALL) .
-	$(MV) *ttf *txt $(VER)/
+	(cd $(VER) && $(UNPACKARCHIVE) $(SOURCE_ARCHIVE) .)
 	touch $@
+	touch $(VER)/.unpacked
 
