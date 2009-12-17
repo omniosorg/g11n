@@ -374,6 +374,7 @@
   nativo          br: Nativo
   nativo-us       br: Nativo for USA keyboards
   nativo-epo      br: Nativo for Esperanto
+  type6           br: Sun Type 6/7 Variant
   phonetic        bg: Traditional Phonetic
   bas_phonetic    bg: Standard Phonetic
   french          ma: French
@@ -392,6 +393,7 @@
   shs             ca: Secwepemctsin
   kut             ca: Ktunaxa
   eng             ca: English
+  type6           ca: Sun Type 6/7 Variant
   tib             cn: Tibetan
   tib_asciinum    cn: Tibetan (with ASCII numerals)
   alternatequotes hr: Use guillemets for quotes
@@ -402,6 +404,7 @@
   qwerty          cz: qwerty
   qwerty_bksl     cz: qwerty, extended Backslash
   ucw             cz: UCW layout (accented letters only)
+  type6           cz: Sun Type 6/7 Variant
   nodeadkeys      dk: Eliminate dead keys
   type6           dk: Sun Type 6/7 Variant
   type5           dk: Sun Type 5 Variant
@@ -417,6 +420,7 @@
   nodeadkeys      ee: Eliminate dead keys
   dvorak          ee: Dvorak
   us              ee: US keyboard with Estonian letters
+  type6           ee: Sun Type 6/7 Variant
   pro             ir: Pro
   keypad          ir: Keypad
   pro_keypad      ir: Pro Keypad
@@ -480,6 +484,7 @@
   extended        gr: Extended
   nodeadkeys      gr: Eliminate dead keys
   polytonic       gr: Polytonic
+  type6           gr: Sun Type 6/7 Variant
   standard        hu: Standard
   nodeadkeys      hu: Eliminate dead keys
   qwerty          hu: qwerty
@@ -526,9 +531,11 @@
   lekp            lt: LEKP
   lekpa           lt: LEKPa
   balticplus      lt: Baltic+
+  type6           lt: Sun Type 6/7 Variant
   apostrophe      lv: Apostrophe (') variant
   tilde           lv: Tilde (~) variant
   fkey            lv: F-letter (F) variant
+  type6           lv: Sun Type 6/7 Variant
   cyrillic        me: Cyrillic
   cyrillicyz      me: Cyrillic, Z and ZHE swapped
   latinunicode    me: Latin unicode
@@ -553,6 +560,7 @@
   dvorak_altquotes pl: Dvorak, Polish quotes on key 1
   csb             pl: Kashubian
   ru_phonetic_dvorak pl: Russian phonetic Dvorak
+  type6           pl: Sun Type 6/7 Variant
   nodeadkeys      pt: Eliminate dead keys
   type6           pt: Sun Type 6/7 Variant
   type5           pt: Sun Type 5 Variant
@@ -572,6 +580,7 @@
   crh_alt         ro: Crimean Tatar (Turkish Alt-Q)
   crh_dobruca1    ro: Crimean Tatar (Dobruca-1 Q)
   crh_dobruca2    ro: Crimean Tatar (Dobruca-2 Q)
+  type6           ro: Sun Type 6/7 Variant
   phonetic        ru: Phonetic
   phonetic_winkeys ru: Phonetic Winkeys
   typewriter      ru: Typewriter
@@ -599,6 +608,7 @@
   bksl            sk: Extended Backslash
   qwerty          sk: qwerty
   qwerty_bksl     sk: qwerty, extended Backslash
+  type6           sk: Sun Type 6/7 Variant
   nodeadkeys      es: Eliminate dead keys
   type6           es: Sun Type 6/7 Variant
   type5           es: Sun Type 5 Variant
@@ -662,6 +672,7 @@
   crh             ua: Crimean Tatar (Turkish Q)
   crh_f           ua: Crimean Tatar (Turkish F)
   crh_alt         ua: Crimean Tatar (Turkish Alt-Q)
+  type6           ua: Sun Type 6/7 Variant
   extd            gb: Extended - Winkeys
   intl            gb: International (with dead keys)
   dvorak          gb: Dvorak
@@ -676,6 +687,9 @@
   crh_f           uz: Crimean Tatar (Turkish F)
   crh_alt         uz: Crimean Tatar (Turkish Alt-Q)
   kr104           kr: 101/104 key Compatible
+  type6           kr: Sun Type 6/7 Variant
+  type5           kr: Sun Type 5 Variant
+  type4           kr: Sun Type 4 Variant
   CloGaelach      ie: CloGaelach
   UnicodeExpert   ie: UnicodeExpert
   ogam            ie: Ogham

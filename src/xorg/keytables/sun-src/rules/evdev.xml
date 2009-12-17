@@ -1953,6 +1953,12 @@
             <languageList><iso639Id>epo</iso639Id></languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -2110,6 +2116,12 @@
             <languageList><iso639Id>eng</iso639Id></languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -2211,6 +2223,12 @@
 	    <description>UCW layout (accented letters only)</description>
 	 </configItem>
 	</variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -2337,6 +2355,12 @@
           <configItem>
             <name>us</name>
             <description>US keyboard with Estonian letters</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
           </configItem>
         </variant>
       </variantList>
@@ -2838,6 +2862,12 @@
             <description>Polytonic</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -3255,6 +3285,12 @@
             <description>Baltic+</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -3281,6 +3317,12 @@
           <configItem>
             <name>fkey</name>
             <description>F-letter (F) variant</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
           </configItem>
         </variant>
       </variantList>
@@ -3499,6 +3541,12 @@
             <languageList><iso639Id>rus</iso639Id></languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
@@ -3636,6 +3684,12 @@
             <name>crh_dobruca2</name>
             <description>Crimean Tatar (Dobruca-2 Q)</description>
             <languageList><iso639Id>crh</iso639Id></languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
           </configItem>
         </variant>
       </variantList>
@@ -3847,6 +3901,12 @@
           <configItem>
             <name>qwerty_bksl</name>
             <description>qwerty, extended Backslash</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
           </configItem>
         </variant>
       </variantList>
@@ -4341,6 +4401,12 @@
             <name>crh_alt</name>
             <description>Crimean Tatar (Turkish Alt-Q)</description>
             <languageList><iso639Id>crh</iso639Id></languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>type6</name>
+            <description>Sun Type 6/7 Variant</description>
           </configItem>
         </variant>
       </variantList>

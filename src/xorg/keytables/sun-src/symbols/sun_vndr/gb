@@ -62,10 +62,12 @@ xkb_symbols "type6" {
     key <AC11> { [ apostrophe,         at             ] };
     key <LSGT> { [  backslash,        bar             ] };
 
+	include "level3(ralt_switch)"
+
 };
 
 
-partial default alphanumeric_keys
+partial alphanumeric_keys
 xkb_symbols "type5" {
 
     name[Group1]="United Kingdom - Sun type 5";
@@ -73,10 +75,12 @@ xkb_symbols "type5" {
     key <TLDE> {        [       quoteleft,      notsign,    brokenbar         ] };
     key <AD03> {        [               e,      E,          EuroSign          ] };
 
+	include "level3(ralt_switch)"
+
 };
 
 
-partial default alphanumeric_keys
+partial alphanumeric_keys
 xkb_symbols "type4" {
 
     name[Group1]="United Kingdom - Sun type 4";
@@ -87,5 +91,49 @@ xkb_symbols "type4" {
     key <AE11> { [  minus, underscore,     notsign ] };
     key <AD03> { [      e,          E,    EuroSign ] };
 
+	include "level3(ralt_switch)"
+
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "intl" {
+	include "gb(intlespacio)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "extd" {
+	include "gb(extd)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "colemak" {
+	include "gb(colemak)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "dvorak" {
+	include "gb(dvorak)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "dvorakukp" {
+	include "gb(dvorakukp)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac" {
+	include "gb(mac)"
+};
+
+
+partial default alphanumeric_keys
+	xkb_symbols "basic" {
+	include "sun_vndr/gb(type6)"
 };
 

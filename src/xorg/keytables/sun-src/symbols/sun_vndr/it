@@ -48,8 +48,38 @@
 // CDDL HEADER END
 //
 
-
 partial default alphanumeric_keys
+xkb_symbols "type6" {
+
+    name[Group1]="Italy - Sun type 6";
+
+    key <LSGT> { [            less,         greater                                ] };
+    key <TLDE> { [       backslash,             bar                                ] };
+    key <AE02> { [               2,        quotedbl                                ] };
+    key <AE03> { [               3,        sterling                                ] };
+    key <AE06> { [               6,       ampersand                                ] };
+    key <AE07> { [               7,           slash                                ] };
+    key <AE08> { [               8,       parenleft,    braceleft                  ] };     
+    key <AE09> { [               9,      parenright,   braceright                  ] };     
+    key <AE10> { [               0,           equal                                ] };
+    key <AE11> { [      apostrophe,        question,        grave                  ] };     
+    key <AE12> { [          igrave,     asciicircum                                ] };
+    key <AD03> { [               e,               E,     EuroSign                  ] };
+    key <AD11> { [          egrave,          eacute,  bracketleft,  dead_abovering ] };
+    key <AD12> { [            plus,        asterisk, bracketright                  ] };      
+    key <BKSL> { [          ugrave,         section,   asciitilde                  ] };
+    key <AC10> { [          ograve,        ccedilla,           at                  ] };      
+    key <AC11> { [          agrave,          degree,   numbersign                  ] };
+    key <AB08> { [           comma,       semicolon                                ] };
+    key <AB09> { [          period,           colon                                ] };
+    key <AB10> { [           minus,      underscore                                ] };
+
+        include "level3(ralt_switch)"
+
+};
+
+
+partial alphanumeric_keys
 xkb_symbols "type4" {
 
     name[Group1]="Italy - Sun type 4";
@@ -85,10 +115,12 @@ xkb_symbols "type4" {
     key <LCTL> { [ Caps_Lock            ] };
     key <CAPS> { [ Control_L            ] };
  
+	include "level3(ralt_switch)"
+
 };
 
  
-partial default alphanumeric_keys
+partial alphanumeric_keys
 xkb_symbols "type5" {
 
     name[Group1]="Italy - Sun type 5";
@@ -97,34 +129,37 @@ xkb_symbols "type5" {
     key <AE09> { [ 9,      parenright,  braceright                 ] };
     key <BKSL> { [ ugrave, section,     asciitilde                 ] };
 
+	include "level3(ralt_switch)"
+
 };
  
 
+partial alphanumeric_keys
+	xkb_symbols "nodeadkeys" {
+	include "it(nodeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac" {
+	include "it(mac)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "geo" {
+	include "it(geo)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "olpc" {
+	include "it(olpc)"
+};
+
+
 partial default alphanumeric_keys
-xkb_symbols "type6" {
-
-    name[Group1]="Italy - Sun type 6";
-
-    key <LSGT> { [            less,         greater                                ] };
-    key <TLDE> { [       backslash,             bar                                ] };
-    key <AE02> { [               2,        quotedbl                                ] };
-    key <AE03> { [               3,        sterling                                ] };
-    key <AE06> { [               6,       ampersand                                ] };
-    key <AE07> { [               7,           slash                                ] };
-    key <AE08> { [               8,       parenleft,    braceleft                  ] };     
-    key <AE09> { [               9,      parenright,   braceright                  ] };     
-    key <AE10> { [               0,           equal                                ] };
-    key <AE11> { [      apostrophe,        question,        grave                  ] };     
-    key <AE12> { [          igrave,     asciicircum                                ] };
-    key <AD03> { [               e,               E,     EuroSign                  ] };
-    key <AD11> { [          egrave,          eacute,  bracketleft,  dead_abovering ] };
-    key <AD12> { [            plus,        asterisk, bracketright                  ] };      
-    key <BKSL> { [          ugrave,         section,   asciitilde                  ] };
-    key <AC10> { [          ograve,        ccedilla,           at                  ] };      
-    key <AC11> { [          agrave,          degree,   numbersign                  ] };
-    key <AB08> { [           comma,       semicolon                                ] };
-    key <AB09> { [          period,           colon                                ] };
-    key <AB10> { [           minus,      underscore                                ] };
-
+	xkb_symbols "basic" {
+	include "sun_vndr/it(type6)"
 };
 

@@ -48,48 +48,6 @@
 // CDDL HEADER END
 //
 
-
-partial default alphanumeric_keys
-xkb_symbols "type4" {
-
-    name[Group1]="Netherlands - Sun type 4";
-
-    key <BKSL> { [ at, section, notsign ]           };
-    key <BRCR> { [ backslash, bar       ]                       };
-    key <AE01> { [ 1, exclam, onesuperior ]       };
-    key <AE02> { [ 2, quotedbl, twosuperior ]       };
-    key <AE03> { [ 3, numbersign, threesuperior]      };
-    key <AE04> { [ 4, dollar, onequarter  ]       };
-    key <AE05> { [ 5, percent, onehalf     ]       };
-    key <AE06> { [ 6, ampersand, threequarters]      };
-    key <AE07> { [ 7, underscore, sterling    ]       };
-    key <AE08> { [ 8, parenleft, braceleft   ]       };
-    key <AE09> { [ 9, parenright, braceright  ]       };
-    key <AE10> { [ 0, quoteright, quoteleft   ]       };
-    key <AE11> { [ slash, question, backslash  ]        };
-    key <AE12> { [ degree, SunFA_Tilde, SunFA_Cedilla]      };
-    key <AD03> { [ e, E, EuroSign, Eacute    ]};
-    key <AD11> { [ dead_diaeresis, dead_circumflex, asciitilde, asciicircum]};
-    key <AD12> { [ asterisk, bar, asciitilde  ]       };
-    key <AC02> { [ S, S, ssharp      ]               };
-    key <AC10> { [ plus, plusminus      ]                       };
-    key <AC11> { [ dead_acute, dead_grave ]                    };
-    key <TLDE> { [ less, greater, asciicircum ]       };
-    key <LSGT> { [ bracketleft, bracketright, brokenbar ]     };
-    key <AB01> { [ z, Z, guillemotleft]      };
-    key <AB02> { [ x, X, guillemotright]     };
-    key <AB03> { [ c, C, cent        ]       };
-    key <AB07> { [ m, M, Greek_mu, masculine ]       };
-    key <AB08> { [ comma, semicolon, cedilla, guillemotleft]     };
-    key <AB09> { [ period, colon, periodcentered, guillemotright ] };
-    key <AB10> { [ minus, equal, hyphen ]            };
-    key <CAPS> { [ SunAltGraph          ]                       };
-//    key <COMP> { [ SunCompose         ]                       };
-    key <ALGR> { [ Caps_Lock            ]                       }; 
-
-};
-
-
 default partial alphanumeric_keys
 xkb_symbols "type6" {
 
@@ -136,5 +94,80 @@ xkb_symbols "type6" {
     key <AB09>  { [    period,      colon ] };
     key <AB10>  { [     minus,      equal ] };
 
+        include "level3(ralt_switch)"
+
+};
+
+
+partial alphanumeric_keys
+xkb_symbols "type4" {
+
+    name[Group1]="Netherlands - Sun type 4";
+
+    key <BKSL> { [ at, section, notsign ]           };
+    key <BRCR> { [ backslash, bar       ]                       };
+    key <AE01> { [ 1, exclam, onesuperior ]       };
+    key <AE02> { [ 2, quotedbl, twosuperior ]       };
+    key <AE03> { [ 3, numbersign, threesuperior]      };
+    key <AE04> { [ 4, dollar, onequarter  ]       };
+    key <AE05> { [ 5, percent, onehalf     ]       };
+    key <AE06> { [ 6, ampersand, threequarters]      };
+    key <AE07> { [ 7, underscore, sterling    ]       };
+    key <AE08> { [ 8, parenleft, braceleft   ]       };
+    key <AE09> { [ 9, parenright, braceright  ]       };
+    key <AE10> { [ 0, quoteright, quoteleft   ]       };
+    key <AE11> { [ slash, question, backslash  ]        };
+    key <AE12> { [ degree, SunFA_Tilde, SunFA_Cedilla]      };
+    key <AD03> { [ e, E, EuroSign, Eacute    ]};
+    key <AD11> { [ dead_diaeresis, dead_circumflex, asciitilde, asciicircum]};
+    key <AD12> { [ asterisk, bar, asciitilde  ]       };
+    key <AC02> { [ S, S, ssharp      ]               };
+    key <AC10> { [ plus, plusminus      ]                       };
+    key <AC11> { [ dead_acute, dead_grave ]                    };
+    key <TLDE> { [ less, greater, asciicircum ]       };
+    key <LSGT> { [ bracketleft, bracketright, brokenbar ]     };
+    key <AB01> { [ z, Z, guillemotleft]      };
+    key <AB02> { [ x, X, guillemotright]     };
+    key <AB03> { [ c, C, cent        ]       };
+    key <AB07> { [ m, M, Greek_mu, masculine ]       };
+    key <AB08> { [ comma, semicolon, cedilla, guillemotleft]     };
+    key <AB09> { [ period, colon, periodcentered, guillemotright ] };
+    key <AB10> { [ minus, equal, hyphen ]            };
+    key <CAPS> { [ SunAltGraph          ]                       };
+//    key <COMP> { [ SunCompose         ]                       };
+    key <ALGR> { [ Caps_Lock            ]                       }; 
+
+	include "level3(ralt_switch)"
+
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "std" {
+	include "nl(std)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "Sundeadkeys" {
+	include "nl(Sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "sundeadkeys" {
+	include "nl(sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac" {
+	include "nl(mac)"
+};
+
+
+partial default alphanumeric_keys
+	xkb_symbols "basic" {
+	include "sun_vndr/nl(type6)"
 };
 
