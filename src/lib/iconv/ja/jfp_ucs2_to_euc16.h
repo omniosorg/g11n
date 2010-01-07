@@ -179,6 +179,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
+#define		U2E_2116_DEST	(0xa271)	/* numero sign */
 #define		U2E_2212_DEST	(0xa1dd)	/* minus sign */
 #define		U2E_2225_DEST	U2E_NODEST_COLX	/* parallel to */
 #define		U2E_301C_DEST	(0xa1c1)	/* wave dash */
@@ -199,6 +200,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
+#define		U2E_2116_DEST	JISX0212(0xa271)/* numero sign */
 #define		U2E_2212_DEST	(0xa1dd)	/* minus sign */
 #define		U2E_2225_DEST	U2E_NODEST_COLX	/* parallel to */
 #define		U2E_301C_DEST	(0xa1c1)	/* wave dash */
@@ -218,6 +220,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_00A6_DEST	U2E_NODEST_COLX	/* Broken bar */
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
+#define		U2E_2116_DEST	U2E_NODEST_COLX	/* numero sign */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
 #define		U2E_2212_DEST	(0xa1dd)	/* minus sign */
 #define		U2E_2225_DEST	U2E_NODEST_COLX	/* parallel to */
@@ -239,6 +242,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	(0x007e)	/* overline */
+#define		U2E_2116_DEST	(0xa271)	/* numero sign */
 #define		U2E_2212_DEST	(0xa1dd)	/* minus sign */
 #define		U2E_2225_DEST	U2E_NODEST_COLX	/* parallel to */
 #define		U2E_301C_DEST	(0xa1c1)	/* wave dash */
@@ -259,6 +263,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_00AC_DEST	U2E_NODEST_COLX	/* not sign */
 #define		U2E_2016_DEST	U2E_NODEST_COLX	/* double vertical line */
 #define		U2E_203E_DEST	(0x007e)	/* overline */
+#define		U2E_2116_DEST	(0xade2)	/* numero sign */
 #define		U2E_2212_DEST	U2E_NODEST_COLX	/* minus sign */
 #define		U2E_2225_DEST	(0xa1c2)	/* parallel to */
 #define		U2E_301C_DEST	U2E_NODEST_COLX	/* wave dash */
@@ -279,6 +284,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
+#define		U2E_2116_DEST	JISX0213_1(0xade2)	/* numero sign */
 #define		U2E_2212_DEST	(0xa1dd)	/* minus sign */
 #define		U2E_2225_DEST	(0xa2d4)	/* parallel to */
 #define		U2E_301C_DEST	(0xa1c1)	/* wave dash */
@@ -299,6 +305,7 @@ typedef	unsigned short	_jfp_euc16_t;
 #define		U2E_00AC_DEST	(0xa2cc)	/* not sign */
 #define		U2E_2016_DEST	(0xa1c2)	/* double vertical line */
 #define		U2E_203E_DEST	U2E_NODEST_COL1	/* overline */
+#define		U2E_2116_DEST	(0xa271)	/* numero sign */
 #define		U2E_2212_DEST	(0xa1dd)	/* minus sign */
 #define		U2E_2225_DEST	U2E_NODEST_COLX	/* parallel to */
 #define		U2E_301C_DEST	(0xa1c1)	/* wave dash */
@@ -2460,7 +2467,7 @@ static const _jfp_euc16_t _jfp_tbl_ucs2_to_euc16_block_21[] = {
 	/* U+2113 */	IFX0213(JISX0213_1(0xa3df),	U2E_NODEST_COLX),
 	/* U+2114 */	U2E_NODEST_COLX,
 	/* U+2115 */	U2E_NODEST_COLX,
-	/* U+2116 */	IFX0213(JISX0213_1(0xade2),	JISX0212(0xa271)),
+	/* U+2116 */	U2E_2116_DEST,
 	/* U+2117 */	U2E_NODEST_COLX,
 	/* U+2118 */	U2E_NODEST_COLX,
 	/* U+2119 */	U2E_NODEST_COLX,
