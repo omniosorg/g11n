@@ -77,5 +77,50 @@ xkb_symbols "type6" {
     key <AB09> { [  period,          colon                                    ] };
     key <AB10> { [  minus,           underscore                               ] };
 
+	include "level3(ralt_switch)"
+	include "kpdl(comma)"
+
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "kotoistus" {
+	include "fi(kotoistus)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "classic" {
+	include "fi(classic)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "fi" {
+	include "fi(fi)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "nodeadkeys" {
+	include "fi(nodeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "smi" {
+	include "fi(smi)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac" {
+	include "fi(mac)"
+};
+
+
+partial default alphanumeric_keys
+	xkb_symbols "basic" {
+	include "sun_vndr/fi(type6)"
 };
 

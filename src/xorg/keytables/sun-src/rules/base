@@ -139,9 +139,10 @@
 ! $sun_jp = sun_type4_jp sun_type5_jp sun_type6_jp sun_type6_jp_usb sun_type7_jp_usb
 
 // Sun Type 6 keyboards with custom/non-standard layouts
-! $sun_t6_custom = ara be ch de dk es fi fr \
-                   gb it kr nl no pt ru \
-                   se tr tw \
+! $sun_t6_custom = ara be br ca ch cz de dk \
+		   ee es fi fr gb gr it kr \
+		   lt lv nl no pl pt ro ru \
+		   se sk tr tw ua
 
 
 ! model			=	keycodes
@@ -361,18 +362,18 @@
   amiga		$nonlatin		=	xfree68_vndr/amiga(usa1)+%l%(v):2
   amiga		*			=	xfree68_vndr/amiga(usa1)+%l%(v)
   classmate	us			=	pc+%l(classmate)
-  $sun_type4    $sun_t6_custom       	=       pc+sun_vndr/us(type4)+%l%(v)
-  $sun_type5    $sun_t6_custom		=       pc+sun_vndr/us(type5)+%l%(v)
-  $sun_hobo     $sun_t6_custom 		=       pc+sun_vndr/us(type5hobo)+%l%(v)
+  $sun_type4    $sun_t6_custom       	=       pc+sun_vndr/us(type4)+sun_vndr/%l%(v)
+  $sun_type5    $sun_t6_custom		=       pc+sun_vndr/us(type5)+sun_vndr/%l%(v)
+  $sun_hobo     $sun_t6_custom 		=       pc+sun_vndr/us(type5hobo)+sun_vndr/%l%(v)
   $sun_type6    us      		=       pc+sun_vndr/us(type6)
   $sun_type6    jp      		=       sun_vndr/us_old(type6)+sun_vndr/jp(type6)
   $sun_type7    jp      		=       sun_vndr/us_old(type6)+sun_vndr/jp(type7)
   jp106         jp      		=       sun_vndr/us_old(type6)+sun_vndr/jp(type7)
   $sun_type5    tw                      =       sun_vndr/us_old(type5)+sun_vndr/tw(type5)
   $sun_type6    tw                      =       sun_vndr/us_old(type6)+sun_vndr/tw(type6)
-  $sun_type6    $sun_t6_custom		=       pc+sun_vndr/us(type6)+%l%(v)
+  $sun_type6    $sun_t6_custom		=       pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
   $sun_type7    us      		=       pc+sun_vndr/us(type6)
-  $sun_type7    $sun_t6_custom 		=       pc+sun_vndr/us(type6)+%l%(v)
+  $sun_type7    $sun_t6_custom 		=       pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
   pc98		nec_vndr/jp		=	nec_vndr/jp(pc98)
   macintosh_old	us			=	macintosh_vndr/us(oldmac)
   macintosh_old	en_US			=	macintosh_vndr/us(oldmac)
@@ -470,13 +471,13 @@
   macintosh_old	$macvendorlayouts	=	macintosh_vndr/us(oldmac)+macintosh_vndr/%l[1]%(v[1])
   macintosh_old	*			=	macintosh_vndr/us(oldmac)+%l[1]%(v[1])
  $macs		$macvendorlayouts	=	pc+macintosh_vndr/%l[1]%(v[1])
-  $sun_type4    $sun_t6_custom          =       pc+sun_vndr/us(type4)+%l[1]%(v[1])
-  $sun_type5    $sun_t6_custom          =       pc+sun_vndr/us(type5)+%l[1]%(v[1])
-  $sun_hobo     $sun_t6_custom          =       pc+sun_vndr/us(type5hobo)+%l[1]%(v[1])
+  $sun_type4    $sun_t6_custom          =       pc+sun_vndr/us(type4)+sun_vndr/%l[1]%(v[1])
+  $sun_type5    $sun_t6_custom          =       pc+sun_vndr/us(type5)+sun_vndr/%l[1]%(v[1])
+  $sun_hobo     $sun_t6_custom          =       pc+sun_vndr/us(type5hobo)+sun_vndr/%l[1]%(v[1])
   $sun_type6    us                      =       pc+sun_vndr/us(type6)
-  $sun_type6    $sun_t6_custom          =       pc+sun_vndr/us(type6)+%l[1]%(v[1])
+  $sun_type6    $sun_t6_custom          =       pc+sun_vndr/us(type6)+sun_vndr/%l[1]%(v[1])
   $sun_type7    us                      =       pc+sun_vndr/us(type6)
-  $sun_type7    $sun_t6_custom          =       pc+sun_vndr/us(type6)+%l[1]%(v[1])
+  $sun_type7    $sun_t6_custom          =       pc+sun_vndr/us(type6)+sun_vndr/%l[1]%(v[1])
  $thinkpads	br			=	pc+%l[1](thinkpad)
   *		*			=	pc+%l[1]%(v[1])
 

@@ -48,6 +48,16 @@
 // CDDL HEADER END
 //
 
+// Taiwanese layout for a Type 6 Sun keyboard
+partial
+xkb_symbols "type6" {
+    // A few keys are different from US layout - only those are shown here
+    key <ALGR> { [ Henkan_Mode          ]                       };
+    key <BKSL> { [ backslash, bar,  brokenbar   ]               };
+
+};
+
+
 // Taiwanese layout for a Type 4 Sun keyboard
 
 xkb_symbols "type4" {
@@ -62,15 +72,6 @@ xkb_symbols "type4" {
 xkb_symbols "type5" {
 
     // A few keys are different
-    key <ALGR> { [ Henkan_Mode		]			};
-    key <BKSL> { [ backslash, bar,  brokenbar	]		};
-
-};
-
-// Taiwanese layout for a Type 6 Sun keyboard
-partial
-xkb_symbols "type6" {
-    // A few keys are different from US layout - only those are shown here
     key <ALGR> { [ Henkan_Mode		]			};
     key <BKSL> { [ backslash, bar,  brokenbar	]		};
 

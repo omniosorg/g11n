@@ -49,116 +49,84 @@
 //
 
 
-partial alphanumeric_keys
+partial default alphanumeric_keys
 xkb_symbols "type6" {
 
-    name[Group1]="Turkey - (Q) Sun type 6";
+    name[Group1]="Polish Developers - Sun type 6";
 
-    key <TLDE>  { [  quotedbl,     eacute                ] };
-    key <AE01>	{ [         1,     exclam                ] };
-    key <AE02>	{ [         2, apostrophe                ] };
-    key <AE03>	{ [        3, asciicircum,    numbersign ] };
-    key <AE04>	{ [         4,       plus,        dollar ] };
-    key <AE06>	{ [         6,  ampersand                ] };
-    key <AE07>	{ [         7,      slash,     braceleft ] };
-    key <AE08>	{ [         8,  parenleft,   bracketleft ] };
-    key <AE09>	{ [         9, parenright,  bracketright ] };
-    key <AE10>	{ [         0,      equal,    braceright ] };
-    key <AE11>	{ [  asterisk,   question,     backslash ] };
-    key <AE12>	{ [     minus, underscore                ] };
+    key <TLDE> { [ grave, 	 asciitilde					] };
+    key <AE01> { [ 1,		 exclam						] };
+    key <AE02> { [ 2,		 at						] };
+    key <AE03> { [ 3,		 numbersign 					] };
+    key <AE04> { [ 4,		 dollar	 					] };
+    key <AE05> { [ 5,		 percent 					] };
+    key <AE06> { [ 6,		 asciicirum					] };
+    key <AE07> { [ 7,		 ampersand					] };
+    key <AE08> { [ 8,		 asterisk					] };
+    key <AE09> { [ 9,		 parenleft					] };
+    key <AE10> { [ 0,		 parenright					] };
+    key <AE11> { [ minus,	 underscore 					] };
+    key <AE12> { [ equal,	 plus	 					] };
 
-    key <AD01>  { [         q,          Q,           at ] };
-    key <AD03>	{ [         e,          E,     EuroSign ] };
-    key <AD08>	{ [  idotless,          I               ] };
-    key <AD11>	{ [    gbreve,     Gbreve               ] };
-    key <AD12>	{ [udiaeresis, Udiaeresis,   asciitilde ] };
+    key <AD03> { [ e,		 E,		eogonek,	Eogonek		] };       
+    key <AD07> { [ u,		 U,		EuroSign			] };
+    key <AD09> { [ o,		 O,		oacute,		Oacute		] };
+    key <AD11> { [ bracketleft,  braceleft					] };
+    key <AD12> { [ bracketright, braceright					] };
 
-    key <AC10>	{ [  scedilla,   Scedilla,        acute ] };
-    key <AC11>	{ [         i,  Iabovedot               ] }; 
-    key <BKSL>	{ [     comma,  semicolon,        grave ] };
+    key <AC01> { [ a,		 A,		aogonek,	Aogonek		] };
+    key <AC02> { [ s,		 S,		sacute,		Sacute		] };
+    key <AC09> { [ l,		 L,		lstroke,        Lstroke		] };
+    key <AC10> { [ semicolon,	 colon						] };
+    key <AC11> { [ apostrophe,	 quotedbl 					] };
+    key <BKSL> { [ backslash,	 bar,		brokenbar			] };
 
-    key <LSGT>	{ [      less,    greater,          bar ] };
-    key <AB08>	{ [odiaeresis, Odiaeresis               ] };
-    key <AB09>	{ [  ccedilla,   Ccedilla               ] };
-    key <AB10>	{ [    period,      colon               ] };
+    key <LSGT> { [ less,         greater,       bar,            brokenbar	] };
+    key <AB01> { [ z, 		 Z,		zabovedot,	Zabovedot	] };
+    key <AB02> { [ x,		 X,		zacute,		Zacute		] };
+    key <AB03> { [ c,		 C,		cacute,		Cacute		] };
+    key <AB06> { [ n,		 N,		nacute,		Nacute		] };
+    key <AB08> { [ comma,	 less 						] };
+    key <AB09> { [ period,	 greater				 	] };
+    key <AB10> { [ slash,	 question					] };
 
 	include "level3(ralt_switch)"
 
 };
 
 partial alphanumeric_keys
-	xkb_symbols "f" {
-	include "tr(f)"
+	xkb_symbols "qwertz" {
+	include "pl(qwertz)"
 };
 
+partial alphanumeric_keys 
+	xkb_symbols "dvorak" {
+	include "pl(dvorak)"
+};
 
 partial alphanumeric_keys
-	xkb_symbols "alt" {
-	include "tr(alt)"
+	xkb_symbols "dvorak_quotes" {
+	include "pl(dvorak_quotes)"
 };
-
 
 partial alphanumeric_keys
-	xkb_symbols "Sundeadkeys" {
-	include "tr(Sundeadkeys)"
+	xkb_symbols "dvorak_altquotes" {
+	include "pl(dvorak_altquotes)"
 };
-
 
 partial alphanumeric_keys
-	xkb_symbols "sundeadkeys" {
-	include "tr(sundeadkeys)"
+	xkb_symbols "csb" {
+	include "pl(csb)"
 };
-
 
 partial alphanumeric_keys
-	xkb_symbols "ku" {
-	include "tr(ku)"
+	xkb_symbols "ru_phonetic_dvorak" {
+	include "pl(ru_phonetic_dvorak)"
 };
 
-
-partial alphanumeric_keys
-	xkb_symbols "ku_f" {
-	include "tr(ku_f)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "ku_alt" {
-	include "tr(ku_alt)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "intl" {
-	include "tr(intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "olpc" {
-	include "tr(olpc)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "crh" {
-	include "tr(crh)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "crh_f" {
-	include "tr(crh_f)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "crh_alt" {
-	include "tr(crh_alt)"
-};
 
 partial default alphanumeric_keys
-        xkb_symbols "basic" {
-        include "sun_vndr/tr(type6)"
+	xkb_symbols "basic" {
+	include "sun_vndr/pl(type6)"
 };
 

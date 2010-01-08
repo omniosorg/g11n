@@ -1,4 +1,5 @@
 //
+//
 // Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -48,6 +49,42 @@
 // CDDL HEADER END
 //
 
+partial default alphanumeric_keys
+xkb_symbols "type6" {
+
+    name[Group1]="Germany - Sun type 6";
+
+    key <TLDE> { [     asciicircum,           degree                   ] };
+    key <AE02> { [               2,         quotedbl,     twosuperior  ] }; 
+    key <AE03> { [               3,          section,   threesuperior  ] };
+    key <AE04> { [               4,           dollar                   ] };
+    key <AE06> { [               6,        ampersand,         section  ] };
+    key <AE07> { [               7,            slash,       braceleft  ] };
+    key <AE08> { [               8,        parenleft,     bracketleft  ] };
+    key <AE09> { [               9,       parenright,    bracketright  ] };
+    key <AE10> { [               0,            equal,      braceright  ] };
+    key <AE11> { [          ssharp,         question,       backslash  ] };
+    key <AE12> { [      dead_acute,       dead_grave                   ] };
+    key <AD01> { [               q,                Q,              at  ] };
+    key <AD03> { [               e,                E,        EuroSign  ] };
+    key <AD06> { [               z,                Z                   ] };
+    key <AD11> { [      udiaeresis,       Udiaeresis                   ] };
+    key <AD12> { [            plus,         asterisk,      asciitilde  ] };
+    key <AC10> { [      odiaeresis,       Odiaeresis                   ] };
+    key <AC11> { [      adiaeresis,       Adiaeresis                   ] };
+    key <AB01> { [               y,                Y                   ] };
+    key <AB07> { [               m,                M,              mu  ] };
+    key <AB08> { [           comma,        semicolon                   ] };
+    key <AB09> { [          period,            colon                   ] };
+    key <AB10> { [           minus,       underscore                   ] };
+    key <BKSL> { [      numbersign,       apostrophe,           grave  ] };
+    key <LSGT> { [            less,          greater,             bar  ] };
+
+        include "level3(ralt_switch)"
+        include "kpdl(comma)"
+
+};
+
 partial alphanumeric_keys
 xkb_symbols "type4" {
 
@@ -91,39 +128,98 @@ xkb_symbols "type4" {
     key <AB09>	{ [         period,         colon                                             ] };
     key <AB10>	{ [          minus,    underscore                                             ] };
 
+	include "level3(ralt_switch)"
+	include "kpdl(comma)"
 
 };
 
+
 partial alphanumeric_keys
-xkb_symbols "type6" {
+	xkb_symbols "nodeadkeys" {
+	include "de(nodeadkeys)"
+};
 
-    name[Group1]="Germany - Sun type 6";
 
-    key <TLDE> { [     asciicircum,           degree                   ] };
-    key <AE02> { [               2,         quotedbl,     twosuperior  ] }; 
-    key <AE03> { [               3,          section,   threesuperior  ] };
-    key <AE04> { [               4,           dollar                   ] };
-    key <AE06> { [               6,        ampersand,         section  ] };
-    key <AE07> { [               7,            slash,       braceleft  ] };
-    key <AE08> { [               8,        parenleft,     bracketleft  ] };
-    key <AE09> { [               9,       parenright,    bracketright  ] };
-    key <AE10> { [               0,            equal,      braceright  ] };
-    key <AE11> { [          ssharp,         question,       backslash  ] };
-    key <AE12> { [      dead_acute,       dead_grave                   ] };
-    key <AD01> { [               q,                Q,              at  ] };
-    key <AD03> { [               e,                E,        EuroSign  ] };
-    key <AD06> { [               z,                Z                   ] };
-    key <AD11> { [      udiaeresis,       Udiaeresis                   ] };
-    key <AD12> { [            plus,         asterisk,      asciitilde  ] };
-    key <AC10> { [      odiaeresis,       Odiaeresis                   ] };
-    key <AC11> { [      adiaeresis,       Adiaeresis                   ] };
-    key <AB01> { [               y,                Y                   ] };
-    key <AB07> { [               m,                M,              mu  ] };
-    key <AB08> { [           comma,        semicolon                   ] };
-    key <AB09> { [          period,            colon                   ] };
-    key <AB10> { [           minus,       underscore                   ] };
-    key <BKSL> { [      numbersign,       apostrophe,           grave  ] };
-    key <LSGT> { [            less,          greater,             bar  ] };
+partial alphanumeric_keys
+	xkb_symbols "deadgraveacute" {
+	include "de(deadgraveacute)"
+};
 
+
+partial alphanumeric_keys
+	xkb_symbols "deadacute" {
+	include "de(deadacute)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "ro" {
+	include "de(ro)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "ro_nodeadkeys" {
+	include "de(ro_nodeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "dvorak" {
+	include "de(dvorak)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "Sundeadkeys" {
+	include "de(Sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "sundeadkeys" {
+	include "de(sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "neo" {
+	include "de(neo)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac" {
+	include "de(mac)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac_nodeadkeys" {
+	include "de(mac_nodeadkeys)"
+};
+
+
+//partial alphanumeric_keys
+//	xkb_symbols "dsb"
+//	include "de(dsb)"
+//};
+
+
+//partial alphanumeric_keys
+//	xkb_symbols "dsb_qwertz"
+//	include "de(dsb_qwertz)"
+//};
+
+
+partial alphanumeric_keys
+	xkb_symbols "qwerty" {
+	include "de(qwerty)"
+};
+
+
+partial default alphanumeric_keys
+	xkb_symbols "basic" {
+	include "sun_vndr/de(type6)"
 };
 
