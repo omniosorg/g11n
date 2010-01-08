@@ -240,7 +240,7 @@ amd64_AS_XARCH=         -xarch=sse2 -m64 -P -Ui386 -U__i386
 sparc_STAND_FLAGS=	-_gcc=-ffreestanding
 sparcv9_STAND_FLAGS=	-_gcc=-ffreestanding
 i386_STAND_FLAGS=	-_gcc=-ffreestanding
-amd64_STAND_FLAGS=	-Wu,-xmodel=kernel
+amd64_STAND_FLAGS=	-xmodel=kernel
 
 SAVEARGS=		-Wu,-save_args
 amd64_STAND_FLAGS	+= $(SAVEARGS)
