@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -19,79 +19,72 @@
 # CDDL HEADER END
 #
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
-#
-#ident "@(#)Makefile	1.1 98/10/22"
 #
 
 include $(SRC)/Makefile.master
 
-CFLAGS =  -Xa -KPIC -G -xO3 -dy -I. $(XREGSFLAG) -D_REENTRANT
 
-CFLAGS_sparcv9 = $(CFLAGS) -m64 -dalign -xprefetch
+# let the .so compilation be driven by present recoding tables
+TABLES:sh =	cd tbls/ && ls *tbl
 
-CFLAGS_amd64 = $(CFLAGS) -m64 -Ui386 -U__i386 -dalign -xprefetch -W0,-y-xmodel=kernel
+ALL_SOS	= 	$(TABLES:%.tbl=%.so)
 
-ICONV_DIR = $(FILEROOT)/usr/lib/iconv
+BINARYTABLES = 8859-16%8859-2.bt 8859-16%ibm850.bt 8859-16%ibm870.bt 8859-2%8859-16.bt \
+	ibm850%8859-16.bt ibm870%8859-16.bt
 
-MODULES = 646%8859.c 646da%8859.c 646de%8859.c 646en%8859.c 646es%8859.c 646fr%8859.c 646it%8859.c 646sv%8859.c \
-8859%646.c 8859%646da.c 8859%646de.c 8859%646en.c 8859%646es.c 8859%646fr.c 8859%646it.c 8859%646sv.c 8859-1%IBM-037.c \
-8859-1%IBM-500.c 8859-1%IBM-850.c IBM-037%8859-1.c IBM-500%8859-1.c IBM-850%8859-1.c alt%iso.c alt%iso5.c alt%koi.c \
-alt%koi8.c alt%mac.c alt%win.c alt%win5.c dhn%dos2.c dhn%ib2.c dhn%is2.c dhn%iso2.c dhn%maz.c dhn%wi2.c dhn%win2.c \
-dos2%dhn.c dos2%iso2.c dos2%maz.c dos2%win2.c ib2%dhn.c ib2%is2.c ib2%maz.c ib2%wi2.c is2%dhn.c is2%ib2.c is2%maz.c \
-is2%wi2.c iso%alt.c iso%koi.c iso%mac.c iso%win.c iso2%dhn.c iso2%dos2.c iso2%maz.c iso2%win2.c iso5%alt.c iso5%koi8.c \
-iso5%mac.c iso5%win5.c koi%alt.c koi%iso.c koi%mac.c koi%win.c koi8%alt.c koi8%iso5.c koi8%mac.c koi8%win5.c mac%alt.c \
-mac%iso.c mac%iso5.c mac%koi.c mac%koi8.c mac%win.c mac%win5.c maz%dhn.c maz%dos2.c maz%ib2.c maz%is2.c maz%iso2.c \
-maz%wi2.c maz%win2.c orig%646de%8859.c table.8859-1.IBM-500.c table.IBM-500.8859-1.c table.alt.iso.c table.alt.koi.c \
-table.alt.mac.c table.alt.win.c table.dhn.ib2.c table.dhn.is2.c table.dhn.maz.c table.dhn.wi2.c table.ib2.dhn.c table.ib2.is2.c \
-table.ib2.maz.c table.ib2.wi2.c table.is2.dhn.c table.is2.ib2.c table.is2.maz.c table.is2.wi2.c table.iso.alt.c table.iso.koi.c \
-table.iso.mac.c table.iso.win.c table.koi.alt.c table.koi.iso.c table.koi.mac.c table.koi.win.c table.mac.alt.c table.mac.iso.c \
-table.mac.koi.c table.mac.win.c table.maz.dhn.c table.maz.ib2.c table.maz.is2.c table.maz.wi2.c table.wi2.dhn.c table.wi2.ib2.c \
-table.wi2.is2.c table.wi2.maz.c table.win.alt.c table.win.iso.c table.win.koi.c table.win.mac.c wi2%dhn.c wi2%ib2.c wi2%is2.c \
-wi2%maz.c win%alt.c win%iso.c win%koi.c win%mac.c win2%dhn.c win2%dos2.c win2%iso2.c win2%maz.c win5%alt.c win5%iso5.c win5%koi8.c \
-win5%mac.c
 
-BINTABLES = 8859-16%8859-2.bt 8859-16%ibm850.bt 8859-16%ibm870.bt 8859-2%8859-16.bt ibm850%8859-16.bt ibm870%8859-16.bt
+CFLAGS		+= $(XREGSFLAG) -KPIC -G -dy -D_REENTRANT
+CFLAGS64	+= $(XREGSFLAG64) -KPIC -G -dy -D_REENTRANT
 
-LIB = $(MODULES:%.c=%.so)
-LIB64 = $(MODULES:%.c=$(MACH64)/%.so)
+LDFLAGS		= -G -z defs
+LDLIBS		= -lc
 
-install		:=	TARGET = install
-all		:=	TARGET = all
-lint		:=	TARGET = lint
-clean		:=	TARGET = clean
-clobber		:=	TARGET = clobber
+ROOT_DIR		= $(FILEROOT)/usr/lib/iconv
+ROOT_DIR64		= $(ROOT_DIR)/$(MACH64)
+BTS_DIR			= $(ROOT_DIR)/geniconvtbl/binarytables 
 
-all:$(MACH64) $(LIB)
+.NO_PARALLEL:
 
-install: $(BINTABLES) $(ICONV_DIR) all 
-	for i in $(LIB); do \
-		$(INS) $(FILEROOT)/usr/lib/iconv $$i ; \
-		$(INS) $(FILEROOT)/usr/lib/iconv/$(MACH64) $(MACH64)/$$i ; \
+.PARALLEL: $(ALL_SOS) $(BINARYTABLES)
+
+
+all: $(ALL_SOS)
+
+install: all $(ROOT_DIR) $(ROOT_DIR64) $(BINARYTABLES)
+	for f in $(ALL_SOS) ; do \
+		TMP=`echo $$f | $(TR) "_" "%"` ; \
+		echo installing $$TMP to $(ROOT_DIR) ; \
+		$(RM) $(ROOT_DIR)/$$TMP ; \
+		$(CP) $$f $(ROOT_DIR)/$$TMP ; \
+		echo installing $$TMP to $(ROOT_DIR) ; \
+		$(CP) $(MACH64)/$$f $(ROOT_DIR)/$(MACH64)/$$TMP ; \
 	done
+	-@echo "done."
 
-$(MACH64):
-	$(INSDIR) $(MACH64)
 
-$(ICONV_DIR): 
-	$(INSDIR) $(FILEROOT)/usr/lib/iconv
-	$(INSDIR) $(FILEROOT)/usr/lib/iconv/$(MACH64)
+$(ROOT_DIR) $(ROOT_DIR64) $(BTS_DIR) $(MACH64): FRC
+	/usr/bin/test -d $@ || $(INSDIR) $@
 
-%.so: %.c
-	$(CC) $(CFLAGS) -o $@ $<
-	$(CC) $(CFLAGS_$(MACH64)) -o $(MACH64)/$@ $<
+$(ALL_SOS): $(MACH64) euro.h euro.c tbl.h
+	TABLE=`echo $@ | $(TR) -d "-" "" | /usr/bin/cut -d. -f1` ; \
+	$(CC) $(CFLAGS) -DT_$$TABLE euro.c -c -o $@.o ; \
+	$(CC) $(CFLAGS64) -DT_$$TABLE euro.c -c -o $(MACH64)/$@.o
+	$(LD) $(LDFLAGS) -o $@ $@.o $(LDLIBS)
+	$(LD) $(LDFLAGS) -o $(MACH64)/$@ $(MACH64)/$@.o $(LDLIBS)
 
-$(BINTABLES): FRC
-	$(INSDIR) $(FILEROOT)/usr/lib/iconv/geniconvtbl/binarytables
-	$(INS) $(FILEROOT)/usr/lib/iconv/geniconvtbl/binarytables $@
+tbl.h: genincl
+	./genincl > $@
+
+$(BINARYTABLES): $(BTS_DIR)
+	$(INS) $(BTS_DIR) binarytables/$@
 
 clean: 
-	$(RM) -r $(LIB) 
-	$(RM) -r $(MACH64)/*.so
-	$(RM) -r $(FILEROOT)/usr/lib/iconv/$(LIB) 
-	$(RM) -r $(FILEROOT)/usr/lib/iconv/$(LIB64)
-	$(RM) $(FILEROOT)/usr/lib/iconv/geniconvtbl/binarytables/*.bt
+	$(RM) *.o *.so *.s core tbl.h
+	$(RM) -r $(MACH64)
+
+clobber: clean
 
 FRC:
 

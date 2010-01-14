@@ -19,10 +19,8 @@
 # CDDL HEADER END
 #
 #
-# Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
-#
-#ident	"@(#)Makefile	1.25	07/12/10 SMI"
 #
 
 include $(SRC)/Makefile.master
@@ -53,16 +51,18 @@ all: $(MACH64) $(ALL_SOS) $(BINARYTABLES)
 
 install: all $(ROOT_DIR) $(BTS_DIR) $(ALLOTHERFILES)
 	for f in  $(BINARYTABLES) ; do \
-		echo installing `echo $$f | $(TR) "+" "%"` to $(BTS_DIR) ; \
-		$(RM) $(BTS_DIR)/`echo $$f | $(TR) "+" "%"` ; \
-		$(CP) $$f $(BTS_DIR)/`echo $$f | $(TR) "+" "%"` ; \
+		TMP=`echo $$f | $(TR) "+" "%"` ; \
+		echo installing $$TMP to $(BTS_DIR) ; \
+		$(RM) $(BTS_DIR)/$$TMP ; \
+		$(CP) $$f $(BTS_DIR)/$$TMP ; \
 	done
 	for f in $(ALL_SOS) ; do \
-		echo installing `echo $$f | $(TR) "+" "%"` to $(ROOT_DIR) ; \
-		$(RM) $(ROOT_DIR)/`echo $$f | $(TR) "+" "%"` ; \
-		$(CP) $$f $(ROOT_DIR)/`echo $$f | $(TR) "+" "%"` ; \
-		echo installing $(MACH64)/`echo $$f | $(TR) "+" "%"` to $(ROOT_DIR)/$(MACH64) ; \
-		$(CP) $(MACH64)/$$f $(ROOT_DIR)/$(MACH64)/`echo $$f | $(TR) "+" "%"` ; \
+		TMP=`echo $$f | $(TR) "+" "%"` ; \
+		echo installing $$TMP to $(ROOT_DIR) ; \
+		$(RM) $(ROOT_DIR)/$$TMP ; \
+		$(CP) $$f $(ROOT_DIR)/$$TMP ; \
+		echo installing $(MACH64)/$$TMP to $(ROOT_DIR)/$(MACH64) ; \
+		$(CP) $(MACH64)/$$f $(ROOT_DIR)/$(MACH64)/$$TMP ; \
 	done
 	for f in $(ALLOTHERFILES) ; do \
 		echo installing $$f to $(ROOT_DIR) ; \
