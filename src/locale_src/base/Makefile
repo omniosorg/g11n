@@ -26,7 +26,7 @@
 
 include $(SRC)/Makefile.master
 
-LOCALES_UTF8 = ja_JP.UTF-8 zh.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.UTF-8 zh_TW.UTF-8 en_US.UTF-8 zh.UTF-8@pinyin zh.UTF-8@radical zh.UTF-8@stroke zh_HK.UTF-8@pinyin zh_HK.UTF-8@stroke zh_HK.UTF-8@radical zh_HK.UTF-8@zhuyin zh_TW.UTF-8@pinyin zh_TW.UTF-8@stroke zh_TW.UTF-8@radical zh_TW.UTF-8@zhuyin
+LOCALES_UTF8 = ja_JP.UTF-8 zh.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.UTF-8 zh_TW.UTF-8 zh.UTF-8@pinyin zh.UTF-8@radical zh.UTF-8@stroke zh_HK.UTF-8@pinyin zh_HK.UTF-8@stroke zh_HK.UTF-8@radical zh_HK.UTF-8@zhuyin zh_TW.UTF-8@pinyin zh_TW.UTF-8@stroke zh_TW.UTF-8@radical zh_TW.UTF-8@zhuyin
 
 # not migrated yet because different reasons
 LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk sh_BA.ISO8859-2@bosnia 
@@ -54,8 +54,8 @@ LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk sh_BA.ISO8859-2@bos
 #hr_HR.ISO8859-2 hu_HU.ISO8859-2 is_IS.ISO8859-1 it_IT.ISO8859-1 it_IT.ISO8859-15 lt_LT.ISO8859-13 lv_LV.ISO8859-13 mk_MK.ISO8859-5 \
 # no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk pl_PL.ISO8859-2 \
 # pt_PT.ISO8859-1 pt_PT.ISO8859-15 ro_RO.ISO8859-2 ru_RU.ISO8859-5 sh_BA.ISO8859-2@bosnia sk_SK.ISO8859-2 sl_SI.ISO8859-2 \
-#sq_AL.ISO8859-2 sr_YU.ISO8859-5 sv_SE.ISO8859-1 sv_SE.ISO8859-15 tr_TR.ISO8859-9 he ru_RU.ANSI1251 ar
-
+#sq_AL.ISO8859-2 sr_YU.ISO8859-5 sv_SE.ISO8859-1 sv_SE.ISO8859-15 tr_TR.ISO8859-9 he ru_RU.ANSI1251 ar \
+#en_US.UTF-8 
 
 LOCALES_OTHER = ja ja_JP.PCK ja_JP.eucJP ko ko@dict th_TH zh zh_CN.GB18030 zh.GBK zh_HK.BIG5HK zh_TW zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical zh_CN.GB18030@stroke zh.GBK@pinyin zh.GBK@radical zh.GBK@stroke zh_HK.BIG5HK@pinyin zh_HK.BIG5HK@radical zh_HK.BIG5HK@stroke zh_HK.BIG5HK@zhuyin zh@pinyin zh@radical zh@stroke zh_TW.BIG5@pinyin zh_TW.BIG5@radical zh_TW.BIG5@stroke zh_TW.BIG5@zhuyin zh_TW@pinyin zh_TW@radical zh_TW@stroke zh_TW@zhuyin
 
@@ -273,10 +273,6 @@ install: all install_src
 		$(INS) $(FILEROOT)/usr/lib/locale/$$i $$i.so.$(METHOD_VERSION) ; \
 		$(INS) $(FILEROOT)/usr/lib/locale/$$i/$(MACH64) $(MACH64)/$$i.so.$(METHOD_VERSION); \
 	done
-	$(INSDIR) $(FILEROOT)/usr/lib/localedef/src/en_US.UTF-8/
-	$(CP) en_US.UTF-8.localedef.build localedef.src
-	compress -f localedef.src
-	$(INS) $(FILEROOT)/usr/lib/localedef/src/en_US.UTF-8/ localedef.src.Z
 
 install_src: $(LOCALE_src)
 	$(INSDIR) $(FILEROOT)/usr/lib/localedef/src/locales
