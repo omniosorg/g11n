@@ -35,7 +35,7 @@ $(SOURCE_ARCHIVES)/.archives:
 
 $(SOURCE_ARCHIVE): $(SOURCE_ARCHIVES)/.archives
 	( if [ -f "$(DOWNLOADS)/$(TARBALL)" ]; then \
-		$(RSYNC) -raz $(DOWNLOADS)/$(TARBALL) $(SOURCE_ARCHIVES)/ ; \
+		$(CP) $(DOWNLOADS)/$(TARBALL) $(SOURCE_ARCHIVES)/ ; \
 	  else \
 		cd $(SOURCE_ARCHIVES) && $(WGET) -nc $(SOURCE_URL) $(WGET_OPT); \
 	  fi \
