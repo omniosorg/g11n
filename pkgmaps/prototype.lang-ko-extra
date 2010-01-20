@@ -97,19 +97,19 @@ d none usr/kernel 0755 root sys
 d none usr/kernel/strmod 0755 root sys
 
 ### mp l10n files
-d none usr/lib/lp 0755 root lp
-d none usr/lib/lp/locale 0755 root lp
-d none usr/lib/lp/locale/ko 0755 root lp
-f none usr/lib/lp/locale/ko/mp/mp.conf 0555 root lp
-f none usr/lib/lp/locale/ko/mp/mp.conf.B 0555 root lp
-f none usr/lib/lp/locale/ko/mp/mp.conf.T 0555 root lp
-f none usr/lib/lp/locale/ko/mp/mp.conf.U 0555 root lp
-s none usr/lib/lp/locale/ko_KR.EUC=./ko
-
-d none usr/lib/lp/locale/ko.UTF-8 0755 root lp
-d none usr/lib/lp/locale/ko.UTF-8/mp 0755 root lp
-f none usr/lib/lp/locale/ko.UTF-8/mp/mp.conf 0555 root lp
-f none usr/lib/lp/locale/ko.UTF-8/mp/mp.conf.B 0555 root lp
-f none usr/lib/lp/locale/ko.UTF-8/mp/mp.conf.T 0555 root lp
-f none usr/lib/lp/locale/ko.UTF-8/mp/mp.conf.U 0555 root lp
-s none usr/lib/lp/locale/ko_KR.UTF-8=./ko.UTF-8
+#d none usr/lib/lp 0755 root lp
+#d none usr/lib/lp/locale 0755 root lp
+#d none usr/lib/lp/locale/ko 0755 root lp
+#f none usr/lib/lp/locale/ko/mp/mp.conf 0555 root lp
+#f none usr/lib/lp/locale/ko/mp/mp.conf.B 0555 root lp
+#f none usr/lib/lp/locale/ko/mp/mp.conf.T 0555 root lp
+#f none usr/lib/lp/locale/ko/mp/mp.conf.U 0555 root lp
+#s none usr/lib/lp/locale/ko_KR.EUC=./ko
+#
+#d none usr/lib/lp/locale/ko.UTF-8 0755 root lp
+#d none usr/lib/lp/locale/ko.UTF-8/mp 0755 root lp
+#f none usr/lib/lp/locale/ko.UTF-8/mp/mp.conf 0555 root lp
+#f none usr/lib/lp/locale/ko.UTF-8/mp/mp.conf.B 0555 root lp
+#f none usr/lib/lp/locale/ko.UTF-8/mp/mp.conf.T 0555 root lp
+#f none usr/lib/lp/locale/ko.UTF-8/mp/mp.conf.U 0555 root lp
+#s none usr/lib/lp/locale/ko_KR.UTF-8=./ko.UTF-8

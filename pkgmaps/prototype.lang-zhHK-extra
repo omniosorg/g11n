@@ -94,12 +94,12 @@ d none usr/openwin/lib/locale/zh_HK.BIG5HK/xim/data 0755 root bin
 f none usr/openwin/lib/locale/zh_HK.BIG5HK/xim/data/cangjie.dat 0644 root daemon
 
 ### mp l10n files
-d none usr/lib/lp 0755 root lp
-d none usr/lib/lp/locale 0755 root lp
-d none usr/lib/lp/locale/zh_HK.BIG5HK 0755 root lp
-d none usr/lib/lp/locale/zh_HK.BIG5HK/mp 0755 root lp
-f none usr/lib/lp/locale/zh_HK.BIG5HK/mp/mp.conf 0555 root lp
-
-d none usr/lib/lp/locale/zh_HK.UTF-8 0755 root lp
-d none usr/lib/lp/locale/zh_HK.UTF-8/mp 0755 root lp
-f none usr/lib/lp/locale/zh_HK.UTF-8/mp/mp.conf 0555 root lp
+#d none usr/lib/lp 0755 root lp
+#d none usr/lib/lp/locale 0755 root lp
+#d none usr/lib/lp/locale/zh_HK.BIG5HK 0755 root lp
+#d none usr/lib/lp/locale/zh_HK.BIG5HK/mp 0755 root lp
+#f none usr/lib/lp/locale/zh_HK.BIG5HK/mp/mp.conf 0555 root lp
+#
+#d none usr/lib/lp/locale/zh_HK.UTF-8 0755 root lp
+#d none usr/lib/lp/locale/zh_HK.UTF-8/mp 0755 root lp
+#f none usr/lib/lp/locale/zh_HK.UTF-8/mp/mp.conf 0555 root lp
