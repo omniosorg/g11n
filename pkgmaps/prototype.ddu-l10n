@@ -18,7 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 # ddu
@@ -63,98 +63,10 @@ f none ddu/help/gnome/help/ddu/nl/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/pl/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/pt_BR/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/ru/ddu.xml 0644 root bin
+f none ddu/help/gnome/help/ddu/sv/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/zh_CN/ddu.xml 0644 root bin
 s none ddu/help/gnome/help/ddu/zh_HK/ddu.xml=../zh_TW/ddu.xml
 f none ddu/help/gnome/help/ddu/zh_TW/ddu.xml 0644 root bin
-#
-# ddu/help figures - symlinks to English for now
-#
-d none ddu/help/gnome/help/ddu/ar/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/ar/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/ar/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/ar/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/ar/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/ca/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/ca/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/ca/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/ca/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/ca/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/cs/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/cs/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/cs/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/cs/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/cs/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/de/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/de/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/de/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/de/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/de/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/es/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/es/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/es/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/es/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/es/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/fr/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/fr/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/fr/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/fr/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/fr/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/hu/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/hu/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/hu/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/hu/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/hu/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/id/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/id/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/id/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/id/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/id/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/it/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/it/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/it/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/it/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/it/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/ja/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/ja/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/ja/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/ja/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/ja/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/ko/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/ko/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/ko/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/ko/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/ko/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/nl/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/nl/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/nl/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/nl/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/nl/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/pl/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/pl/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/pl/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/pl/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/pl/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/pt_BR/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/pt_BR/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/pt_BR/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/pt_BR/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/pt_BR/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/ru/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/ru/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/ru/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/ru/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/ru/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-d none ddu/help/gnome/help/ddu/zh_CN/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/zh_CN/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/zh_CN/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/zh_CN/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/zh_CN/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
-s none ddu/help/gnome/help/ddu/zh_HK/figures=../zh_TW/figures
-d none ddu/help/gnome/help/ddu/zh_TW/figures 0755 root bin
-s none ddu/help/gnome/help/ddu/zh_TW/figures/main.jpg=../../C/figures/main.jpg
-s none ddu/help/gnome/help/ddu/zh_TW/figures/submit.jpg=../../C/figures/submit.jpg
-s none ddu/help/gnome/help/ddu/zh_TW/figures/detail.jpg=../../C/figures/detail.jpg
-s none ddu/help/gnome/help/ddu/zh_TW/figures/Install_driver.jpg=../../C/figures/Install_driver.jpg
 #
 # ddu/i18n
 #
@@ -204,6 +116,9 @@ f none ddu/i18n/pt_BR/LC_MESSAGES/ddu.mo 0644 root bin
 d none ddu/i18n/ru 0755 root bin
 d none ddu/i18n/ru/LC_MESSAGES 0755 root bin
 f none ddu/i18n/ru/LC_MESSAGES/ddu.mo 0644 root bin
+d none ddu/i18n/sv 0755 root bin
+d none ddu/i18n/sv/LC_MESSAGES 0755 root bin
+f none ddu/i18n/sv/LC_MESSAGES/ddu.mo 0644 root bin
 d none ddu/i18n/zh_CN 0755 root bin
 d none ddu/i18n/zh_CN/LC_MESSAGES 0755 root bin
 f none ddu/i18n/zh_CN/LC_MESSAGES/ddu.mo 0644 root bin
@@ -216,9 +131,24 @@ f none ddu/i18n/zh_TW/LC_MESSAGES/ddu.mo 0644 root bin
 #
 # locale symlinks in ddu/i18n (align with GNOME symlinks in /usr/share/locale)
 #
+s none ddu/i18n/ar_AE.UTF-8=ar
+s none ddu/i18n/ar_BH.UTF-8=ar
+s none ddu/i18n/ar_DZ.UTF-8=ar
+s none ddu/i18n/ar_EG.ISO8859-6=ar
 s none ddu/i18n/ar_EG.UTF-8=ar
+s none ddu/i18n/ar_IQ.UTF-8=ar
+s none ddu/i18n/ar_JO.UTF-8=ar
+s none ddu/i18n/ar_KW.UTF-8=ar
+s none ddu/i18n/ar_LY.UTF-8=ar
+s none ddu/i18n/ar_MA.UTF-8=ar
+s none ddu/i18n/ar_OM.UTF-8=ar
+s none ddu/i18n/ar_QA.UTF-8=ar
 s none ddu/i18n/ar_SA.UTF-8=ar
+s none ddu/i18n/ar_TN.UTF-8=ar
+s none ddu/i18n/ar_YE.UTF-8=ar
 s none ddu/i18n/ca_ES=ca
+s none ddu/i18n/ca_ES.ISO8859-1=ca
+s none ddu/i18n/ca_ES.ISO8859-15=ca
 s none ddu/i18n/ca_ES.UTF-8=ca
 s none ddu/i18n/cs_CZ=cs
 s none ddu/i18n/cs_CZ.ISO8859-2=cs
@@ -230,6 +160,7 @@ s none ddu/i18n/de_AT=de
 s none ddu/i18n/de_AT.ISO8859-1=de
 s none ddu/i18n/de_AT.ISO8859-15=de
 s none ddu/i18n/de_AT.UTF-8=de
+s none ddu/i18n/de_BE.UTF-8=de
 s none ddu/i18n/de_CH=de
 s none ddu/i18n/de_CH.ISO8859-1=de
 s none ddu/i18n/de_CH.UTF-8=de
@@ -237,6 +168,7 @@ s none ddu/i18n/de_DE=de
 s none ddu/i18n/de_DE.ISO8859-1=de
 s none ddu/i18n/de_DE.ISO8859-15=de
 s none ddu/i18n/de_DE.UTF-8=de
+s none ddu/i18n/de_LI.UTF-8=de
 s none ddu/i18n/de_LU.UTF-8=de
 s none ddu/i18n/es.ISO8859-15=es
 s none ddu/i18n/es.UTF-8=es
@@ -250,6 +182,7 @@ s none ddu/i18n/es_CO.ISO8859-1=es
 s none ddu/i18n/es_CO.UTF-8=es
 s none ddu/i18n/es_CR.ISO8859-1=es
 s none ddu/i18n/es_CR.UTF-8=es
+s none ddu/i18n/es_DO.UTF-8=es
 s none ddu/i18n/es_EC.ISO8859-1=es
 s none ddu/i18n/es_EC.UTF-8=es
 s none ddu/i18n/es_ES.ISO8859-1=es
@@ -257,6 +190,7 @@ s none ddu/i18n/es_ES.ISO8859-15=es
 s none ddu/i18n/es_ES.UTF-8=es
 s none ddu/i18n/es_GT.ISO8859-1=es
 s none ddu/i18n/es_GT.UTF-8=es
+s none ddu/i18n/es_HN.UTF-8=es
 s none ddu/i18n/es_MX.ISO8859-1=es
 s none ddu/i18n/es_MX.UTF-8=es
 s none ddu/i18n/es_NI.ISO8859-1=es
@@ -265,6 +199,7 @@ s none ddu/i18n/es_PA.ISO8859-1=es
 s none ddu/i18n/es_PA.UTF-8=es
 s none ddu/i18n/es_PE.ISO8859-1=es
 s none ddu/i18n/es_PE.UTF-8=es
+s none ddu/i18n/es_PR.UTF-8=es
 s none ddu/i18n/es_PY.ISO8859-1=es
 s none ddu/i18n/es_PY.UTF-8=es
 s none ddu/i18n/es_SV.ISO8859-1=es
@@ -296,6 +231,7 @@ s none ddu/i18n/hu_HU.UTF-8=hu
 s none ddu/i18n/id_ID.UTF-8=id
 s none ddu/i18n/it.ISO8859-15=it
 s none ddu/i18n/it.UTF-8=it
+s none ddu/i18n/it_CH.UTF-8=it
 s none ddu/i18n/it_IT=it
 s none ddu/i18n/it_IT.ISO8859-1=it
 s none ddu/i18n/it_IT.ISO8859-15=it
@@ -330,6 +266,12 @@ s none ddu/i18n/ru_RU.ANSI1251=ru
 s none ddu/i18n/ru_RU.ISO8859-5=ru
 s none ddu/i18n/ru_RU.KOI8-R=ru
 s none ddu/i18n/ru_RU.UTF-8=ru
+s none ddu/i18n/ru_UA.UTF-8=ru
+s none ddu/i18n/sv.UTF-8=sv
+s none ddu/i18n/sv_SE=sv
+s none ddu/i18n/sv_SE.ISO8859-1=sv
+s none ddu/i18n/sv_SE.ISO8859-15=sv
+s none ddu/i18n/sv_SE.UTF-8=sv
 s none ddu/i18n/zh=zh_CN
 s none ddu/i18n/zh.GBK=zh_CN
 s none ddu/i18n/zh.UTF-8=zh_CN
@@ -339,6 +281,7 @@ s none ddu/i18n/zh_CN.GBK=zh_CN
 s none ddu/i18n/zh_CN.UTF-8=zh_CN
 s none ddu/i18n/zh_HK.BIG5HK=zh_HK
 s none ddu/i18n/zh_HK.UTF-8=zh_HK
+s none ddu/i18n/zh_SG.UTF-8=zh_CN
 s none ddu/i18n/zh_TW.BIG5=zh_TW
 s none ddu/i18n/zh_TW.EUC=zh_TW
 s none ddu/i18n/zh_TW.UTF-8=zh_TW
