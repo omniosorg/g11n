@@ -34,6 +34,7 @@ d none ddu/help/gnome/help/ddu/ar 0755 root bin
 d none ddu/help/gnome/help/ddu/ca 0755 root bin
 d none ddu/help/gnome/help/ddu/cs 0755 root bin
 d none ddu/help/gnome/help/ddu/de 0755 root bin
+d none ddu/help/gnome/help/ddu/el 0755 root bin
 d none ddu/help/gnome/help/ddu/es 0755 root bin
 d none ddu/help/gnome/help/ddu/fr 0755 root bin
 d none ddu/help/gnome/help/ddu/hu 0755 root bin
@@ -45,6 +46,7 @@ d none ddu/help/gnome/help/ddu/nl 0755 root bin
 d none ddu/help/gnome/help/ddu/pl 0755 root bin
 d none ddu/help/gnome/help/ddu/pt_BR 0755 root bin
 d none ddu/help/gnome/help/ddu/ru 0755 root bin
+d none ddu/help/gnome/help/ddu/sv 0755 root bin
 d none ddu/help/gnome/help/ddu/zh_CN 0755 root bin
 d none ddu/help/gnome/help/ddu/zh_HK 0755 root bin
 d none ddu/help/gnome/help/ddu/zh_TW 0755 root bin
@@ -52,6 +54,7 @@ f none ddu/help/gnome/help/ddu/ar/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/ca/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/cs/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/de/ddu.xml 0644 root bin
+f none ddu/help/gnome/help/ddu/el/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/es/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/fr/ddu.xml 0644 root bin
 f none ddu/help/gnome/help/ddu/hu/ddu.xml 0644 root bin
@@ -83,6 +86,9 @@ f none ddu/i18n/cs/LC_MESSAGES/ddu.mo 0644 root bin
 d none ddu/i18n/de 0755 root bin
 d none ddu/i18n/de/LC_MESSAGES 0755 root bin
 f none ddu/i18n/de/LC_MESSAGES/ddu.mo 0644 root bin
+d none ddu/i18n/el 0755 root bin
+d none ddu/i18n/el/LC_MESSAGES 0755 root bin
+f none ddu/i18n/el/LC_MESSAGES/ddu.mo 0644 root bin
 d none ddu/i18n/es 0755 root bin
 d none ddu/i18n/es/LC_MESSAGES 0755 root bin
 f none ddu/i18n/es/LC_MESSAGES/ddu.mo 0644 root bin
@@ -170,6 +176,9 @@ s none ddu/i18n/de_DE.ISO8859-15=de
 s none ddu/i18n/de_DE.UTF-8=de
 s none ddu/i18n/de_LI.UTF-8=de
 s none ddu/i18n/de_LU.UTF-8=de
+s none ddu/i18n/el.UTF-8=el
+s none ddu/i18n/el_CY.UTF-8=el
+s none ddu/i18n/el_GR.UTF-8=el
 s none ddu/i18n/es.ISO8859-15=es
 s none ddu/i18n/es.UTF-8=es
 s none ddu/i18n/es_AR.ISO8859-1=es
