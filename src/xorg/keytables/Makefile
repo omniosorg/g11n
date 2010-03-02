@@ -20,7 +20,7 @@
 #
 
 #
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+# Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
 #
 
@@ -31,6 +31,7 @@ VER		= $(PROJECT)-1.6
 TARBALL		= $(VER).tar.gz
 SOURCE_URL	= http://xlibs.freedesktop.org/xkbdesc/$(TARBALL)
 
+SOURCE_PATCH	= sun-additions.patch
 
 TARGETDIR	= $(FILEROOT)/usr/share/X11/xkb
 
@@ -55,7 +56,24 @@ SUBDIRS		= compat \
 		  types
 
 
-$(VER)/.copied:		$(VER)/.unpacked
+$(VER)/.built:		$(VER)/config.status
+			( cd $(VER); \
+			  PATH=/usr/gnu/bin:$$PATH && export PATH; \
+			  make; \
+			  make all )
+			touch $@
+
+$(VER)/.patched:        $(VER)/.unpacked
+			( cd $(VER); \
+			gpatch -p0 < ../$(SOURCE_PATCH) )
+			touch $@
+
+$(VER)/config.status:	$(VER)/.patched
+			( cd $(VER); \
+			  PATH=/usr/gnu/bin:$$PATH && export PATH; \
+			  ./configure )
+
+$(VER)/.copied:		$(VER)/.built
 			for i in `cd sun-src ; find . -type f -print` ; \
 			do \
 			mkdir -p $(VER)/`dirname $$i` ; \
@@ -66,7 +84,8 @@ $(VER)/.copied:		$(VER)/.unpacked
 $(VER)/%.dir:		$(VER)/.copied
 			(cd $(@:%.dir=%); $(XKBCOMP) -lfhlpR -o ../../$@ '*')
 
-all:			$(DIRFILES)
+all:			$(VER)/.built $(DIRFILES)
+
 
 $(TARGETDIR):
 			$(INSDIR) "$@"
