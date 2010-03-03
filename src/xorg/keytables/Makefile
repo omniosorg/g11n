@@ -58,7 +58,7 @@ SUBDIRS		= compat \
 
 $(VER)/.built:		$(VER)/config.status
 			( cd $(VER); \
-			  PATH=/usr/gnu/bin:$$PATH && export PATH; \
+			  PATH=/usr/gnu/bin:/usr/X11/bin:$$PATH && export PATH; \
 			  make; \
 			  make all )
 			touch $@
@@ -70,7 +70,7 @@ $(VER)/.patched:        $(VER)/.unpacked
 
 $(VER)/config.status:	$(VER)/.patched
 			( cd $(VER); \
-			  PATH=/usr/gnu/bin:$$PATH && export PATH; \
+			  PATH=/usr/gnu/bin:/usr/X11/bin:$$PATH && export PATH; \
 			  ./configure )
 
 $(VER)/.copied:		$(VER)/.built
