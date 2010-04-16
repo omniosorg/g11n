@@ -46,13 +46,19 @@ f none usr/lib/iconv/646en%8859.so 0755 root bin
 f none usr/lib/iconv/646fr%8859.so 0755 root bin
 f none usr/lib/iconv/646sv%8859.so 0755 root bin
 
-# New additional elements
 f none usr/lib/iconv/IBM-037%8859-1.so 0755 root bin
 f none usr/lib/iconv/IBM-500%8859-1.so 0755 root bin
 f none usr/lib/iconv/IBM-850%8859-1.so 0755 root bin
 f none usr/lib/iconv/8859-1%IBM-037.so 0755 root bin
 f none usr/lib/iconv/8859-1%IBM-500.so 0755 root bin
 f none usr/lib/iconv/8859-1%IBM-850.so 0755 root bin
+
+f none usr/lib/iconv/8859-16%8859-2.so 0755 root bin
+f none usr/lib/iconv/8859-16%IBM-850.so 0755 root bin
+f none usr/lib/iconv/8859-16%IBM-870.so 0755 root bin
+f none usr/lib/iconv/8859-2%8859-16.so 0755 root bin
+f none usr/lib/iconv/IBM-850%8859-16.so 0755 root bin
+f none usr/lib/iconv/IBM-870%8859-16.so 0755 root bin
 
 f none usr/lib/iconv/iso5%koi8.so 0755 root bin
 f none usr/lib/iconv/iso5%alt.so 0755 root bin
@@ -96,91 +102,84 @@ f none usr/lib/iconv/dhn%win2.so 0755 root bin
 f none usr/lib/iconv/dhn%dos2.so 0755 root bin
 f none usr/lib/iconv/dhn%maz.so 0755 root bin
 
-# Added for 8859-16 iconv support
-d none usr/lib/iconv/geniconvtbl/binarytables 0755 root bin
-f none usr/lib/iconv/geniconvtbl/binarytables/8859-2%8859-16.bt 0444 root bin
-f none usr/lib/iconv/geniconvtbl/binarytables/ibm850%8859-16.bt 0444 root bin
-f none usr/lib/iconv/geniconvtbl/binarytables/ibm870%8859-16.bt 0444 root bin
-f none usr/lib/iconv/geniconvtbl/binarytables/8859-16%ibm850.bt 0444 root bin
-f none usr/lib/iconv/geniconvtbl/binarytables/8859-16%ibm870.bt 0444 root bin
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%iso-8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-2%iso-8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%iso-8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-2%ISO-8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%iso-8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-2%iso8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%iso-8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-2%ISO8869-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%ISO-8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-2%iso-8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%ISO-8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-2%ISO-8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%ISO-8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-2%iso8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%ISO-8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-2%ISO8869-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%iso8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-2%iso-8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%iso8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-2%ISO-8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%iso8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-2%iso8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%iso8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-2%ISO8869-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%ISO8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8859-2%iso-8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%ISO8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8859-2%ISO-8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%ISO8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8859-2%iso8859-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%ISO8859-2.bt=8859-16%8859-2.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8859-2%ISO8869-16.bt=8859-2%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%ibm-850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ibm-850%iso-8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%ibm-850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ibm-850%ISO-8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%ibm-850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ibm-850%iso8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%ibm-850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ibm-850%ISO8869-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%IBM-850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM-850%iso-8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%IBM-850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM-850%ISO-8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%IBM-850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM-850%iso8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%IBM-850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM-850%ISO8869-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%IBM850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM850%iso-8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%IBM850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM850%ISO-8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%IBM850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM850%iso8859-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%IBM850.bt=8859-16%ibm850.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM850%ISO8869-16.bt=ibm850%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%ibm-870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ibm-870%iso-8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%ibm-870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ibm-870%ISO-8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%ibm-870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ibm-870%iso8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%ibm-870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ibm-870%ISO8869-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%IBM-870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM-870%iso-8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%IBM-870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM-870%ISO-8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%IBM-870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM-870%iso8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%IBM-870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM-870%ISO8869-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso-8859-16%IBM870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM870%iso-8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO-8859-16%IBM870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM870%ISO-8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/iso8859-16%IBM870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM870%iso8859-16.bt=ibm870%8859-16.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/ISO8869-16%IBM870.bt=8859-16%ibm870.bt
-s none usr/lib/iconv/geniconvtbl/binarytables/IBM870%ISO8869-16.bt=ibm870%8859-16.bt
-f none usr/lib/iconv/geniconvtbl/binarytables/8859-16%8859-2.bt 0444 root bin
+s none usr/lib/iconv/iso-8859-16%iso-8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/iso-8859-2%iso-8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%iso-8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/iso-8859-2%ISO-8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/iso8859-16%iso-8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/iso-8859-2%iso8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/ISO8869-16%iso-8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/iso-8859-2%ISO8869-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/iso-8859-16%ISO-8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/ISO-8859-2%iso-8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%ISO-8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/ISO-8859-2%ISO-8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/iso8859-16%ISO-8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/ISO-8859-2%iso8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/ISO8869-16%ISO-8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/ISO-8859-2%ISO8869-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/iso-8859-16%iso8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/iso8859-2%iso-8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%iso8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/iso8859-2%ISO-8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/iso8859-16%iso8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/iso8859-2%iso8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/ISO8869-16%iso8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/iso8859-2%ISO8869-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/iso-8859-16%ISO8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/ISO8859-2%iso-8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%ISO8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/ISO8859-2%ISO-8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/iso8859-16%ISO8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/ISO8859-2%iso8859-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/ISO8869-16%ISO8859-2.so=8859-16%8859-2.so
+s none usr/lib/iconv/ISO8859-2%ISO8869-16.so=8859-2%8859-16.so
+s none usr/lib/iconv/iso-8859-16%ibm-850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/ibm-850%iso-8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%ibm-850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/ibm-850%ISO-8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/iso8859-16%ibm-850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/ibm-850%iso8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/ISO8869-16%ibm-850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/ibm-850%ISO8869-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/iso-8859-16%IBM-850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/IBM-850%iso-8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%IBM-850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/IBM-850%ISO-8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/iso8859-16%IBM-850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/IBM-850%iso8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/ISO8869-16%IBM-850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/IBM-850%ISO8869-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/iso-8859-16%IBM850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/IBM850%iso-8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%IBM850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/IBM850%ISO-8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/iso8859-16%IBM850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/IBM850%iso8859-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/ISO8869-16%IBM850.so=8859-16%IBM-850.so
+s none usr/lib/iconv/IBM850%ISO8869-16.so=IBM-850%8859-16.so
+s none usr/lib/iconv/iso-8859-16%ibm-870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/ibm-870%iso-8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%ibm-870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/ibm-870%ISO-8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/iso8859-16%ibm-870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/ibm-870%iso8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/ISO8869-16%ibm-870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/ibm-870%ISO8869-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/iso-8859-16%IBM-870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/IBM-870%iso-8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%IBM-870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/IBM-870%ISO-8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/iso8859-16%IBM-870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/IBM-870%iso8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/ISO8869-16%IBM-870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/IBM-870%ISO8869-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/iso-8859-16%IBM870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/IBM870%iso-8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/ISO-8859-16%IBM870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/IBM870%ISO-8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/iso8859-16%IBM870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/IBM870%iso8859-16.so=IBM-870%8859-16.so
+s none usr/lib/iconv/ISO8869-16%IBM870.so=8859-16%IBM-870.so
+s none usr/lib/iconv/IBM870%ISO8869-16.so=IBM-870%8859-16.so
+

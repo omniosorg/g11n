@@ -132,6 +132,14 @@ MISSING = \
 MODULES	= $(INTEGRATED)
 # $(MISSING)
 
+BINARYTABLES = \
+        8859-16%8859-2 \
+        8859-16%ibm850 \
+        8859-16%ibm870 \
+        8859-2%8859-16 \
+        ibm850%8859-16 \
+        ibm870%8859-16
+
 TABLES = table.8859-1.IBM-500.c table.IBM-500.8859-1.c table.alt.iso.c table.alt.koi.c \
 table.alt.mac.c table.alt.win.c table.dhn.ib2.c table.dhn.is2.c table.dhn.maz.c table.dhn.wi2.c table.ib2.dhn.c table.ib2.is2.c \
 table.ib2.maz.c table.ib2.wi2.c table.is2.dhn.c table.is2.ib2.c table.is2.maz.c table.is2.wi2.c table.iso.alt.c table.iso.koi.c \
@@ -143,10 +151,12 @@ GEN_SRC = $(MODULES:%.c=gen_%.c)
 GEN_BIN = $(MODULES:%.c=gen_%)
 TBL = $(MODULES:%.c=%.tbl)
 HEADERS = $(MODULES:%.c=%.head)
+BTBL = $(BINARYTABLES:%=%.btbl)
 
-all: $(TBL)
+all: $(TBL) $(BTBL)
 	echo Now run: ./rename
 
+# .c -> .tbl
 gen_%.c: ../%.c debug.inc
 	cat $< debug.inc > $@
 
@@ -172,6 +182,29 @@ geninput: geninput.c
 input: geninput
 	./geninput > $@
 
+gentbl: gentbl.c
+	$(CC) -o $@ gentbl.c
+
+
+# .bt -> .btbl
+%.btbl: %.out btbl.head
+	./rewritetbl $< > $@.tmp
+	ID=`echo $@ | perl -pe 's:\.btbl::'` ; \
+	echo "\n/*\n * Automatically generated from: $$ID.bt\n */" > $$ID.info ; \
+	cat btbl.head $$ID.info $@.tmp > $@
+	$(RM) $@.tmp
+
+%.out: input
+	FROM=`echo $@ | perl -pe 's:%.*::'` ; \
+	TO=`echo $@ | perl -pe 's:.*%:: ; s:\.out::'` ; \
+	/usr/bin/iconv -f $$FROM -t $$TO input > $@
+
+btbl.head: rewritetbl.c
+	awk '/stdio.h/{x=1} x==0 && $$1!="" {print}' rewritetbl.c  > $@
+
+rewritetbl: rewritetbl.c
+	$(CC) -o $@ rewritetbl.c
+
 clean: 
-	$(RM) -r *.head *.tbl gen_* *info debug.inc
+	$(RM) -r *.head *.tbl gen_* *info debug.inc *.out *.btbl
 

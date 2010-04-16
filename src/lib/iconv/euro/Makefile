@@ -30,9 +30,6 @@ TABLES:sh =	cd tbls/ && ls *tbl
 
 ALL_SOS	= 	$(TABLES:%.tbl=%.so)
 
-BINARYTABLES = 8859-16%8859-2.bt 8859-16%ibm850.bt 8859-16%ibm870.bt 8859-2%8859-16.bt \
-	ibm850%8859-16.bt ibm870%8859-16.bt
-
 
 CFLAGS		+= $(XREGSFLAG) -KPIC -G -dy -D_REENTRANT
 CFLAGS64	+= $(XREGSFLAG64) -KPIC -G -dy -D_REENTRANT
@@ -42,28 +39,27 @@ LDLIBS		= -lc
 
 ROOT_DIR		= $(FILEROOT)/usr/lib/iconv
 ROOT_DIR64		= $(ROOT_DIR)/$(MACH64)
-BTS_DIR			= $(ROOT_DIR)/geniconvtbl/binarytables 
 
 .NO_PARALLEL:
 
-.PARALLEL: $(ALL_SOS) $(BINARYTABLES)
+.PARALLEL: $(ALL_SOS)
 
 
 all: $(ALL_SOS)
 
-install: all $(ROOT_DIR) $(ROOT_DIR64) $(BINARYTABLES)
+install: all $(ROOT_DIR) $(ROOT_DIR64)
 	for f in $(ALL_SOS) ; do \
 		TMP=`echo $$f | $(TR) "_" "%"` ; \
 		echo installing $$TMP to $(ROOT_DIR) ; \
 		$(RM) $(ROOT_DIR)/$$TMP ; \
 		$(CP) $$f $(ROOT_DIR)/$$TMP ; \
-		echo installing $$TMP to $(ROOT_DIR) ; \
+		echo installing $$TMP to $(ROOT_DIR)/$(MACH64) ; \
 		$(CP) $(MACH64)/$$f $(ROOT_DIR)/$(MACH64)/$$TMP ; \
 	done
 	-@echo "done."
 
 
-$(ROOT_DIR) $(ROOT_DIR64) $(BTS_DIR) $(MACH64): FRC
+$(ROOT_DIR) $(ROOT_DIR64) $(MACH64): FRC
 	/usr/bin/test -d $@ || $(INSDIR) $@
 
 $(ALL_SOS): $(MACH64) euro.h euro.c tbl.h
@@ -75,9 +71,6 @@ $(ALL_SOS): $(MACH64) euro.h euro.c tbl.h
 
 tbl.h: genincl $(TABLES:%=tbls/%)
 	./genincl > $@
-
-$(BINARYTABLES): $(BTS_DIR)
-	$(INS) $(BTS_DIR) binarytables/$@
 
 clean: 
 	$(RM) *.o *.so *.s core tbl.h
