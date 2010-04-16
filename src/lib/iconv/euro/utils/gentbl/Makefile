@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -19,8 +19,7 @@
 # CDDL HEADER END
 #
 #
-# Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 # Toolset to unify the code conversion tables.
@@ -46,8 +45,10 @@ INTEGRATED = \
 	8859%646it.c \
 	8859%646sv.c \
 	8859-1%IBM-037.c \
+	8859-1%IBM-500.c \
 	8859-1%IBM-850.c \
 	IBM-037%8859-1.c \
+	IBM-500%8859-1.c \
 	IBM-850%8859-1.c \
 	alt%iso5.c \
 	alt%koi8.c \
@@ -91,8 +92,6 @@ INTEGRATED = \
 	win5%mac.c
 
 MISSING = \
-	8859-1%IBM-500.c \
-	IBM-500%8859-1.c \
 	alt%iso.c \
 	alt%koi.c \
 	alt%win.c \
@@ -174,5 +173,5 @@ input: geninput
 	./geninput > $@
 
 clean: 
-	$(RM) -r *.head *.tbl gen_* debug.inc
+	$(RM) -r *.head *.tbl gen_* *info debug.inc
 

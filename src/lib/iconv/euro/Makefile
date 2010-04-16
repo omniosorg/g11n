@@ -19,8 +19,7 @@
 # CDDL HEADER END
 #
 #
-# Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 include $(SRC)/Makefile.master
@@ -74,7 +73,7 @@ $(ALL_SOS): $(MACH64) euro.h euro.c tbl.h
 	$(LD) $(LDFLAGS) -o $@ $@.o $(LDLIBS)
 	$(LD) $(LDFLAGS) -o $(MACH64)/$@ $(MACH64)/$@.o $(LDLIBS)
 
-tbl.h: genincl
+tbl.h: genincl $(TABLES:%=tbls/%)
 	./genincl > $@
 
 $(BINARYTABLES): $(BTS_DIR)

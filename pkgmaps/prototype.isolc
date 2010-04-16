@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,27 +18,14 @@
 #
 # CDDL HEADER END
 #
-# @(#)prototype 1.3 93/07/28 SMI
-#       Copyright (c) 1990-92 Sun Microsystems, Inc.
-#               All Rights Reserved
 #
+# Copyright (c) 1990, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-# This required package information file contains a list of package contents.
-# The 'pkgmk' command uses this file to identify the contents of a package
-# and their location on the development machine when building the package.
-# Can be created via a text editor or through use of the 'pkgproto' command.
 
-#!search <pathname pathname ...>        # where to find pkg objects
-#!include <filename>                    # include another 'prototype' file
-#!default <mode> <owner> <group>        # default used if not specified on entry#!<param>=<value>                       # puts parameter in pkg environment
-
-#
-# SUNWisolc
-#
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/iconv 0755 root bin
-#
+
 f none usr/lib/iconv/8859%646.so 0555 root bin
 f none usr/lib/iconv/8859%646de.so 0755 root bin
 f none usr/lib/iconv/8859%646es.so 0755 root bin
@@ -47,8 +34,10 @@ f none usr/lib/iconv/8859%646da.so 0755 root bin
 f none usr/lib/iconv/8859%646en.so 0755 root bin
 f none usr/lib/iconv/8859%646fr.so 0755 root bin
 f none usr/lib/iconv/8859%646sv.so 0755 root bin
-#
+
+# SUNWislcc
 #f none usr/lib/iconv/646%8859.so 0755 root bin
+#s none usr/lib/iconv/646%ISO8859-1.so=646%8859.so
 f none usr/lib/iconv/646de%8859.so 0755 root bin
 f none usr/lib/iconv/646es%8859.so 0755 root bin
 f none usr/lib/iconv/646it%8859.so 0755 root bin
@@ -56,15 +45,15 @@ f none usr/lib/iconv/646da%8859.so 0755 root bin
 f none usr/lib/iconv/646en%8859.so 0755 root bin
 f none usr/lib/iconv/646fr%8859.so 0755 root bin
 f none usr/lib/iconv/646sv%8859.so 0755 root bin
-#s none usr/lib/iconv/646%ISO8859-1.so=646%8859.so
 
 # New additional elements
-f none usr/lib/iconv/IBM-850%8859-1.so 0755 root bin
-f none usr/lib/iconv/8859-1%IBM-850.so 0755 root bin
-f none usr/lib/iconv/8859-1%IBM-037.so 0755 root bin
 f none usr/lib/iconv/IBM-037%8859-1.so 0755 root bin
+f none usr/lib/iconv/IBM-500%8859-1.so 0755 root bin
+f none usr/lib/iconv/IBM-850%8859-1.so 0755 root bin
+f none usr/lib/iconv/8859-1%IBM-037.so 0755 root bin
+f none usr/lib/iconv/8859-1%IBM-500.so 0755 root bin
+f none usr/lib/iconv/8859-1%IBM-850.so 0755 root bin
 
-#!include ./iso_latin5_proto
 f none usr/lib/iconv/iso5%koi8.so 0755 root bin
 f none usr/lib/iconv/iso5%alt.so 0755 root bin
 f none usr/lib/iconv/iso5%win5.so 0755 root bin
@@ -86,7 +75,6 @@ f none usr/lib/iconv/mac%koi8.so 0755 root bin
 f none usr/lib/iconv/mac%alt.so 0755 root bin
 f none usr/lib/iconv/mac%win5.so 0755 root bin
 
-#!include ./iso_latin2_proto
 f none usr/lib/iconv/iso2%win2.so 0755 root bin
 f none usr/lib/iconv/iso2%dos2.so 0755 root bin
 f none usr/lib/iconv/iso2%maz.so 0755 root bin

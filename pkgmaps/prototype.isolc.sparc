@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,13 +18,10 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+#
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-#
-#64bit
-#
 d none usr/lib/iconv/sparcv9 0755 root bin
 
 f none usr/lib/iconv/sparcv9/8859%646.so 0555 root bin
@@ -45,10 +42,12 @@ f none usr/lib/iconv/sparcv9/646fr%8859.so 0755 root bin
 f none usr/lib/iconv/sparcv9/646sv%8859.so 0755 root bin
 
 # New additional elements
-f none usr/lib/iconv/sparcv9/IBM-850%8859-1.so 0755 root bin
-f none usr/lib/iconv/sparcv9/8859-1%IBM-850.so 0755 root bin
-f none usr/lib/iconv/sparcv9/8859-1%IBM-037.so 0755 root bin
 f none usr/lib/iconv/sparcv9/IBM-037%8859-1.so 0755 root bin
+f none usr/lib/iconv/sparcv9/IBM-500%8859-1.so 0755 root bin
+f none usr/lib/iconv/sparcv9/IBM-850%8859-1.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-1%IBM-037.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-1%IBM-500.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-1%IBM-850.so 0755 root bin
 
 f none usr/lib/iconv/sparcv9/iso2%win2.so 0755 root bin
 f none usr/lib/iconv/sparcv9/iso2%dos2.so 0755 root bin
