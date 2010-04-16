@@ -23,21 +23,33 @@
 #
 
 d none usr/lib/iconv/amd64 0755 root bin
-f none usr/lib/iconv/amd64/646da%8859.so 0755 root bin
-f none usr/lib/iconv/amd64/646de%8859.so 0755 root bin
-f none usr/lib/iconv/amd64/646en%8859.so 0755 root bin
-f none usr/lib/iconv/amd64/646es%8859.so 0755 root bin
-f none usr/lib/iconv/amd64/646fr%8859.so 0755 root bin
-f none usr/lib/iconv/amd64/646it%8859.so 0755 root bin
-f none usr/lib/iconv/amd64/646sv%8859.so 0755 root bin
-f none usr/lib/iconv/amd64/8859%646.so 0555 root bin
-f none usr/lib/iconv/amd64/8859%646da.so 0755 root bin
-f none usr/lib/iconv/amd64/8859%646de.so 0755 root bin
-f none usr/lib/iconv/amd64/8859%646en.so 0755 root bin
-f none usr/lib/iconv/amd64/8859%646es.so 0755 root bin
-f none usr/lib/iconv/amd64/8859%646fr.so 0755 root bin
-f none usr/lib/iconv/amd64/8859%646it.so 0755 root bin
-f none usr/lib/iconv/amd64/8859%646sv.so 0755 root bin
+f none usr/lib/iconv/amd64/646%8859-1.so 0755 root bin
+s none usr/lib/iconv/amd64/646%ISO8859-2.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%ISO8859-4.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%ISO8859-5.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%ISO8859-6.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%ISO8859-7.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%ISO8859-8.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%ISO8859-9.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%ISO8859-15.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%ansi-1251.so=646%8859-1.so
+s none usr/lib/iconv/amd64/646%KOI8-R.so=646%8859-1.so
+
+f none usr/lib/iconv/amd64/646da%8859-1.so 0755 root bin
+f none usr/lib/iconv/amd64/646de%8859-1.so 0755 root bin
+f none usr/lib/iconv/amd64/646en%8859-1.so 0755 root bin
+f none usr/lib/iconv/amd64/646es%8859-1.so 0755 root bin
+f none usr/lib/iconv/amd64/646fr%8859-1.so 0755 root bin
+f none usr/lib/iconv/amd64/646it%8859-1.so 0755 root bin
+f none usr/lib/iconv/amd64/646sv%8859-1.so 0755 root bin
+f none usr/lib/iconv/amd64/8859-1%646.so 0555 root bin
+f none usr/lib/iconv/amd64/8859-1%646da.so 0755 root bin
+f none usr/lib/iconv/amd64/8859-1%646de.so 0755 root bin
+f none usr/lib/iconv/amd64/8859-1%646en.so 0755 root bin
+f none usr/lib/iconv/amd64/8859-1%646es.so 0755 root bin
+f none usr/lib/iconv/amd64/8859-1%646fr.so 0755 root bin
+f none usr/lib/iconv/amd64/8859-1%646it.so 0755 root bin
+f none usr/lib/iconv/amd64/8859-1%646sv.so 0755 root bin
 f none usr/lib/iconv/amd64/8859-1%IBM-037.so 0755 root bin
 f none usr/lib/iconv/amd64/8859-1%IBM-500.so 0755 root bin
 f none usr/lib/iconv/amd64/8859-1%IBM-850.so 0755 root bin
@@ -90,4 +102,3 @@ f none usr/lib/iconv/amd64/win5%alt.so 0755 root bin
 f none usr/lib/iconv/amd64/win5%iso5.so 0755 root bin
 f none usr/lib/iconv/amd64/win5%koi8.so 0755 root bin
 f none usr/lib/iconv/amd64/win5%mac.so 0755 root bin
-
