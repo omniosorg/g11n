@@ -24,15 +24,15 @@
 
 d none usr/lib/iconv/sparcv9 0755 root bin
 f none usr/lib/iconv/sparcv9/646%8859-1.so 0755 root bin
-s none usr/lib/iconv/sparcv9/646%ISO8859-2.so=646%8859-1.so
-s none usr/lib/iconv/sparcv9/646%ISO8859-4.so=646%8859-1.so
-s none usr/lib/iconv/sparcv9/646%ISO8859-5.so=646%8859-1.so
-s none usr/lib/iconv/sparcv9/646%ISO8859-6.so=646%8859-1.so
-s none usr/lib/iconv/sparcv9/646%ISO8859-7.so=646%8859-1.so
-s none usr/lib/iconv/sparcv9/646%ISO8859-8.so=646%8859-1.so
-s none usr/lib/iconv/sparcv9/646%ISO8859-9.so=646%8859-1.so
-s none usr/lib/iconv/sparcv9/646%ISO8859-15.so=646%8859-1.so
-s none usr/lib/iconv/sparcv9/646%ansi-1251.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%8859-2.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%8859-4.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%8859-5.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%8859-6.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%8859-7.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%8859-8.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%8859-9.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%8859-15.so=646%8859-1.so
+s none usr/lib/iconv/sparcv9/646%CP1251.so=646%8859-1.so
 s none usr/lib/iconv/sparcv9/646%KOI8-R.so=646%8859-1.so
 
 f none usr/lib/iconv/sparcv9/646da%8859-1.so 0755 root bin
@@ -62,43 +62,44 @@ f none usr/lib/iconv/sparcv9/IBM-500%8859-1.so 0755 root bin
 f none usr/lib/iconv/sparcv9/IBM-850%8859-1.so 0755 root bin
 f none usr/lib/iconv/sparcv9/IBM-850%8859-16.so 0755 root bin
 f none usr/lib/iconv/sparcv9/IBM-870%8859-16.so 0755 root bin
-f none usr/lib/iconv/sparcv9/alt%iso5.so 0755 root bin
-f none usr/lib/iconv/sparcv9/alt%koi8.so 0755 root bin
+
+f none usr/lib/iconv/sparcv9/alt%8859-5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/alt%KOI8-R.so 0755 root bin
 f none usr/lib/iconv/sparcv9/alt%mac.so 0755 root bin
-f none usr/lib/iconv/sparcv9/alt%win5.so 0755 root bin
-f none usr/lib/iconv/sparcv9/dhn%dos2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/dhn%iso2.so 0755 root bin
+f none usr/lib/iconv/sparcv9/alt%CP1251.so 0755 root bin
+f none usr/lib/iconv/sparcv9/dhn%CP852.so 0755 root bin
+f none usr/lib/iconv/sparcv9/dhn%8859-2.so 0755 root bin
 f none usr/lib/iconv/sparcv9/dhn%maz.so 0755 root bin
-f none usr/lib/iconv/sparcv9/dhn%win2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/dos2%dhn.so 0755 root bin
-f none usr/lib/iconv/sparcv9/dos2%iso2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/dos2%maz.so 0755 root bin
-f none usr/lib/iconv/sparcv9/dos2%win2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iso2%dhn.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iso2%dos2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iso2%maz.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iso2%win2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iso5%alt.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iso5%koi8.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iso5%mac.so 0755 root bin
-f none usr/lib/iconv/sparcv9/iso5%win5.so 0755 root bin
-f none usr/lib/iconv/sparcv9/koi8%alt.so 0755 root bin
-f none usr/lib/iconv/sparcv9/koi8%iso5.so 0755 root bin
-f none usr/lib/iconv/sparcv9/koi8%mac.so 0755 root bin
-f none usr/lib/iconv/sparcv9/koi8%win5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/dhn%CP1250.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP852%dhn.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP852%8859-2.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP852%maz.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP852%CP1250.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-2%dhn.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-2%CP852.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-2%maz.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-2%CP1250.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-5%alt.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-5%KOI8-R.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-5%mac.so 0755 root bin
+f none usr/lib/iconv/sparcv9/8859-5%CP1251.so 0755 root bin
+f none usr/lib/iconv/sparcv9/KOI8-R%alt.so 0755 root bin
+f none usr/lib/iconv/sparcv9/KOI8-R%8859-5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/KOI8-R%mac.so 0755 root bin
+f none usr/lib/iconv/sparcv9/KOI8-R%CP1251.so 0755 root bin
 f none usr/lib/iconv/sparcv9/mac%alt.so 0755 root bin
-f none usr/lib/iconv/sparcv9/mac%iso5.so 0755 root bin
-f none usr/lib/iconv/sparcv9/mac%koi8.so 0755 root bin
-f none usr/lib/iconv/sparcv9/mac%win5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/mac%8859-5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/mac%KOI8-R.so 0755 root bin
+f none usr/lib/iconv/sparcv9/mac%CP1251.so 0755 root bin
 f none usr/lib/iconv/sparcv9/maz%dhn.so 0755 root bin
-f none usr/lib/iconv/sparcv9/maz%dos2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/maz%iso2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/maz%win2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/win2%dhn.so 0755 root bin
-f none usr/lib/iconv/sparcv9/win2%dos2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/win2%iso2.so 0755 root bin
-f none usr/lib/iconv/sparcv9/win2%maz.so 0755 root bin
-f none usr/lib/iconv/sparcv9/win5%alt.so 0755 root bin
-f none usr/lib/iconv/sparcv9/win5%iso5.so 0755 root bin
-f none usr/lib/iconv/sparcv9/win5%koi8.so 0755 root bin
-f none usr/lib/iconv/sparcv9/win5%mac.so 0755 root bin
+f none usr/lib/iconv/sparcv9/maz%CP852.so 0755 root bin
+f none usr/lib/iconv/sparcv9/maz%8859-2.so 0755 root bin
+f none usr/lib/iconv/sparcv9/maz%CP1250.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP1250%dhn.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP1250%CP852.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP1250%8859-2.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP1250%maz.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP1251%alt.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP1251%8859-5.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP1251%KOI8-R.so 0755 root bin
+f none usr/lib/iconv/sparcv9/CP1251%mac.so 0755 root bin

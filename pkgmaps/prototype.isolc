@@ -37,15 +37,15 @@ f none usr/lib/iconv/8859-1%646sv.so 0755 root bin
 
 # SUNWislcc
 f none usr/lib/iconv/646%8859-1.so 0755 root bin
-s none usr/lib/iconv/646%ISO8859-2.so=646%8859-1.so
-s none usr/lib/iconv/646%ISO8859-4.so=646%8859-1.so
-s none usr/lib/iconv/646%ISO8859-5.so=646%8859-1.so
-s none usr/lib/iconv/646%ISO8859-6.so=646%8859-1.so
-s none usr/lib/iconv/646%ISO8859-7.so=646%8859-1.so
-s none usr/lib/iconv/646%ISO8859-8.so=646%8859-1.so
-s none usr/lib/iconv/646%ISO8859-9.so=646%8859-1.so
-s none usr/lib/iconv/646%ISO8859-15.so=646%8859-1.so
-s none usr/lib/iconv/646%ansi-1251.so=646%8859-1.so
+s none usr/lib/iconv/646%8859-2.so=646%8859-1.so
+s none usr/lib/iconv/646%8859-4.so=646%8859-1.so
+s none usr/lib/iconv/646%8859-5.so=646%8859-1.so
+s none usr/lib/iconv/646%8859-6.so=646%8859-1.so
+s none usr/lib/iconv/646%8859-7.so=646%8859-1.so
+s none usr/lib/iconv/646%8859-8.so=646%8859-1.so
+s none usr/lib/iconv/646%8859-9.so=646%8859-1.so
+s none usr/lib/iconv/646%8859-15.so=646%8859-1.so
+s none usr/lib/iconv/646%CP1251.so=646%8859-1.so
 s none usr/lib/iconv/646%KOI8-R.so=646%8859-1.so
 
 f none usr/lib/iconv/646da%8859-1.so 0755 root bin
@@ -70,126 +70,45 @@ f none usr/lib/iconv/8859-2%8859-16.so 0755 root bin
 f none usr/lib/iconv/IBM-850%8859-16.so 0755 root bin
 f none usr/lib/iconv/IBM-870%8859-16.so 0755 root bin
 
-f none usr/lib/iconv/iso5%koi8.so 0755 root bin
-f none usr/lib/iconv/iso5%alt.so 0755 root bin
-f none usr/lib/iconv/iso5%win5.so 0755 root bin
-f none usr/lib/iconv/iso5%mac.so 0755 root bin
-f none usr/lib/iconv/koi8%iso5.so 0755 root bin
-f none usr/lib/iconv/koi8%alt.so 0755 root bin
-f none usr/lib/iconv/koi8%win5.so 0755 root bin
-f none usr/lib/iconv/koi8%mac.so 0755 root bin
-f none usr/lib/iconv/alt%iso5.so 0755 root bin
-f none usr/lib/iconv/alt%koi8.so 0755 root bin
-f none usr/lib/iconv/alt%win5.so 0755 root bin
+f none usr/lib/iconv/8859-5%KOI8-R.so 0755 root bin
+f none usr/lib/iconv/8859-5%alt.so 0755 root bin
+f none usr/lib/iconv/8859-5%CP1251.so 0755 root bin
+f none usr/lib/iconv/8859-5%mac.so 0755 root bin
+f none usr/lib/iconv/KOI8-R%8859-5.so 0755 root bin
+f none usr/lib/iconv/KOI8-R%alt.so 0755 root bin
+f none usr/lib/iconv/KOI8-R%CP1251.so 0755 root bin
+f none usr/lib/iconv/KOI8-R%mac.so 0755 root bin
+f none usr/lib/iconv/alt%8859-5.so 0755 root bin
+f none usr/lib/iconv/alt%KOI8-R.so 0755 root bin
+f none usr/lib/iconv/alt%CP1251.so 0755 root bin
 f none usr/lib/iconv/alt%mac.so 0755 root bin
-f none usr/lib/iconv/win5%iso5.so 0755 root bin
-f none usr/lib/iconv/win5%koi8.so 0755 root bin
-f none usr/lib/iconv/win5%alt.so 0755 root bin
-f none usr/lib/iconv/win5%mac.so 0755 root bin
-f none usr/lib/iconv/mac%iso5.so 0755 root bin
-f none usr/lib/iconv/mac%koi8.so 0755 root bin
+f none usr/lib/iconv/CP1251%8859-5.so 0755 root bin
+f none usr/lib/iconv/CP1251%KOI8-R.so 0755 root bin
+f none usr/lib/iconv/CP1251%alt.so 0755 root bin
+f none usr/lib/iconv/CP1251%mac.so 0755 root bin
+f none usr/lib/iconv/mac%8859-5.so 0755 root bin
+f none usr/lib/iconv/mac%KOI8-R.so 0755 root bin
 f none usr/lib/iconv/mac%alt.so 0755 root bin
-f none usr/lib/iconv/mac%win5.so 0755 root bin
+f none usr/lib/iconv/mac%CP1251.so 0755 root bin
 
-f none usr/lib/iconv/iso2%win2.so 0755 root bin
-f none usr/lib/iconv/iso2%dos2.so 0755 root bin
-f none usr/lib/iconv/iso2%maz.so 0755 root bin
-f none usr/lib/iconv/iso2%dhn.so 0755 root bin
-f none usr/lib/iconv/win2%iso2.so 0755 root bin
-f none usr/lib/iconv/win2%dos2.so 0755 root bin
-f none usr/lib/iconv/win2%maz.so 0755 root bin
-f none usr/lib/iconv/win2%dhn.so 0755 root bin
-f none usr/lib/iconv/dos2%iso2.so 0755 root bin
-f none usr/lib/iconv/dos2%win2.so 0755 root bin
-f none usr/lib/iconv/dos2%maz.so 0755 root bin
-f none usr/lib/iconv/dos2%dhn.so 0755 root bin
-f none usr/lib/iconv/maz%iso2.so 0755 root bin
-f none usr/lib/iconv/maz%win2.so 0755 root bin
-f none usr/lib/iconv/maz%dos2.so 0755 root bin
+f none usr/lib/iconv/8859-2%CP1250.so 0755 root bin
+f none usr/lib/iconv/8859-2%CP852.so 0755 root bin
+f none usr/lib/iconv/8859-2%maz.so 0755 root bin
+f none usr/lib/iconv/8859-2%dhn.so 0755 root bin
+f none usr/lib/iconv/CP1250%8859-2.so 0755 root bin
+f none usr/lib/iconv/CP1250%CP852.so 0755 root bin
+f none usr/lib/iconv/CP1250%maz.so 0755 root bin
+f none usr/lib/iconv/CP1250%dhn.so 0755 root bin
+f none usr/lib/iconv/CP852%8859-2.so 0755 root bin
+f none usr/lib/iconv/CP852%CP1250.so 0755 root bin
+f none usr/lib/iconv/CP852%maz.so 0755 root bin
+f none usr/lib/iconv/CP852%dhn.so 0755 root bin
+f none usr/lib/iconv/maz%8859-2.so 0755 root bin
+f none usr/lib/iconv/maz%CP1250.so 0755 root bin
+f none usr/lib/iconv/maz%CP852.so 0755 root bin
 f none usr/lib/iconv/maz%dhn.so 0755 root bin
-f none usr/lib/iconv/dhn%iso2.so 0755 root bin
-f none usr/lib/iconv/dhn%win2.so 0755 root bin
-f none usr/lib/iconv/dhn%dos2.so 0755 root bin
+f none usr/lib/iconv/dhn%8859-2.so 0755 root bin
+f none usr/lib/iconv/dhn%CP1250.so 0755 root bin
+f none usr/lib/iconv/dhn%CP852.so 0755 root bin
 f none usr/lib/iconv/dhn%maz.so 0755 root bin
-
-s none usr/lib/iconv/iso-8859-16%iso-8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/iso-8859-2%iso-8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%iso-8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/iso-8859-2%ISO-8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/iso8859-16%iso-8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/iso-8859-2%iso8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/ISO8859-16%iso-8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/iso-8859-2%ISO8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/iso-8859-16%ISO-8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/ISO-8859-2%iso-8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%ISO-8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/ISO-8859-2%ISO-8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/iso8859-16%ISO-8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/ISO-8859-2%iso8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/ISO8859-16%ISO-8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/ISO-8859-2%ISO8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/iso-8859-16%iso8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/iso8859-2%iso-8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%iso8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/iso8859-2%ISO-8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/iso8859-16%iso8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/iso8859-2%iso8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/ISO8859-16%iso8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/iso8859-2%ISO8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/iso-8859-16%ISO8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/ISO8859-2%iso-8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%ISO8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/ISO8859-2%ISO-8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/iso8859-16%ISO8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/ISO8859-2%iso8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/ISO8859-16%ISO8859-2.so=8859-16%8859-2.so
-s none usr/lib/iconv/ISO8859-2%ISO8859-16.so=8859-2%8859-16.so
-s none usr/lib/iconv/iso-8859-16%ibm-850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/ibm-850%iso-8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%ibm-850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/ibm-850%ISO-8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/iso8859-16%ibm-850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/ibm-850%iso8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/ISO8859-16%ibm-850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/ibm-850%ISO8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/iso-8859-16%IBM-850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/IBM-850%iso-8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%IBM-850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/IBM-850%ISO-8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/iso8859-16%IBM-850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/IBM-850%iso8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/ISO8859-16%IBM-850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/IBM-850%ISO8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/iso-8859-16%IBM850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/IBM850%iso-8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%IBM850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/IBM850%ISO-8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/iso8859-16%IBM850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/IBM850%iso8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/ISO8859-16%IBM850.so=8859-16%IBM-850.so
-s none usr/lib/iconv/IBM850%ISO8859-16.so=IBM-850%8859-16.so
-s none usr/lib/iconv/iso-8859-16%ibm-870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/ibm-870%iso-8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%ibm-870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/ibm-870%ISO-8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/iso8859-16%ibm-870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/ibm-870%iso8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/ISO8859-16%ibm-870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/ibm-870%ISO8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/iso-8859-16%IBM-870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/IBM-870%iso-8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%IBM-870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/IBM-870%ISO-8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/iso8859-16%IBM-870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/IBM-870%iso8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/ISO8859-16%IBM-870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/IBM-870%ISO8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/iso-8859-16%IBM870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/IBM870%iso-8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/ISO-8859-16%IBM870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/IBM870%ISO-8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/iso8859-16%IBM870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/IBM870%iso8859-16.so=IBM-870%8859-16.so
-s none usr/lib/iconv/ISO8859-16%IBM870.so=8859-16%IBM-870.so
-s none usr/lib/iconv/IBM870%ISO8859-16.so=IBM-870%8859-16.so
 

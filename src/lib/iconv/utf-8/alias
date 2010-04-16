@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,11 +18,7 @@
 #
 # CDDL HEADER END
 #
-#
-# Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
-#ident	"@(#)alias	1.17	07/12/13 SMI"
+# Copyright (c) 2003, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 # Alias Canonical
 ISO8859-1 8859-1
@@ -150,10 +146,12 @@ ISO8859-2 8859-2
 ISO8859_2 8859-2
 ISO-8859-2 8859-2
 ISO_8859_2 8859-2
+iso2 8859-2
 ISO8859-5 8859-5
 ISO8859_5 8859-5
 ISO-8859-5 8859-5
 ISO_8859_5 8859-5
+iso5 8859-5
 ISO8859-6 8859-6
 ISO8859_6 8859-6
 ISO-8859-6 8859-6
@@ -189,6 +187,7 @@ EUC_TH eucTH
 KOI8-R KOI8-R
 KOI8_R KOI8-R
 KOI8R KOI8-R
+KOI8 KOI8-R
 ISCII iscii91
 ISCII91 iscii91
 ISO8859-3 8859-3
@@ -298,6 +297,8 @@ CP937 zh_TW-cp937
 IBM-935 zh_CN-cp935
 IBM_935 zh_CN-cp935
 IBM935 zh_CN-cp935
+IBM-CP838 IBM-838
+IBM-CP874 IBM-874
 CP935 zh_CN-cp935
 CP437 CP437
 CP-437 CP437
@@ -315,10 +316,13 @@ CP850 CP850
 CP-850 CP850
 CP_850 CP850
 850 CP850
+IBM-850 IBM-850
+IBM850 IBM-850
 CP852 CP852
 CP-852 CP852
 CP_852 CP852
 852 CP852
+dos2 CP852
 CP855 CP855
 CP-855 CP855
 CP_855 CP855
@@ -370,6 +374,7 @@ WINDOWS-1250 CP1250
 ANSI-1250 CP1250
 ANSI1250 CP1250
 1250 CP1250
+win2 CP1250
 CP1251 CP1251
 CP-1251 CP1251
 CP_1251 CP1251
@@ -377,6 +382,7 @@ WINDOWS-1251 CP1251
 ANSI-1251 CP1251
 ANSI1251 CP1251
 1251 CP1251
+win5 CP1251
 CP1252 CP1252
 CP-1252 CP1252
 CP_1252 CP1252

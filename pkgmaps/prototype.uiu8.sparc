@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,8 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2007, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 d none lib/iconv/sparcv9 0755 root bin
 f none lib/iconv/sparcv9/646%UCS-2.so 0555 root bin
@@ -1336,11 +1335,3 @@ s none lib/iconv/sparcv9/eucJP%UCS-4BE.so=./eucJP%UTF-32BE.so
 s none lib/iconv/sparcv9/eucJP%UCS-4LE.so=./eucJP%UTF-32LE.so
 f none lib/iconv/sparcv9/UTF-8%eucTH.so 0755 root bin
 f none lib/iconv/sparcv9/eucTH%UTF-8.so 0755 root bin
-s none lib/iconv/sparcv9/ISO8859-11%UTF-8.so=./eucTH%UTF-8.so
-s none lib/iconv/sparcv9/TIS620.2533%UTF-8.so=./eucTH%UTF-8.so
-s none lib/iconv/sparcv9/UTF-8%ISO8859-11.so=./UTF-8%eucTH.so
-s none lib/iconv/sparcv9/UTF-8%TIS620.2533.so=./UTF-8%eucTH.so
-s none lib/iconv/sparcv9/UTF-8%iso8859-11.so=./UTF-8%eucTH.so
-s none lib/iconv/sparcv9/UTF-8%tis620.2533.so=./UTF-8%eucTH.so
-s none lib/iconv/sparcv9/iso8859-11%UTF-8.so=./eucTH%UTF-8.so
-s none lib/iconv/sparcv9/tis620.2533%UTF-8.so=./eucTH%UTF-8.so
