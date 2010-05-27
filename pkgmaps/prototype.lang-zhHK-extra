@@ -82,17 +82,6 @@ d none usr/lib/locale/zh_HK.UTF-8@stroke 0755 root bin
 f none usr/lib/locale/zh_HK.UTF-8@radical/zh_HK.UTF-8@radical.so.3 0555 root bin
 f none usr/lib/locale/zh_HK.UTF-8@stroke/zh_HK.UTF-8@stroke.so.3 0555 root bin
 
-d none usr/openwin 0755 root bin
-d none usr/openwin/lib 0755 root bin
-d none usr/openwin/lib/locale 0755 root bin
-d none usr/openwin/lib/locale/zh_HK.BIG5HK 0755 root bin
-d none usr/openwin/lib/locale/zh_HK.BIG5HK/xim 0755 root bin
-f none usr/openwin/lib/locale/zh_HK.BIG5HK/xim/cm.so 0755 root bin
-f none usr/openwin/lib/locale/zh_HK.BIG5HK/xim/big5hkcode.so 0755 root bin
-f none usr/openwin/lib/locale/zh_HK.BIG5HK/xim/hotkey.dat 0644 root daemon
-d none usr/openwin/lib/locale/zh_HK.BIG5HK/xim/data 0755 root bin
-f none usr/openwin/lib/locale/zh_HK.BIG5HK/xim/data/cangjie.dat 0644 root daemon
-
 ### mp l10n files
 #d none usr/lib/lp 0755 root lp
 #d none usr/lib/lp/locale 0755 root lp
