@@ -18,10 +18,7 @@
 #
 # CDDL HEADER END
 #
-
-#
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 d none share 0755 root sys
@@ -49,5 +46,5 @@ f none share/fonts/TrueType/bpg-georgian/fonts.scale 0444 root bin
 
 d none share/doc 0755 root other
 d none share/doc/ttf-bpg-georgian 0755 root bin
-d none share/doc/ttf-bpg-georgian/README.txt.bz2 0444 root bin
+f none share/doc/ttf-bpg-georgian/README.txt.bz2 0444 root bin
 
