@@ -24,19 +24,31 @@
 include $(SRC)/Makefile.master
 
 SUBDIRS = \
-	Bangla \
-	Brahmi \
-	MalayamLinux \
-	Oriya \
-	Vemana
+	assamese \
+	bengali \
+	gujarati \
+	hindi \
+	kannada \
+	kashmiri \
+	konkani \
+	maithili \
+	malayalam \
+	marathi \
+	nepali \
+	oriya \
+	punjabi \
+	sindhi \
+	tamil \
+	telugu
 
 FILES = fonts.dir \
 	fonts.scale
 
-DOCS =	Bangla/MuktiNarrow0.94/COPYING
+DOCS =	assamese/lohit-assamese-ttf-2.4.3/COPYING \
+	assamese/lohit-assamese-ttf-2.4.3/COPYRIGHT
 
-ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/indic-fonts-core
-ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/indic-fonts-core
+ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/lohit
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-lohit
 
 all:=		TARGET= all
 install :=	TARGET= install
@@ -60,7 +72,7 @@ clean: $(SUBDIRS)
 %.bz2: %
 	$(BZIP2) -c $< > $@
 
-.docs_installed: $(DOCS:%=%.bz2)
+.docs_installed: $(DOCS:%=%.bz2) $(SUBDIRS)
 	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
 	( for f in $(DOCS); do \
 		$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \

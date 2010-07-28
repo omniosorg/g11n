@@ -5,32 +5,26 @@
 # Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
-# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
 # or http://www.opensolaris.org/os/licensing.
 # See the License for the specific language governing permissions
 # and limitations under the License.
 #
 # When distributing Covered Code, include this CDDL HEADER in each
-# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# file and include the License file at src/OPENSOLARIS.LICENSE.
 # If applicable, add the following below this CDDL HEADER, with the
 # fields enclosed by brackets "[]" replaced with your own identifying
 # information: Portions Copyright [yyyy] [name of copyright owner]
 #
 # CDDL HEADER END
 #
-#
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 d none share 0755 root sys
 d none share/fonts 0755 root bin
 d none share/fonts/TrueType 0755 root bin
 d none share/fonts/TrueType/indic-fonts-core 0755 root bin
-f none share/fonts/TrueType/indic-fonts-core/lohit_gu.ttf 0444 root bin
-f none share/fonts/TrueType/indic-fonts-core/lohit_hi.ttf 0444 root bin
-f none share/fonts/TrueType/indic-fonts-core/lohit_pa.ttf 0444 root bin
-f none share/fonts/TrueType/indic-fonts-core/lohit_ta.ttf 0444 root bin
 f none share/fonts/TrueType/indic-fonts-core/Malige-b.ttf 0444 root bin
 f none share/fonts/TrueType/indic-fonts-core/Malige-n.ttf 0444 root bin
 f none share/fonts/TrueType/indic-fonts-core/MalOtf.ttf 0444 root bin
@@ -41,23 +35,4 @@ f none share/fonts/TrueType/indic-fonts-core/vemana.ttf 0444 root bin
 
 d none share/doc 0755 root other
 d none share/doc/indic-fonts-core 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Bengali-fonts 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Devanagari-fonts 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Gujarati-fonts 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Kannada-fonts 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Malayalam-fonts 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Oriya-fonts 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Punjabi-fonts 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Tamil-fonts 0755 root bin
-d none share/doc/indic-fonts-core/ttf-Telugu-fonts 0755 root bin
-f none share/doc/indic-fonts-core/copyright 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Bengali-fonts/COPYING 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Devanagari-fonts/COPYING 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Gujarati-fonts/COPYING 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Kannada-fonts/gpl.txt 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Malayalam-fonts/COPYING 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Oriya-fonts/licence.txt 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Punjabi-fonts/COPYING 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Tamil-fonts/COPYING 0444 root bin
-f none share/doc/indic-fonts-core/ttf-Telugu-fonts/gpl.txt 0444 root bin
-
+f none share/doc/indic-fonts-core/COPYING.bz2 0444 root bin

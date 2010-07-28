@@ -18,36 +18,29 @@
 #
 # CDDL HEADER END
 #
-# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-FONTROOT	= $(FILEROOT)/usr/share/fonts/TrueType
+include $(SRC)/Makefile.master
 
-$(VER)/.fonts_installed: $(VER)/.unpacked
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
-	( cd $(VER); \
-	for f in $(FONTS); do \
-		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
-	done; )
-	touch $@
+PROJECT		= kanotf
+VER 		= $(PROJECT)
+TARBALL		= $(VER).zip
+SOURCE_URL	= http://prdownloads.sourceforge.net/brahmi/$(TARBALL)?download
+WGET_OPT	+= -O $(TARBALL)
 
-$(VER)/%.bz2: $(VER)/%
-	$(BZIP2) -c $< > $@
+FONTS = Malige-b.ttf \
+	Malige-n.ttf
 
-$(VER)/.docs_installed: $(VER)/.unpacked $(DOCS:%=$(VER)/%.bz2)
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
-	( cd $(VER); \
-	if [ -n "$(DOCS)" ]; then \
-		for f in "$(DOCS)"; do \
-			$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
-		done; \
-	fi )
-	touch $@
+DOCS = 
 
-$(VER)/.installed: $(VER)/.docs_installed $(VER)/.fonts_installed 
+FONTS_VER	= $(FONTS:%=$(VER)/%)
 
-clean:
-	$(RM) -r $(VER) $(ORIG_VER)
+$(VER)/%.ttf: $(VER)/fonts/%.TTF
+	$(CP) $< $@
 
-clobber: clean
+$(VER)/fonts/%.TTF: $(VER)/.unpacked
 
+install: $(FONTS_VER) $(VER)/.installed
+
+include ../Makefile.common

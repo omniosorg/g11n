@@ -18,36 +18,30 @@
 #
 # CDDL HEADER END
 #
-# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-FONTROOT	= $(FILEROOT)/usr/share/fonts/TrueType
+PROJECT		= lohit-$(FNAME)-ttf
+TARBALL		= $(VER).tar.gz
+URL_PRAVINS	= http://pravins.fedorapeople.org/lohit/$(FNAME)/$(TARBALL)
+URL_FEDORA	= https://fedorahosted.org/releases/l/o/lohit/$(TARBALL)
 
-$(VER)/.fonts_installed: $(VER)/.unpacked
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
-	( cd $(VER); \
-	for f in $(FONTS); do \
-		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
-	done; )
-	touch $@
+FONTS = Lohit-$(ID).ttf
+DOCS =	ChangeLog.$(ID)
 
-$(VER)/%.bz2: $(VER)/%
+ROOT_FONT_DIR 	= $(FONTROOT)/lohit
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-lohit
+
+all: $(VER)/.unpacked
+
+$(VER)/%.$(ID).bz2: $(VER)/%.$(ID)
 	$(BZIP2) -c $< > $@
 
-$(VER)/.docs_installed: $(VER)/.unpacked $(DOCS:%=$(VER)/%.bz2)
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
-	( cd $(VER); \
-	if [ -n "$(DOCS)" ]; then \
-		for f in "$(DOCS)"; do \
-			$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
-		done; \
-	fi )
-	touch $@
+$(VER)/%.$(ID): $(VER)/%
+	cp $< $@
 
-$(VER)/.installed: $(VER)/.docs_installed $(VER)/.fonts_installed 
+install: $(VER)/.installed
 
-clean:
-	$(RM) -r $(VER) $(ORIG_VER)
-
-clobber: clean
+include ../../Makefile.fonts
+include $(SRC)/Makefile.targ
 

@@ -18,10 +18,7 @@
 #
 # CDDL HEADER END
 #
-
-#
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 include $(SRC)/Makefile.master
@@ -59,7 +56,7 @@ all: $(SUBDIRS)
 install: $(SUBDIRS) .files_installed
 
 clean: $(SUBDIRS)
-	$(RM) .*installed
+	$(RM) .*installed *bz2
 
 .files_installed: .docs_installed
 	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)

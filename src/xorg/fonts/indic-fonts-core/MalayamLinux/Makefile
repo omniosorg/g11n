@@ -18,36 +18,41 @@
 #
 # CDDL HEADER END
 #
-# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-FONTROOT	= $(FILEROOT)/usr/share/fonts/TrueType
+include $(SRC)/Makefile.master
 
-$(VER)/.fonts_installed: $(VER)/.unpacked
+PROJECT:sh	= basename `pwd`
+VER 		= $(PROJECT)
+TARBALL		= MalOtf.ttf
+SOURCE_URL	= http://malayalamlinux.sourceforge.net/downloads/fonts/$(TARBALL)
+
+FONT = MalOtf.ttf
+
+
+ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/indic-fonts-core
+ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/indic-fonts-core
+
+$(VER)/.installed: $(VER)/.unpacked_withdir
 	$(INSDIR) -m 755 -u root -g bin $(ROOT_FONT_DIR)
-	( cd $(VER); \
-	for f in $(FONTS); do \
-		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
-	done; )
+	( cd $(VER); $(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $(FONT); )
 	touch $@
 
-$(VER)/%.bz2: $(VER)/%
-	$(BZIP2) -c $< > $@
+all: $(VER)/.unpacked_withdir
 
-$(VER)/.docs_installed: $(VER)/.unpacked $(DOCS:%=$(VER)/%.bz2)
-	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
-	( cd $(VER); \
-	if [ -n "$(DOCS)" ]; then \
-		for f in "$(DOCS)"; do \
-			$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
-		done; \
-	fi )
-	touch $@
-
-$(VER)/.installed: $(VER)/.docs_installed $(VER)/.fonts_installed 
+install: $(VER)/.installed
 
 clean:
 	$(RM) -r $(VER) $(ORIG_VER)
 
 clobber: clean
+
+include $(SRC)/Makefile.targ
+
+$(VER)/.unpacked_withdir: $(SOURCE_ARCHIVE)
+	-$(RM) -r $(VER)
+	mkdir $(VER)
+	$(CP) $(SOURCE_ARCHIVE) $(VER)/
+	touch $@
 
