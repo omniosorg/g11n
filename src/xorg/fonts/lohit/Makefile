@@ -44,11 +44,14 @@ SUBDIRS = \
 FILES = fonts.dir \
 	fonts.scale
 
+CONF_FILE = 66-lohit.conf
+
 DOCS =	assamese/lohit-assamese-ttf-2.4.3/COPYING \
 	assamese/lohit-assamese-ttf-2.4.3/COPYRIGHT
 
 ROOT_FONT_DIR 	= $(FILEROOT)/usr/share/fonts/TrueType/lohit
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-lohit
+FONTCONF_DIR	= $(FILEROOT)/etc/fonts/conf.avail
 
 all:=		TARGET= all
 install :=	TARGET= install
@@ -67,6 +70,8 @@ clean: $(SUBDIRS)
 	( for f in $(FILES); do \
 		$(INS) $(ROOT_FONT_DIR) -m 0444 -u root -g bin $$f; \
 	done; )
+	$(INSDIR) -m 755 -u root -g bin $(FONTCONF_DIR)
+	$(INS) $(FONTCONF_DIR) -m 0444 -u root -g bin $(CONF_FILE) 
 	touch $@
 
 %.bz2: %
