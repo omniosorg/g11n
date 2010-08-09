@@ -38,7 +38,7 @@ $(VER)/.docs_installed: $(VER)/.unpacked $(DOCS:%=$(VER)/%.bz2)
 	$(INSDIR) -m 755 -u root -g bin $(ROOT_DOC_DIR)
 	( cd $(VER); \
 	if [ -n "$(DOCS)" ]; then \
-		for f in "$(DOCS)"; do \
+		for f in $(DOCS); do \
 			$(INS) $(ROOT_DOC_DIR) -m 0444 -u root -g bin $$f.bz2; \
 		done; \
 	fi )
