@@ -35,19 +35,19 @@ f none usr/lib/locale/zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3 0555 root bin
 f none usr/lib/locale/zh_TW.BIG5/sparcv9/zh_TW.BIG5.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.BIG5@pinyin/64=./sparcv9
 d none usr/lib/locale/zh_TW.BIG5@pinyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.BIG5@pinyin/sparcv9/methods_zh_TW.BIG5@pinyin.so.3=../../zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3
+s none usr/lib/locale/zh_TW.BIG5@pinyin/sparcv9/methods_zh_TW.BIG5.so.3=../../zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3
 f none usr/lib/locale/zh_TW.BIG5@pinyin/sparcv9/zh_TW.BIG5@pinyin.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.BIG5@radical/64=./sparcv9
 d none usr/lib/locale/zh_TW.BIG5@radical/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.BIG5@radical/sparcv9/methods_zh_TW.BIG5@radical.so.3=../../zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3
+s none usr/lib/locale/zh_TW.BIG5@radical/sparcv9/methods_zh_TW.BIG5.so.3=../../zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3
 f none usr/lib/locale/zh_TW.BIG5@radical/sparcv9/zh_TW.BIG5@radical.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.BIG5@stroke/64=./sparcv9
 d none usr/lib/locale/zh_TW.BIG5@stroke/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.BIG5@stroke/sparcv9/methods_zh_TW.BIG5@stroke.so.3=../../zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3
+s none usr/lib/locale/zh_TW.BIG5@stroke/sparcv9/methods_zh_TW.BIG5.so.3=../../zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3
 f none usr/lib/locale/zh_TW.BIG5@stroke/sparcv9/zh_TW.BIG5@stroke.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.BIG5@zhuyin/64=./sparcv9
 d none usr/lib/locale/zh_TW.BIG5@zhuyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.BIG5@zhuyin/sparcv9/methods_zh_TW.BIG5@zhuyin.so.3=../../zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3
+s none usr/lib/locale/zh_TW.BIG5@zhuyin/sparcv9/methods_zh_TW.BIG5.so.3=../../zh_TW.BIG5/sparcv9/methods_zh_TW.BIG5.so.3
 f none usr/lib/locale/zh_TW.BIG5@zhuyin/sparcv9/zh_TW.BIG5@zhuyin.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.EUC/64=./sparcv9
 s none usr/lib/locale/zh_TW.EUC/LC_CTYPE/64=./sparcv9
@@ -59,19 +59,19 @@ f none usr/lib/locale/zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3 0555 root bin
 f none usr/lib/locale/zh_TW.EUC/sparcv9/zh_TW.EUC.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.EUC@pinyin/64=./sparcv9
 d none usr/lib/locale/zh_TW.EUC@pinyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.EUC@pinyin/sparcv9/methods_zh_TW.EUC@pinyin.so.3=../../zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3
+s none usr/lib/locale/zh_TW.EUC@pinyin/sparcv9/methods_zh_TW.EUC.so.3=../../zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3
 f none usr/lib/locale/zh_TW.EUC@pinyin/sparcv9/zh_TW.EUC@pinyin.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.EUC@radical/64=./sparcv9
 d none usr/lib/locale/zh_TW.EUC@radical/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.EUC@radical/sparcv9/methods_zh_TW.EUC@radical.so.3=../../zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3
+s none usr/lib/locale/zh_TW.EUC@radical/sparcv9/methods_zh_TW.EUC.so.3=../../zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3
 f none usr/lib/locale/zh_TW.EUC@radical/sparcv9/zh_TW.EUC@radical.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.EUC@stroke/64=./sparcv9
 d none usr/lib/locale/zh_TW.EUC@stroke/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.EUC@stroke/sparcv9/methods_zh_TW.EUC@stroke.so.3=../../zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3
+s none usr/lib/locale/zh_TW.EUC@stroke/sparcv9/methods_zh_TW.EUC.so.3=../../zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3
 f none usr/lib/locale/zh_TW.EUC@stroke/sparcv9/zh_TW.EUC@stroke.so.3 0555 root bin
 s none usr/lib/locale/zh_TW.EUC@zhuyin/64=./sparcv9
 d none usr/lib/locale/zh_TW.EUC@zhuyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_TW.EUC@zhuyin/sparcv9/methods_zh_TW.EUC@zhuyin.so.3=../../zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3
+s none usr/lib/locale/zh_TW.EUC@zhuyin/sparcv9/methods_zh_TW.EUC.so.3=../../zh_TW.EUC/sparcv9/methods_zh_TW.EUC.so.3
 f none usr/lib/locale/zh_TW.EUC@zhuyin/sparcv9/zh_TW.EUC@zhuyin.so.3 0555 root bin
 
 s none usr/lib/locale/zh_TW.UTF-8@pinyin/64=./sparcv9
