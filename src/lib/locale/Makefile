@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,12 +18,7 @@
 #
 # CDDL HEADER END
 #
-
-#
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 include $(SRC)/Makefile.master
@@ -48,7 +43,7 @@ nl_BE nl_BE.ISO8859-1 nl_BE.ISO8859-15 nl_BE.UTF-8 nl_NL nl_NL.ISO8859-1 nl_NL.I
 no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk pl_PL pl_PL.ISO8859-2 pl_PL.UTF-8 pt_BR pt_BR.ISO8859-1 pt_BR.UTF-8 pt_PT pt_PT.ISO8859-1 \
 pt_PT.ISO8859-15 pt_PT.UTF-8 ro_RO ro_RO.ISO8859-2 ro_RO.UTF-8 ru_RU ru_RU.ANSI1251 ru_RU.ISO8859-5 ru_RU.KOI8-R ru_RU.UTF-8 sh_BA \
 sh_BA.ISO8859-2@bosnia sh_BA.UTF-8 sk_SK sk_SK.ISO8859-2 sk_SK.UTF-8 sl_SI sl_SI.ISO8859-2 sl_SI.UTF-8 sq_AL sq_AL.ISO8859-2 \
-sq_AL.UTF-8 sr_CS sr_CS.UTF-8 sr_YU sr_YU.ISO8859-5 sv sv_SE sv_SE.ISO8859-1 sv_SE.ISO8859-15 sv_SE.UTF-8 sv_SE.UTF-8@euro ta_IN.UTF-8 te_IN.UTF-8 th_TH \
+sq_AL.UTF-8 sr_CS sr_CS.UTF-8 sr_YU sr_YU.ISO8859-5 sv sv_SE sv_SE.ISO8859-1 sv_SE.ISO8859-15 sv_SE.UTF-8 sv_SE.UTF-8@euro ta_IN.UTF-8 te_IN.UTF-8 th_TH.TIS620 \
 th_TH.UTF-8 tr_TR tr_TR.ISO8859-9 tr_TR.UTF-8 zh zh_CN.GB18030 zh_CN.GBK zh_CN.UTF-8 zh_HK.BIG5HK zh_HK.UTF-8 zh_TW zh_TW.BIG5 \
 zh_TW.UTF-8 uk_UA uk_UA.UTF-8 kk_KZ kk_KZ.UTF-8 ms_MY.UTF-8 id_ID.UTF-8 vi_VN.UTF-8 ms_MY id_ID vi_VN \
 ka_GE ka_GE.UTF-8 be_BY be_BY.UTF-8 es_US es_US.UTF-8 af_ZA af_ZA.UTF-8 az_AZ az_AZ.UTF-8 it_CH it_CH.UTF-8 ky_KG ky_KG.UTF-8 \
