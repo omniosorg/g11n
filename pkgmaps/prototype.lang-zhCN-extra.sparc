@@ -45,39 +45,39 @@ f none usr/lib/locale/zh_CN.GBK/sparcv9/zh_CN.GBK.so.3 0555 root bin
 
 s none usr/lib/locale/zh_CN.EUC@pinyin/64=./sparcv9
 d none usr/lib/locale/zh_CN.EUC@pinyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.EUC@pinyin/sparcv9/methods_zh_CN.EUC@pinyin.so.3=../../zh_CN.EUC/sparcv9/methods_zh_CN.EUC.so.3
+s none usr/lib/locale/zh_CN.EUC@pinyin/sparcv9/methods_zh_CN.EUC.so.3=../../zh_CN.EUC/sparcv9/methods_zh_CN.EUC.so.3
 f none usr/lib/locale/zh_CN.EUC@pinyin/sparcv9/zh_CN.EUC@pinyin.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.EUC@radical/64=./sparcv9
 d none usr/lib/locale/zh_CN.EUC@radical/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.EUC@radical/sparcv9/methods_zh_CN.EUC@radical.so.3=../../zh_CN.EUC/sparcv9/methods_zh_CN.EUC.so.3
+s none usr/lib/locale/zh_CN.EUC@radical/sparcv9/methods_zh_CN.EUC.so.3=../../zh_CN.EUC/sparcv9/methods_zh_CN.EUC.so.3
 f none usr/lib/locale/zh_CN.EUC@radical/sparcv9/zh_CN.EUC@radical.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.EUC@stroke/64=./sparcv9
 d none usr/lib/locale/zh_CN.EUC@stroke/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.EUC@stroke/sparcv9/methods_zh_CN.EUC@stroke.so.3=../../zh_CN.EUC/sparcv9/methods_zh_CN.EUC.so.3
+s none usr/lib/locale/zh_CN.EUC@stroke/sparcv9/methods_zh_CN.EUC.so.3=../../zh_CN.EUC/sparcv9/methods_zh_CN.EUC.so.3
 f none usr/lib/locale/zh_CN.EUC@stroke/sparcv9/zh_CN.EUC@stroke.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.GB18030@pinyin/64=./sparcv9
 d none usr/lib/locale/zh_CN.GB18030@pinyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.GB18030@pinyin/sparcv9/methods_zh_CN.GB18030@pinyin.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
+s none usr/lib/locale/zh_CN.GB18030@pinyin/sparcv9/methods_zh_CN.GB18030.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
 f none usr/lib/locale/zh_CN.GB18030@pinyin/sparcv9/zh_CN.GB18030@pinyin.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.GB18030@radical/64=./sparcv9
 d none usr/lib/locale/zh_CN.GB18030@radical/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.GB18030@radical/sparcv9/methods_zh_CN.GB18030@radical.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
+s none usr/lib/locale/zh_CN.GB18030@radical/sparcv9/methods_zh_CN.GB18030.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
 f none usr/lib/locale/zh_CN.GB18030@radical/sparcv9/zh_CN.GB18030@radical.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.GB18030@stroke/64=./sparcv9
 d none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9/methods_zh_CN.GB18030@stroke.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
+s none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9/methods_zh_CN.GB18030.so.3=../../zh_CN.GB18030/sparcv9/methods_zh_CN.GB18030.so.3
 f none usr/lib/locale/zh_CN.GB18030@stroke/sparcv9/zh_CN.GB18030@stroke.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.GBK@pinyin/64=./sparcv9
 d none usr/lib/locale/zh_CN.GBK@pinyin/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.GBK@pinyin/sparcv9/methods_zh_CN.GBK@pinyin.so.3=../../zh_CN.GBK/sparcv9/methods_zh_CN.GBK.so.3
+s none usr/lib/locale/zh_CN.GBK@pinyin/sparcv9/methods_zh_CN.GBK.so.3=../../zh_CN.GBK/sparcv9/methods_zh_CN.GBK.so.3
 f none usr/lib/locale/zh_CN.GBK@pinyin/sparcv9/zh_CN.GBK@pinyin.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.GBK@radical/64=./sparcv9
 d none usr/lib/locale/zh_CN.GBK@radical/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.GBK@radical/sparcv9/methods_zh_CN.GBK@radical.so.3=../../zh_CN.GBK/sparcv9/methods_zh_CN.GBK.so.3
+s none usr/lib/locale/zh_CN.GBK@radical/sparcv9/methods_zh_CN.GBK.so.3=../../zh_CN.GBK/sparcv9/methods_zh_CN.GBK.so.3
 f none usr/lib/locale/zh_CN.GBK@radical/sparcv9/zh_CN.GBK@radical.so.3 0555 root bin
 s none usr/lib/locale/zh_CN.GBK@stroke/64=./sparcv9
 d none usr/lib/locale/zh_CN.GBK@stroke/sparcv9 0755 root bin
-s none usr/lib/locale/zh_CN.GBK@stroke/sparcv9/methods_zh_CN.GBK@stroke.so.3=../../zh_CN.GBK/sparcv9/methods_zh_CN.GBK.so.3
+s none usr/lib/locale/zh_CN.GBK@stroke/sparcv9/methods_zh_CN.GBK.so.3=../../zh_CN.GBK/sparcv9/methods_zh_CN.GBK.so.3
 f none usr/lib/locale/zh_CN.GBK@stroke/sparcv9/zh_CN.GBK@stroke.so.3 0555 root bin
 
 s none usr/lib/locale/zh_CN.UTF-8@pinyin/64=./sparcv9
