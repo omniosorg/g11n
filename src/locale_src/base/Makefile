@@ -28,7 +28,7 @@ LOCALES_UTF8 = ja_JP.UTF-8 zh.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.UTF
 # not migrated yet because different reasons
 LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk sh_BA.ISO8859-2@bosnia 
 
-LOCALES_OTHER = ja ja_JP.PCK ja_JP.eucJP ko ko@dict th_TH.TIS620 zh zh_CN.GB18030 zh.GBK \
+LOCALES_OTHER = ja_JP.PCK ja_JP.eucJP ko ko@dict th_TH.TIS620 zh zh_CN.GB18030 zh.GBK \
 		zh_HK.BIG5HK zh_TW zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical \
 		zh_CN.GB18030@stroke zh.GBK@pinyin zh.GBK@radical zh.GBK@stroke \
 		zh_HK.BIG5HK@pinyin zh_HK.BIG5HK@radical zh_HK.BIG5HK@stroke zh_HK.BIG5HK@zhuyin \
@@ -150,9 +150,9 @@ he.so.$(METHOD_VERSION): he.localedef.build
 #
 
 
-ja.so.$(METHOD_VERSION): ja.localedef
-	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "-R/usr/lib/locale/ja_JP.eucJP" -x $(_METHODSRC)/ja.x -f $(_CHARMAPS)/eucJP.charmap -i ja.localedef ja
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "-R/usr/lib/locale/ja_JP.eucJP/$(MACH64)" -x $(_METHODSRC)/ja.x -f $(_CHARMAPS)/eucJP.charmap -i ../ja.localedef ja
+#ja.so.$(METHOD_VERSION): ja.localedef
+#	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "-R/usr/lib/locale/ja_JP.eucJP" -x $(_METHODSRC)/ja.x -f $(_CHARMAPS)/eucJP.charmap -i ja.localedef ja
+#	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "-R/usr/lib/locale/ja_JP.eucJP/$(MACH64)" -x $(_METHODSRC)/ja.x -f $(_CHARMAPS)/eucJP.charmap -i ../ja.localedef ja
 
 %.PCK.so.$(METHOD_VERSION): %.PCK.localedef
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "-R/usr/lib/locale/ja_JP.PCK" -x $(_METHODSRC)/PCK.x -f $(_CHARMAPS)/PCK.charmap -i $< $(<:%.localedef=%)
