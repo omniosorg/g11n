@@ -20,41 +20,25 @@
 #
 # Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-
 include $(SRC)/Makefile.master
 
-SUBDIRS= lddat
+LAYOUT_VERSION=1
 
-all :=		TARGET=all
-install :=	TARGET=install
-clean :=	TARGET=clean
-clobber :=	TARGET=clobber
-lint :=		TARGET=lint
+LOCALE:sh = cd ..;basename `pwd`
 
-LOCALE=	ja_JP.PCK
-SONAME=	$(RESOLVE_SO)
+LAYOUT_SO=$(LOCALE).layout.so.$(LAYOUT_VERSION)
+LAYOUT64_SO=$(MACH64)/$(LAYOUT_SO)
+
+TARGETDIR = $(FILEROOT)/usr/lib/locale/$(LOCALE)/LO_LTYPE/
+
+TARGET_FLAGS=-DARABIC_TARGET -DAR_DATA
 
 dummy: all
 
-#include 	../common/Makefile.asian
-include 	../common/Makefile.ja
+install: $(MACH64)  all 
+	$(INSDIR)  $(TARGETDIR)/$(MACH64)
+	$(INS) $(TARGETDIR) $(LAYOUT_SO) 
+	$(INS) $(TARGETDIR)/$(MACH64) $(LAYOUT64_SO) 
 
-FILES = locale_description locale_map
-CLEANFILES += wdresolve.c
+include ../../common/layout/Makefile.layout
 
-#CPPFLAGS= -D_TS_ERRNO -I/usr/include
-
-CLOBBERFILES=
-
-.KEEP_STATE:
-
-all: $(MACH64)  $(RESOLVE_SO) $(SUBDIRS)
-
-install: all $(FILES.obj) $(SUBDIRS)
-	$(INSDIR) $(LC_CTYPE_DIR_64)
-	$(INS) $(LC_CTYPE_DIR) $(RESOLVE_SO)
-	$(INS) $(LC_CTYPE_DIR_64) $(MACH64)/$(RESOLVE_SO)
-
-wdresolve.c: ../ja_JP.eucJP/$@
-	rm -f $@
-	ln -s ../ja_JP.eucJP/$@ .

@@ -1,9 +1,8 @@
 #
-#
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -19,12 +18,8 @@
 #
 # CDDL HEADER END
 #
-#ident	"@(#)Makefile	1.12	97/10/31 SMI"
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
-# jos/locale/ja/mbwcconv/Makefile
 
 include $(SRC)/Makefile.master
 
@@ -44,7 +39,7 @@ dummy: all
 #include 	../common/Makefile.asian
 include 	../common/Makefile.ja
 
-FILES = locale_description locale_map geo_map
+FILES = locale_description locale_map
 CLEANFILES += wdresolve.c
 
 #CPPFLAGS= -D_TS_ERRNO -I/usr/include

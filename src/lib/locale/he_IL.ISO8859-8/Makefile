@@ -23,38 +23,31 @@
 
 include $(SRC)/Makefile.master
 
-SUBDIRS= lddat
+install		:=	TARGET = install
+all		:=	TARGET = all
+lint		:=	TARGET = lint
+clean		:=	TARGET = clean
+clobber		:=	TARGET = clobber
 
-all :=		TARGET=all
-install :=	TARGET=install
-clean :=	TARGET=clean
-clobber :=	TARGET=clobber
-lint :=		TARGET=lint
+LOCALE:sh = basename `pwd`
 
-LOCALE=	ja_JP.PCK
-SONAME=	$(RESOLVE_SO)
+TARGETDIR =	$(FILEROOT)/usr/lib/locale/$(LOCALE)
 
-dummy: all
+FILES = locale_map.miniroot
 
-#include 	../common/Makefile.asian
-include 	../common/Makefile.ja
+SUBDIRS = LO_LTYPE
 
-FILES = locale_description locale_map
-CLEANFILES += wdresolve.c
+TARGETDIRS = $(TARGETDIR)
 
-#CPPFLAGS= -D_TS_ERRNO -I/usr/include
+all: $(TARGETDIRS) $(SUBDIRS)
 
-CLOBBERFILES=
+include $(SRC)/src/Makefile.targ
 
-.KEEP_STATE:
+install: $(TARGETDIRS) $(FILES.obj) $(SUBDIRS)
 
-all: $(MACH64)  $(RESOLVE_SO) $(SUBDIRS)
+clean: objclean $(SUBDIRS)
+	$(RM) -r $(TARGETDIR)
 
-install: all $(FILES.obj) $(SUBDIRS)
-	$(INSDIR) $(LC_CTYPE_DIR_64)
-	$(INS) $(LC_CTYPE_DIR) $(RESOLVE_SO)
-	$(INS) $(LC_CTYPE_DIR_64) $(MACH64)/$(RESOLVE_SO)
+FRC:
 
-wdresolve.c: ../ja_JP.eucJP/$@
-	rm -f $@
-	ln -s ../ja_JP.eucJP/$@ .
+

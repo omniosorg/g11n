@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,8 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 d none usr 0755 root sys
@@ -362,7 +361,7 @@ d none usr/lib/locale/he 0755 root bin
 d none usr/lib/locale/he/LC_MESSAGES 0755 root bin
 f none usr/lib/locale/he/locale_description 0644 root bin
 f none usr/lib/locale/he/locale_map=usr/lib/locale/he/locale_map.miniroot 0644 root bin
-f none usr/lib/locale/he/geo_map 0644 root bin
+#f none usr/lib/locale/he/geo_map 0644 root bin
 d none usr/lib/locale/he_IL.UTF-8 0755 root bin
 s none usr/lib/locale/he_IL.UTF-8/he_IL.UTF-8.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 d none usr/lib/locale/he_IL.UTF-8 0755 root bin
@@ -582,10 +581,10 @@ s none usr/lib/locale/sv.UTF-8/locale_description=../sv_SE.UTF-8/locale_descript
 # ca_ES.ISO8859-1
 d none usr/lib/locale/ca 0755 root bin
 s none usr/lib/locale/ca/ca.so.3=../ca_ES.ISO8859-1/ca_ES.ISO8859-1.so.3
-f none usr/lib/locale/ca/geo_map 0644 root bin
+#f none usr/lib/locale/ca/geo_map 0644 root bin
 f none usr/lib/locale/ca/locale_description 0644 root bin
 d none usr/lib/locale/ca_ES 0755 root bin
-f none usr/lib/locale/ca_ES/geo_map 0644 root bin
+#f none usr/lib/locale/ca_ES/geo_map 0644 root bin
 s none usr/lib/locale/ca_ES/locale_description=../ca_ES.ISO8859-1/locale_description
 s none usr/lib/locale/ca_ES/ca_ES.so.3=../ca_ES.ISO8859-1/ca_ES.ISO8859-1.so.3
 d none usr/lib/locale/ca_ES.ISO8859-1 0755 root bin
@@ -1006,76 +1005,76 @@ s none usr/lib/locale/es_UY/locale_description=../es_UY.ISO8859-1/locale_descrip
 s none usr/lib/locale/es_VE/locale_description=../es_VE.ISO8859-1/locale_description
 
 # geo_map files
-f none usr/lib/locale/ar/geo_map 0644 root bin
-f none usr/lib/locale/fr/geo_map 0644 root bin
-f none usr/lib/locale/en_GB/geo_map 0644 root bin
-f none usr/lib/locale/en_IE/geo_map 0644 root bin
-f none usr/lib/locale/fr_FR/geo_map 0644 root bin
-f none usr/lib/locale/fr_BE/geo_map 0644 root bin
-f none usr/lib/locale/nl_NL/geo_map 0644 root bin
-f none usr/lib/locale/nl_BE/geo_map 0644 root bin
-f none usr/lib/locale/it/geo_map 0644 root bin
-f none usr/lib/locale/es/geo_map 0644 root bin
-f none usr/lib/locale/el_GR/geo_map 0644 root bin
-f none usr/lib/locale/it_IT/geo_map 0644 root bin
-f none usr/lib/locale/es_ES/geo_map 0644 root bin
-f none usr/lib/locale/pt_PT/geo_map 0644 root bin
-f none usr/lib/locale/de/geo_map 0644 root bin
-f none usr/lib/locale/cs_CZ/geo_map 0644 root bin
-f none usr/lib/locale/de_DE/geo_map 0644 root bin
-f none usr/lib/locale/de_AT/geo_map 0644 root bin
-f none usr/lib/locale/de_CH/geo_map 0644 root bin
-f none usr/lib/locale/fr_CH/geo_map 0644 root bin
-f none usr/lib/locale/hu_HU/geo_map 0644 root bin
-f none usr/lib/locale/pl_PL/geo_map 0644 root bin
-f none usr/lib/locale/sk_SK/geo_map 0644 root bin
-f none usr/lib/locale/en_AU/geo_map 0644 root bin
-f none usr/lib/locale/en_NZ/geo_map 0644 root bin
-f none usr/lib/locale/es_CR/geo_map 0644 root bin
-f none usr/lib/locale/es_GT/geo_map 0644 root bin
-f none usr/lib/locale/es_NI/geo_map 0644 root bin
-f none usr/lib/locale/es_PA/geo_map 0644 root bin
-f none usr/lib/locale/es_SV/geo_map 0644 root bin
-f none usr/lib/locale/en_US/geo_map 0644 root bin
-f none usr/lib/locale/en_CA/geo_map 0644 root bin
-f none usr/lib/locale/es_MX/geo_map 0644 root bin
-f none usr/lib/locale/fr_CA/geo_map 0644 root bin
-f none usr/lib/locale/es_AR/geo_map 0644 root bin
-f none usr/lib/locale/es_BO/geo_map 0644 root bin
-f none usr/lib/locale/es_CL/geo_map 0644 root bin
-f none usr/lib/locale/es_CO/geo_map 0644 root bin
-f none usr/lib/locale/es_EC/geo_map 0644 root bin
-f none usr/lib/locale/es_PE/geo_map 0644 root bin
-f none usr/lib/locale/es_PY/geo_map 0644 root bin
-f none usr/lib/locale/es_UY/geo_map 0644 root bin
-f none usr/lib/locale/es_VE/geo_map 0644 root bin
-f none usr/lib/locale/pt_BR/geo_map 0644 root bin
-f none usr/lib/locale/lv_LV/geo_map 0644 root bin
-f none usr/lib/locale/bg_BG/geo_map 0644 root bin
-f none usr/lib/locale/hr_HR/geo_map 0644 root bin
-f none usr/lib/locale/mk_MK/geo_map 0644 root bin
-f none usr/lib/locale/sv/geo_map 0644 root bin
-f none usr/lib/locale/is_IS/geo_map 0644 root bin
-f none usr/lib/locale/da_DK/geo_map 0644 root bin
-f none usr/lib/locale/fi_FI/geo_map 0644 root bin
-f none usr/lib/locale/no_NO/geo_map 0644 root bin
-f none usr/lib/locale/sv_SE/geo_map 0644 root bin
-f none usr/lib/locale/ru_RU/geo_map 0644 root bin
-f none usr/lib/locale/et_EE/geo_map 0644 root bin
-f none usr/lib/locale/lt_LT/geo_map 0644 root bin
-f none usr/lib/locale/sh_BA/geo_map 0644 root bin
-f none usr/lib/locale/ro_RO/geo_map 0644 root bin
-f none usr/lib/locale/sl_SI/geo_map 0644 root bin
-f none usr/lib/locale/sq_AL/geo_map 0644 root bin
-f none usr/lib/locale/sr_YU/geo_map 0644 root bin
-f none usr/lib/locale/tr_TR/geo_map 0644 root bin
+#f none usr/lib/locale/ar/geo_map 0644 root bin
+#f none usr/lib/locale/fr/geo_map 0644 root bin
+#f none usr/lib/locale/en_GB/geo_map 0644 root bin
+#f none usr/lib/locale/en_IE/geo_map 0644 root bin
+#f none usr/lib/locale/fr_FR/geo_map 0644 root bin
+#f none usr/lib/locale/fr_BE/geo_map 0644 root bin
+#f none usr/lib/locale/nl_NL/geo_map 0644 root bin
+#f none usr/lib/locale/nl_BE/geo_map 0644 root bin
+#f none usr/lib/locale/it/geo_map 0644 root bin
+#f none usr/lib/locale/es/geo_map 0644 root bin
+#f none usr/lib/locale/el_GR/geo_map 0644 root bin
+#f none usr/lib/locale/it_IT/geo_map 0644 root bin
+#f none usr/lib/locale/es_ES/geo_map 0644 root bin
+#f none usr/lib/locale/pt_PT/geo_map 0644 root bin
+#f none usr/lib/locale/de/geo_map 0644 root bin
+#f none usr/lib/locale/cs_CZ/geo_map 0644 root bin
+#f none usr/lib/locale/de_DE/geo_map 0644 root bin
+#f none usr/lib/locale/de_AT/geo_map 0644 root bin
+#f none usr/lib/locale/de_CH/geo_map 0644 root bin
+#f none usr/lib/locale/fr_CH/geo_map 0644 root bin
+#f none usr/lib/locale/hu_HU/geo_map 0644 root bin
+#f none usr/lib/locale/pl_PL/geo_map 0644 root bin
+#f none usr/lib/locale/sk_SK/geo_map 0644 root bin
+#f none usr/lib/locale/en_AU/geo_map 0644 root bin
+#f none usr/lib/locale/en_NZ/geo_map 0644 root bin
+#f none usr/lib/locale/es_CR/geo_map 0644 root bin
+#f none usr/lib/locale/es_GT/geo_map 0644 root bin
+#f none usr/lib/locale/es_NI/geo_map 0644 root bin
+#f none usr/lib/locale/es_PA/geo_map 0644 root bin
+#f none usr/lib/locale/es_SV/geo_map 0644 root bin
+#f none usr/lib/locale/en_US/geo_map 0644 root bin
+#f none usr/lib/locale/en_CA/geo_map 0644 root bin
+#f none usr/lib/locale/es_MX/geo_map 0644 root bin
+#f none usr/lib/locale/fr_CA/geo_map 0644 root bin
+#f none usr/lib/locale/es_AR/geo_map 0644 root bin
+#f none usr/lib/locale/es_BO/geo_map 0644 root bin
+#f none usr/lib/locale/es_CL/geo_map 0644 root bin
+#f none usr/lib/locale/es_CO/geo_map 0644 root bin
+#f none usr/lib/locale/es_EC/geo_map 0644 root bin
+#f none usr/lib/locale/es_PE/geo_map 0644 root bin
+#f none usr/lib/locale/es_PY/geo_map 0644 root bin
+#f none usr/lib/locale/es_UY/geo_map 0644 root bin
+#f none usr/lib/locale/es_VE/geo_map 0644 root bin
+#f none usr/lib/locale/pt_BR/geo_map 0644 root bin
+#f none usr/lib/locale/lv_LV/geo_map 0644 root bin
+#f none usr/lib/locale/bg_BG/geo_map 0644 root bin
+#f none usr/lib/locale/hr_HR/geo_map 0644 root bin
+#f none usr/lib/locale/mk_MK/geo_map 0644 root bin
+#f none usr/lib/locale/sv/geo_map 0644 root bin
+#f none usr/lib/locale/is_IS/geo_map 0644 root bin
+#f none usr/lib/locale/da_DK/geo_map 0644 root bin
+#f none usr/lib/locale/fi_FI/geo_map 0644 root bin
+#f none usr/lib/locale/no_NO/geo_map 0644 root bin
+#f none usr/lib/locale/sv_SE/geo_map 0644 root bin
+#f none usr/lib/locale/ru_RU/geo_map 0644 root bin
+#f none usr/lib/locale/et_EE/geo_map 0644 root bin
+#f none usr/lib/locale/lt_LT/geo_map 0644 root bin
+#f none usr/lib/locale/sh_BA/geo_map 0644 root bin
+#f none usr/lib/locale/ro_RO/geo_map 0644 root bin
+#f none usr/lib/locale/sl_SI/geo_map 0644 root bin
+#f none usr/lib/locale/sq_AL/geo_map 0644 root bin
+#f none usr/lib/locale/sr_YU/geo_map 0644 root bin
+#f none usr/lib/locale/tr_TR/geo_map 0644 root bin
 
 # looks like someone forgot about these locales in the installer ....
 # ar_EG
 d none usr/lib/locale/ar_EG 0755 root bin
 s none usr/lib/locale/ar_EG/ar_EG.so.3=../ar_EG.UTF-8/ar_EG.UTF-8.so.3
 s none usr/lib/locale/ar_EG/locale_description=../ar_EG.UTF-8/locale_description
-f none usr/lib/locale/ar_EG/geo_map 0644 root bin
+#f none usr/lib/locale/ar_EG/geo_map 0644 root bin
 
 # ar_SA.UTF-8
 d none usr/lib/locale/ar_SA.UTF-8 0755 root bin
@@ -1088,13 +1087,13 @@ f none usr/lib/locale/ar_SA.UTF-8/locale_map=usr/lib/locale/ar_SA.UTF-8/locale_m
 d none usr/lib/locale/ar_SA 0755 root bin
 s none usr/lib/locale/ar_SA/ar_SA.so.3=../ar_SA.UTF-8/ar_SA.UTF-8.so.3
 s none usr/lib/locale/ar_SA/locale_description=../ar_SA.UTF-8/locale_description
-f none usr/lib/locale/ar_SA/geo_map 0644 root bin
+#f none usr/lib/locale/ar_SA/geo_map 0644 root bin
 
 # he_IL
 d none usr/lib/locale/he_IL 0755 root bin
 s none usr/lib/locale/he_IL/he_IL.so.3=../he_IL.UTF-8/he_IL.UTF-8.so.3
 s none usr/lib/locale/he_IL/locale_description=../he_IL.UTF-8/locale_description
-f none usr/lib/locale/he_IL/geo_map 0644 root bin
+#f none usr/lib/locale/he_IL/geo_map 0644 root bin
 
 # ---------------- phase 1 new locales ---------------------
 # ca_ES.UTF-8
@@ -1297,43 +1296,43 @@ f none usr/lib/locale/sl_SI.UTF-8/locale_map=usr/lib/locale/sl_SI.UTF-8/locale_m
 d none usr/lib/locale/de_LU 0755 root bin
 s none usr/lib/locale/de_LU/de_LU.so.3=../de_LU.UTF-8/de_LU.UTF-8.so.3
 s none usr/lib/locale/de_LU/locale_description=../de_LU.UTF-8/locale_description
-f none usr/lib/locale/de_LU/geo_map 0644 root bin
+#f none usr/lib/locale/de_LU/geo_map 0644 root bin
 
 # el_CY
 d none usr/lib/locale/el_CY 0755 root bin
 s none usr/lib/locale/el_CY/el_CY.so.3=../el_CY.UTF-8/el_CY.UTF-8.so.3
 s none usr/lib/locale/el_CY/locale_description=../el_CY.UTF-8/locale_description
-f none usr/lib/locale/el_CY/geo_map 0644 root bin
+#f none usr/lib/locale/el_CY/geo_map 0644 root bin
 
 # en_MT
 d none usr/lib/locale/en_MT 0755 root bin
 s none usr/lib/locale/en_MT/en_MT.so.3=../en_MT.UTF-8/en_MT.UTF-8.so.3
 s none usr/lib/locale/en_MT/locale_description=../en_MT.UTF-8/locale_description
-f none usr/lib/locale/en_MT/geo_map 0644 root bin
+#f none usr/lib/locale/en_MT/geo_map 0644 root bin
 
 # fr_LU
 d none usr/lib/locale/fr_LU 0755 root bin
 s none usr/lib/locale/fr_LU/fr_LU.so.3=../fr_LU.UTF-8/fr_LU.UTF-8.so.3
 s none usr/lib/locale/fr_LU/locale_description=../fr_LU.UTF-8/locale_description
-f none usr/lib/locale/fr_LU/geo_map 0644 root bin
+#f none usr/lib/locale/fr_LU/geo_map 0644 root bin
 
 # mt_MT
 d none usr/lib/locale/mt_MT 0755 root bin
 s none usr/lib/locale/mt_MT/mt_MT.so.3=../mt_MT.UTF-8/mt_MT.UTF-8.so.3
 s none usr/lib/locale/mt_MT/locale_description=../mt_MT.UTF-8/locale_description
-f none usr/lib/locale/mt_MT/geo_map 0644 root bin
+#f none usr/lib/locale/mt_MT/geo_map 0644 root bin
 
 # nb_NO
 d none usr/lib/locale/nb_NO 0755 root bin
 s none usr/lib/locale/nb_NO/nb_NO.so.3=../nb_NO.UTF-8/nb_NO.UTF-8.so.3
 s none usr/lib/locale/nb_NO/locale_description=../nb_NO.UTF-8/locale_description
-f none usr/lib/locale/nb_NO/geo_map 0644 root bin
+#f none usr/lib/locale/nb_NO/geo_map 0644 root bin
 
 # nn_NO
 d none usr/lib/locale/nn_NO 0755 root bin
 s none usr/lib/locale/nn_NO/nn_NO.so.3=../nn_NO.UTF-8/nn_NO.UTF-8.so.3
 s none usr/lib/locale/nn_NO/locale_description=../nn_NO.UTF-8/locale_description
-f none usr/lib/locale/nn_NO/geo_map 0644 root bin
+#f none usr/lib/locale/nn_NO/geo_map 0644 root bin
 
 # ------------- END OF phase 1 new locales ---------------
 
@@ -1517,7 +1516,7 @@ f none usr/lib/locale/is_IS.UTF-8/locale_map=usr/lib/locale/is_IS.UTF-8/locale_m
 d none usr/lib/locale/sr_CS 0755 root bin
 s none usr/lib/locale/sr_CS/sr_CS.so.3=../sr_CS.UTF-8/sr_CS.UTF-8.so.3
 s none usr/lib/locale/sr_CS/locale_description=../sr_CS.UTF-8/locale_description
-f none usr/lib/locale/sr_CS/geo_map 0644 root bin
+#f none usr/lib/locale/sr_CS/geo_map 0644 root bin
 
 # ------------- end New locales added by Yuriy Kuznetsov on 13.10.2005 ---------------
 
@@ -1532,7 +1531,7 @@ f none usr/lib/locale/uk_UA.UTF-8/locale_map=usr/lib/locale/uk_UA.UTF-8/locale_m
 d none usr/lib/locale/uk_UA 0755 root bin
 s none usr/lib/locale/uk_UA/uk_UA.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/uk_UA/locale_description=../uk_UA.UTF-8/locale_description
-f none usr/lib/locale/uk_UA/geo_map 0644 root bin
+#f none usr/lib/locale/uk_UA/geo_map 0644 root bin
 
 # kk_KZ.UTF-8
 d none usr/lib/locale/kk_KZ.UTF-8 0755 root bin
@@ -1545,12 +1544,12 @@ f none usr/lib/locale/kk_KZ.UTF-8/locale_map=usr/lib/locale/kk_KZ.UTF-8/locale_m
 d none usr/lib/locale/kk_KZ 0755 root bin
 s none usr/lib/locale/kk_KZ/kk_KZ.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/kk_KZ/locale_description=../kk_KZ.UTF-8/locale_description
-f none usr/lib/locale/kk_KZ/geo_map 0644 root bin
+#f none usr/lib/locale/kk_KZ/geo_map 0644 root bin
 
 # vi_VN
 d none usr/lib/locale/vi_VN 0755 root bin
 s none usr/lib/locale/vi_VN/locale_description=../vi_VN.UTF-8/locale_description
-f none usr/lib/locale/vi_VN/geo_map 0644 root bin 
+#f none usr/lib/locale/vi_VN/geo_map 0644 root bin 
 
 # vi_VN.UTF-8
 d none usr/lib/locale/vi_VN.UTF-8 0755 root bin
@@ -1562,7 +1561,7 @@ f none usr/lib/locale/vi_VN.UTF-8/locale_map=usr/lib/locale/vi_VN.UTF-8/locale_m
 # ms_MY
 d none usr/lib/locale/ms_MY 0755 root bin
 s none usr/lib/locale/ms_MY/locale_description=../ms_MY.UTF-8/locale_description
-f none usr/lib/locale/ms_MY/geo_map 0644 root bin 
+#f none usr/lib/locale/ms_MY/geo_map 0644 root bin 
 
 # ms_MY.UTF-8
 d none usr/lib/locale/ms_MY.UTF-8 0755 root bin
@@ -1574,7 +1573,7 @@ f none usr/lib/locale/ms_MY.UTF-8/locale_map=usr/lib/locale/ms_MY.UTF-8/locale_m
 # id_ID
 d none usr/lib/locale/id_ID 0755 root bin
 s none usr/lib/locale/id_ID/locale_description=../id_ID.UTF-8/locale_description
-f none usr/lib/locale/id_ID/geo_map 0644 root bin 
+#f none usr/lib/locale/id_ID/geo_map 0644 root bin 
 
 # id_ID.UTF-8
 d none usr/lib/locale/id_ID.UTF-8 0755 root bin
@@ -1594,7 +1593,7 @@ f none usr/lib/locale/es_US.UTF-8/locale_map=usr/lib/locale/es_US.UTF-8/locale_m
 d none usr/lib/locale/es_US 0755 root bin
 s none usr/lib/locale/es_US/es_US.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/es_US/locale_description=../es_US.UTF-8/locale_description
-f none usr/lib/locale/es_US/geo_map 0644 root bin
+#f none usr/lib/locale/es_US/geo_map 0644 root bin
 
 # be_BY.UTF-8
 d none usr/lib/locale/be_BY.UTF-8 0755 root bin
@@ -1607,7 +1606,7 @@ f none usr/lib/locale/be_BY.UTF-8/locale_map=usr/lib/locale/be_BY.UTF-8/locale_m
 d none usr/lib/locale/be_BY 0755 root bin
 s none usr/lib/locale/be_BY/be_BY.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/be_BY/locale_description=../be_BY.UTF-8/locale_description
-f none usr/lib/locale/be_BY/geo_map 0644 root bin
+#f none usr/lib/locale/be_BY/geo_map 0644 root bin
 
 # ka_GE.UTF-8
 d none usr/lib/locale/ka_GE.UTF-8 0755 root bin
@@ -1620,7 +1619,7 @@ f none usr/lib/locale/ka_GE.UTF-8/locale_map=usr/lib/locale/ka_GE.UTF-8/locale_m
 d none usr/lib/locale/ka_GE 0755 root bin
 s none usr/lib/locale/ka_GE/ka_GE.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/ka_GE/locale_description=../ka_GE.UTF-8/locale_description
-f none usr/lib/locale/ka_GE/geo_map 0644 root bin
+#f none usr/lib/locale/ka_GE/geo_map 0644 root bin
 
 # as_IN.UTF-8
 d none usr/lib/locale/as_IN.UTF-8 0755 root bin
@@ -1633,7 +1632,7 @@ f none usr/lib/locale/as_IN.UTF-8/locale_map=usr/lib/locale/as_IN.UTF-8/locale_m
 d none usr/lib/locale/as_IN 0755 root bin
 s none usr/lib/locale/as_IN/as_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/as_IN/locale_description=../as_IN.UTF-8/locale_description
-f none usr/lib/locale/as_IN/geo_map 0644 root bin
+#f none usr/lib/locale/as_IN/geo_map 0644 root bin
 
 # bn_IN.UTF-8
 d none usr/lib/locale/bn_IN.UTF-8 0755 root bin
@@ -1646,7 +1645,7 @@ f none usr/lib/locale/bn_IN.UTF-8/locale_map=usr/lib/locale/bn_IN.UTF-8/locale_m
 d none usr/lib/locale/bn_IN 0755 root bin
 s none usr/lib/locale/bn_IN/bn_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/bn_IN/locale_description=../bn_IN.UTF-8/locale_description
-f none usr/lib/locale/bn_IN/geo_map 0644 root bin
+#f none usr/lib/locale/bn_IN/geo_map 0644 root bin
 
 # gu_IN.UTF-8
 d none usr/lib/locale/gu_IN.UTF-8 0755 root bin
@@ -1659,7 +1658,7 @@ f none usr/lib/locale/gu_IN.UTF-8/locale_map=usr/lib/locale/gu_IN.UTF-8/locale_m
 d none usr/lib/locale/gu_IN 0755 root bin
 s none usr/lib/locale/gu_IN/gu_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/gu_IN/locale_description=../gu_IN.UTF-8/locale_description
-f none usr/lib/locale/gu_IN/geo_map 0644 root bin
+#f none usr/lib/locale/gu_IN/geo_map 0644 root bin
 
 # kn_IN.UTF-8
 d none usr/lib/locale/kn_IN.UTF-8 0755 root bin
@@ -1672,7 +1671,7 @@ f none usr/lib/locale/kn_IN.UTF-8/locale_map=usr/lib/locale/kn_IN.UTF-8/locale_m
 d none usr/lib/locale/kn_IN 0755 root bin
 s none usr/lib/locale/kn_IN/kn_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/kn_IN/locale_description=../kn_IN.UTF-8/locale_description
-f none usr/lib/locale/kn_IN/geo_map 0644 root bin
+#f none usr/lib/locale/kn_IN/geo_map 0644 root bin
 
 # ml_IN.UTF-8
 d none usr/lib/locale/ml_IN.UTF-8 0755 root bin
@@ -1685,7 +1684,7 @@ f none usr/lib/locale/ml_IN.UTF-8/locale_map=usr/lib/locale/ml_IN.UTF-8/locale_m
 d none usr/lib/locale/ml_IN 0755 root bin
 s none usr/lib/locale/ml_IN/ml_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/ml_IN/locale_description=../ml_IN.UTF-8/locale_description
-f none usr/lib/locale/ml_IN/geo_map 0644 root bin
+#f none usr/lib/locale/ml_IN/geo_map 0644 root bin
 
 # mr_IN.UTF-8
 d none usr/lib/locale/mr_IN.UTF-8 0755 root bin
@@ -1698,7 +1697,7 @@ f none usr/lib/locale/mr_IN.UTF-8/locale_map=usr/lib/locale/mr_IN.UTF-8/locale_m
 d none usr/lib/locale/mr_IN 0755 root bin
 s none usr/lib/locale/mr_IN/mr_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/mr_IN/locale_description=../mr_IN.UTF-8/locale_description
-f none usr/lib/locale/mr_IN/geo_map 0644 root bin
+#f none usr/lib/locale/mr_IN/geo_map 0644 root bin
 
 # or_IN.UTF-8
 d none usr/lib/locale/or_IN.UTF-8 0755 root bin
@@ -1711,7 +1710,7 @@ f none usr/lib/locale/or_IN.UTF-8/locale_map=usr/lib/locale/or_IN.UTF-8/locale_m
 d none usr/lib/locale/or_IN 0755 root bin
 s none usr/lib/locale/or_IN/or_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/or_IN/locale_description=../or_IN.UTF-8/locale_description
-f none usr/lib/locale/or_IN/geo_map 0644 root bin
+#f none usr/lib/locale/or_IN/geo_map 0644 root bin
 
 # pa_IN.UTF-8
 d none usr/lib/locale/pa_IN.UTF-8 0755 root bin
@@ -1724,7 +1723,7 @@ f none usr/lib/locale/pa_IN.UTF-8/locale_map=usr/lib/locale/pa_IN.UTF-8/locale_m
 d none usr/lib/locale/pa_IN 0755 root bin
 s none usr/lib/locale/pa_IN/pa_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/pa_IN/locale_description=../pa_IN.UTF-8/locale_description
-f none usr/lib/locale/pa_IN/geo_map 0644 root bin
+#f none usr/lib/locale/pa_IN/geo_map 0644 root bin
 
 
 # af_ZA.UTF-8
@@ -1738,7 +1737,7 @@ f none usr/lib/locale/af_ZA.UTF-8/locale_map=usr/lib/locale/af_ZA.UTF-8/locale_m
 d none usr/lib/locale/af_ZA 0755 root bin
 s none usr/lib/locale/af_ZA/af_ZA.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/af_ZA/locale_description=../af_ZA.UTF-8/locale_description
-f none usr/lib/locale/af_ZA/geo_map 0644 root bin
+#f none usr/lib/locale/af_ZA/geo_map 0644 root bin
 
 # az_AZ.UTF-8
 d none usr/lib/locale/az_AZ.UTF-8 0755 root bin
@@ -1751,7 +1750,7 @@ f none usr/lib/locale/az_AZ.UTF-8/locale_map=usr/lib/locale/az_AZ.UTF-8/locale_m
 d none usr/lib/locale/az_AZ 0755 root bin
 s none usr/lib/locale/az_AZ/az_AZ.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/az_AZ/locale_description=../az_AZ.UTF-8/locale_description
-f none usr/lib/locale/az_AZ/geo_map 0644 root bin
+#f none usr/lib/locale/az_AZ/geo_map 0644 root bin
 
 # it_CH.UTF-8
 d none usr/lib/locale/it_CH.UTF-8 0755 root bin
@@ -1764,7 +1763,7 @@ f none usr/lib/locale/it_CH.UTF-8/locale_map=usr/lib/locale/it_CH.UTF-8/locale_m
 d none usr/lib/locale/it_CH 0755 root bin
 s none usr/lib/locale/it_CH/it_CH.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/it_CH/locale_description=../it_CH.UTF-8/locale_description
-f none usr/lib/locale/it_CH/geo_map 0644 root bin
+#f none usr/lib/locale/it_CH/geo_map 0644 root bin
 
 # ky_KG.UTF-8
 d none usr/lib/locale/ky_KG.UTF-8 0755 root bin
@@ -1777,7 +1776,7 @@ f none usr/lib/locale/ky_KG.UTF-8/locale_map=usr/lib/locale/ky_KG.UTF-8/locale_m
 d none usr/lib/locale/ky_KG 0755 root bin
 s none usr/lib/locale/ky_KG/ky_KG.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/ky_KG/locale_description=../ky_KG.UTF-8/locale_description
-f none usr/lib/locale/ky_KG/geo_map 0644 root bin
+#f none usr/lib/locale/ky_KG/geo_map 0644 root bin
 
 # hy_AM.UTF-8
 d none usr/lib/locale/hy_AM.UTF-8 0755 root bin
@@ -1789,7 +1788,7 @@ f none usr/lib/locale/hy_AM.UTF-8/locale_map=usr/lib/locale/hy_AM.UTF-8/locale_m
 d none usr/lib/locale/hy_AM 0755 root bin
 s none usr/lib/locale/hy_AM/hy_AM.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/hy_AM/locale_description=../hy_AM.UTF-8/locale_description
-f none usr/lib/locale/hy_AM/geo_map 0644 root bin
+#f none usr/lib/locale/hy_AM/geo_map 0644 root bin
 
 # ku_TR.UTF-8
 d none usr/lib/locale/ku_TR.UTF-8 0755 root bin
@@ -1801,7 +1800,7 @@ f none usr/lib/locale/ku_TR.UTF-8/locale_map=usr/lib/locale/ku_TR.UTF-8/locale_m
 d none usr/lib/locale/ku_TR 0755 root bin
 s none usr/lib/locale/ku_TR/ku_TR.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/ku_TR/locale_description=../ku_TR.UTF-8/locale_description
-f none usr/lib/locale/ku_TR/geo_map 0644 root bin
+#f none usr/lib/locale/ku_TR/geo_map 0644 root bin
 
 # sa_IN.UTF-8
 d none usr/lib/locale/sa_IN.UTF-8 0755 root bin
@@ -1813,7 +1812,7 @@ f none usr/lib/locale/sa_IN.UTF-8/locale_map=usr/lib/locale/sa_IN.UTF-8/locale_m
 d none usr/lib/locale/sa_IN 0755 root bin
 s none usr/lib/locale/sa_IN/sa_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/sa_IN/locale_description=../sa_IN.UTF-8/locale_description
-f none usr/lib/locale/sa_IN/geo_map 0644 root bin
+#f none usr/lib/locale/sa_IN/geo_map 0644 root bin
 
 # ks_IN.UTF-8
 d none usr/lib/locale/ks_IN.UTF-8 0755 root bin
@@ -1825,7 +1824,7 @@ f none usr/lib/locale/ks_IN.UTF-8/locale_map=usr/lib/locale/ks_IN.UTF-8/locale_m
 d none usr/lib/locale/ks_IN 0755 root bin
 s none usr/lib/locale/ks_IN/ks_IN.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/ks_IN/locale_description=../ks_IN.UTF-8/locale_description
-f none usr/lib/locale/ks_IN/geo_map 0644 root bin
+#f none usr/lib/locale/ks_IN/geo_map 0644 root bin
 
 # sr_ME.UTF-8
 d none usr/lib/locale/sr_ME.UTF-8 0755 root bin
@@ -1837,7 +1836,7 @@ f none usr/lib/locale/sr_ME.UTF-8/locale_map=usr/lib/locale/sr_ME.UTF-8/locale_m
 d none usr/lib/locale/sr_ME 0755 root bin
 s none usr/lib/locale/sr_ME/sr_ME.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/sr_ME/locale_description=../sr_ME.UTF-8/locale_description
-f none usr/lib/locale/sr_ME/geo_map 0644 root bin
+#f none usr/lib/locale/sr_ME/geo_map 0644 root bin
 
 # sr_RS.UTF-8
 d none usr/lib/locale/sr_RS.UTF-8 0755 root bin
@@ -1849,5 +1848,5 @@ f none usr/lib/locale/sr_RS.UTF-8/locale_map=usr/lib/locale/sr_RS.UTF-8/locale_m
 d none usr/lib/locale/sr_RS 0755 root bin
 s none usr/lib/locale/sr_RS/sr_RS.so.3=../en_IE.ISO8859-1/en_IE.ISO8859-1.so.3
 s none usr/lib/locale/sr_RS/locale_description=../sr_RS.UTF-8/locale_description
-f none usr/lib/locale/sr_RS/geo_map 0644 root bin
+#f none usr/lib/locale/sr_RS/geo_map 0644 root bin
 
