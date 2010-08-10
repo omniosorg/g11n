@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,8 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 s none usr/lib/locale/zh_HK.BIG5HK/64=./sparcv9
 d none usr/lib/locale/zh_HK.BIG5HK/sparcv9 0755 root bin
@@ -28,11 +27,11 @@ f none usr/lib/locale/zh_HK.BIG5HK/sparcv9/zh_HK.BIG5HK.so.3 0555 root bin
 s none usr/lib/locale/zh_HK.BIG5HK@radical/64=./sparcv9
 d none usr/lib/locale/zh_HK.BIG5HK@radical/sparcv9 0755 root bin
 f none usr/lib/locale/zh_HK.BIG5HK@radical/sparcv9/zh_HK.BIG5HK@radical.so.3 0555 root bin
-s none usr/lib/locale/zh_HK.BIG5HK@radical/sparcv9/methods_zh_HK.BIG5HK@radical.so.3=../../zh_HK.BIG5HK/sparcv9/methods_zh_HK.BIG5HK.so.3
+s none usr/lib/locale/zh_HK.BIG5HK@radical/sparcv9/methods_zh_HK.BIG5HK.so.3=../../zh_HK.BIG5HK/sparcv9/methods_zh_HK.BIG5HK.so.3
 s none usr/lib/locale/zh_HK.BIG5HK@stroke/64=./sparcv9
 d none usr/lib/locale/zh_HK.BIG5HK@stroke/sparcv9 0755 root bin
 f none usr/lib/locale/zh_HK.BIG5HK@stroke/sparcv9/zh_HK.BIG5HK@stroke.so.3 0555 root bin
-s none usr/lib/locale/zh_HK.BIG5HK@stroke/sparcv9/methods_zh_HK.BIG5HK@stroke.so.3=../../zh_HK.BIG5HK/sparcv9/methods_zh_HK.BIG5HK.so.3
+s none usr/lib/locale/zh_HK.BIG5HK@stroke/sparcv9/methods_zh_HK.BIG5HK.so.3=../../zh_HK.BIG5HK/sparcv9/methods_zh_HK.BIG5HK.so.3
 
 s none usr/lib/locale/zh_HK.UTF-8@radical/64=./sparcv9
 d none usr/lib/locale/zh_HK.UTF-8@radical/sparcv9 0755 root bin
