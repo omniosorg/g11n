@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,64 +18,14 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-f none usr/lib/locale/fr/LC_MESSAGES/SUNW_OST_ADMIN.mo 0644 root bin 
-f none usr/lib/locale/fr/LC_MESSAGES/SUNW_OST_NETRPC.mo 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/SUNW_OST_OSCMD.mo 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/SUNW_OST_OSLIB.mo 0644 root bin 
-f none usr/lib/locale/fr/LC_MESSAGES/SUNW_OST_SGS.mo 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/SUNW_OST_SYSOSPAM.mo 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/SUNW_OST_UCBCMD.mo 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/SUNW_OST_ZONEINFO.mo 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/magic 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/mailx.help 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/more.help 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/priv_names 0644 root bin
-f none usr/lib/locale/fr/LC_MESSAGES/uxlibc 0644 root bin
-f none usr/lib/locale/fr/LC_TIME/SUNW_OST_OSCMD.mo 0644 root bin
-f none usr/lib/locale/fr/LC_TIME/SUNW_OST_OSLIB.mo 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_OST_ADMIN.mo 0644 root bin 
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_OST_NETRPC.mo 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_OST_OSCMD.mo 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_OST_OSLIB.mo 0644 root bin 
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_OST_SGS.mo 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_OST_SYSOSPAM.mo 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_OST_UCBCMD.mo 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/SUNW_OST_ZONEINFO.mo 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/magic 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/mailx.help 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/more.help 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/priv_names 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_MESSAGES/uxlibc 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_TIME/SUNW_OST_OSCMD.mo 0644 root bin
-f none usr/lib/locale/fr.UTF-8/LC_TIME/SUNW_OST_OSLIB.mo 0644 root bin
 d none usr 0755 root sys
 d none usr/lib 0755 root bin
 d none usr/lib/help 0755 root bin
 d none usr/lib/help/auths 0755 root bin
 d none usr/lib/help/auths/locale 0755 root bin
 d none usr/lib/help/auths/locale/fr 0755 root bin
-d none usr/lib/help/profiles 0755 root bin
-d none usr/lib/help/profiles/locale 0755 root bin
-d none usr/lib/help/profiles/locale/fr 0755 root bin
-d none usr/lib/locale 0755 root bin
-d none usr/lib/locale/fr 0755 root bin
-d none usr/lib/locale/fr/LC_MESSAGES 0755 root bin
-d none usr/lib/locale/fr/LC_TIME 0755 root bin
-d none usr/lib/locale/fr.UTF-8 0755 root bin
-d none usr/lib/locale/fr.UTF-8/LC_MESSAGES 0755 root bin
-d none usr/lib/locale/fr.UTF-8/LC_TIME 0755 root bin
-d none usr/share 0755 root sys
-d none usr/share/lib 0755 root sys
-d none usr/share/lib/locale 0755 root bin
-d none usr/share/lib/locale/com 0755 root bin
-d none usr/share/lib/locale/com/sun 0755 root bin
-d none usr/share/lib/locale/com/sun/admin 0755 root bin
-d none usr/share/lib/locale/com/sun/admin/pm 0755 root bin
-d none usr/share/lib/locale/com/sun/admin/pm/client 0755 root bin
-d none usr/share/lib/locale/com/sun/slp 0755 root bin
 f none usr/lib/help/auths/locale/fr/AllSolAuthsHeader.html 0444 root bin
 f none usr/lib/help/auths/locale/fr/AuditConfig.html 0444 root bin
 f none usr/lib/help/auths/locale/fr/AuditHeader.html 0444 root bin
@@ -123,6 +73,9 @@ f none usr/lib/help/auths/locale/fr/SmfSyslogStates.html 0444 root bin
 f none usr/lib/help/auths/locale/fr/SysDate.html 0444 root bin
 f none usr/lib/help/auths/locale/fr/SysHeader.html 0444 root bin
 f none usr/lib/help/auths/locale/fr/SysShutdown.html 0444 root bin
+d none usr/lib/help/profiles 0755 root bin
+d none usr/lib/help/profiles/locale 0755 root bin
+d none usr/lib/help/profiles/locale/fr 0755 root bin
 f none usr/lib/help/profiles/locale/fr/RtAll.html 0444 root bin
 f none usr/lib/help/profiles/locale/fr/RtAuditCtrl.html 0444 root bin
 f none usr/lib/help/profiles/locale/fr/RtAuditReview.html 0444 root bin
@@ -160,7 +113,53 @@ f none usr/lib/help/profiles/locale/fr/RtUserSecurity.html 0444 root bin
 f none usr/lib/help/profiles/locale/fr/RtZFSFileSysMngmnt.html 0444 root bin
 f none usr/lib/help/profiles/locale/fr/RtZFSStorageMngmnt.html 0444 root bin
 f none usr/lib/help/profiles/locale/fr/RtZoneMngmnt.html 0444 root bin
+d none usr/lib/locale 0755 root bin
+d none usr/lib/locale/fr_FR.ISO8859-1 0755 root bin
+d none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES 0755 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/SUNW_OST_ADMIN.mo 0644 root bin 
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/SUNW_OST_NETRPC.mo 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/SUNW_OST_OSCMD.mo 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/SUNW_OST_OSLIB.mo 0644 root bin 
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/SUNW_OST_SGS.mo 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/SUNW_OST_SYSOSPAM.mo 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/SUNW_OST_UCBCMD.mo 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/SUNW_OST_ZONEINFO.mo 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/magic 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/mailx.help 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/more.help 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/priv_names 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_MESSAGES/uxlibc 0644 root bin
+d none usr/lib/locale/fr_FR.ISO8859-1/LC_TIME 0755 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_TIME/SUNW_OST_OSCMD.mo 0644 root bin
+f none usr/lib/locale/fr_FR.ISO8859-1/LC_TIME/SUNW_OST_OSLIB.mo 0644 root bin
+d none usr/lib/locale/fr_FR.UTF-8 0755 root bin
+d none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES 0755 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_OST_ADMIN.mo 0644 root bin 
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_OST_NETRPC.mo 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_OST_OSCMD.mo 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_OST_OSLIB.mo 0644 root bin 
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_OST_SGS.mo 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_OST_SYSOSPAM.mo 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_OST_UCBCMD.mo 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/SUNW_OST_ZONEINFO.mo 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/magic 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/mailx.help 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/more.help 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/priv_names 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_MESSAGES/uxlibc 0644 root bin
+d none usr/lib/locale/fr_FR.UTF-8/LC_TIME 0755 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_TIME/SUNW_OST_OSCMD.mo 0644 root bin
+f none usr/lib/locale/fr_FR.UTF-8/LC_TIME/SUNW_OST_OSLIB.mo 0644 root bin
+d none usr/share 0755 root sys
+d none usr/share/lib 0755 root sys
+d none usr/share/lib/locale 0755 root bin
+d none usr/share/lib/locale/com 0755 root bin
+d none usr/share/lib/locale/com/sun 0755 root bin
+d none usr/share/lib/locale/com/sun/admin 0755 root bin
+d none usr/share/lib/locale/com/sun/admin/pm 0755 root bin
+d none usr/share/lib/locale/com/sun/admin/pm/client 0755 root bin
 f none usr/share/lib/locale/com/sun/admin/pm/client/pmHelpResources_fr.class 0644 root lp 
 f none usr/share/lib/locale/com/sun/admin/pm/client/pmResources_fr.class 0644 root lp 
+d none usr/share/lib/locale/com/sun/slp 0755 root bin
 f none usr/share/lib/locale/com/sun/slp/ClientLib_fr.properties 0644 root sys 
 f none usr/share/lib/locale/com/sun/slp/Server_fr.properties 0644 root sys 
