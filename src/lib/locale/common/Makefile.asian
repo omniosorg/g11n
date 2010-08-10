@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,11 +18,7 @@
 #
 # CDDL HEADER END
 #
-#
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 # common makefile to handle the most common parts of code: i.e.
@@ -54,8 +50,8 @@ LC_CTYPE_DIR_64	= $(LC_CTYPE_DIR)/$(MACH64)
 
 TARGETDIRS = $(LOC_DIR) $(LOC_DIR_64) $(LC_CTYPE_DIR) $(LC_CTYPE_DIR_64)
 
-FILES = geo_map locale_description locale_map
-FILES += geo_map.miniroot locale_description.miniroot locale_map.miniroot
+FILES = locale_description locale_map
+FILES += locale_description.miniroot locale_map.miniroot
 
 TARGETDIR = $(LOC_DIR)
 

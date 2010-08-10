@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,14 +18,10 @@
 #
 # CDDL HEADER END
 #
-#
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
-#ident "@(#)Makefile	1.6 00/03/01"
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-LOCALE		= zh_CN.GB18030
+LOCALE:sh = basename `pwd`
 
 dummy: all
 

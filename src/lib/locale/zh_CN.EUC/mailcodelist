@@ -18,9 +18,7 @@
 #
 # CDDL HEADER END
 #
-#
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 zh	zh_CN.euc 	zh_CN.iso2022-7		1
 zh	zh_CN.euc 	zh_CN.euc		0
