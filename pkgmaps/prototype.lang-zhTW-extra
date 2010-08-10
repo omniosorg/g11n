@@ -5,21 +5,20 @@
 # Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
-# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
 # or http://www.opensolaris.org/os/licensing.
 # See the License for the specific language governing permissions
 # and limitations under the License.
 #
 # When distributing Covered Code, include this CDDL HEADER in each
-# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# file and include the License file at src/OPENSOLARIS.LICENSE.
 # If applicable, add the following below this CDDL HEADER, with the
 # fields enclosed by brackets "[]" replaced with your own identifying
 # information: Portions Copyright [yyyy] [name of copyright owner]
 #
 # CDDL HEADER END
 #
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 d none usr 0755 root sys
@@ -30,31 +29,6 @@ s none usr/include/zh_TW.EUC=./zh_TW
 
 d none usr/lib 0755 root bin
 d none usr/lib/locale 0755 root bin
-d none usr/lib/locale/zh_TW 0755 root bin
-d none usr/lib/locale/zh_TW/LC_COLLATE 0755 root bin
-d none usr/lib/locale/zh_TW/LC_CTYPE 0755 root bin
-f none usr/lib/locale/zh_TW/LC_CTYPE/LCL_DEF 0555 root bin
-f none usr/lib/locale/zh_TW/LC_CTYPE/mailcodelist 0555 root bin
-f none usr/lib/locale/zh_TW/LC_CTYPE/wdresolve.so 0555 root bin
-d none usr/lib/locale/zh_TW/LC_MONETARY 0755 root bin
-d none usr/lib/locale/zh_TW/LC_NUMERIC 0755 root bin
-d none usr/lib/locale/zh_TW/LC_TIME 0755 root bin
-f none usr/lib/locale/zh_TW/geo_map 0644 root bin
-f none usr/lib/locale/zh_TW/locale_map 0644 root bin
-f none usr/lib/locale/zh_TW/methods_zh_TW.so.3 0555 root bin
-f none usr/lib/locale/zh_TW/zh_TW.so.3 0555 root bin
-f none usr/lib/locale/zh_TW/locale_description 0644 root bin
-d none usr/lib/locale/zh_TW.EUC 0755 root bin
-s none usr/lib/locale/zh_TW.EUC/LC_COLLATE=../zh_TW/LC_COLLATE
-s none usr/lib/locale/zh_TW.EUC/LC_CTYPE=../zh_TW/LC_CTYPE
-s none usr/lib/locale/zh_TW.EUC/LC_MONETARY=../zh_TW/LC_MONETARY
-s none usr/lib/locale/zh_TW.EUC/LC_NUMERIC=../zh_TW/LC_NUMERIC
-s none usr/lib/locale/zh_TW.EUC/LC_TIME=../zh_TW/LC_TIME
-s none usr/lib/locale/zh_TW.EUC/geo_map=../zh_TW/geo_map
-s none usr/lib/locale/zh_TW.EUC/locale_map=../zh_TW/locale_map
-s none usr/lib/locale/zh_TW.EUC/methods_zh_TW.EUC.so.3=../zh_TW/methods_zh_TW.so.3
-s none usr/lib/locale/zh_TW.EUC/zh_TW.EUC.so.3=../zh_TW/zh_TW.so.3
-s none usr/lib/locale/zh_TW.EUC/locale_description=../zh_TW/locale_description
 d none usr/lib/locale/zh_TW.BIG5 0755 root bin
 d none usr/lib/locale/zh_TW.BIG5/LC_COLLATE 0755 root bin
 d none usr/lib/locale/zh_TW.BIG5/LC_CTYPE 0755 root bin
@@ -63,11 +37,10 @@ f none usr/lib/locale/zh_TW.BIG5/LC_CTYPE/ldterm.dat 0555 root bin
 f none usr/lib/locale/zh_TW.BIG5/LC_CTYPE/wdresolve.so 0555 root bin
 d none usr/lib/locale/zh_TW.BIG5/LC_MONETARY 0755 root bin
 d none usr/lib/locale/zh_TW.BIG5/LC_NUMERIC 0755 root bin
-f none usr/lib/locale/zh_TW.BIG5/geo_map 0644 root bin
+f none usr/lib/locale/zh_TW.BIG5/locale_description 0644 root bin
 f none usr/lib/locale/zh_TW.BIG5/locale_map 0644 root bin
 f none usr/lib/locale/zh_TW.BIG5/methods_zh_TW.BIG5.so.3 0555 root bin
 f none usr/lib/locale/zh_TW.BIG5/zh_TW.BIG5.so.3 0555 root bin
-f none usr/lib/locale/zh_TW.BIG5/locale_description 0644 root bin
 d none usr/lib/locale/zh_TW.BIG5@pinyin 0755 root bin
 s none usr/lib/locale/zh_TW.BIG5@pinyin/LC_COLLATE=../zh_TW.BIG5/LC_COLLATE
 s none usr/lib/locale/zh_TW.BIG5@pinyin/LC_CTYPE=../zh_TW.BIG5/LC_CTYPE
@@ -85,12 +58,12 @@ s none usr/lib/locale/zh_TW.BIG5@radical/LC_TIME=../zh_TW.BIG5/LC_TIME
 s none usr/lib/locale/zh_TW.BIG5@radical/methods_zh_TW.BIG5@radical.so.3=../zh_TW.BIG5/methods_zh_TW.BIG5.so.3
 f none usr/lib/locale/zh_TW.BIG5@radical/zh_TW.BIG5@radical.so.3 0555 root bin
 d none usr/lib/locale/zh_TW.BIG5@stroke 0755 root bin
-s none usr/lib/locale/zh_TW.BIG5@stroke/methods_zh_TW.BIG5@stroke.so.3=../zh_TW.BIG5/methods_zh_TW.BIG5.so.3
 s none usr/lib/locale/zh_TW.BIG5@stroke/LC_COLLATE=../zh_TW.BIG5/LC_COLLATE
 s none usr/lib/locale/zh_TW.BIG5@stroke/LC_CTYPE=../zh_TW.BIG5/LC_CTYPE
 s none usr/lib/locale/zh_TW.BIG5@stroke/LC_MONETARY=../zh_TW.BIG5/LC_MONETARY
 s none usr/lib/locale/zh_TW.BIG5@stroke/LC_NUMERIC=../zh_TW.BIG5/LC_NUMERIC
 s none usr/lib/locale/zh_TW.BIG5@stroke/LC_TIME=../zh_TW.BIG5/LC_TIME
+s none usr/lib/locale/zh_TW.BIG5@stroke/methods_zh_TW.BIG5@stroke.so.3=../zh_TW.BIG5/methods_zh_TW.BIG5.so.3
 f none usr/lib/locale/zh_TW.BIG5@stroke/zh_TW.BIG5@stroke.so.3 0555 root bin
 d none usr/lib/locale/zh_TW.BIG5@zhuyin 0755 root bin
 s none usr/lib/locale/zh_TW.BIG5@zhuyin/LC_COLLATE=../zh_TW.BIG5/LC_COLLATE
@@ -100,38 +73,51 @@ s none usr/lib/locale/zh_TW.BIG5@zhuyin/LC_NUMERIC=../zh_TW.BIG5/LC_NUMERIC
 s none usr/lib/locale/zh_TW.BIG5@zhuyin/LC_TIME=../zh_TW.BIG5/LC_TIME
 s none usr/lib/locale/zh_TW.BIG5@zhuyin/methods_zh_TW.BIG5@zhuyin.so.3=../zh_TW.BIG5/methods_zh_TW.BIG5.so.3
 f none usr/lib/locale/zh_TW.BIG5@zhuyin/zh_TW.BIG5@zhuyin.so.3 0555 root bin
+d none usr/lib/locale/zh_TW.EUC 0755 root bin
+d none usr/lib/locale/zh_TW.EUC/LC_COLLATE 0755 root bin
+d none usr/lib/locale/zh_TW.EUC/LC_CTYPE 0755 root bin
+f none usr/lib/locale/zh_TW.EUC/LC_CTYPE/LCL_DEF 0555 root bin
+f none usr/lib/locale/zh_TW.EUC/LC_CTYPE/mailcodelist 0555 root bin
+f none usr/lib/locale/zh_TW.EUC/LC_CTYPE/wdresolve.so 0555 root bin
+d none usr/lib/locale/zh_TW.EUC/LC_MONETARY 0755 root bin
+d none usr/lib/locale/zh_TW.EUC/LC_NUMERIC 0755 root bin
+d none usr/lib/locale/zh_TW.EUC/LC_TIME 0755 root bin
+f none usr/lib/locale/zh_TW.EUC/locale_description 0644 root bin
+f none usr/lib/locale/zh_TW.EUC/locale_map 0644 root bin
+f none usr/lib/locale/zh_TW.EUC/methods_zh_TW.EUC.so.3 0555 root bin
+f none usr/lib/locale/zh_TW.EUC/zh_TW.EUC.so.3 0555 root bin
 d none usr/lib/locale/zh_TW.EUC@pinyin 0755 root bin
-s none usr/lib/locale/zh_TW.EUC@pinyin/LC_COLLATE=../zh_TW/LC_COLLATE
-s none usr/lib/locale/zh_TW.EUC@pinyin/LC_CTYPE=../zh_TW/LC_CTYPE
-s none usr/lib/locale/zh_TW.EUC@pinyin/LC_MONETARY=../zh_TW/LC_MONETARY
-s none usr/lib/locale/zh_TW.EUC@pinyin/LC_NUMERIC=../zh_TW/LC_NUMERIC
-s none usr/lib/locale/zh_TW.EUC@pinyin/LC_TIME=../zh_TW/LC_TIME
-s none usr/lib/locale/zh_TW.EUC@pinyin/methods_zh_TW.EUC@pinyin.so.3=../zh_TW/methods_zh_TW.so.3
-f none usr/lib/locale/zh_TW.EUC@pinyin/zh_TW.EUC@pinyin.so.3=usr/lib/locale/zh_TW@pinyin/zh_TW@pinyin.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@pinyin/LC_COLLATE=../zh_TW.EUC/LC_COLLATE
+s none usr/lib/locale/zh_TW.EUC@pinyin/LC_CTYPE=../zh_TW.EUC/LC_CTYPE
+s none usr/lib/locale/zh_TW.EUC@pinyin/LC_MONETARY=../zh_TW.EUC/LC_MONETARY
+s none usr/lib/locale/zh_TW.EUC@pinyin/LC_NUMERIC=../zh_TW.EUC/LC_NUMERIC
+s none usr/lib/locale/zh_TW.EUC@pinyin/LC_TIME=../zh_TW.EUC/LC_TIME
+s none usr/lib/locale/zh_TW.EUC@pinyin/methods_zh_TW.EUC@pinyin.so.3=../zh_TW.EUC/methods_zh_TW.EUC.so.3
+f none usr/lib/locale/zh_TW.EUC@pinyin/zh_TW.EUC@pinyin.so.3 0555 root bin
 d none usr/lib/locale/zh_TW.EUC@radical 0755 root bin
-s none usr/lib/locale/zh_TW.EUC@radical/LC_COLLATE=../zh_TW/LC_COLLATE
-s none usr/lib/locale/zh_TW.EUC@radical/LC_CTYPE=../zh_TW/LC_CTYPE
-s none usr/lib/locale/zh_TW.EUC@radical/LC_MONETARY=../zh_TW/LC_MONETARY
-s none usr/lib/locale/zh_TW.EUC@radical/LC_NUMERIC=../zh_TW/LC_NUMERIC
-s none usr/lib/locale/zh_TW.EUC@radical/LC_TIME=../zh_TW/LC_TIME
-s none usr/lib/locale/zh_TW.EUC@radical/methods_zh_TW.EUC@radical.so.3=../zh_TW/methods_zh_TW.so.3
-f none usr/lib/locale/zh_TW.EUC@radical/zh_TW.EUC@radical.so.3=usr/lib/locale/zh_TW@radical/zh_TW@radical.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@radical/LC_COLLATE=../zh_TW.EUC/LC_COLLATE
+s none usr/lib/locale/zh_TW.EUC@radical/LC_CTYPE=../zh_TW.EUC/LC_CTYPE
+s none usr/lib/locale/zh_TW.EUC@radical/LC_MONETARY=../zh_TW.EUC/LC_MONETARY
+s none usr/lib/locale/zh_TW.EUC@radical/LC_NUMERIC=../zh_TW.EUC/LC_NUMERIC
+s none usr/lib/locale/zh_TW.EUC@radical/LC_TIME=../zh_TW.EUC/LC_TIME
+s none usr/lib/locale/zh_TW.EUC@radical/methods_zh_TW.EUC@radical.so.3=../zh_TW.EUC/methods_zh_TW.EUC.so.3
+f none usr/lib/locale/zh_TW.EUC@radical/zh_TW.EUC@radical.so.3 0555 root bin
 d none usr/lib/locale/zh_TW.EUC@stroke 0755 root bin
-s none usr/lib/locale/zh_TW.EUC@stroke/LC_COLLATE=../zh_TW/LC_COLLATE
-s none usr/lib/locale/zh_TW.EUC@stroke/LC_CTYPE=../zh_TW/LC_CTYPE
-s none usr/lib/locale/zh_TW.EUC@stroke/LC_MONETARY=../zh_TW/LC_MONETARY
-s none usr/lib/locale/zh_TW.EUC@stroke/LC_NUMERIC=../zh_TW/LC_NUMERIC
-s none usr/lib/locale/zh_TW.EUC@stroke/LC_TIME=../zh_TW/LC_TIME
-s none usr/lib/locale/zh_TW.EUC@stroke/methods_zh_TW.EUC@stroke.so.3=../zh_TW/methods_zh_TW.so.3
-f none usr/lib/locale/zh_TW.EUC@stroke/zh_TW.EUC@stroke.so.3=usr/lib/locale/zh_TW@stroke/zh_TW@stroke.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@stroke/LC_COLLATE=../zh_TW.EUC/LC_COLLATE
+s none usr/lib/locale/zh_TW.EUC@stroke/LC_CTYPE=../zh_TW.EUC/LC_CTYPE
+s none usr/lib/locale/zh_TW.EUC@stroke/LC_MONETARY=../zh_TW.EUC/LC_MONETARY
+s none usr/lib/locale/zh_TW.EUC@stroke/LC_NUMERIC=../zh_TW.EUC/LC_NUMERIC
+s none usr/lib/locale/zh_TW.EUC@stroke/LC_TIME=../zh_TW.EUC/LC_TIME
+s none usr/lib/locale/zh_TW.EUC@stroke/methods_zh_TW.EUC@stroke.so.3=../zh_TW.EUC/methods_zh_TW.EUC.so.3
+f none usr/lib/locale/zh_TW.EUC@stroke/zh_TW.EUC@stroke.so.3 0555 root bin
 d none usr/lib/locale/zh_TW.EUC@zhuyin 0755 root bin
-s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_COLLATE=../zh_TW/LC_COLLATE
-s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_CTYPE=../zh_TW/LC_CTYPE
-s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_MONETARY=../zh_TW/LC_MONETARY
-s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_NUMERIC=../zh_TW/LC_NUMERIC
-s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_TIME=../zh_TW/LC_TIME
-s none usr/lib/locale/zh_TW.EUC@zhuyin/methods_zh_TW.EUC@zhuyin.so.3=../zh_TW/methods_zh_TW.so.3
-f none usr/lib/locale/zh_TW.EUC@zhuyin/zh_TW.EUC@zhuyin.so.3=usr/lib/locale/zh_TW@zhuyin/zh_TW@zhuyin.so.3 0555 root bin
+s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_COLLATE=../zh_TW.EUC/LC_COLLATE
+s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_CTYPE=../zh_TW.EUC/LC_CTYPE
+s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_MONETARY=../zh_TW.EUC/LC_MONETARY
+s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_NUMERIC=../zh_TW.EUC/LC_NUMERIC
+s none usr/lib/locale/zh_TW.EUC@zhuyin/LC_TIME=../zh_TW.EUC/LC_TIME
+s none usr/lib/locale/zh_TW.EUC@zhuyin/methods_zh_TW.EUC@zhuyin.so.3=../zh_TW.EUC/methods_zh_TW.EUC.so.3
+f none usr/lib/locale/zh_TW.EUC@zhuyin/zh_TW.EUC@zhuyin.so.3 0555 root bin
 
 d none usr/lib/locale/zh_TW.UTF-8@pinyin 0755 root bin
 s none usr/lib/locale/zh_TW.UTF-8@pinyin/LC_COLLATE=../zh_TW.UTF-8/LC_COLLATE

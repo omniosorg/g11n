@@ -29,12 +29,12 @@ LOCALES_UTF8 = ja_JP.UTF-8 zh_CN.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.
 LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk sh_BA.ISO8859-2@bosnia 
 
 LOCALES_OTHER = ja_JP.PCK ja_JP.eucJP ko ko@dict th_TH.TIS620 zh_CN.EUC zh_CN.GB18030 zh_CN.GBK \
-		zh_HK.BIG5HK zh_TW zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical \
+		zh_HK.BIG5HK zh_TW.EUC zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical \
 		zh_CN.GB18030@stroke zh_CN.GBK@pinyin zh_CN.GBK@radical zh_CN.GBK@stroke \
 		zh_HK.BIG5HK@pinyin zh_HK.BIG5HK@radical zh_HK.BIG5HK@stroke zh_HK.BIG5HK@zhuyin \
 		zh_CN.EUC@pinyin zh_CN.EUC@radical zh_CN.EUC@stroke zh_TW.BIG5@pinyin zh_TW.BIG5@radical \
-		zh_TW.BIG5@stroke zh_TW.BIG5@zhuyin zh_TW@pinyin zh_TW@radical zh_TW@stroke \
-		zh_TW@zhuyin
+		zh_TW.BIG5@stroke zh_TW.BIG5@zhuyin zh_TW.EUC@pinyin zh_TW.EUC@radical zh_TW.EUC@stroke \
+		zh_TW.EUC@zhuyin
 
 COMMON_CFLAGS	= $(CCVERBOSE) -K pic -D PIC -G -I. -z defs -z text -z ignore -D_REENTRANT
 
@@ -194,7 +194,7 @@ zh_TW.BIG5%.so.$(METHOD_VERSION): zh_TW.BIG5%.localedef.build
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/BIG5.x -f $(_CHARMAPS)/BIG5.charmap -i $< $(<:%.localedef.build=%)
 	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/BIG5.x -f $(_CHARMAPS)/BIG5.charmap -i ../$< $(<:%.localedef.build=%)
 
-zh_TW%.so.$(METHOD_VERSION): zh_TW%.localedef
+zh_TW.EUC%.so.$(METHOD_VERSION): zh_TW.EUC%.localedef
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/zh_TW.EUC.x -f $(_CHARMAPS)/zh_TW.charmap -i $< $(<:%.localedef=%)
 	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/zh_TW.EUC.x -f $(_CHARMAPS)/zh_TW.charmap -i ../$< $(<:%.localedef=%)
 
