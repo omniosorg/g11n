@@ -18,12 +18,7 @@
 #
 # CDDL HEADER END
 #
-#
-#
-# Copyright (c) 1996, by Sun Microsystems, Inc.
-# All rights reserved.
-#
-#ident	"$SunId$ SMI"
+# Copyright (c) 1996, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 LCBIND
@@ -113,7 +108,7 @@ mbsrtowcs@native        "__mbsrtowcs_dense"
 wcsrtombs       "__wcsrtombs_euc"
 wcsrtombs@native        "__wcsrtombs_dense"
 
-fgetwc		"__fgetwc_euc_euctw"	"l10n"	"/usr/lib/locale/zh_TW/" "methods_zh_TW.so.3"
+fgetwc		"__fgetwc_euc_euctw"	"l10n"	"/usr/lib/locale/zh_TW.EUC/" "methods_zh_TW.EUC.so.3"
 fgetwc@native	"__fgetwc_dense_euctw"
 mbftowc		"__mbftowc_euc_euctw"
 mbftowc@native	"__mbftowc_dense_euctw"

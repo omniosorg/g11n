@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,18 +18,12 @@
 #
 # CDDL HEADER END
 #
-# $Id: charmap.zh.GBK,v 1.1 1998/10/20 15:37:28 jkang Exp $
+# Copyright (c) 1997, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-#   (C) COPYRIGHT Sun Microsystems, Inc. 1997
-#   All Rights Reserved
+
 #
 #   charmap for zh.GBK locale (simplified Chinese, GBK)
 #
-##############################################################################
-#
-#		CHARMAP
-#
-
 <code_set_name>		GBK
 <mb_cur_max>		2
 <mb_cur_min>        1

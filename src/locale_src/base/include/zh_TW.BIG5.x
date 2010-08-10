@@ -18,14 +18,7 @@
 #
 # CDDL HEADER END
 #
-#
-# 
-# zh_CN.GB18030 method file
-#
-# Copyright (c) 1997, by Sun Microsystems, Inc.
-# All rights reserved.
-#
-#pragma ident	"@(#)zh_CN.GB18030-machineorder.x	1.2 00/07/21"
+# Copyright (c) 1996, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 LCBIND
@@ -45,7 +38,6 @@ _E15 = 0x00400000
 _E16 = 0x00800000
 _E17 = 0x01000000
 _E18 = 0x02000000
-_E19 = 0x04000000
 
 isphonogram charclass _E1
 isideogram  charclass _E2
@@ -63,7 +55,6 @@ iswchar15   charclass _E15
 iswchar16   charclass _E16
 iswchar17   charclass _E17
 iswchar18   charclass _E18
-isgb	    charclass _E19
 
 END LCBIND
 
@@ -96,29 +87,25 @@ strftime        "__strftime_std"
 strptime        "__strptime_std"
 wcsftime        "__wcsftime_std"
 getdate         "__getdate_std"
-mbrlen		"__mbrlen_gen" "libc" "/usr/lib/" "libc.so.1"
-mbsinit		"__mbsinit_gen" "libc" "/usr/lib/" "libc.so.1"
-fgetwc		"__fgetwc_dense_gb18030"	"libc"	"/usr/lib/locale/zh_CN.GB18030" "methods_zh_CN.GB18030.so.3"
-mbftowc		"__mbftowc_dense_gb18030"
-mbtowc		"__mbtowc_dense_gb18030"
-mbstowcs	"__mbstowcs_dense_gb18030"
-mblen		"__mblen_dense_gb18030"
-wctomb		"__wctomb_dense_gb18030"
-wcstombs	"__wcstombs_dense_gb18030"
-wcwidth		"__wcwidth_dense_gb18030"
-wcswidth	"__wcswidth_dense_gb18030"
 
-btowc			"__btowc_dense_gb18030"
-#btowc@native	"__btowc_dense_gb18030"
-wctob			"__wctob_dense_gb18030"
-#wctob@native	"__wctob_dense_gb18030"
-mbrtowc			"__mbrtowc_dense_gb18030"
-#mbrtowc@native	"__mbrtowc_dense_gb18030"
-wcrtomb			"__wcrtomb_dense_gb18030"
-#wcrtomb@native	"__wcrtomb_dense_gb18030"
-mbsrtowcs			"__mbsrtowcs_dense_gb18030"
-#mbsrtowcs@native	"__mbsrtowcs_dense_gb18030"
-wcsrtombs			"__wcsrtombs_dense_gb18030"
-#wcsrtombs@native	"__wcsrtombs_dense_gb18030"
+mbsinit         "__mbsinit_gen"
+mbrlen          "__mbrlen_gen"
+
+fgetwc		"__fgetwc_dense_big5"	"localelib" "/usr/lib/locale/zh_TW.BIG5/" "methods_zh_TW.BIG5.so.3"
+mbftowc		"__mbftowc_dense_big5"
+mbtowc		"__mbtowc_dense_big5"
+mbrtowc         "__mbrtowc_dense_big5"
+mbstowcs	"__mbstowcs_dense_big5"
+mblen		"__mblen_dense_big5"
+wctomb		"__wctomb_dense_big5"
+wcstombs	"__wcstombs_dense_big5"
+wcwidth		"__wcwidth_dense_big5"
+wcswidth	"__wcswidth_dense_big5"
+btowc           "__btowc_dense_big5"
+wctob           "__wctob_dense_big5"
+wcrtomb         "__wcrtomb_dense_big5"
+mbrtowc         "__mbrtowc_dense_big5"
+mbsrtowcs       "__mbsrtowcs_dense_big5"
+wcsrtombs       "__wcsrtombs_dense_big5"
 
 END METHODS

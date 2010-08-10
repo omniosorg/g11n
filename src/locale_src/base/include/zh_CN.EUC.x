@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,11 +18,7 @@
 #
 # CDDL HEADER END
 #
-#
-# Copyright (c) 1996, by Sun Microsystems, Inc.
-# All rights reserved.
-#
-#ident	"$SunId$ SMI"
+# Copyright (c) 2007, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 LCBIND
@@ -45,9 +41,6 @@ _E18 = 0x02000000
 _E19 = 0x04000000
 _E20 = 0x08000000
 _E21 = 0x10000000
-_E22 = 0x20000000
-_E23 = 0x40000000
-_E24 = 0x80000000
 
 isphonogram charclass _E1
 isideogram  charclass _E2
@@ -68,9 +61,6 @@ iswchar18   charclass _E18
 iswchar19   charclass _E19
 iswchar20   charclass _E20
 iswchar21   charclass _E21
-iswchar22   charclass _E22
-iswchar23   charclass _E23
-iswchar24   charclass _E24
 
 END LCBIND
 
@@ -124,23 +114,23 @@ mbsrtowcs@native        "__mbsrtowcs_dense"
 wcsrtombs       "__wcsrtombs_euc"
 wcsrtombs@native        "__wcsrtombs_dense"
 
-fgetwc		"__fgetwc_euc_euckr"	"l10n"	"/usr/lib/locale/ko/" "methods_ko.so.3"
-fgetwc@native	"__fgetwc_dense_euckr"
-mbftowc		"__mbftowc_euc_euckr"
-mbftowc@native	"__mbftowc_dense_euckr"
-mblen		"__mblen_euc_euckr"
-mbtowc		"__mbtowc_euc_euckr"
-mbtowc@native	"__mbtowc_dense_euckr"
-mbstowcs	"__mbstowcs_euc_euckr"
-mbstowcs@native	"__mbstowcs_dense_euckr"
-wctomb		"__wctomb_euc_euckr"
-wctomb@native	"__wctomb_dense_euckr"
-wcstombs	"__wcstombs_euc_euckr"
-wcstombs@native	"__wcstombs_dense_euckr"
-wcwidth		"__wcwidth_euc_euckr"
-wcwidth@native	"__wcwidth_dense_euckr"
-wcswidth	"__wcswidth_euc_euckr"
-wcswidth@native	"__wcswidth_dense_euckr"
-eucpctowc	"__eucpctowc_euckr" 
-wctoeucpc	"__wctoeucpc_euckr"
+fgetwc		"__fgetwc_euc_euccn" "l10n" "/usr/lib/locale/zh_CN.EUC/" "methods_zh_CN.EUC.so.3"
+fgetwc@native	"__fgetwc_dense_euccn"
+mbftowc		"__mbftowc_euc_euccn"
+mbftowc@native	"__mbftowc_dense_euccn"
+mblen		"__mblen_euc_euccn"
+mbtowc		"__mbtowc_euc_euccn"
+mbtowc@native	"__mbtowc_dense_euccn"
+mbstowcs	"__mbstowcs_euc_euccn"
+mbstowcs@native	"__mbstowcs_dense_euccn"
+wctomb		"__wctomb_euc_euccn"
+wctomb@native	"__wctomb_dense_euccn"
+wcstombs	"__wcstombs_euc_euccn"
+wcstombs@native	"__wcstombs_dense_euccn"
+wcwidth		"__wcwidth_euc_euccn"
+wcwidth@native	"__wcwidth_dense_euccn"
+wcswidth	"__wcswidth_euc_euccn"
+wcswidth@native	"__wcswidth_dense_euccn"
+eucpctowc	"__eucpctowc_euccn" 
+wctoeucpc	"__wctoeucpc_euccn"
 END METHODS

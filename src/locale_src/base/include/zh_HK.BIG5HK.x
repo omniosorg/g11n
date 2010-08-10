@@ -18,14 +18,7 @@
 #
 # CDDL HEADER END
 #
-#
-# 
-# zh_TW.BIG5 method file
-#
-# Copyright (c) 1996, by Sun Microsystems, Inc.
-# All rights reserved.
-#
-#ident	"@(#)zh_TW.BIG5-machineorder.x 1.6    01/04/30 SMI"
+# Copyright (c) 1996, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 LCBIND
@@ -98,10 +91,10 @@ getdate         "__getdate_std"
 mbsinit         "__mbsinit_gen"
 mbrlen          "__mbrlen_gen"
 
-fgetwc		"__fgetwc_dense_big5"	"localelib" "/usr/lib/locale/zh_TW.BIG5/" "methods_zh_TW.BIG5.so.3"
+fgetwc		"__fgetwc_dense_big5"	"localelib" "/usr/lib/locale/zh_HK.BIG5HK" "methods_zh_HK.BIG5HK.so.3"
 mbftowc		"__mbftowc_dense_big5"
-mbtowc		"__mbtowc_dense_big5"
 mbrtowc         "__mbrtowc_dense_big5"
+mbtowc		"__mbtowc_dense_big5"
 mbstowcs	"__mbstowcs_dense_big5"
 mblen		"__mblen_dense_big5"
 wctomb		"__wctomb_dense_big5"
@@ -111,7 +104,6 @@ wcswidth	"__wcswidth_dense_big5"
 btowc           "__btowc_dense_big5"
 wctob           "__wctob_dense_big5"
 wcrtomb         "__wcrtomb_dense_big5"
-mbrtowc         "__mbrtowc_dense_big5"
 mbsrtowcs       "__mbsrtowcs_dense_big5"
 wcsrtombs       "__wcsrtombs_dense_big5"
 

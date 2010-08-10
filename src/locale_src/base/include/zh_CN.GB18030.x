@@ -18,14 +18,7 @@
 #
 # CDDL HEADER END
 #
-#
-# 
-# zh.GBK method file
-#
-# Copyright (c) 1997, by Sun Microsystems, Inc.
-# All rights reserved.
-#
-#pragma ident	"@(#)zh.GBK-machineorder.x	1.4 03/11/25"
+# Copyright (c) 1997, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 LCBIND
@@ -35,7 +28,6 @@ LCBIND
  _E4 = 0x00000800
  _E5 = 0x00001000
  _E6 = 0x00002000
- _E7 = 0x00004000
  _E9 = 0x00010000
 _E10 = 0x00020000
 _E11 = 0x00040000
@@ -47,8 +39,6 @@ _E16 = 0x00800000
 _E17 = 0x01000000
 _E18 = 0x02000000
 _E19 = 0x04000000
-_E20 = 0x08000000
-_E21 = 0x10000000
 
 isphonogram charclass _E1
 isideogram  charclass _E2
@@ -56,7 +46,6 @@ isenglish   charclass _E3
 isnumber    charclass _E4
 isspecial   charclass _E5
 iswchar6    charclass _E6
-isgb        charclass _E7
 iswchar9    charclass _E9
 iswchar10   charclass _E10
 iswchar11   charclass _E11
@@ -67,9 +56,7 @@ iswchar15   charclass _E15
 iswchar16   charclass _E16
 iswchar17   charclass _E17
 iswchar18   charclass _E18
-iswchar19   charclass _E19
-iswchar20   charclass _E20
-iswchar21   charclass _E21
+isgb	    charclass _E19
 
 END LCBIND
 
@@ -104,27 +91,27 @@ wcsftime        "__wcsftime_std"
 getdate         "__getdate_std"
 mbrlen		"__mbrlen_gen" "libc" "/usr/lib/" "libc.so.1"
 mbsinit		"__mbsinit_gen" "libc" "/usr/lib/" "libc.so.1"
-fgetwc		"__fgetwc_dense_gbk"	"localelib"	"/usr/lib/locale/zh.GBK/" "methods_zh.GBK.so.3"
-mbftowc		"__mbftowc_dense_gbk"
-mbtowc		"__mbtowc_dense_gbk"
-mbstowcs	"__mbstowcs_dense_gbk"
-mblen		"__mblen_dense_gbk"
-wctomb		"__wctomb_dense_gbk"
-wcstombs	"__wcstombs_dense_gbk"
-wcwidth		"__wcwidth_dense_gbk"
-wcswidth	"__wcswidth_dense_gbk"
+fgetwc		"__fgetwc_dense_gb18030"	"libc"	"/usr/lib/locale/zh_CN.GB18030" "methods_zh_CN.GB18030.so.3"
+mbftowc		"__mbftowc_dense_gb18030"
+mbtowc		"__mbtowc_dense_gb18030"
+mbstowcs	"__mbstowcs_dense_gb18030"
+mblen		"__mblen_dense_gb18030"
+wctomb		"__wctomb_dense_gb18030"
+wcstombs	"__wcstombs_dense_gb18030"
+wcwidth		"__wcwidth_dense_gb18030"
+wcswidth	"__wcswidth_dense_gb18030"
 
-btowc			"__btowc_dense_gbk"
-#btowc@native	"__btowc_dense_gbk"
-wctob			"__wctob_dense_gbk"
-#wctob@native	"__wctob_dense_gbk"
-mbrtowc			"__mbrtowc_dense_gbk"
-#mbrtowc@native	"__mbrtowc_dense_gbk"
-wcrtomb			"__wcrtomb_dense_gbk"
-#wcrtomb@native	"__wcrtomb_dense_gbk"
-mbsrtowcs			"__mbsrtowcs_dense_gbk"
-#mbsrtowcs@native	"__mbsrtowcs_dense_gbk"
-wcsrtombs			"__wcsrtombs_dense_gbk"
-#wcsrtombs@native	"__wcsrtombs_dense_gbk"
+btowc			"__btowc_dense_gb18030"
+#btowc@native	"__btowc_dense_gb18030"
+wctob			"__wctob_dense_gb18030"
+#wctob@native	"__wctob_dense_gb18030"
+mbrtowc			"__mbrtowc_dense_gb18030"
+#mbrtowc@native	"__mbrtowc_dense_gb18030"
+wcrtomb			"__wcrtomb_dense_gb18030"
+#wcrtomb@native	"__wcrtomb_dense_gb18030"
+mbsrtowcs			"__mbsrtowcs_dense_gb18030"
+#mbsrtowcs@native	"__mbsrtowcs_dense_gb18030"
+wcsrtombs			"__wcsrtombs_dense_gb18030"
+#wcsrtombs@native	"__wcsrtombs_dense_gb18030"
 
 END METHODS

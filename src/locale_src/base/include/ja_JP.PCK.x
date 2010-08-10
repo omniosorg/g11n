@@ -18,13 +18,9 @@
 #
 # CDDL HEADER END
 #
-#
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-#
-#	@(#)extension.src.m4	1.12	97/12/19 SMI
 #
 # localedef source file for ja locale
 #
