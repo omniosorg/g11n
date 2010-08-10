@@ -108,7 +108,7 @@ mbsrtowcs@native        "__mbsrtowcs_dense"
 wcsrtombs       "__wcsrtombs_euc"
 wcsrtombs@native        "__wcsrtombs_dense"
 
-fgetwc		"__fgetwc_euc_euctw"	"l10n"	"/usr/lib/locale/zh_TW.EUC/" "methods_zh_TW.EUC.so.3"
+fgetwc		"__fgetwc_euc_euctw"	"l10n"	"." "methods_zh_TW.EUC.so.3"
 fgetwc@native	"__fgetwc_dense_euctw"
 mbftowc		"__mbftowc_euc_euctw"
 mbftowc@native	"__mbftowc_dense_euctw"

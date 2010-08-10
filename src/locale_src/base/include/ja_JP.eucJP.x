@@ -50,7 +50,7 @@ METHODS
 process_code	euc
 cswidth		2:2,1:1,2:2
 
-eucpctowc	"__eucpctowc_eucjp" "methods" "/usr/lib/locale/ja_JP.eucJP" "methods_ja_JP.eucJP.so.3"
+eucpctowc	"__eucpctowc_eucjp" "methods" "." "methods_ja_JP.eucJP.so.3"
 wctoeucpc	"__wctoeucpc_eucjp"
 fgetwc		"__fgetwc_euc_eucjp"
 fgetwc@native	"__fgetwc_dense_eucjp"

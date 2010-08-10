@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,10 +18,9 @@
 #
 # CDDL HEADER END
 #
+# Copyright (c) 1996, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-# Copyright (c) 1996, 1997, 2000 by Sun Microsystems, Inc.
-# All rights reserved.
-#
+
 # Common method file for *.UTF-8.
 
 
@@ -76,9 +75,9 @@ getdate         "__getdate_std"
 
 #
 # The methods designated at below are all Unicode locale-specific methods
-# coming from the methods_unicode.so.2 common shared object.
+# coming from the methods_unicode.so.3 common shared object.
 #
-eucpctowc	"__u32_to_dense_u32_utf8"	"localelib" "/usr/lib/locale/common" "methods_unicode.so.3"
+eucpctowc	"__u32_to_dense_u32_utf8"	"localelib" "." "methods_unicode.so.3"
 wctoeucpc	"__dense_u32_to_u32_utf8"
 
 iswctype        "__iswctype_bc_utf8"

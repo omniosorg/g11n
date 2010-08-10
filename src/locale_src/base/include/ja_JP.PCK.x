@@ -89,7 +89,7 @@ METHODS
 
 process_code	dense
 
-fgetwc		"__fgetwc_dense_pck" "methods" "/usr/lib/locale/ja_JP.PCK" "methods_ja_JP.PCK.so.3"
+fgetwc		"__fgetwc_dense_pck" "methods" "." "methods_ja_JP.PCK.so.3"
 mbftowc		"__mbftowc_dense_pck"
 mblen		"__mblen_pck"
 mbstowcs	"__mbstowcs_dense_pck"

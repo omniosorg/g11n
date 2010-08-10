@@ -120,7 +120,7 @@ mbsrtowcs@native        "__mbsrtowcs_dense"
 wcsrtombs       "__wcsrtombs_euc"
 wcsrtombs@native        "__wcsrtombs_dense"
 
-fgetwc		"__fgetwc_euc_euckr"	"l10n"	"/usr/lib/locale/ko_KR.EUC/" "methods_ko_KR.EUC.so.3"
+fgetwc		"__fgetwc_euc_euckr"	"l10n"	"." "methods_ko_KR.EUC.so.3"
 fgetwc@native	"__fgetwc_dense_euckr"
 mbftowc		"__mbftowc_euc_euckr"
 mbftowc@native	"__mbftowc_dense_euckr"

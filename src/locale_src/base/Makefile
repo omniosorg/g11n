@@ -109,25 +109,90 @@ clean:=		TARGET= clean
 
 .KEEP_STATE:
 
-all: $(MACH64) $(LOCALE.so) $(LOCALE_src)
+#
+# create symlinks for all methods_* libraries
+#
+METHODS_LOCALES = \
+	ja_JP.PCK \
+	ja_JP.eucJP \
+	ko_KR.EUC \
+	zh_CN.EUC \
+	zh_CN.GB18030 \
+	zh_CN.GBK \
+	zh_HK.BIG5HK \
+	zh_TW.BIG5 \
+	zh_TW.EUC \
+	zh_TW.EUC
+
+METHODS_UNICODE_SO = methods_unicode.so.$(METHOD_VERSION)
+
+METHODS_SOS = \
+	$(METHODS_LOCALES:%=methods_%.so.$(METHOD_VERSION)) \
+	$(METHODS_LOCALES:%=$(MACH64)/methods_%.so.$(METHOD_VERSION)) \
+	$(METHODS_UNICODE_SO) \
+	$(MACH64)/$(METHODS_UNICODE_SO)
+
+$(METHODS_UNICODE_SO):
+	if [ -f $(FILEROOT)/usr/lib/locale/common/$@ ]; then \
+		$(LN) -s $(FILEROOT)/usr/lib/locale/common/$@ ; \
+	elif [ -f /usr/lib/locale/common/$@ ]; then\
+		$(LN) -s /usr/lib/locale/common/$@ ; \
+	else \
+		echo "Failed to create symlink to $@." ; \
+		exit 1 ; \
+	fi
+
+$(MACH64)/$(METHODS_UNICODE_SO): $(MACH64)
+	if [ -f $(FILEROOT)/usr/lib/locale/common/$@ ]; then \
+		$(LN) -s $(FILEROOT)/usr/lib/locale/common/$@ $(MACH64)/; \
+	elif [ -f /usr/lib/locale/common/$@ ]; then \
+		$(LN) -s /usr/lib/locale/common/$@ $(MACH64)/ ; \
+	else \
+		echo "Failed to create symlink to $@." ; \
+		exit 1 ; \
+	fi
+
+methods_%.so.$(METHOD_VERSION):
+	LOC=$(@:methods_%.so.$(METHOD_VERSION)=%); \
+	if [ -f $(FILEROOT)/usr/lib/locale/$$LOC/$@ ]; then \
+		$(LN) -s $(FILEROOT)/usr/lib/locale/$$LOC/$@ ; \
+	elif [ -f /usr/lib/locale/$$LOC/$@ ]; then \
+		$(LN) -s /usr/lib/locale/$$LOC/$@ ; \
+	else \
+		echo "Failed to create symlink to $@." ; \
+		exit 1 ; \
+	fi 
+
+$(MACH64)/methods_%.so.$(METHOD_VERSION): $(MACH64)
+	LOC=$(@:$(MACH64)/methods_%.so.$(METHOD_VERSION)=%); \
+	if [ -f $(FILEROOT)/usr/lib/locale/$$LOC/$@ ]; then \
+		$(LN) -s $(FILEROOT)/usr/lib/locale/$$LOC/$@ $(MACH64)/; \
+	elif [ -f /usr/lib/locale/$$LOC/$@ ]; then \
+		$(LN) -s /usr/lib/locale/$$LOC/$@ $(MACH64)/; \
+	else \
+		echo "Failed to create symlink to $@." ; \
+		exit 1 ; \
+	fi
+
+
+all: $(METHODS_SOS) $(MACH64) $(LOCALE.so) $(LOCALE_src)
 
 %.localedef.build: %.localedef
 	$(SRC)/tools/generatelocaledef -d include/ -i $< -o $@
-
-$(LOCALE): $(LOCALE:%=%.so.$(METHOD_VERSION))
 
 #
 # split locale parts first: Lang,Country,Encoding,Variant
 # - UTF-8 locales:	.x and .charmap from Encoding
 # - non-UTF-8 locales:	.x and .charmap based on Lang,Country,Encoding
 #
-%.so.$(METHOD_VERSION): %.localedef.build
+%.so.$(METHOD_VERSION): $(METHODS_SOS) %.localedef.build
 	LOC=$(<:%.localedef.build=%) ; \
 	LCE=`echo $$LOC | cut -d@ -f1` ; \
 	ENC=`echo $$LCE | cut -d. -f2` ; \
 	if [ "$$ENC" = "UTF-8" ]; then ID=$$ENC; else ID=$$LCE; fi ; \
-	$(LOCALEDEF)               $(LDF_OPT)   -c -v -W cc,"$(CFLAGS)"   -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/$$ID.x -f $(_CHARMAPS)/$$ID.charmap -i $<    $$LOC; \
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/$$ID.x -f $(_CHARMAPS)/$$ID.charmap -i ../$< $$LOC
+	$(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/$$ID.x -f $(_CHARMAPS)/$$ID.charmap -i $< $$LOC; \
+	$(MV) $@ $(MACH64)/ ; \
+	$(LOCALEDEF) $(LDF_OPT)   -c -v -W cc,"$(CFLAGS)"   -L "$(LOPT_ORIGIN)" -x $(_METHODSRC)/$$ID.x -f $(_CHARMAPS)/$$ID.charmap -i $< $$LOC
 
 $(MACH64):
 	$(INSDIR) $(MACH64)

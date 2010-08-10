@@ -91,7 +91,7 @@ getdate         "__getdate_std"
 mbsinit         "__mbsinit_gen"
 mbrlen          "__mbrlen_gen"
 
-fgetwc		"__fgetwc_dense_big5"	"localelib" "/usr/lib/locale/zh_HK.BIG5HK" "methods_zh_HK.BIG5HK.so.3"
+fgetwc		"__fgetwc_dense_big5"	"localelib" "." "methods_zh_HK.BIG5HK.so.3"
 mbftowc		"__mbftowc_dense_big5"
 mbrtowc         "__mbrtowc_dense_big5"
 mbtowc		"__mbtowc_dense_big5"
