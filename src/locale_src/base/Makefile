@@ -23,12 +23,12 @@
 
 include $(SRC)/Makefile.master
 
-LOCALES_UTF8 = ja_JP.UTF-8 zh_CN.UTF-8 ko.UTF-8 ko.UTF-8@dict th_TH.UTF-8 zh_HK.UTF-8 zh_TW.UTF-8 zh_CN.UTF-8@pinyin zh_CN.UTF-8@radical zh_CN.UTF-8@stroke zh_HK.UTF-8@pinyin zh_HK.UTF-8@stroke zh_HK.UTF-8@radical zh_HK.UTF-8@zhuyin zh_TW.UTF-8@pinyin zh_TW.UTF-8@stroke zh_TW.UTF-8@radical zh_TW.UTF-8@zhuyin
+LOCALES_UTF8 = ja_JP.UTF-8 zh_CN.UTF-8 ko_KR.UTF-8 ko_KR.UTF-8@dict th_TH.UTF-8 zh_HK.UTF-8 zh_TW.UTF-8 zh_CN.UTF-8@pinyin zh_CN.UTF-8@radical zh_CN.UTF-8@stroke zh_HK.UTF-8@pinyin zh_HK.UTF-8@stroke zh_HK.UTF-8@radical zh_HK.UTF-8@zhuyin zh_TW.UTF-8@pinyin zh_TW.UTF-8@stroke zh_TW.UTF-8@radical zh_TW.UTF-8@zhuyin
 
 # not migrated yet because different reasons
 LOCALES_ISO = no_NO.ISO8859-1@bokmal no_NO.ISO8859-1@nynorsk sh_BA.ISO8859-2@bosnia 
 
-LOCALES_OTHER = ja_JP.PCK ja_JP.eucJP ko ko@dict th_TH.TIS620 zh_CN.EUC zh_CN.GB18030 zh_CN.GBK \
+LOCALES_OTHER = ja_JP.PCK ja_JP.eucJP ko_KR.EUC ko_KR.EUC@dict th_TH.TIS620 zh_CN.EUC zh_CN.GB18030 zh_CN.GBK \
 		zh_HK.BIG5HK zh_TW.EUC zh_TW.BIG5 zh_CN.GB18030@pinyin zh_CN.GB18030@radical \
 		zh_CN.GB18030@stroke zh_CN.GBK@pinyin zh_CN.GBK@radical zh_CN.GBK@stroke \
 		zh_HK.BIG5HK@pinyin zh_HK.BIG5HK@radical zh_HK.BIG5HK@stroke zh_HK.BIG5HK@zhuyin \
@@ -202,9 +202,9 @@ zh_CN.EUC%.so.$(METHOD_VERSION): zh_CN.EUC%.localedef
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/zh.EUC.x -f $(_CHARMAPS)/zh.charmap -i $< $(<:%.localedef=%)
 	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/zh.EUC.x -f $(_CHARMAPS)/zh.charmap -i ../$< $(<:%.localedef=%)
 
-ko.so.$(METHOD_VERSION): ko.localedef
-	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ko.EUC.x -f $(_CHARMAPS)/EUC.charmap -i ko.localedef ko
-	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ko.EUC.x -f $(_CHARMAPS)/EUC.charmap -i ../ko.localedef ko
+ko_KR.EUC.so.$(METHOD_VERSION): ko_KR.EUC.localedef
+	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ko.EUC.x -f $(_CHARMAPS)/EUC.charmap -i ko_KR.EUC.localedef ko_KR.EUC
+	cd $(MACH64); $(LOCALEDEF) $(LDF_OPT64) -c -v -W cc,"$(CFLAGS64)" -L "" -x $(_METHODSRC)/ko.EUC.x -f $(_CHARMAPS)/EUC.charmap -i ../ko_KR.EUC.localedef ko_KR.EUC
 
 th_TH.TIS620.so.$(METHOD_VERSION): th_TH.TIS620.localedef
 	$(LOCALEDEF) $(LDF_OPT) -c -v -W cc,"$(CFLAGS)" -L "" -x $(_METHODSRC)/ISO8859.x -f $(_CHARMAPS)/TIS620.charmap -i th_TH.TIS620.localedef th_TH.TIS620

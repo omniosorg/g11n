@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,12 +18,9 @@
 #
 # CDDL HEADER END
 #
-
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-#ident	"@(#)Makefile	1.0	06/03/07	SMI"
-#
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Makefile for ko_KR.EUC locale(in CSI environment).
 #
 
 LOCALE:sh = basename `pwd`
@@ -32,12 +29,14 @@ dummy: all
 
 include ../common/Makefile.asian
 
-INSTALL_FLAG    = -u bin -g bin
+INSTALL_FLAG	= -u bin -g bin
 
 install: all $(TARGETDIRS) $(FILES.obj)
 	$(INS) $(LC_CTYPE_DIR) -m 755 $(INSTALL_FLAG) $(RESOLVE_SO)
 	$(INS) $(LC_CTYPE_DIR) -m 755 $(INSTALL_FLAG) LCL_DEF
+	$(INS) $(LC_CTYPE_DIR) -m 755 $(INSTALL_FLAG) mailcodelist
 	$(INS) $(LC_CTYPE_DIR_64) -m 755 $(INSTALL_FLAG) $(MACH64)/$(RESOLVE_SO)
+	$(INS) $(LC_CTYPE_DIR_64) -m 755 $(INSTALL_FLAG) mailcodelist
 
-all: LCL_DEF $(MACH64) $(RESOLVE_SO)
+all: LCL_DEF mailcodelist $(MACH64) $(RESOLVE_SO) 
 

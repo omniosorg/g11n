@@ -2,7 +2,7 @@
 # CDDL HEADER START
 #
 # The contents of this file are subject to the terms of the
-# Common Development and Distribution License (the "License").  
+# Common Development and Distribution License (the "License").
 # You may not use this file except in compliance with the License.
 #
 # You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
@@ -18,23 +18,15 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-s none usr/lib/locale/ko.UTF-8/LC_CTYPE/64=./sparcv9
-d none usr/lib/locale/ko.UTF-8/LC_CTYPE/sparcv9 0755 root bin
-s none usr/lib/locale/ko.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
-s none usr/lib/locale/ko.UTF-8/LO_LTYPE/64=./sparcv9
-d none usr/lib/locale/ko.UTF-8/LO_LTYPE/sparcv9 0755 root bin
-s none usr/lib/locale/ko.UTF-8/LO_LTYPE/sparcv9/ko.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
-s none usr/lib/locale/ko.UTF-8/64=./sparcv9
-d none usr/lib/locale/ko.UTF-8/sparcv9 0755 root bin
-f none usr/lib/locale/ko.UTF-8/sparcv9/ko.UTF-8.so.3 0555 root bin
-s none usr/lib/locale/ko.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
-d none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/sparcv9 0755 root bin
-s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/64=./sparcv9
-s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/sparcv9/ko_KR.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 s none usr/lib/locale/ko_KR.UTF-8/64=./sparcv9
+s none usr/lib/locale/ko_KR.UTF-8/LC_CTYPE/64=./sparcv9
+d none usr/lib/locale/ko_KR.UTF-8/LC_CTYPE/sparcv9 0755 root bin
+s none usr/lib/locale/ko_KR.UTF-8/LC_CTYPE/sparcv9/wdresolve.so=../../../common/LC_CTYPE/sparcv9/wdresolve_unicode.so
+s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/64=./sparcv9
+d none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/sparcv9 0755 root bin
+s none usr/lib/locale/ko_KR.UTF-8/LO_LTYPE/sparcv9/ko_KR.UTF-8.layout.so.1=../../../common/LO_LTYPE/sparcv9/umle.layout.so.1
 d none usr/lib/locale/ko_KR.UTF-8/sparcv9 0755 root bin
-s none usr/lib/locale/ko_KR.UTF-8/sparcv9/ko_KR.UTF-8.so.3=../../ko.UTF-8/sparcv9/ko.UTF-8.so.3
-s none usr/lib/locale/ko_KR.UTF-8/sparcv9/methods_unicode.so.3=../../ko.UTF-8/sparcv9/methods_unicode.so.3
+f none usr/lib/locale/ko_KR.UTF-8/sparcv9/ko_KR.UTF-8.so.3 0555 root bin
+s none usr/lib/locale/ko_KR.UTF-8/sparcv9/methods_unicode.so.3=../../common/sparcv9/methods_unicode.so.3
