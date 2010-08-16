@@ -1,5 +1,5 @@
 //
-// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -26,7 +26,6 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
-
 //
 // CDDL HEADER START
 //
@@ -51,7 +50,7 @@
 partial alphanumeric_keys
 xkb_symbols "type6" {
 
-    name[Group1]="Norway - Sun type 6";
+    name[Group1]="Norway";
 
     key <TLDE> { [             bar,         section                ] };
     key <LSGT> { [            less,         greater                ] };
@@ -78,7 +77,6 @@ xkb_symbols "type6" {
 
         include "level3(ralt_switch)"
         include "kpdl(comma)"
-
 };
 
 partial alphanumeric_keys
@@ -113,9 +111,7 @@ xkb_symbols "type4" {
 
 	include "level3(ralt_switch)"
 	include "kpdl(comma)"
-
 };
-
 
 partial alphanumeric_keys
 xkb_symbols "type5" {
@@ -134,45 +130,7 @@ xkb_symbols "type5" {
 
 	include "level3(ralt_switch)"
 	include "kpdl(comma)"
-
 };
-
-
-partial alphanumeric_keys
-	xkb_symbols "nodeadkeys" {
-	include "no(nodeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "dvorak" {
-	include "no(dvorak)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "smi" {
-	include "no(smi)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "smi_nodeadkeys" {
-	include "no(smi_nodeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "mac" {
-	include "no(mac)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "mac_nodeadkeys" {
-	include "no(mac_nodeadkeys)"
-};
-
 
 partial default alphanumeric_keys
 	xkb_symbols "basic" {

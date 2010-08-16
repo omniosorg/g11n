@@ -1,5 +1,5 @@
 //
-// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -26,8 +26,6 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
-//
-
 //
 // CDDL HEADER START
 //
@@ -61,9 +59,7 @@ xkb_symbols "type6" {
     key <BKSL> { [ backslash, bar,  brokenbar   ]       };
 
         include "level3(ralt_switch)"
-
 };
-
 
 // Korean layout for a Type 4 Sun keyboard
 xkb_symbols "type4" {
@@ -75,7 +71,6 @@ xkb_symbols "type4" {
     key <COMP> { [ Hangul_Hanja		]			};
 
 	include "level3(ralt_switch)"
-
 };
 
 // Korean layout for a Type 5 Sun keyboard
@@ -87,33 +82,7 @@ xkb_symbols "type5" {
     key <BKSL> { [ backslash, bar,  brokenbar			] };
 
 	include "level3(ralt_switch)"
-
 };
-
-
-partial alphanumeric_keys
-	xkb_symbols "kr106" {
-	include "kr(kr106)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "kr104" {
-	include "kr(kr104)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "koreankeys" {
-	include "kr(koreankeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "koreankeys_raltctl" {
-	include "kr(koreankeys_raltctl)"
-};
-
 
 partial default alphanumeric_keys
 	xkb_symbols "basic" {

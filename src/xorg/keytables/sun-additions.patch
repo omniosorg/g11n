@@ -1,9 +1,8 @@
---- rules/base.hdr.part	Sun Jan 11 00:43:04 2009
-+++ rules/base.hdr.part	Mon Mar  1 17:41:46 2010
-@@ -7,3 +7,27 @@
- //  2002 Modifier: Ivan Pascal      The XFree86 Project
- //  $XFree86: xc/programs/xkbcomp/rules/xfree86,v 3.79 2004/01/09 00:16:01 dawes Exp $
- //
+--- rules/base.hdr.part	Fri Jul 30 15:56:07 2010
++++ rules/base.hdr.part	Mon Aug  2 13:57:37 2010
+@@ -1,3 +1,25 @@
++//
++// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 +//
 +// CDDL HEADER START
 +//
@@ -11,7 +10,7 @@
 +// Common Development and Distribution License (the "License").
 +// You may not use this file except in compliance with the License.
 +//
-+// You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
++// You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
 +// or http://www.opensolaris.org/os/licensing.
 +// See the License for the specific language governing permissions
 +// and limitations under the License.
@@ -24,14 +23,12 @@
 +//
 +// CDDL HEADER END
 +//
-+//
-+// Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
-+// Use is subject to license terms.
-+//
-
---- rules/base.lists.part	Wed Apr 22 21:46:32 2009
-+++ rules/base.lists.part	Tue Mar  2 09:50:04 2010
-@@ -91,3 +91,16 @@
+ // $Xorg: xfree86,v 1.3 2000/08/17 19:54:42 cpqbld Exp $
+ 
+ //
+--- rules/base.lists.part	Fri Jul 30 15:56:07 2010
++++ rules/base.lists.part	Fri Jul 30 16:08:47 2010
+@@ -99,6 +99,15 @@
  
  ! $thinkpads = thinkpad thinkpad60 thinkpadz60
  
@@ -44,17 +41,15 @@
 +! $sun_jp = sun_type4_jp sun_type5_jp sun_type6_jp sun_type6_jp_usb sun_type7_jp_usb
 +
 +// Sun Type 6 keyboards with custom/non-standard layouts
-+! $sun_t6_custom = ara be br ca ch cz de dk \
-+		   ee es fi fr gb gr it kr \
-+		   lt lv nl no pl pt ro ru \
-+		   se sk tr tw ua
-
---- rules/base.m_g.part	Wed Jan 28 23:01:44 2009
-+++ rules/base.m_g.part	Tue Mar  2 09:54:57 2010
-@@ -18,4 +18,31 @@
-  $macs		=	macintosh(macintosh)
+ ! $sun_t6_custom = ara be br ca ch cz de dk \
+                    ee es fi fr gb gr it kr \
+                    lt lv nl no pl pt ro ru \
+--- rules/base.m_g.part	Fri Jul 30 15:56:07 2010
++++ rules/base.m_g.part	Fri Jul 30 16:17:34 2010
+@@ -23,4 +23,31 @@
    hhk		=	hhk(basic)
    kinesis	=	kinesis(model100)
+  $nokiamodels	=	nokia(%m)
 +  sun_type4	=	sun(type4)
 +  sun_type4_ca	=	sun(type4_ca)
 +  sun_type4_jp	=	sun(type4jp)
@@ -83,30 +78,30 @@
 +  sun_type7_euro_usb	=	sun(type7tuv)
 +  sun_type7_unix_usb	=	sun(type7unix)
    *		=       pc(pc104)
-
---- rules/base.m_k.part	Mon Mar  2 22:04:21 2009
-+++ rules/base.m_k.part	Tue Mar  2 09:55:21 2010
-@@ -1,9 +1,9 @@
+--- rules/base.m_k.part	Fri Jul 30 15:56:07 2010
++++ rules/base.m_k.part	Fri Jul 30 16:20:36 2010
+@@ -1,11 +1,10 @@
    amiga		=	amiga(de)
    ataritt	=	ataritt(de)
+   empty         =       empty
 -  sun4		=	sun(type4_euro)
 -  sun5		=	sun(type5_euro)
 -  sun6		=	sun(type6_usb)
+-  sun6euro	=	sun(type6tuv_usb)
 + $sun_jp	=	sun(type6_jp_usb)
 + $sun		=	sun(type6_usb)
    pc98		=	xfree98(pc98)
 +  jp106		=	sun(type6_jp_usb)
-   evdev		=	evdev
-   olpc		=	evdev
+  $applealu	=	macintosh(alukbd)
    macintosh_hhk	=	macintosh(hhk)
-
---- rules/base.ml1_s.part	Tue Mar  3 23:22:33 2009
-+++ rules/base.ml1_s.part	Tue Mar  2 09:37:21 2010
+   macintosh_old	=	macintosh(old)
+--- rules/base.ml1_s.part	Fri Jul 30 15:56:07 2010
++++ rules/base.ml1_s.part	Fri Jul 30 16:24:42 2010
 @@ -1,7 +1,12 @@
    ataritt	*			=	xfree68_vndr/ataritt(us)+%l[1]%(v[1])
    amiga		*			=	xfree68_vndr/amiga(usa1)+%l[1]%(v[1])
--  sun4		*			=	latin+sun_vndr/us(sun4)+%l[1]%(v[1])
--  sun5		*			=	latin+sun_vndr/us(sun5)+%l[1]%(v[1])
+-  sun4		*			=	latin+sun_vndr/us(type4)+%l[1]%(v[1])
+-  sun5		*			=	latin+sun_vndr/us(type5)+%l[1]%(v[1])
 + $sun_type4	$sun_t6_custom		=	pc+sun_vndr/us(type4)+sun_vndr/%l[1]%(v[1])
 + $sun_type5	$sun_t6_custom		=	pc+sun_vndr/us(type5)+sun_vndr/%l[1]%(v[1])
 + $sun_hobo	$sun_t6_custom		=	pc+sun_vndr/us(type5hobo)+sun_vndr/%l[1]%(v[1])
@@ -117,29 +112,32 @@
    macintosh_old	us			=	macintosh_vndr/us(oldmac)
    macintosh_old	$macvendorlayouts	=	macintosh_vndr/us(oldmac)+macintosh_vndr/%l[1]%(v[1])
    macintosh_old	*			=	macintosh_vndr/us(oldmac)+%l[1]%(v[1])
-
---- rules/base.ml_c.part	Sun Jan 11 00:43:04 2009
-+++ rules/base.ml_c.part	Tue Mar  2 09:40:38 2010
+--- rules/base.ml_c.part	Fri Jul 30 15:56:07 2010
++++ rules/base.ml_c.part	Fri Jul 30 16:26:44 2010
 @@ -1,3 +1,5 @@
 + $sun_jp	jp		=	complete+japan(kana_lock)
 +  jp106		jp		=	complete+japan(kana_lock)
    pc98		nec_vndr/jp	=	pc98(basic)
    *		jp		=	complete+japan
    olpc         *               =       olpc
-
---- rules/base.ml_s.part	Tue Mar  3 23:22:58 2009
-+++ rules/base.ml_s.part	Tue Mar  2 09:48:14 2010
-@@ -3,13 +3,20 @@
-   amiga		$nonlatin		=	xfree68_vndr/amiga(usa1)+%l%(v):2
-   amiga		*			=	xfree68_vndr/amiga(usa1)+%l%(v)
+--- rules/base.ml_s.part	Fri Jul 30 15:56:07 2010
++++ rules/base.ml_s.part	Fri Jul 30 16:37:07 2010
+@@ -5,18 +5,20 @@
    classmate	us			=	pc+%l(classmate)
+   empty         *                       =       empty(basic)
+   *             empty                   =       empty(basic)
 -  sun4		$nonlatin		=	latin+sun_vndr/us(type4)+%l%(v):2
 -  sun4		*			=	latin+sun_vndr/us(type4)+%l%(v)
 -  sun5		$nonlatin		=	latin+sun_vndr/us(type5)+%l%(v):2
 -  sun5		*			=	latin+sun_vndr/us(type5)+%l%(v)
--  sun6		us			=	sun_vndr/us(type6)
--  sun6		en_US			=	sun_vndr/us(type6)+iso9995-3(basic)
--  sun6		*			=	sun_vndr/us(type6)+%l%(v)
+-  sun6		us			=	pc+sun_vndr/us(type6)
+-  sun6		en_US			=	pc+sun_vndr/us(type6)+iso9995-3(basic)
+-  sun6		$sun_t6_custom		=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
+-  sun6		*			=	pc+sun_vndr/us(type6)+%l%(v)
+-  sun6euro	us			=	pc+sun_vndr/us(type6)
+-  sun6euro	en_US			=	pc+sun_vndr/us(type6)+iso9995-3(basic)
+-  sun6euro	$sun_t6_custom		=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
+-  sun6euro	*			=	pc+sun_vndr/us(type6)+%l%(v)
 + $sun_type4	$sun_t6_custom		=	pc+sun_vndr/us(type4)+sun_vndr/%l%(v)+sun_vndr/solaris(defaults)
 + $sun_type5	$sun_t6_custom		=	pc+sun_vndr/us(type5)+sun_vndr/%l%(v)+sun_vndr/solaris(defaults)
 + $sun_type5	tw			=	sun_vndr/us_old(type5)+sun_vndr/tw(type5)+sun_vndr/solaris(defaults)
@@ -157,40 +155,37 @@
    pc98		nec_vndr/jp		=	nec_vndr/jp(pc98)
    macintosh_old	us			=	macintosh_vndr/us(oldmac)
    macintosh_old	en_US			=	macintosh_vndr/us(oldmac)
-
---- rules/base.xml.in	Sun Jan 11 00:43:04 2009
-+++ rules/base.xml.in	Tue Mar  2 09:40:38 2010
-@@ -1,5 +1,29 @@
+--- rules/base.xml.in	Fri Jul 30 15:56:07 2010
++++ rules/base.xml.in	Mon Aug  2 15:53:08 2010
+@@ -1,5 +1,27 @@
  <?xml version="1.0" encoding="utf-8"?>
  <!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
 +<!--
-+ CDDL HEADER START
++Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 +
-+ The contents of this file are subject to the terms of the
-+ Common Development and Distribution License (the "License").
-+ You may not use this file except in compliance with the License.
++CDDL HEADER START
 +
-+ You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
-+ or http://www.opensolaris.org/os/licensing.
-+ See the License for the specific language governing permissions
-+ and limitations under the License.
++The contents of this file are subject to the terms of the
++Common Development and Distribution License (the "License").
++You may not use this file except in compliance with the License.
 +
-+ When distributing Covered Code, include this CDDL HEADER in each
-+ file and include the License file at usr/src/OPENSOLARIS.LICENSE.
-+ If applicable, add the following below this CDDL HEADER, with the
-+ fields enclosed by brackets "[]" replaced with your own identifying
-+ information: Portions Copyright [yyyy] [name of copyright owner]
++You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
++or http://www.opensolaris.org/os/licensing.
++See the License for the specific language governing permissions
++and limitations under the License.
 +
-+ CDDL HEADER END
++When distributing Covered Code, include this CDDL HEADER in each
++file and include the License file at usr/src/OPENSOLARIS.LICENSE.
++If applicable, add the following below this CDDL HEADER, with the
++fields enclosed by brackets "[]" replaced with your own identifying
++information: Portions Copyright [yyyy] [name of copyright owner]
 +
-+
-+ Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
-+ Use is subject to license terms.
++CDDL HEADER END
 +-->
  <xkbConfigRegistry>
    <modelList>
      <model>
-@@ -1128,8 +1152,162 @@
+@@ -1170,13 +1192,167 @@
      </model>
      <model>
        <configItem>
@@ -198,11 +193,11 @@
 -        <_description>Sun Type 5/6</_description>
 +        <name>sun_type7_usb</name>
 +        <_description>Sun Type 7 USB</_description>
-+        <vendor>Sun Microsystems</vendor>
-+      </configItem>
-+    </model>
-+    <model>
-+      <configItem>
+         <vendor>Sun Microsystems</vendor>
+       </configItem>
+     </model>
+     <model>
+       <configItem>
 +        <name>sun_type7_euro_usb</name>
 +        <_description>Sun Type 7 USB (European layout)</_description>
 +        <vendor>Sun Microsystems</vendor>
@@ -352,15 +347,18 @@
 +      <configItem>
 +        <name>sun_type4_euro</name>
 +        <_description>Sun Type 4 (European layout)</_description>
-         <vendor>Sun Microsystems</vendor>
-       </configItem>
-     </model>
-@@ -1258,6 +1436,18 @@
-             <_description>Group toggle on multiply/divide key</_description>
-           </configItem>
++        <vendor>Sun Microsystems</vendor>
++      </configItem>
++    </model>
++    <model>
++      <configItem>
+         <name>targa_v811</name>
+         <_description>Targa Visionary 811</_description>
+         <vendor>Targa</vendor>
+@@ -1316,6 +1492,18 @@
          </variant>
-+        <variant>
-+          <configItem>
+         <variant>
+           <configItem>
 +            <name>type6</name>
 +            <_description>Sun Type 6/7 Variant</_description>
 +          </configItem>
@@ -371,10 +369,12 @@
 +            <_description>Sun Type 5 Variant</_description>
 +          </configItem>
 +        </variant>
-       </variantList>
-     </layout>
-     <layout>
-@@ -1378,6 +1568,12 @@
++        <variant>
++          <configItem>
+             <name>srp</name>
+             <_description>Serbian</_description>
+             <languageList><iso639Id>eng</iso639Id>
+@@ -1442,6 +1630,12 @@
              <_description>Buckwalter</_description>
            </configItem>
          </variant>
@@ -387,20 +387,20 @@
        </variantList>
      </layout>
      <layout>
-@@ -1484,6 +1680,12 @@
+@@ -1582,6 +1776,12 @@
+             <_description>Wang model 724 azerty</_description>
+           </configItem>
          </variant>
-         <variant>
-           <configItem>
++        <variant>
++          <configItem>
 +            <name>type6</name>
 +            <_description>Sun Type 6/7 Variant</_description>
 +          </configItem>
 +        </variant>
-+        <variant>
-+          <configItem>
-             <name>oss_latin9</name>
-             <_description>Alternative, latin-9 only</_description>
-           </configItem>
-@@ -1751,6 +1953,12 @@
+       </variantList>
+     </layout>
+     <layout>
+@@ -1822,6 +2022,12 @@
              <languageList><iso639Id>epo</iso639Id></languageList>
            </configItem>
          </variant>
@@ -413,7 +413,7 @@
        </variantList>
      </layout>
      <layout>
-@@ -1908,6 +2116,12 @@
+@@ -1979,6 +2185,12 @@
              <languageList><iso639Id>eng</iso639Id></languageList>
            </configItem>
          </variant>
@@ -426,8 +426,8 @@
        </variantList>
      </layout>
      <layout>
-@@ -2009,6 +2223,12 @@
- 	    <_description>UCW layout (accented letters only)</_description>
+@@ -2086,6 +2298,12 @@
+ 	    <_description>US Dvorak with CZ UCW support</_description>
  	 </configItem>
  	</variant>
 +        <variant>
@@ -439,10 +439,12 @@
        </variantList>
      </layout>
      <layout>
-@@ -2027,6 +2247,24 @@
+@@ -2120,6 +2338,24 @@
+             <_description>Dvorak</_description>
+           </configItem>
          </variant>
-         <variant>
-           <configItem>
++        <variant>
++          <configItem>
 +            <name>type6</name>
 +            <_description>Sun Type 6/7 Variant</_description>
 +          </configItem>
@@ -459,17 +461,23 @@
 +            <_description>Sun Type 4 Variant</_description>
 +          </configItem>
 +        </variant>
+       </variantList>
+     </layout>
+     <layout>
+@@ -2148,6 +2384,24 @@
+             <_description>Standard</_description>
+           </configItem>
+         </variant>
 +        <variant>
 +          <configItem>
-             <name>mac</name>
-             <_description>Macintosh</_description>
-           </configItem>
-@@ -2061,6 +2299,18 @@
-         </variant>
-         <variant>
-           <configItem>
 +            <name>type6</name>
-+            <_description>Sun Type 5/6/7 Variant</_description>
++            <_description>Sun Type 6/7 Variant</_description>
++          </configItem>
++        </variant>
++        <variant>
++          <configItem>
++            <name>type5</name>
++            <_description>Sun Type 5 Variant</_description>
 +          </configItem>
 +        </variant>
 +        <variant>
@@ -478,12 +486,10 @@
 +            <_description>Sun Type 4 Variant</_description>
 +          </configItem>
 +        </variant>
-+        <variant>
-+          <configItem>
-             <name>mac</name>
-             <_description>Macintosh</_description>
-           </configItem>
-@@ -2107,6 +2357,12 @@
+       </variantList>
+     </layout>
+     <layout>
+@@ -2184,6 +2438,12 @@
              <_description>US keyboard with Estonian letters</_description>
            </configItem>
          </variant>
@@ -496,36 +502,38 @@
        </variantList>
      </layout>
      <layout>
-@@ -2236,6 +2492,12 @@
-         </variant>
-         <variant>
-           <configItem>
-+            <name>type6</name>
-+            <_description>Sun Type 5/6/7 Variant</_description>
-+          </configItem>
-+        </variant>
-+        <variant>
-+          <configItem>
-             <name>smi</name>
-             <_description>Northern Saami</_description>
-             <languageList><iso639Id>smi</iso639Id>
-@@ -2272,6 +2534,12 @@
-         </variant>
-         <variant>
-           <configItem>
-+            <name>type6</name>
-+            <_description>Sun Type 5/6/7 Variant</_description>
-+          </configItem>
-+        </variant>
-+        <variant>
-+          <configItem>
-             <name>sundeadkeys</name>
-             <_description>Sun dead keys</_description>
+@@ -2319,6 +2579,12 @@
+             <_description>Macintosh</_description>
            </configItem>
-@@ -2482,6 +2750,18 @@
          </variant>
-         <variant>
-           <configItem>
++        <variant>
++          <configItem>
++            <name>type6</name>
++            <_description>Sun Type 5/6/7 Variant</_description>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
+@@ -2427,6 +2693,12 @@
+             <languageList><iso639Id>geo</iso639Id></languageList>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
++            <name>type6</name>
++            <_description>Sun Type 5/6/7 Variant</_description>
++          </configItem>
++        </variant>
+       </variantList>
+     </layout>
+     <layout>
+@@ -2626,6 +2898,18 @@
+             <_description>qwerty</_description>
+           </configItem>
+         </variant>
++        <variant>
++          <configItem>
 +            <name>type6</name>
 +            <_description>Sun Type 5/6/7 Variant</_description>
 +          </configItem>
@@ -536,12 +544,10 @@
 +            <_description>Sun Type 4 Variant</_description>
 +          </configItem>
 +        </variant>
-+        <variant>
-+          <configItem>
-             <name>nodeadkeys</name>
-             <_description>Eliminate dead keys</_description>
-           </configItem>
-@@ -2582,6 +2862,12 @@
+       </variantList>
+     </layout>
+     <layout>
+@@ -2660,6 +2944,12 @@
              <_description>Polytonic</_description>
            </configItem>
          </variant>
@@ -554,7 +560,7 @@
        </variantList>
      </layout>
      <layout>
-@@ -2802,6 +3088,24 @@
+@@ -2886,6 +3176,24 @@
              <languageList><iso639Id>geo</iso639Id></languageList>
            </configItem>
          </variant>
@@ -572,15 +578,15 @@
 +        </variant>
 +        <variant>
 +          <configItem>
-+            <name>type4</name>
++           <name>type4</name>
 +            <_description>Sun Type 4 Variant</_description>
 +          </configItem>
 +        </variant>
        </variantList>
      </layout>
      <layout>
-@@ -2981,6 +3285,12 @@
-             <_description>Baltic+</_description>
+@@ -3065,6 +3373,12 @@
+             <_description>LEKPa</_description>
            </configItem>
          </variant>
 +        <variant>
@@ -592,7 +598,7 @@
        </variantList>
      </layout>
      <layout>
-@@ -3009,6 +3319,12 @@
+@@ -3093,6 +3407,12 @@
              <_description>F-letter (F) variant</_description>
            </configItem>
          </variant>
@@ -605,7 +611,7 @@
        </variantList>
      </layout>
      <layout>
-@@ -3159,6 +3475,24 @@
+@@ -3243,6 +3563,24 @@
              <_description>Macintosh, eliminate dead keys</_description>
            </configItem>
          </variant>
@@ -630,8 +636,8 @@
        </variantList>
      </layout>
      <layout>
-@@ -3207,6 +3541,12 @@
-             <languageList><iso639Id>rus</iso639Id></languageList>
+@@ -3297,6 +3635,12 @@
+             <_description>Programmer Dvorak</_description>
            </configItem>
          </variant>
 +        <variant>
@@ -643,10 +649,12 @@
        </variantList>
      </layout>
      <layout>
-@@ -3225,6 +3565,24 @@
+@@ -3356,6 +3700,24 @@
+             <languageList><iso639Id>epo</iso639Id></languageList>
+           </configItem>
          </variant>
-         <variant>
-           <configItem>
++        <variant>
++          <configItem>
 +            <name>type6</name>
 +            <_description>Sun Type 6/7 Variant</_description>
 +          </configItem>
@@ -663,12 +671,10 @@
 +            <_description>Sun Type 4 Variant</_description>
 +          </configItem>
 +        </variant>
-+        <variant>
-+          <configItem>
-             <name>sundeadkeys</name>
-             <_description>Sun dead keys</_description>
-           </configItem>
-@@ -3328,6 +3686,12 @@
+       </variantList>
+     </layout>
+     <layout>
+@@ -3418,6 +3780,12 @@
              <languageList><iso639Id>crh</iso639Id></languageList>
            </configItem>
          </variant>
@@ -681,8 +687,8 @@
        </variantList>
      </layout>
      <layout>
-@@ -3431,6 +3795,12 @@
-             <_description>DOS</_description>
+@@ -3542,6 +3910,12 @@
+             <languageList><iso639Id>bak</iso639Id></languageList>
            </configItem>
          </variant>
 +        <variant>
@@ -694,7 +700,7 @@
        </variantList>
      </layout>
      <layout>
-@@ -3533,6 +3903,12 @@
+@@ -3651,6 +4025,12 @@
              <_description>qwerty, extended Backslash</_description>
            </configItem>
          </variant>
@@ -707,10 +713,12 @@
        </variantList>
      </layout>
      <layout>
-@@ -3551,6 +3927,24 @@
+@@ -3705,6 +4085,24 @@
+             <_description>Macintosh</_description>
+           </configItem>
          </variant>
-         <variant>
-           <configItem>
++        <variant>
++          <configItem>
 +            <name>type6</name>
 +            <_description>Sun Type 6/7 Variant</_description>
 +          </configItem>
@@ -727,12 +735,10 @@
 +            <_description>Sun Type 4 Variant</_description>
 +          </configItem>
 +        </variant>
-+        <variant>
-+          <configItem>
-             <name>deadtilde</name>
-             <_description>Include dead tilde</_description>
-           </configItem>
-@@ -3642,6 +4036,24 @@
+       </variantList>
+     </layout>
+     <layout>
+@@ -3760,6 +4158,24 @@
              <_description>Svdvorak</_description>
            </configItem>
          </variant>
@@ -757,7 +763,7 @@
        </variantList>
      </layout>
      <layout>
-@@ -3699,6 +4111,18 @@
+@@ -3823,6 +4239,18 @@
              <_description>German (Macintosh)</_description>
            </configItem>
          </variant>
@@ -776,10 +782,12 @@
        </variantList>
      </layout>
      <layout>
-@@ -3834,6 +4258,30 @@
+@@ -4004,6 +4432,30 @@
+             <languageList><iso639Id>crh</iso639Id></languageList>
+           </configItem>
          </variant>
-         <variant>
-           <configItem>
++        <variant>
++          <configItem>
 +            <name>type6</name>
 +            <_description>Sun Type 6 Variant</_description>
 +          </configItem>
@@ -802,12 +810,10 @@
 +            <_description>Sun Type 4 Variant</_description>
 +          </configItem>
 +        </variant>
-+        <variant>
-+          <configItem>
-             <name>ku</name>
-             <_description>Kurdish, Latin Q</_description>
-             <languageList><iso639Id>kur</iso639Id></languageList>
-@@ -3955,6 +4403,12 @@
+       </variantList>
+     </layout>
+     <layout>
+@@ -4079,6 +4531,12 @@
              <languageList><iso639Id>crh</iso639Id></languageList>
            </configItem>
          </variant>
@@ -820,7 +826,7 @@
        </variantList>
      </layout>
      <layout>
-@@ -4001,6 +4455,24 @@
+@@ -4125,6 +4583,24 @@
              <_description>Colemak</_description>
            </configItem>
          </variant>
@@ -845,7 +851,7 @@
        </variantList>
      </layout>
      <layout>
-@@ -4063,6 +4535,24 @@
+@@ -4187,6 +4663,24 @@
  	    <_description>101/104 key Compatible</_description>
  	  </configItem>
  	</variant>
@@ -870,253 +876,9 @@
        </variantList>
      </layout>
      <layout>
-@@ -4227,8 +4717,8 @@
-     <layout>
-       <configItem>
-         <name>sn</name>
--        <shortDescription>Sen</shortDescription>
--        <description>Senegal</description>
-+        <_shortDescription>Sen</_shortDescription>
-+        <_description>Senegal</_description>
-         <languageList><iso639Id>wol</iso639Id></languageList>
-       </configItem>
-       <variantList/>
-@@ -4257,7 +4747,7 @@
-     <layout>
-       <configItem>
-         <name>tm</name>
--        <shortDescription>Tkm</shortDescription>
-+        <_shortDescription>Tkm</_shortDescription>
-         <_description>Turkmenistan</_description>
-         <languageList><iso639Id>tuk</iso639Id></languageList>
-       </configItem>
-
---- geometry/sun	Mon Mar  2 22:04:21 2009
-+++ geometry/sun	Mon Mar  2 22:04:21 2010
-@@ -26,7 +26,7 @@
- //from The Open Group.
- //
- // ---------------------------------------------------------------------------
--// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
-+// Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
- //
- // Permission is hereby granted, free of charge, to any person obtaining a
- // copy of this software and associated documentation files (the
-@@ -57,6 +57,28 @@
- //
- // $XFree86: xc/programs/xkbcomp/geometry/sun,v 1.7 2003/08/09 14:30:47 pascal Exp $
- //
-+
-+//
-+// CDDL HEADER START
-+//
-+// The contents of this file are subject to the terms of the
-+// Common Development and Distribution License (the "License").
-+// You may not use this file except in compliance with the License.
-+//
-+// You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
-+// or http://www.opensolaris.org/os/licensing.
-+// See the License for the specific language governing permissions
-+// and limitations under the License.
-+//
-+// When distributing Covered Code, include this CDDL HEADER in each
-+// file and include the License file at src/OPENSOLARIS.LICENSE.
-+// If applicable, add the following below this CDDL HEADER, with the
-+// fields enclosed by brackets "[]" replaced with your own identifying
-+// information: Portions Copyright [yyyy] [name of copyright owner]
-+//
-+// CDDL HEADER END
-+//
-+
- xkb_geometry "type4" {
- 
-     // This is an approximate layout for a (US/ASCII) Sun Type4 US
-@@ -205,12 +227,12 @@
-     shape "BKSP" { { [ 37,18] }, { [2,1], [35,17] } };
-     shape "TABK" { { [ 27,18] }, { [2,1], [25,17] } };
- 
--    shape "RTRN" {
--          approx = { [ 0, 0], [28,37] },
--          { [ 0, 0], [28, 0], [28,37],
--            [ 5,37], [ 5,19], [ 0,19] },
--          { [ 1, 1], [26, 1], [26,36],
--            [ 7,36], [ 7,18], [ 1,18] }
-+    shape "RTRN" { 
-+	    approx = { [ 0, 0], [28,37] },
-+	    { [ 0, 0], [28, 0], [28,37],
-+	      [ 5,37], [ 5,19], [ 0,19] },
-+	    { [ 1, 1], [26, 1], [26,36],
-+	      [ 7,36], [ 7,18], [ 1,18] }
-     };
-     shape "CAPS" { { [ 32,18] }, { [2,1], [30,17] } };
-     shape "RTSH" { { [ 33,18] }, { [2,1], [31,17] } };
-@@ -817,7 +839,7 @@
- 	    keys { <OPEN>, <PAST>, { <LFSH>, 9 , shape="LFSH" }, <LSGT>, 
- 		   <AB01>, <AB02>, <AB03>, <AB04>, <AB05>, 
- 		   <AB06>, <AB07>, <AB08>, <AB09>, <AB10>, 
--		 { <RTSH>, "RTSH" }
-+		 { <RTSH>, "RTSH", color="grey20" }
- 	    };
- 	};
- 	row {
-@@ -861,7 +883,7 @@
- 	};
- 	row {
- 	    top= 20;
--	    keys { <KP7>, <KP8>, <KP9>, { <KPAD>, "KPAD" } };
-+	    keys { <KP7>, <KP8>, <KP9>, { <KPAD>, "KPAD", color= "grey20" } };
- 	};
- 	row {
- 	    top= 39;
-@@ -869,7 +891,7 @@
- 	};
- 	row {
- 	    top= 58;
--	    keys { <KP1>, <KP2>, <KP3>, { <KPEN>, "KPAD" } };
-+	    keys { <KP1>, <KP2>, <KP3>, { <KPEN>, "KPAD", color= "grey20" } };
- 	};
- 	row {
- 	    top= 77;
-@@ -3040,6 +3062,26 @@
-     description= "Sun Type6 Unix keyboard";
- };
- 
-+default xkb_geometry "type7" {
-+    include "sun(t6)"
-+    description= "Sun Type7 keyboard (US, Korea, Taiwan)";
-+};
-+
-+xkb_geometry "type7jp" {
-+    include "sun(t6jp)"
-+    description= "Sun Type7 Japanese keyboard";
-+};
-+
-+xkb_geometry "type7tuv" {
-+    include "sun(t6tuv)"
-+    description= "Sun Type7 TUV keyboard";
-+};
-+
-+xkb_geometry "type7unix" {
-+    include "sun(t6unix)"
-+    description= "Sun Type7 Unix keyboard";
-+};
-+
- xkb_geometry "x86" {
-     include "pc(pc101)"
-     description= "x86 Style Keyboard";
-
---- keycodes/sun	Mon Mar  2 22:04:21 2009
-+++ keycodes/sun	Mon Mar  2 22:04:21 2010
-@@ -26,7 +26,7 @@
- //from The Open Group.
- //
- // ---------------------------------------------------------------------------
--// Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
-+// Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
- //
- // Permission is hereby granted, free of charge, to any person obtaining a
- // copy of this software and associated documentation files (the
-@@ -61,7 +61,7 @@
- default xkb_keycodes "type4" {
- 
-     minimum= 8;
--    maximum= 255;
-+    maximum= 132;
- 
-     <ESC>  = 36;
-     <AE01> = 37;
-@@ -192,7 +192,7 @@
- xkb_keycodes "type5" {
- 
-     minimum= 8;
--    maximum= 255;
-+    maximum= 132;
- 
-     <ESC>  = 36;
-     <AE01> = 37;
-@@ -379,7 +379,7 @@
- xkb_keycodes "type5hobo" {
- 
-     minimum= 8;
--    maximum= 255;
-+    maximum= 132;
- 
-     <ESC>  = 36;
-     <AE01> = 37;
-@@ -560,30 +560,34 @@
- xkb_keycodes "type6_usb" {
-     include "xfree86"
- 
--    <STOP> = 232;
--    <AGAI> = 133;
--    <PROP> = 134;
--    <UNDO> = 135;
--    <FRNT> = 140;
--    <COPY> = 248;
--    <OPEN> = 191;
--    <PAST> = 192;
--    <FIND> = 122;
--    <CUT>  = 188;
-+//    <STOP> = 232;
-+//    <AGAI> = 133;
-+//    <PROP> = 134;
-+//    <UNDO> = 135;
-+//    <FRNT> = 140;
-+//    <COPY> = 248;
-+//    <OPEN> = 191;
-+//    <PAST> = 192;
-+//    <FIND> = 122;
-+//    <CUT>  = 188;
- 
--    <HELP> = 245;
-+ //   <HELP> = 245;
- 
-     // The blank has keycode 239 on my type6 serial kb, but 134 on
-     // my type6 usb keyboard (same as <PROP>)
--    <BLNK> = 239;
-+//    <BLNK> = 239;
- 
-     // AltGr + PrScr actually sends a different keycode
--    <SYRQ> = 92;
-+//    <SYRQ> = 92;
- 
--    <MUTE> = 160;
--    <VOL-> = 174;
--    <VOL+> = 176;
--    <POWR> = 222;
-+//    <MUTE> = 160;
-+//    <VOL-> = 174;
-+//    <VOL+> = 176;
-+//    <POWR> = 222;
-+
-+      <I150> = 155;       
-+      <I160> = 160;
-+      <I235> = 235;
- 
-     indicator 4 = "Compose";
- };
-@@ -606,7 +610,7 @@
- xkb_keycodes "type5_se" {
- 
-     minimum= 8;
--    maximum= 255;
-+    maximum= 132;
- 
-     // Row G
-     <HELP> = 125;
-@@ -788,7 +792,7 @@
- xkb_keycodes "type4__se" {
- 
-     minimum= 8;
--    maximum= 255;
-+    maximum= 132;
- 
-     // Row F
-     <STOP> = 8;
-
---- symbols/pc	Mon Mar  2 22:04:21 2009
-+++ symbols/pc	Mon Mar  2 22:04:21 2010
-@@ -56,8 +56,8 @@
+--- symbols/pc	Fri Jul 30 15:56:07 2010
++++ symbols/pc	Mon Aug  2 16:05:34 2010
+@@ -55,8 +55,8 @@
      key <ALT>  {	[ NoSymbol, Alt_L	]	};
      include "altwin(meta_alt)"
  
@@ -1127,7 +889,7 @@
  
      key <SUPR> {	[ NoSymbol, Super_L	]	};
      modifier_map Mod4   { <SUPR> };
-@@ -65,10 +65,11 @@
+@@ -64,10 +64,11 @@
      key <HYPR> {	[ NoSymbol, Hyper_L	]	};
      modifier_map Mod4   { <HYPR> };
  
@@ -1135,7 +897,7 @@
 -    key <KITG> { [ XF86KbdLightOnOff ] };
 -    key <KIDN> { [ XF86KbdBrightnessDown ] };
 -    key <KIUP> { [ XF86KbdBrightnessUp ] };
-+// The following create some duplicate keycodes 
++// The following create some duplicate keycodes
 +//    key <OUTP> { [ XF86Display ] };
 +//    key <KITG> { [ XF86KbdLightOnOff ] };
 +//    key <KIDN> { [ XF86KbdBrightnessDown ] };

@@ -1,5 +1,5 @@
 //
-// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -26,7 +26,6 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
-
 //
 // CDDL HEADER START
 //
@@ -51,7 +50,7 @@
 default partial alphanumeric_keys
 xkb_symbols "type6" {
 
-    name[Group1]="Netherlands - Sun type 6";
+    name[Group1]="Netherlands";
 
     key <TLDE>  { [        at,    section,      notsign ] };
     key <AE01>  { [         1,     exclam,  onesuperior ] };
@@ -95,9 +94,7 @@ xkb_symbols "type6" {
     key <AB10>  { [     minus,      equal ] };
 
         include "level3(ralt_switch)"
-
 };
-
 
 partial alphanumeric_keys
 xkb_symbols "type4" {
@@ -117,7 +114,7 @@ xkb_symbols "type4" {
     key <AE09> { [ 9, parenright, braceright  ]       };
     key <AE10> { [ 0, quoteright, quoteleft   ]       };
     key <AE11> { [ slash, question, backslash  ]        };
-    key <AE12> { [ degree, SunFA_Tilde, SunFA_Cedilla]      };
+    key <AE12> { [ degree, dead_tilde, dead_cedilla]      };
     key <AD03> { [ e, E, EuroSign, Eacute    ]};
     key <AD11> { [ dead_diaeresis, dead_circumflex, asciitilde, asciicircum]};
     key <AD12> { [ asterisk, bar, asciitilde  ]       };
@@ -138,35 +135,9 @@ xkb_symbols "type4" {
     key <ALGR> { [ Caps_Lock            ]                       }; 
 
 	include "level3(ralt_switch)"
-
 };
-
 
 partial alphanumeric_keys
-	xkb_symbols "std" {
-	include "nl(std)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "Sundeadkeys" {
-	include "nl(Sundeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "sundeadkeys" {
-	include "nl(sundeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "mac" {
-	include "nl(mac)"
-};
-
-
-partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/nl(type6)"
 };

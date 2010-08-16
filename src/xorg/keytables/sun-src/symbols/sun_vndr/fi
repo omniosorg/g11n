@@ -1,5 +1,5 @@
 //
-// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -26,7 +26,6 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
- 
 //
 // CDDL HEADER START
 //
@@ -51,7 +50,7 @@
 partial default alphanumeric_keys
 xkb_symbols "type6" {
 
-    name[Group1]="Finland - Sun type 6";
+    name[Group1]="Finland";
 
     key <TLDE> { [  section,         onehalf                                  ] };
     key <AE01> { [  1,               exclam                                   ] };
@@ -79,47 +78,9 @@ xkb_symbols "type6" {
 
 	include "level3(ralt_switch)"
 	include "kpdl(comma)"
-
 };
-
 
 partial alphanumeric_keys
-	xkb_symbols "kotoistus" {
-	include "fi(kotoistus)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "classic" {
-	include "fi(classic)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "fi" {
-	include "fi(fi)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "nodeadkeys" {
-	include "fi(nodeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "smi" {
-	include "fi(smi)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "mac" {
-	include "fi(mac)"
-};
-
-
-partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/fi(type6)"
 };

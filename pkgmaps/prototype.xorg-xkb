@@ -18,8 +18,7 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 d none share 0755 root sys
@@ -45,6 +44,7 @@ d none share/X11/xkb/compat 0755 root bin
 f none share/X11/xkb/compat/README 0444 root bin
 f none share/X11/xkb/compat/accessx 0444 root bin
 f none share/X11/xkb/compat/basic 0444 root bin
+f none share/X11/xkb/compat/caps 0444 root bin
 f none share/X11/xkb/compat/complete 0444 root bin
 f none share/X11/xkb/compat/default 0444 root bin
 f none share/X11/xkb/compat/iso9995 0444 root bin
@@ -82,6 +82,7 @@ f none share/X11/xkb/geometry/kinesis 0444 root bin
 f none share/X11/xkb/geometry/macintosh 0444 root bin
 f none share/X11/xkb/geometry/microsoft 0444 root bin
 f none share/X11/xkb/geometry/nec 0444 root bin
+f none share/X11/xkb/geometry/nokia 0444 root bin
 f none share/X11/xkb/geometry/northgate 0444 root bin
 f none share/X11/xkb/geometry/pc 0444 root bin
 f none share/X11/xkb/geometry/sony 0444 root bin
@@ -105,6 +106,7 @@ f none share/X11/xkb/keycodes/README 0444 root bin
 f none share/X11/xkb/keycodes/aliases 0444 root bin
 f none share/X11/xkb/keycodes/amiga 0444 root bin
 f none share/X11/xkb/keycodes/ataritt 0444 root bin
+f none share/X11/xkb/keycodes/empty 0444 root bin
 f none share/X11/xkb/keycodes/evdev 0444 root bin
 f none share/X11/xkb/keycodes/fujitsu 0444 root bin
 f none share/X11/xkb/keycodes/hp 0444 root bin
@@ -183,9 +185,11 @@ s none share/X11/xkb/rules/xfree86.xml=base.xml
 f none share/X11/xkb/rules/base 0444 root bin
 f none share/X11/xkb/rules/base.lst 0444 root bin
 f none share/X11/xkb/rules/base.xml 0444 root bin
+f none share/X11/xkb/rules/base.extras.xml 0444 root bin
 f none share/X11/xkb/rules/evdev 0444 root bin
 f none share/X11/xkb/rules/evdev.lst 0444 root bin
 f none share/X11/xkb/rules/evdev.xml 0444 root bin
+f none share/X11/xkb/rules/evdev.extras.xml 0444 root bin
 s none share/X11/xkb/rules/xorg=base
 s none share/X11/xkb/rules/xorg.lst=base.lst
 s none share/X11/xkb/rules/xorg.xml=base.xml
@@ -215,6 +219,7 @@ f none share/X11/xkb/symbols/bg 0444 root bin
 f none share/X11/xkb/symbols/br 0444 root bin
 f none share/X11/xkb/symbols/brai 0444 root bin
 f none share/X11/xkb/symbols/bt 0444 root bin
+f none share/X11/xkb/symbols/bw 0444 root bin
 f none share/X11/xkb/symbols/by 0444 root bin
 f none share/X11/xkb/symbols/ca 0444 root bin
 f none share/X11/xkb/symbols/capslock 0444 root bin
@@ -227,6 +232,7 @@ f none share/X11/xkb/symbols/cz 0444 root bin
 f none share/X11/xkb/symbols/de 0444 root bin
 f none share/X11/xkb/symbols/dk 0444 root bin
 f none share/X11/xkb/symbols/ee 0444 root bin
+f none share/X11/xkb/symbols/empty 0444 root bin
 f none share/X11/xkb/symbols/epo 0444 root bin
 f none share/X11/xkb/symbols/es 0444 root bin
 f none share/X11/xkb/symbols/et 0444 root bin
@@ -251,6 +257,7 @@ f none share/X11/xkb/symbols/ir 0444 root bin
 f none share/X11/xkb/symbols/is 0444 root bin
 f none share/X11/xkb/symbols/it 0444 root bin
 f none share/X11/xkb/symbols/jp 0444 root bin
+f none share/X11/xkb/symbols/ke 0444 root bin
 f none share/X11/xkb/symbols/keypad 0444 root bin
 f none share/X11/xkb/symbols/kg 0444 root bin
 f none share/X11/xkb/symbols/kh 0444 root bin
@@ -269,6 +276,7 @@ f none share/X11/xkb/symbols/ma 0444 root bin
 f none share/X11/xkb/symbols/mao 0444 root bin
 f none share/X11/xkb/symbols/me 0444 root bin
 f none share/X11/xkb/symbols/mk 0444 root bin
+f none share/X11/xkb/symbols/ml 0444 root bin
 f none share/X11/xkb/symbols/mm 0444 root bin
 f none share/X11/xkb/symbols/mn 0444 root bin
 f none share/X11/xkb/symbols/mt 0444 root bin
@@ -299,6 +307,7 @@ f none share/X11/xkb/symbols/tj 0444 root bin
 f none share/X11/xkb/symbols/tm 0444 root bin
 f none share/X11/xkb/symbols/tr 0444 root bin
 f none share/X11/xkb/symbols/typo 0444 root bin
+f none share/X11/xkb/symbols/tz 0444 root bin
 f none share/X11/xkb/symbols/ua 0444 root bin
 f none share/X11/xkb/symbols/us 0444 root bin
 f none share/X11/xkb/symbols/uz 0444 root bin
@@ -310,6 +319,11 @@ f none share/X11/xkb/symbols/digital_vndr/lk 0444 root bin
 f none share/X11/xkb/symbols/digital_vndr/pc 0444 root bin
 f none share/X11/xkb/symbols/digital_vndr/us 0444 root bin
 f none share/X11/xkb/symbols/digital_vndr/vt 0444 root bin
+
+d none share/X11/xkb/symbols/extras 0755 root bin
+f none share/X11/xkb/symbols/extras/apl 0444 root bin
+f none share/X11/xkb/symbols/extras/rs 0444 root bin
+f none share/X11/xkb/symbols/extras/us 0444 root bin
 
 d none share/X11/xkb/symbols/fujitsu_vndr 0755 root bin
 f none share/X11/xkb/symbols/fujitsu_vndr/jp 0444 root bin
@@ -323,12 +337,12 @@ f none share/X11/xkb/symbols/macintosh_vndr/apple 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/ch 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/de 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/dk 0444 root bin
-f none share/X11/xkb/symbols/macintosh_vndr/es 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/fi 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/fr 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/gb 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/is 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/it 0444 root bin
+f none share/X11/xkb/symbols/macintosh_vndr/jp 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/latam 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/nl 0444 root bin
 f none share/X11/xkb/symbols/macintosh_vndr/no 0444 root bin
@@ -338,6 +352,11 @@ f none share/X11/xkb/symbols/macintosh_vndr/us 0444 root bin
 
 d none share/X11/xkb/symbols/nec_vndr 0755 root bin
 f none share/X11/xkb/symbols/nec_vndr/jp 0444 root bin
+
+d none share/X11/xkb/symbols/nokia_vndr 0755 root bin
+f none share/X11/xkb/symbols/nokia_vndr/rx-44 0444 root bin
+f none share/X11/xkb/symbols/nokia_vndr/rx-51 0444 root bin
+f none share/X11/xkb/symbols/nokia_vndr/su-8w 0444 root bin
 
 d none share/X11/xkb/symbols/sgi_vndr 0755 root bin
 f none share/X11/xkb/symbols/sgi_vndr/jp 0444 root bin
@@ -380,7 +399,6 @@ f none share/X11/xkb/symbols/sun_vndr/tw 0444 root bin
 f none share/X11/xkb/symbols/sun_vndr/ua 0444 root bin
 f none share/X11/xkb/symbols/sun_vndr/us 0444 root bin
 f none share/X11/xkb/symbols/sun_vndr/us_old 0444 root bin
-f none share/X11/xkb/symbols/sun_vndr/usb 0444 root bin
 
 d none share/X11/xkb/symbols/xfree68_vndr 0755 root bin
 f none share/X11/xkb/symbols/xfree68_vndr/amiga 0444 root bin
@@ -398,5 +416,6 @@ f none share/X11/xkb/types/extra 0444 root bin
 f none share/X11/xkb/types/iso9995 0444 root bin
 f none share/X11/xkb/types/level5 0444 root bin
 f none share/X11/xkb/types/mousekeys 0444 root bin
+f none share/X11/xkb/types/nokia 0444 root bin
 f none share/X11/xkb/types/numpad 0444 root bin
 f none share/X11/xkb/types/pc 0444 root bin

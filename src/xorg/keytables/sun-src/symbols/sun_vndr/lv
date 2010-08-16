@@ -1,5 +1,5 @@
 //
-// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -26,7 +26,6 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
-
 //
 // CDDL HEADER START
 //
@@ -52,8 +51,7 @@
 partial default alphanumeric_keys
 xkb_symbols "type6" {
 
-    name[Group1]="Latvia - Sun type 6";
-
+    name[Group1]="Latvia";
 
    key <TLDE> { [          grave,    asciitilde,	acute,    asciitilde ] };
    key <AE01> { [              1,        exclam,	onesuperior,    exclamdown ] };
@@ -108,26 +106,9 @@ xkb_symbols "type6" {
    key <AB10> { [          slash,      question,	slash,      abovedot ] };
 
 	include "level3(ralt_switch)"
-
 };
 
-partial alphanumeric_keys modifier_keys
-	xkb_symbols "apostrophe" {
-	include "lv(apostrophe)"
-};
-
-partial alphanumeric_keys modifier_keys
-	xkb_symbols "tilde" {
-	include "lv(tilde)"
-};
-
-partial alphanumeric_keys modifier_keys
-	xkb_symbols "fkey" {
-	include "lv(fkey)"
-};
-
-
-partial default alphanumeric_keys
+partial alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/lv(type6)"
 };

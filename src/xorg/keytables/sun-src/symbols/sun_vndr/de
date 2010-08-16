@@ -1,6 +1,6 @@
 //
 //
-// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -27,7 +27,6 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
-
 //
 // CDDL HEADER START
 //
@@ -52,7 +51,7 @@
 partial default alphanumeric_keys
 xkb_symbols "type6" {
 
-    name[Group1]="Germany - Sun type 6";
+    name[Group1]="Germany";
 
     key <TLDE> { [     asciicircum,           degree                   ] };
     key <AE02> { [               2,         quotedbl,     twosuperior  ] }; 
@@ -133,92 +132,7 @@ xkb_symbols "type4" {
 
 };
 
-
 partial alphanumeric_keys
-	xkb_symbols "nodeadkeys" {
-	include "de(nodeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "deadgraveacute" {
-	include "de(deadgraveacute)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "deadacute" {
-	include "de(deadacute)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "ro" {
-	include "de(ro)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "ro_nodeadkeys" {
-	include "de(ro_nodeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "dvorak" {
-	include "de(dvorak)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "Sundeadkeys" {
-	include "de(Sundeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "sundeadkeys" {
-	include "de(sundeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "neo" {
-	include "de(neo)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "mac" {
-	include "de(mac)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "mac_nodeadkeys" {
-	include "de(mac_nodeadkeys)"
-};
-
-
-//partial alphanumeric_keys
-//	xkb_symbols "dsb"
-//	include "de(dsb)"
-//};
-
-
-//partial alphanumeric_keys
-//	xkb_symbols "dsb_qwertz"
-//	include "de(dsb_qwertz)"
-//};
-
-
-partial alphanumeric_keys
-	xkb_symbols "qwerty" {
-	include "de(qwerty)"
-};
-
-
-partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/de(type6)"
 };

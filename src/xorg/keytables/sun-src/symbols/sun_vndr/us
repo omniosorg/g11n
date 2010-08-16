@@ -1,5 +1,5 @@
 //
-// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -26,7 +26,6 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
-//
 //Copyright 1996, 1998  The Open Group
 //
 //All Rights Reserved.
@@ -47,7 +46,6 @@
 //other dealings in this Software without prior written authorization
 //from The Open Group.
 //
-
 //
 // CDDL HEADER START
 //
@@ -183,9 +181,7 @@ xkb_symbols "sunbasic" {
 //    key <KPDL> { [ Delete, Delete     ], [ KP_Decimal ]       };
 
 // End "Keypad" section
-
 };
-
 
 xkb_symbols "left_funkeys" {
     // Suppliment to inet(evdev) for added functionality of left-funkeys
@@ -248,7 +244,6 @@ xkb_symbols "type4basic" {
 
     // End "Editing" section, begin "Keypad"
     key <KPEQ> { [ R4,	KP_Equal,  KP_Equal		] };
-
 };
 
 xkb_symbols "type4" {
@@ -329,7 +324,6 @@ xkb_symbols "type6" {
 };
 
 
-
 xkb_symbols "pc101" {
     include "us(pc101)"
     key <RALT> { [ Mode_switch, Meta_R	] };
@@ -397,125 +391,5 @@ xkb_symbols "US101A_Sun" {
     key <LALT> { [ Meta_L		]				};
     key <RALT> { [ Alt_L		]				};
     key <RCTL> { [ Multi_key		]				};
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "euro" {
-	include "us(euro)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "intl" {
-	include "us(intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "alt-intl" {
-	include "us(alt-intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "dvorak" {
-	include "us(dvorak)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "dvorak-intl" {
-	include "us(dvorak-intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "dvorak-l" {
-	include "us(dvorak-l)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "dvorak-r" {
-	include "us(dvorak-r)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "dvorak-classic" {
-	include "us(dvorak-classic)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "dvp" {
-	include "us(dvp)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "rus" {
-	include "us(rus)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "mac" {
-	include "us(mac)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "colemak" {
-	include "us(colemak)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "altgr-intl" {
-	include "us(altgr-intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "classmate" {
-	include "us(classmate)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "classmate-intl" {
-	include "us(classmate-intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "classmate-alt-intl" {
-	include "us(classmate-alt-intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "classmate-altgr-intl" {
-	include "us(classmate-altgr-intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "olpc" {
-	include "us(olpc)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "olpc2" {
-	include "us(olpc2)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "chr" {
-	include "us(chr)"
 };
 

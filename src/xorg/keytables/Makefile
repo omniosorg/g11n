@@ -18,18 +18,17 @@
 #
 # CDDL HEADER END
 #
-
-#
-# Copyright 2010 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
 include $(SRC)/Makefile.master
 
 PROJECT		= xkeyboard-config
-VER		= $(PROJECT)-1.6
+VER		= $(PROJECT)-1.9
 TARBALL		= $(VER).tar.gz
-SOURCE_URL	= http://xlibs.freedesktop.org/xkbdesc/$(TARBALL)
+# SOURCE_URL	= http://xlibs.freedesktop.org/xkbdesc/$(TARBALL)
+# Source URL has been temporarily moved
+SOURCE_URL	= http://people.freedesktop.org/~svu/$(TARBALL)
 
 SOURCE_PATCH	= sun-additions.patch
 

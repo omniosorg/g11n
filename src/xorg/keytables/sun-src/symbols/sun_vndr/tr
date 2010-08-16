@@ -1,5 +1,5 @@
 //
-// Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
 // copy of this software and associated documentation files (the
@@ -26,7 +26,6 @@
 // or other dealings in this Software without prior written authorization
 // of the copyright holder.
 //
-
 //
 // CDDL HEADER START
 //
@@ -48,11 +47,10 @@
 // CDDL HEADER END
 //
 
-
 partial alphanumeric_keys
 xkb_symbols "type6" {
 
-    name[Group1]="Turkey - (Q) Sun type 6";
+    name[Group1]="Turkey - (Q)";
 
     key <TLDE>  { [  quotedbl,     eacute                ] };
     key <AE01>	{ [         1,     exclam                ] };
@@ -83,78 +81,6 @@ xkb_symbols "type6" {
     key <AB10>	{ [    period,      colon               ] };
 
 	include "level3(ralt_switch)"
-
-};
-
-partial alphanumeric_keys
-	xkb_symbols "f" {
-	include "tr(f)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "alt" {
-	include "tr(alt)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "Sundeadkeys" {
-	include "tr(Sundeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "sundeadkeys" {
-	include "tr(sundeadkeys)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "ku" {
-	include "tr(ku)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "ku_f" {
-	include "tr(ku_f)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "ku_alt" {
-	include "tr(ku_alt)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "intl" {
-	include "tr(intl)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "olpc" {
-	include "tr(olpc)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "crh" {
-	include "tr(crh)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "crh_f" {
-	include "tr(crh_f)"
-};
-
-
-partial alphanumeric_keys
-	xkb_symbols "crh_alt" {
-	include "tr(crh_alt)"
 };
 
 partial default alphanumeric_keys
