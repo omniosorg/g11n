@@ -132,6 +132,43 @@ xkb_symbols "type5" {
 	include "kpdl(comma)"
 };
 
+
+partial alphanumeric_keys
+	xkb_symbols "nodeadkeys" {
+	include "no(nodeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "dvorak" {
+	include "no(dvorak)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "smi" {
+	include "no(smi)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "smi_nodeadkeys" {
+	include "no(smi_nodeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac" {
+	include "no(mac)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac_nodeadkeys" {
+	include "no(mac_nodeadkeys)"
+};
+
+
 partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/no(type6)"

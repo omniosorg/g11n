@@ -108,7 +108,23 @@ xkb_symbols "type6" {
 	include "level3(ralt_switch)"
 };
 
-partial alphanumeric_keys
+partial alphanumeric_keys modifier_keys
+	xkb_symbols "apostrophe" {
+	include "lv(apostrophe)"
+};
+
+partial alphanumeric_keys modifier_keys
+	xkb_symbols "tilde" {
+	include "lv(tilde)"
+};
+
+partial alphanumeric_keys modifier_keys
+	xkb_symbols "fkey" {
+	include "lv(fkey)"
+};
+
+
+partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/lv(type6)"
 };

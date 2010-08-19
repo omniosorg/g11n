@@ -108,6 +108,47 @@ xkb_symbols "type6" {
 };
 
 partial alphanumeric_keys
+	xkb_symbols "cedilla" {
+	include "ro(cedilla)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "std" {
+	include "ro(std)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "std_cedilla" {
+	include "ro(std_cedilla)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "winkeys" {
+	include "ro(winkeys)"
+};
+
+partial
+	xkb_symbols "crh_f" {
+	include "ro(crh_f)"
+};
+
+partial
+	xkb_symbols "crh_alt" {
+	include "ro(crh_alt)"
+};
+
+partial
+	xkb_symbols "crh_dobruca1" {
+	include "ro(crh_dobruca1)"
+};
+
+partial
+	xkb_symbols "crh_dobruca2" {
+	include "ro(crh_dobruca2)"
+};
+
+
+partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/ro(type6)"
 };

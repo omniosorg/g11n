@@ -107,7 +107,58 @@ xkb_symbols "type6" {
 	include "level3(ralt_switch)"
 };
 
+partial alphanumeric_keys 
+	xkb_symbols "legacy" {
+	include "ua(legacy)"
+};
+
 partial alphanumeric_keys
+	xkb_symbols "winkeys" {
+	include "ua(winkeys)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "typewriter" {
+	include "ua(typewriter)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "phonetic" {
+	include "ua(phonetic)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "rstu" {
+	include "ua(rstu)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "rstu_ru" {
+	include "ua(rstu_ru)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "homophonic" {
+	include "ua(homophonic)"
+};
+
+partial
+	xkb_symbols "crh" {
+	include "ua(crh)"
+};
+
+partial
+	xkb_symbols "crh_f" {
+	include "ua(crh_f)"
+};
+
+partial
+	xkb_symbols "crh_alt" {
+	include "ua(crh_alt)"
+};
+
+
+partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/ua(type6)"
 };

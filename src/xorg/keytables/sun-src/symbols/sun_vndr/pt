@@ -131,6 +131,61 @@ xkb_symbols "type5" {
 
 };
 
+
+partial alphanumeric_keys
+	xkb_symbols "Sundeadkeys" {
+	include "pt(Sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "sundeadkeys" {
+	include "pt(sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "nodeadkeys" {
+	include "pt(nodeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac" {
+	include "pt(mac)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac_sundeadkeys" {
+	include "pt(mac_sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac_nodeadkeys" {
+	include "pt(mac_nodeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "nativo" {
+	include "pt(nativo)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "nativo-us" {
+	include "pt(nativo-us)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "nativo-epo" {
+	include "pt(nativo-epo)"
+};
+
+
 partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/pt(type6)"

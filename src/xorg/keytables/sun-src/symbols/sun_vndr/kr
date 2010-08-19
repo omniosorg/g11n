@@ -84,6 +84,31 @@ xkb_symbols "type5" {
 	include "level3(ralt_switch)"
 };
 
+
+partial alphanumeric_keys
+	xkb_symbols "kr106" {
+	include "kr(kr106)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "kr104" {
+	include "kr(kr104)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "koreankeys" {
+	include "kr(koreankeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "koreankeys_raltctl" {
+	include "kr(koreankeys_raltctl)"
+};
+
+
 partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/kr(type6)"

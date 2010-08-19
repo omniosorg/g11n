@@ -138,6 +138,30 @@ xkb_symbols "type4" {
 };
 
 partial alphanumeric_keys
+	xkb_symbols "std" {
+	include "nl(std)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "Sundeadkeys" {
+	include "nl(Sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "sundeadkeys" {
+	include "nl(sundeadkeys)"
+};
+
+
+partial alphanumeric_keys
+	xkb_symbols "mac" {
+	include "nl(mac)"
+};
+
+
+partial default alphanumeric_keys
 	xkb_symbols "basic" {
 	include "sun_vndr/nl(type6)"
 };
