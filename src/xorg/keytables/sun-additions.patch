@@ -1,5 +1,5 @@
---- rules/base.hdr.part	Fri Jul 30 15:56:07 2010
-+++ rules/base.hdr.part	Mon Aug  2 13:57:37 2010
+--- rules/base.hdr.part	2010-10-01 15:10:31.036791632 +0200
++++ rules/base.hdr.part	2010-10-01 15:50:13.183939543 +0200
 @@ -1,3 +1,25 @@
 +//
 +// Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
@@ -26,8 +26,9 @@
  // $Xorg: xfree86,v 1.3 2000/08/17 19:54:42 cpqbld Exp $
  
  //
---- rules/base.lists.part	Fri Jul 30 15:56:07 2010
-+++ rules/base.lists.part	Fri Jul 30 16:08:47 2010
+
+--- rules/base.lists.part	2010-10-01 15:10:31.049513647 +0200
++++ rules/base.lists.part	2010-10-01 15:50:13.191863378 +0200
 @@ -99,6 +99,15 @@
  
  ! $thinkpads = thinkpad thinkpad60 thinkpadz60
@@ -44,8 +45,9 @@
  ! $sun_t6_custom = ara be br ca ch cz de dk \
                     ee es fi fr gb gr it kr \
                     lt lv nl no pl pt ro ru \
---- rules/base.m_g.part	Fri Jul 30 15:56:07 2010
-+++ rules/base.m_g.part	Fri Jul 30 16:17:34 2010
+
+--- rules/base.m_g.part	2010-10-01 15:10:31.042038339 +0200
++++ rules/base.m_g.part	2010-10-01 15:50:13.182913100 +0200
 @@ -23,4 +23,31 @@
    hhk		=	hhk(basic)
    kinesis	=	kinesis(model100)
@@ -78,8 +80,9 @@
 +  sun_type7_euro_usb	=	sun(type7tuv)
 +  sun_type7_unix_usb	=	sun(type7unix)
    *		=       pc(pc104)
---- rules/base.m_k.part	Fri Jul 30 15:56:07 2010
-+++ rules/base.m_k.part	Fri Jul 30 16:20:36 2010
+
+--- rules/base.m_k.part	2010-10-01 15:10:31.046043492 +0200
++++ rules/base.m_k.part	2010-10-01 15:50:13.182500580 +0200
 @@ -1,11 +1,10 @@
    amiga		=	amiga(de)
    ataritt	=	ataritt(de)
@@ -95,34 +98,27 @@
   $applealu	=	macintosh(alukbd)
    macintosh_hhk	=	macintosh(hhk)
    macintosh_old	=	macintosh(old)
---- rules/base.ml1_s.part	Fri Jul 30 15:56:07 2010
-+++ rules/base.ml1_s.part	Fri Jul 30 16:24:42 2010
-@@ -1,7 +1,12 @@
-   ataritt	*			=	xfree68_vndr/ataritt(us)+%l[1]%(v[1])
-   amiga		*			=	xfree68_vndr/amiga(usa1)+%l[1]%(v[1])
--  sun4		*			=	latin+sun_vndr/us(type4)+%l[1]%(v[1])
--  sun5		*			=	latin+sun_vndr/us(type5)+%l[1]%(v[1])
-+ $sun_type4	$sun_t6_custom		=	pc+sun_vndr/us(type4)+sun_vndr/%l[1]%(v[1])
-+ $sun_type5	$sun_t6_custom		=	pc+sun_vndr/us(type5)+sun_vndr/%l[1]%(v[1])
-+ $sun_hobo	$sun_t6_custom		=	pc+sun_vndr/us(type5hobo)+sun_vndr/%l[1]%(v[1])
-+ $sun_type6	us			=	pc+sun_vndr/us(type6)
-+ $sun_type6	$sun_t6_custom		=	pc+sun_vndr/us(type6)+sun_vndr/%l[1]%(v[1])
-+ $sun_type7	us			=	pc+sun_vndr/us(type6)
-+ $sun_type7	$sun_t6_custom		=	pc+sun_vndr/us(type6)+sun_vndr/%l[1]%(v[1])
-   macintosh_old	us			=	macintosh_vndr/us(oldmac)
-   macintosh_old	$macvendorlayouts	=	macintosh_vndr/us(oldmac)+macintosh_vndr/%l[1]%(v[1])
-   macintosh_old	*			=	macintosh_vndr/us(oldmac)+%l[1]%(v[1])
---- rules/base.ml_c.part	Fri Jul 30 15:56:07 2010
-+++ rules/base.ml_c.part	Fri Jul 30 16:26:44 2010
+
+--- rules/base.m_s.part	2010-10-01 15:10:31.036572447 +0200
++++ rules/base.m_s.part	2010-10-01 16:29:56.382231157 +0200
+@@ -49,3 +49,4 @@
+   $maclaptop    =       +inet(apple)+level3(enter_switch)
+   $applealu     =       +inet(apple)
+   $macs	        =       +inet(apple)
++  $sun		=	+sun_vndr/solaris(defaults)
+
+--- rules/base.ml_c.part	2010-10-01 15:10:31.052773961 +0200
++++ rules/base.ml_c.part	2010-10-01 15:50:13.173051637 +0200
 @@ -1,3 +1,5 @@
 + $sun_jp	jp		=	complete+japan(kana_lock)
 +  jp106		jp		=	complete+japan(kana_lock)
    pc98		nec_vndr/jp	=	pc98(basic)
    *		jp		=	complete+japan
    olpc         *               =       olpc
---- rules/base.ml_s.part	Fri Jul 30 15:56:07 2010
-+++ rules/base.ml_s.part	Fri Jul 30 16:37:07 2010
-@@ -5,18 +5,20 @@
+
+--- rules/base.ml_s.part	2010-10-01 15:10:31.048127359 +0200
++++ rules/base.ml_s.part	2010-10-04 10:48:29.467904091 +0200
+@@ -5,18 +5,16 @@
    classmate	us			=	pc+%l(classmate)
    empty         *                       =       empty(basic)
    *             empty                   =       empty(basic)
@@ -138,25 +134,72 @@
 -  sun6euro	en_US			=	pc+sun_vndr/us(type6)+iso9995-3(basic)
 -  sun6euro	$sun_t6_custom		=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
 -  sun6euro	*			=	pc+sun_vndr/us(type6)+%l%(v)
-+ $sun_type4	$sun_t6_custom		=	pc+sun_vndr/us(type4)+sun_vndr/%l%(v)+sun_vndr/solaris(defaults)
-+ $sun_type5	$sun_t6_custom		=	pc+sun_vndr/us(type5)+sun_vndr/%l%(v)+sun_vndr/solaris(defaults)
-+ $sun_type5	tw			=	sun_vndr/us_old(type5)+sun_vndr/tw(type5)+sun_vndr/solaris(defaults)
-+ $sun_hobo	$sun_t6_custom		=	pc+sun_vndr/us(type5hobo)+sun_vndr/%l%(v)+sun_vndr/solaris(defaults)
-+ $sun_type6	us			=	pc+sun_vndr/us(type6)+sun_vndr/solaris(defaults)
++ $sun_type4	$sun_t6_custom		=	pc+sun_vndr/us(type4)+sun_vndr/%l%(v)
++ $sun_type5	$sun_t6_custom		=	pc+sun_vndr/us(type5)+sun_vndr/%l%(v)
++ $sun_type5	tw			=	sun_vndr/us_old(type5)+sun_vndr/tw(type5)
++ $sun_hobo	$sun_t6_custom		=	pc+sun_vndr/us(type5hobo)+sun_vndr/%l%(v)
++ $sun_type6	us			=	pc+sun_vndr/us(type6)
 + $sun_type6	jp			=	sun_vndr/us_old(type6)+sun_vndr/jp(type6)+sun_vndr/solaris(defaults)
-+ $sun_type6	tw			=	sun_vndr/us_old(type6)+sun_vndr/tw(type6)+sun_vndr/solaris(defaults)
-+ $sun_type6	$sun_t6_custom		=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)+sun_vndr/solaris(defaults)
-+ $sun_type6	*			=	pc+sun_vndr/us(type6)+%l%(v)+sun_vndr/solaris(defaults)
++ $sun_type6	tw			=	sun_vndr/us_old(type6)+sun_vndr/tw(type6)
++ $sun_type7	us			=	pc+sun_vndr/us(type6)
 + $sun_type7	jp			=	sun_vndr/us_old(type6)+sun_vndr/jp(type7)+sun_vndr/solaris(defaults_type7jp)
 +  jp106		jp			=	sun_vndr/us_old(type6)+sun_vndr/jp(type7)+sun_vndr/solaris(defaults_type7jp)
-+ $sun_type7	us			=	pc+sun_vndr/us(type6)+sun_vndr/solaris(defaults)
-+ $sun_type7	$sun_t6_custom		=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)+sun_vndr/solaris(defaults)
-+ $sun_type7	*			=	pc+sun_vndr/us(type6)+%l%(v)+sun_vndr/solaris(defaults)
    pc98		nec_vndr/jp		=	nec_vndr/jp(pc98)
    macintosh_old	us			=	macintosh_vndr/us(oldmac)
    macintosh_old	en_US			=	macintosh_vndr/us(oldmac)
---- rules/base.xml.in	Fri Jul 30 15:56:07 2010
-+++ rules/base.xml.in	Mon Aug  2 15:53:08 2010
+
+--- rules/base.ml1_s.part	2010-10-01 15:10:31.052557894 +0200
++++ rules/base.ml1_s.part	2010-10-04 10:49:33.233462214 +0200
+@@ -1,7 +1,9 @@
+   ataritt	*			=	xfree68_vndr/ataritt(us)+%l[1]%(v[1])
+   amiga		*			=	xfree68_vndr/amiga(usa1)+%l[1]%(v[1])
+-  sun4		*			=	latin+sun_vndr/us(type4)+%l[1]%(v[1])
+-  sun5		*			=	latin+sun_vndr/us(type5)+%l[1]%(v[1])
++ $sun_type4	$sun_t6_custom		=	pc+sun_vndr/us(type4)+sun_vndr/%l[1]%(v[1])
++ $sun_type5	$sun_t6_custom		=	pc+sun_vndr/us(type5)+sun_vndr/%l[1]%(v[1])
++ $sun_hobo	$sun_t6_custom		=	pc+sun_vndr/us(type5hobo)+sun_vndr/%l[1]%(v[1])
++ $sun_type6	us			=	pc+sun_vndr/us(type6)
+   macintosh_old	us			=	macintosh_vndr/us(oldmac)
+   macintosh_old	$macvendorlayouts	=	macintosh_vndr/us(oldmac)+macintosh_vndr/%l[1]%(v[1])
+   macintosh_old	*			=	macintosh_vndr/us(oldmac)+%l[1]%(v[1])
+
+--- rules/base.ml1v1_s.part	1970-01-01 01:00:00.000000000 +0100
++++ rules/base.ml1v1_s.part	2010-10-01 16:36:12.619512830 +0200
+@@ -0,0 +1 @@
++ $sun_type6	$sun_t6_custom	type6		=	pc+sun_vndr/us(type6)+sun_vndr/%l[1]%(v[1])
+
+--- rules/base.ml2v2_s.part	1970-01-01 01:00:00.000000000 +0100
++++ rules/base.ml2v2_s.part	2010-10-01 16:37:34.472808635 +0200
+@@ -0,0 +1 @@
++ $sun_type6	$sun_t6_custom	type6	=	+sun_vndr/%l[2]%(v[2]):2
+
+--- rules/base.ml3v3_s.part	1970-01-01 01:00:00.000000000 +0100
++++ rules/base.ml3v3_s.part	2010-10-01 16:38:36.738901042 +0200
+@@ -0,0 +1 @@
++ $sun_type6	$sun_t6_custom	type6	=	+sun_vndr/%l[3]%(v[3]):3
+
+--- rules/base.ml4v4_s.part	1970-01-01 01:00:00.000000000 +0100
++++ rules/base.ml4v4_s.part	2010-10-01 16:38:58.143100534 +0200
+@@ -0,0 +1 @@
++ $sun_type6	$sun_t6_custom	type6	=	+sun_vndr/%l[4]%(v[4]):4
+
+--- rules/base.mlv_s.part	2010-10-01 15:10:31.042287877 +0200
++++ rules/base.mlv_s.part	2010-10-01 16:00:50.812695480 +0200
+@@ -1,3 +1,11 @@
++ $sun_type6	us		type6		=	pc+sun_vndr/us(type6)
++ $sun_type6	ch		de_type6	=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
++ $sun_type6	ch		fr_type6	=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
++ $sun_type6	$sun_t6_custom	type6		=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
++ $sun_type7	us		type6		=	pc+sun_vndr/us(type6)
++ $sun_type7	ch		de_type6	=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
++ $sun_type7	ch		fr_type6	=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
++ $sun_type7	$sun_t6_custom	type6		=	pc+sun_vndr/us(type6)+sun_vndr/%l%(v)
+   classmate	us		intl		=	pc+us(classmate-intl)
+   classmate	us		alt-intl	=	pc+us(classmate-alt-intl)
+   classmate	us		altgr-intl	=	pc+us(classmate-altgr-intl)
+
+--- rules/base.xml.in	2010-10-01 15:10:31.038444923 +0200
++++ rules/base.xml.in	2010-10-01 16:12:09.943957215 +0200
 @@ -1,5 +1,27 @@
  <?xml version="1.0" encoding="utf-8"?>
  <!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
@@ -185,7 +228,7 @@
  <xkbConfigRegistry>
    <modelList>
      <model>
-@@ -1170,13 +1192,167 @@
+@@ -1170,8 +1192,162 @@
      </model>
      <model>
        <configItem>
@@ -193,11 +236,11 @@
 -        <_description>Sun Type 5/6</_description>
 +        <name>sun_type7_usb</name>
 +        <_description>Sun Type 7 USB</_description>
-         <vendor>Sun Microsystems</vendor>
-       </configItem>
-     </model>
-     <model>
-       <configItem>
++        <vendor>Sun Microsystems</vendor>
++      </configItem>
++    </model>
++    <model>
++      <configItem>
 +        <name>sun_type7_euro_usb</name>
 +        <_description>Sun Type 7 USB (European layout)</_description>
 +        <vendor>Sun Microsystems</vendor>
@@ -220,14 +263,14 @@
 +    <model>
 +      <configItem>
 +        <name>sun_type6_usb</name>
-+        <_description>Sun Type 6 USB</_description>
++        <_description>Sun Type 6/7 USB</_description>
 +        <vendor>Sun Microsystems</vendor>
 +      </configItem>
 +    </model>
 +    <model>
 +      <configItem>
 +        <name>sun_type6_euro_usb</name>
-+        <_description>Sun Type 6 USB (European layout)</_description>
++        <_description>Sun Type 6/7 USB (European layout)</_description>
 +        <vendor>Sun Microsystems</vendor>
 +      </configItem>
 +    </model>
@@ -248,14 +291,14 @@
 +    <model>
 +      <configItem>
 +        <name>sun_type6</name>
-+        <_description>Sun Type 6</_description>
++        <_description>Sun Type 6/7</_description>
 +        <vendor>Sun Microsystems</vendor>
 +      </configItem>
 +    </model>
 +    <model>
 +      <configItem>
 +        <name>sun_type6_euro</name>
-+        <_description>Sun Type 6 (European layout)</_description>
++        <_description>Sun Type 6/7 (European layout)</_description>
 +        <vendor>Sun Microsystems</vendor>
 +      </configItem>
 +    </model>
@@ -347,14 +390,9 @@
 +      <configItem>
 +        <name>sun_type4_euro</name>
 +        <_description>Sun Type 4 (European layout)</_description>
-+        <vendor>Sun Microsystems</vendor>
-+      </configItem>
-+    </model>
-+    <model>
-+      <configItem>
-         <name>targa_v811</name>
-         <_description>Targa Visionary 811</_description>
-         <vendor>Targa</vendor>
+         <vendor>Sun Microsystems</vendor>
+       </configItem>
+     </model>
 @@ -1316,6 +1492,18 @@
          </variant>
          <variant>
@@ -876,8 +914,1031 @@
        </variantList>
      </layout>
      <layout>
---- symbols/pc	Fri Jul 30 15:56:07 2010
-+++ symbols/pc	Mon Aug  2 16:05:34 2010
+
+--- symbols/ara	2010-10-01 15:10:31.127104254 +0200
++++ symbols/ara	2010-10-04 11:46:41.549644345 +0200
+@@ -276,3 +276,65 @@
+ 
+     include "group(olpc)"
+ };
++
++partial alphanumeric_keys 
++xkb_symbols "type6" {
++
++    name[Group1]= "Arabic - type6";
++
++    key <TLDE> {  [   Arabic_thal,      Arabic_shadda, grave,    asciitilde   ]	};
++    key <AE01> {  [               1,          exclam, 1,          exclam      ] };
++    key <AE02> {  [               2,              at, 2,              at      ] };
++    key <AE03> {  [               3,      numbersign, 3,      numbersign      ] };
++    key <AE04> {  [               4,          dollar, 4,          dollar      ] };
++    key <AE05> {  [               5,         percent, 5,         percent      ] };
++    key <AE06> {  [               6,     asciicircum, 6,     asciicircum      ] };
++    key <AE07> {  [               7,       ampersand, 7,       ampersand      ] };
++    key <AE08> {  [               8,        asterisk, 8,        asterisk      ] };
++    key <AE09> {  [               9,      parenright, 9,      parenright      ] };
++    key <AE10> {  [               0,       parenleft, 0,       parenleft      ] };
++    key <AE11> {  [       minus,      underscore, minus,      underscore      ] };
++    key <AE12> {  [       equal,            plus, equal,            plus      ] };
++						
++    key <AD01> {  [      Arabic_dad,     Arabic_fatha, q,    Q     ]     };
++    key <AD02> {  [      Arabic_sad,     Arabic_fathatan, w,    W  ]     };
++    key <AD03> {  [     Arabic_theh,     Arabic_damma, e,    E     ]     };
++    key <AD04> {  [      Arabic_qaf,     Arabic_dammatan, r,    R  ]     };
++    key <AD05> {  [      Arabic_feh,     0x100fef9, t,    T        ]     };
++    key <AD06> {  [   Arabic_ghain, Arabic_hamzaunderalef, y,    Y ]     };
++    key <AD07> {  [      Arabic_ain,         grave, u,    U        ]     };
++    key <AD08> {  [       Arabic_ha,        division, i,    I      ]     };
++    key <AD09> {  [     Arabic_khah,       multiply, o,    O       ]     };
++    key <AD10> {  [      Arabic_hah,   Arabic_semicolon, p,    P  ]     };
++    key <AD11> {  [     Arabic_jeem,        greater, bracketleft,  braceleft       ]     };
++    key <AD12> {  [      Arabic_dal,        less,    bracketright, braceright      ]     };
++
++    key <AC01> {  [    Arabic_sheen,   Arabic_kasra, a,    A       ]     };
++    key <AC02> {  [     Arabic_seen,   Arabic_kasratan, s,    S    ]     };
++    key <AC03> {  [      Arabic_yeh,       bracketright, d,    D   ]     };
++    key <AC04> {  [      Arabic_beh,       bracketleft, f,    F    ]     };
++    key <AC05> {  [      Arabic_lam,       0x100fef7, g,    G      ]     };
++    key <AC06> {  [     Arabic_alef,   Arabic_hamzaonalef, h,    H ]     };
++    key <AC07> {  [      Arabic_teh,      Arabic_tatweel, j,    J  ]     };
++    key <AC08> {  [     Arabic_noon,      Arabic_comma, k,    K    ]     };
++    key <AC09> {  [     Arabic_meem,         slash, l,    L        ]     };
++    key <AC10> {  [      Arabic_kaf,           colon, semicolon,    colon      ]     };
++    key <AC11> {  [      Arabic_tah,        quotedbl, apostrophe,   quotedbl      ]     };
++    key <BKSL> {  [       backslash,             bar, backslash,             bar      ]     };
++
++    key <LSGT> {  [             bar,      brokenbar, bar,      brokenbar	  ]     };
++    key <AB01> {  [Arabic_hamzaonyeh,    asciitilde, z,    Z       ]     };
++    key <AB02> {  [    Arabic_hamza,      Arabic_sukun, x,    X    ]     };
++    key <AB03> {  [Arabic_hamzaonwaw,      braceright, c,    C     ]     };
++    key <AB04> {  [       Arabic_ra,       braceleft, v,    V      ]     };
++    key <AB05> {  [       0x100fefb,       0x100fef5, b,    B      ]     };
++    key <AB06> {  [Arabic_alefmaksura, Arabic_maddaonalef, n,    N ]     };
++    key <AB07> {  [Arabic_tehmarbuta,    apostrophe, m,    M       ]     };
++    key <AB08> {  [      Arabic_waw,         comma,  comma,    less        ]     };
++    key <AB09> {  [     Arabic_zain,         period, period,    greater       ]     };
++    key <AB10> {  [      Arabic_zah, Arabic_question_mark, slash,    question ]     };
++
++	include "level3(ralt_switch)"
++
++};
++
+
+--- symbols/be	2010-10-01 15:10:31.089510006 +0200
++++ symbols/be	2010-10-04 12:53:28.205455810 +0200
+@@ -234,3 +234,45 @@
+     key <TLDE> { [ twosuperior, threesuperior,   notsign, asciitilde ] };
+     key <LSGT> { [        less,       greater, backslash,  brokenbar ] };
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Belgium - type6";
++
++    key <TLDE>  { [twosuperior, threesuperior                         ] };
++    key <AE01>  { [ ampersand,          1,          bar               ] };
++    key <AE02>  { [    eacute,          2,           at               ] };
++    key <AE03>  { [  quotedbl,          3,   numbersign               ] };
++    key <AE04>  { [apostrophe,          4                             ] };
++    key <AE05>  { [ parenleft,          5                             ] };
++    key <AE06>  { [   section,          6,  asciicircum               ] };
++    key <AE07>  { [    egrave,          7                             ] };
++    key <AE08>  { [    exclam,          8                             ] };
++    key <AE09>  { [  ccedilla,          9,    braceleft               ] };
++    key <AE10>  { [    agrave,          0,   braceright               ] };
++    key <AE11>  { [parenright,     degree                             ] };
++    key <AE12>  { [     minus, underscore                             ] };
++
++    key <AD01>  { [         a,          A                             ] };
++    key <AD02>  { [         z,          Z                             ] };
++    key <AD03>  { [         e,          E,     EuroSign               ] };
++    key <AD09>  { [         o,          O                             ] };
++    key <AD11>  { [dead_circumflex, dead_diaeresis,  bracketleft      ] };
++    key <AD12>  { [    dollar,   asterisk, bracketright               ] };
++
++    key <AC01>  { [         q,          Q                             ] };
++    key <AC10>  { [         m,          M                             ] };
++    key <AC11>  { [    ugrave,    percent,   dead_acute               ] };
++    key <BKSL>  { [        mu,   sterling,   dead_grave               ] };
++
++    key <LSGT>  { [      less,    greater,    backslash               ] };
++    key <AB01>  { [         w,          W                             ] };
++    key <AB07>  { [     comma,   question                             ] };
++    key <AB08>  { [ semicolon,     period                             ] };
++    key <AB09>  { [     colon,      slash                             ] };
++    key <AB10>  { [     equal,       plus,   dead_tilde               ] };
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/br	2010-10-01 15:10:31.102541928 +0200
++++ symbols/br	2010-10-04 12:55:02.156881644 +0200
+@@ -320,3 +320,49 @@
+     key <AB06> { [  gcircumflex,     Gcircumflex,                    q,                Q ] };
+ 
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Brazil - type6";
++
++    key <TLDE> { [      apostrophe,        quotedbl,	notsign		               ] };
++    key <AE01> { [               1,          exclam,	onesuperior,        exclamdown ] };
++    key <AE02> { [               2,              at,	twosuperior,           onehalf ] };
++    key <AE03> { [               3,      numbersign,	threesuperior,   threequarters ] };
++    key <AE04> { [               4,          dollar,	sterling,           onequarter ] };
++    key <AE05> { [               5,         percent,	cent                           ] };
++    key <AE06> { [               6,  dead_diaeresis,	notsign,             diaeresis ] };
++    key <AE07> { [               7,       ampersand,	braceleft                      ] };
++    key <AE08> { [               8,        asterisk,	bracketleft                    ] };
++    key <AE09> { [               9,       parenleft,	bracketright                   ] };
++    key <AE10> { [               0,      parenright,	braceright                     ] };
++    key <AE11> { [           minus,      underscore,	backslash                      ] };
++    key <AE12> { [           equal,            plus,	section                        ] };
++
++    key <AD03> { [               e,               E,	EuroSign                       ] };
++    key <AD04> { [               r,               R,	registered                     ] };
++    key <AD11> { [      dead_acute,      dead_grave,	acute,                   grave ] };
++    key <AD12> { [     bracketleft,       braceleft,	ordfeminine                    ] };
++
++    key <AC10> { [        ccedilla,        Ccedilla,	exclamdown		       ] };
++    key <AC11> { [      dead_tilde, dead_circumflex,	asciitilde,        asciicircum ] };
++    key <AC12> { [    bracketright,      braceright,	masculine                      ] };
++    key <BKSL> { [   bracketright,       braceright,    masculine                      ] };
++
++    key <LSGT> { [          slash,              bar,    degree                         ] };
++    key <AB01> { [               z,               Z,	guillemotleft 		       ] };
++    key <AB02> { [               x,               X,	guillemotright                 ] };
++    key <AB03> { [               c,               C,	copyright                      ] };
++    key <AB07> { [               m,               M,	mu                             ] };
++    key <AB08> { [           comma,            less,	question                       ] };
++    key <AB09> { [          period,         greater,	questiondown                   ] };
++    key <AB10> { [       semicolon,           colon                                    ] };
++    key <AB11> { [           slash,        question,	degree,           questiondown ] };
++
++    key <KPPT> { [      KP_Decimal                                                     ] };
++    key <KPDL> { [       KP_Delete,           comma                                    ] };
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/ca	2010-10-01 15:10:31.085534634 +0200
++++ symbols/ca	2010-10-04 12:55:53.752072020 +0200
+@@ -528,3 +528,44 @@
+     include "us(basic)"
+ };
+ 
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++   name[Group1]="Canada Bilingual - type6";
++
++   key <TLDE> { [           slash, bar,             backslash                  ]};
++   key <AE01> { [               1, exclam,          plusminus                  ]};
++   key <AE02> { [               2, at                                          ]};
++   key <AE03> { [               3, numbersign,      sterling                   ]};
++   key <AE04> { [               4, dollar,          cent                       ]};
++   key <AE05> { [               5, percent,         currency                   ]};
++   key <AE06> { [               6, question,        notsign	               ]};
++   key <AE07> { [               7, ampersand,       braceleft                  ]};
++   key <AE08> { [               8, asterisk,        braceright                 ]};
++   key <AE09> { [               9, parenleft,       bracketleft                ]};
++   key <AE10> { [               0, parenright,      bracketright               ]};
++   key <AE11> { [           minus, underscore,      onehalf	               ]};
++   key <AE12> { [           equal, plus,            notsign                    ]};
++  
++   key <AD03> { [               e, E,               EuroSign		       ]};
++   key <AD09> { [               o, O,               section		       ]};
++   key <AD10> { [               p, P,               paragraph                  ]};
++   key <AD11> { [ dead_circumflex, dead_diaeresis,  dead_grave                 ]};
++   key <AD12> { [        ccedilla, Ccedilla,        asciitilde                 ]};
++
++   key <AC10> { [       semicolon, colon,           degree                     ]};
++   key <AC11> { [          egrave, Egrave,          braceleft                  ]};
++   key <AC12> { [          agrave, Agrave,          braceright                 ]};
++   key <BKSL> { [          agrave, Agrave,          braceright                 ]};
++
++   key <LSGT> { [          uacute, Uacute                                      ]};
++   key <AB01> { [               z, Z,               guillemotleft              ]};
++   key <AB02> { [               x, X,               guillemotright             ]};
++   key <AB07> { [               m, M,               mu                         ]};
++   key <AB08> { [           comma, quoteright,      less                       ]};
++   key <AB09> { [          period, quotedbl,        greater                    ]};
++   key <AB10> { [          eacute, Eacute,          quoteleft                  ]};
++   
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/ch	2010-10-01 15:10:31.095972951 +0200
++++ symbols/ch	2010-10-04 12:58:09.599047314 +0200
+@@ -216,3 +216,79 @@
+     };
+ };
+ 
++partial alphanumeric_keys 
++xkb_symbols "de_type6" {
++
++    name[Group1]= "Switzerland - German - type6";
++
++    key <TLDE> { [    section,     degree                           ] };
++    key <AE01> { [          1,       plus,          bar             ] };
++    key <AE02> { [          2,   quotedbl,           at             ] };
++    key <AE03> { [          3,   asterisk,   numbersign             ] };
++    key <AE04> { [          4,   ccedilla,  asciicircum             ] };
++    key <AE05> { [          5,    percent,   asciitilde             ] };
++    key <AE06> { [          6,  ampersand,      notsign             ] };
++    key <AE07> { [          7,      slash,    brokenbar             ] };
++    key <AE08> { [          8,  parenleft,         cent             ] };
++    key <AE09> { [          9, parenright                           ] };
++    key <AE10> { [          0,      equal,    quoteleft             ] };
++    key <AE11> { [ quoteright,   question,   dead_acute             ] };
++    key <AE12> { [ dead_circumflex, dead_grave, dead_tilde          ] };
++
++    key <AD03> { [          e,          E,     EuroSign             ] };
++    key <AD06> { [          z,          Z                           ] };
++    key <AD11> { [ udiaeresis,     egrave,  bracketleft             ] };
++    key <AD12> { [ dead_diaeresis, exclam, bracketright             ] };
++
++    key <AC10> { [ odiaeresis,     eacute                           ] };
++    key <AC11> { [ adiaeresis,     agrave,    braceleft             ] };
++    key <BKSL> { [     dollar,   sterling,   braceright             ] };
++
++    key <LSGT> { [       less,    greater,    backslash             ] };
++    key <AB01> { [          y,          Y                           ] };
++    key <AB08> { [      comma,  semicolon                           ] };
++    key <AB09> { [     period,      colon                           ] };
++    key <AB10> { [      minus, underscore                           ] };
++
++	include "level3(ralt_switch)"
++
++};
++
++
++partial alphanumeric_keys 
++xkb_symbols "fr_type6" {
++
++    name[Group1]= "Switzerland - French -  type6";
++
++    key <TLDE> { [    section,     degree                           ] };
++    key <AE01> { [          1,       plus,          bar             ] };
++    key <AE02> { [          2,   quotedbl,           at             ] };
++    key <AE03> { [          3,   asterisk,   numbersign             ] };
++    key <AE04> { [          4,   ccedilla,  asciicircum             ] };
++    key <AE05> { [          5,    percent,   asciitilde             ] };
++    key <AE06> { [          6,  ampersand,      notsign             ] };
++    key <AE07> { [          7,      slash,    brokenbar             ] };
++    key <AE08> { [          8,  parenleft,         cent             ] };
++    key <AE09> { [          9, parenright                           ] };
++    key <AE10> { [          0,      equal,    quoteleft             ] };
++    key <AE11> { [ quoteright,   question,   dead_acute             ] };
++    key <AE12> { [ dead_circumflex, dead_grave, dead_tilde          ] };
++
++    key <AD03> { [          e,          E,     EuroSign             ] };
++    key <AD06> { [          z,          Z                           ] };
++    key <AD11> { [     egrave, udiaeresis,  bracketleft             ] };
++    key <AD12> { [ dead_diaeresis, exclam, bracketright             ] };
++
++    key <AC10> { [     eacute, odiaeresis                           ] };
++    key <AC11> { [     agrave, adiaeresis,    braceleft             ] };
++    key <BKSL> { [     dollar,   sterling,   braceright             ] };
++
++    key <LSGT> { [       less,    greater,    backslash             ] };
++    key <AB01> { [          y,          Y                           ] };
++    key <AB08> { [      comma,  semicolon                           ] };
++    key <AB09> { [     period,      colon                           ] };
++    key <AB10> { [      minus, underscore                           ] };
++	
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/cz	2010-10-01 15:10:31.130282072 +0200
++++ symbols/cz	2010-10-04 12:59:06.452397579 +0200
+@@ -172,3 +172,53 @@
+ 
+     include "level3(ralt_switch)"
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Czech - type6";
++
++    key <TLDE>	{ [ semicolon, dead_abovering,	quoteleft,     asciitilde 	]	};
++    key <AE01>	{ [      plus,          1,	exclam,     asciitilde	 	]	};
++    key <AE02>	{ [    ecaron,          2,	at,     dead_caron 		]	};
++    key <AE03>	{ [    scaron,          3,	numbersign,  dead_circumflex 	] 	};
++    key <AE04>	{ [    ccaron,          4,	dollar,     dead_breve 		]	};
++    key <AE05>	{ [    rcaron,          5,	percent, dead_abovering 	] 	};
++    key <AE06>	{ [    zcaron,          6,	asciicircum,  dead_ogonek 	]	};
++    key <AE07>	{ [    yacute,          7,	ampersand,          grave 	]	};
++    key <AE08>	{ [    aacute,          8,	asterisk,  dead_abovedot	]	};
++    key <AE09>	{ [    iacute,          9,	parenleft,    dead_acute    	]	};
++    key <AE10>	{ [    eacute,          0,	parenright, dead_doubleacute	]	};
++    key <AE11>	{ [     equal,    percent,	dead_diaeresis, backslash 	]	};
++    key <AE12>	{ [ dead_acute, dead_caron,	dead_cedilla, minus 		]	};
++
++    key <AD01>	{ [         q,          Q,	backslash 		]	};
++    key <AD02>	{ [         w,          W,	bar 			]	};
++    key <AD03>	{ [         e,          E,	EuroSign 		]	};
++    key <AD06>	{ [         z,          Z 				]	};
++    key <AD11>	{ [    uacute,      slash,	division 		]	};
++    key <AD12>	{ [parenright,  parenleft,	multiply 		]	};
++
++    key <AC02>	{ [         s,          S,	dstroke			]	};
++    key <AC03>	{ [         d,          D,	Dstroke 		]	};
++    key <AC04>	{ [         f,          F,	bracketleft 		]	};
++    key <AC05>	{ [         g,          G,	bracketright 		]	};
++    key <AC08>	{ [         k,          K,	lstroke 		]	};
++    key <AC09>	{ [         l,          L,	Lstroke 		]	};              
++    key <AC10>	{ [      uring,       quotedbl,	dollar 			]	};
++    key <AC11>	{ [    section,         exclam,	ssharp,       currency	]	};
++    key <BKSL>	{ [ dead_diaeresis, apostrophe,	backslash,         bar	]	};
++
++    key <LSGT>	{ [  backslash,       asterisk,	slash,	     brokenbar	]	};
++    key <AB01>	{ [          y,          Y,	less	 		]	};
++    key <AB02>	{ [          x,          X,	greater,    numbersign  ]	};
++    key <AB04>	{ [          v,          V,	at 			]	};
++    key <AB05>	{ [          b,          B,	braceleft 		]	};
++    key <AB06>	{ [          n,          N,	braceright	 	]	};
++    key <AB08>	{ [      comma,       question,	less			]	};
++    key <AB09>	{ [     period,          colon,	greater			]	};
++    key <AB10>	{ [      minus,     underscore                   	]	};
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/de	2010-10-01 15:10:31.095404689 +0200
++++ symbols/de	2010-10-04 13:00:02.665193070 +0200
+@@ -503,3 +503,39 @@
+     key <AB01>	{ [         z,          Z,     leftarrow,         yen ]	};
+     key <AD06>	{ [         y,          Y, guillemotleft,        less ]	};
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Germany - type6";
++
++    key <TLDE> { [     asciicircum,           degree                   ] };
++    key <AE02> { [               2,         quotedbl,     twosuperior  ] }; 
++    key <AE03> { [               3,          section,   threesuperior  ] };
++    key <AE04> { [               4,           dollar                   ] };
++    key <AE06> { [               6,        ampersand,         section  ] };
++    key <AE07> { [               7,            slash,       braceleft  ] };
++    key <AE08> { [               8,        parenleft,     bracketleft  ] };
++    key <AE09> { [               9,       parenright,    bracketright  ] };
++    key <AE10> { [               0,            equal,      braceright  ] };
++    key <AE11> { [          ssharp,         question,       backslash  ] };
++    key <AE12> { [      dead_acute,       dead_grave                   ] };
++    key <AD01> { [               q,                Q,              at  ] };
++    key <AD03> { [               e,                E,        EuroSign  ] };
++    key <AD06> { [               z,                Z                   ] };
++    key <AD11> { [      udiaeresis,       Udiaeresis                   ] };
++    key <AD12> { [            plus,         asterisk,      asciitilde  ] };
++    key <AC10> { [      odiaeresis,       Odiaeresis                   ] };
++    key <AC11> { [      adiaeresis,       Adiaeresis                   ] };
++    key <AB01> { [               y,                Y                   ] };
++    key <AB07> { [               m,                M,              mu  ] };
++    key <AB08> { [           comma,        semicolon                   ] };
++    key <AB09> { [          period,            colon                   ] };
++    key <AB10> { [           minus,       underscore                   ] };
++    key <BKSL> { [      numbersign,       apostrophe,           grave  ] };
++    key <LSGT> { [            less,          greater,             bar  ] };
++
++        include "level3(ralt_switch)"
++        include "kpdl(comma)"
++
++};
+
+--- symbols/dk	2010-10-01 15:10:31.087672283 +0200
++++ symbols/dk	2010-10-04 13:01:26.040578664 +0200
+@@ -75,3 +75,35 @@
+     name[Group1]= "Denmark - Dvorak";
+ };
+ 
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Denmark - type6";
++
++    key <TLDE> { [         onehalf,         section                ] };
++    key <AE02> { [               2,        quotedbl,            at ] };
++    key <AE03> { [               3,      numbersign,      sterling ] };
++    key <AE04> { [               4,        currency,        dollar ] };
++    key <AE05> { [               5,         percent,    asciitilde ] };
++    key <AE06> { [               6,       ampersand,   asciicircum ] };
++    key <AE07> { [               7,           slash,     braceleft ] };
++    key <AE08> { [               8,       parenleft,   bracketleft ] };
++    key <AE09> { [               9,      parenright,  bracketright ] };
++    key <AE10> { [               0,           equal,    braceright ] };
++    key <AE11> { [            plus,        question                ] };
++    key <AE12> { [      dead_acute,      dead_grave,           bar ] }; 
++    key <AD03> { [               e,               E,      EuroSign ] }; 
++    key <AD11> { [           aring,           Aring                ] };
++    key <AD12> { [  dead_diaeresis, dead_circumflex,    dead_tilde ] };
++    key <BKSL> { [      apostrophe,        asterisk,         grave ] };
++    key <AC10> { [              ae,              AE                ] };
++    key <AC11> { [          oslash,        Ooblique                ] };
++    key <AB08> { [           comma,       semicolon                ] };
++    key <AB09> { [          period,           colon                ] };
++    key <AB10> { [           minus,      underscore                ] };
++    key <LSGT> { [            less,         greater,     backslash ] };
++
++        include "level3(ralt_switch)"
++        include "kpdl(comma)"
++
++};
+
+--- symbols/ee	2010-10-01 15:10:31.083786781 +0200
++++ symbols/ee	2010-10-04 13:02:33.388966662 +0200
+@@ -101,3 +101,65 @@
+     include "level3(ralt_switch)"
+     include "eurosign(e)"
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Estonia - type6";
++
++
++   key <TLDE> { [     dead_caron,    dead_tilde,	notsign,       notsign ] };
++   key <AE01> { [              1,        exclam,	onesuperior,    exclamdown ] };
++   key <AE02> { [              2,      quotedbl,	at,     oneeighth ] };
++   key <AE03> { [              3,    numbersign,	sterling,      sterling ] };
++   key <AE04> { [              4,      currency,	dollar,        dollar ] };
++   key <AE05> { [              5,       percent,	onehalf,  threeeighths ] };
++   key <AE06> { [              6,     ampersand,	notsign,   fiveeighths ] };
++   key <AE07> { [              7,         slash,	braceleft,  seveneighths ] };
++   key <AE08> { [              8,     parenleft,	bracketleft,     trademark ] };
++   key <AE09> { [              9,    parenright,	bracketright,     plusminus ] };
++   key <AE10> { [              0,         equal,	braceright,        degree ] };
++   key <AE11> { [           plus,      question,	backslash,  questiondown ] };
++   key <AE12> { [     dead_acute,    dead_grave,	grave,    apostrophe ] };
++
++   key <AD01> { [              q,             Q,	at,   Greek_OMEGA ] };
++   key <AD02> { [              w,             W,	lstroke,       Lstroke ] };
++   key <AD03> { [              e,             E,	EuroSign,          cent ] };
++   key <AD04> { [              r,             R,	paragraph,    registered ] };
++   key <AD05> { [              t,             T,	tslash,        Tslash ] };
++   key <AD06> { [              y,             Y,	leftarrow,           yen ] };
++   key <AD07> { [              u,             U,	downarrow,       uparrow ] };
++   key <AD08> { [              i,             I,	rightarrow,      idotless ] };
++   key <AD09> { [              o,             O,	oslash,      Ooblique ] };
++   key <AD10> { [              p,             P,	thorn,         THORN ] };
++   key <AD11> { [     udiaeresis,    Udiaeresis,	dead_diaeresis,dead_abovering ] };
++   key <AD12> { [         otilde,        Otilde,	section,   dead_macron ] };
++
++   key <AC01> { [              a,             A,	ae,            AE ] };
++   key <AC02> { [              s,             S,	ssharp,       section ] };
++   key <AC03> { [              d,             D,	eth,           ETH ] };
++   key <AC04> { [              f,             F,	dstroke,   ordfeminine ] };
++   key <AC05> { [              g,             G,	eng,           ENG ] };
++   key <AC06> { [              h,             H,	hstroke,       Hstroke ] };
++   key <AC07> { [              j,             J,	j,             J ] };
++   key <AC08> { [              k,             K,	kra,     ampersand ] };
++   key <AC09> { [              l,             L,	lstroke,       Lstroke ] };
++   key <AC10> { [     odiaeresis,    Odiaeresis,	dead_acute, dead_doubleacute ] };
++   key <AC11> { [     adiaeresis,    Adiaeresis,	asciicircum,    dead_caron ] };
++   key <LSGT> { [      backslash,           bar,	degree,     brokenbar ] };
++
++   key <BKSL> { [     apostrophe,      asterisk,	onehalf,    dead_breve ] };
++   key <AB01> { [              z,             Z,	zcaron,        Zcaron ] };
++   key <AB02> { [              x,             X,	guillemotright,       greater ] };
++   key <AB03> { [              c,             C,	cent,     copyright ] };
++   key <AB04> { [              v,             V,	leftdoublequotemark, leftsinglequotemark ] };
++   key <AB05> { [              b,             B,	rightdoublequotemark, rightsinglequotemark ] };
++   key <AB06> { [              n,             N,	ncedilla,      Ncedilla ] };
++   key <AB07> { [              m,             M,	mu,     masculine ] };
++   key <AB08> { [          comma,     semicolon,	less,      multiply ] };
++   key <AB09> { [         period,         colon,	greater,      division ] };
++   key <AB10> { [          minus,    underscore,	dead_belowdot, dead_abovedot ] };
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/es	2010-10-01 15:10:31.133554307 +0200
++++ symbols/es	2010-10-04 13:04:16.425692148 +0200
+@@ -203,3 +203,36 @@
+ 
+     key <AE04>	{ [         4,     dollar,   dead_tilde,       dollar ]	};
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Spain type6";
++
++    key <TLDE> { [       masculine,     ordfeminine,     backslash ] };
++    key <LSGT> { [            less,         greater                ] };
++    key <AE01> { [               1,          exclam,           bar ] };
++    key <AE02> { [               2,        quotedbl,            at ] };
++    key <AE03> { [               3,  periodcentered,    numbersign ] };
++    key <AE04> { [               4,          dollar,   asciicircum ] };
++    key <AE05> { [               5,         percent,    asciitilde ] };
++    key <AE06> { [               6,       ampersand,       notsign ] };
++    key <AE07> { [               7,           slash                ] };
++    key <AE08> { [               8,       parenleft                ] };
++    key <AE09> { [               9,      parenright                ] }; 
++    key <AE10> { [               0,           equal                ] };
++    key <AE11> { [      apostrophe,        question,         grave ] };
++    key <AE12> { [      exclamdown,    questiondown                ] };
++    key <AD03> { [               e,               E,      EuroSign ] };
++    key <AD11> { [      dead_grave, dead_circumflex,   bracketleft ] };
++    key <AD12> { [            plus,        asterisk,  bracketright ] };
++    key <AC10> { [          ntilde,          Ntilde                ] };
++    key <AC11> { [      dead_acute,  dead_diaeresis,     braceleft ] };
++    key <BKSL> { [        ccedilla,        Ccedilla,    braceright ] };
++    key <AB08> { [           comma,       semicolon                ] };
++    key <AB09> { [          period,           colon                ] };
++    key <AB10> { [           minus,      underscore                ] };
++   
++        include "level3(ralt_switch)"
++
++};
+
+--- symbols/fi	2010-10-01 15:10:31.102058572 +0200
++++ symbols/fi	2010-10-04 13:05:29.835133985 +0200
+@@ -205,3 +205,37 @@
+ 
+     name[Group1]="Finland - Macintosh";
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Finland - type6";
++
++    key <TLDE> { [  section,         onehalf                                  ] };
++    key <AE01> { [  1,               exclam                                   ] };
++    key <AE02> { [  2,               quotedbl,         at                     ] };
++    key <AE03> { [  3,               numbersign,       sterling               ] };
++    key <AE04> { [  4,               currency,         dollar                 ] };
++    key <AE05> { [  5,               percent                                  ] };
++    key <AE06> { [  6,               ampersand                                ] };
++    key <AE07> { [  7,               slash,            braceleft              ] };
++    key <AE08> { [  8,               parenleft,        bracketleft            ] };
++    key <AE09> { [  9,               parenright,       bracketright           ] };
++    key <AE10> { [  0,               equal,            braceright             ] };
++    key <AE11> { [  plus,            question,         backslash              ] };
++    key <AE12> { [  dead_acute,      dead_grave                               ] };
++    key <AD03> { [  e,               E,                EuroSign               ] };
++    key <AD11> { [  aring,           Aring                                    ] };
++    key <AD12> { [  dead_diaeresis,  asciicircum,      asciitilde             ] };
++    key <AC10> { [  odiaeresis,      Odiaeresis                               ] };
++    key <AC11> { [  adiaeresis,      Adiaeresis                               ] };
++    key <BKSL> { [  apostrophe,      asterisk,         quoteleft              ] };
++    key <LSGT> { [  less,            greater,          bar                    ] };
++    key <AB08> { [  comma,           semicolon                                ] };
++    key <AB09> { [  period,          colon                                    ] };
++    key <AB10> { [  minus,           underscore                               ] };
++
++	include "level3(ralt_switch)"
++	include "kpdl(comma)"
++
++};
+
+--- symbols/fr	2010-10-01 15:10:31.117862315 +0200
++++ symbols/fr	2010-10-04 13:06:36.446842580 +0200
+@@ -1026,3 +1026,44 @@
+ 
+ };
+ 
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="France - type6";
++
++    key <TLDE>  { [     twosuperior                              ] };
++    key <AE01>	{ [       ampersand,          1                  ] };
++    key <AE02>	{ [          eacute,          2,   asciitilde    ] };
++    key <AE03>	{ [        quotedbl,          3,   numbersign    ] };
++    key <AE04>	{ [      apostrophe,          4,    braceleft    ] };
++    key <AE05>	{ [       parenleft,          5,  bracketleft    ] };
++    key <AE06>	{ [           minus,          6,          bar    ] };
++    key <AE07>	{ [          egrave,          7,        grave    ] };
++    key <AE08>	{ [      underscore,          8,    backslash    ] };
++    key <AE09>	{ [        ccedilla,          9,  asciicircum    ] };
++    key <AE10>	{ [          agrave,          0,           at    ] };
++    key <AE11>	{ [      parenright,     degree, bracketright    ] };
++    key <AE12>	{ [           equal,       plus,   braceright    ] };
++
++    key <AD01>	{ [               a,          A                  ] };
++    key <AD02>	{ [               z,          Z                  ] };
++    key <AD03>	{ [               e,          E,     EuroSign    ] };
++    key <AD11>	{ [ dead_circumflex, dead_diaeresis              ] };
++    key <AD12>	{ [          dollar,   sterling,     currency    ] };
++
++    key <AC01>	{ [               q,          Q                  ] };
++    key <AC10>	{ [               m,          M                  ] };
++    key <AC11>	{ [          ugrave,    percent                  ] };
++    key <BKSL>	{ [        asterisk,         mu                  ] };
++
++    key <LSGT>  { [            less,    greater                  ] };
++    key <AB01>	{ [               w,          W                  ] };
++    key <AB07>	{ [           comma,   question                  ] };
++    key <AB08>	{ [       semicolon,     period                  ] };
++    key <AB09>	{ [           colon,      slash                  ] };
++    key <AB10>	{ [          exclam,    section                  ] };
++
++	include "level3(ralt_switch)"
++
++};
++
+
+--- symbols/gb	2010-10-01 15:10:31.105612161 +0200
++++ symbols/gb	2010-10-04 13:07:23.442592662 +0200
+@@ -179,4 +179,20 @@
+     include "level3(ralt_switch)"
+ };
+ 
++partial alphanumeric_keys
++xkb_symbols "type6" {
+ 
++    name[Group1]="United Kingdom - type6";
++
++    key <TLDE> { [  quoteleft,    notsign,  brokenbar ] };
++
++    key <AE02> { [          2,   quotedbl             ] };
++    key <AE03> { [          3,   sterling             ] };
++    key <AE04> { [          4,     dollar,   EuroSign ] };
++    key <BKSL> { [ numbersign, asciitilde             ] };
++    key <AC11> { [ apostrophe,         at             ] };
++    key <LSGT> { [  backslash,        bar             ] };
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/gr	2010-10-01 15:10:31.132818125 +0200
++++ symbols/gr	2010-10-04 13:08:34.175247028 +0200
+@@ -193,3 +193,64 @@
+ 
+     key <AC10> { [ semicolon, colon ] }; // ; :
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Greece - type6";
++
++	key <TLDE> { [                 grave,     asciitilde,	onehalf ] };
++	key <AE01> { [                     1,         exclam ] };
++	key <AE02> { [                     2,             at ] };
++	key <AE03> { [                     3,     numbersign,	sterling ] };
++	key <AE04> { [                     4,         dollar,	EuroSign ] };
++	key <AE05> { [                     5,        percent,	EuroSign ] };
++	key <AE06> { [                     6,    asciicircum,	notsign ] };
++	key <AE07> { [                     7,      ampersand ] };
++	key <AE08> { [                     8,       asterisk ] };
++	key <AE09> { [                     9,      parenleft ] };
++	key <AE10> { [                     0,     parenright,	degree ] };
++	key <AE11> { [                 minus,     underscore,	plusminus ] };
++	key <AE12> { [                 equal,           plus ] };
++
++	key <AD01> { [             semicolon,          colon,	periodcentered ] };
++	key <AD02> { [ Greek_finalsmallsigma, periodcentered,	Greek_SIGMA ] };
++	key <AD03> { [         Greek_epsilon,  Greek_EPSILON,	EuroSign ] };
++	key <AD04> { [             Greek_rho,      Greek_RHO,	registered ] };
++	key <AD05> { [             Greek_tau,      Greek_TAU ] };
++	key <AD06> { [         Greek_upsilon,  Greek_UPSILON ] };
++	key <AD07> { [           Greek_theta,    Greek_THETA ] };
++	key <AD08> { [            Greek_iota,     Greek_IOTA ] };
++	key <AD09> { [         Greek_omicron,  Greek_OMICRON ] };
++	key <AD10> { [              Greek_pi,       Greek_PI ] };
++	key <AD11> { [           bracketleft,      braceleft,	guillemotleft ] };
++	key <AD12> { [          bracketright,     braceright,	guillemotright ] };
++
++	key <AC01> { [           Greek_alpha,    Greek_ALPHA ] };
++	key <AC02> { [           Greek_sigma,    Greek_SIGMA ] };
++	key <AC03> { [           Greek_delta,    Greek_DELTA ] };
++	key <AC04> { [             Greek_phi,      Greek_PHI ] };
++	key <AC05> { [           Greek_gamma,    Greek_GAMMA ] };
++	key <AC06> { [             Greek_eta,      Greek_ETA ] };
++	key <AC07> { [              Greek_xi,       Greek_XI ] };
++	key <AC08> { [           Greek_kappa,    Greek_KAPPA ] };
++	key <AC09> { [           Greek_lamda,    Greek_LAMDA ] };
++	key <AC10> { [            dead_acute, dead_diaeresis ] };
++	key <AC11> { [            apostrophe,       quotedbl ] };
++	key <BKSL> { [             backslash,            bar,	brokenbar ] };
++
++	key <LSGT> { [         guillemotleft, guillemotright,	brokenbar ] };
++        key <AB01> { [            Greek_zeta,     Greek_ZETA ] };
++        key <AB02> { [             Greek_chi,      Greek_CHI ] };
++        key <AB03> { [             Greek_psi,      Greek_PSI,	copyright ] };
++        key <AB04> { [           Greek_omega,    Greek_OMEGA ] };
++        key <AB05> { [            Greek_beta,     Greek_BETA ] };
++        key <AB06> { [              Greek_nu,       Greek_NU ] };
++        key <AB07> { [              Greek_mu,       Greek_MU ] };
++	key <AB08> { [                 comma,           less,	guillemotleft ] };
++	key <AB09> { [                period,        greater,	guillemotright ] };
++	key <AB10> { [                 slash,       question ] };
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/it	2010-10-01 15:10:31.086176555 +0200
++++ symbols/it	2010-10-04 13:09:49.983979186 +0200
+@@ -216,3 +216,32 @@
+     include "level3(ralt_switch)"
+ };
+ 
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Italy - type6";
++
++    key <LSGT> { [            less,         greater                                ] };
++    key <TLDE> { [       backslash,             bar                                ] };
++    key <AE02> { [               2,        quotedbl                                ] };
++    key <AE03> { [               3,        sterling                                ] };
++    key <AE06> { [               6,       ampersand                                ] };
++    key <AE07> { [               7,           slash                                ] };
++    key <AE08> { [               8,       parenleft,    braceleft                  ] };     
++    key <AE09> { [               9,      parenright,   braceright                  ] };     
++    key <AE10> { [               0,           equal                                ] };
++    key <AE11> { [      apostrophe,        question,        grave                  ] };     
++    key <AE12> { [          igrave,     asciicircum                                ] };
++    key <AD03> { [               e,               E,     EuroSign                  ] };
++    key <AD11> { [          egrave,          eacute,  bracketleft,  dead_abovering ] };
++    key <AD12> { [            plus,        asterisk, bracketright                  ] };      
++    key <BKSL> { [          ugrave,         section,   asciitilde                  ] };
++    key <AC10> { [          ograve,        ccedilla,           at                  ] };      
++    key <AC11> { [          agrave,          degree,   numbersign                  ] };
++    key <AB08> { [           comma,       semicolon                                ] };
++    key <AB09> { [          period,           colon                                ] };
++    key <AB10> { [           minus,      underscore                                ] };
++
++        include "level3(ralt_switch)"
++
++};
+
+--- symbols/kr	2010-10-01 15:10:31.090513401 +0200
++++ symbols/kr	2010-10-04 13:10:44.849850634 +0200
+@@ -28,3 +28,18 @@
+     key <RCTL> { [ Hangul_Hanja ] };    
+ };
+ 
++// Korean layout for a Type 6 Sun keyboard
++partial
++xkb_symbols "type6" {
++
++    // A few keys are different
++    key <ALGR> { [ Hangul                       ]       };
++    key <COMP> { [ Hangul_Hanja                 ]       };
++    key <KANA> { [ Hangul                       ]       };
++    key <EISU> { [ Hangul_Hanja                 ]       };
++    key <BKSL> { [ backslash, bar,  brokenbar   ]       };
++
++        include "level3(ralt_switch)"
++
++};
++
+
+--- symbols/lt	2010-10-01 15:10:31.105127622 +0200
++++ symbols/lt	2010-10-04 13:12:02.594230636 +0200
+@@ -292,3 +292,64 @@
+     include "level3(ralt_switch)"
+ };
+ 
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Lithuania - type6";
++
++
++    key <TLDE>  { [ quoteleft,   asciitilde,	notsign,   brokenbar ]    };
++    key <AE01>  { [   aogonek,      Aogonek,	1,      exclam ]    };
++    key <AE02>  { [    ccaron,       Ccaron,	2,          at ]    };
++    key <AE03>  { [   eogonek,      Eogonek,	3,  numbersign ]    };
++    key <AE04>  { [ eabovedot,    Eabovedot,	4,      dollar ]    };
++    key <AE05>  { [   iogonek,      Iogonek,	5,     percent ]    };
++    key <AE06>  { [    scaron,       Scaron,	6, asciicircum ]    };
++    key <AE07>  { [   uogonek,      Uogonek,	7,   ampersand ]    };
++    key <AE08>  { [   umacron,      Umacron,	8,    asterisk ]    };
++    key <AE09>  { [  doublelowquotemark,  parenleft,	9,  parenleft ]    };
++    key <AE10>  { [ leftdoublequotemark, parenright,	0, parenright ]    };
++    key <AE11>  { [     minus,   underscore,	backslash, questiondown ]  };
++    key <AE12>  { [    zcaron,       Zcaron,	equal,         plus ]  };
++
++    key <AD01>  { [         q,          Q,	at,  Greek_OMEGA ] };
++    key <AD02>  { [         w,          W,	lstroke,      Lstroke ] };
++    key <AD03>  { [         e,          E,	EuroSign               ] };
++    key <AD04>  { [         r,          R,	paragraph,   registered ] };
++    key <AD05>  { [         t,          T,	tslash,       Tslash ] };
++    key <AD06>  { [         y,          Y,	leftarrow,          yen ] };
++    key <AD07>  { [         u,          U,	downarrow,      uparrow ] };
++    key <AD08>  { [         i,          I,	rightarrow,     idotless ] };
++    key <AD09>  { [         o,          O,	oslash,     Ooblique ] };
++    key <AD10>  { [         p,          P,	thorn,        THORN ] };
++    key <AD11>  { [  bracketleft,  braceleft,	dead_diaeresis, dead_abovering ] };
++    key <AD12>  { [ bracketright, braceright,	dead_tilde,    dead_macron ] };
++
++    key <AC01>  { [         a,          A,	ae,           AE ] };
++    key <AC02>  { [         s,          S,	ssharp,      section ] };
++    key <AC03>  { [         d,          D,	eth,          ETH ] };
++    key <AC04>  { [         f,          F,	dstroke,  ordfeminine ] };
++    key <AC05>  { [         g,          G,	eng,          ENG ] };
++    key <AC06>  { [         h,          H,	hstroke,      Hstroke ] };
++    key <AC07>  { [         j,          J ] 				    };
++    key <AC08>  { [         k,          K,	kra,    ampersand ] };
++    key <AC09>  { [         l,          L,	lstroke,      Lstroke ] };
++    key <AC10>  { [  semicolon,     colon,	dead_acute, dead_doubleacute ] };
++    key <AC11>  { [ apostrophe,  quotedbl,	dead_circumflex,  dead_caron ] };
++    key <LSGT>  { [  backslash,       bar,	dead_grave,   dead_breve ] };
++
++    key <BKSL>  { [ backslash,        bar,	dead_grave,   dead_breve ] };
++    key <AB01>  { [         z,          Z,	guillemotleft,        less ] };
++    key <AB02>  { [         x,          X,	guillemotright,    greater ] };
++    key <AB03>  { [         c,          C,	cent,    copyright ] };
++    key <AB04>  { [         v,          V,	leftdoublequotemark, leftsinglequotemark ]   };
++    key <AB05>  { [         b,          B,	rightdoublequotemark, rightsinglequotemark ] };
++    key <AB06>  { [         n,          N ]     };
++    key <AB07>  { [         m,          M,	mu,    masculine ] };
++    key <AB08>  { [     comma,       less,	ampersand,     multiply ] };
++    key <AB09>  { [    period,    greater,	periodcentered,   division ] };
++    key <AB10>  { [     slash,   question,	dead_belowdot, dead_abovedot ] };
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/lv	2010-10-01 15:10:31.102786714 +0200
++++ symbols/lv	2010-10-04 13:13:11.933945880 +0200
+@@ -127,3 +127,65 @@
+ 	modifier_map Mod5 { <AC04> };
+ 
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Latvia - type6";
++
++
++   key <TLDE> { [          grave,    asciitilde,	acute,    asciitilde ] };
++   key <AE01> { [              1,        exclam,	onesuperior,    exclamdown ] };
++   key <AE02> { [              2,            at,	twosuperior,     oneeighth ] };
++   key <AE03> { [              3,    numbersign,	threesuperior,      sterling ] };
++   key <AE04> { [              4,        dollar,	EuroSign,          cent ] };
++   key <AE05> { [              5,       percent,	onehalf,  threeeighths ] };
++   key <AE06> { [              6,   asciicircum,	threequarters,   fiveeighths ] };
++   key <AE07> { [              7,     ampersand,	braceleft,  seveneighths ] };
++   key <AE08> { [              8,      asterisk,	bracketleft,     trademark ] };
++   key <AE09> { [              9,     parenleft,	bracketright,     plusminus ] };
++   key <AE10> { [              0,    parenright,	braceright,        degree ] };
++   key <AE11> { [          minus,    underscore,	backslash,  questiondown ] };
++   key <AE12> { [          equal,          plus,	endash,        emdash ] };
++
++   key <AD01> { [              q,             Q,	q,             Q ] };
++   key <AD02> { [              w,             W,	w,             W ] };
++   key <AD03> { [              e,             E,	emacron,       Emacron ] };
++   key <AD04> { [              r,             R,	rcedilla,      Rcedilla ] };
++   key <AD05> { [              t,             T,	t,             T ] };
++   key <AD06> { [              y,             Y,	y,             Y ] };
++   key <AD07> { [              u,             U,	umacron,       Umacron ] };
++   key <AD08> { [              i,             I,	imacron,       Imacron ] };
++   key <AD09> { [              o,             O,	omacron,       Omacron ] };
++   key <AD10> { [              p,             P,	p,             P ] };
++   key <AD11> { [    bracketleft,     braceleft,	guillemotleft, leftdoublequotemark ] };
++   key <AD12> { [   bracketright,    braceright,	guillemotright, rightdoublequotemark ] };
++
++   key <AC01> { [              a,             A,	amacron,       Amacron ] };
++   key <AC02> { [              s,             S,	scaron,        Scaron ] };
++   key <AC03> { [              d,             D,	d,             D ] };
++   key <AC04> { [              f,             F,	f,             F ] };
++   key <AC05> { [              g,             G,	gcedilla,      Gcedilla ] };
++   key <AC06> { [              h,             H,	h,             H ] };
++   key <AC07> { [              j,             J,	j,             J ] };
++   key <AC08> { [              k,             K,	kcedilla,      Kcedilla ] };
++   key <AC09> { [              l,             L,	lcedilla,      Lcedilla ] };
++   key <AC10> { [      semicolon,         colon,	semicolon,         colon ] };
++   key <AC11> { [     apostrophe,      quotedbl,	leftdoublequotemark, doublelowquotemark ] };
++   key <LSGT> { [      backslash,           bar,	degree,     brokenbar ] };
++
++   key <BKSL> { [      backslash,           bar,	grave,         breve ] };
++   key <AB01> { [              z,             Z,	zcaron,        Zcaron ] };
++   key <AB02> { [              x,             X,	x,             X ] };
++   key <AB03> { [              c,             C,	ccaron,        Ccaron ] };
++   key <AB04> { [              v,             V,	v,             V ] };
++   key <AB05> { [              b,             B,	b,             B ] };
++   key <AB06> { [              n,             N,	ncedilla,      Ncedilla ] };
++   key <AB07> { [              m,             M,	m,             M ] };
++   key <AB08> { [          comma,          less,	horizconnector,      multiply ] };
++   key <AB09> { [         period,       greater,	periodcentered,      division ] };
++   key <AB10> { [          slash,      question,	slash,      abovedot ] };
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/nl	2010-10-01 15:10:31.107905418 +0200
++++ symbols/nl	2010-10-04 13:14:57.692786721 +0200
+@@ -153,3 +153,52 @@
+ 
+ };
+ 
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Netherlands - type6";
++
++    key <TLDE>  { [        at,    section,      notsign ] };
++    key <AE01>  { [         1,     exclam,  onesuperior ] };
++    key <AE02>  { [         2,   quotedbl,  twosuperior ] };
++    key <AE03>  { [         3,    numbersign, threesuperior ] };
++    key <AE04>  { [         4,    dollar,  onequarter ] };
++    key <AE05>  { [         5,    percent,   onehalf ] };
++    key <AE06>  { [         6,  ampersand, threequarters ] };
++    key <AE07>  { [         7, underscore,     sterling ] };
++    key <AE08>  { [         8,  parenleft,    braceleft ] };
++    key <AE09>  { [         9, parenright,   braceright ] };
++    key <AE10>  { [         0, quoteright,   quoteleft ] };
++    key <AE11>  { [     slash,   question,    backslash ] };
++    key <AE12>  { [    degree, dead_tilde, dead_cedilla ] };
++
++    key <AD03>  { [         e,          E,     EuroSign ] };
++    key <AD05>  { [         t,          T ] };
++    key <AD06>  { [         y,          Y ] };
++    key <AD07>  { [         u,          U ] };
++    key <AD08>  { [         i,          I ] };
++    key <AD09>  { [         o,          O ] };
++    key <AD10>  { [         p,          P ] };
++    key <AD11>  { [dead_diaeresis, dead_circumflex ]    };
++    key <AD12>  { [  asterisk,        bar,  asciitilde ] };
++
++    key <AC01>  { [         a,          A ] };
++    key <AC02>  { [         s,    S, ssharp ] };
++    key <AC04>  { [         f,          F ] };
++    key <AC10>  { [      plus,  plusminus ] };
++    key <AC11>  { [dead_acute, dead_grave ] };
++    key <BKSL>  { [      less,    greater,   asciicircum ] };
++
++    key <LSGT>  { [bracketright, bracketleft,       brokenbar ] };
++    key <AB01>  { [         z,    Z, guillemotleft ] };
++    key <AB02>  { [         x,    X, guillemotright ] };
++    key <AB03>  { [         c,    C, cent                     ] };
++    key <AB06>  { [         n,          N ] };
++    key <AB07>  { [         m,          M,     mu ] };
++    key <AB08>  { [     comma,  semicolon ] };
++    key <AB09>  { [    period,      colon ] };
++    key <AB10>  { [     minus,      equal ] };
++
++        include "level3(ralt_switch)"
++
++};
+
+--- symbols/no	2010-10-01 15:10:31.132326914 +0200
++++ symbols/no	2010-10-04 13:15:55.205884098 +0200
+@@ -228,3 +228,36 @@
+     key <AE12>	{ [      grave,     acute,        acute,       ogonek ]	};
+     key <AD12>	{ [  diaeresis, asciicircum, asciitilde,       macron ]	};
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Norway - tyep6";
++
++    key <TLDE> { [             bar,         section                ] };
++    key <LSGT> { [            less,         greater                ] };
++    key <BKSL> { [      apostrophe,        asterisk,  grave        ] };
++    key <AE02> { [               2,        quotedbl,  at           ] };
++    key <AE03> { [               3,      numbersign,  sterling     ] };
++    key <AE04> { [               4,        currency,  dollar       ] };
++    key <AE05> { [               5,         percent,  asciitilde   ] };
++    key <AE06> { [               6,       ampersand,  asciicircum  ] };
++    key <AE07> { [               7,           slash,  braceleft    ] };
++    key <AE08> { [               8,       parenleft,  bracketleft  ] };
++    key <AE09> { [               9,      parenright,  bracketright ] };
++    key <AE10> { [               0,           equal,  braceright   ] };
++    key <AE11> { [            plus,        question                ] };
++    key <AE12> { [       backslash,      dead_grave,  dead_acute   ] };
++    key <AD03> { [               e,               E,  EuroSign     ] };
++    key <AD11> { [           aring,           Aring                ] };
++    key <AD12> { [  dead_diaeresis, dead_circumflex,  dead_tilde   ] };
++    key <AC10> { [          oslash,          Oslash                ] }; 
++    key <AC11> { [              ae,              AE                ] };
++    key <AB08> { [           comma,       semicolon                ] };
++    key <AB09> { [          period,           colon                ] };
++    key <AB10> { [           minus,      underscore                ] };
++
++        include "level3(ralt_switch)"
++        include "kpdl(comma)"
++
++};
+
+--- symbols/pc	2010-10-01 15:10:31.090757394 +0200
++++ symbols/pc	2010-10-01 15:50:13.167542038 +0200
 @@ -55,8 +55,8 @@
      key <ALT>  {	[ NoSymbol, Alt_L	]	};
      include "altwin(meta_alt)"
@@ -905,3 +1966,517 @@
  };
  
  partial hidden alphanumeric_keys
+
+--- symbols/pl	2010-10-01 15:10:31.133320369 +0200
++++ symbols/pl	2010-10-04 13:18:06.160342583 +0200
+@@ -352,3 +352,49 @@
+ 
+    include "level3(ralt_switch)"
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Polish Developers - type6";
++
++    key <TLDE> { [ grave, 	 asciitilde					] };
++    key <AE01> { [ 1,		 exclam						] };
++    key <AE02> { [ 2,		 at						] };
++    key <AE03> { [ 3,		 numbersign 					] };
++    key <AE04> { [ 4,		 dollar	 					] };
++    key <AE05> { [ 5,		 percent 					] };
++    key <AE06> { [ 6,		 asciicirum					] };
++    key <AE07> { [ 7,		 ampersand					] };
++    key <AE08> { [ 8,		 asterisk					] };
++    key <AE09> { [ 9,		 parenleft					] };
++    key <AE10> { [ 0,		 parenright					] };
++    key <AE11> { [ minus,	 underscore 					] };
++    key <AE12> { [ equal,	 plus	 					] };
++
++    key <AD03> { [ e,		 E,		eogonek,	Eogonek		] };       
++    key <AD07> { [ u,		 U,		EuroSign			] };
++    key <AD09> { [ o,		 O,		oacute,		Oacute		] };
++    key <AD11> { [ bracketleft,  braceleft					] };
++    key <AD12> { [ bracketright, braceright					] };
++
++    key <AC01> { [ a,		 A,		aogonek,	Aogonek		] };
++    key <AC02> { [ s,		 S,		sacute,		Sacute		] };
++    key <AC09> { [ l,		 L,		lstroke,        Lstroke		] };
++    key <AC10> { [ semicolon,	 colon						] };
++    key <AC11> { [ apostrophe,	 quotedbl 					] };
++    key <BKSL> { [ backslash,	 bar,		brokenbar			] };
++
++    key <LSGT> { [ less,         greater,       bar,            brokenbar	] };
++    key <AB01> { [ z, 		 Z,		zabovedot,	Zabovedot	] };
++    key <AB02> { [ x,		 X,		zacute,		Zacute		] };
++    key <AB03> { [ c,		 C,		cacute,		Cacute		] };
++    key <AB06> { [ n,		 N,		nacute,		Nacute		] };
++    key <AB08> { [ comma,	 less 						] };
++    key <AB09> { [ period,	 greater				 	] };
++    key <AB10> { [ slash,	 question					] };
++
++	include "level3(ralt_switch)"
++
++};
++
+
+--- symbols/pt	2010-10-01 15:10:31.103476091 +0200
++++ symbols/pt	2010-10-04 13:16:42.825137503 +0200
+@@ -221,4 +221,36 @@
+     key <AB02> { [  scircumflex,     Scircumflex,             ccedilla,         Ccedilla ] };
+     key <AB06> { [  gcircumflex,     Gcircumflex,                    q,                Q ] };
+ 
+-};
+\ No newline at end of file
++};
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Portugal - type6";
++
++    key <LSGT> { [            less,          greater                  ] };
++    key <TLDE> { [       backslash,              bar                  ] };
++    key <AE02> { [               2,         quotedbl,              at ] };
++    key <AE03> { [               3,       numbersign,        sterling ] };
++    key <AE04> { [               4,           dollar,         section ] };
++    key <AE05> { [               5,          percent,      asciitilde ] };
++    key <AE06> { [               6,        ampersand,     asciicircum ] };
++    key <AE07> { [               7,            slash,       braceleft ] };
++    key <AE08> { [               8,        parenleft,     bracketleft ] };
++    key <AE09> { [               9,       parenright,    bracketright ] };
++    key <AE10> { [               0,            equal,      braceright ] };
++    key <AE11> { [      quoteright,         question,       quoteleft ] };
++    key <AE12> { [   guillemotleft,   guillemotright                  ] };
++    key <AD03> { [               e,                E,        EuroSign ] };
++    key <AD11> { [            plus,         asterisk,  dead_diaeresis ] }; 
++    key <AD12> { [      dead_acute,       dead_grave                  ] };
++    key <BKSL> { [      dead_tilde,  dead_circumflex                  ] };
++    key <AC10> { [        ccedilla,         Ccedilla                  ] };
++    key <AC11> { [       masculine,      ordfeminine                  ] };
++    key <AB08> { [           comma,        semicolon                  ] };
++    key <AB09> { [          period,            colon                  ] };
++    key <AB10> { [           minus,       underscore                  ] };
++
++        include "level3(ralt_switch)"
++
++};
+
+--- symbols/ro	2010-10-01 15:10:31.086440439 +0200
++++ symbols/ro	2010-10-04 13:18:51.429844031 +0200
+@@ -233,3 +233,65 @@
+     key <AC04>	{ [         f,          F,          iacute,          Iacute ]	};
+     key <AC07>	{ [    ibreve,     Ibreve,               j,               J ]	};
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Romania - type6";
++
++
++   key <TLDE> { [          grave,    asciitilde,	grave,    asciitilde ] };
++   key <AE01> { [              1,        exclam,	dead_tilde                ] };
++   key <AE02> { [              2,            at,	dead_caron                ] };
++   key <AE03> { [              3,    numbersign,	dead_circumflex                ] };
++   key <AE04> { [              4,        dollar,	dead_breve                ] };
++   key <AE05> { [              5,       percent,	dead_abovering                ] };
++   key <AE06> { [              6,   asciicircum,	dead_ogonek                ] };
++   key <AE07> { [              7,     ampersand,	dead_grave                ] };
++   key <AE08> { [              8,      asterisk,	dead_abovedot                ] };
++   key <AE09> { [              9,     parenleft,	dead_acute                ] };
++   key <AE10> { [              0,    parenright,	dead_doubleacute                ] };
++   key <AE11> { [          minus,    underscore,	dead_diaeresis,        endash ] };
++   key <AE12> { [          equal,          plus,	dead_cedilla,     plusminus ] };
++
++   key <AD01> { [              q,             Q,	acircumflex,   Acircumflex ] };
++   key <AD02> { [              w,             W,	ssharp                ] };
++   key <AD03> { [              e,             E,	EuroSign                ] };
++   key <AD04> { [              r,             R,	r,             R ] };
++   key <AD05> { [              t,             T,	0x100021b,     0x100021a ] };
++   key <AD06> { [              y,             Y,	y,             Y ] };
++   key <AD07> { [              u,             U,	u,             U ] };
++   key <AD08> { [              i,             I,	icircumflex,   Icircumflex ] };
++   key <AD09> { [              o,             O,	o,             O ] };
++   key <AD10> { [              p,             P,	section                ] };
++   key <AD11> { [    bracketleft,     braceleft,	doublelowquotemark              ] };
++   key <AD12> { [   bracketright,    braceright,	rightdoublequotemark            ] };
++
++   key <AC01> { [              a,             A,	abreve,        Abreve ] };
++   key <AC02> { [              s,             S,	0x1000219,     0x1000218 ] };
++   key <AC03> { [              d,             D,	dstroke,       Dstroke ] };
++   key <AC04> { [              f,             F,	f,             F ] };
++   key <AC05> { [              g,             G,	g,             G ] };
++   key <AC06> { [              h,             H,	h,             H ] };
++   key <AC07> { [              j,             J,	j,             J ] };
++   key <AC08> { [              k,             K,	k,             K ] };
++   key <AC09> { [              l,             L,	lstroke,       Lstroke ] };
++   key <AC10> { [      semicolon,         colon,	semicolon,         colon ] };
++   key <AC11> { [     apostrophe,      quotedbl,	apostrophe,      quotedbl ] };
++   key <LSGT> { [      backslash,           bar,	backslash,     brokenbar ] };
++
++   key <BKSL> { [      backslash,           bar,	backslash,     brokenbar ] };
++   key <AB01> { [              z,             Z,	z,             Z ] };
++   key <AB02> { [              x,             X,	x,             X ] };
++   key <AB03> { [              c,             C,	copyright                ] };
++   key <AB04> { [              v,             V,	v,             V ] };
++   key <AB05> { [              b,             B,	b,             B ] };
++   key <AB06> { [              n,             N,	n,             N ] };
++   key <AB07> { [              m,             M,	m,             M ] };
++   key <AB08> { [          comma,          less,	guillemotleft,      multiply ] };
++   key <AB09> { [         period,       greater,	guillemotright,      division ] };
++   key <AB10> { [          slash,      question,	slash,      question ] };
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/ru	2010-10-01 15:10:31.097992403 +0200
++++ symbols/ru	2010-10-04 13:20:00.234283338 +0200
+@@ -508,3 +508,59 @@
+     key	<AC10> { [ Cyrillic_zhe, Cyrillic_ZHE, U452, U402 ] };
+     key	<AB02> { [ Cyrillic_che, Cyrillic_CHE, U45B, U40B ] };
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++     name[Group1]= "Russia - type6";
++
++     key.type[group1]="FOUR_LEVEL";
++
++
++    key	<AE01> { [		1,	    exclam 	] };
++    key	<AE02> { [		2,        quotedbl, 2, at	] };
++    key	<AE03> { [		3,      numerosign, 3,  numbersign	] };
++    key	<AE04> { [		4,       percent, 4,      dollar 	] };
++    key	<AE05> { [		5,	     colon, 5, percent	] };
++    key	<AE07> { [		7,	    period, 7, ampersand	] };
++    key	<AE08> { [		8,	 semicolon, 8, asterisk 	] };
++    key	<BKSL> { [           slash,        question, backslash,             bar	] };
++    key	<AB10> { [      ediaeresis,      Ediaeresis,	    slash,	  question 	] };
++    key <LSGT> { [       backslash,             bar      ] };
++
++    key	<AD01> { [ Cyrillic_shorti, Cyrillic_SHORTI, q, Q	] };
++    key	<AD02> { [    Cyrillic_tse,    Cyrillic_TSE, w, W	] };
++    key	<AD03> { [      Cyrillic_u,	Cyrillic_U, e, E	] };
++    key	<AD04> { [     Cyrillic_ka,     Cyrillic_KA, r, R	] };
++    key	<AD05> { [     Cyrillic_ie,     Cyrillic_IE, t, T	] };
++    key	<AD06> { [     Cyrillic_en,     Cyrillic_EN, y, Y	] };
++    key	<AD07> { [    Cyrillic_ghe,    Cyrillic_GHE, u, U	] };
++    key	<AD08> { [    Cyrillic_sha,    Cyrillic_SHA, i, I	] };
++    key	<AD09> { [  Cyrillic_shcha,  Cyrillic_SHCHA, o, O	] };
++    key	<AD10> { [     Cyrillic_ze,     Cyrillic_ZE, p, P	] };
++    key	<AD11> { [     Cyrillic_ha,     Cyrillic_HA, bracketleft,       braceleft	] };
++    key	<AD12> { [Cyrillic_hardsign,Cyrillic_HARDSIGN, bracketright,      braceright	] };
++    key	<AC01> { [     Cyrillic_ef,     Cyrillic_EF, a, A	] };
++    key	<AC02> { [   Cyrillic_yeru,   Cyrillic_YERU, s, S	] };
++    key	<AC03> { [     Cyrillic_ve,     Cyrillic_VE, d, D	] };
++    key	<AC04> { [      Cyrillic_a,	Cyrillic_A, f, F	] };
++    key	<AC05> { [     Cyrillic_pe,     Cyrillic_PE, g, G	] };
++    key	<AC06> { [     Cyrillic_er,     Cyrillic_ER, h, H	] };
++    key	<AC07> { [      Cyrillic_o,	Cyrillic_O, j, J	] };
++    key	<AC08> { [     Cyrillic_el,     Cyrillic_EL, k, K	] };
++    key	<AC09> { [     Cyrillic_de,     Cyrillic_DE, l, L	] };
++    key	<AC10> { [    Cyrillic_zhe,    Cyrillic_ZHE, semicolon,           colon	] };
++    key	<AC11> { [      Cyrillic_e,	Cyrillic_E, apostrophe,        quotedbl	] };
++    key	<AB01> { [     Cyrillic_ya,     Cyrillic_YA, z, Z	] };
++    key	<AB02> { [    Cyrillic_che,    Cyrillic_CHE, x, X	] };
++    key	<AB03> { [     Cyrillic_es,     Cyrillic_ES, c, C	] };
++    key	<AB04> { [     Cyrillic_em,     Cyrillic_EM, v, V	] };
++    key	<AB05> { [      Cyrillic_i,	Cyrillic_I, b, B	] };
++    key	<AB06> { [     Cyrillic_te,     Cyrillic_TE, n, N	] };
++    key	<AB07> { [Cyrillic_softsign,Cyrillic_SOFTSIGN, m, M	] };
++    key	<AB08> { [     Cyrillic_be,     Cyrillic_BE, comma,            less	] };
++    key	<AB09> { [     Cyrillic_yu,     Cyrillic_YU, period,         greater	] };
++
++    include "level3(ralt_switch)"
++
++};
+
+--- symbols/se	2010-10-01 15:10:31.094692513 +0200
++++ symbols/se	2010-10-04 13:20:51.043922333 +0200
+@@ -255,3 +255,35 @@
+    key <AB09> { [ v, V ] };
+    key <AB10> { [ z, Z ] };
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Sweden - type6";
++
++    key <TLDE> { [         section,         onehalf                ] };
++    key <LSGT> { [            less,         greater,           bar ] };
++    key <AE02> { [               2,        quotedbl,            at ] };
++    key <AE03> { [               3,      numbersign,      sterling ] };
++    key <AE04> { [               4,        currency,        dollar ] };
++    key <AE06> { [               6,       ampersand                ] };
++    key <AE07> { [               7,           slash,     braceleft ] };
++    key <AE08> { [               8,       parenleft,   bracketleft ] };
++    key <AE09> { [               9,      parenright,  bracketright ] };
++    key <AE10> { [               0,           equal,    braceright ] };
++    key <AE11> { [            plus,        question,     backslash ] };
++    key <AE12> { [      dead_acute,      dead_grave                ] };
++    key <AD03> { [               e,               E,      EuroSign ] };
++    key <AD11> { [           aring,           Aring                ] };
++    key <AD12> { [  dead_diaeresis,     asciicircum,    asciitilde ] };
++    key <AC10> { [      odiaeresis,      Odiaeresis                ] };
++    key <AC11> { [      adiaeresis,      Adiaeresis                ] };
++    key <BKSL> { [      apostrophe,        asterisk,         grave ] };
++    key <AB08> { [           comma,       semicolon                ] };
++    key <AB09> { [          period,           colon                ] };
++    key <AB10> { [           minus,      underscore                ] };
++
++        include "level3(ralt_switch)"
++        include "kpdl(comma)"
++
++};
+
+--- symbols/sk	2010-10-01 15:10:31.089286379 +0200
++++ symbols/sk	2010-10-04 13:21:38.177251981 +0200
+@@ -106,3 +106,58 @@
+ 
+     key <BKSL>	{ [ backslash,        bar,        slash,     NoSymbol ]	};
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Slovakia - type6";
++
++
++    key <TLDE>  { 	[       semicolon, dead_abovering, quoteleft,         asciitilde  ]	};
++    key <AE01>  { 	[	     plus,         1,	exclam,               asciitilde  ]	};
++    key <AE02>  {	[	   lcaron,         2,	at,                   dead_caron  ]	};
++    key <AE03>  {	[	   scaron,         3,	numbersign,      dead_circumflex  ]	};
++    key <AE04>  {	[          ccaron,         4,	dollar,               dead_breve  ]	};
++    key <AE05>  {	[	   tcaron,         5,	percent,          dead_abovering  ]	};
++    key <AE06>  {	[	   zcaron,         6,	asciicircum,         dead_ogonek  ]	};
++    key <AE07>  {	[	   yacute,         7,	ampersand,                 grave  ]	};
++    key <AE08>  {	[	   aacute,         8,	asterisk,          dead_abovedot  ]	};
++    key <AE09>  {	[	   iacute,         9,	parenleft,            apostrophe  ]	};
++    key <AE10>  {	[	   eacute,         0,	parenright,     dead_doubleacute  ]	};
++    key <AE11>  {	[	    equal,   percent,	dead_diaeresis,        backslash  ]	};
++    key <AE12>  {	[      dead_acute, dead_caron,	dead_cedilla,              minus  ]	};
++
++    key <AD01>  {	[ 		q,         Q,	backslash		          ]	};
++    key <AD02>  {	[	        w,         W,	bar	                          ]	};
++    key <AD03>  {	[	        e,         E,	EuroSign 		          ]	};
++    key <AD06>  {       [               z,         Z                                      ]     };
++    key <AD10>  {       [               p,         P,	apostrophe   		          ]	};
++    key <AD11>  {	[	   uacute,     slash,	division		          ]	};
++    key <AD12>  {	[      adiaeresis, parenleft,	multiply      		          ]	};
++
++    key <AC02>  {	[	        s,         S,	dstroke		       		  ]	};
++    key <AC03>  {	[	        d,         D,	Dstroke			          ]	};
++    key <AC04>  {	[	        f,         F,	bracketleft		          ]	};
++    key <AC05>  {	[	        g,         G,	bracketright		          ]	};
++    key <AC08>  {	[		k,         K,	lstroke 		       	  ]	};
++    key <AC09>  {	[	        l,         L,	Lstroke		                  ]	};
++    key <AC10>  {	[     ocircumflex,  quotedbl,	dollar		                  ]	};
++    key <AC11>  {	[         section,    exclam,	ssharp   		          ]	};
++    key <AC12>  {	[          ncaron, parenright,	currency,               currency  ]	};
++    key <BKSL>  {	[          ncaron, parenright,	backslash,                   bar  ]	};
++
++    key <LSGT>  { 	[       backslash,       bar,	slash,                 brokenbar  ]     };
++    key <AB01>  {       [               y,        Y,	less  	                          ]	};
++    key <AB02>  {	[	        x,        X,	greater,              numbersign  ]	};
++    key <AB03>  {	[		c,        C,	ampersand	 	          ]	};
++    key <AB04>  {	[	        v,        V,	at 		                  ]	};
++    key <AB05>  {	[	        b,        B,	braceleft              	          ]	};
++    key <AB06>  {	[        	n,        N,	braceright              	  ]	};
++    key <AB08>  {	[  	    comma, question,	less 		                  ]	};
++    key <AB09>  {	[	   period,    colon,	greater		                  ]	};
++    key <AB10>  {	[ 	    minus, underscore,	asterisk 			  ]	};
++
++	include "level3(ralt_switch)"
++
++};
++
+
+--- symbols/tr	2010-10-01 15:10:31.088341664 +0200
++++ symbols/tr	2010-10-04 13:22:28.951088334 +0200
+@@ -354,3 +354,40 @@
+ 
+     key <AB06>	{ [         n,          N,          ntilde,          Ntilde ]	};
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Turkey - (Q) - type6";
++
++    key <TLDE>  { [  quotedbl,     eacute                ] };
++    key <AE01>	{ [         1,     exclam                ] };
++    key <AE02>	{ [         2, apostrophe                ] };
++    key <AE03>	{ [        3, asciicircum,    numbersign ] };
++    key <AE04>	{ [         4,       plus,        dollar ] };
++    key <AE06>	{ [         6,  ampersand                ] };
++    key <AE07>	{ [         7,      slash,     braceleft ] };
++    key <AE08>	{ [         8,  parenleft,   bracketleft ] };
++    key <AE09>	{ [         9, parenright,  bracketright ] };
++    key <AE10>	{ [         0,      equal,    braceright ] };
++    key <AE11>	{ [  asterisk,   question,     backslash ] };
++    key <AE12>	{ [     minus, underscore                ] };
++
++    key <AD01>  { [         q,          Q,           at ] };
++    key <AD03>	{ [         e,          E,     EuroSign ] };
++    key <AD08>	{ [  idotless,          I               ] };
++    key <AD11>	{ [    gbreve,     Gbreve               ] };
++    key <AD12>	{ [udiaeresis, Udiaeresis,   asciitilde ] };
++
++    key <AC10>	{ [  scedilla,   Scedilla,        acute ] };
++    key <AC11>	{ [         i,  Iabovedot               ] }; 
++    key <BKSL>	{ [     comma,  semicolon,        grave ] };
++
++    key <LSGT>	{ [      less,    greater,          bar ] };
++    key <AB08>	{ [odiaeresis, Odiaeresis               ] };
++    key <AB09>	{ [  ccedilla,   Ccedilla               ] };
++    key <AB10>	{ [    period,      colon               ] };
++
++	include "level3(ralt_switch)"
++
++};
+--- symbols/tw	1970-01-01 01:00:00.000000000 +0100
++++ symbols/tw	2010-10-04 13:23:18.811071041 +0200
+@@ -0,0 +1,8 @@
++// Taiwanese layout for a Type 6 Sun keyboard
++partial
++xkb_symbols "type6" {
++    // A few keys are different from US layout - only those are shown here
++    key <ALGR> { [ Henkan_Mode          ]                       };
++    key <BKSL> { [ backslash, bar,  brokenbar   ]               };
++
++};
+
+--- symbols/ua	2010-10-01 15:10:31.097379993 +0200
++++ symbols/ua	2010-10-04 13:24:22.862984681 +0200
+@@ -332,3 +332,65 @@
+ 
+     name[Group1]="Ukraine - Crimean Tatar (Turkish Alt-Q)";
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]="Ukraine - type6";
++
++
++    key	<TLDE> {	[	    grave,	asciitilde,	apostrophe,	asciitilde	]	};
++    key	<AE01> {	[		1,	    exclam,	1,	    exclam 	]	};
++    key	<AE02> {	[		2,		at,	2,        quotedbl	]	};
++    key	<AE03> {	[		3,	numbersign,	3,      numbersign	]	};
++    key	<AE04> {	[		4,	    dollar,	4,        asterisk	]	};
++    key	<AE05> {	[		5,	   percent,	5,	     colon	]	};
++    key	<AE06> {	[		6,     asciicircum,	6,	     comma	]	};
++    key	<AE07> {	[		7,	 ampersand,	7,	    period	]	};
++    key	<AE08> {	[		8,	  asterisk,	8,	 semicolon	]	};
++    key	<AE09> {	[		9,	 parenleft,	9,	 parenleft	]	};
++    key	<AE10> {	[		0,	parenright,	0,	parenright	]	};
++    key	<AE11> {	[	    minus,	underscore,	minus,	underscore	]	};
++    key	<AE12> {	[	    equal,	      plus,	equal,	      plus	]	};
++
++    key	<AD01> {	[		q,		 Q,	Cyrillic_shorti, Cyrillic_SHORTI	]	};
++    key	<AD02> {	[		w,		 W,	Cyrillic_tse,    Cyrillic_TSE	]	};
++    key	<AD03> {	[		e,		 E,	Cyrillic_u,	Cyrillic_U	]	};
++    key	<AD04> {	[		r,		 R,	Cyrillic_ka,     Cyrillic_KA	]	};
++    key	<AD05> {	[		t,		 T,	Cyrillic_ie,     Cyrillic_IE	]	};
++    key	<AD06> {	[		y,		 Y,	Cyrillic_en,     Cyrillic_EN	]	};
++    key	<AD07> {	[		u,		 U,	Cyrillic_ghe,    Cyrillic_GHE	]	};
++    key	<AD08> {	[		i,		 I,	Cyrillic_sha,    Cyrillic_SHA	]	};
++    key	<AD09> {	[		o,		 O,	Cyrillic_shcha,  Cyrillic_SHCHA	]	};
++    key	<AD10> {	[		p,		 P,	Cyrillic_ze,     Cyrillic_ZE	]	};
++    key	<AD11> {	[     bracketleft,	 braceleft,	Cyrillic_ha,     Cyrillic_HA	]	};
++    key	<AD12> {	[    bracketright,	braceright,	Ukrainian_yi,    Ukrainian_YI	]	};
++
++    key	<AC01> {	[		a,		 A,	Cyrillic_ef,     Cyrillic_EF	]	};
++    key	<AC02> {	[		s,		 S,	Ukrainian_i,     Ukrainian_I	]	};
++    key	<AC03> {	[		d,		 D,	Cyrillic_ve,     Cyrillic_VE	]	};
++    key	<AC04> {	[		f,		 F,	Cyrillic_a,	Cyrillic_A	]	};
++    key	<AC05> {	[		g,		 G,	Cyrillic_pe,     Cyrillic_PE	]	};
++    key	<AC06> {	[		h,		 H,	Cyrillic_er,     Cyrillic_ER	]	};
++    key	<AC07> {	[		j,		 J,	Cyrillic_o,	Cyrillic_O	]	};
++    key	<AC08> {	[		k,		 K,	Cyrillic_el,     Cyrillic_EL	]	};
++    key	<AC09> {	[		l,		 L,	Cyrillic_de,     Cyrillic_DE	]	};
++    key	<AC10> {	[	semicolon,	     colon,	Cyrillic_zhe,    Cyrillic_ZHE	]	};
++    key	<AC11> {	[      apostrophe,	  quotedbl,	Ukrainian_ie,    Ukrainian_IE	]	};
++    key <BKSL> {        [       backslash,             bar,     Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN ] };
++
++    key <LSGT> {        [            less,         greater,     slash,           bar            ]       };
++    key	<AB01> {	[		z,		 Z,	Cyrillic_ya,     Cyrillic_YA	]	};
++    key	<AB02> {	[		x,		 X,	Cyrillic_che,    Cyrillic_CHE	]	};
++    key	<AB03> {	[		c,		 C,	Cyrillic_es,     Cyrillic_ES	]	};
++    key	<AB04> {	[		v,		 V,	Cyrillic_em,     Cyrillic_EM	]	};
++    key	<AB06> {	[		n,		 N,	Cyrillic_te,     Cyrillic_TE	]	};
++    key	<AB05> {	[		b,		 B,	Cyrillic_i,	Cyrillic_I	]	};
++    key	<AB07> {	[		m,		 M,	Cyrillic_softsign,Cyrillic_SOFTSIGN	]	};
++    key	<AB08> {	[	    comma,	      less,	Cyrillic_be,     Cyrillic_BE	]	};
++    key	<AB09> {	[	   period,	   greater,	Cyrillic_yu,     Cyrillic_YU	]	};
++    key	<AB10> {	[	    slash,	  question,	slash,	  question	        ]	};
++
++	include "level3(ralt_switch)"
++
++};
+
+--- symbols/us	2010-10-01 15:10:31.129045180 +0200
++++ symbols/us	2010-10-04 13:27:20.666586458 +0200
+@@ -1147,3 +1147,16 @@
+ 
+   include "level3(ralt_switch)"
+ };
++
++partial alphanumeric_keys
++xkb_symbols "type6" {
++
++    name[Group1]= "USA - type6";
++
++    include "sun_vndr/us(sunbasic)"
++    include "sun_vndr/us(volumekeys)"
++    include "eurosign(4)"
++    include "level3(ralt_switch)"
++
++    key <SYRQ> { [ SunSys_Req                   ]};
++};
+
+--- rules/Makefile.in	2010-10-01 15:23:12.828588204 +0200
++++ rules/Makefile.in	2010-10-08 11:27:36.089394738 +0200
+@@ -267,13 +267,13 @@
+ @USE_COMPAT_RULES_TRUE@HDR compat/base.mlv_s.part   extras/base.mlv_s.part   base.mlv_s.part \
+ @USE_COMPAT_RULES_TRUE@HDR compat/base.ml_s.part    extras/base.ml_s.part    base.ml_s.part  \
+ @USE_COMPAT_RULES_TRUE@HDR compat/base.ml1_s.part   extras/base.ml1_s.part   base.ml1_s.part \
+-@USE_COMPAT_RULES_TRUE@HDR compat/base.ml1v1_s.part extras/base.ml1v1_s.part \
++@USE_COMPAT_RULES_TRUE@HDR compat/base.ml1v1_s.part extras/base.ml1v1_s.part	base.ml1v1_s.part \
+ @USE_COMPAT_RULES_TRUE@HDR compat/base.ml2_s.part    extras/base.ml2_s.part    base.ml2_s.part  \
+ @USE_COMPAT_RULES_TRUE@HDR compat/base.ml3_s.part    extras/base.ml3_s.part    base.ml3_s.part  \
+ @USE_COMPAT_RULES_TRUE@HDR compat/base.ml4_s.part    extras/base.ml4_s.part    base.ml4_s.part  \
+-@USE_COMPAT_RULES_TRUE@HDR compat/base.ml2v2_s.part  extras/base.ml2v2_s.part \
+-@USE_COMPAT_RULES_TRUE@HDR compat/base.ml3v3_s.part  extras/base.ml3v3_s.part \
+-@USE_COMPAT_RULES_TRUE@HDR compat/base.ml4v4_s.part  extras/base.ml4v4_s.part \
++@USE_COMPAT_RULES_TRUE@HDR compat/base.ml2v2_s.part  extras/base.ml2v2_s.part	base.ml2v2_s.part \
++@USE_COMPAT_RULES_TRUE@HDR compat/base.ml3v3_s.part  extras/base.ml3v3_s.part	base.ml3v3_s.part \
++@USE_COMPAT_RULES_TRUE@HDR compat/base.ml4v4_s.part  extras/base.ml4v4_s.part	base.ml4v4_s.part \
+ @USE_COMPAT_RULES_TRUE@HDR base.m_s.part \
+ @USE_COMPAT_RULES_TRUE@HDR compat/base.lv_c.part   \
+ @USE_COMPAT_RULES_TRUE@HDR compat/base.l1v1_c.part \
+
+--- rules/Makefile.am	2010-10-01 15:23:12.829718403 +0200
++++ rules/Makefile.am	2010-10-08 11:26:09.962269852 +0200
+@@ -33,13 +33,13 @@
+ HDR compat/base.mlv_s.part   extras/base.mlv_s.part   base.mlv_s.part \
+ HDR compat/base.ml_s.part    extras/base.ml_s.part    base.ml_s.part  \
+ HDR compat/base.ml1_s.part   extras/base.ml1_s.part   base.ml1_s.part \
+-HDR compat/base.ml1v1_s.part extras/base.ml1v1_s.part \
++HDR compat/base.ml1v1_s.part extras/base.ml1v1_s.part	base.ml1v1_s.part \
+ HDR compat/base.ml2_s.part    extras/base.ml2_s.part    base.ml2_s.part  \
+ HDR compat/base.ml3_s.part    extras/base.ml3_s.part    base.ml3_s.part  \
+ HDR compat/base.ml4_s.part    extras/base.ml4_s.part    base.ml4_s.part  \
+-HDR compat/base.ml2v2_s.part  extras/base.ml2v2_s.part \
+-HDR compat/base.ml3v3_s.part  extras/base.ml3v3_s.part \
+-HDR compat/base.ml4v4_s.part  extras/base.ml4v4_s.part \
++HDR compat/base.ml2v2_s.part  extras/base.ml2v2_s.part	base.ml2v2_s.part \
++HDR compat/base.ml3v3_s.part  extras/base.ml3v3_s.part	base.ml3v3_s.part \
++HDR compat/base.ml4v4_s.part  extras/base.ml4v4_s.part	base.ml4v4_s.part \
+ HDR base.m_s.part \
+ HDR compat/base.lv_c.part   \
+ HDR compat/base.l1v1_c.part \
