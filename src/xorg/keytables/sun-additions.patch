@@ -917,7 +917,7 @@
 
 --- symbols/ara	2010-10-01 15:10:31.127104254 +0200
 +++ symbols/ara	2010-10-04 11:46:41.549644345 +0200
-@@ -276,3 +276,65 @@
+@@ -276,3 +276,66 @@
  
      include "group(olpc)"
  };
@@ -926,6 +926,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]= "Arabic - type6";
++    include "us(basic)"
 +
 +    key <TLDE> {  [   Arabic_thal,      Arabic_shadda, grave,    asciitilde   ]	};
 +    key <AE01> {  [               1,          exclam, 1,          exclam      ] };
@@ -986,7 +987,7 @@
 
 --- symbols/be	2010-10-01 15:10:31.089510006 +0200
 +++ symbols/be	2010-10-04 12:53:28.205455810 +0200
-@@ -234,3 +234,45 @@
+@@ -234,3 +234,46 @@
      key <TLDE> { [ twosuperior, threesuperior,   notsign, asciitilde ] };
      key <LSGT> { [        less,       greater, backslash,  brokenbar ] };
  };
@@ -995,6 +996,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Belgium - type6";
++    include "us(basic)"
 +
 +    key <TLDE>  { [twosuperior, threesuperior                         ] };
 +    key <AE01>  { [ ampersand,          1,          bar               ] };
@@ -1035,7 +1037,7 @@
 
 --- symbols/br	2010-10-01 15:10:31.102541928 +0200
 +++ symbols/br	2010-10-04 12:55:02.156881644 +0200
-@@ -320,3 +320,49 @@
+@@ -320,3 +320,50 @@
      key <AB06> { [  gcircumflex,     Gcircumflex,                    q,                Q ] };
  
  };
@@ -1044,6 +1046,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Brazil - type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [      apostrophe,        quotedbl,	notsign		               ] };
 +    key <AE01> { [               1,          exclam,	onesuperior,        exclamdown ] };
@@ -1088,7 +1091,7 @@
 
 --- symbols/ca	2010-10-01 15:10:31.085534634 +0200
 +++ symbols/ca	2010-10-04 12:55:53.752072020 +0200
-@@ -528,3 +528,44 @@
+@@ -528,3 +528,45 @@
      include "us(basic)"
  };
  
@@ -1096,6 +1099,7 @@
 +xkb_symbols "type6" {
 +
 +   name[Group1]="Canada Bilingual - type6";
++   include "us(basic)"
 +
 +   key <TLDE> { [           slash, bar,             backslash                  ]};
 +   key <AE01> { [               1, exclam,          plusminus                  ]};
@@ -1136,7 +1140,7 @@
 
 --- symbols/ch	2010-10-01 15:10:31.095972951 +0200
 +++ symbols/ch	2010-10-04 12:58:09.599047314 +0200
-@@ -216,3 +216,79 @@
+@@ -216,3 +216,81 @@
      };
  };
  
@@ -1144,6 +1148,7 @@
 +xkb_symbols "de_type6" {
 +
 +    name[Group1]= "Switzerland - German - type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [    section,     degree                           ] };
 +    key <AE01> { [          1,       plus,          bar             ] };
@@ -1183,6 +1188,7 @@
 +xkb_symbols "fr_type6" {
 +
 +    name[Group1]= "Switzerland - French -  type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [    section,     degree                           ] };
 +    key <AE01> { [          1,       plus,          bar             ] };
@@ -1219,7 +1225,7 @@
 
 --- symbols/cz	2010-10-01 15:10:31.130282072 +0200
 +++ symbols/cz	2010-10-04 12:59:06.452397579 +0200
-@@ -172,3 +172,53 @@
+@@ -172,3 +172,54 @@
  
      include "level3(ralt_switch)"
  };
@@ -1228,6 +1234,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Czech - type6";
++    include "us(basic)"
 +
 +    key <TLDE>	{ [ semicolon, dead_abovering,	quoteleft,     asciitilde 	]	};
 +    key <AE01>	{ [      plus,          1,	exclam,     asciitilde	 	]	};
@@ -1276,7 +1283,7 @@
 
 --- symbols/de	2010-10-01 15:10:31.095404689 +0200
 +++ symbols/de	2010-10-04 13:00:02.665193070 +0200
-@@ -503,3 +503,39 @@
+@@ -503,3 +503,40 @@
      key <AB01>	{ [         z,          Z,     leftarrow,         yen ]	};
      key <AD06>	{ [         y,          Y, guillemotleft,        less ]	};
  };
@@ -1285,6 +1292,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Germany - type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [     asciicircum,           degree                   ] };
 +    key <AE02> { [               2,         quotedbl,     twosuperior  ] }; 
@@ -1319,7 +1327,7 @@
 
 --- symbols/dk	2010-10-01 15:10:31.087672283 +0200
 +++ symbols/dk	2010-10-04 13:01:26.040578664 +0200
-@@ -75,3 +75,35 @@
+@@ -75,3 +75,36 @@
      name[Group1]= "Denmark - Dvorak";
  };
  
@@ -1327,6 +1335,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Denmark - type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [         onehalf,         section                ] };
 +    key <AE02> { [               2,        quotedbl,            at ] };
@@ -1367,7 +1376,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Estonia - type6";
-+
++    include "us(basic)"
 +
 +   key <TLDE> { [     dead_caron,    dead_tilde,	notsign,       notsign ] };
 +   key <AE01> { [              1,        exclam,	onesuperior,    exclamdown ] };
@@ -1427,7 +1436,7 @@
 
 --- symbols/es	2010-10-01 15:10:31.133554307 +0200
 +++ symbols/es	2010-10-04 13:04:16.425692148 +0200
-@@ -203,3 +203,36 @@
+@@ -203,3 +203,37 @@
  
      key <AE04>	{ [         4,     dollar,   dead_tilde,       dollar ]	};
  };
@@ -1436,6 +1445,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Spain type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [       masculine,     ordfeminine,     backslash ] };
 +    key <LSGT> { [            less,         greater                ] };
@@ -1467,7 +1477,7 @@
 
 --- symbols/fi	2010-10-01 15:10:31.102058572 +0200
 +++ symbols/fi	2010-10-04 13:05:29.835133985 +0200
-@@ -205,3 +205,37 @@
+@@ -205,3 +205,38 @@
  
      name[Group1]="Finland - Macintosh";
  };
@@ -1476,6 +1486,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Finland - type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [  section,         onehalf                                  ] };
 +    key <AE01> { [  1,               exclam                                   ] };
@@ -1508,7 +1519,7 @@
 
 --- symbols/fr	2010-10-01 15:10:31.117862315 +0200
 +++ symbols/fr	2010-10-04 13:06:36.446842580 +0200
-@@ -1026,3 +1026,44 @@
+@@ -1026,3 +1026,45 @@
  
  };
  
@@ -1516,6 +1527,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="France - type6";
++    include "us(basic)"
 +
 +    key <TLDE>  { [     twosuperior                              ] };
 +    key <AE01>	{ [       ampersand,          1                  ] };
@@ -1556,7 +1568,7 @@
 
 --- symbols/gb	2010-10-01 15:10:31.105612161 +0200
 +++ symbols/gb	2010-10-04 13:07:23.442592662 +0200
-@@ -179,4 +179,20 @@
+@@ -179,4 +179,21 @@
      include "level3(ralt_switch)"
  };
  
@@ -1564,6 +1576,7 @@
 +xkb_symbols "type6" {
  
 +    name[Group1]="United Kingdom - type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [  quoteleft,    notsign,  brokenbar ] };
 +
@@ -1580,7 +1593,7 @@
 
 --- symbols/gr	2010-10-01 15:10:31.132818125 +0200
 +++ symbols/gr	2010-10-04 13:08:34.175247028 +0200
-@@ -193,3 +193,64 @@
+@@ -193,3 +193,65 @@
  
      key <AC10> { [ semicolon, colon ] }; // ; :
  };
@@ -1589,6 +1602,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Greece - type6";
++    include "us(basic)"
 +
 +	key <TLDE> { [                 grave,     asciitilde,	onehalf ] };
 +	key <AE01> { [                     1,         exclam ] };
@@ -1648,7 +1662,7 @@
 
 --- symbols/it	2010-10-01 15:10:31.086176555 +0200
 +++ symbols/it	2010-10-04 13:09:49.983979186 +0200
-@@ -216,3 +216,32 @@
+@@ -216,3 +216,33 @@
      include "level3(ralt_switch)"
  };
  
@@ -1656,6 +1670,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Italy - type6";
++    include "us(basic)"
 +
 +    key <LSGT> { [            less,         greater                                ] };
 +    key <TLDE> { [       backslash,             bar                                ] };
@@ -1684,7 +1699,7 @@
 
 --- symbols/kr	2010-10-01 15:10:31.090513401 +0200
 +++ symbols/kr	2010-10-04 13:10:44.849850634 +0200
-@@ -28,3 +28,18 @@
+@@ -28,3 +28,19 @@
      key <RCTL> { [ Hangul_Hanja ] };    
  };
  
@@ -1692,6 +1707,7 @@
 +partial
 +xkb_symbols "type6" {
 +
++    include "us(basic)"
 +    // A few keys are different
 +    key <ALGR> { [ Hangul                       ]       };
 +    key <COMP> { [ Hangul_Hanja                 ]       };
@@ -1714,7 +1730,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Lithuania - type6";
-+
++    include "us(basic)"
 +
 +    key <TLDE>  { [ quoteleft,   asciitilde,	notsign,   brokenbar ]    };
 +    key <AE01>  { [   aogonek,      Aogonek,	1,      exclam ]    };
@@ -1783,7 +1799,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Latvia - type6";
-+
++    include "us(basic)"
 +
 +   key <TLDE> { [          grave,    asciitilde,	acute,    asciitilde ] };
 +   key <AE01> { [              1,        exclam,	onesuperior,    exclamdown ] };
@@ -1843,7 +1859,7 @@
 
 --- symbols/nl	2010-10-01 15:10:31.107905418 +0200
 +++ symbols/nl	2010-10-04 13:14:57.692786721 +0200
-@@ -153,3 +153,52 @@
+@@ -153,3 +153,53 @@
  
  };
  
@@ -1851,6 +1867,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Netherlands - type6";
++    include "us(basic)"
 +
 +    key <TLDE>  { [        at,    section,      notsign ] };
 +    key <AE01>  { [         1,     exclam,  onesuperior ] };
@@ -1899,7 +1916,7 @@
 
 --- symbols/no	2010-10-01 15:10:31.132326914 +0200
 +++ symbols/no	2010-10-04 13:15:55.205884098 +0200
-@@ -228,3 +228,36 @@
+@@ -228,3 +228,37 @@
      key <AE12>	{ [      grave,     acute,        acute,       ogonek ]	};
      key <AD12>	{ [  diaeresis, asciicircum, asciitilde,       macron ]	};
  };
@@ -1908,6 +1925,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Norway - tyep6";
++    include "us(basic)"
 +
 +    key <TLDE> { [             bar,         section                ] };
 +    key <LSGT> { [            less,         greater                ] };
@@ -1969,7 +1987,7 @@
 
 --- symbols/pl	2010-10-01 15:10:31.133320369 +0200
 +++ symbols/pl	2010-10-04 13:18:06.160342583 +0200
-@@ -352,3 +352,49 @@
+@@ -352,3 +352,50 @@
  
     include "level3(ralt_switch)"
  };
@@ -1978,6 +1996,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Polish Developers - type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [ grave, 	 asciitilde					] };
 +    key <AE01> { [ 1,		 exclam						] };
@@ -2022,7 +2041,7 @@
 
 --- symbols/pt	2010-10-01 15:10:31.103476091 +0200
 +++ symbols/pt	2010-10-04 13:16:42.825137503 +0200
-@@ -221,4 +221,36 @@
+@@ -221,4 +221,37 @@
      key <AB02> { [  scircumflex,     Scircumflex,             ccedilla,         Ccedilla ] };
      key <AB06> { [  gcircumflex,     Gcircumflex,                    q,                Q ] };
  
@@ -2034,6 +2053,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Portugal - type6";
++    include "us(basic)"
 +
 +    key <LSGT> { [            less,          greater                  ] };
 +    key <TLDE> { [       backslash,              bar                  ] };
@@ -2073,7 +2093,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Romania - type6";
-+
++    include "us(basic)"
 +
 +   key <TLDE> { [          grave,    asciitilde,	grave,    asciitilde ] };
 +   key <AE01> { [              1,        exclam,	dead_tilde                ] };
@@ -2142,9 +2162,9 @@
 +xkb_symbols "type6" {
 +
 +     name[Group1]= "Russia - type6";
++     include "us(basic)"
 +
 +     key.type[group1]="FOUR_LEVEL";
-+
 +
 +    key	<AE01> { [		1,	    exclam 	] };
 +    key	<AE02> { [		2,        quotedbl, 2, at	] };
@@ -2196,7 +2216,7 @@
 
 --- symbols/se	2010-10-01 15:10:31.094692513 +0200
 +++ symbols/se	2010-10-04 13:20:51.043922333 +0200
-@@ -255,3 +255,35 @@
+@@ -255,3 +255,36 @@
     key <AB09> { [ v, V ] };
     key <AB10> { [ z, Z ] };
  };
@@ -2205,6 +2225,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Sweden - type6";
++    include "us(basic)"
 +
 +    key <TLDE> { [         section,         onehalf                ] };
 +    key <LSGT> { [            less,         greater,           bar ] };
@@ -2244,7 +2265,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Slovakia - type6";
-+
++    include "us(basic)"
 +
 +    key <TLDE>  { 	[       semicolon, dead_abovering, quoteleft,         asciitilde  ]	};
 +    key <AE01>  { 	[	     plus,         1,	exclam,               asciitilde  ]	};
@@ -2297,7 +2318,7 @@
 
 --- symbols/tr	2010-10-01 15:10:31.088341664 +0200
 +++ symbols/tr	2010-10-04 13:22:28.951088334 +0200
-@@ -354,3 +354,40 @@
+@@ -354,3 +354,41 @@
  
      key <AB06>	{ [         n,          N,          ntilde,          Ntilde ]	};
  };
@@ -2306,6 +2327,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Turkey - (Q) - type6";
++    include "us(basic)"
 +
 +    key <TLDE>  { [  quotedbl,     eacute                ] };
 +    key <AE01>	{ [         1,     exclam                ] };
@@ -2340,11 +2362,12 @@
 +};
 --- symbols/tw	1970-01-01 01:00:00.000000000 +0100
 +++ symbols/tw	2010-10-04 13:23:18.811071041 +0200
-@@ -0,0 +1,8 @@
+@@ -0,0 +1,9 @@
 +// Taiwanese layout for a Type 6 Sun keyboard
 +partial
 +xkb_symbols "type6" {
 +    // A few keys are different from US layout - only those are shown here
++    include "us(basic)"
 +    key <ALGR> { [ Henkan_Mode          ]                       };
 +    key <BKSL> { [ backslash, bar,  brokenbar   ]               };
 +
@@ -2361,7 +2384,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]="Ukraine - type6";
-+
++    include "us(basic)"
 +
 +    key	<TLDE> {	[	    grave,	asciitilde,	apostrophe,	asciitilde	]	};
 +    key	<AE01> {	[		1,	    exclam,	1,	    exclam 	]	};
@@ -2421,7 +2444,7 @@
 
 --- symbols/us	2010-10-01 15:10:31.129045180 +0200
 +++ symbols/us	2010-10-04 13:27:20.666586458 +0200
-@@ -1147,3 +1147,16 @@
+@@ -1147,3 +1147,17 @@
  
    include "level3(ralt_switch)"
  };
@@ -2430,6 +2453,7 @@
 +xkb_symbols "type6" {
 +
 +    name[Group1]= "USA - type6";
++    include "us(basic)"
 +
 +    include "sun_vndr/us(sunbasic)"
 +    include "sun_vndr/us(volumekeys)"
