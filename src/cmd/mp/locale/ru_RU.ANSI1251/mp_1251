@@ -1,3 +1,0 @@
-#!/bin/csh
-setenv LC_ALL ru
-/usr/bin/iconv -f win5 -t iso5 | /usr/openwin/bin/mp $*
