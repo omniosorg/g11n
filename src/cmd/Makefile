@@ -24,7 +24,7 @@
 #ident	"@(#)Makefile	1.0	06/03/07	SMI"
 #
 
-SUBDIRS = auto_ef localeadm mp 
+SUBDIRS = auto_ef mp 
 
 all:=		TARGET= all
 install :=	TARGET= install

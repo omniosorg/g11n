@@ -28,7 +28,7 @@
 
 #FIXME: removed openwin/lib/locale from the build targets, since we're using Xorg's Xi18n locale database files.
 #SUBDIRS = lib locale_src/base openwin/lib/locale openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables uts cmd
-SUBDIRS = lib kernel locale_src/base locale_src/charmap locale_src/extensions openwin/lib/locale  openwin/lib/X11/fonts/ share/lib/ openwin/keytables xorg/keytables xorg/fonts uts cmd
+SUBDIRS = lib kernel locale_src/base locale_src/charmap locale_src/extensions share/lib/ xorg/keytables xorg/fonts uts cmd
 
 all:=		TARGET= all
 install :=	TARGET= install

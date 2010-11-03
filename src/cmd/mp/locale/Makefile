@@ -31,7 +31,6 @@ SUBDIRS = \
 	ja_JP.PCK \
 	ja_JP.UTF-8 \
 	ja_JP.eucJP \
-	ru_RU.ANSI1251 \
         ko \
         ko.UTF-8 \
         th_TH \

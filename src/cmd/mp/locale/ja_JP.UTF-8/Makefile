@@ -36,7 +36,7 @@ ROOT_MP_DIR	= $(ROOTLIBLP)/locale/$(LOCALE)/mp
 
 HEADER_INC	= -I$(SRC)/src/lib/iconv/ja
 
-JOW_UTF8	= $(SRC)/src/openwin/lib/locale/ja_JP.UTF-8/conv_tables
+JOW_UTF8	= $(MKTBL_PWD)/conv_tables
 JISX0212	= $(JOW_UTF8)/JISX0212-0.GR.txt
 JISX02131	= $(JOW_UTF8)/JISX0213-1.GL.txt
 JISX02132	= $(JOW_UTF8)/JISX0213-2.GL.txt
