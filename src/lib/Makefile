@@ -27,7 +27,7 @@
 
 # FIXME: libxlc can not build with Xorg's libX11, remove it from the targets.
 #SUBDIRS = iconv liblayout liblcl libxlc locale localedef/extensions localedef/charmaps 
-SUBDIRS = iconv liblayout liblcl locale
+SUBDIRS = iconv liblayout locale # liblcl - moved to pending
 
 all:=		TARGET= all
 install :=	TARGET= install
