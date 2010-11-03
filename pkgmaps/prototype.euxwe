@@ -1,6 +1,0 @@
-d none openwin 0755 root bin
-d none openwin/lib 0755 root bin
-d none openwin/lib/locale 0755 root bin
-d none openwin/lib/locale/en_US.UTF-8 0755 root bin
-d none openwin/lib/locale/en_US.UTF-8/imsscript 0755 root bin
-s none openwin/lib/locale/en_US.UTF-8/imsscript/S505multi=../../common/imsscript/S505multi
