@@ -26,6 +26,7 @@
 d none share 0755 root sys
 d none share/fonts 0755 root bin
 d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/ipafont 0755 root bin
 f none share/fonts/TrueType/ipafont/ipam.otf 0444 root bin
 s none share/fonts/TrueType/ipafont/ipam.ttf=ipam.otf
 f none share/fonts/TrueType/ipafont/ipamp.otf 0444 root bin
