@@ -18,9 +18,8 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-d none lib/amd64 755 root bin
+d none lib/amd64 0755 root bin
 f none lib/amd64/libauto_ef.so.1 0444 root bin
 s none lib/amd64/libauto_ef.so=./libauto_ef.so.1

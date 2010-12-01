@@ -18,15 +18,14 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2006 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
+# Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
 #
-d none bin 755 root bin
-f none bin/auto_ef 555 root bin
-d none include 755 root bin
-f none include/auto_ef.h 644 root bin
-d none lib 755 root bin
-d none lib/auto_ef 755 root bin
+d none bin 0755 root bin
+f none bin/auto_ef 0555 root bin
+d none include 0755 root bin
+f none include/auto_ef.h 0644 root bin
+d none lib 0755 root bin
+d none lib/auto_ef 0755 root bin
 f none lib/libauto_ef.so.1 0444 root bin
 s none lib/libauto_ef.so=./libauto_ef.so.1
 f none lib/auto_ef/hashtable.8859-1_Catalonia 0444 root bin
