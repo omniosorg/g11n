@@ -587,9 +587,9 @@ xkb_keycodes "type6tuv_usb" {
 xkb_keycodes "type6_jp_usb" {
     include "sun(type6_usb)"
     alias <UNDR> = <KPDC>;  // 123
-    alias <EXEC> = <I0B>;   // 139 
-    alias <KANJ> = <I0A>;   // 138
-    alias <HENK> = <XFER>;  // 129
+    alias <EXEC> = <NFER>;  // 131
+    alias <KANJ> = <XFER>;  // 129
+    alias <HENK> = <HKTG>;  // 208
     indicator 5 = "Kana";
 };
 
