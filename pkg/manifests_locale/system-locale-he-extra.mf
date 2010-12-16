@@ -1,0 +1,55 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/locale/he-extra@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Localizations
+set name=pkg.summary value="Hebrew language support extra files"
+set name=pkg.description value="Hebrew language support extra files"
+legacy pkg=SUNWlang-he-extra category=system,l10nhe \
+    version=1.0,REV= \
+    name="Hebrew language support extra files" \
+    desc="Hebrew language support extra files"
+dir path=usr group=sys
+dir path=usr/lib
+dir path=usr/lib/locale
+dir path=usr/lib/locale/he_IL.ISO8859-8
+dir path=usr/lib/locale/he_IL.ISO8859-8/$(ARCH64)
+dir path=usr/lib/locale/he_IL.ISO8859-8/LC_COLLATE
+dir path=usr/lib/locale/he_IL.ISO8859-8/LC_CTYPE
+dir path=usr/lib/locale/he_IL.ISO8859-8/LC_MESSAGES
+dir path=usr/lib/locale/he_IL.ISO8859-8/LC_MONETARY
+dir path=usr/lib/locale/he_IL.ISO8859-8/LC_NUMERIC
+dir path=usr/lib/locale/he_IL.ISO8859-8/LC_TIME
+dir path=usr/lib/lp group=lp
+dir path=usr/lib/lp/locale group=lp
+dir path=usr/lib/lp/locale/he group=lp
+dir path=usr/lib/lp/locale/he/mp group=lp
+file path=usr/lib/locale/he_IL.ISO8859-8/$(ARCH64)/he_IL.ISO8859-8.so.3 mode=0555
+file path=usr/lib/locale/he_IL.ISO8859-8/he_IL.ISO8859-8.so.3 mode=0555
+file path=usr/lib/locale/he_IL.ISO8859-8/locale_description
+file path=usr/lib/locale/he_IL.ISO8859-8/locale_map
+file path=usr/lib/lp/locale/he/mp/mp.conf group=lp mode=0444
+license copyright.unicode license=copyright.unicode
+link path=usr/lib/locale/he_IL.ISO8859-8/LC_CTYPE/LCL_DEF target=../../iso_8859_8/LC_CTYPE/LCL_DEF

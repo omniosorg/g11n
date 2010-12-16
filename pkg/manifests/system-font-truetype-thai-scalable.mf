@@ -1,0 +1,92 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/font/truetype/thai-scalable@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Fonts
+set name=pkg.summary value="Scalable Thai TrueType fonts"
+set name=pkg.description value="Scalable Thai TrueType fonts"
+legacy pkg=SUNWttf-thai-scalable category=system,l10nzh \
+    version=0.1.20060928,REV= \
+    name="Scalable Thai TrueType fonts" \
+    desc="Scalable Thai TrueType fonts"
+dir path=usr group=sys
+dir path=usr/share group=sys
+dir path=usr/share/doc group=other
+dir path=usr/share/doc/thai-scalable
+dir path=usr/share/fonts
+dir path=usr/share/fonts/TrueType
+dir path=usr/share/fonts/TrueType/thai-scalable
+file path=usr/share/doc/thai-scalable/COPYING mode=0444
+file path=usr/share/doc/thai-scalable/GPL mode=0444
+file path=usr/share/fonts/TrueType/thai-scalable/Garuda-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Garuda-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Garuda-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Garuda.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Kinnari-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Kinnari-BoldItalic.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Kinnari-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Kinnari-Italic.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Kinnari-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Kinnari.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Loma-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Loma-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Loma-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Loma.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Norasi-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Norasi-BoldItalic.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Norasi-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Norasi-Italic.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Norasi-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Norasi.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Purisa.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Sawasdee.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/SawasdeeBold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/SawasdeeBoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/SawasdeeOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgMono-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgMono-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgMono-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgMono.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgTypewriter-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgTypewriter-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgTypewriter-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgTypewriter.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgTypist-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgTypist-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgTypist-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/TlwgTypist.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Umpush-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Umpush-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Umpush-Light.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Umpush-LightOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Umpush-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Umpush.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Waree-Bold.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Waree-BoldOblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Waree-Oblique.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/Waree.ttf
+file path=usr/share/fonts/TrueType/thai-scalable/fonts.dir
+file path=usr/share/fonts/TrueType/thai-scalable/fonts.scale
+license copyright.thai-scalable license=copyright.thai-scalable

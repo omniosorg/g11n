@@ -1,0 +1,240 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/locale/zh_tw-extra@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Localizations
+depend fmri=system/library/iconv/extra type=require
+depend fmri=system/library/iconv/unicode type=require
+set name=pkg.summary value="Traditional Chinese language support extra files"
+set name=pkg.description value="Traditional Chinese language support extra files"
+legacy pkg=SUNWlang-zhTW-extra category=ALE,system \
+    version=110.0,REV= \
+    name="Traditional Chinese language support extra files" \
+    desc="Traditional Chinese language support extra files"
+dir path=usr group=sys
+dir path=usr/include
+dir path=usr/include/zh_TW
+dir path=usr/kernel group=sys
+dir path=usr/kernel/strmod group=sys
+dir path=usr/kernel/strmod/$(ARCH64) group=sys
+dir path=usr/lib
+dir path=usr/lib/$(ARCH64)
+dir path=usr/lib/locale
+dir path=usr/lib/locale/zh_TW.BIG5
+dir path=usr/lib/locale/zh_TW.BIG5/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.BIG5/LC_COLLATE
+dir path=usr/lib/locale/zh_TW.BIG5/LC_CTYPE
+dir path=usr/lib/locale/zh_TW.BIG5/LC_CTYPE/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.BIG5/LC_MONETARY
+dir path=usr/lib/locale/zh_TW.BIG5/LC_NUMERIC
+dir path=usr/lib/locale/zh_TW.BIG5@pinyin
+dir path=usr/lib/locale/zh_TW.BIG5@pinyin/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.BIG5@radical
+dir path=usr/lib/locale/zh_TW.BIG5@radical/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.BIG5@stroke
+dir path=usr/lib/locale/zh_TW.BIG5@stroke/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.BIG5@zhuyin
+dir path=usr/lib/locale/zh_TW.BIG5@zhuyin/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.EUC
+dir path=usr/lib/locale/zh_TW.EUC/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.EUC/LC_COLLATE
+dir path=usr/lib/locale/zh_TW.EUC/LC_CTYPE
+dir path=usr/lib/locale/zh_TW.EUC/LC_CTYPE/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.EUC/LC_MONETARY
+dir path=usr/lib/locale/zh_TW.EUC/LC_NUMERIC
+dir path=usr/lib/locale/zh_TW.EUC/LC_TIME
+dir path=usr/lib/locale/zh_TW.EUC@pinyin
+dir path=usr/lib/locale/zh_TW.EUC@pinyin/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.EUC@radical
+dir path=usr/lib/locale/zh_TW.EUC@radical/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.EUC@stroke
+dir path=usr/lib/locale/zh_TW.EUC@stroke/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.EUC@zhuyin
+dir path=usr/lib/locale/zh_TW.EUC@zhuyin/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.UTF-8@pinyin
+dir path=usr/lib/locale/zh_TW.UTF-8@pinyin/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.UTF-8@radical
+dir path=usr/lib/locale/zh_TW.UTF-8@radical/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.UTF-8@stroke
+dir path=usr/lib/locale/zh_TW.UTF-8@stroke/$(ARCH64)
+dir path=usr/lib/locale/zh_TW.UTF-8@zhuyin
+dir path=usr/lib/locale/zh_TW.UTF-8@zhuyin/$(ARCH64)
+file path=usr/include/zh_TW/xctype.h
+file path=usr/kernel/strmod/$(ARCH64)/b5euc group=sys mode=0755
+file path=usr/kernel/strmod/$(ARCH64)/big5euc group=sys mode=0755
+file path=usr/lib/$(ARCH64)/libhle.a mode=0755
+file path=usr/lib/$(ARCH64)/libhle.so.1
+file path=usr/lib/locale/zh_TW.BIG5/$(ARCH64)/methods_zh_TW.BIG5.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5/$(ARCH64)/zh_TW.BIG5.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5/LC_CTYPE/$(ARCH64)/wdresolve.so mode=0555
+file path=usr/lib/locale/zh_TW.BIG5/LC_CTYPE/LCL_DEF mode=0555
+file path=usr/lib/locale/zh_TW.BIG5/LC_CTYPE/ldterm.dat mode=0555
+file path=usr/lib/locale/zh_TW.BIG5/LC_CTYPE/wdresolve.so mode=0555
+file path=usr/lib/locale/zh_TW.BIG5/locale_description
+file path=usr/lib/locale/zh_TW.BIG5/locale_map
+file path=usr/lib/locale/zh_TW.BIG5/methods_zh_TW.BIG5.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5/zh_TW.BIG5.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5@pinyin/$(ARCH64)/zh_TW.BIG5@pinyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5@pinyin/zh_TW.BIG5@pinyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5@radical/$(ARCH64)/zh_TW.BIG5@radical.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5@radical/zh_TW.BIG5@radical.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5@stroke/$(ARCH64)/zh_TW.BIG5@stroke.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5@stroke/zh_TW.BIG5@stroke.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5@zhuyin/$(ARCH64)/zh_TW.BIG5@zhuyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.BIG5@zhuyin/zh_TW.BIG5@zhuyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC/$(ARCH64)/methods_zh_TW.EUC.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC/$(ARCH64)/zh_TW.EUC.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC/LC_CTYPE/$(ARCH64)/mailcodelist mode=0555
+file path=usr/lib/locale/zh_TW.EUC/LC_CTYPE/$(ARCH64)/wdresolve.so mode=0555
+file path=usr/lib/locale/zh_TW.EUC/LC_CTYPE/LCL_DEF mode=0555
+file path=usr/lib/locale/zh_TW.EUC/LC_CTYPE/mailcodelist mode=0555
+file path=usr/lib/locale/zh_TW.EUC/LC_CTYPE/wdresolve.so mode=0555
+file path=usr/lib/locale/zh_TW.EUC/locale_description
+file path=usr/lib/locale/zh_TW.EUC/locale_map
+file path=usr/lib/locale/zh_TW.EUC/methods_zh_TW.EUC.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC/zh_TW.EUC.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC@pinyin/$(ARCH64)/zh_TW.EUC@pinyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC@pinyin/zh_TW.EUC@pinyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC@radical/$(ARCH64)/zh_TW.EUC@radical.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC@radical/zh_TW.EUC@radical.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC@stroke/$(ARCH64)/zh_TW.EUC@stroke.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC@stroke/zh_TW.EUC@stroke.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC@zhuyin/$(ARCH64)/zh_TW.EUC@zhuyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.EUC@zhuyin/zh_TW.EUC@zhuyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.UTF-8@pinyin/$(ARCH64)/zh_TW.UTF-8@pinyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.UTF-8@pinyin/zh_TW.UTF-8@pinyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.UTF-8@radical/$(ARCH64)/zh_TW.UTF-8@radical.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.UTF-8@radical/zh_TW.UTF-8@radical.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.UTF-8@stroke/$(ARCH64)/zh_TW.UTF-8@stroke.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.UTF-8@stroke/zh_TW.UTF-8@stroke.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.UTF-8@zhuyin/$(ARCH64)/zh_TW.UTF-8@zhuyin.so.3 mode=0555
+file path=usr/lib/locale/zh_TW.UTF-8@zhuyin/zh_TW.UTF-8@zhuyin.so.3 mode=0555
+license copyright.oracle license=copyright.oracle
+link path=usr/include/zh_TW.EUC target=./zh_TW
+link path=usr/lib/$(ARCH64)/libhle.so target=libhle.so.1
+link path=usr/lib/locale/zh_TW.BIG5/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.BIG5/LC_CTYPE/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.BIG5@pinyin/$(ARCH64)/methods_zh_TW.BIG5.so.3 target=../../zh_TW.BIG5/$(ARCH64)/methods_zh_TW.BIG5.so.3
+link path=usr/lib/locale/zh_TW.BIG5@pinyin/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.BIG5@pinyin/LC_COLLATE target=../zh_TW.BIG5/LC_COLLATE
+link path=usr/lib/locale/zh_TW.BIG5@pinyin/LC_CTYPE target=../zh_TW.BIG5/LC_CTYPE
+link path=usr/lib/locale/zh_TW.BIG5@pinyin/LC_MONETARY target=../zh_TW.BIG5/LC_MONETARY
+link path=usr/lib/locale/zh_TW.BIG5@pinyin/LC_NUMERIC target=../zh_TW.BIG5/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.BIG5@pinyin/LC_TIME target=../zh_TW.BIG5/LC_TIME
+link path=usr/lib/locale/zh_TW.BIG5@pinyin/methods_zh_TW.BIG5.so.3 target=../zh_TW.BIG5/methods_zh_TW.BIG5.so.3
+link path=usr/lib/locale/zh_TW.BIG5@radical/$(ARCH64)/methods_zh_TW.BIG5.so.3 target=../../zh_TW.BIG5/$(ARCH64)/methods_zh_TW.BIG5.so.3
+link path=usr/lib/locale/zh_TW.BIG5@radical/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.BIG5@radical/LC_COLLATE target=../zh_TW.BIG5/LC_COLLATE
+link path=usr/lib/locale/zh_TW.BIG5@radical/LC_CTYPE target=../zh_TW.BIG5/LC_CTYPE
+link path=usr/lib/locale/zh_TW.BIG5@radical/LC_MONETARY target=../zh_TW.BIG5/LC_MONETARY
+link path=usr/lib/locale/zh_TW.BIG5@radical/LC_NUMERIC target=../zh_TW.BIG5/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.BIG5@radical/LC_TIME target=../zh_TW.BIG5/LC_TIME
+link path=usr/lib/locale/zh_TW.BIG5@radical/methods_zh_TW.BIG5.so.3 target=../zh_TW.BIG5/methods_zh_TW.BIG5.so.3
+link path=usr/lib/locale/zh_TW.BIG5@stroke/$(ARCH64)/methods_zh_TW.BIG5.so.3 target=../../zh_TW.BIG5/$(ARCH64)/methods_zh_TW.BIG5.so.3
+link path=usr/lib/locale/zh_TW.BIG5@stroke/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.BIG5@stroke/LC_COLLATE target=../zh_TW.BIG5/LC_COLLATE
+link path=usr/lib/locale/zh_TW.BIG5@stroke/LC_CTYPE target=../zh_TW.BIG5/LC_CTYPE
+link path=usr/lib/locale/zh_TW.BIG5@stroke/LC_MONETARY target=../zh_TW.BIG5/LC_MONETARY
+link path=usr/lib/locale/zh_TW.BIG5@stroke/LC_NUMERIC target=../zh_TW.BIG5/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.BIG5@stroke/LC_TIME target=../zh_TW.BIG5/LC_TIME
+link path=usr/lib/locale/zh_TW.BIG5@stroke/methods_zh_TW.BIG5.so.3 target=../zh_TW.BIG5/methods_zh_TW.BIG5.so.3
+link path=usr/lib/locale/zh_TW.BIG5@zhuyin/$(ARCH64)/methods_zh_TW.BIG5.so.3 target=../../zh_TW.BIG5/$(ARCH64)/methods_zh_TW.BIG5.so.3
+link path=usr/lib/locale/zh_TW.BIG5@zhuyin/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.BIG5@zhuyin/LC_COLLATE target=../zh_TW.BIG5/LC_COLLATE
+link path=usr/lib/locale/zh_TW.BIG5@zhuyin/LC_CTYPE target=../zh_TW.BIG5/LC_CTYPE
+link path=usr/lib/locale/zh_TW.BIG5@zhuyin/LC_MONETARY target=../zh_TW.BIG5/LC_MONETARY
+link path=usr/lib/locale/zh_TW.BIG5@zhuyin/LC_NUMERIC target=../zh_TW.BIG5/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.BIG5@zhuyin/LC_TIME target=../zh_TW.BIG5/LC_TIME
+link path=usr/lib/locale/zh_TW.BIG5@zhuyin/methods_zh_TW.BIG5.so.3 target=../zh_TW.BIG5/methods_zh_TW.BIG5.so.3
+link path=usr/lib/locale/zh_TW.EUC/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.EUC/LC_CTYPE/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.EUC@pinyin/$(ARCH64)/methods_zh_TW.EUC.so.3 target=../../zh_TW.EUC/$(ARCH64)/methods_zh_TW.EUC.so.3
+link path=usr/lib/locale/zh_TW.EUC@pinyin/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.EUC@pinyin/LC_COLLATE target=../zh_TW.EUC/LC_COLLATE
+link path=usr/lib/locale/zh_TW.EUC@pinyin/LC_CTYPE target=../zh_TW.EUC/LC_CTYPE
+link path=usr/lib/locale/zh_TW.EUC@pinyin/LC_MONETARY target=../zh_TW.EUC/LC_MONETARY
+link path=usr/lib/locale/zh_TW.EUC@pinyin/LC_NUMERIC target=../zh_TW.EUC/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.EUC@pinyin/LC_TIME target=../zh_TW.EUC/LC_TIME
+link path=usr/lib/locale/zh_TW.EUC@pinyin/methods_zh_TW.EUC.so.3 target=../zh_TW.EUC/methods_zh_TW.EUC.so.3
+link path=usr/lib/locale/zh_TW.EUC@radical/$(ARCH64)/methods_zh_TW.EUC.so.3 target=../../zh_TW.EUC/$(ARCH64)/methods_zh_TW.EUC.so.3
+link path=usr/lib/locale/zh_TW.EUC@radical/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.EUC@radical/LC_COLLATE target=../zh_TW.EUC/LC_COLLATE
+link path=usr/lib/locale/zh_TW.EUC@radical/LC_CTYPE target=../zh_TW.EUC/LC_CTYPE
+link path=usr/lib/locale/zh_TW.EUC@radical/LC_MONETARY target=../zh_TW.EUC/LC_MONETARY
+link path=usr/lib/locale/zh_TW.EUC@radical/LC_NUMERIC target=../zh_TW.EUC/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.EUC@radical/LC_TIME target=../zh_TW.EUC/LC_TIME
+link path=usr/lib/locale/zh_TW.EUC@radical/methods_zh_TW.EUC.so.3 target=../zh_TW.EUC/methods_zh_TW.EUC.so.3
+link path=usr/lib/locale/zh_TW.EUC@stroke/$(ARCH64)/methods_zh_TW.EUC.so.3 target=../../zh_TW.EUC/$(ARCH64)/methods_zh_TW.EUC.so.3
+link path=usr/lib/locale/zh_TW.EUC@stroke/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.EUC@stroke/LC_COLLATE target=../zh_TW.EUC/LC_COLLATE
+link path=usr/lib/locale/zh_TW.EUC@stroke/LC_CTYPE target=../zh_TW.EUC/LC_CTYPE
+link path=usr/lib/locale/zh_TW.EUC@stroke/LC_MONETARY target=../zh_TW.EUC/LC_MONETARY
+link path=usr/lib/locale/zh_TW.EUC@stroke/LC_NUMERIC target=../zh_TW.EUC/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.EUC@stroke/LC_TIME target=../zh_TW.EUC/LC_TIME
+link path=usr/lib/locale/zh_TW.EUC@stroke/methods_zh_TW.EUC.so.3 target=../zh_TW.EUC/methods_zh_TW.EUC.so.3
+link path=usr/lib/locale/zh_TW.EUC@zhuyin/$(ARCH64)/methods_zh_TW.EUC.so.3 target=../../zh_TW.EUC/$(ARCH64)/methods_zh_TW.EUC.so.3
+link path=usr/lib/locale/zh_TW.EUC@zhuyin/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.EUC@zhuyin/LC_COLLATE target=../zh_TW.EUC/LC_COLLATE
+link path=usr/lib/locale/zh_TW.EUC@zhuyin/LC_CTYPE target=../zh_TW.EUC/LC_CTYPE
+link path=usr/lib/locale/zh_TW.EUC@zhuyin/LC_MONETARY target=../zh_TW.EUC/LC_MONETARY
+link path=usr/lib/locale/zh_TW.EUC@zhuyin/LC_NUMERIC target=../zh_TW.EUC/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.EUC@zhuyin/LC_TIME target=../zh_TW.EUC/LC_TIME
+link path=usr/lib/locale/zh_TW.EUC@zhuyin/methods_zh_TW.EUC.so.3 target=../zh_TW.EUC/methods_zh_TW.EUC.so.3
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/$(ARCH64)/methods_unicode.so.3 target=../../zh_TW.UTF-8/$(ARCH64)/methods_unicode.so.3
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/LC_COLLATE target=../zh_TW.UTF-8/LC_COLLATE
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/LC_CTYPE target=../zh_TW.UTF-8/LC_CTYPE
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/LC_MONETARY target=../zh_TW.UTF-8/LC_MONETARY
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/LC_NUMERIC target=../zh_TW.UTF-8/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/LC_TIME target=../zh_TW.UTF-8/LC_TIME
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/LO_LTYPE target=../zh_TW.UTF-8/LO_LTYPE
+link path=usr/lib/locale/zh_TW.UTF-8@pinyin/methods_unicode.so.3 target=../zh_TW.UTF-8/methods_unicode.so.3
+link path=usr/lib/locale/zh_TW.UTF-8@radical/$(ARCH64)/methods_unicode.so.3 target=../../zh_TW.UTF-8/$(ARCH64)/methods_unicode.so.3
+link path=usr/lib/locale/zh_TW.UTF-8@radical/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.UTF-8@radical/LC_COLLATE target=../zh_TW.UTF-8/LC_COLLATE
+link path=usr/lib/locale/zh_TW.UTF-8@radical/LC_CTYPE target=../zh_TW.UTF-8/LC_CTYPE
+link path=usr/lib/locale/zh_TW.UTF-8@radical/LC_MONETARY target=../zh_TW.UTF-8/LC_MONETARY
+link path=usr/lib/locale/zh_TW.UTF-8@radical/LC_NUMERIC target=../zh_TW.UTF-8/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.UTF-8@radical/LC_TIME target=../zh_TW.UTF-8/LC_TIME
+link path=usr/lib/locale/zh_TW.UTF-8@radical/LO_LTYPE target=../zh_TW.UTF-8/LO_LTYPE
+link path=usr/lib/locale/zh_TW.UTF-8@radical/methods_unicode.so.3 target=../zh_TW.UTF-8/methods_unicode.so.3
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/$(ARCH64)/methods_unicode.so.3 target=../../zh_TW.UTF-8/$(ARCH64)/methods_unicode.so.3
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/LC_COLLATE target=../zh_TW.UTF-8/LC_COLLATE
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/LC_CTYPE target=../zh_TW.UTF-8/LC_CTYPE
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/LC_MONETARY target=../zh_TW.UTF-8/LC_MONETARY
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/LC_NUMERIC target=../zh_TW.UTF-8/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/LC_TIME target=../zh_TW.UTF-8/LC_TIME
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/LO_LTYPE target=../zh_TW.UTF-8/LO_LTYPE
+link path=usr/lib/locale/zh_TW.UTF-8@stroke/methods_unicode.so.3 target=../zh_TW.UTF-8/methods_unicode.so.3
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/$(ARCH64)/methods_unicode.so.3 target=../../zh_TW.UTF-8/$(ARCH64)/methods_unicode.so.3
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/64 target=./$(ARCH64)
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/LC_COLLATE target=../zh_TW.UTF-8/LC_COLLATE
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/LC_CTYPE target=../zh_TW.UTF-8/LC_CTYPE
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/LC_MONETARY target=../zh_TW.UTF-8/LC_MONETARY
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/LC_NUMERIC target=../zh_TW.UTF-8/LC_NUMERIC
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/LC_TIME target=../zh_TW.UTF-8/LC_TIME
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/LO_LTYPE target=../zh_TW.UTF-8/LO_LTYPE
+link path=usr/lib/locale/zh_TW.UTF-8@zhuyin/methods_unicode.so.3 target=../zh_TW.UTF-8/methods_unicode.so.3

@@ -1,9 +1,0 @@
-i pkginfo
-i copyright
-i depend
-d none var 0755 root sys
-d none var/lib 0755 root other
-d none var/lib/iiim 0755 root sys
-d none var/lib/iiim/le 0755 root sys
-d none var/lib/iiim/le/atokx2 0755 root sys
-d none var/lib/iiim/le/atokx2/cvttool 0755 root sys

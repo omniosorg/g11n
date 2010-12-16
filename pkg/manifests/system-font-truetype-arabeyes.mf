@@ -1,0 +1,84 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/font/truetype/arabeyes@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Fonts
+set name=pkg.summary value="Arabeyes TrueType Arabic fonts"
+set name=pkg.description value="Arabeyes GPL TrueType Arabic fonts"
+legacy pkg=SUNWttf-arabeyes category=system,l10nar \
+    version=1.0,REV= \
+    name="Arabeyes TrueType Arabic fonts" \
+    desc="Arabeyes GPL TrueType Arabic fonts"
+dir path=usr group=sys
+dir path=usr/share group=sys
+dir path=usr/share/doc group=other
+dir path=usr/share/doc/ttf-arabeyes
+dir path=usr/share/fonts
+dir path=usr/share/fonts/TrueType
+dir path=usr/share/fonts/TrueType/arabeyes
+file path=usr/share/doc/ttf-arabeyes/ChangeLog.bz2 group=root mode=0444
+file path=usr/share/doc/ttf-arabeyes/README.bz2 group=root mode=0444
+file path=usr/share/fonts/TrueType/arabeyes/ae_AlArabiya.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_AlBattar.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_AlHor.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_AlManzomah.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_AlMateen-Bold.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_AlMohanad.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_AlMothnna-Bold.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_AlYarmook.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Arab.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Cortoba.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Dimnah.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Electron.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Furat.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Granada.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Graph.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Hani.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Haramain.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Hor.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Japan.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Jet.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Kayrawan.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Khalid.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Mashq-Bold.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Mashq.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Metal.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Nada.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Nagham.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Nice.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Ostorah.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Ouhod-Bold.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Petra.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Rasheeq-Bold.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Rehan.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Salem.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Shado.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Sharjah.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Sindbad.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Tarablus.ttf
+file path=usr/share/fonts/TrueType/arabeyes/ae_Tholoth.ttf
+file path=usr/share/fonts/TrueType/arabeyes/fonts.dir
+file path=usr/share/fonts/TrueType/arabeyes/fonts.scale
+license copyright.arabeyes license=copyright.arabeyes

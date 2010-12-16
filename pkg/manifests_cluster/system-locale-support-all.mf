@@ -1,0 +1,99 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/locale/support/all@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=info.classification value=org.opensolaris.category.2008:System/Localizations
+depend fmri=system/locale/support/afrikaans type=require
+depend fmri=system/locale/support/albanian type=require
+depend fmri=system/locale/support/arabic type=require
+depend fmri=system/locale/support/armenian type=require
+depend fmri=system/locale/support/assamese type=require
+depend fmri=system/locale/support/azerbaijani type=require
+depend fmri=system/locale/support/belarusian type=require
+depend fmri=system/locale/support/bengali type=require
+depend fmri=system/locale/support/bosnian type=require
+depend fmri=system/locale/support/bulgarian type=require
+depend fmri=system/locale/support/catalan type=require
+depend fmri=system/locale/support/chinese-cn type=require
+depend fmri=system/locale/support/chinese-hk type=require
+depend fmri=system/locale/support/chinese-sg type=require
+depend fmri=system/locale/support/chinese-tw type=require
+depend fmri=system/locale/support/croatian type=require
+depend fmri=system/locale/support/czech type=require
+depend fmri=system/locale/support/danish type=require
+depend fmri=system/locale/support/dutch type=require
+depend fmri=system/locale/support/english type=require
+depend fmri=system/locale/support/estonian type=require
+depend fmri=system/locale/support/finnish type=require
+depend fmri=system/locale/support/french type=require
+depend fmri=system/locale/support/georgian type=require
+depend fmri=system/locale/support/german type=require
+depend fmri=system/locale/support/greek type=require
+depend fmri=system/locale/support/gujarati type=require
+depend fmri=system/locale/support/hebrew type=require
+depend fmri=system/locale/support/hungarian type=require
+depend fmri=system/locale/support/icelandic type=require
+depend fmri=system/locale/support/indic type=require
+depend fmri=system/locale/support/indonesian type=require
+depend fmri=system/locale/support/italian type=require
+depend fmri=system/locale/support/japanese type=require
+depend fmri=system/locale/support/kannada type=require
+depend fmri=system/locale/support/kashmiri type=require
+depend fmri=system/locale/support/kazakh type=require
+depend fmri=system/locale/support/kirghiz type=require
+depend fmri=system/locale/support/korean type=require
+depend fmri=system/locale/support/kurdish type=require
+depend fmri=system/locale/support/latvian type=require
+depend fmri=system/locale/support/lithuanian type=require
+depend fmri=system/locale/support/macedonian type=require
+depend fmri=system/locale/support/malay type=require
+depend fmri=system/locale/support/malayalam type=require
+depend fmri=system/locale/support/maltese type=require
+depend fmri=system/locale/support/marathi type=require
+depend fmri=system/locale/support/norwegian type=require
+depend fmri=system/locale/support/norwegian-bokmal type=require
+depend fmri=system/locale/support/norwegian-nynorsk type=require
+depend fmri=system/locale/support/oriya type=require
+depend fmri=system/locale/support/polish type=require
+depend fmri=system/locale/support/portuguese type=require
+depend fmri=system/locale/support/portuguese-br type=require
+depend fmri=system/locale/support/punjabi type=require
+depend fmri=system/locale/support/romanian type=require
+depend fmri=system/locale/support/russian type=require
+depend fmri=system/locale/support/sanskrit type=require
+depend fmri=system/locale/support/serbian type=require
+depend fmri=system/locale/support/serbo-croatian type=require
+depend fmri=system/locale/support/slovak type=require
+depend fmri=system/locale/support/slovenian type=require
+depend fmri=system/locale/support/spanish type=require
+depend fmri=system/locale/support/swedish type=require
+depend fmri=system/locale/support/tamil type=require
+depend fmri=system/locale/support/telugu type=require
+depend fmri=system/locale/support/thai type=require
+depend fmri=system/locale/support/turkish type=require
+depend fmri=system/locale/support/ukrainian type=require
+depend fmri=system/locale/support/vietnamese type=require
+set name=pkg.summary value="Language Support cluster - all"
+set name=pkg.description value="Language Support cluster - all"

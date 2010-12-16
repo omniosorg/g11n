@@ -1,0 +1,76 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/locale/ru-extra@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Localizations
+set name=pkg.summary value="Russian language support extra files"
+set name=pkg.description value="Russian language support extra files"
+legacy pkg=SUNWlang-ru-extra category=system,l10nru \
+    version=1.0,REV= \
+    name="Russian language support extra files" \
+    desc="Russian language support extra files"
+dir path=usr group=sys
+dir path=usr/lib
+dir path=usr/lib/locale
+dir path=usr/lib/locale/ru_RU.ANSI1251
+dir path=usr/lib/locale/ru_RU.ANSI1251/$(ARCH64)
+dir path=usr/lib/locale/ru_RU.ANSI1251/LC_COLLATE
+dir path=usr/lib/locale/ru_RU.ANSI1251/LC_CTYPE
+dir path=usr/lib/locale/ru_RU.ANSI1251/LC_MESSAGES
+dir path=usr/lib/locale/ru_RU.ANSI1251/LC_MONETARY
+dir path=usr/lib/locale/ru_RU.ANSI1251/LC_NUMERIC
+dir path=usr/lib/locale/ru_RU.ANSI1251/LC_TIME
+dir path=usr/lib/locale/ru_RU.ISO8859-5
+dir path=usr/lib/locale/ru_RU.ISO8859-5/$(ARCH64)
+dir path=usr/lib/locale/ru_RU.ISO8859-5/LC_COLLATE
+dir path=usr/lib/locale/ru_RU.ISO8859-5/LC_CTYPE
+dir path=usr/lib/locale/ru_RU.ISO8859-5/LC_MESSAGES
+dir path=usr/lib/locale/ru_RU.ISO8859-5/LC_MONETARY
+dir path=usr/lib/locale/ru_RU.ISO8859-5/LC_NUMERIC
+dir path=usr/lib/locale/ru_RU.ISO8859-5/LC_TIME
+dir path=usr/lib/locale/ru_RU.KOI8-R
+dir path=usr/lib/locale/ru_RU.KOI8-R/$(ARCH64)
+dir path=usr/lib/locale/ru_RU.KOI8-R/LC_COLLATE
+dir path=usr/lib/locale/ru_RU.KOI8-R/LC_CTYPE
+dir path=usr/lib/locale/ru_RU.KOI8-R/LC_MESSAGES
+dir path=usr/lib/locale/ru_RU.KOI8-R/LC_MONETARY
+dir path=usr/lib/locale/ru_RU.KOI8-R/LC_NUMERIC
+dir path=usr/lib/locale/ru_RU.KOI8-R/LC_TIME
+file path=usr/lib/locale/ru_RU.ANSI1251/$(ARCH64)/ru_RU.ANSI1251.so.3 mode=0555
+file path=usr/lib/locale/ru_RU.ANSI1251/LC_CTYPE/LCL_DEF mode=0755
+file path=usr/lib/locale/ru_RU.ANSI1251/locale_description
+file path=usr/lib/locale/ru_RU.ANSI1251/locale_map
+file path=usr/lib/locale/ru_RU.ANSI1251/ru_RU.ANSI1251.so.3 mode=0555
+file path=usr/lib/locale/ru_RU.ISO8859-5/$(ARCH64)/ru_RU.ISO8859-5.so.3 mode=0555
+file path=usr/lib/locale/ru_RU.ISO8859-5/locale_description
+file path=usr/lib/locale/ru_RU.ISO8859-5/locale_map
+file path=usr/lib/locale/ru_RU.ISO8859-5/ru_RU.ISO8859-5.so.3 mode=0555
+file path=usr/lib/locale/ru_RU.KOI8-R/$(ARCH64)/ru_RU.KOI8-R.so.3 mode=0555
+file path=usr/lib/locale/ru_RU.KOI8-R/LC_CTYPE/LCL_DEF mode=0755
+file path=usr/lib/locale/ru_RU.KOI8-R/locale_description
+file path=usr/lib/locale/ru_RU.KOI8-R/locale_map
+file path=usr/lib/locale/ru_RU.KOI8-R/ru_RU.KOI8-R.so.3 mode=0555
+license copyright.unicode license=copyright.unicode
+link path=usr/lib/locale/ru_RU.ISO8859-5/LC_CTYPE/LCL_DEF target=../../iso_8859_5/LC_CTYPE/LCL_DEF

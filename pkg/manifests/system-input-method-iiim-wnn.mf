@@ -1,0 +1,257 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/input-method/iiim/wnn@8,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=info.classification value=org.opensolaris.category.2008:System/Internationalization
+depend fmri=system/locale/ja-extra type=require
+depend fmri=pkg:/system/iiim/ja/wnn8@8-1 type=optional
+set name=pkg.summary value="IIIMF - Japanese Language Engine (Wnn)"
+set name=pkg.description value="IIIMF - Japanese Language Engine (Wnn)"
+set name=org.opensolaris.redist value=nonredist
+legacy pkg=SUNWjwncr category=system,l10nja \
+    version=8.0,REV= \
+    name="Japanese Input System - Wnn8 Client, (Root)" \
+    desc="Japanese Input System - Wnn8 Client, (Root)"
+legacy pkg=SUNWjwncu category=system,l10nja \
+    version=8.0,REV= \
+    name="Japanese Input System - Wnn8 Client, (Usr)" \
+    desc="Japanese Input System - Wnn8 Client, (Usr)"
+legacy pkg=SUNWjwnsr category=system,l10nja \
+    version=8.0,REV= \
+    name="Japanese Input System - Wnn8 Server, (Root)" \
+    desc="Japanese Input System - Wnn8 Server, (Root)"
+legacy pkg=SUNWjwnsu category=system,l10nja \
+    version=8.0,REV= \
+    name="Japanese Input System - Wnn8 Server, (Usr)" \
+    desc="Japanese Input System - Wnn8 Server, (Usr)"
+dir path=etc group=sys
+dir path=etc group=sys
+dir path=etc/inet group=sys
+dir path=etc/wnn group=sys
+dir path=etc/wnn/dp group=sys
+dir path=lib
+dir path=lib/svc
+dir path=lib/svc/method
+dir path=usr group=sys
+dir path=usr group=sys
+dir path=usr/bin
+dir path=usr/lib
+dir path=usr/lib
+dir path=usr/lib/iiim
+dir path=usr/lib/iiim/le
+dir path=usr/lib/iiim/le/wnn8 group=sys
+dir path=usr/lib/iiim/le/wnn8/xaux group=sys
+dir path=usr/lib/iiim/le/wnn8/xaux/$(ARCH64) group=sys
+dir path=usr/lib/wnn group=sys
+dir path=usr/lib/wnn group=sys
+dir path=usr/lib/wnn/help group=sys
+dir path=usr/lib/wnn/ja_JP group=sys
+dir path=usr/lib/wnn/ja_JP group=sys
+dir path=usr/lib/wnn/ja_JP/dic group=sys
+dir path=usr/lib/wnn/ja_JP/dic/bushu group=sys
+dir path=usr/lib/wnn/ja_JP/dic/option group=sys
+dir path=usr/lib/wnn/ja_JP/dic/system group=sys
+dir path=usr/lib/wnn/ja_JP/dic/yosoku group=sys
+dir path=usr/lib/wnn/ja_JP/dicconv group=sys
+dir path=usr/lib/wnn/ja_JP/rk group=sys
+dir path=usr/lib/wnn/msg group=sys
+dir path=usr/lib/wnn/unicode_conv group=sys
+dir path=usr/sbin
+dir path=var group=sys
+dir path=var/lib group=other
+dir path=var/lib/wnn group=other
+dir path=var/lib/wnn/dp group=sys
+dir path=var/lib/wnn/ja_JP group=sys
+dir path=var/lib/wnn/ja_JP/dic group=sys
+dir path=var/lib/wnn/ja_JP/dic/usr group=sys
+dir path=var/svc group=sys
+dir path=var/svc/manifest group=sys
+dir path=var/svc/manifest/application group=sys
+dir path=var/svc/manifest/application/wnn8 group=sys
+file path=usr/bin/wnnatod mode=0555
+file path=usr/bin/wnndictutil mode=0555
+file path=usr/bin/wnndtoa mode=0555
+file path=usr/bin/wnnenvutil mode=0555
+file path=usr/bin/wnnstat mode=0555
+file path=usr/bin/wnnsysenv_client mode=0555
+file path=usr/lib/iiim/le/wnn8/wnn8.so group=sys
+file path=usr/lib/iiim/le/wnn8/xaux/$(ARCH64)/WnnAUX.so group=sys
+file path=usr/lib/iiim/le/wnn8/xaux/WnnAUX.so group=sys
+file path=usr/lib/iiim/le/wnn8/xaux/WnnAddWordAux group=sys mode=0755
+file path=usr/lib/iiim/le/wnn8/xaux/WnnBushuAux group=sys mode=0755
+file path=usr/lib/iiim/le/wnn8/xaux/WnnCodeInputAux group=sys mode=0755
+file path=usr/lib/iiim/le/wnn8/xaux/WnnCodeListAux group=sys mode=0755
+file path=usr/lib/iiim/le/wnn8/xaux/WnnMsgDspAux group=sys mode=0755
+file path=usr/lib/iiim/le/wnn8/xaux/WnnPaletteAux group=sys mode=0755
+file path=usr/lib/iiim/le/wnn8/xaux/WnnRevDicAux group=sys mode=0755
+file path=usr/lib/wnn/cvt_xim_tbl group=sys mode=0444
+file path=usr/lib/wnn/dpkeyserv group=sys mode=0555
+file path=usr/lib/wnn/dpkeystat group=sys mode=0555
+file path=usr/lib/wnn/help/wnnaddword.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnnbushu.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnncodeinput.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnncodelist.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnndictutil.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnnenvutil.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnnle.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnnrevdic.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnnsysenv_client.hlp group=sys mode=0444
+file path=usr/lib/wnn/help/wnnsysenv_server.hlp group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/bushu/bushu.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/bushu/bushu.fzk group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/address.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/addressR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/airport.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/airportR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/amusement.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/amusementR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/aquarium.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/aquariumR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/botanical_garden.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/botanical_gardenR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/business.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/businessR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/chimei.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/chimeiR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/computer.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/computerR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/conveni.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/conveniR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/enterprise.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/enterpriseR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/food.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/foodR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/hobby.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/hobbyR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/jinmei.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/jinmeiR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/kana_english.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/mailextend.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/mailextendR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/person.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/personR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/sports.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/sportsR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/spot.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/spotR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/station.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/stationR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/university.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/universityR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/zoo.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/option/zooR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/fisd group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/ikeiji.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/kihon.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/kihon3_4.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/kihon3_4R.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/kihonR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/kougo.fzk group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/rensou.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/symbol.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/symbol3_4.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/symbol3_4_noat.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/symbol_noat.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/tankan.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/tankan2.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/tankan2R.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/tankan3.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/tankan3_4.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/tankan3_4R.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/tankanR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/tel.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/telR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/zip.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/system/zipR.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/yosoku/Morpho.dic group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dic/yosoku/learn.dat group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dicconv/atok-wnn8.fmt group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dicconv/jis-wnn8.fmt group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dicconv/msime-wnn8.fmt group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/dicconv/wnn8-jis.fmt group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/hinsi.data group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/jserverrc group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/1B_HANKAKU group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/1B_TOUPPER group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/1B_ZENHIRA group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/1B_ZENHIRA.kana group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/1B_ZENKATA group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/1B_ZENKATA.kana group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/1B_newTOUPPER group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/1B_newTOUPPER.msime group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2A_CTRL group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2A_CTRL.atok8 group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2A_CTRL.egg group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2A_CTRL.msime group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2A_CTRL_EI group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2B_DAKUTEN group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2B_JIS group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2B_ROMKANA.atok group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2B_ROMKANA.egg group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2B_ROMKANA.jis group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2B_ROMKANA.msime group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/2B_ROMKANA.wnn8 group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/3B_HANKAKU_SP group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/3B_HANKATA group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/3B_KATAKANA group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/3B_ZENKAKU group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/3B_ZENKAKU_SP group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/3B_ZENKAKU_SP.msime group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/mode.atok8 group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/mode.egg group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/mode.jis group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/mode.kana group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/mode.msime group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/rk/mode.wnn8 group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/uumkey.atok8 group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/uumkey.egg group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/uumkey.msime group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/uumkey.wnn8 group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/uumrc group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/wnnenvrc group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/wnnenvrc.sys group=sys mode=0444
+file path=usr/lib/wnn/ja_JP/wnnlerc group=sys mode=0444
+file path=usr/lib/wnn/jserver group=sys mode=0555
+file path=usr/lib/wnn/msg/WnnAUX.msg group=sys mode=0444
+file path=usr/lib/wnn/msg/libwnn.msg group=sys mode=0444
+file path=usr/lib/wnn/msg/wnndictutil.msg group=sys mode=0444
+file path=usr/lib/wnn/msg/wnnenvutil.msg group=sys mode=0444
+file path=usr/lib/wnn/msg/wnnle.msg group=sys mode=0444
+file path=usr/lib/wnn/msg/wnnstat.msg group=sys mode=0444
+file path=usr/lib/wnn/msg/wnnsysenv_server.msg group=sys mode=0444
+file path=usr/lib/wnn/unicode_conv/libwnnconv.so group=sys
+file path=usr/lib/wnn/ximrc group=sys mode=0444
+file path=usr/sbin/wnnaccess group=sys mode=0555
+file path=usr/sbin/wnnsysenv_server group=sys mode=0555
+file path=var/svc/manifest/application/wnn8/wnn8-server.xml group=sys mode=0444
+file usr/lib/svc/method/wnn8-server path=lib/svc/method/wnn8-server mode=0555
+license copyright.omron license=copyright.omron
+link path=usr/lib/wnn/ja_JP/rk/2B_ROMKANA target=./2B_ROMKANA.atok
+link path=usr/lib/wnn/ja_JP/rk/mode target=./mode.atok8
+link path=usr/lib/wnn/ja_JP/uumkey target=./uumkey.atok8
+link path=var/lib/wnn/ja_JP/dic/bushu target=../../../../../usr/lib/wnn/ja_JP/dic/bushu
+link path=var/lib/wnn/ja_JP/dic/option target=../../../../../usr/lib/wnn/ja_JP/dic/option
+link path=var/lib/wnn/ja_JP/dic/system target=../../../../../usr/lib/wnn/ja_JP/dic/system
+link path=var/lib/wnn/ja_JP/dic/yosoku target=../../../../../usr/lib/wnn/ja_JP/dic/yosoku

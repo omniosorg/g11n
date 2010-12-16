@@ -1,0 +1,95 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/text/doctools/ja@$(PKGVERS)
+set name=info.classification value="org.opensolaris.category.2008:System/Text Tools"
+set name=pkg.summary value="Japanese Documentation Tools"
+set name=pkg.description value="Japanese Documentation Tools"
+legacy pkg=SUNWjdoc category=system,l10nja \
+    version=1.1,REV= \
+    name="Japanese Documentation Tools" \
+    desc="Japanese Documentation Tools"
+dir path=usr group=sys
+dir path=usr group=sys
+dir path=usr group=sys
+dir path=usr/share group=sys
+dir path=usr/share group=sys
+dir path=usr/share group=sys
+dir path=usr/share/lib group=sys
+dir path=usr/share/lib group=sys
+dir path=usr/share/lib group=sys
+dir path=usr/share/lib/sgml
+dir path=usr/share/lib/sgml
+dir path=usr/share/lib/sgml
+dir path=usr/share/lib/sgml/locale
+dir path=usr/share/lib/sgml/locale
+dir path=usr/share/lib/sgml/locale
+dir path=usr/share/lib/sgml/locale/ja
+dir path=usr/share/lib/sgml/locale/ja/dtds
+dir path=usr/share/lib/sgml/locale/ja/dtds/solbookv2
+dir path=usr/share/lib/sgml/locale/ja/transpec
+dir path=usr/share/lib/sgml/locale/ja_JP.PCK
+dir path=usr/share/lib/sgml/locale/ja_JP.PCK/dtds
+dir path=usr/share/lib/sgml/locale/ja_JP.PCK/dtds/solbookv2
+dir path=usr/share/lib/sgml/locale/ja_JP.PCK/transpec
+dir path=usr/share/lib/sgml/locale/ja_JP.UTF-8
+dir path=usr/share/lib/sgml/locale/ja_JP.UTF-8/dtds
+dir path=usr/share/lib/sgml/locale/ja_JP.UTF-8/dtds/solbookv2
+dir path=usr/share/lib/sgml/locale/ja_JP.UTF-8/transpec
+dir path=usr/share/lib/tmac
+dir path=usr/share/lib/tmac
+dir path=usr/share/lib/tmac
+file path=usr/share/lib/sgml/locale/ja/dtds/solbookv2/solbook.dcl
+file path=usr/share/lib/sgml/locale/ja/transpec/docbook-to-man.ts
+file path=usr/share/lib/sgml/locale/ja_JP.PCK/dtds/solbookv2/solbook.dcl
+file path=usr/share/lib/sgml/locale/ja_JP.PCK/transpec/docbook-to-man.ts
+file path=usr/share/lib/sgml/locale/ja_JP.UTF-8/dtds/solbookv2/solbook.dcl
+file path=usr/share/lib/sgml/locale/ja_JP.UTF-8/transpec/docbook-to-man.ts
+file path=usr/share/lib/tmac/an.ja
+file path=usr/share/lib/tmac/an.ja_JP.PCK
+file path=usr/share/lib/tmac/an.ja_JP.UTF-8
+file path=usr/share/lib/tmac/ansun.ja
+file path=usr/share/lib/tmac/ansun.ja_JP.PCK
+file path=usr/share/lib/tmac/ansun.ja_JP.UTF-8
+file path=usr/share/lib/tmac/tz.map.ja
+file path=usr/share/lib/tmac/tz.map.ja_JP.PCK
+file path=usr/share/lib/tmac/tz.map.ja_JP.UTF-8
+license copyright.oracle license=copyright.oracle
+link path=usr/share/lib/sgml/locale/ja/dtds/catalog target=../../C/dtds/catalog
+link path=usr/share/lib/sgml/locale/ja/dtds/solbookv2/solbook.dtd target=../../../C/dtds/solbookv2/solbook.dtd
+link path=usr/share/lib/sgml/locale/ja/entities target=../C/entities
+link path=usr/share/lib/sgml/locale/ja/transpec/roff.cmap target=../../C/transpec/roff.cmap
+link path=usr/share/lib/sgml/locale/ja/transpec/roff.sdata target=../../C/transpec/roff.sdata
+link path=usr/share/lib/sgml/locale/ja_JP.PCK/dtds/catalog target=../../C/dtds/catalog
+link path=usr/share/lib/sgml/locale/ja_JP.PCK/dtds/solbookv2/solbook.dtd target=../../../C/dtds/solbookv2/solbook.dtd
+link path=usr/share/lib/sgml/locale/ja_JP.PCK/entities target=../C/entities
+link path=usr/share/lib/sgml/locale/ja_JP.PCK/transpec/roff.cmap target=../../C/transpec/roff.cmap
+link path=usr/share/lib/sgml/locale/ja_JP.PCK/transpec/roff.sdata target=../../C/transpec/roff.sdata
+link path=usr/share/lib/sgml/locale/ja_JP.UTF-8/dtds/catalog target=../../C/dtds/catalog
+link path=usr/share/lib/sgml/locale/ja_JP.UTF-8/dtds/solbookv2/solbook.dtd target=../../../C/dtds/solbookv2/solbook.dtd
+link path=usr/share/lib/sgml/locale/ja_JP.UTF-8/entities target=../C/entities
+link path=usr/share/lib/sgml/locale/ja_JP.UTF-8/transpec/roff.cmap target=../../C/transpec/roff.cmap
+link path=usr/share/lib/sgml/locale/ja_JP.UTF-8/transpec/roff.sdata target=../../C/transpec/roff.sdata
+link path=usr/share/lib/sgml/locale/ja_JP.eucJP target=./ja

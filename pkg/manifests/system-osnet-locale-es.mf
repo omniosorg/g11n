@@ -1,0 +1,177 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/osnet/locale/es@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Localizations
+set name=pkg.summary value="Spanish ON message files"
+set name=pkg.description value="Spanish ON message files"
+legacy pkg=SUNWesos category=system,l10nes \
+    version=11.6,REV= \
+    name="Spanish ON message files" \
+    desc="Spanish ON message files"
+dir path=usr group=sys
+dir path=usr/lib
+dir path=usr/lib/help
+dir path=usr/lib/help/auths
+dir path=usr/lib/help/auths/locale
+dir path=usr/lib/help/auths/locale/es
+dir path=usr/lib/help/profiles
+dir path=usr/lib/help/profiles/locale
+dir path=usr/lib/help/profiles/locale/es
+dir path=usr/lib/locale
+dir path=usr/lib/locale/es_ES.ISO8859-1
+dir path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES
+dir path=usr/lib/locale/es_ES.ISO8859-1/LC_TIME
+dir path=usr/lib/locale/es_ES.UTF-8
+dir path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES
+dir path=usr/lib/locale/es_ES.UTF-8/LC_TIME
+dir path=usr/share group=sys
+dir path=usr/share/lib group=sys
+dir path=usr/share/lib/locale
+dir path=usr/share/lib/locale/com
+dir path=usr/share/lib/locale/com/sun
+dir path=usr/share/lib/locale/com/sun/admin
+dir path=usr/share/lib/locale/com/sun/admin/pm
+dir path=usr/share/lib/locale/com/sun/admin/pm/client
+dir path=usr/share/lib/locale/com/sun/slp
+file path=usr/lib/help/auths/locale/es/AllSolAuthsHeader.html
+file path=usr/lib/help/auths/locale/es/AuditConfig.html
+file path=usr/lib/help/auths/locale/es/AuditHeader.html
+file path=usr/lib/help/auths/locale/es/AuditRead.html
+file path=usr/lib/help/auths/locale/es/AuthJobsAdmin.html
+file path=usr/lib/help/auths/locale/es/AuthJobsUser.html
+file path=usr/lib/help/auths/locale/es/AuthProfmgrAssign.html
+file path=usr/lib/help/auths/locale/es/AuthProfmgrDelegate.html
+file path=usr/lib/help/auths/locale/es/AuthProfmgrExecattrWrite.html
+file path=usr/lib/help/auths/locale/es/AuthProfmgrRead.html
+file path=usr/lib/help/auths/locale/es/AuthProfmgrWrite.html
+file path=usr/lib/help/auths/locale/es/AuthRoleAssign.html
+file path=usr/lib/help/auths/locale/es/AuthRoleDelegate.html
+file path=usr/lib/help/auths/locale/es/AuthRoleWrite.html
+file path=usr/lib/help/auths/locale/es/BindStates.html
+file path=usr/lib/help/auths/locale/es/DevAllocHeader.html
+file path=usr/lib/help/auths/locale/es/DevAllocate.html
+file path=usr/lib/help/auths/locale/es/DevConfig.html
+file path=usr/lib/help/auths/locale/es/DevGrant.html
+file path=usr/lib/help/auths/locale/es/DevRevoke.html
+file path=usr/lib/help/auths/locale/es/DhcpmgrHeader.html
+file path=usr/lib/help/auths/locale/es/DhcpmgrWrite.html
+file path=usr/lib/help/auths/locale/es/JobHeader.html
+file path=usr/lib/help/auths/locale/es/JobsGrant.html
+file path=usr/lib/help/auths/locale/es/LoginEnable.html
+file path=usr/lib/help/auths/locale/es/LoginHeader.html
+file path=usr/lib/help/auths/locale/es/LoginRemote.html
+file path=usr/lib/help/auths/locale/es/PriAdmin.html
+file path=usr/lib/help/auths/locale/es/ProfmgrHeader.html
+file path=usr/lib/help/auths/locale/es/RoleHeader.html
+file path=usr/lib/help/auths/locale/es/SmfAutofsStates.html
+file path=usr/lib/help/auths/locale/es/SmfCronStates.html
+file path=usr/lib/help/auths/locale/es/SmfHeader.html
+file path=usr/lib/help/auths/locale/es/SmfManageHeader.html
+file path=usr/lib/help/auths/locale/es/SmfModifyAppl.html
+file path=usr/lib/help/auths/locale/es/SmfModifyDepend.html
+file path=usr/lib/help/auths/locale/es/SmfModifyFramework.html
+file path=usr/lib/help/auths/locale/es/SmfModifyHeader.html
+file path=usr/lib/help/auths/locale/es/SmfModifyMethod.html
+file path=usr/lib/help/auths/locale/es/SmfNscdStates.html
+file path=usr/lib/help/auths/locale/es/SmfPowerStates.html
+file path=usr/lib/help/auths/locale/es/SmfSendmailStates.html
+file path=usr/lib/help/auths/locale/es/SmfSshStates.html
+file path=usr/lib/help/auths/locale/es/SmfSyslogStates.html
+file path=usr/lib/help/auths/locale/es/SysDate.html
+file path=usr/lib/help/auths/locale/es/SysHeader.html
+file path=usr/lib/help/auths/locale/es/SysShutdown.html
+file path=usr/lib/help/profiles/locale/es/RtAll.html
+file path=usr/lib/help/profiles/locale/es/RtAuditCtrl.html
+file path=usr/lib/help/profiles/locale/es/RtAuditReview.html
+file path=usr/lib/help/profiles/locale/es/RtContractObserver.html
+file path=usr/lib/help/profiles/locale/es/RtCronMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtCryptoMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtDHCPMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtDatAdmin.html
+file path=usr/lib/help/profiles/locale/es/RtDefault.html
+file path=usr/lib/help/profiles/locale/es/RtDeviceMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtDeviceSecurity.html
+file path=usr/lib/help/profiles/locale/es/RtFTPMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtFileSysMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtFileSysSecurity.html
+file path=usr/lib/help/profiles/locale/es/RtIPFilterMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtKerberosClntMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtKerberosSrvrMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtLogMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtMailMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtMaintAndRepair.html
+file path=usr/lib/help/profiles/locale/es/RtMediaBkup.html
+file path=usr/lib/help/profiles/locale/es/RtMediaRestore.html
+file path=usr/lib/help/profiles/locale/es/RtNameServiceAdmin.html
+file path=usr/lib/help/profiles/locale/es/RtNameServiceSecure.html
+file path=usr/lib/help/profiles/locale/es/RtNetMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtNetSecure.html
+file path=usr/lib/help/profiles/locale/es/RtObAccessMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtPrntAdmin.html
+file path=usr/lib/help/profiles/locale/es/RtProcManagement.html
+file path=usr/lib/help/profiles/locale/es/RtRightsDelegate.html
+file path=usr/lib/help/profiles/locale/es/RtSoftwareInstall.html
+file path=usr/lib/help/profiles/locale/es/RtSysEvMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtUserMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtUserSecurity.html
+file path=usr/lib/help/profiles/locale/es/RtZFSFileSysMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtZFSStorageMngmnt.html
+file path=usr/lib/help/profiles/locale/es/RtZoneMngmnt.html
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/SUNW_OST_ADMIN.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/SUNW_OST_NETRPC.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/SUNW_OST_OSCMD.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/SUNW_OST_OSLIB.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/SUNW_OST_SGS.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/SUNW_OST_SYSOSPAM.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/SUNW_OST_UCBCMD.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/SUNW_OST_ZONEINFO.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/magic
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/mailx.help
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/more.help
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/priv_names
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_MESSAGES/uxlibc
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_TIME/SUNW_OST_OSCMD.mo
+file path=usr/lib/locale/es_ES.ISO8859-1/LC_TIME/SUNW_OST_OSLIB.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/SUNW_OST_ADMIN.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/SUNW_OST_NETRPC.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/SUNW_OST_OSCMD.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/SUNW_OST_OSLIB.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/SUNW_OST_SGS.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/SUNW_OST_SYSOSPAM.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/SUNW_OST_UCBCMD.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/SUNW_OST_ZONEINFO.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/magic
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/mailx.help
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/more.help
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/priv_names
+file path=usr/lib/locale/es_ES.UTF-8/LC_MESSAGES/uxlibc
+file path=usr/lib/locale/es_ES.UTF-8/LC_TIME/SUNW_OST_OSCMD.mo
+file path=usr/lib/locale/es_ES.UTF-8/LC_TIME/SUNW_OST_OSLIB.mo
+file path=usr/share/lib/locale/com/sun/admin/pm/client/pmHelpResources_es.class group=lp
+file path=usr/share/lib/locale/com/sun/admin/pm/client/pmResources_es.class group=lp
+file path=usr/share/lib/locale/com/sun/slp/ClientLib_es.properties group=sys
+file path=usr/share/lib/locale/com/sun/slp/Server_es.properties group=sys
+license copyright.oracle license=copyright.oracle

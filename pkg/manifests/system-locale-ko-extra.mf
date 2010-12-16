@@ -1,0 +1,125 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/locale/ko-extra@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Localizations
+depend fmri=system/library/iconv/extra type=require
+depend fmri=system/library/iconv/unicode type=require
+set name=pkg.summary value="Korean language support extra files"
+set name=pkg.description value="Korean language support extra files"
+legacy pkg=SUNWlang-ko-extra category=ALE,system \
+    version=110.0,REV= \
+    name="Korean language support extra files" \
+    desc="Korean language support extra files"
+dir path=usr group=sys
+dir path=usr group=sys
+dir path=usr/include
+dir path=usr/include/ko
+dir path=usr/kernel group=sys
+dir path=usr/kernel/strmod group=sys
+dir path=usr/kernel/strmod/$(ARCH64) group=sys
+dir path=usr/lib
+dir path=usr/lib
+dir path=usr/lib/$(ARCH64)
+dir path=usr/lib/locale
+dir path=usr/lib/locale/ko_KR.EUC
+dir path=usr/lib/locale/ko_KR.EUC/$(ARCH64)
+dir path=usr/lib/locale/ko_KR.EUC/LC_COLLATE
+dir path=usr/lib/locale/ko_KR.EUC/LC_CTYPE
+dir path=usr/lib/locale/ko_KR.EUC/LC_CTYPE/$(ARCH64)
+dir path=usr/lib/locale/ko_KR.EUC/LC_MESSAGES
+dir path=usr/lib/locale/ko_KR.EUC/LC_MONETARY
+dir path=usr/lib/locale/ko_KR.EUC/LC_NUMERIC
+dir path=usr/lib/locale/ko_KR.EUC/LC_TIME
+dir path=usr/lib/locale/ko_KR.EUC@dict
+dir path=usr/lib/locale/ko_KR.EUC@dict/$(ARCH64)
+dir path=usr/lib/locale/ko_KR.UTF-8@dict
+dir path=usr/lib/locale/ko_KR.UTF-8@dict/$(ARCH64)
+dir path=usr/lib/lp group=lp
+dir path=usr/lib/lp/locale group=lp
+dir path=usr/lib/lp/locale/ko group=lp
+dir path=usr/lib/lp/locale/ko.UTF-8 group=lp
+dir path=usr/lib/lp/locale/ko.UTF-8/mp group=lp
+dir path=usr/lib/lp/locale/ko/mp group=lp
+dir path=usr/lib/mle
+dir path=usr/lib/mle
+dir path=usr/lib/mle/ko
+dir path=usr/lib/mle/ko.UTF-8
+file path=usr/include/ko/xctype.h
+file path=usr/kernel/strmod/$(ARCH64)/kpack group=sys mode=0755
+file path=usr/lib/$(ARCH64)/libkle.a mode=0755
+file path=usr/lib/$(ARCH64)/libkle.so.1
+file path=usr/lib/libkle.a mode=0755
+file path=usr/lib/libkle.so.1
+file path=usr/lib/locale/ko_KR.EUC/$(ARCH64)/ko_KR.EUC.so.3 mode=0555
+file path=usr/lib/locale/ko_KR.EUC/$(ARCH64)/methods_ko_KR.EUC.so.3 mode=0555
+file path=usr/lib/locale/ko_KR.EUC/LC_CTYPE/$(ARCH64)/mailcodelist mode=0555
+file path=usr/lib/locale/ko_KR.EUC/LC_CTYPE/$(ARCH64)/wdresolve.so mode=0555
+file path=usr/lib/locale/ko_KR.EUC/LC_CTYPE/LCL_DEF mode=0555
+file path=usr/lib/locale/ko_KR.EUC/LC_CTYPE/mailcodelist mode=0555
+file path=usr/lib/locale/ko_KR.EUC/LC_CTYPE/wdresolve.so mode=0555
+file path=usr/lib/locale/ko_KR.EUC/ko_KR.EUC.so.3 mode=0555
+file path=usr/lib/locale/ko_KR.EUC/locale_description
+file path=usr/lib/locale/ko_KR.EUC/locale_map
+file path=usr/lib/locale/ko_KR.EUC/methods_ko_KR.EUC.so.3 mode=0555
+file path=usr/lib/locale/ko_KR.EUC@dict/$(ARCH64)/ko_KR.EUC@dict.so.3 mode=0555
+file path=usr/lib/locale/ko_KR.EUC@dict/ko_KR.EUC@dict.so.3 mode=0555
+file path=usr/lib/locale/ko_KR.UTF-8@dict/$(ARCH64)/ko_KR.UTF-8@dict.so.3 mode=0555
+file path=usr/lib/locale/ko_KR.UTF-8@dict/ko_KR.UTF-8@dict.so.3 mode=0555
+file path=usr/lib/lp/locale/ko.UTF-8/mp/xufallback_ksc.so group=lp mode=0555
+file path=usr/lib/lp/locale/ko/mp/xwcksc5601_1987_udc.so group=lp mode=0555
+file path=usr/lib/lp/locale/ko/mp/xwcksc5601_1987_unicode.so group=lp mode=0555
+file path=usr/lib/mle/ko.UTF-8/keybind.dat group=daemon mode=0555
+file path=usr/lib/mle/ko.UTF-8/libmle.a mode=0755
+file path=usr/lib/mle/ko.UTF-8/mle.so
+file path=usr/lib/mle/ko.UTF-8/syshjd mode=0555
+file path=usr/lib/mle/ko/keybind.dat group=daemon mode=0555
+file path=usr/lib/mle/ko/libmle.a mode=0755
+file path=usr/lib/mle/ko/mle.so
+file path=usr/lib/mle/ko/syshjd mode=0555
+license copyright.oracle license=copyright.oracle
+link path=usr/include/ko_KR.EUC target=./ko
+link path=usr/lib/$(ARCH64)/libkle.so target=libkle.so.1
+link path=usr/lib/libkle.so target=libkle.so.1
+link path=usr/lib/locale/ko_KR.EUC/64 target=./$(ARCH64)
+link path=usr/lib/locale/ko_KR.EUC/LC_CTYPE/64 target=./$(ARCH64)
+link path=usr/lib/locale/ko_KR.EUC@dict/$(ARCH64)/methods_ko_KR.EUC.so.3 target=../../ko_KR.EUC/$(ARCH64)/methods_ko_KR.EUC.so.3
+link path=usr/lib/locale/ko_KR.EUC@dict/64 target=./$(ARCH64)
+link path=usr/lib/locale/ko_KR.EUC@dict/LC_COLLATE target=../ko_KR.EUC/LC_COLLATE
+link path=usr/lib/locale/ko_KR.EUC@dict/LC_CTYPE target=../ko_KR.EUC/LC_CTYPE
+link path=usr/lib/locale/ko_KR.EUC@dict/LC_MESSAGES target=../ko_KR.EUC/LC_MESSAGES
+link path=usr/lib/locale/ko_KR.EUC@dict/LC_MONETARY target=../ko_KR.EUC/LC_MONETARY
+link path=usr/lib/locale/ko_KR.EUC@dict/LC_NUMERIC target=../ko_KR.EUC/LC_NUMERIC
+link path=usr/lib/locale/ko_KR.EUC@dict/LC_TIME target=../ko_KR.EUC/LC_TIME
+link path=usr/lib/locale/ko_KR.EUC@dict/methods_ko_KR.EUC.so.3 target=../ko_KR.EUC/methods_ko_KR.EUC.so.3
+link path=usr/lib/locale/ko_KR.UTF-8@dict/$(ARCH64)/methods_unicode.so.3 target=../../ko_KR.UTF-8/$(ARCH64)/methods_unicode.so.3
+link path=usr/lib/locale/ko_KR.UTF-8@dict/64 target=./$(ARCH64)
+link path=usr/lib/locale/ko_KR.UTF-8@dict/LC_CTYPE target=../ko_KR.UTF-8/LC_CTYPE
+link path=usr/lib/locale/ko_KR.UTF-8@dict/LC_MESSAGES target=../ko_KR.UTF-8/LC_MESSAGES
+link path=usr/lib/locale/ko_KR.UTF-8@dict/LC_TIME target=../ko_KR.UTF-8/LC_TIME
+link path=usr/lib/locale/ko_KR.UTF-8@dict/LO_LTYPE target=../ko_KR.UTF-8/LO_LTYPE
+link path=usr/lib/locale/ko_KR.UTF-8@dict/methods_unicode.so.3 target=../ko_KR.UTF-8/methods_unicode.so.3
+link path=usr/lib/mle/ko_KR.EUC target=./ko
+link path=usr/lib/mle/ko_KR.UTF-8 target=./ko.UTF-8

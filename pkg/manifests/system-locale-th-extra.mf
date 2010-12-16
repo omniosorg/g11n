@@ -1,0 +1,95 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/locale/th-extra@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Localizations
+set name=pkg.summary value="Thai language support extra files"
+set name=pkg.description value="Thai language support extra files"
+legacy pkg=SUNWlang-th-extra category=system \
+    version=110.0,REV= \
+    name="Thai language support extra files" \
+    desc="Thai language support extra files"
+dir path=usr group=sys
+dir path=usr group=sys
+dir path=usr/lib
+dir path=usr/lib
+dir path=usr/lib/locale
+dir path=usr/lib/locale/th_TH.TIS620
+dir path=usr/lib/locale/th_TH.TIS620/$(ARCH64)
+dir path=usr/lib/locale/th_TH.TIS620/LC_COLLATE
+dir path=usr/lib/locale/th_TH.TIS620/LC_CTYPE
+dir path=usr/lib/locale/th_TH.TIS620/LC_CTYPE/$(ARCH64)
+dir path=usr/lib/locale/th_TH.TIS620/LC_MESSAGES
+dir path=usr/lib/locale/th_TH.TIS620/LC_MONETARY
+dir path=usr/lib/locale/th_TH.TIS620/LC_NUMERIC
+dir path=usr/lib/locale/th_TH.TIS620/LC_TIME
+dir path=usr/lib/locale/th_TH.TIS620/LO_LTYPE
+dir path=usr/lib/locale/th_TH.TIS620/LO_LTYPE/$(ARCH64)
+dir path=usr/lib/lp group=lp
+dir path=usr/lib/lp group=lp
+dir path=usr/lib/lp/files group=lp
+dir path=usr/lib/lp/locale group=lp
+dir path=usr/lib/lp/locale group=lp
+dir path=usr/lib/lp/locale/th_TH group=lp
+dir path=usr/lib/lp/locale/th_TH group=lp
+dir path=usr/lib/lp/locale/th_TH/mp group=lp
+dir path=usr/lib/lp/locale/th_TH/mp group=lp
+file path=usr/lib/locale/th_TH.TIS620/$(ARCH64)/th_TH.TIS620.so.3 mode=0555
+file path=usr/lib/locale/th_TH.TIS620/LC_CTYPE/$(ARCH64)/textboundary.so.1 mode=0555
+file path=usr/lib/locale/th_TH.TIS620/LC_CTYPE/$(ARCH64)/wdresolve.so mode=0555
+file path=usr/lib/locale/th_TH.TIS620/LC_CTYPE/LCL_DEF mode=0444
+file path=usr/lib/locale/th_TH.TIS620/LC_CTYPE/textboundary.so.1 mode=0555
+file path=usr/lib/locale/th_TH.TIS620/LC_CTYPE/thaidic.dat
+file path=usr/lib/locale/th_TH.TIS620/LC_CTYPE/wdresolve.so mode=0555
+file path=usr/lib/locale/th_TH.TIS620/LO_LTYPE/$(ARCH64)/th_TH.TIS620.layout.so.1 mode=0555
+file path=usr/lib/locale/th_TH.TIS620/LO_LTYPE/th_TH.TIS620.layout.so.1 mode=0555
+file path=usr/lib/locale/th_TH.TIS620/locale_description
+file path=usr/lib/locale/th_TH.TIS620/locale_map
+file path=usr/lib/locale/th_TH.TIS620/th_TH.TIS620.so.3 mode=0555
+file path=usr/lib/lp/files/TAC11x10.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x11.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x12.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x13.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x14.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x15.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x16.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x17.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x18.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x19.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x20.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x21.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x22.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x40.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x41.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x42.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11x43.COD group=lp mode=0444
+file path=usr/lib/lp/files/TAC11xAA.COD group=lp mode=0444
+file path=usr/lib/lp/locale/th_TH/mp/ctlthai.so group=lp mode=0555
+file path=usr/lib/lp/locale/th_TH/mp/mp.conf group=lp mode=0555
+file path=usr/lib/lp/locale/th_TH/thaifilter group=lp mode=0444
+license copyright.oracle license=copyright.oracle
+link path=usr/lib/locale/th_TH.TIS620/64 target=./$(ARCH64)
+link path=usr/lib/locale/th_TH.TIS620/LC_CTYPE/64 target=./$(ARCH64)
+link path=usr/lib/locale/th_TH.TIS620/LO_LTYPE/64 target=./$(ARCH64)

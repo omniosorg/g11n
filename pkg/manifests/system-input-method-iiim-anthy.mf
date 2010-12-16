@@ -1,0 +1,47 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/system/input-method/iiim/anthy@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:System/Internationalization
+set name=pkg.summary value="IIIMF - Japanese Language Engine (Anthy)"
+set name=pkg.description value="IIIMF - Japanese Language Engine (Anthy)"
+legacy pkg=SUNWiiimf-ja-anthy category=system \
+    version=12,REV=3596 \
+    name="IIIMF - Japanese Language Engine (Anthy)" \
+    desc="IIIMF - Japanese Language Engine (Anthy)"
+dir path=usr group=sys
+dir path=usr/lib
+dir path=usr/lib/iiim
+dir path=usr/lib/iiim/le
+dir path=usr/lib/iiim/le/anthyLE
+file path=usr/lib/iiim/le/anthyLE/alphazen.data
+file path=usr/lib/iiim/le/anthyLE/anthyLE.so
+file path=usr/lib/iiim/le/anthyLE/hirazen.data
+file path=usr/lib/iiim/le/anthyLE/katahan.data
+file path=usr/lib/iiim/le/anthyLE/katazen.data
+file path=usr/lib/iiim/le/anthyLE/libpgconv.so.1.0.0
+license copyright.anthyle license=copyright.anthyle
+link path=usr/lib/iiim/le/anthyLE/libpgconv.so target=libpgconv.so.1.0.0
+link path=usr/lib/iiim/le/anthyLE/libpgconv.so.1 target=libpgconv.so.1.0.0

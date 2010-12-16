@@ -1,0 +1,106 @@
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+
+#
+# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#
+
+set name=pkg.fmri value=pkg:/text/auto_ef@$(PKGVERS)
+set name=info.classification value="org.opensolaris.category.2008:System/Text Tools"
+depend fmri=system/library/iconv/unicode type=require
+depend fmri=system/library/iconv/utf-8 type=require
+set name=pkg.summary value="Auto encoding finder (auto_ef)"
+set name=pkg.description value="Auto encoding finder"
+legacy pkg=SUNWautoef category=application \
+    version=1.1,REV= \
+    name="Auto encoding finder (auto_ef)" \
+    desc="Auto encoding finder"
+dir path=usr group=sys
+dir path=usr/bin
+dir path=usr/include
+dir path=usr/lib
+dir path=usr/lib/$(ARCH64)
+dir path=usr/lib/auto_ef
+file path=usr/bin/auto_ef mode=0555
+file path=usr/include/auto_ef.h
+file path=usr/lib/$(ARCH64)/libauto_ef.so.1 mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Catalonia mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Denmark mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Finland mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_France mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Germany mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Iceland mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Italy mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Netherland mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Norway mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Portugal mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Spain mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-1_Sweden mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-2_Croatia mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-2_Hungary mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-2_Poland mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-2_Serbia mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-2_Slovakia mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-2_Slovenia mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-5_Bulgaria mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-5_Russia mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-6_Arabia mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-7_Greece mode=0444
+file path=usr/lib/auto_ef/hashtable.8859-8_Hebrew mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1250_Croatia mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1250_Hungary mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1250_Poland mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1250_Serbia mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1250_Slovakia mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1250_Slovenia mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1251_Bulgaria mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1251_Russia mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Catalonia mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Denmark mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Finland mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_France mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Germany mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Iceland mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Italy mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Netherland mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Norway mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Portugal mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Spain mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1252_Sweden mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1253_Greece mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1255_Hebrew mode=0444
+file path=usr/lib/auto_ef/hashtable.CP1256_Arabia mode=0444
+file path=usr/lib/auto_ef/hashtable.CP874_Thai mode=0444
+file path=usr/lib/auto_ef/hashtable.PCK mode=0444
+file path=usr/lib/auto_ef/hashtable.TIS620.2533_Thai mode=0444
+file path=usr/lib/auto_ef/hashtable.eucJP mode=0444
+file path=usr/lib/auto_ef/hashtable.ko_KR.cp949 mode=0444
+file path=usr/lib/auto_ef/hashtable.ko_KR.euc mode=0444
+file path=usr/lib/auto_ef/hashtable.koi8-r_Bulgaria mode=0444
+file path=usr/lib/auto_ef/hashtable.koi8-r_Russia mode=0444
+file path=usr/lib/auto_ef/hashtable.zh_CN.euc mode=0444
+file path=usr/lib/auto_ef/hashtable.zh_CN.gb18030 mode=0444
+file path=usr/lib/auto_ef/hashtable.zh_HK.hkscs mode=0444
+file path=usr/lib/auto_ef/hashtable.zh_TW-euc mode=0444
+file path=usr/lib/libauto_ef.so.1 mode=0444
+license copyright.oracle license=copyright.oracle
+link path=usr/lib/$(ARCH64)/libauto_ef.so target=./libauto_ef.so.1
+link path=usr/lib/libauto_ef.so target=./libauto_ef.so.1

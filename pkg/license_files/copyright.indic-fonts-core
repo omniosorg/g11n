@@ -1,0 +1,26 @@
+This package collects Indic Truetype fonts available in free licenses, and
+maintains and distributes them under GNU General Public License (GPLv2) with
+original authors' permissions.
+
+Copyright:
+    Bengali: MuktiNarrow-n, MuktiNarrow-b
+        (Ani, Mitra)
+        Copyright (C) 2002, Dr. Anirban Mitra <mitra_anirban@yahoo.co.in>
+        (MuktiNarrow*)
+        Copyright (C) 2003, Mukta Bangla Font Project
+
+    Kannada: Malige-n, Malige-b
+        © 2005, Indian Institute of Science,Bangalore.Distributed under 
+        the GNU General Public License (GPL) .        
+
+    Malayalam: MalOtf
+        Created by Shaji N Vyapron <nvshaji@netscape.net> with PfaEdit from 
+        Original TeX fonts for Malayalam (C)Jeroen Hellingman 
+        <jehe@kabelfoon.nl>
+   
+    Oriya: utkal
+        GNU GPL Copyright (c) Andy White,Rajesh Pradhan. All rights reserved.
+    
+    Telugu: Vemana
+        Copyright (c) 2005 K.Desikachary.
+
