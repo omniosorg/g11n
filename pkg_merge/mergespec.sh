@@ -91,9 +91,9 @@ do
 		then
 			echo "[l10n-redistributable] $fmri"
 			grep -v '^depend ' $mf > $MF_RED
-		elif grep '^set name=pkg\.obsoleted value=true' $mf > /dev/null
+		elif grep '^set name=pkg\.obsolete value=true' $mf > /dev/null
 		then
-			echo "[obsoleted] $fmri"
+			echo "[obsolete] $fmri"
 			echo "depend fmri=$fmri type=incorporate" >> $MF_INC_B
 			$PUBLISH -d $TMPD/$pd $mf
 		elif grep '^set name=pkg\.renamed value=true' $mf > /dev/null
