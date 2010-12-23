@@ -32,6 +32,12 @@
 <transform file path=usr/share/applications/.*\.desktop -> \
 	add restart_fmri svc:/application/desktop-cache/desktop-mime-cache:default>
 
+# fc-cache
+<transform file path=etc/fonts/conf\.(avail|d)/.+ -> \
+	add restart_fmri svc:/application/font/fc-cache:default>
+<transform file path=usr/share/fonts/.+ -> \
+	add restart_fmri svc:/application/font/fc-cache:default>
+
 # gconf-cache
 <transform file path=etc/gconf/schemas/.*\.entries -> \
 	add restart_fmri svc:/application/desktop-cache/gconf-cache:default>

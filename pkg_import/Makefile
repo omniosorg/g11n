@@ -58,6 +58,8 @@ sparc_DEFINES=          \
 
 ARCH_DEFINES=$($(PKGMACH)_DEFINES)
 
+GLOBAL_CHATTRS= gnome variants
+
 SVR4DIR1=../../../inputmethod/specs/build.$(PKGMACH)/PKGS
 SVR4DIR2=PKGS2.$(PKGMACH)
 SVR4PKGS2=g11nsvc
@@ -80,7 +82,7 @@ clobber: clean
 # workaround: specify @0.5.11-0.152 to enable creating b152 based iso images
 imp: $(REPO) $(SVR4PKGS2:%=$(SVR4DIR2)/%) FRC
 	$(IMPORTER) -b 0.$(L10N_BUILDNUM) -T \* \
-	$(ARCH_DEFINES:%= -m %) \
+	$(GLOBAL_CHATTRS:%= -G %) $(ARCH_DEFINES:%= -m %) \
 	-R $(REFREPO)@entire@0.5.11-0.152 -s $(REPO) \
 	-w $(SVR4DIR1) -w $(SVR4DIR2) -I. $(IMPLIST)
 
