@@ -90,6 +90,9 @@ dir path=var/svc group=sys
 dir path=var/svc/manifest group=sys
 dir path=var/svc/manifest/application group=sys
 dir path=var/svc/manifest/application/wnn8 group=sys
+file path=etc/wnn/dp/dpkeyallow group=sys preserve=true
+file path=etc/wnn/dp/dpkeylist group=sys preserve=true
+file path=etc/wnn/wnnhosts group=sys preserve=true
 file path=usr/bin/wnnatod mode=0555
 file path=usr/bin/wnndictutil mode=0555
 file path=usr/bin/wnndtoa mode=0555
