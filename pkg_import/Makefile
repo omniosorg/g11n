@@ -42,6 +42,8 @@ SHELL= /usr/bin/ksh93
 
 IMPORTER=env ROOT=/ ./importer.py 
 
+PKGMACH= $(MACH)
+
 i386_DEFINES=           \
 	ARCH=i386       \
 	ARCH32=i86      \
