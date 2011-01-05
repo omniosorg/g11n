@@ -7,11 +7,19 @@ export LC_ALL=C
 date
 
 MERGEPY=./merge.py
-if [ -z "$PKGDEST" ]
+if [ -z "$REPOTOP" ]
 then
-	REPOTOP="`cd ../pkgdest; pwd`"
-else
-	REPOTOP="$PKGDEST/.."
+	if [ -z "$PKGDEST" ]
+	then
+		REPOTOP="`cd ../pkgdest; pwd`"
+	else
+		REPOTOP="$PKGDEST/.."
+	fi
+fi
+
+if [ -z "$REPOTMP" ]
+then
+	REPOTMP=$REPOTOP
 fi
 
 merge_one_pair()
@@ -24,7 +32,7 @@ merge_one_pair()
 	srx="-v i386,file://$REPOTOP/i386/$reponame"
 	drd="$REPOTOP/merged/$reponame"
 	dr="file://$drd"
-	tmpd="$REPOTOP/mergearch.$$.$reponame"
+	tmpd="$REPOTMP/mergearch.$$.$reponame"
 
 	rm -rf $tmpd
 	$MERGEPY -r -d $tmpd $srs $srx arch $pkgs
