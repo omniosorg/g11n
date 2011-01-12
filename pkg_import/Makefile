@@ -42,6 +42,8 @@ SHELL= /usr/bin/ksh93
 
 IMPORTER=env ROOT=/ ./importer.py 
 
+PKGMACH= $(MACH)
+
 i386_DEFINES=           \
 	ARCH=i386       \
 	ARCH32=i86      \
@@ -62,6 +64,7 @@ GLOBAL_CHATTRS= gnome variants
 
 SVR4DIR1=../../../inputmethod/specs/build.$(PKGMACH)/PKGS
 SVR4DIR2=PKGS2.$(PKGMACH)
+SVR4DIR3=../../g11n-inputmethod/specs/build.$(PKGMACH)/PKGS
 SVR4PKGS2=g11nsvc
 
 IMPLIST=import_list
@@ -84,7 +87,7 @@ imp: $(REPO) $(SVR4PKGS2:%=$(SVR4DIR2)/%) FRC
 	$(IMPORTER) -b 0.$(L10N_BUILDNUM) -T \* \
 	$(GLOBAL_CHATTRS:%= -G %) $(ARCH_DEFINES:%= -m %) \
 	-R $(REFREPO)@entire@0.5.11-0.152 -s $(REPO) \
-	-w $(SVR4DIR1) -w $(SVR4DIR2) -I. $(IMPLIST)
+	-w $(SVR4DIR1) -w $(SVR4DIR2) -w $(SVR4DIR3) -I. $(IMPLIST)
 
 $(SVR4DIR2)/%: $(SVR4DIR2) %.$(PKGMACH).tar
 	(cd $(SVR4DIR2); tar xf ../$(@F).$(PKGMACH).tar)
