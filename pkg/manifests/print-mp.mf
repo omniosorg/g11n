@@ -89,7 +89,7 @@ file path=usr/lib/lp/locale/en_US.UTF-8/mp/xuunicode.so group=lp mode=0555
 file path=usr/lib/lp/locale/en_US.UTF-8/mp/xwc2unicode.so group=lp mode=0555
 file path=usr/lib/lp/locale/en_US.UTF-8/mp/xwccsi.so group=lp mode=0555
 file path=usr/lib/lp/locale/en_US.UTF-8/mp/xwceuc.so group=lp mode=0555
-license copyright.oracle license=copyright.oracle
+license copyright.mp license=copyright.mp
 link path=usr/X11/bin/mp target=../../bin/mp
 link path=usr/bin/digestp target=./mailp
 link path=usr/bin/filep target=./mailp
