@@ -18,15 +18,12 @@
 #
 # CDDL HEADER END
 #
+# Copyright (c) 2009, 2011, Oracle and/or its affiliates. All rights reserved.
 #
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
-# Use is subject to license terms.
-#
-#ident	"@(#)mp.conf	1.26	09/06/06 SMI"
+
 #
 # Korean font preferred version.
 #
-
 FontNameAlias	iso88591R	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Regular.ttf
 FontNameAlias	iso88591B	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Bold.ttf
 FontNameAlias	iso88591I	TrueType	/usr/X11/lib/X11/fonts/TTF/LiberationMono-Italic.ttf
@@ -73,8 +70,8 @@ FontNameAlias	tt_ctlarabicR	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSans.ttf
 FontNameAlias	tt_arabicR	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSans.ttf
 FontNameAlias	tt_ctlthaiR	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSans.ttf
 FontNameAlias	tt_thaiR	TrueType	/usr/X11/lib/X11/fonts/TTF/DejaVuSans.ttf
-FontNameAlias	tt_ctlhindiR	TrueType	/usr/X11/lib/X11/fonts/TrueType/indic-fonts-core/lohit_hi.ttf
-FontNameAlias	tt_hindiR	TrueType	/usr/X11/lib/X11/fonts/TrueType/indic-fonts-core/lohit_hi.ttf
+FontNameAlias	tt_ctlhindiR	TrueType	/usr/X11/lib/X11/fonts/TrueType/lohit/Lohit-Hindi.ttf
+FontNameAlias	tt_hindiR	TrueType	/usr/X11/lib/X11/fonts/TrueType/lohit/Lohit-Hindi.ttf
 
 #
 # map*group entries have to be specified before mapucs4 and cnvucs4 entries.
