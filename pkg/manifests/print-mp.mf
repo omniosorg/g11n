@@ -20,7 +20,7 @@
 #
 
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2011, Oracle and/or its affiliates. All rights reserved.
 #
 
 set name=pkg.fmri value=pkg:/print/mp@$(PKGVERS)
@@ -118,6 +118,7 @@ link path=usr/lib/lp/locale/az_AZ.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/be_BY.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/bg_BG.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/bn_IN.UTF-8 target=./en_US.UTF-8
+link path=usr/lib/lp/locale/bs_BA.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/ca_ES.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/cs_CZ.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/cs_CZ.UTF-8@euro target=./en_US.UTF-8
@@ -226,5 +227,6 @@ link path=usr/lib/lp/locale/tr_TR.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/uk_UA.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/vi_VN.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/zh_CN.UTF-8 target=./en_US.UTF-8
+link path=usr/lib/lp/locale/zh_HK.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/zh_SG.UTF-8 target=./en_US.UTF-8
 link path=usr/lib/lp/locale/zh_TW.UTF-8 target=./en_US.UTF-8
