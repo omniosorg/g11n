@@ -171,7 +171,10 @@ license copyright.unicode license=copyright.unicode
 link path=usr/lib/iconv/$(ARCH64)/646%5601.so target=./646%CODESET.so
 link path=usr/lib/iconv/$(ARCH64)/646%BIG5.so target=./646%CODESET.so
 link path=usr/lib/iconv/$(ARCH64)/646%GBK.so target=./646%CODESET.so
+link path=usr/lib/iconv/$(ARCH64)/646%PCK.so target=./646%CODESET.so
+link path=usr/lib/iconv/$(ARCH64)/646%SJIS.so target=./646%CODESET.so
 link path=usr/lib/iconv/$(ARCH64)/646%cns11643.so target=./646%CODESET.so
+link path=usr/lib/iconv/$(ARCH64)/646%eucJP.so target=./646%CODESET.so
 link path=usr/lib/iconv/$(ARCH64)/646%gb2312.so target=./646%CODESET.so
 link path=usr/lib/iconv/$(ARCH64)/HZ-GB-2312%zh_CN.gbk.so target=./HZ-GB-2312%zh_CN.euc.so
 link path=usr/lib/iconv/$(ARCH64)/ISO-2022-JP%SJIS.so target=./ISO-2022-JP%PCK.so
