@@ -7,20 +7,19 @@ export LC_ALL=C
 date
 
 MERGEPY=./merge.py
-if [ -z "$REPOTOP" ]
+
+
+if [ -z "$PKGDEST" ]
 then
-	if [ -z "$PKGDEST" ]
-	then
-		REPOTOP="`cd ../pkgdest; pwd`"
-	else
-		REPOTOP="$PKGDEST/.."
-	fi
+	REPOTOP="`cd ../pkgdest; pwd`"
+else
+	REPOTOP="$PKGDEST/.."
 fi
 
-if [ -z "$REPOTMP" ]
-then
-	REPOTMP=$REPOTOP
-fi
+[ ! -z "$REPOTOP_I386" ]	|| REPOTOP_I386=$REPOTOP/i386
+[ ! -z "$REPOTOP_SPARC" ]	|| REPOTOP_SPARC=$REPOTOP/sparc
+[ ! -z "$REPOTOP_MERGED" ]	|| REPOTOP_MERGED=$REPOTOP/merged
+[ ! -z "$REPOTOP_TMP" ]		|| REPOTOP_TMP=$REPOTOP
 
 merge_one_pair()
 {
@@ -28,11 +27,11 @@ merge_one_pair()
 	publisher=$2
 	pkgs="$3"
 
-	srs="-v sparc,file://$REPOTOP/sparc/$reponame"
-	srx="-v i386,file://$REPOTOP/i386/$reponame"
-	drd="$REPOTOP/merged/$reponame"
+	srs="-v sparc,file://$REPOTOP_SPARC/$reponame"
+	srx="-v i386,file://$REPOTOP_I386/$reponame"
+	drd="$REPOTOP_MERGED/$reponame"
 	dr="file://$drd"
-	tmpd="$REPOTMP/mergearch.$$.$reponame"
+	tmpd="$REPOTOP_TMP/mergearch.$$.$reponame"
 
 	rm -rf $tmpd
 	$MERGEPY -r -d $tmpd $srs $srx arch $pkgs
