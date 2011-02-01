@@ -21,6 +21,7 @@
 #
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
+# Copyright 2011 Every City Ltd. All rights reserved.
 #
 # ident	"@(#)Makefile.master	1.0	06/03/07 SMI"
 #
@@ -128,10 +129,10 @@ RSYNC=		/usr/bin/rsync
 UNPACKARCHIVE=	$(SRC)/tools/unpack-archive
 
 # SUNWwgetu
-WGET=		/usr/sfw/bin/wget
+WGET=		/usr/bin/wget
 
 # SUNWxorg-server
-XKBCOMP=	/usr/X11/lib/X11/xkb/xkbcomp
+XKBCOMP=	/usr/bin/xkbcomp
 
 # locale_cldr
 GNU_PATCH=	/usr/bin/gpatch
