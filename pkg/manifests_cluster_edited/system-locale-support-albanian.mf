@@ -23,17 +23,10 @@
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/support/catalan@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=pkg.fmri value=pkg:/system/locale/support/albanian@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
 set name=info.classification value=org.opensolaris.category.2008:System/Localizations
 depend fmri=gnome/documentation/locale/extra type=require
-depend fmri=gnome/locale/extra type=require
-depend fmri=library/myspell/dictionary/extra type=require
-depend fmri=mail/thunderbird/locale/extra type=require
-depend fmri=system/desktop/locale/extra type=require
-depend fmri=system/locale/ca type=require
-depend fmri=system/locale/ca-extra type=require
-depend fmri=system/locale/support/common type=require
-depend fmri=system/manual/locale/ca type=require
-depend fmri=web/browser/firefox/locale/extra type=require
-set name=pkg.summary value="Language Support cluster - Catalan"
-set name=pkg.description value="Language Support cluster - Catalan"
+depend fmri=locale/sq type=require
+depend fmri=locale/sq-extra type=require
+set name=pkg.summary value="Language Support cluster - Albanian"
+set name=pkg.description value="Language Support cluster - Albanian"

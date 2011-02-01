@@ -23,11 +23,9 @@
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/support/azerbaijani@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=pkg.fmri value=pkg:/system/locale/support/afrikaans@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
 set name=info.classification value=org.opensolaris.category.2008:System/Localizations
-depend fmri=gnome/locale/rtl type=require
-depend fmri=system/desktop/locale/rtl type=require
-depend fmri=system/locale/az type=require
-depend fmri=system/locale/support/common type=require
-set name=pkg.summary value="Language Support cluster - Azerbaijani"
-set name=pkg.description value="Language Support cluster - Azerbaijani"
+depend fmri=gnome/locale/extra type=require
+depend fmri=locale/af type=require
+set name=pkg.summary value="Language Support cluster - Afrikaans"
+set name=pkg.description value="Language Support cluster - Afrikaans"
