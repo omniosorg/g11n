@@ -23,9 +23,9 @@
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/ja@$(PKGVERS)
-set name=info.classification value=org.opensolaris.category.2008:System/Localizations
-depend fmri=system/locale type=require
+set name=pkg.fmri value=pkg:/locale/ja@$(PKGVERS)
+set name=info.classification value=org.opensolaris.category.2008:Localizations
+depend fmri=locale type=require
 set name=pkg.summary value="Japanese language support"
 set name=pkg.description value="Japanese language support"
 legacy pkg=SUNWlang-ja category=system,l10nja \
