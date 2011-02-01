@@ -63,7 +63,7 @@ $(ROOT_DIR) $(ROOT_DIR64) $(MACH64): FRC
 	/usr/bin/test -d $@ || $(INSDIR) $@
 
 $(ALL_SOS): $(MACH64) euro.h euro.c tbl.h
-	TABLE=`echo $@ | $(TR) -d "-" "" | /usr/bin/cut -d. -f1` ; \
+	TABLE=`echo $@ | $(TR) -d "-" | /usr/bin/cut -d. -f1` ; \
 	$(CC) $(CFLAGS) -DT_$$TABLE euro.c -c -o $@.o ; \
 	$(CC) $(CFLAGS64) -DT_$$TABLE euro.c -c -o $(MACH64)/$@.o
 	$(LD) $(LDFLAGS) -o $@ $@.o $(LDLIBS)
