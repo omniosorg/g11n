@@ -33,7 +33,7 @@ MACH64:sh = isainfo -k
 #
 
 # Base directory where compilers are located.
-SPRO_VROOT=             /opt/SUNWspro
+SPRO_VROOT=             /opt/sunstudio12.1
 
 # List of all our locales - if you need to add/remove any, do it here
 
