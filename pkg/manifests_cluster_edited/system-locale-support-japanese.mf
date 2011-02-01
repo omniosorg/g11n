@@ -38,9 +38,7 @@ depend fmri=system/font/truetype/ipafont-mincho type=require
 depend fmri=system/input-method/iiim/anthy type=require
 depend fmri=system/input-method/library/libanthy type=require
 depend fmri=system/library/iconv/extra type=require
-depend fmri=system/locale/ja type=require
-depend fmri=system/locale/ja-extra type=require
-depend fmri=system/locale/support/common type=require
+depend fmri=locale/ja type=require
 depend fmri=system/manual/locale/ja type=require
 depend fmri=system/osnet/locale/ja type=require
 depend fmri=text/doctools/ja type=require

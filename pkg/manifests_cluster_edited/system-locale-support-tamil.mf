@@ -23,14 +23,10 @@
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/support/thai@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=pkg.fmri value=pkg:/system/locale/support/tamil@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
 set name=info.classification value=org.opensolaris.category.2008:System/Localizations
-depend fmri=gnome/documentation/locale/extra type=require
 depend fmri=gnome/locale/extra type=require
-depend fmri=system/font/truetype/thai-scalable type=require
-depend fmri=system/input-method/iiim/thaile type=require
-depend fmri=system/locale/support/common type=require
-depend fmri=system/locale/th type=require
-depend fmri=system/locale/th-extra type=require
-set name=pkg.summary value="Language Support cluster - Thai"
-set name=pkg.description value="Language Support cluster - Thai"
+depend fmri=system/desktop/locale/extra type=require
+depend fmri=locale/ta type=require
+set name=pkg.summary value="Language Support cluster - Tamil"
+set name=pkg.description value="Language Support cluster - Tamil"

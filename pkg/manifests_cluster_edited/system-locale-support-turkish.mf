@@ -23,13 +23,14 @@
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/support/latvian@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=pkg.fmri value=pkg:/system/locale/support/turkish@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
 set name=info.classification value=org.opensolaris.category.2008:System/Localizations
 depend fmri=gnome/documentation/locale/extra type=require
 depend fmri=gnome/locale/extra type=require
+depend fmri=mail/thunderbird/locale/extra type=require
 depend fmri=system/desktop/locale/extra type=require
-depend fmri=system/locale/lv type=require
-depend fmri=system/locale/lv-extra type=require
-depend fmri=system/locale/support/common type=require
-set name=pkg.summary value="Language Support cluster - Latvian"
-set name=pkg.description value="Language Support cluster - Latvian"
+depend fmri=locale/tr type=require
+depend fmri=locale/tr-extra type=require
+depend fmri=web/browser/firefox/locale/extra type=require
+set name=pkg.summary value="Language Support cluster - Turkish"
+set name=pkg.description value="Language Support cluster - Turkish"

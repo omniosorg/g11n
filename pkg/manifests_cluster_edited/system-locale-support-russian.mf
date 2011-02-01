@@ -23,16 +23,18 @@
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/support/polish@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=pkg.fmri value=pkg:/system/locale/support/russian@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
 set name=info.classification value=org.opensolaris.category.2008:System/Localizations
-depend fmri=gnome/documentation/locale/pl type=require
-depend fmri=gnome/locale/pl type=require
-depend fmri=library/myspell/dictionary/pl type=require
-depend fmri=mail/thunderbird/locale/pl type=require
-depend fmri=system/desktop/locale/pl type=require
-depend fmri=system/locale/pl type=require
-depend fmri=system/locale/pl-extra type=require
-depend fmri=system/locale/support/common type=require
-depend fmri=web/browser/firefox/locale/pl_pl type=require
-set name=pkg.summary value="Language Support cluster - Polish"
-set name=pkg.description value="Language Support cluster - Polish"
+depend fmri=diagnostic/ddu/locale type=require
+depend fmri=gnome/locale/ru type=require
+depend fmri=gnome/trusted/locale/ru type=require
+depend fmri=image/editor/gimp/locale/ru type=require
+depend fmri=library/myspell/dictionary/ru type=require
+depend fmri=mail/thunderbird/locale/ru type=require
+depend fmri=release/getting-started/locale/ru type=require
+depend fmri=system/desktop/locale/ru type=require
+depend fmri=locale/ru type=require
+depend fmri=locale/ru-extra type=require
+depend fmri=web/browser/firefox/locale/ru_ru type=require
+set name=pkg.summary value="Language Support cluster - Russian"
+set name=pkg.description value="Language Support cluster - Russian"

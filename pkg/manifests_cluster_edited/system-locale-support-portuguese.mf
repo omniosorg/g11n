@@ -29,9 +29,8 @@ depend fmri=gnome/documentation/locale/extra type=require
 depend fmri=gnome/locale/extra type=require
 depend fmri=mail/thunderbird/locale/extra type=require
 depend fmri=system/desktop/locale/extra type=require
-depend fmri=system/locale/pt type=require
-depend fmri=system/locale/pt-extra type=require
-depend fmri=system/locale/support/common type=require
+depend fmri=locale/pt type=require
+depend fmri=locale/pt-extra type=require
 depend fmri=web/browser/firefox/locale/extra type=require
 set name=pkg.summary value="Language Support cluster - Portugese"
 set name=pkg.description value="Language Support cluster - Portugese"
