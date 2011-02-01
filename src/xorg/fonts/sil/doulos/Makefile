@@ -22,14 +22,15 @@
 #
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
+# Copyright 2011 Every City Ltd. All rights reserved.
 #
 
 include $(SRC)/Makefile.master
 
 PROJECT		= ttf-sil-doulos
 VER 		= $(PROJECT)-4.106
-TARBALL		= $(PROJECT)_4.106.orig.tar.gz
-SOURCE_URL	= http://ftp.debian.org/debian/pool/main/t/$(PROJECT)/$(TARBALL)
+TARBALL		= $(PROJECT)_4.106.orig.tar.bz2
+SOURCE_URL	= http://archive.ubuntu.com/ubuntu/pool/universe/t/$(PROJECT)/$(TARBALL)
 
 FONTS = DoulosSILR.ttf
 

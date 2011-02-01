@@ -22,6 +22,7 @@
 #
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
+# Copyright 2011 Every City Ltd. All rights reserved.
 #
 
 include $(SRC)/Makefile.master
@@ -42,7 +43,7 @@ FILES =	h2drrm.ttf \
 install: all
 	$(INSDIR) -m 775 -u root -g bin $(TARGETFONTDIR)
 	for f in $(FILES); do \
-		$(INS) $(TARGETFONTDIR) -m 444 -u root -g bin $$f ; \
+		$(INS) $(TARGETFONTDIR) -m 644 -u root -g bin $$f ; \
 	done
 
 all: $(FILES)

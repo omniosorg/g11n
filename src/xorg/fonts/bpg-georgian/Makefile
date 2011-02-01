@@ -22,6 +22,7 @@
 #
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
+# Copyright 2011 Every City Ltd. All rights reserved.
 #
 
 include $(SRC)/Makefile.master
@@ -30,7 +31,7 @@ PROJECT		= bpg-georgian
 VER 		= $(PROJECT)
 TARBALL		= BPG_Fonts.zip
 WGET_OPT	= -O $(SOURCE_ARCHIVES)/$(TARBALL)
-SOURCE_URL	= http://bpg-fonts.googlegroups.com/web/BPG_GPL%26GNU_Fonts.zip?gda=8QXdOEkAAAAVNtGpDzO2EW3rYrpy6g3Pu6-IwYn2wal95b5URPfx_aRUKIkfWgVA11iZN1A9Xo3Z9hDUC4qB4Xbq3pl19fs-hAioEG5q2hncZWbpWmJ7IQ
+SOURCE_URL	= http://dlc.openindiana.org/gpl/sol-11-exp-201011-GPLSource/l10n/src/g11n/downloads/BPG_Fonts.zip
 
 ROOT_FONT_DIR 	= $(FONTROOT)/$(PROJECT)
 ROOT_DOC_DIR 	= $(FILEROOT)/usr/share/doc/ttf-$(PROJECT)

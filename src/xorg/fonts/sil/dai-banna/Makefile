@@ -22,6 +22,7 @@
 #
 # Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
 # Use is subject to license terms.
+# Copyright 2011 Every City Ltd. All rights reserved.
 #
 
 include $(SRC)/Makefile.master
@@ -29,7 +30,7 @@ include $(SRC)/Makefile.master
 PROJECT		= ttf-sil-dai-banna
 VER 		= $(PROJECT)-2.1
 TARBALL		= $(PROJECT)_2.1.orig.tar.gz
-SOURCE_URL	= http://ftp.debian.org/debian/pool/main/t/$(PROJECT)/$(TARBALL)
+SOURCE_URL	= http://archive.ubuntu.com/ubuntu/pool/universe/t/$(PROJECT)/$(TARBALL)
 
 FONTS =	DBSILBB.ttf \
 	DBSILBC.ttf \
