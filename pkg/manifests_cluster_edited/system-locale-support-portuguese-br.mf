@@ -21,16 +21,22 @@
 
 #
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright 2011 EveryCity Ltd. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/support/serbian@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=pkg.fmri value=pkg:/system/locale/support/portuguese-br@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
 set name=info.classification value=org.opensolaris.category.2008:System/Localizations
-depend fmri=gnome/documentation/locale/extra type=require
-depend fmri=gnome/locale/extra type=require
-depend fmri=system/desktop/locale/extra type=require
-depend fmri=system/locale/sr type=require
-depend fmri=system/locale/sr-extra type=require
-depend fmri=system/locale/sr_rs type=require
+depend fmri=diagnostic/ddu/locale type=require
+depend fmri=gnome/documentation/locale/pt_br type=require
+depend fmri=gnome/locale/pt_br type=require
+depend fmri=gnome/trusted/locale/pt_br type=require
+depend fmri=library/myspell/dictionary/pt_br type=require
+depend fmri=mail/thunderbird/locale/pt_br type=require
+depend fmri=release/getting-started/locale/pt_br type=require
+depend fmri=system/desktop/locale/pt_br type=require
+depend fmri=locale/pt type=require
+depend fmri=locale/pt-extra type=require
 depend fmri=system/locale/support/common type=require
-set name=pkg.summary value="Language Support cluster - Serbian"
-set name=pkg.description value="Language Support cluster - Serbian"
+depend fmri=web/browser/firefox/locale/pt_br type=require
+set name=pkg.summary value="Language Support cluster - Portugese (Brazil)"
+set name=pkg.description value="Language Support cluster - Portugese (Brazil)"

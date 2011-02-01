@@ -21,23 +21,28 @@
 
 #
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright 2011 EveryCity Ltd. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/support/chinese-sg@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
+set name=pkg.fmri value=pkg:/system/locale/support/chinese-hk@0.1,$(PKGVERS_BUILTON)-$(PKGVERS_BRANCH)
 set name=info.classification value=org.opensolaris.category.2008:System/Localizations
 depend fmri=diagnostic/ddu/locale type=require
-depend fmri=gnome/locale/zh_cn type=require
-depend fmri=network/dhcp/dhcpmgr/locale/zh_cn type=require
-depend fmri=system/desktop/stardict type=require
+depend fmri=gnome/documentation/locale/zh_hk type=require
+depend fmri=gnome/locale/zh_hk type=require
+depend fmri=gnome/trusted/locale/zh_hk type=require
+depend fmri=mail/thunderbird/locale/zh_tw type=require
+depend fmri=network/dhcp/dhcpmgr/locale/zh_hk_tw type=require
+depend fmri=release/getting-started/locale/zh_hk type=require
+depend fmri=system/desktop/locale/zh_hk type=require
 depend fmri=system/font/truetype/arphic-ukai type=require
 depend fmri=system/font/truetype/arphic-uming type=require
 depend fmri=system/font/truetype/wqy-zenhei type=require
-depend fmri=system/input-method/iiim/cle-core type=require
-depend fmri=system/input-method/iiim/cle-open type=require
-depend fmri=system/input-method/iiim/cle-sunpinyin type=require
+depend fmri=system/input-method/iiim/hkle-core type=require
+depend fmri=system/input-method/iiim/hkle-open type=require
 depend fmri=system/library/iconv/extra type=require
 depend fmri=system/locale/support/common type=require
-depend fmri=system/locale/zh_sg type=require
-depend fmri=system/osnet/locale/zh type=require
-set name=pkg.summary value="Language Support cluster - Chinese (Simplified; Singapore)"
-set name=pkg.description value="Language Support cluster - Chinese (Simplified; Singapore)"
+depend fmri=locale/zh_hk type=require
+depend fmri=system/osnet/locale/zh_tw type=require
+depend fmri=web/browser/firefox/locale/zh_tw type=require
+set name=pkg.summary value="Language Support cluster - Chinese (Traditional; Hong Kong)"
+set name=pkg.description value="Language Support cluster - Chinese (Traditional; Hong Kong)"
