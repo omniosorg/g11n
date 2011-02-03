@@ -31,7 +31,10 @@ x d88d011bc7275a9db998b93356b7f1b329841061 usr/lib/lp/locale/en_US.UTF-8/mp/xwc2
 x dc920a1f39f660d8e37c37df0702836971da9305 usr/lib/lp/locale/en_US.UTF-8/mp/xwccsi.so
 x 8814c146a6348dc5a364f87456ad67955bd6999b usr/lib/lp/locale/en_US.UTF-8/mp/xwceuc.so
 
-exit 0
+# hash from pkg://opensolaris.org/system/library/iconv/utf-8/manual@0.5.11,5.11-0.134.0.2:20100529T005755Z
+
+ARCH=all
+x 2b873c374c74a126c0c4c609b8ee2c7a3c70ddc3 usr/share/man/man5/iconv_en_US.UTF-8.5
 
 # hashes from pkg://opensolaris.org/system/manual/locale/ja@0.5.11,5.11-0.134.0.2:20100529T011856Z
 
@@ -521,13 +524,8 @@ x ebe8fd0c9263b36d97d42c829adca4e92792f203 usr/share/lib/tmac/tz.map.ja_JP.PCK
 x ebe8fd0c9263b36d97d42c829adca4e92792f203 usr/share/lib/tmac/tz.map.ja_JP.PCK
 x a1bfedfa53aa1a8ae7e317d0bacae0f386ea51f9 usr/share/lib/tmac/tz.map.ja_JP.UTF-8
 
-
 exit 0
 
-# hash from pkg://opensolaris.org/system/library/iconv/utf-8/manual@0.5.11,5.11-0.134.0.2:20100529T005755Z
-
-ARCH=all
-x 2b873c374c74a126c0c4c609b8ee2c7a3c70ddc3 usr/share/man/man5/iconv_en_US.UTF-8.5
 
 # hashes from pkg://opensolaris.org/system/locale/ko-extra@0.5.11,5.11-0.134.0.2:20100529T010628Z
 
