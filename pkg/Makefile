@@ -703,7 +703,14 @@ $(PKGLISTS): $(PROC_PKGS)
 		} \
 		exit retcode; \
 	}' `find $(PDIR) -type l -a \( $(PKGS:%=-name %.metadata.$$s.$$r -o) \
-		-name NOSUCHFILE \)` >> $(@)
+		-name NOSUCHFILE \)` >> $(@); \
+	cat ../../g11n-spec/build.`uname -p`/repo.spec/pkg/*/* | \
+	grep name=pkg.name | sed s%.*value=%depend\ fmri=pkg:/% | \
+	sed s%$$%@$(PKGVERS)\ type=$$\(PKGDEP_TYPE\)% >> $(@); \
+	cat ../../inputmethod/specs/build.`uname -p`/repo.imspec/pkg/*/* | \
+	grep name=pkg.name | sed s%.*value=%depend\ fmri=pkg:/% | \
+	sed s%$$%@$(PKGVERS)\ type=$$\(PKGDEP_TYPE\)% >> $(@)
+
 
 #
 # rules to validate proto area against manifests, check for safe
