@@ -44,7 +44,6 @@ depend fmri=system/input-method/library/libchewing type=require
 depend fmri=system/library/iconv/extra type=require
 depend fmri=system/locale/support/common type=require
 depend fmri=locale/zh_tw type=require
-depend fmri=locale/zh_tw-extra type=require
 depend fmri=system/osnet/locale/zh_tw type=require
 depend fmri=web/browser/firefox/locale/zh_tw type=require
 set name=pkg.summary value="Language Support cluster - Chinese (Traditional; Taiwan)"
