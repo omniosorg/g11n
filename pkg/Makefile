@@ -703,7 +703,7 @@ $(PKGLISTS): $(PROC_PKGS)
 	grep name=pkg.fmri | sed s%.*pkg://l10n-nightly%% | \
 	sed s%:.*%\ type=$$\(PKGDEP_TYPE\)% | sed s%^%depend\ fmri=pkg:% >> $(@); \
 	cat ../../inputmethod/specs/build.`uname -p`/repo.imspec/pkg/*/* | \
-	grep name=pkg.fmri | grep -v value=SUNW.* | grep -v value=dummy/.* | \
+	grep name=pkg.fmri | grep -v value=.*/SUNW.* | grep -v value=.*/dummy/.* | \
 	sed s%.*pkg://l10n-nightly%% | sed s%:.*%\ type=$$\(PKGDEP_TYPE\)% | \
 	sed s%^%depend\ fmri=pkg:% >> $(@)
 
