@@ -700,12 +700,12 @@ $(PKGLISTS): $(PROC_PKGS)
 	}' `find $(PDIR) -type l -a \( $(PKGS:%=-name %.metadata.$$s.$$r -o) \
 		-name NOSUCHFILE \)` >> $(@); \
 	cat ../../g11n-spec/build.`uname -p`/repo.spec/pkg/*/* | \
-	grep name=pkg.name | sed s%.*value=%depend\ fmri=pkg:/% | \
-	sed s%$$%@$(PKGVERS)\ type=$$\(PKGDEP_TYPE\)% >> $(@); \
+	grep name=pkg.fmri | sed s%.*pkg://l10n-nightly%% | \
+	sed s%:.*%\ type=$$\(PKGDEP_TYPE\)% | sed s%^%depend\ fmri=pkg:% >> $(@); \
 	cat ../../inputmethod/specs/build.`uname -p`/repo.imspec/pkg/*/* | \
-	grep name=pkg.name | grep -v value=SUNW.* | grep -v value=dummy/.* | \
-	sed s%.*value=%depend\ fmri=pkg:/% | \
-	sed s%$$%@$(PKGVERS)\ type=$$\(PKGDEP_TYPE\)% >> $(@)
+	grep name=pkg.fmri | grep -v value=SUNW.* | grep -v value=dummy/.* | \
+	sed s%.*pkg://l10n-nightly%% | sed s%:.*%\ type=$$\(PKGDEP_TYPE\)% | \
+	sed s%^%depend\ fmri=pkg:% >> $(@)
 
 
 #
