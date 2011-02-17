@@ -15,7 +15,7 @@ x() {
 	fi
 }
 
-# file hashes from pkg://opensolaris.org/print/mp@0.5.11,5.11-0.134.0.2:20100529T002110Z
+# hashes from pkg://opensolaris.org/print/mp@0.5.11,5.11-0.134.0.2:20100529T002110Z
 
 ARCH=i386
 x 3290fd7f98b4d1c505794cd743bcfe56a38864ad usr/lib/lp/locale/en_US.UTF-8/mp/xugb18030.so
@@ -31,15 +31,16 @@ x d88d011bc7275a9db998b93356b7f1b329841061 usr/lib/lp/locale/en_US.UTF-8/mp/xwc2
 x dc920a1f39f660d8e37c37df0702836971da9305 usr/lib/lp/locale/en_US.UTF-8/mp/xwccsi.so
 x 8814c146a6348dc5a364f87456ad67955bd6999b usr/lib/lp/locale/en_US.UTF-8/mp/xwceuc.so
 
+
 # hash from pkg://opensolaris.org/system/library/iconv/utf-8/manual@0.5.11,5.11-0.134.0.2:20100529T005755Z
 
 ARCH=all
 x 2b873c374c74a126c0c4c609b8ee2c7a3c70ddc3 usr/share/man/man5/iconv_en_US.UTF-8.5
 
+
 # hashes from pkg://opensolaris.org/system/manual/locale/ja@0.5.11,5.11-0.134.0.2:20100529T011856Z
 
 ARCH=all
-
 
 x 7b4f43404a684ff7d635dc1f39b9d8a9184fbd9e usr/share/man/ja_JP.UTF-8/man1/acctcom.1
 x b5495d95f1976c457885501e7efbc01789bcf188 usr/share/man/ja_JP.UTF-8/man1/adb.1
@@ -498,6 +499,7 @@ x 645160ff22c4e7da051e10a0ecd0bd7e16d95c72 usr/share/man/ja_JP.UTF-8/man9f/scsi_
 x 8cca34475b38faf81cca477241d3656f6e068a2e usr/share/man/ja_JP.UTF-8/man9f/scsi_hba_attach.9f
 x 8cca34475b38faf81cca477241d3656f6e068a2e usr/share/man/ja_JP.UTF-8/man9f/scsi_hba_detach.9f
 
+
 # hashes from pkg://opensolaris.org/text/doctools/ja@0.5.11,5.11-0.134.0.2:20100529T012303Z
 
 ARCH=all
@@ -523,315 +525,3 @@ x 53f9f80dd1022adef428cff56eeb608bf95c210d usr/share/lib/tmac/tz.map.ja
 x ebe8fd0c9263b36d97d42c829adca4e92792f203 usr/share/lib/tmac/tz.map.ja_JP.PCK
 x ebe8fd0c9263b36d97d42c829adca4e92792f203 usr/share/lib/tmac/tz.map.ja_JP.PCK
 x a1bfedfa53aa1a8ae7e317d0bacae0f386ea51f9 usr/share/lib/tmac/tz.map.ja_JP.UTF-8
-
-exit 0
-
-
-# hashes from pkg://opensolaris.org/system/locale/ko-extra@0.5.11,5.11-0.134.0.2:20100529T010628Z
-
-ARCH=all
-
-x 542f93fdd553b601f6a772395ac2986b5356aade usr/include/ko/xctype.h
-x 8eae3c2242fcba4cbeed6c213683f20b5a2c3f8f usr/lib/mle/ko.UTF-8/keybind.dat
-x 1eff91064ba131092ae229cc72b556429950b750 usr/lib/mle/ko.UTF-8/syshjd
-x 1c591c9d28a8bfbb28e1909896c9abc55706e3de usr/lib/mle/ko/keybind.dat
-x ecb39d690e092405b3994ea97165977066b5a2b5 usr/lib/mle/ko/syshjd
-
-ARCH=i386
-
-x 96ee7b8d9771210098efb8a1ab4db13c4bad6eac usr/kernel/strmod/amd64/kpack
-x 24c79331ccbb063fcb70ce02cd5b701c61bdac30 usr/lib/amd64/libkle.a
-x e03a8711a8677175bb38aea5fff49d2b2e6746ff usr/lib/amd64/libkle.so.1
-x fb9dbbc138f7704e6fb4cb6b87aeb0c55357ad3c usr/lib/libkle.a
-x d6e2c8a09374dca03e02acd6f267bef27823d140 usr/lib/libkle.so.1
-x d926425b1250f994cb5d82557cd74bf1432a3057 usr/lib/lp/locale/ko.UTF-8/mp/xufallback_ksc.so
-x 57e99bbbf7a5d2305d844d5234fd4cfbfda97073 usr/lib/lp/locale/ko/mp/xwcksc5601_1987_udc.so
-x 3e0df5a18b5563d3f696b2c95658bc6919201f0c usr/lib/lp/locale/ko/mp/xwcksc5601_1987_unicode.so
-x a925effa77de456801a8caab59b557e9b6bc20e3 usr/lib/mle/ko.UTF-8/libmle.a
-x e42efaac1a42149c8bf13270f64777fe90bbdc1f usr/lib/mle/ko.UTF-8/mle.so
-x 48c43f4825e38055463dd19e97936c8ded0c1362 usr/lib/mle/ko/libmle.a
-x 3f2c9f595330ece870bdc0f8e1b3d813bb1127ac usr/lib/mle/ko/mle.so
-
-ARCH=sparc
-
-x d93d7066035e092ba524cd135e140517ef104947 usr/lib/libkle.a
-x 69048e83916db77452a90321be31d0bf0fa041af usr/lib/libkle.so.1
-x 108f3c198339621fe46d0db48f0db0380aa6b883 usr/lib/lp/locale/ko.UTF-8/mp/xufallback_ksc.so
-x 69958e178041e87461655f2ecb57f2c13929090a usr/lib/lp/locale/ko/mp/xwcksc5601_1987_udc.so
-x 5bc41affe5d1ec298306672bb2e1457dab8d954f usr/lib/lp/locale/ko/mp/xwcksc5601_1987_unicode.so
-x fbbe7ecdb68b39b1328c55902e0ef2b408cc015c usr/lib/mle/ko.UTF-8/libmle.a
-x af03130df5894cf6c0e20e9593bc993719eab0e7 usr/lib/mle/ko.UTF-8/mle.so
-x f6fcd46a80d2d40b802b84a167f2aa5a41fac7be usr/lib/mle/ko/libmle.a
-x eec1302fcf9afa6d02872b4412e024881778c31d usr/lib/mle/ko/mle.so
-
-# hashes from pkg://opensolaris.org/system/locale/th-extra@0.5.11,5.11-0.134.0.2:20100529T011129Z
-
-ARCH=all
-
-x 8f0d3a968b0c43f3581de513ab33d8f0b1a07871 usr/lib/lp/files/TAC11x10.COD
-x 095b3a58ba3dd0a84a3565652e5e01280a16ac9f usr/lib/lp/files/TAC11x11.COD
-x c20900d34f7ecaba38c869be2f91ddb0aa293a55 usr/lib/lp/files/TAC11x12.COD
-x 04c864b13d4d6a1000a56e8db0019e73a045f999 usr/lib/lp/files/TAC11x13.COD
-x 4afcbc16e2b1d5808c8513b6385b7014a70c29f1 usr/lib/lp/files/TAC11x14.COD
-x a902bcb8a3ab3543cd9405a5293f6849f44e2924 usr/lib/lp/files/TAC11x15.COD
-x 491c8cdca50bfe1e06ec88ce3e1fec874f9d7fb7 usr/lib/lp/files/TAC11x16.COD
-x 9b5244a4f4c870075695e17696b0e533a3c27e1a usr/lib/lp/files/TAC11x17.COD
-x a7f7bcf7dd3069827d0f444e540218d63dce7424 usr/lib/lp/files/TAC11x18.COD
-x 6653ad7808d95b5133e3b7853b175fa1830af4e0 usr/lib/lp/files/TAC11x19.COD
-x 6e1ea37f6780ccbd0cfe07bd1340f4a88d14f233 usr/lib/lp/files/TAC11x20.COD
-x a90858742a745ed419df490110ef0b8efb01431b usr/lib/lp/files/TAC11x21.COD
-x 4694036217903f8bdd16447eabf0e79d7a95a354 usr/lib/lp/files/TAC11x22.COD
-x bf9a7ed93ff98d0378e96193aa1b98d68da26a74 usr/lib/lp/files/TAC11x40.COD
-x a8a1cf5de5d0a0b289e2b46bdb80cd77fb9169ef usr/lib/lp/files/TAC11x41.COD
-x db817f1cdcea92662389b517fa4247a51f47c6e4 usr/lib/lp/files/TAC11x42.COD
-x b776a0849979df0ccc33bbb70044f27881e5575e usr/lib/lp/files/TAC11x43.COD
-x 0e6242413f2e2b6865e24da331ee43df7d6acb91 usr/lib/lp/files/TAC11xAA.COD
-
-ARCH=i386
-
-x 69b2963705fd28fb4f4b56f4c15005cc870f2244 usr/lib/lp/locale/th_TH/mp/ctlthai.so
-x 6f347ef70446f346ee59cf04512256c817689a39 usr/lib/lp/locale/th_TH/thaifilter
-x f0414cbd6889deb4d59ed960c3c0427b529aafea usr/lib/locale/th_TH.TIS620/LC_CTYPE/thaidic.dat
-#x 3774734f3a4117378afa79709bec759be390734f usr/lib/locale/th_TH/LC_CTYPE/amd64/textboundary.so.1
-#x 16a101c778d00f1dd9418e2ffedba513f150e1d6 usr/lib/locale/th_TH/LC_CTYPE/textboundary.so.1
-#x 6240abeadb328628bb2ada9afd9873add9a646ab usr/lib/locale/th_TH/LC_CTYPE/amd64/wdresolve.so
-#x a0024124fb6fa036d3937d4462a2f8c7f9855301 usr/lib/locale/th_TH/LC_CTYPE/wdresolve.so
-x 3774734f3a4117378afa79709bec759be390734f usr/lib/locale/th_TH.TIS620/LC_CTYPE/amd64/textboundary.so.1
-x 16a101c778d00f1dd9418e2ffedba513f150e1d6 usr/lib/locale/th_TH.TIS620/LC_CTYPE/textboundary.so.1
-x 6240abeadb328628bb2ada9afd9873add9a646ab usr/lib/locale/th_TH.TIS620/LC_CTYPE/amd64/wdresolve.so
-x a0024124fb6fa036d3937d4462a2f8c7f9855301 usr/lib/locale/th_TH.TIS620/LC_CTYPE/wdresolve.so
-#x d22b548f417f40aa67390ba3f72d240d14490450 usr/lib/locale/th_TH/LO_LTYPE/amd64/th_TH.layout.so.1
-#x 00eb3f7c8b7632c28d4c945e54541777d59a047c usr/lib/locale/th_TH/LO_LTYPE/th_TH.layout.so.1
-x d22b548f417f40aa67390ba3f72d240d14490450 usr/lib/locale/th_TH.TIS620/LO_LTYPE/amd64/th_TH.TIS620.layout.so.1
-x 00eb3f7c8b7632c28d4c945e54541777d59a047c usr/lib/locale/th_TH.TIS620/LO_LTYPE/th_TH.TIS620.layout.so.1
-
-ARCH=sparc
-
-x 09af648e2f905b05cc8f23e9149c44b22088c1c4 usr/lib/lp/locale/th_TH/mp/ctlthai.so
-x 7dd63e6e2b44baa33fb5c5810f9a31f79bdf140f usr/lib/lp/locale/th_TH/thaifilter
-x 96d658a21654da38b75ee65beec6f8c94d714f91 usr/lib/locale/th_TH.TIS620/LC_CTYPE/thaidic.dat
-#x a0e7f470191c0b16e9653fd383ff1e815b8f2c2f usr/lib/locale/th_TH/LC_CTYPE/textboundary.so.1
-#x 4a384c8ab4ca5a9f9518c1a0dcecd78860b71085 usr/lib/locale/th_TH/LC_CTYPE/wdresolve.so
-x a0e7f470191c0b16e9653fd383ff1e815b8f2c2f usr/lib/locale/th_TH.TIS620/LC_CTYPE/textboundary.so.1
-x 4a384c8ab4ca5a9f9518c1a0dcecd78860b71085 usr/lib/locale/th_TH.TIS620/LC_CTYPE/wdresolve.so
-#x b714e999f330f27330e06bc8695778ce873732fd usr/lib/locale/th_TH/LO_LTYPE/sparcv9/th_TH.layout.so.1
-#x 14e7e1c03f981b148135dc83979567ce56c60a35 usr/lib/locale/th_TH/LO_LTYPE/th_TH.layout.so.1
-x b714e999f330f27330e06bc8695778ce873732fd usr/lib/locale/th_TH.TIS620/LO_LTYPE/sparcv9/th_TH.TIS620.layout.so.1
-x 14e7e1c03f981b148135dc83979567ce56c60a35 usr/lib/locale/th_TH.TIS620/LO_LTYPE/th_TH.TIS620.layout.so.1
-
-# hashes from pkg://opensolaris.org/system/locale/zh_cn-extra@0.5.11,5.11-0.134.0.2:20100529T011152Z
-
-ARCH=all
-
-x 0d6e19b8aa1cc758edea960a696bdedbc7f86659 usr/include/zh.GBK/xctype.h
-x 4979fa561b546f70573fcf21de030ff83a29fdee usr/include/zh/xctype.h
-
-# hash from pkg://opensolaris.org/system/locale/zh_cn@0.5.11,5.11-0.134.0.2:20100529T011149Z
-
-ARCH=all
-
-x 0d6e19b8aa1cc758edea960a696bdedbc7f86659 usr/include/zh.UTF-8/xctype.h
-
-# hashes from pkg://opensolaris.org/system/locale/zh_tw-extra@0.5.11,5.11-0.134.0.2:20100529T011227Z
-
-ARCH=all
-
-
-x fbdd8e673d3f649140d671f72a948660f59d6713 usr/include/zh_TW/xctype.h
-
-ARCH=i386
-
-x 6acfc3105ea7019c59b367629c5c2c24203926ad usr/kernel/strmod/amd64/b5euc
-x 27e68d4894582e708ef5843f5c48048217a693e9 usr/kernel/strmod/amd64/big5euc
-x e1cbafd42ff0c30be7da7c735d2fac6f45d99c40 usr/lib/amd64/libhle.a
-x 3253035565a7afd8af3aef8c57e01859482bac11 usr/lib/amd64/libhle.so.1
-
-ARCH=sparc
-
-x decb8eac3ea30bbcdd085ea700457d3193f087ee usr/kernel/strmod/sparcv9/b5euc
-x c8f0c09ac5c514d1c1d55b4f46b9d426e5a1bd5e usr/kernel/strmod/sparcv9/big5euc
-x 0174b9916f3cb9394dd3ffd2d2d012f9eef98978 usr/lib/sparcv9/libhle.a
-x e8adf7d82162ad9ba757153cda2bb52ef887d8d5 usr/lib/sparcv9/libhle.so.1
-
-
-
-
-
-
-
-
-# hashes from pkg://opensolaris.org/system/locale/af@0.5.11,5.11-0.134.0.2:20100529T005915Z
-
-ARCH=all
-
-
-x 8cb0564d7cef5e3bd5e2f21e6de204372e8c5289 usr/lib/locale/af_ZA.UTF-8/locale_description
-x 3a91477464d9e276b4451ddf863ee9cb9e506956 usr/lib/locale/af_ZA.UTF-8/locale_map
-
-ARCH=i386
-
-x 0ed7e7ab5247b58e7b2dd6e688fdc4b7ec411114 usr/lib/locale/af_ZA.UTF-8/af_ZA.UTF-8.so.3
-x 45656a9e0cc99e651036905af6d9600faad2ec89 usr/lib/locale/af_ZA.UTF-8/amd64/af_ZA.UTF-8.so.3
-
-ARCH=sparc
-
-x 3732638c5cfa9661a87e7f450b7a7a8f8425d1e5 usr/lib/locale/af_ZA.UTF-8/af_ZA.UTF-8.so.3
-x f0c50e6de36f5528389ef1a7dc9779df0847f766 usr/lib/locale/af_ZA.UTF-8/sparcv9/af_ZA.UTF-8.so.3
-
-# hashes from pkg://opensolaris.org/system/locale/ar_eg@0.5.11,5.11-0.134.0.2:20100529T010015Z
-
-ARCH=all
-
-x bd1ae0a081330d9edc8356c02edb5b3f54716baf usr/lib/locale/ar_EG.UTF-8/locale_description
-x c2446d80ce6381920e774eae75431a1550ead331 usr/lib/locale/ar_EG.UTF-8/locale_map
-
-ARCH=i386
-
-x 75f78e32eea369a01c4e8a57b4ddc5192f2acf0c usr/lib/locale/ar_EG.UTF-8/amd64/ar_EG.UTF-8.so.3
-x aef67be184ce853ce65b60f025b952ba477c4d8b usr/lib/locale/ar_EG.UTF-8/ar_EG.UTF-8.so.3
-
-ARCH=sparc
-
-x c4a69e765e4c32261481a13ccaaf5024c55b458b usr/lib/locale/ar_EG.UTF-8/ar_EG.UTF-8.so.3
-x 36ba1440c98d002d809b2ddf30361230ca4a370b usr/lib/locale/ar_EG.UTF-8/sparcv9/ar_EG.UTF-8.so.3
-
-# hashes from pkg://opensolaris.org/system/locale/ar-extra@0.5.11,5.11-0.134.0.2:20100529T010014Z
-
-ARCH=all
-
-x d20b80a045fd55e147c5906437b34b6ae4b2aa62 usr/lib/locale/ar_EG.ISO8859-6/locale_description
-x 3cfd925e66f112ee7229d15b0ddf3f2810b1507e usr/lib/locale/ar_EG.ISO8859-6/locale_map
-
-ARCH=i386
-
-x b7ea675c6798869c3cac63899f10b51c4952547d usr/lib/locale/ar_EG.ISO8859-6/amd64/ar_EG.ISO8859-6.so.3
-x 3438806ce398eb947236c709a08fde48cbabd9a4 usr/lib/locale/ar_EG.ISO8859-6/ar_EG.ISO8859-6.so.3
-
-ARCH=sparc
-
-x 818c2c9022a7c449ff504bc5671566469c12bb6d usr/lib/locale/ar_EG.ISO8859-6/ar_EG.ISO8859-6.so.3
-x 486692e97b846a4a3f747cd3b4c47367904f8625 usr/lib/locale/ar_EG.ISO8859-6/sparcv9/ar_EG.ISO8859-6.so.3
-
-# hashes from pkg://opensolaris.org/system/locale/ar@0.5.11,5.11-0.134.0.2:20100529T005920Z
-
-
-ARCH=all
-
-x 78f80c76a86065e256dce87e98a89c6ddfe7a530 usr/lib/locale/ar_AE.UTF-8/locale_description
-x a7ee8bb58666cf50c6aea373dc8685da2bef8832 usr/lib/locale/ar_AE.UTF-8/locale_map
-x a02bd3b18aa004b443685352ab032ff11ae775bb usr/lib/locale/ar_BH.UTF-8/locale_description
-x 2cf42c983f77dbb1c3191dc3969dee1b97c37e78 usr/lib/locale/ar_BH.UTF-8/locale_map
-x 01817c36c5ac258701b463efd0b558127a06de2b usr/lib/locale/ar_DZ.UTF-8/locale_description
-x 261a2e85db472a186da7613134ab4b494ec230aa usr/lib/locale/ar_DZ.UTF-8/locale_map
-x 6a422a86a1f569dd95afd5970e31cec86438cee5 usr/lib/locale/ar_IQ.UTF-8/locale_description
-x 367bfa4c2d2db870395fde131d146009c14070df usr/lib/locale/ar_IQ.UTF-8/locale_map
-x bc2b02b2b122ac38df364c0e1434125d3c242060 usr/lib/locale/ar_JO.UTF-8/locale_description
-x c8267714f8b375355cfb16597d46e57b8ee8f335 usr/lib/locale/ar_JO.UTF-8/locale_map
-x 8d0c309f68941e145218dee2f9a2b96fe0f4c46a usr/lib/locale/ar_KW.UTF-8/locale_description
-x 34a5538b419bf02e48a80e06d342bda909f486ea usr/lib/locale/ar_KW.UTF-8/locale_map
-x 7dde77a58af608a374c745567c21a393dc06b0b5 usr/lib/locale/ar_LY.UTF-8/locale_description
-x d8ecb2f2a158e8ec763663f2030d22ea42205a07 usr/lib/locale/ar_LY.UTF-8/locale_map
-x d9da7bade06118b5deb042d179217fe72578f424 usr/lib/locale/ar_MA.UTF-8/locale_description
-x 20e37548202b594e39adc7d715d70d3c6031ddc7 usr/lib/locale/ar_MA.UTF-8/locale_map
-x 836354ea82a48b2f336c6e05933ae36d3d1e54b9 usr/lib/locale/ar_OM.UTF-8/locale_description
-x 5698aa3744bec156c1253c586b3d5be56681305a usr/lib/locale/ar_OM.UTF-8/locale_map
-x 47c46e12686a46f00c6c8e5df901119eb7018e79 usr/lib/locale/ar_QA.UTF-8/locale_description
-x 8da51eed40c8279b9c8c2d990e28dc41918e1bfa usr/lib/locale/ar_QA.UTF-8/locale_map
-x 2a85d350b5d2b6b0c98fc9de9b5958c6d78045bd usr/lib/locale/ar_SA.UTF-8/locale_description
-x 4fad8343a9b3adae631392bd45fdf08a6497d3f5 usr/lib/locale/ar_SA.UTF-8/locale_map
-x 403f2c182598e3f6554f37c60e0a5fed2d0e87f4 usr/lib/locale/ar_TN.UTF-8/locale_description
-x 61b7501e2e81a6329639cb9e5bcf979fe5769ea6 usr/lib/locale/ar_TN.UTF-8/locale_map
-x 47ee2f94cbe91344aa36ca75e3d225b99fb1e530 usr/lib/locale/ar_YE.UTF-8/locale_description
-x 25409d120f1ad27576e2bfa4ecc41d3b34622b2e usr/lib/locale/ar_YE.UTF-8/locale_map
-
-ARCH=i386
-
-x 2f1767960eafdda493da4b03b187e0bb4c0029e5 usr/lib/locale/ar_AE.UTF-8/amd64/ar_AE.UTF-8.so.3
-x dd15eb5e62d107d11f4ac19ed2ec89830aaa86d8 usr/lib/locale/ar_AE.UTF-8/ar_AE.UTF-8.so.3
-x 1387824a8a7a5214e2717a9aeede5469d54817fd usr/lib/locale/ar_BH.UTF-8/amd64/ar_BH.UTF-8.so.3
-x c3f903c8a61bab5c8f0a42cebd2cbf84dea2199f usr/lib/locale/ar_BH.UTF-8/ar_BH.UTF-8.so.3
-x adbd547efce0522ebdd7d14c3a429344b2e521a6 usr/lib/locale/ar_DZ.UTF-8/amd64/ar_DZ.UTF-8.so.3
-x 7f1c6fca524e0de6acb4b4c73fcc2ea5bfd8bc49 usr/lib/locale/ar_DZ.UTF-8/ar_DZ.UTF-8.so.3
-x e644b068d5cf21821af9b3f49fbe0e8fdeb25c20 usr/lib/locale/ar_IQ.UTF-8/amd64/ar_IQ.UTF-8.so.3
-x 1dc646c45bcedac4a9aa05abf8c03094c88cbfec usr/lib/locale/ar_IQ.UTF-8/ar_IQ.UTF-8.so.3
-x 4333a51631a0806986cd72270d7f99bc63286abd usr/lib/locale/ar_JO.UTF-8/amd64/ar_JO.UTF-8.so.3
-x 33076b50cdf8bd1c6432cdd837292b31aaa5e676 usr/lib/locale/ar_JO.UTF-8/ar_JO.UTF-8.so.3
-x 3159235de3423e0de81e376bab175fb3b47d93b6 usr/lib/locale/ar_KW.UTF-8/amd64/ar_KW.UTF-8.so.3
-x 7ec72ed81bbafb8334e4a9691c1a0be1f30fad18 usr/lib/locale/ar_KW.UTF-8/ar_KW.UTF-8.so.3
-x 106195360a965546074af61037c55b8573014da5 usr/lib/locale/ar_LY.UTF-8/amd64/ar_LY.UTF-8.so.3
-x dbaebe4309c4e05e0f67f872e14df362b8ddb6a5 usr/lib/locale/ar_LY.UTF-8/ar_LY.UTF-8.so.3
-x 580405f6189c870b5a7043bc5dea991f4cd8ffab usr/lib/locale/ar_MA.UTF-8/amd64/ar_MA.UTF-8.so.3
-x 0ec0eee49af37cda8e9c1546430fbd6a4253c751 usr/lib/locale/ar_MA.UTF-8/ar_MA.UTF-8.so.3
-x feeb9f709abd1a5891c4f548d51c13aec1bf9b54 usr/lib/locale/ar_OM.UTF-8/amd64/ar_OM.UTF-8.so.3
-x b4aa6c5b8b879ab21f331795b64812190a86e4b6 usr/lib/locale/ar_OM.UTF-8/ar_OM.UTF-8.so.3
-x b466572fd3cfe9596a4dd80419f09cf0c08f5cf1 usr/lib/locale/ar_QA.UTF-8/amd64/ar_QA.UTF-8.so.3
-x f455ed16829781468cbe616300e9a677a7b1cc13 usr/lib/locale/ar_QA.UTF-8/ar_QA.UTF-8.so.3
-x 2eb2b282e53f2e196aedcd8fc27dbf337b45b9f3 usr/lib/locale/ar_SA.UTF-8/amd64/ar_SA.UTF-8.so.3
-x 176dd0d3410afe4a0ac7e883a6898a5be9358ee0 usr/lib/locale/ar_SA.UTF-8/ar_SA.UTF-8.so.3
-x 5978197164382d1ec6be722ffb74de659398c146 usr/lib/locale/ar_TN.UTF-8/amd64/ar_TN.UTF-8.so.3
-x 46ea82184213b83a498241e3ba4a25e586179115 usr/lib/locale/ar_TN.UTF-8/ar_TN.UTF-8.so.3
-x f70e82290e4391ce7be24d0ab1297ec1965b259b usr/lib/locale/ar_YE.UTF-8/amd64/ar_YE.UTF-8.so.3
-x b91333fde734f51598b871df8187610e114d1762 usr/lib/locale/ar_YE.UTF-8/ar_YE.UTF-8.so.3
-
-ARCH=sparc
-
-x 68deca7c3d05a46cea8921f4cc3a9dec761eb097 usr/lib/locale/ar_AE.UTF-8/ar_AE.UTF-8.so.3
-x de729d5410fcb08c9a20be797b4853d70214f42d usr/lib/locale/ar_AE.UTF-8/sparcv9/ar_AE.UTF-8.so.3
-x cd8b84f12f8fab8ed3ae66e8c8a6db76015448ec usr/lib/locale/ar_BH.UTF-8/ar_BH.UTF-8.so.3
-x 3be4db5e43e0921faa92a4e8bd909dbd33fb20bf usr/lib/locale/ar_BH.UTF-8/sparcv9/ar_BH.UTF-8.so.3
-x 3fb44c4fd59b2bff1c927368a860fe2b98761fc9 usr/lib/locale/ar_DZ.UTF-8/ar_DZ.UTF-8.so.3
-x 56671a1d8a02c94ee614a5b3834f70f7019eae8a usr/lib/locale/ar_DZ.UTF-8/sparcv9/ar_DZ.UTF-8.so.3
-x 7054493bdff09620f6cd2fdc246d5bc6059ce967 usr/lib/locale/ar_IQ.UTF-8/ar_IQ.UTF-8.so.3
-x 1f806e44ff3fdbac9a632f98a099709022cecb9f usr/lib/locale/ar_IQ.UTF-8/sparcv9/ar_IQ.UTF-8.so.3
-x e9fd986ec00cf85d0b1a4f366f9a0b2ebeba6d43 usr/lib/locale/ar_JO.UTF-8/ar_JO.UTF-8.so.3
-x bbcad7d3f5474fb00fe9c4f5d1fe45b09a240d67 usr/lib/locale/ar_JO.UTF-8/sparcv9/ar_JO.UTF-8.so.3
-x eb4a08ecbc098a12b0cbbd5ddc1a36190122e658 usr/lib/locale/ar_KW.UTF-8/ar_KW.UTF-8.so.3
-x 572c1a6a820c722d5ec2771da7c1bb8187ca1085 usr/lib/locale/ar_KW.UTF-8/sparcv9/ar_KW.UTF-8.so.3
-x 15a94544eb9936fa90e032946751c3ef96650c2d usr/lib/locale/ar_LY.UTF-8/ar_LY.UTF-8.so.3
-x 90efcd32ca63e0fa543da5a4183a54791b67fb4e usr/lib/locale/ar_LY.UTF-8/sparcv9/ar_LY.UTF-8.so.3
-x ff5e1e8d935aab242b6798a2840ad1b6edccba8e usr/lib/locale/ar_MA.UTF-8/ar_MA.UTF-8.so.3
-x dbe7a17ec86ef8bea7828b5631ce01991a94e6a6 usr/lib/locale/ar_MA.UTF-8/sparcv9/ar_MA.UTF-8.so.3
-x 28597057a4dad591583d1240a85cebee60de6462 usr/lib/locale/ar_OM.UTF-8/ar_OM.UTF-8.so.3
-x 79c035d9ddbf8b82f7f5810d5ece959a40378db2 usr/lib/locale/ar_OM.UTF-8/sparcv9/ar_OM.UTF-8.so.3
-x dad017c667187bc9f1f29bf083462ac13a232126 usr/lib/locale/ar_QA.UTF-8/ar_QA.UTF-8.so.3
-x c11e50e8f425e81c5e877e5167a75dcf164ebc5c usr/lib/locale/ar_QA.UTF-8/sparcv9/ar_QA.UTF-8.so.3
-x 2417886587745d434783af55db3cca0e3b88d9a3 usr/lib/locale/ar_SA.UTF-8/ar_SA.UTF-8.so.3
-x d65f34ed9a02acc8cb644609d8346d6ad19c920d usr/lib/locale/ar_SA.UTF-8/sparcv9/ar_SA.UTF-8.so.3
-x 335a1579cb1fd35bb7c9576a0456f72467bac3e5 usr/lib/locale/ar_TN.UTF-8/ar_TN.UTF-8.so.3
-x 487c21a97d4d96da081273bccd79a7148b72a25b usr/lib/locale/ar_TN.UTF-8/sparcv9/ar_TN.UTF-8.so.3
-x 866a8a50fac884d641056629c7434e333edb7f89 usr/lib/locale/ar_YE.UTF-8/ar_YE.UTF-8.so.3
-x a5bb39400603e563d7c25bdc25ad2e85d9c2d70f usr/lib/locale/ar_YE.UTF-8/sparcv9/ar_YE.UTF-8.so.3
-
-# hashes from pkg://opensolaris.org/system/locale/as@0.5.11,5.11-0.134.0.2:20100529T010020Z
-
-ARCH=all
-
-x 5a412653f376eeceaa8a32e3b9a45d3d082db469 usr/lib/locale/as_IN.UTF-8/locale_description
-x 802befca3a0c03df880245035fc316c066ef14cb usr/lib/locale/as_IN.UTF-8/locale_map
-
-ARCH=i386
-
-x 8cdc08438525774c842e78c5bbf347ca076ffc59 usr/lib/locale/as_IN.UTF-8/amd64/as_IN.UTF-8.so.3
-x 758a5e8fc76bd4d362d76221c332cd7b32df9dae usr/lib/locale/as_IN.UTF-8/as_IN.UTF-8.so.3
-
-ARCH=sparc
-
-x 85044b9ff952545b0f3c9b8079281d67d33054e3 usr/lib/locale/as_IN.UTF-8/as_IN.UTF-8.so.3
-x 129ef5aa66390f0feac5c3bdb081aee74ea2598a usr/lib/locale/as_IN.UTF-8/sparcv9/as_IN.UTF-8.so.3
-
-# hashes from http://pkg.opensolaris.org/release/manifest/0/system%2Flocale%2Faz%400.5.11%2C5.11-0.134.0.2%3A20100529T010025Z
-
-ARCH=all
-
-x af62328262cf78f71124030fdbac86207c5d2d09 usr/lib/locale/az_AZ.UTF-8/locale_description
-x 06d20ad3271b1a856482356dafbaae52133d89dd usr/lib/locale/az_AZ.UTF-8/locale_map
-
-ARCH=i386
-
-x 19231b9843576e51a2d828017dfa2e644683419d usr/lib/locale/az_AZ.UTF-8/amd64/az_AZ.UTF-8.so.3
-x de65d7be4571f16d0763bf4b94ed65dd2a2d0160 usr/lib/locale/az_AZ.UTF-8/az_AZ.UTF-8.so.3
-
-ARCH=sparc
-
-x ee6e99e0ed70f2440ffa3d96748f11ca06337f37 usr/lib/locale/az_AZ.UTF-8/az_AZ.UTF-8.so.3
-x 008a49ad03956f4da285c8b94efc8291166e2563 usr/lib/locale/az_AZ.UTF-8/sparcv9/az_AZ.UTF-8.so.3
