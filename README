@@ -1,0 +1,17 @@
+Building g11n
+
+export PATH=/opt/sunstudio12.1/bin:/usr/bin
+export SRC=$PWD
+export CLOSED_BUILD=\#
+export PKGARCHIVE=$SRC
+export PKGPUBLISHER_REDIST=l10n-nightly
+
+make install
+
+
+cd pkg
+make install
+cp -rP ../../g11n-spec/build.`uname -p`/repo.spec/{file,pkg} ../../inputmethod/specs/build.`uname -p`/repo.imspec/{file,pkg} ../repo.redist
+
+/usr/lib/pkg.depotd -p 10000 -d $PWD/../repo.redist --add-content --exit-ready
+
