@@ -26,7 +26,7 @@ include $(SRC)/Makefile.master
 PROJECT		= Vemana
 VER 		= $(PROJECT)
 TARBALL		= $(VER)2k-Li.zip
-SOURCE_URL	= http://www.kavya-nandanam.com/$(TARBALL)
+SOURCE_URL	= http://dlc.openindiana.org/gpl/sol-11-exp-201011-GPLSource/l10n/src/g11n/downloads/$(TARBALL)
 
 FONT = vemana.ttf
 
