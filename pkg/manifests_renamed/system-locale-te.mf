@@ -24,7 +24,7 @@
 # Copyright 2011 EveryCity Ltd. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/locale/te@0.5.11,5.11-0.148.0.1
+set name=pkg.fmri value=pkg:/system/locale/te@0.5.11,5.11-0.148
 set name=pkg.renamed value=true
-depend fmri=locale/te@0.5.11-0.148.0.1 type=require
+depend fmri=locale/te@0.5.11-0.148 type=require
 
