@@ -23,6 +23,6 @@
 # Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
 #
 
-set name=pkg.fmri value=pkg:/system/input-method/iiim/zh_cn-cle-core@0.5.11,5.11-0.151
+set name=pkg.fmri value=pkg:/system/input-method/iiim/zh_cn-cle-core@0.5.11,5.11-0.148
 set name=pkg.renamed value=true
-depend fmri=system/input-method/iiim/cle-core@0.5.11-0.151 type=require
+depend fmri=system/input-method/iiim/cle-core@0.5.11-0.148 type=require

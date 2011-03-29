@@ -26,4 +26,4 @@
 set name=pkg.fmri value=pkg:/system/font/truetype/ttf-fonts-core@1.1,5.11-1
 set name=pkg.renamed value=true
 set name=org.opensolaris.redist value=nonredist
-depend fmri=system/font/truetype/fonts-core@1.1-0.151 type=require
+depend fmri=system/font/truetype/fonts-core@1.1-0.148 type=require
