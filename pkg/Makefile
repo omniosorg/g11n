@@ -699,11 +699,12 @@ $(PKGLISTS): $(PROC_PKGS)
 		exit retcode; \
 	}' `find $(PDIR) -type l -a \( $(PKGS:%=-name %.metadata.$$s.$$r -o) \
 		-name NOSUCHFILE \)` >> $(@); \
-	cat ../../g11n-spec/build.`uname -p`/repo.spec/pkg/*/* | \
-	grep name=pkg.fmri | sed s%.*pkg://l10n-nightly%% | \
+	cat ../../g11n-spec/build.`uname -p`/repo.spec/publisher/*/pkg/*/* | \
+	grep name=pkg.fmri.*-0.$L10N_BUILDNUM | sed s%.*pkg://l10n-nightly%% | \
 	sed s%:.*%\ type=$$\(PKGDEP_TYPE\)% | sed s%^%depend\ fmri=pkg:% >> $(@); \
-	cat ../../inputmethod/specs/build.`uname -p`/repo.imspec/pkg/*/* | \
-	grep name=pkg.fmri | grep -v value=.*/SUNW.* | grep -v value=.*/dummy/.* | \
+	cat ../../inputmethod/specs/build.`uname -p`/repo.imspec/publisher/*/pkg/*/* | \
+	grep name=pkg.fmri.*-0.$L10N_BUILDNUM | grep -v value=.*/SUNW.* | grep -v value=.*/dummy/.* | \
+	grep -v value=.*/entire@ | grep -v value=.*/consolidation/l10n/l10n-incorporation@ | \
 	sed s%.*pkg://l10n-nightly%% | sed s%:.*%\ type=$$\(PKGDEP_TYPE\)% | \
 	sed s%^%depend\ fmri=pkg:% >> $(@)
 
