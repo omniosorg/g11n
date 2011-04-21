@@ -29,6 +29,7 @@ set name=info.classification value=org.opensolaris.category.2008:System/Localiza
 depend fmri=gnome/documentation/locale/extra type=require
 depend fmri=gnome/locale/extra type=require
 depend fmri=system/desktop/locale/extra type=require
+depend fmri=locale/sr type=require
 depend fmri=system/locale/support/common type=require
 set name=pkg.summary value="Language Support cluster - Serbian"
 set name=pkg.description value="Language Support cluster - Serbian"
