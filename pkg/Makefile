@@ -232,8 +232,7 @@ PKGDEP_REFIMG= -R $(PKGDEP_REFIMG_DIR)
 $(PDIR)/l10n-redist.mog $(PDIR)/l10n-extra.mog:= PKGDEP_TYPE= require
 $(PDIR)/l10n-incorporation.mog:= PKGDEP_TYPE= incorporate
 
-PKGDEP_INCORP= \
-	depend fmri=consolidation/l10n/l10n-incorporation type=require
+PKGDEP_INCORP=
 
 #
 # All packaging build products should go into $(PDIR), so they don't
@@ -263,7 +262,9 @@ MANIFESTS_RENAMED.cmd= (cd $(MFDIR_RENAMED); echo *.mf)
 MANIFESTS_RENAMED= $(MANIFESTS_RENAMED.cmd:sh)
 MANIFESTS_OBSOLETE.cmd= (cd $(MFDIR_OBSOLETE); echo *.mf)
 MANIFESTS_OBSOLETE= $(MANIFESTS_OBSOLETE.cmd:sh)
-MANIFESTS= $(MANIFESTS_STATIC) $(MANIFESTS_CLUSTER) $(MANIFESTS_RENAMED) $(MANIFESTS_OBSOLETE)
+#MANIFESTS= $(MANIFESTS_STATIC) $(MANIFESTS_CLUSTER) $(MANIFESTS_RENAMED) $(MANIFESTS_OBSOLETE)
+# OmniOS doesn't package all that other legacy stuff
+MANIFESTS= $(MANIFESTS_STATIC)
 PKGS= $(MANIFESTS:%.mf=%)
 DEP_PKGS= $(PKGS:%=$(PDIR)/%.dep)
 PROC_PKGS= $(PKGS:%=$(PDIR)/%.mog)
@@ -273,7 +274,7 @@ PROC_PKGS= $(PKGS:%=$(PDIR)/%.mog)
 # build rules and dependencies.  The synthetic and real packages use
 # different sets of transforms and macros for pkgmogrify.
 #
-SYNTH_PKGS= l10n-incorporation l10n-redist
+#SYNTH_PKGS= l10n-incorporation l10n-redist
 $(CLOSED_BUILD)SYNTH_PKGS += l10n-extra
 DEP_SYNTH_PKGS= $(SYNTH_PKGS:%=$(PDIR)/%.dep)
 PROC_SYNTH_PKGS= $(SYNTH_PKGS:%=$(PDIR)/%.mog)
