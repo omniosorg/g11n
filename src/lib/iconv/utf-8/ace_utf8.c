@@ -35,6 +35,7 @@
 #include <strings.h>
 #include <string.h>
 #include <idn/api.h>
+#include <idn/version.h>
 #include "ace.h"
 
 
@@ -119,6 +120,7 @@ _icv_iconv(ace_state_t *cd, char **inbuf, size_t *inbufleft, char **outbuf,
 	uchar_t *obtail;
 	uchar_t *tmps;
 	idn_result_t idnres;
+	idn_action_t actions;
 	int i;
 
 
@@ -157,6 +159,49 @@ _icv_iconv(ace_state_t *cd, char **inbuf, size_t *inbufleft, char **outbuf,
 	}
 	cd->oblremaining = 0;
 
+#ifdef IDNKIT_VERSION_LIBIDN
+
+	/* IDNkit v2 */
+
+	actions =
+		 IDN_RTCONV
+		|IDN_PROHCHECK
+		|IDN_NFCCHECK
+		|IDN_PREFCHECK
+		|IDN_COMBCHECK
+		|IDN_CTXOLITECHECK
+		|IDN_BIDICHECK
+		|IDN_LOCALCHECK
+		|IDN_IDNCONV
+		|IDN_LENCHECK;
+
+# if defined(ICV_ACE_TO_UTF8)
+	actions |= IDN_RTCHECK;
+# else
+	actions |= IDN_MAP;
+# endif
+
+#else
+
+	/* IDNkit v1 */
+	actions =
+		 IDN_DELIMMAP
+		|IDN_NAMEPREP
+		|IDN_IDNCONV
+		|IDN_ASCCHECK;
+
+# if defined(ICV_ACE_TO_UTF8)
+	actions |= IDN_RTCHECK;
+# else
+	actions |= IDN_LOCALMAP;
+# endif
+
+#endif
+
+#if !defined(ICV_IDN_ALLOW_UNASSIGNED)
+	actions |= IDN_UNASCHECK;
+#endif
+
 	/* Process reset request. */
 	if (!inbuf || !(*inbuf)) {
 		if (cd->iblconsumed > 0) {
@@ -180,18 +225,7 @@ _icv_iconv(ace_state_t *cd, char **inbuf, size_t *inbufleft, char **outbuf,
 
 			i = 0;
 ICV_ICONV_LOOP_ONE:
-			idnres = (*(cd->idn_function))((IDN_DELIMMAP
-				|IDN_NAMEPREP|IDN_IDNCONV|IDN_ASCCHECK
-#if defined(ICV_ACE_TO_UTF8)
-				|IDN_RTCHECK
-#else
-				|IDN_LOCALMAP
-#endif /* defined(ICV_ACE_TO_UTF8) */
-#if defined(ICV_IDN_ALLOW_UNASSIGNED)
-				),
-#else
-				|IDN_UNASCHECK),
-#endif	/* defined(ICV_IDN_ALLOW_UNASSIGNED) */
+			idnres = (*(cd->idn_function))(actions,
 			    (const char *)cd->ib, (char *)cd->ob,
 				cd->obl);
 			switch (idnres) {
@@ -278,18 +312,7 @@ ICV_ICONV_LOOP_ONE:
 				*(cd->ib + cd->iblconsumed) = '\0';
 				i = 0;
 ICV_ICONV_LOOP:
-				idnres = (*(cd->idn_function))((IDN_DELIMMAP
-					|IDN_NAMEPREP|IDN_IDNCONV|IDN_ASCCHECK
-#if defined(ICV_ACE_TO_UTF8)
-					|IDN_RTCHECK
-#else
-					|IDN_LOCALMAP
-#endif /* defined(ICV_ACE_TO_UTF8) */
-#if defined(ICV_IDN_ALLOW_UNASSIGNED)
-					),
-#else
-					|IDN_UNASCHECK),
-#endif	/* defined(ICV_IDN_ALLOW_UNASSIGNED) */
+				idnres = (*(cd->idn_function))(actions,
 				    (const char *)cd->ib, (char *)cd->ob,
 					cd->obl);
 				switch (idnres) {
